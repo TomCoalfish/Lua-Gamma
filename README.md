@@ -3,6 +3,8 @@ Gamma wrapper
 
 # It's a really good library
 * if you only need one c++ synthesis library this is the one you should use
+* it has alot of very useful classes in it
+* Of course you will want many libraries so here you go
 
 # Python
 * all these wrappers will work with python with some changes I just dont want to support it
