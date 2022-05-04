@@ -2714,107 +2714,160 @@ SWIG_Lua_dostring(lua_State *L, const char *str) {
 
 /* -------- TYPES TABLE (BEGIN) -------- */
 
-#define SWIGTYPE_p_AudioCallback swig_types[0]
-#define SWIGTYPE_p_AudioIOData swig_types[1]
-#define SWIGTYPE_p_BiquadT_t swig_types[2]
-#define SWIGTYPE_p_CSineT_double_t swig_types[3]
-#define SWIGTYPE_p_CSineT_float_t swig_types[4]
-#define SWIGTYPE_p_DecayT_float_t swig_types[5]
-#define SWIGTYPE_p_DecayT_t swig_types[6]
-#define SWIGTYPE_p_Domain swig_types[7]
-#define SWIGTYPE_p_FILE swig_types[8]
-#define SWIGTYPE_p_FilterType swig_types[9]
-#define SWIGTYPE_p_HilbertT_float_t swig_types[10]
-#define SWIGTYPE_p_LuaCallback swig_types[11]
-#define SWIGTYPE_p_NoiseWhiteT_RNGMulCon_t swig_types[12]
-#define SWIGTYPE_p_NoiseWhiteT_t swig_types[13]
-#define SWIGTYPE_p_OnePoleT_float_t swig_types[14]
-#define SWIGTYPE_p_SWIGLUA_REF swig_types[15]
-#define SWIGTYPE_p_SawT_float_t swig_types[16]
-#define SWIGTYPE_p_SineT_float_t swig_types[17]
-#define SWIGTYPE_p_WindowType swig_types[18]
-#define SWIGTYPE_p_difference_type swig_types[19]
-#define SWIGTYPE_p_double swig_types[20]
-#define SWIGTYPE_p_f_r_gam__AudioIOData__void swig_types[21]
-#define SWIGTYPE_p_float swig_types[22]
-#define SWIGTYPE_p_gam__AMT_float_t swig_types[23]
-#define SWIGTYPE_p_gam__ArrayPow2T_float_t swig_types[24]
-#define SWIGTYPE_p_gam__ArrayT_float_t swig_types[25]
-#define SWIGTYPE_p_gam__AudioCallback swig_types[26]
-#define SWIGTYPE_p_gam__AudioDevice swig_types[27]
-#define SWIGTYPE_p_gam__AudioIO swig_types[28]
-#define SWIGTYPE_p_gam__AudioIOData swig_types[29]
-#define SWIGTYPE_p_gam__Biquad3 swig_types[30]
-#define SWIGTYPE_p_gam__BiquadT_t swig_types[31]
-#define SWIGTYPE_p_gam__Burst swig_types[32]
-#define SWIGTYPE_p_gam__CSineT_double_t swig_types[33]
-#define SWIGTYPE_p_gam__CSineT_float_t swig_types[34]
-#define SWIGTYPE_p_gam__ChebyNT_1_float_t swig_types[35]
-#define SWIGTYPE_p_gam__ChebyNT_2_float_t swig_types[36]
-#define SWIGTYPE_p_gam__ChebyNT_3_float_t swig_types[37]
-#define SWIGTYPE_p_gam__ChebyNT_4_float_t swig_types[38]
-#define SWIGTYPE_p_gam__ChebyNT_5_float_t swig_types[39]
-#define SWIGTYPE_p_gam__ChebyNT_6_float_t swig_types[40]
-#define SWIGTYPE_p_gam__ChebyNT_7_float_t swig_types[41]
-#define SWIGTYPE_p_gam__ChebyNT_8_float_t swig_types[42]
-#define SWIGTYPE_p_gam__ChebyNT_9_float_t swig_types[43]
-#define SWIGTYPE_p_gam__ChirpT_float_t swig_types[44]
-#define SWIGTYPE_p_gam__ChorusT_float_t swig_types[45]
-#define SWIGTYPE_p_gam__CombT_float_ipl__Cubic_gam__real_GAM_DEFAULT_DOMAIN_t swig_types[46]
-#define SWIGTYPE_p_gam__CombT_float_ipl__Linear_gam__real_GAM_DEFAULT_DOMAIN_t swig_types[47]
-#define SWIGTYPE_p_gam__DFT swig_types[48]
-#define SWIGTYPE_p_gam__DecayT_float_t swig_types[49]
-#define SWIGTYPE_p_gam__Delay1T_float_t swig_types[50]
-#define SWIGTYPE_p_gam__Delay2T_float_t swig_types[51]
-#define SWIGTYPE_p_gam__DelayNT_float_t swig_types[52]
-#define SWIGTYPE_p_gam__DelayT_float_ipl__Linear_GAM_DEFAULT_DOMAIN_t swig_types[53]
-#define SWIGTYPE_p_gam__Domain swig_types[54]
-#define SWIGTYPE_p_gam__Domain1 swig_types[55]
-#define SWIGTYPE_p_gam__DomainObserver swig_types[56]
-#define SWIGTYPE_p_gam__DoubleRingT_float_t swig_types[57]
-#define SWIGTYPE_p_gam__EnvFollowT_float_gam__real_gam__GAM_DEFAULT_DOMAIN_t swig_types[58]
-#define SWIGTYPE_p_gam__FreqShiftT_float_t swig_types[59]
-#define SWIGTYPE_p_gam__HilbertT_float_t swig_types[60]
-#define SWIGTYPE_p_gam__IndexMapT_float_t swig_types[61]
-#define SWIGTYPE_p_gam__MaxAbsT_float_t swig_types[62]
-#define SWIGTYPE_p_gam__MonoSynth swig_types[63]
-#define SWIGTYPE_p_gam__MultitapT_float_ipl__Linear_GAM_DEFAULT_DOMAIN_t swig_types[64]
-#define SWIGTYPE_p_gam__NoiseWhiteT_gam__RNGMulCon_t swig_types[65]
-#define SWIGTYPE_p_gam__OnePoleT_float_gam__real_gam__GAM_DEFAULT_DOMAIN_t swig_types[66]
-#define SWIGTYPE_p_gam__OnePoleT_float_t swig_types[67]
-#define SWIGTYPE_p_gam__PCounter swig_types[68]
-#define SWIGTYPE_p_gam__PanT_float_t swig_types[69]
-#define SWIGTYPE_p_gam__Pluck swig_types[70]
-#define SWIGTYPE_p_gam__QuantizerT_float_GAM_DEFAULT_DOMAIN_t swig_types[71]
-#define SWIGTYPE_p_gam__RingT_float_t swig_types[72]
-#define SWIGTYPE_p_gam__STFT swig_types[73]
-#define SWIGTYPE_p_gam__SawT_float_t swig_types[74]
-#define SWIGTYPE_p_gam__SilenceDetect swig_types[75]
-#define SWIGTYPE_p_gam__SineT_float_t swig_types[76]
-#define SWIGTYPE_p_gam__SliceT_float_t swig_types[77]
-#define SWIGTYPE_p_gam__SlidingDFTT_float_t swig_types[78]
-#define SWIGTYPE_p_gam__SlidingWindowT_float_t swig_types[79]
-#define SWIGTYPE_p_gam__ThresholdT_float_t swig_types[80]
-#define SWIGTYPE_p_gam__VecT_2_float_t swig_types[81]
-#define SWIGTYPE_p_gam__ZeroCrossRateT_float_t swig_types[82]
-#define SWIGTYPE_p_gam__real swig_types[83]
-#define SWIGTYPE_p_int swig_types[84]
-#define SWIGTYPE_p_ipl__Type swig_types[85]
-#define SWIGTYPE_p_long_long swig_types[86]
-#define SWIGTYPE_p_short swig_types[87]
-#define SWIGTYPE_p_signed_char swig_types[88]
-#define SWIGTYPE_p_size_type swig_types[89]
-#define SWIGTYPE_p_std__string swig_types[90]
-#define SWIGTYPE_p_std__vectorT_float_t swig_types[91]
-#define SWIGTYPE_p_std__vectorT_gam__real_t swig_types[92]
-#define SWIGTYPE_p_unsigned_char swig_types[93]
-#define SWIGTYPE_p_unsigned_int swig_types[94]
-#define SWIGTYPE_p_unsigned_long_long swig_types[95]
-#define SWIGTYPE_p_unsigned_short swig_types[96]
-#define SWIGTYPE_p_value_type swig_types[97]
-#define SWIGTYPE_p_void swig_types[98]
-static swig_type_info *swig_types[100];
-static swig_module_info swig_module = {swig_types, 99, 0, 0, 0, 0};
+#define SWIGTYPE_p_Allpasses swig_types[0]
+#define SWIGTYPE_p_AudioCallback swig_types[1]
+#define SWIGTYPE_p_AudioIOData swig_types[2]
+#define SWIGTYPE_p_Base swig_types[3]
+#define SWIGTYPE_p_BiquadT_t swig_types[4]
+#define SWIGTYPE_p_CSineT_double_t swig_types[5]
+#define SWIGTYPE_p_CSineT_float_t swig_types[6]
+#define SWIGTYPE_p_Combs swig_types[7]
+#define SWIGTYPE_p_ComplexT_float_t swig_types[8]
+#define SWIGTYPE_p_DecayT_float_t swig_types[9]
+#define SWIGTYPE_p_DecayT_t swig_types[10]
+#define SWIGTYPE_p_Domain swig_types[11]
+#define SWIGTYPE_p_FILE swig_types[12]
+#define SWIGTYPE_p_FilterType swig_types[13]
+#define SWIGTYPE_p_HilbertT_float_t swig_types[14]
+#define SWIGTYPE_p_LuaCallback swig_types[15]
+#define SWIGTYPE_p_NoiseWhiteT_RNGMulCon_t swig_types[16]
+#define SWIGTYPE_p_NoiseWhiteT_t swig_types[17]
+#define SWIGTYPE_p_OnePoleT_float_t swig_types[18]
+#define SWIGTYPE_p_SWIGLUA_REF swig_types[19]
+#define SWIGTYPE_p_SawT_float_t swig_types[20]
+#define SWIGTYPE_p_SineT_float_t swig_types[21]
+#define SWIGTYPE_p_VecT_2_float_t swig_types[22]
+#define SWIGTYPE_p_WindowType swig_types[23]
+#define SWIGTYPE_p_complex swig_types[24]
+#define SWIGTYPE_p_difference_type swig_types[25]
+#define SWIGTYPE_p_double swig_types[26]
+#define SWIGTYPE_p_f_r_gam__AudioIOData__void swig_types[27]
+#define SWIGTYPE_p_float swig_types[28]
+#define SWIGTYPE_p_gam__AMT_float_t swig_types[29]
+#define SWIGTYPE_p_gam__AccumPhaseT_float_GAM_DEFAULT_DOMAIN_t swig_types[30]
+#define SWIGTYPE_p_gam__AccumT_phsInc__Loop_GAM_DEFAULT_DOMAIN_t swig_types[31]
+#define SWIGTYPE_p_gam__AllPass1T_float_float_GAM_DEFAULT_DOMAIN_t swig_types[32]
+#define SWIGTYPE_p_gam__AllPass2T_float_float_GAM_DEFAULT_DOMAIN_t swig_types[33]
+#define SWIGTYPE_p_gam__ArrayPow2T_float_t swig_types[34]
+#define SWIGTYPE_p_gam__ArrayT_float_t swig_types[35]
+#define SWIGTYPE_p_gam__AudioCallback swig_types[36]
+#define SWIGTYPE_p_gam__AudioDevice swig_types[37]
+#define SWIGTYPE_p_gam__AudioIO swig_types[38]
+#define SWIGTYPE_p_gam__AudioIOData swig_types[39]
+#define SWIGTYPE_p_gam__Biquad3 swig_types[40]
+#define SWIGTYPE_p_gam__BiquadT_float_float_GAM_DEFAULT_DOMAIN_t swig_types[41]
+#define SWIGTYPE_p_gam__BiquadT_gam__real_gam__real_GAM_DEFAULT_DOMAIN_t swig_types[42]
+#define SWIGTYPE_p_gam__BlockDCT_float_float_GAM_DEFAULT_DOMAIN_t swig_types[43]
+#define SWIGTYPE_p_gam__BlockNyqT_float_float_GAM_DEFAULT_DOMAIN_t swig_types[44]
+#define SWIGTYPE_p_gam__Burst swig_types[45]
+#define SWIGTYPE_p_gam__BuzzT_float_GAM_DEFAULT_DOMAIN_t swig_types[46]
+#define SWIGTYPE_p_gam__CSineT_double_GAM_DEFAULT_DOMAIN_t swig_types[47]
+#define SWIGTYPE_p_gam__CSineT_float_GAM_DEFAULT_DOMAIN_t swig_types[48]
+#define SWIGTYPE_p_gam__ChebyNT_1_float_t swig_types[49]
+#define SWIGTYPE_p_gam__ChebyNT_2_float_t swig_types[50]
+#define SWIGTYPE_p_gam__ChebyNT_3_float_t swig_types[51]
+#define SWIGTYPE_p_gam__ChebyNT_4_float_t swig_types[52]
+#define SWIGTYPE_p_gam__ChebyNT_5_float_t swig_types[53]
+#define SWIGTYPE_p_gam__ChebyNT_6_float_t swig_types[54]
+#define SWIGTYPE_p_gam__ChebyNT_7_float_t swig_types[55]
+#define SWIGTYPE_p_gam__ChebyNT_8_float_t swig_types[56]
+#define SWIGTYPE_p_gam__ChebyNT_9_float_t swig_types[57]
+#define SWIGTYPE_p_gam__ChirpT_float_t swig_types[58]
+#define SWIGTYPE_p_gam__ChirpletT_float_GAM_DEFAULT_DOMAIN_t swig_types[59]
+#define SWIGTYPE_p_gam__ChorusT_float_t swig_types[60]
+#define SWIGTYPE_p_gam__CombT_float_ipl__Cubic_gam__real_GAM_DEFAULT_DOMAIN_t swig_types[61]
+#define SWIGTYPE_p_gam__CombT_float_ipl__Linear_gam__real_GAM_DEFAULT_DOMAIN_t swig_types[62]
+#define SWIGTYPE_p_gam__ComplexT_float_t swig_types[63]
+#define SWIGTYPE_p_gam__DFT swig_types[64]
+#define SWIGTYPE_p_gam__DSFT_float_GAM_DEFAULT_DOMAIN_t swig_types[65]
+#define SWIGTYPE_p_gam__DWOT_phsInc__Loop_GAM_DEFAULT_DOMAIN_t swig_types[66]
+#define SWIGTYPE_p_gam__DecayT_float_t swig_types[67]
+#define SWIGTYPE_p_gam__Delay1T_float_t swig_types[68]
+#define SWIGTYPE_p_gam__Delay2T_float_t swig_types[69]
+#define SWIGTYPE_p_gam__DelayNT_float_t swig_types[70]
+#define SWIGTYPE_p_gam__DelayT_float_ipl__Linear_GAM_DEFAULT_DOMAIN_t swig_types[71]
+#define SWIGTYPE_p_gam__DifferencerT_float_t swig_types[72]
+#define SWIGTYPE_p_gam__DistT_2_float_t swig_types[73]
+#define SWIGTYPE_p_gam__Domain swig_types[74]
+#define SWIGTYPE_p_gam__Domain1 swig_types[75]
+#define SWIGTYPE_p_gam__DomainObserver swig_types[76]
+#define SWIGTYPE_p_gam__DoubleRingT_float_t swig_types[77]
+#define SWIGTYPE_p_gam__EchoCSineT_float_ipl__Linear_gam__LoopGain_GAM_DEFAULT_DOMAIN_t swig_types[78]
+#define SWIGTYPE_p_gam__EchoT_float_ipl__Linear_gam__LoopGain_GAM_DEFAULT_DOMAIN_t swig_types[79]
+#define SWIGTYPE_p_gam__EnvFollowT_float_gam__real_gam__GAM_DEFAULT_DOMAIN_t swig_types[80]
+#define SWIGTYPE_p_gam__FreqShiftT_float_t swig_types[81]
+#define SWIGTYPE_p_gam__HilbertT_float_float_t swig_types[82]
+#define SWIGTYPE_p_gam__HilbertT_float_gam__real_t swig_types[83]
+#define SWIGTYPE_p_gam__IndexMapT_float_t swig_types[84]
+#define SWIGTYPE_p_gam__IntegratorT_float_float_t swig_types[85]
+#define SWIGTYPE_p_gam__LFOT_phsInc__Loop_GAM_DEFAULT_DOMAIN_t swig_types[86]
+#define SWIGTYPE_p_gam__Loop1P1ZT_float_t swig_types[87]
+#define SWIGTYPE_p_gam__Loop1PT_float_t swig_types[88]
+#define SWIGTYPE_p_gam__LoopGainT_float_t swig_types[89]
+#define SWIGTYPE_p_gam__MaxAbsT_float_t swig_types[90]
+#define SWIGTYPE_p_gam__MonoSynth swig_types[91]
+#define SWIGTYPE_p_gam__MovingAvgT_float_t swig_types[92]
+#define SWIGTYPE_p_gam__MultitapT_float_ipl__Linear_GAM_DEFAULT_DOMAIN_t swig_types[93]
+#define SWIGTYPE_p_gam__NoiseBinaryT_RNGLinCon_t swig_types[94]
+#define SWIGTYPE_p_gam__NoiseBrownT_RNGLinCon_t swig_types[95]
+#define SWIGTYPE_p_gam__NoisePinkT_RNGLinCon_t swig_types[96]
+#define SWIGTYPE_p_gam__NoiseVioletT_RNGLinCon_t swig_types[97]
+#define SWIGTYPE_p_gam__NoiseWhiteT_RNGLinCon_t swig_types[98]
+#define SWIGTYPE_p_gam__NoiseWhiteT_gam__RNGMulCon_t swig_types[99]
+#define SWIGTYPE_p_gam__NotchT_float_float_GAM_DEFAULT_DOMAIN_t swig_types[100]
+#define SWIGTYPE_p_gam__OnePoleT_float_float_GAM_DEFAULT_DOMAIN_t swig_types[101]
+#define SWIGTYPE_p_gam__OnePoleT_float_gam__real_GAM_DEFAULT_DOMAIN_t swig_types[102]
+#define SWIGTYPE_p_gam__OnePoleT_float_gam__real_gam__GAM_DEFAULT_DOMAIN_t swig_types[103]
+#define SWIGTYPE_p_gam__OscT_float_ipl__Linear_phsInc__Loop_GAM_DEFAULT_DOMAIN_t swig_types[104]
+#define SWIGTYPE_p_gam__PCounter swig_types[105]
+#define SWIGTYPE_p_gam__PanT_float_t swig_types[106]
+#define SWIGTYPE_p_gam__Pluck swig_types[107]
+#define SWIGTYPE_p_gam__QuantizerT_float_GAM_DEFAULT_DOMAIN_t swig_types[108]
+#define SWIGTYPE_p_gam__Recorder swig_types[109]
+#define SWIGTYPE_p_gam__ResonT_float_float_GAM_DEFAULT_DOMAIN_t swig_types[110]
+#define SWIGTYPE_p_gam__ReverbMST_float_gam__Loop1P_ipl__Trunc_GAM_DEFAULT_DOMAIN_t swig_types[111]
+#define SWIGTYPE_p_gam__RingT_float_t swig_types[112]
+#define SWIGTYPE_p_gam__STFT swig_types[113]
+#define SWIGTYPE_p_gam__SamplePlayerT_float_ipl__Trunc_phsInc__OneShot_GAM_DEFAULT_DOMAIN_t swig_types[114]
+#define SWIGTYPE_p_gam__SawT_float_GAM_DEFAULT_DOMAIN_t swig_types[115]
+#define SWIGTYPE_p_gam__SilenceDetect swig_types[116]
+#define SWIGTYPE_p_gam__SineDT_float_GAM_DEFAULT_DOMAIN_t swig_types[117]
+#define SWIGTYPE_p_gam__SineDsT_float_GAM_DEFAULT_DOMAIN_t swig_types[118]
+#define SWIGTYPE_p_gam__SineRT_float_GAM_DEFAULT_DOMAIN_t swig_types[119]
+#define SWIGTYPE_p_gam__SineRsT_float_GAM_DEFAULT_DOMAIN_t swig_types[120]
+#define SWIGTYPE_p_gam__SineT_float_GAM_DEFAULT_DOMAIN_t swig_types[121]
+#define SWIGTYPE_p_gam__SliceT_float_t swig_types[122]
+#define SWIGTYPE_p_gam__SlidingDFTT_float_t swig_types[123]
+#define SWIGTYPE_p_gam__SlidingWindowT_float_t swig_types[124]
+#define SWIGTYPE_p_gam__SoundFile swig_types[125]
+#define SWIGTYPE_p_gam__SquareT_float_GAM_DEFAULT_DOMAIN_t swig_types[126]
+#define SWIGTYPE_p_gam__SweepT_phsInc__Loop_GAM_DEFAULT_DOMAIN_t swig_types[127]
+#define SWIGTYPE_p_gam__ThresholdT_float_t swig_types[128]
+#define SWIGTYPE_p_gam__VecT_2_float_t swig_types[129]
+#define SWIGTYPE_p_gam__Vowel swig_types[130]
+#define SWIGTYPE_p_gam__ZeroCrossRateT_float_t swig_types[131]
+#define SWIGTYPE_p_gam__real swig_types[132]
+#define SWIGTYPE_p_int swig_types[133]
+#define SWIGTYPE_p_ipl__Type swig_types[134]
+#define SWIGTYPE_p_long_long swig_types[135]
+#define SWIGTYPE_p_p_float swig_types[136]
+#define SWIGTYPE_p_phsInc__Loop swig_types[137]
+#define SWIGTYPE_p_short swig_types[138]
+#define SWIGTYPE_p_signed_char swig_types[139]
+#define SWIGTYPE_p_size_type swig_types[140]
+#define SWIGTYPE_p_std__string swig_types[141]
+#define SWIGTYPE_p_std__vectorT_float_t swig_types[142]
+#define SWIGTYPE_p_std__vectorT_gam__CombT_float_ipl__Trunc_float_gam__Domain1_t_t swig_types[143]
+#define SWIGTYPE_p_std__vectorT_gam__EchoT_float_ipl__Trunc_gam__Loop1P_gam__Domain1_t_t swig_types[144]
+#define SWIGTYPE_p_std__vectorT_gam__real_t swig_types[145]
+#define SWIGTYPE_p_unsigned_char swig_types[146]
+#define SWIGTYPE_p_unsigned_int swig_types[147]
+#define SWIGTYPE_p_unsigned_long_long swig_types[148]
+#define SWIGTYPE_p_unsigned_short swig_types[149]
+#define SWIGTYPE_p_value_type swig_types[150]
+#define SWIGTYPE_p_void swig_types[151]
+static swig_type_info *swig_types[153];
+static swig_module_info swig_module = {swig_types, 152, 0, 0, 0, 0};
 #define SWIG_TypeQuery(name) SWIG_TypeQueryModule(&swig_module, &swig_module, name)
 #define SWIG_MangledTypeQuery(name) SWIG_MangledTypeQueryModule(&swig_module, &swig_module, name)
 
@@ -2829,6 +2882,13 @@ static swig_module_info swig_module = {swig_types, 99, 0, 0, 0, 0};
 namespace swig {
 typedef struct{} LANGUAGE_OBJ;
 }
+
+
+#define GAMMA_H_INC_ALL
+#include "Gamma/Gamma.h"
+#include "Gamma/Voices.h"
+using namespace gam;
+using namespace gam::phsInc;
 
 
 #define GAMMA_H_INC_ALL
@@ -2891,36 +2951,36 @@ SWIGINTERN void gam_Slice_Sl_SampleType_Sg____setitem____SWIG(gam::Slice< Sample
 #include "Gamma/Analysis.h"
 #include <cassert>
 
-SWIGINTERN float gam_EnvFollow_Sl_SampleType_Sg____getitem____SWIG(gam::EnvFollow< SampleType > *self,float i0){ return (*self)(i0); }
+SWIGINTERN float gam_EnvFollow_Sl_SampleType_Sg__Tick__SWIG(gam::EnvFollow< SampleType > *self,float i0){ return (*self)(i0); }
 SWIGINTERN gam::OnePole< float,gam::real,gam::GAM_DEFAULT_DOMAIN > &gam_EnvFollow_Sl_SampleType_Sg__get_filter__SWIG(gam::EnvFollow< SampleType > *self){ return self->lpf; }
 
 #include "Gamma/Analysis.h"
 #include <cassert>
 
-SWIGINTERN bool gam_PCounter_get__SWIG(gam::PCounter *self){ return (*self)(); }
+SWIGINTERN bool gam_PCounter_Tick__SWIG(gam::PCounter *self){ return (*self)(); }
 
 #include "Gamma/Analysis.h"
 #include <cassert>
 
-SWIGINTERN float gam_MaxAbs_Sl_SampleType_Sg____getitem____SWIG(gam::MaxAbs< SampleType > *self,float const &in){ return (*self)(in); }
+SWIGINTERN float gam_MaxAbs_Sl_SampleType_Sg__Tick__SWIG(gam::MaxAbs< SampleType > *self,float const &in){ return (*self)(in); }
 
 #include "Gamma/Analysis.h"
 #include <cassert>
 
-SWIGINTERN bool gam_SilenceDetect_get__SWIG_0(gam::SilenceDetect *self,SampleType const &input,SampleType const &threshold=SampleType(0.001)){ return (*self)(input,threshold); }
+SWIGINTERN bool gam_SilenceDetect_Tick__SWIG_0(gam::SilenceDetect *self,SampleType const &input,SampleType const &threshold=SampleType(0.001)){ return (*self)(input,threshold); }
 
 #include "Gamma/Analysis.h"
 #include <cassert>
 
-SWIGINTERN float gam_Threshold_Sl_SampleType_Sg____getitem____SWIG(gam::Threshold< SampleType > *self,float in){ return (*self)(in); }
-SWIGINTERN float gam_Threshold_Sl_SampleType_Sg__get__SWIG(gam::Threshold< SampleType > *self,float in,float hi,float lo){ return (*self)(in,hi,lo); }
-SWIGINTERN gam::OnePole< float > gam_Threshold_Sl_SampleType_Sg__get_lpf__SWIG(gam::Threshold< SampleType > *self){ return self->lpf; }
+SWIGINTERN float gam_Threshold_Sl_SampleType_Sg__Tick__SWIG(gam::Threshold< SampleType > *self,float in){ return (*self)(in); }
+SWIGINTERN float gam_Threshold_Sl_SampleType_Sg__Process__SWIG(gam::Threshold< SampleType > *self,float in,float hi,float lo){ return (*self)(in,hi,lo); }
+SWIGINTERN gam::OnePole< float,gam::real,GAM_DEFAULT_DOMAIN > gam_Threshold_Sl_SampleType_Sg__get_lpf__SWIG(gam::Threshold< SampleType > *self){ return self->lpf; }
 SWIGINTERN float gam_Threshold_Sl_SampleType_Sg__get_thresh__SWIG(gam::Threshold< SampleType > *self){ return self->thresh; }
 
 #include "Gamma/Analysis.h"
 #include <cassert>
 
-SWIGINTERN float gam_ZeroCrossRate_Sl_SampleType_Sg____getitem____SWIG(gam::ZeroCrossRate< SampleType > *self,float input){ return (*self)(input); }
+SWIGINTERN float gam_ZeroCrossRate_Sl_SampleType_Sg__Tick__SWIG(gam::ZeroCrossRate< SampleType > *self,float input){ return (*self)(input); }
 
 #include "Gamma/AudioIO.h"
 
@@ -2958,7 +3018,7 @@ void swiglua_ref_get(SWIGLUA_REF* pref){
 }
 
 
-SWIGINTERN bool gam_AudioIOData_get__SWIG(gam::AudioIOData const *self){ return (*self)(); }
+SWIGINTERN bool gam_AudioIOData_Tick__SWIG(gam::AudioIOData const *self){ return (*self)(); }
 
     class LuaCallback : public gam::AudioCallback
     {
@@ -2990,17 +3050,17 @@ SWIGINTERN int SWIG_lua_isnilstring(lua_State *L, int idx) {
 
 #include "Gamma/DFT.h"
 
-SWIGINTERN bool gam_DFT_get__SWIG(gam::DFT *self,float input){ return (*self)(input); }
-SWIGINTERN float gam_DFT_bang__SWIG(gam::DFT *self){ return (*self)(); }
-SWIGINTERN bool gam_STFT_get__SWIG(gam::STFT *self,float input){ return (*self)(input); }
-SWIGINTERN float const *gam_SlidingWindow_Sl_SampleType_Sg__foo__SWIG(gam::SlidingWindow< SampleType > *self){ return (*self)(); }
-SWIGINTERN bool gam_SlidingWindow_Sl_SampleType_Sg__get__SWIG_0(gam::SlidingWindow< SampleType > *self,float input){ return (*self)(input); }
-SWIGINTERN bool gam_SlidingWindow_Sl_SampleType_Sg__get__SWIG_1(gam::SlidingWindow< SampleType > *self,float *dst,float input){ return (*self)(dst,input); }
+SWIGINTERN bool gam_DFT_Process__SWIG(gam::DFT *self,float input){ return (*self)(input); }
+SWIGINTERN float gam_DFT_Tick__SWIG(gam::DFT *self){ return (*self)(); }
+SWIGINTERN bool gam_STFT_Tick__SWIG(gam::STFT *self,float input){ return (*self)(input); }
+SWIGINTERN float const *gam_SlidingWindow_Sl_SampleType_Sg__Get__SWIG(gam::SlidingWindow< SampleType > *self){ return (*self)(); }
+SWIGINTERN bool gam_SlidingWindow_Sl_SampleType_Sg__Tick__SWIG(gam::SlidingWindow< SampleType > *self,float input){ return (*self)(input); }
+SWIGINTERN bool gam_SlidingWindow_Sl_SampleType_Sg__Process__SWIG(gam::SlidingWindow< SampleType > *self,float *dst,float input){ return (*self)(dst,input); }
 
 #include "Gamma/Delay.h"
 #include "Gamma/Containers.h"
 
-SWIGINTERN float gam_Comb_Sl_SampleType_Sg__bang__SWIG(gam::Comb< SampleType > *self){ return (*self)(); }
+SWIGINTERN float gam_Comb_Sl_SampleType_Sg__Tick__SWIG(gam::Comb< SampleType > *self){ return (*self)(); }
 SWIGINTERN float gam_Comb_Sl_SampleType_Sg__flter__SWIG(gam::Comb< SampleType > *self,float const &i0,float const &oN){ return (*self)(i0,oN); }
 SWIGINTERN float gam_Comb_Sl_SampleType_Sg__filter__SWIG(gam::Comb< SampleType > *self,float const &i0){ return (*self)(i0); }
 
@@ -3009,26 +3069,26 @@ SWIGINTERN float gam_Comb_Sl_SampleType_Sg__filter__SWIG(gam::Comb< SampleType >
 
 #include "Gamma/Effects.h"
 
-SWIGINTERN float gam_Biquad3___getitem____SWIG(gam::Biquad3 *self,float i0){ return (*self)(i0); }
-SWIGINTERN gam::Biquad< > &gam_Biquad3_get_bq0__SWIG(gam::Biquad3 *self){ return self->bq0; }
-SWIGINTERN gam::Biquad< > &gam_Biquad3_get_bq1__SWIG(gam::Biquad3 *self){ return self->bq1; }
-SWIGINTERN gam::Biquad< > &gam_Biquad3_get_bq2__SWIG(gam::Biquad3 *self){ return self->bq2; }
+SWIGINTERN float gam_Biquad3_Tick__SWIG(gam::Biquad3 *self,float i0){ return (*self)(i0); }
+SWIGINTERN gam::Biquad< gam::real,gam::real,GAM_DEFAULT_DOMAIN > &gam_Biquad3_get_bq0__SWIG(gam::Biquad3 *self){ return self->bq0; }
+SWIGINTERN gam::Biquad< gam::real,gam::real,GAM_DEFAULT_DOMAIN > &gam_Biquad3_get_bq1__SWIG(gam::Biquad3 *self){ return self->bq1; }
+SWIGINTERN gam::Biquad< gam::real,gam::real,GAM_DEFAULT_DOMAIN > &gam_Biquad3_get_bq2__SWIG(gam::Biquad3 *self){ return self->bq2; }
 SWIGINTERN float gam_Burst_bang__SWIG(gam::Burst *self){ return (*self)(); }
 SWIGINTERN void gam_Burst_exec__SWIG(gam::Burst *self,float frq1,float frq2,float dec,float rst){ (*self)(frq1,frq2,dec,rst); }
 SWIGINTERN gam::NoiseWhite< gam::RNGMulCon > &gam_Burst_get_src__SWIG(gam::Burst *self){ return self->src; }
-SWIGINTERN gam::Biquad< > &gam_Burst_get_fil__SWIG(gam::Burst *self){ return self->fil; }
+SWIGINTERN gam::Biquad< gam::real,gam::real,GAM_DEFAULT_DOMAIN > &gam_Burst_get_fil__SWIG(gam::Burst *self){ return self->fil; }
 SWIGINTERN gam::Decay< float > &gam_Burst_get_env__SWIG(gam::Burst *self){ return self->env; }
-SWIGINTERN float gam_MonoSynth_bang__SWIG(gam::MonoSynth *self){ return (*self)(); }
-SWIGINTERN gam::Saw< float > &gam_MonoSynth_get_osc__SWIG(gam::MonoSynth *self){ return self->osc; }
+SWIGINTERN float gam_MonoSynth_Tick__SWIG(gam::MonoSynth *self){ return (*self)(); }
+SWIGINTERN gam::Saw< float,GAM_DEFAULT_DOMAIN > &gam_MonoSynth_get_osc__SWIG(gam::MonoSynth *self){ return self->osc; }
 SWIGINTERN gam::Decay< float > &gam_MonoSynth_get_env__SWIG(gam::MonoSynth *self){ return self->env; }
-SWIGINTERN gam::OnePole< float > &gam_MonoSynth_get_opEnv__SWIG(gam::MonoSynth *self){ return self->opEnv; }
-SWIGINTERN gam::Biquad< > &gam_MonoSynth_get_filter__SWIG(gam::MonoSynth *self){ return self->filter; }
-SWIGINTERN float gam_Pluck_bang__SWIG(gam::Pluck *self){ return (*self)(); }
+SWIGINTERN gam::OnePole< float,gam::real,GAM_DEFAULT_DOMAIN > &gam_MonoSynth_get_opEnv__SWIG(gam::MonoSynth *self){ return self->opEnv; }
+SWIGINTERN gam::Biquad< gam::real,gam::real,GAM_DEFAULT_DOMAIN > &gam_MonoSynth_get_filter__SWIG(gam::MonoSynth *self){ return self->filter; }
+SWIGINTERN float gam_Pluck_Tick__SWIG(gam::Pluck *self){ return (*self)(); }
 SWIGINTERN float gam_Pluck_filter__SWIG(gam::Pluck *self,float in){ return (*self)(in); }
-SWIGINTERN float gam_AM_Sl_SampleType_Sg__get__SWIG(gam::AM< SampleType > *self,float car,float mod){ return (*self)(car,mod); }
-SWIGINTERN float gam_Chirp_Sl_SampleType_Sg__bang__SWIG(gam::Chirp< SampleType > *self){ return (*self)(); }
-SWIGINTERN void gam_Chirp_Sl_SampleType_Sg__exec__SWIG_0(gam::Chirp< SampleType > *self,float f1,float f2,float d,bool doReset=false){ return (*self)(f1,f2,d,doReset); }
-SWIGINTERN gam::Sine< float > &gam_Chirp_Sl_SampleType_Sg__get_osc__SWIG(gam::Chirp< SampleType > *self){ return self->osc; }
+SWIGINTERN float gam_AM_Sl_SampleType_Sg__Tick__SWIG(gam::AM< SampleType > *self,float car,float mod){ return (*self)(car,mod); }
+SWIGINTERN float gam_Chirp_Sl_SampleType_Sg__Tick__SWIG(gam::Chirp< SampleType > *self){ return (*self)(); }
+SWIGINTERN void gam_Chirp_Sl_SampleType_Sg__Process__SWIG_0(gam::Chirp< SampleType > *self,float f1,float f2,float d,bool doReset=false){ return (*self)(f1,f2,d,doReset); }
+SWIGINTERN gam::Sine< float,GAM_DEFAULT_DOMAIN > &gam_Chirp_Sl_SampleType_Sg__get_osc__SWIG(gam::Chirp< SampleType > *self){ return self->osc; }
 SWIGINTERN gam::Decay< float > &gam_Chirp_Sl_SampleType_Sg__get_env__SWIG(gam::Chirp< SampleType > *self){ return self->env;}
 
 #include <string.h>
@@ -3042,19 +3102,84 @@ SWIGINTERN float gam_ChebyN_Sl_6_Sc_SampleType_Sg____getitem____SWIG(gam::ChebyN
 SWIGINTERN float gam_ChebyN_Sl_7_Sc_SampleType_Sg____getitem____SWIG(gam::ChebyN< 7,SampleType > const *self,float i0){ return (*self)(i0); }
 SWIGINTERN float gam_ChebyN_Sl_8_Sc_SampleType_Sg____getitem____SWIG(gam::ChebyN< 8,SampleType > const *self,float i0){ return (*self)(i0); }
 SWIGINTERN float gam_ChebyN_Sl_9_Sc_SampleType_Sg____getitem____SWIG(gam::ChebyN< 9,SampleType > const *self,float i0){ return (*self)(i0); }
-SWIGINTERN float gam_Chorus_Sl_SampleType_Sg__exec_sample__SWIG(gam::Chorus< SampleType > *self,float const &v){ return (*self)(v); }
-SWIGINTERN void gam_Chorus_Sl_SampleType_Sg__exec_on__SWIG(gam::Chorus< SampleType > *self,float const &in,float &o1,float &o2){ return (*self)(in,o1,o2); }
+SWIGINTERN float gam_Chorus_Sl_SampleType_Sg__Tick__SWIG(gam::Chorus< SampleType > *self,float const &v){ return (*self)(v); }
+SWIGINTERN void gam_Chorus_Sl_SampleType_Sg__Process__SWIG(gam::Chorus< SampleType > *self,float const &in,float &o1,float &o2){ return (*self)(in,o1,o2); }
 SWIGINTERN void gam_Chorus_Sl_SampleType_Sg__filter_stereo__SWIG(gam::Chorus< SampleType > *self,gam::Vec< 2,SampleType > const &v){ (*self)(v); }
 SWIGINTERN void gam_Chorus_Sl_SampleType_Sg__filter_samples__SWIG(gam::Chorus< SampleType > *self,float const &i1,float const &i2,float &o1,float &o2){ (*self)(i1,i2,o1,o2); }
 SWIGINTERN gam::Comb< float,ipl::Cubic,gam::real,GAM_DEFAULT_DOMAIN > &gam_Chorus_Sl_SampleType_Sg__get_comb1__SWIG(gam::Chorus< SampleType > *self){ return self->comb1; }
 SWIGINTERN gam::Comb< float,ipl::Cubic,gam::real,GAM_DEFAULT_DOMAIN > &gam_Chorus_Sl_SampleType_Sg__get_comb2__SWIG(gam::Chorus< SampleType > *self){ return self->comb2; }
-SWIGINTERN gam::CSine< double > &gam_Chorus_Sl_SampleType_Sg__get_mod__SWIG(gam::Chorus< SampleType > *self){ return self->mod; }
-SWIGINTERN float gam_FreqShift_Sl_SampleType_Sg__exec__SWIG(gam::FreqShift< SampleType > *self,float in){ return (*self)(in); }
-SWIGINTERN gam::CSine< float > gam_FreqShift_Sl_SampleType_Sg__get_mod__SWIG(gam::FreqShift< SampleType > *self){ return self->mod; }
-SWIGINTERN gam::Hilbert< float > gam_FreqShift_Sl_SampleType_Sg__get_hil__SWIG(gam::FreqShift< SampleType > *self){ return self->hil; }
-SWIGINTERN gam::Vec< 2,float > gam_Pan_Sl_SampleType_Sg__exec__SWIG(gam::Pan< SampleType > *self,float in){ return (*self)(in); }
+SWIGINTERN gam::CSine< double,GAM_DEFAULT_DOMAIN > &gam_Chorus_Sl_SampleType_Sg__get_mod__SWIG(gam::Chorus< SampleType > *self){ return self->mod; }
+SWIGINTERN float gam_FreqShift_Sl_SampleType_Sg__Tick__SWIG(gam::FreqShift< SampleType > *self,float in){ return (*self)(in); }
+SWIGINTERN gam::CSine< float,GAM_DEFAULT_DOMAIN > gam_FreqShift_Sl_SampleType_Sg__get_mod__SWIG(gam::FreqShift< SampleType > *self){ return self->mod; }
+SWIGINTERN gam::Hilbert< float,gam::real > gam_FreqShift_Sl_SampleType_Sg__get_hil__SWIG(gam::FreqShift< SampleType > *self){ return self->hil; }
+SWIGINTERN gam::Vec< 2,float > gam_Pan_Sl_SampleType_Sg__Tick__SWIG(gam::Pan< SampleType > *self,float in){ return (*self)(in); }
 SWIGINTERN void gam_Pan_Sl_SampleType_Sg__filter__SWIG(gam::Pan< SampleType > *self,float in,SampleType &out1,SampleType &out2){ (*self)(in,out1,out2); }
 SWIGINTERN void gam_Pan_Sl_SampleType_Sg__filter_sample__SWIG(gam::Pan< SampleType > *self,float in1,float in2,SampleType &out1,SampleType &out2){ (*self)(in1,in2,out1,out2); }
+SWIGINTERN float gam_Quantizer_Sl_SampleType_Sg__Tick__SWIG(gam::Quantizer< SampleType > *self,float in){ return (*self)(in); }
+
+#include "Gamma/Filter.h"
+
+SWIGINTERN float gam_AllPass1_Sl_SampleType_Sc_SampleType_Sg__Tick__SWIG(gam::AllPass1< SampleType,SampleType > *self,float in){ return (*self)(in); }
+SWIGINTERN float gam_BlockDC_Sl_SampleType_Sc_SampleType_Sg__Tick__SWIG(gam::BlockDC< SampleType,SampleType > *self,float in){ return (*self)(in); }
+SWIGINTERN float gam_BlockNyq_Sl_SampleType_Sc_SampleType_Sg__Tick__SWIG(gam::BlockNyq< SampleType,SampleType > *self,float in){ return (*self)(in); }
+SWIGINTERN float gam_AllPass2_Sl_SampleType_Sc_SampleType_Sg__Tick__SWIG(gam::AllPass2< SampleType,SampleType > *self,float in){ return (*self)(in); }
+SWIGINTERN float gam_Notch_Sl_SampleType_Sc_SampleType_Sg__Tick__SWIG(gam::Notch< SampleType,SampleType > *self,float in){ return (*self)(in); }
+SWIGINTERN float gam_Reson_Sl_SampleType_Sc_SampleType_Sg__Tick__SWIG(gam::Reson< SampleType,SampleType > *self,float in){ return (*self)(in); }
+SWIGINTERN gam::Complex< float > gam_Hilbert_Sl_SampleType_Sc_SampleType_Sg__Tick__SWIG(gam::Hilbert< SampleType,SampleType > *self,float in){ return (*self)(in); }
+SWIGINTERN float gam_Integrator_Sl_SampleType_Sc_SampleType_Sg__Tick__SWIG(gam::Integrator< SampleType,SampleType > *self,float in){ return (*self)(in); }
+SWIGINTERN float gam_Differencer_Sl_SampleType_Sg__Tick__SWIG(gam::Differencer< SampleType > *self,float in){ return (*self)(in); }
+SWIGINTERN float gam_MovingAvg_Sl_SampleType_Sg__Tick__SWIG(gam::MovingAvg< SampleType > *self,float in){ return (*self)(in); }
+SWIGINTERN float const &gam_OnePole_Sl_SampleType_Sc_SampleType_Sg__Tick__SWIG(gam::OnePole< SampleType,SampleType > *self){ return (*self)(); }
+SWIGINTERN float const &gam_OnePole_Sl_SampleType_Sc_SampleType_Sg__Process__SWIG(gam::OnePole< SampleType,SampleType > *self,float in){ return (*self)(in); }
+
+#include "Gamma/FormantData.h"
+
+
+#include "Gamma/Noise.h"
+
+SWIGINTERN float gam_NoiseBrown_Sl__Sg__Tick__SWIG(gam::NoiseBrown< > *self){ return (*self)(); }
+SWIGINTERN float gam_NoisePink_Sl__Sg__Tick__SWIG(gam::NoisePink< > *self){ return (*self)(); }
+SWIGINTERN float gam_NoiseWhite_Sl__Sg__Tick__SWIG(gam::NoiseWhite< > *self){ return (*self)(); }
+SWIGINTERN float gam_NoiseBinary_Sl__Sg__Tick__SWIG(gam::NoiseBinary< > *self){ return (*self)(); }
+SWIGINTERN float gam_NoiseViolet_Sl__Sg__Tick__SWIG(gam::NoiseViolet< > *self){ return (*self)(); }
+
+#include "Gamma/Oscillator.h"
+
+SWIGINTERN bool gam_Accum_Sl__Sg__Tick__SWIG(gam::Accum< > *self){ return (*self)(); }
+SWIGINTERN float gam_Sweep_Sl__Sg__Tick__SWIG(gam::Sweep< > *self){ return (*self)(); }
+SWIGINTERN float gam_Osc_Sl_SampleType_Sg__Tick__SWIG(gam::Osc< SampleType > *self){ return (*self)(); }
+SWIGINTERN gam::CSine< float >::complex gam_CSine_Sl_SampleType_Sg__Tick__SWIG(gam::CSine< SampleType > *self){ return (*self)(); }
+SWIGINTERN float gam_Sine_Sl_SampleType_Sg__Tick__SWIG_0(gam::Sine< SampleType > *self,float frq0=float(0)){ return (*self)(frq0); }
+SWIGINTERN float gam_SineRs_Sl_SampleType_Sg__Tick__SWIG(gam::SineRs< SampleType > *self){ return (*self)(); }
+SWIGINTERN float gam_SineDs_Sl_SampleType_Sg__Tick__SWIG(gam::SineDs< SampleType > *self){ return (*self)(); }
+SWIGINTERN gam::Chirplet< float >::complex gam_Chirplet_Sl_SampleType_Sg__Tick__SWIG(gam::Chirplet< SampleType > *self){ return (*self)(); }
+SWIGINTERN float gam_Saw_Sl_SampleType_Sg__Tick__SWIG_0(gam::Saw< SampleType > *self,float itg=0.999){ return (*self)(itg); }
+SWIGINTERN float gam_Square_Sl_SampleType_Sg__Tick__SWIG_0(gam::Square< SampleType > *self,float itg=0.999){ return (*self)(itg); }
+SWIGINTERN float gam_DSF_Sl_SampleType_Sg__Tick__SWIG(gam::DSF< SampleType > *self){ return (*self)(); }
+
+#include "Gamma/Recorder.h"
+
+
+#include "Gamma/Sample.h"
+
+
+#include "Gamma/SamplePlayer.h"
+
+SWIGINTERN float gam_SamplePlayer_Sl_SampleType_Sg__Tick__SWIG_0(gam::SamplePlayer< SampleType > *self,int channel=0){ return (*self)(channel); }
+
+#include "Gamma/SoundFile.h"
+
+
+#include "Gamma/Spatial.h"
+
+SWIGINTERN float gam_LoopGain_Sl_SampleType_Sg__Tick__SWIG(gam::LoopGain< SampleType > *self,float in){ return (*self)(in); }
+SWIGINTERN float gam_Loop1P_Sl_SampleType_Sg__Tick__SWIG(gam::Loop1P< SampleType > *self,float in){ return (*self)(in); }
+SWIGINTERN float gam_Loop1P1Z_Sl_SampleType_Sg__Tick__SWIG(gam::Loop1P1Z< SampleType > *self,float in){ return (*self)(in); }
+SWIGINTERN float gam_Echo_Sl_SampleType_Sg__Tick__SWIG(gam::Echo< SampleType > *self,float in){ return (*self)(in); }
+SWIGINTERN Complex< float > gam_EchoCSine_Sl_SampleType_Sg__Process__SWIG(gam::EchoCSine< SampleType > *self,float real,float imag){ return (*self)(real,imag); }
+SWIGINTERN Complex< float > gam_EchoCSine_Sl_SampleType_Sg__Tick__SWIG(gam::EchoCSine< SampleType > *self,float in){ return (*self)(in); }
+SWIGINTERN float gam_ReverbMS_Sl_SampleType_Sg__Tick__SWIG(gam::ReverbMS< SampleType > *self,float in){ return (*self)(in); }
+SWIGINTERN Vec< 2,float > gam_Dist_Sl_2_Sc_SampleType_Sg__Tick__SWIG(gam::Dist< 2,SampleType > *self,float in){ return (*self)(in); }
 #ifdef __cplusplus
 extern "C" {
 #endif
@@ -5857,22 +5982,22 @@ fail:
 }
 
 
-static int _wrap_EnvFollow___getitem(lua_State* L) {
+static int _wrap_EnvFollow_Tick(lua_State* L) {
   int SWIG_arg = 0;
   gam::EnvFollow< SampleType > *arg1 = (gam::EnvFollow< SampleType > *) 0 ;
   float arg2 ;
   float result;
   
-  SWIG_check_num_args("gam::EnvFollow< SampleType >::__getitem__",2,2)
-  if(!SWIG_isptrtype(L,1)) SWIG_fail_arg("gam::EnvFollow< SampleType >::__getitem__",1,"gam::EnvFollow< SampleType > *");
-  if(!lua_isnumber(L,2)) SWIG_fail_arg("gam::EnvFollow< SampleType >::__getitem__",2,"float");
+  SWIG_check_num_args("gam::EnvFollow< SampleType >::Tick",2,2)
+  if(!SWIG_isptrtype(L,1)) SWIG_fail_arg("gam::EnvFollow< SampleType >::Tick",1,"gam::EnvFollow< SampleType > *");
+  if(!lua_isnumber(L,2)) SWIG_fail_arg("gam::EnvFollow< SampleType >::Tick",2,"float");
   
   if (!SWIG_IsOK(SWIG_ConvertPtr(L,1,(void**)&arg1,SWIGTYPE_p_gam__EnvFollowT_float_gam__real_gam__GAM_DEFAULT_DOMAIN_t,0))){
-    SWIG_fail_ptr("EnvFollow___getitem",1,SWIGTYPE_p_gam__EnvFollowT_float_gam__real_gam__GAM_DEFAULT_DOMAIN_t);
+    SWIG_fail_ptr("EnvFollow_Tick",1,SWIGTYPE_p_gam__EnvFollowT_float_gam__real_gam__GAM_DEFAULT_DOMAIN_t);
   }
   
   arg2 = (float)lua_tonumber(L, 2);
-  result = (float)gam_EnvFollow_Sl_SampleType_Sg____getitem____SWIG(arg1,arg2);
+  result = (float)gam_EnvFollow_Sl_SampleType_Sg__Tick__SWIG(arg1,arg2);
   lua_pushnumber(L, (lua_Number) result); SWIG_arg++;
   return SWIG_arg;
   
@@ -6082,7 +6207,7 @@ static swig_lua_attribute swig_EnvFollow_attributes[] = {
 };
 static swig_lua_method swig_EnvFollow_methods[]= {
     { "__call", _wrap_EnvFollow___call},
-    { "__getitem", _wrap_EnvFollow___getitem},
+    { "Tick", _wrap_EnvFollow_Tick},
     { "get_filter", _wrap_EnvFollow_get_filter},
     { "value", _wrap_EnvFollow_value},
     { "lag", _wrap_EnvFollow_lag},
@@ -6091,7 +6216,6 @@ static swig_lua_method swig_EnvFollow_methods[]= {
 };
 static swig_lua_method swig_EnvFollow_meta[] = {
     { "__call", _wrap_EnvFollow___call},
-    { "__getitem", _wrap_EnvFollow___getitem},
     {0,0}
 };
 
@@ -6359,19 +6483,19 @@ fail:
 }
 
 
-static int _wrap_PCounter_get(lua_State* L) {
+static int _wrap_PCounter_Tick(lua_State* L) {
   int SWIG_arg = 0;
   gam::PCounter *arg1 = (gam::PCounter *) 0 ;
   bool result;
   
-  SWIG_check_num_args("gam::PCounter::get",1,1)
-  if(!SWIG_isptrtype(L,1)) SWIG_fail_arg("gam::PCounter::get",1,"gam::PCounter *");
+  SWIG_check_num_args("gam::PCounter::Tick",1,1)
+  if(!SWIG_isptrtype(L,1)) SWIG_fail_arg("gam::PCounter::Tick",1,"gam::PCounter *");
   
   if (!SWIG_IsOK(SWIG_ConvertPtr(L,1,(void**)&arg1,SWIGTYPE_p_gam__PCounter,0))){
-    SWIG_fail_ptr("PCounter_get",1,SWIGTYPE_p_gam__PCounter);
+    SWIG_fail_ptr("PCounter_Tick",1,SWIGTYPE_p_gam__PCounter);
   }
   
-  result = (bool)gam_PCounter_get__SWIG(arg1);
+  result = (bool)gam_PCounter_Tick__SWIG(arg1);
   lua_pushboolean(L,(int)(result!=0)); SWIG_arg++;
   return SWIG_arg;
   
@@ -6403,7 +6527,7 @@ static swig_lua_method swig_PCounter_methods[]= {
     { "cycled", _wrap_PCounter_cycled},
     { "count", _wrap_PCounter_count},
     { "reset", _wrap_PCounter_reset},
-    { "get", _wrap_PCounter_get},
+    { "Tick", _wrap_PCounter_Tick},
     {0,0}
 };
 static swig_lua_method swig_PCounter_meta[] = {
@@ -6548,23 +6672,23 @@ fail:
 }
 
 
-static int _wrap_MaxAbs___getitem(lua_State* L) {
+static int _wrap_MaxAbs_Tick(lua_State* L) {
   int SWIG_arg = 0;
   gam::MaxAbs< SampleType > *arg1 = (gam::MaxAbs< SampleType > *) 0 ;
   float *arg2 = 0 ;
   float temp2 ;
   float result;
   
-  SWIG_check_num_args("gam::MaxAbs< SampleType >::__getitem__",2,2)
-  if(!SWIG_isptrtype(L,1)) SWIG_fail_arg("gam::MaxAbs< SampleType >::__getitem__",1,"gam::MaxAbs< SampleType > *");
-  if(!lua_isnumber(L,2)) SWIG_fail_arg("gam::MaxAbs< SampleType >::__getitem__",2,"float const &");
+  SWIG_check_num_args("gam::MaxAbs< SampleType >::Tick",2,2)
+  if(!SWIG_isptrtype(L,1)) SWIG_fail_arg("gam::MaxAbs< SampleType >::Tick",1,"gam::MaxAbs< SampleType > *");
+  if(!lua_isnumber(L,2)) SWIG_fail_arg("gam::MaxAbs< SampleType >::Tick",2,"float const &");
   
   if (!SWIG_IsOK(SWIG_ConvertPtr(L,1,(void**)&arg1,SWIGTYPE_p_gam__MaxAbsT_float_t,0))){
-    SWIG_fail_ptr("MaxAbs___getitem",1,SWIGTYPE_p_gam__MaxAbsT_float_t);
+    SWIG_fail_ptr("MaxAbs_Tick",1,SWIGTYPE_p_gam__MaxAbsT_float_t);
   }
   
   temp2=(float)lua_tonumber(L,2); arg2=&temp2;
-  result = (float)gam_MaxAbs_Sl_SampleType_Sg____getitem____SWIG(arg1,(float const &)*arg2);
+  result = (float)gam_MaxAbs_Sl_SampleType_Sg__Tick__SWIG(arg1,(float const &)*arg2);
   lua_pushnumber(L, (lua_Number) result); SWIG_arg++;
   return SWIG_arg;
   
@@ -6594,11 +6718,10 @@ static swig_lua_attribute swig_MaxAbs_attributes[] = {
 static swig_lua_method swig_MaxAbs_methods[]= {
     { "value", _wrap_MaxAbs_value},
     { "valueL", _wrap_MaxAbs_valueL},
-    { "__getitem", _wrap_MaxAbs___getitem},
+    { "Tick", _wrap_MaxAbs_Tick},
     {0,0}
 };
 static swig_lua_method swig_MaxAbs_meta[] = {
-    { "__getitem", _wrap_MaxAbs___getitem},
     {0,0}
 };
 
@@ -6744,7 +6867,7 @@ fail:
 }
 
 
-static int _wrap_SilenceDetect_get__SWIG_0(lua_State* L) {
+static int _wrap_SilenceDetect_Tick__SWIG_0(lua_State* L) {
   int SWIG_arg = 0;
   gam::SilenceDetect *arg1 = (gam::SilenceDetect *) 0 ;
   SampleType *arg2 = 0 ;
@@ -6753,18 +6876,18 @@ static int _wrap_SilenceDetect_get__SWIG_0(lua_State* L) {
   SampleType temp3 ;
   bool result;
   
-  SWIG_check_num_args("gam::SilenceDetect::get",3,3)
-  if(!SWIG_isptrtype(L,1)) SWIG_fail_arg("gam::SilenceDetect::get",1,"gam::SilenceDetect *");
-  if(!lua_isnumber(L,2)) SWIG_fail_arg("gam::SilenceDetect::get",2,"SampleType const &");
-  if(!lua_isnumber(L,3)) SWIG_fail_arg("gam::SilenceDetect::get",3,"SampleType const &");
+  SWIG_check_num_args("gam::SilenceDetect::Tick",3,3)
+  if(!SWIG_isptrtype(L,1)) SWIG_fail_arg("gam::SilenceDetect::Tick",1,"gam::SilenceDetect *");
+  if(!lua_isnumber(L,2)) SWIG_fail_arg("gam::SilenceDetect::Tick",2,"SampleType const &");
+  if(!lua_isnumber(L,3)) SWIG_fail_arg("gam::SilenceDetect::Tick",3,"SampleType const &");
   
   if (!SWIG_IsOK(SWIG_ConvertPtr(L,1,(void**)&arg1,SWIGTYPE_p_gam__SilenceDetect,0))){
-    SWIG_fail_ptr("SilenceDetect_get",1,SWIGTYPE_p_gam__SilenceDetect);
+    SWIG_fail_ptr("SilenceDetect_Tick",1,SWIGTYPE_p_gam__SilenceDetect);
   }
   
   temp2=(SampleType)lua_tonumber(L,2); arg2=&temp2;
   temp3=(SampleType)lua_tonumber(L,3); arg3=&temp3;
-  result = (bool)gam_SilenceDetect_get__SWIG_0(arg1,(float const &)*arg2,(float const &)*arg3);
+  result = (bool)gam_SilenceDetect_Tick__SWIG_0(arg1,(float const &)*arg2,(float const &)*arg3);
   lua_pushboolean(L,(int)(result!=0)); SWIG_arg++;
   return SWIG_arg;
   
@@ -6776,23 +6899,23 @@ fail:
 }
 
 
-static int _wrap_SilenceDetect_get__SWIG_1(lua_State* L) {
+static int _wrap_SilenceDetect_Tick__SWIG_1(lua_State* L) {
   int SWIG_arg = 0;
   gam::SilenceDetect *arg1 = (gam::SilenceDetect *) 0 ;
   SampleType *arg2 = 0 ;
   SampleType temp2 ;
   bool result;
   
-  SWIG_check_num_args("gam::SilenceDetect::get",2,2)
-  if(!SWIG_isptrtype(L,1)) SWIG_fail_arg("gam::SilenceDetect::get",1,"gam::SilenceDetect *");
-  if(!lua_isnumber(L,2)) SWIG_fail_arg("gam::SilenceDetect::get",2,"SampleType const &");
+  SWIG_check_num_args("gam::SilenceDetect::Tick",2,2)
+  if(!SWIG_isptrtype(L,1)) SWIG_fail_arg("gam::SilenceDetect::Tick",1,"gam::SilenceDetect *");
+  if(!lua_isnumber(L,2)) SWIG_fail_arg("gam::SilenceDetect::Tick",2,"SampleType const &");
   
   if (!SWIG_IsOK(SWIG_ConvertPtr(L,1,(void**)&arg1,SWIGTYPE_p_gam__SilenceDetect,0))){
-    SWIG_fail_ptr("SilenceDetect_get",1,SWIGTYPE_p_gam__SilenceDetect);
+    SWIG_fail_ptr("SilenceDetect_Tick",1,SWIGTYPE_p_gam__SilenceDetect);
   }
   
   temp2=(SampleType)lua_tonumber(L,2); arg2=&temp2;
-  result = (bool)gam_SilenceDetect_get__SWIG_0(arg1,(float const &)*arg2);
+  result = (bool)gam_SilenceDetect_Tick__SWIG_0(arg1,(float const &)*arg2);
   lua_pushboolean(L,(int)(result!=0)); SWIG_arg++;
   return SWIG_arg;
   
@@ -6804,7 +6927,7 @@ fail:
 }
 
 
-static int _wrap_SilenceDetect_get(lua_State* L) {
+static int _wrap_SilenceDetect_Tick(lua_State* L) {
   int argc;
   int argv[4]={
     1,2,3,4
@@ -6826,7 +6949,7 @@ static int _wrap_SilenceDetect_get(lua_State* L) {
         _v = lua_isnumber(L,argv[1]);
       }
       if (_v) {
-        return _wrap_SilenceDetect_get__SWIG_1(L);
+        return _wrap_SilenceDetect_Tick__SWIG_1(L);
       }
     }
   }
@@ -6849,16 +6972,16 @@ static int _wrap_SilenceDetect_get(lua_State* L) {
           _v = lua_isnumber(L,argv[2]);
         }
         if (_v) {
-          return _wrap_SilenceDetect_get__SWIG_0(L);
+          return _wrap_SilenceDetect_Tick__SWIG_0(L);
         }
       }
     }
   }
   
-  SWIG_Lua_pusherrstring(L,"Wrong arguments for overloaded function 'SilenceDetect_get'\n"
+  SWIG_Lua_pusherrstring(L,"Wrong arguments for overloaded function 'SilenceDetect_Tick'\n"
     "  Possible C/C++ prototypes are:\n"
-    "    gam::SilenceDetect::get(SampleType const &,SampleType const &)\n"
-    "    gam::SilenceDetect::get(SampleType const &)\n");
+    "    gam::SilenceDetect::Tick(SampleType const &,SampleType const &)\n"
+    "    gam::SilenceDetect::Tick(SampleType const &)\n");
   lua_error(L);return 0;
 }
 
@@ -6905,7 +7028,7 @@ static swig_lua_attribute swig_SilenceDetect_attributes[] = {
 static swig_lua_method swig_SilenceDetect_methods[]= {
     { "count", _wrap_SilenceDetect_count},
     { "reset", _wrap_SilenceDetect_reset},
-    { "get", _wrap_SilenceDetect_get},
+    { "Tick", _wrap_SilenceDetect_Tick},
     { "done", _wrap_SilenceDetect_done},
     {0,0}
 };
@@ -7020,22 +7143,22 @@ static int _wrap_new_Threshold(lua_State* L) {
 }
 
 
-static int _wrap_Threshold___getitem(lua_State* L) {
+static int _wrap_Threshold_Tick(lua_State* L) {
   int SWIG_arg = 0;
   gam::Threshold< SampleType > *arg1 = (gam::Threshold< SampleType > *) 0 ;
   float arg2 ;
   float result;
   
-  SWIG_check_num_args("gam::Threshold< SampleType >::__getitem__",2,2)
-  if(!SWIG_isptrtype(L,1)) SWIG_fail_arg("gam::Threshold< SampleType >::__getitem__",1,"gam::Threshold< SampleType > *");
-  if(!lua_isnumber(L,2)) SWIG_fail_arg("gam::Threshold< SampleType >::__getitem__",2,"float");
+  SWIG_check_num_args("gam::Threshold< SampleType >::Tick",2,2)
+  if(!SWIG_isptrtype(L,1)) SWIG_fail_arg("gam::Threshold< SampleType >::Tick",1,"gam::Threshold< SampleType > *");
+  if(!lua_isnumber(L,2)) SWIG_fail_arg("gam::Threshold< SampleType >::Tick",2,"float");
   
   if (!SWIG_IsOK(SWIG_ConvertPtr(L,1,(void**)&arg1,SWIGTYPE_p_gam__ThresholdT_float_t,0))){
-    SWIG_fail_ptr("Threshold___getitem",1,SWIGTYPE_p_gam__ThresholdT_float_t);
+    SWIG_fail_ptr("Threshold_Tick",1,SWIGTYPE_p_gam__ThresholdT_float_t);
   }
   
   arg2 = (float)lua_tonumber(L, 2);
-  result = (float)gam_Threshold_Sl_SampleType_Sg____getitem____SWIG(arg1,arg2);
+  result = (float)gam_Threshold_Sl_SampleType_Sg__Tick__SWIG(arg1,arg2);
   lua_pushnumber(L, (lua_Number) result); SWIG_arg++;
   return SWIG_arg;
   
@@ -7047,7 +7170,7 @@ fail:
 }
 
 
-static int _wrap_Threshold_get(lua_State* L) {
+static int _wrap_Threshold_Process(lua_State* L) {
   int SWIG_arg = 0;
   gam::Threshold< SampleType > *arg1 = (gam::Threshold< SampleType > *) 0 ;
   float arg2 ;
@@ -7055,20 +7178,20 @@ static int _wrap_Threshold_get(lua_State* L) {
   float arg4 ;
   float result;
   
-  SWIG_check_num_args("gam::Threshold< SampleType >::get",4,4)
-  if(!SWIG_isptrtype(L,1)) SWIG_fail_arg("gam::Threshold< SampleType >::get",1,"gam::Threshold< SampleType > *");
-  if(!lua_isnumber(L,2)) SWIG_fail_arg("gam::Threshold< SampleType >::get",2,"float");
-  if(!lua_isnumber(L,3)) SWIG_fail_arg("gam::Threshold< SampleType >::get",3,"float");
-  if(!lua_isnumber(L,4)) SWIG_fail_arg("gam::Threshold< SampleType >::get",4,"float");
+  SWIG_check_num_args("gam::Threshold< SampleType >::Process",4,4)
+  if(!SWIG_isptrtype(L,1)) SWIG_fail_arg("gam::Threshold< SampleType >::Process",1,"gam::Threshold< SampleType > *");
+  if(!lua_isnumber(L,2)) SWIG_fail_arg("gam::Threshold< SampleType >::Process",2,"float");
+  if(!lua_isnumber(L,3)) SWIG_fail_arg("gam::Threshold< SampleType >::Process",3,"float");
+  if(!lua_isnumber(L,4)) SWIG_fail_arg("gam::Threshold< SampleType >::Process",4,"float");
   
   if (!SWIG_IsOK(SWIG_ConvertPtr(L,1,(void**)&arg1,SWIGTYPE_p_gam__ThresholdT_float_t,0))){
-    SWIG_fail_ptr("Threshold_get",1,SWIGTYPE_p_gam__ThresholdT_float_t);
+    SWIG_fail_ptr("Threshold_Process",1,SWIGTYPE_p_gam__ThresholdT_float_t);
   }
   
   arg2 = (float)lua_tonumber(L, 2);
   arg3 = (float)lua_tonumber(L, 3);
   arg4 = (float)lua_tonumber(L, 4);
-  result = (float)gam_Threshold_Sl_SampleType_Sg__get__SWIG(arg1,arg2,arg3,arg4);
+  result = (float)gam_Threshold_Sl_SampleType_Sg__Process__SWIG(arg1,arg2,arg3,arg4);
   lua_pushnumber(L, (lua_Number) result); SWIG_arg++;
   return SWIG_arg;
   
@@ -7083,7 +7206,7 @@ fail:
 static int _wrap_Threshold_get_lpf(lua_State* L) {
   int SWIG_arg = 0;
   gam::Threshold< SampleType > *arg1 = (gam::Threshold< SampleType > *) 0 ;
-  gam::OnePole< float > result;
+  SwigValueWrapper< gam::OnePole< float,gam::real,GAM_DEFAULT_DOMAIN > > result;
   
   SWIG_check_num_args("gam::Threshold< SampleType >::get_lpf",1,1)
   if(!SWIG_isptrtype(L,1)) SWIG_fail_arg("gam::Threshold< SampleType >::get_lpf",1,"gam::Threshold< SampleType > *");
@@ -7094,8 +7217,8 @@ static int _wrap_Threshold_get_lpf(lua_State* L) {
   
   result = gam_Threshold_Sl_SampleType_Sg__get_lpf__SWIG(arg1);
   {
-    gam::OnePole< float > * resultptr = new gam::OnePole< float >((const gam::OnePole< float > &) result);
-    SWIG_NewPointerObj(L,(void *) resultptr,SWIGTYPE_p_gam__OnePoleT_float_t,1); SWIG_arg++;
+    gam::OnePole< float,gam::real,GAM_DEFAULT_DOMAIN > * resultptr = new gam::OnePole< float,gam::real,GAM_DEFAULT_DOMAIN >((const gam::OnePole< float,gam::real,GAM_DEFAULT_DOMAIN > &) result);
+    SWIG_NewPointerObj(L,(void *) resultptr,SWIGTYPE_p_gam__OnePoleT_float_gam__real_GAM_DEFAULT_DOMAIN_t,1); SWIG_arg++;
   }
   return SWIG_arg;
   
@@ -7174,15 +7297,14 @@ static swig_lua_attribute swig_Threshold_attributes[] = {
     {0,0,0}
 };
 static swig_lua_method swig_Threshold_methods[]= {
-    { "__getitem", _wrap_Threshold___getitem},
-    { "get", _wrap_Threshold_get},
+    { "Tick", _wrap_Threshold_Tick},
+    { "Process", _wrap_Threshold_Process},
     { "get_lpf", _wrap_Threshold_get_lpf},
     { "get_thresh", _wrap_Threshold_get_thresh},
     { "inv", _wrap_Threshold_inv},
     {0,0}
 };
 static swig_lua_method swig_Threshold_meta[] = {
-    { "__getitem", _wrap_Threshold___getitem},
     {0,0}
 };
 
@@ -7300,22 +7422,22 @@ fail:
 }
 
 
-static int _wrap_ZeroCrossRate___getitem(lua_State* L) {
+static int _wrap_ZeroCrossRate_Tick(lua_State* L) {
   int SWIG_arg = 0;
   gam::ZeroCrossRate< SampleType > *arg1 = (gam::ZeroCrossRate< SampleType > *) 0 ;
   float arg2 ;
   float result;
   
-  SWIG_check_num_args("gam::ZeroCrossRate< SampleType >::__getitem__",2,2)
-  if(!SWIG_isptrtype(L,1)) SWIG_fail_arg("gam::ZeroCrossRate< SampleType >::__getitem__",1,"gam::ZeroCrossRate< SampleType > *");
-  if(!lua_isnumber(L,2)) SWIG_fail_arg("gam::ZeroCrossRate< SampleType >::__getitem__",2,"float");
+  SWIG_check_num_args("gam::ZeroCrossRate< SampleType >::Tick",2,2)
+  if(!SWIG_isptrtype(L,1)) SWIG_fail_arg("gam::ZeroCrossRate< SampleType >::Tick",1,"gam::ZeroCrossRate< SampleType > *");
+  if(!lua_isnumber(L,2)) SWIG_fail_arg("gam::ZeroCrossRate< SampleType >::Tick",2,"float");
   
   if (!SWIG_IsOK(SWIG_ConvertPtr(L,1,(void**)&arg1,SWIGTYPE_p_gam__ZeroCrossRateT_float_t,0))){
-    SWIG_fail_ptr("ZeroCrossRate___getitem",1,SWIGTYPE_p_gam__ZeroCrossRateT_float_t);
+    SWIG_fail_ptr("ZeroCrossRate_Tick",1,SWIGTYPE_p_gam__ZeroCrossRateT_float_t);
   }
   
   arg2 = (float)lua_tonumber(L, 2);
-  result = (float)gam_ZeroCrossRate_Sl_SampleType_Sg____getitem____SWIG(arg1,arg2);
+  result = (float)gam_ZeroCrossRate_Sl_SampleType_Sg__Tick__SWIG(arg1,arg2);
   lua_pushnumber(L, (lua_Number) result); SWIG_arg++;
   return SWIG_arg;
   
@@ -7344,11 +7466,10 @@ static swig_lua_attribute swig_ZeroCrossRate_attributes[] = {
 };
 static swig_lua_method swig_ZeroCrossRate_methods[]= {
     { "value", _wrap_ZeroCrossRate_value},
-    { "__getitem", _wrap_ZeroCrossRate___getitem},
+    { "Tick", _wrap_ZeroCrossRate_Tick},
     {0,0}
 };
 static swig_lua_method swig_ZeroCrossRate_meta[] = {
-    { "__getitem", _wrap_ZeroCrossRate___getitem},
     {0,0}
 };
 
@@ -7877,19 +7998,19 @@ fail:
 }
 
 
-static int _wrap_AudioIOData_get(lua_State* L) {
+static int _wrap_AudioIOData_Tick(lua_State* L) {
   int SWIG_arg = 0;
   gam::AudioIOData *arg1 = (gam::AudioIOData *) 0 ;
   bool result;
   
-  SWIG_check_num_args("gam::AudioIOData::get",1,1)
-  if(!SWIG_isptrtype(L,1)) SWIG_fail_arg("gam::AudioIOData::get",1,"gam::AudioIOData const *");
+  SWIG_check_num_args("gam::AudioIOData::Tick",1,1)
+  if(!SWIG_isptrtype(L,1)) SWIG_fail_arg("gam::AudioIOData::Tick",1,"gam::AudioIOData const *");
   
   if (!SWIG_IsOK(SWIG_ConvertPtr(L,1,(void**)&arg1,SWIGTYPE_p_gam__AudioIOData,0))){
-    SWIG_fail_ptr("AudioIOData_get",1,SWIGTYPE_p_gam__AudioIOData);
+    SWIG_fail_ptr("AudioIOData_Tick",1,SWIGTYPE_p_gam__AudioIOData);
   }
   
-  result = (bool)gam_AudioIOData_get__SWIG((gam::AudioIOData const *)arg1);
+  result = (bool)gam_AudioIOData_Tick__SWIG((gam::AudioIOData const *)arg1);
   lua_pushboolean(L,(int)(result!=0)); SWIG_arg++;
   return SWIG_arg;
   
@@ -9464,7 +9585,7 @@ static swig_lua_attribute swig_AudioIOData_attributes[] = {
     {0,0,0}
 };
 static swig_lua_method swig_AudioIOData_methods[]= {
-    { "get", _wrap_AudioIOData_get},
+    { "Tick", _wrap_AudioIOData_Tick},
     { "bus", _wrap_AudioIOData_bus},
     { "busBuffer", _wrap_AudioIOData_busBuffer},
     { "c_in", _wrap_AudioIOData_c_in},
@@ -14559,22 +14680,22 @@ fail:
 }
 
 
-static int _wrap_DFT_get(lua_State* L) {
+static int _wrap_DFT_Process(lua_State* L) {
   int SWIG_arg = 0;
   gam::DFT *arg1 = (gam::DFT *) 0 ;
   float arg2 ;
   bool result;
   
-  SWIG_check_num_args("gam::DFT::get",2,2)
-  if(!SWIG_isptrtype(L,1)) SWIG_fail_arg("gam::DFT::get",1,"gam::DFT *");
-  if(!lua_isnumber(L,2)) SWIG_fail_arg("gam::DFT::get",2,"float");
+  SWIG_check_num_args("gam::DFT::Process",2,2)
+  if(!SWIG_isptrtype(L,1)) SWIG_fail_arg("gam::DFT::Process",1,"gam::DFT *");
+  if(!lua_isnumber(L,2)) SWIG_fail_arg("gam::DFT::Process",2,"float");
   
   if (!SWIG_IsOK(SWIG_ConvertPtr(L,1,(void**)&arg1,SWIGTYPE_p_gam__DFT,0))){
-    SWIG_fail_ptr("DFT_get",1,SWIGTYPE_p_gam__DFT);
+    SWIG_fail_ptr("DFT_Process",1,SWIGTYPE_p_gam__DFT);
   }
   
   arg2 = (float)lua_tonumber(L, 2);
-  result = (bool)gam_DFT_get__SWIG(arg1,arg2);
+  result = (bool)gam_DFT_Process__SWIG(arg1,arg2);
   lua_pushboolean(L,(int)(result!=0)); SWIG_arg++;
   return SWIG_arg;
   
@@ -14586,19 +14707,19 @@ fail:
 }
 
 
-static int _wrap_DFT_bang(lua_State* L) {
+static int _wrap_DFT_Tick(lua_State* L) {
   int SWIG_arg = 0;
   gam::DFT *arg1 = (gam::DFT *) 0 ;
   float result;
   
-  SWIG_check_num_args("gam::DFT::bang",1,1)
-  if(!SWIG_isptrtype(L,1)) SWIG_fail_arg("gam::DFT::bang",1,"gam::DFT *");
+  SWIG_check_num_args("gam::DFT::Tick",1,1)
+  if(!SWIG_isptrtype(L,1)) SWIG_fail_arg("gam::DFT::Tick",1,"gam::DFT *");
   
   if (!SWIG_IsOK(SWIG_ConvertPtr(L,1,(void**)&arg1,SWIGTYPE_p_gam__DFT,0))){
-    SWIG_fail_ptr("DFT_bang",1,SWIGTYPE_p_gam__DFT);
+    SWIG_fail_ptr("DFT_Tick",1,SWIGTYPE_p_gam__DFT);
   }
   
-  result = (float)gam_DFT_bang__SWIG(arg1);
+  result = (float)gam_DFT_Tick__SWIG(arg1);
   lua_pushnumber(L, (lua_Number) result); SWIG_arg++;
   return SWIG_arg;
   
@@ -15116,8 +15237,8 @@ static swig_lua_method swig_DFT_methods[]= {
     { "sizePad", _wrap_DFT_sizePad},
     { "sizeWin", _wrap_DFT_sizeWin},
     { "domainHop", _wrap_DFT_domainHop},
-    { "get", _wrap_DFT_get},
-    { "bang", _wrap_DFT_bang},
+    { "Process", _wrap_DFT_Process},
+    { "Tick", _wrap_DFT_Tick},
     { "forward", _wrap_DFT_forward},
     { "inverse", _wrap_DFT_inverse},
     { "inverseOnNext", _wrap_DFT_inverseOnNext},
@@ -15567,22 +15688,22 @@ fail:
 }
 
 
-static int _wrap_STFT_get(lua_State* L) {
+static int _wrap_STFT_Tick(lua_State* L) {
   int SWIG_arg = 0;
   gam::STFT *arg1 = (gam::STFT *) 0 ;
   float arg2 ;
   bool result;
   
-  SWIG_check_num_args("gam::STFT::get",2,2)
-  if(!SWIG_isptrtype(L,1)) SWIG_fail_arg("gam::STFT::get",1,"gam::STFT *");
-  if(!lua_isnumber(L,2)) SWIG_fail_arg("gam::STFT::get",2,"float");
+  SWIG_check_num_args("gam::STFT::Tick",2,2)
+  if(!SWIG_isptrtype(L,1)) SWIG_fail_arg("gam::STFT::Tick",1,"gam::STFT *");
+  if(!lua_isnumber(L,2)) SWIG_fail_arg("gam::STFT::Tick",2,"float");
   
   if (!SWIG_IsOK(SWIG_ConvertPtr(L,1,(void**)&arg1,SWIGTYPE_p_gam__STFT,0))){
-    SWIG_fail_ptr("STFT_get",1,SWIGTYPE_p_gam__STFT);
+    SWIG_fail_ptr("STFT_Tick",1,SWIGTYPE_p_gam__STFT);
   }
   
   arg2 = (float)lua_tonumber(L, 2);
-  result = (bool)gam_STFT_get__SWIG(arg1,arg2);
+  result = (bool)gam_STFT_Tick__SWIG(arg1,arg2);
   lua_pushboolean(L,(int)(result!=0)); SWIG_arg++;
   return SWIG_arg;
   
@@ -16237,7 +16358,7 @@ static swig_lua_attribute swig_STFT_attributes[] = {
 };
 static swig_lua_method swig_STFT_methods[]= {
     { "__call", _wrap_STFT___call},
-    { "get", _wrap_STFT_get},
+    { "Tick", _wrap_STFT_Tick},
     { "forward", _wrap_STFT_forward},
     { "inverse", _wrap_STFT_inverse},
     { "resize", _wrap_STFT_resize},
@@ -16562,19 +16683,19 @@ fail:
 }
 
 
-static int _wrap_SlidingWindow_foo(lua_State* L) {
+static int _wrap_SlidingWindow_Get(lua_State* L) {
   int SWIG_arg = 0;
   gam::SlidingWindow< SampleType > *arg1 = (gam::SlidingWindow< SampleType > *) 0 ;
   float *result = 0 ;
   
-  SWIG_check_num_args("gam::SlidingWindow< SampleType >::foo",1,1)
-  if(!SWIG_isptrtype(L,1)) SWIG_fail_arg("gam::SlidingWindow< SampleType >::foo",1,"gam::SlidingWindow< SampleType > *");
+  SWIG_check_num_args("gam::SlidingWindow< SampleType >::Get",1,1)
+  if(!SWIG_isptrtype(L,1)) SWIG_fail_arg("gam::SlidingWindow< SampleType >::Get",1,"gam::SlidingWindow< SampleType > *");
   
   if (!SWIG_IsOK(SWIG_ConvertPtr(L,1,(void**)&arg1,SWIGTYPE_p_gam__SlidingWindowT_float_t,0))){
-    SWIG_fail_ptr("SlidingWindow_foo",1,SWIGTYPE_p_gam__SlidingWindowT_float_t);
+    SWIG_fail_ptr("SlidingWindow_Get",1,SWIGTYPE_p_gam__SlidingWindowT_float_t);
   }
   
-  result = (float *)gam_SlidingWindow_Sl_SampleType_Sg__foo__SWIG(arg1);
+  result = (float *)gam_SlidingWindow_Sl_SampleType_Sg__Get__SWIG(arg1);
   SWIG_NewPointerObj(L,result,SWIGTYPE_p_float,0); SWIG_arg++; 
   return SWIG_arg;
   
@@ -16586,22 +16707,22 @@ fail:
 }
 
 
-static int _wrap_SlidingWindow_get__SWIG_0(lua_State* L) {
+static int _wrap_SlidingWindow_Tick(lua_State* L) {
   int SWIG_arg = 0;
   gam::SlidingWindow< SampleType > *arg1 = (gam::SlidingWindow< SampleType > *) 0 ;
   float arg2 ;
   bool result;
   
-  SWIG_check_num_args("gam::SlidingWindow< SampleType >::get",2,2)
-  if(!SWIG_isptrtype(L,1)) SWIG_fail_arg("gam::SlidingWindow< SampleType >::get",1,"gam::SlidingWindow< SampleType > *");
-  if(!lua_isnumber(L,2)) SWIG_fail_arg("gam::SlidingWindow< SampleType >::get",2,"float");
+  SWIG_check_num_args("gam::SlidingWindow< SampleType >::Tick",2,2)
+  if(!SWIG_isptrtype(L,1)) SWIG_fail_arg("gam::SlidingWindow< SampleType >::Tick",1,"gam::SlidingWindow< SampleType > *");
+  if(!lua_isnumber(L,2)) SWIG_fail_arg("gam::SlidingWindow< SampleType >::Tick",2,"float");
   
   if (!SWIG_IsOK(SWIG_ConvertPtr(L,1,(void**)&arg1,SWIGTYPE_p_gam__SlidingWindowT_float_t,0))){
-    SWIG_fail_ptr("SlidingWindow_get",1,SWIGTYPE_p_gam__SlidingWindowT_float_t);
+    SWIG_fail_ptr("SlidingWindow_Tick",1,SWIGTYPE_p_gam__SlidingWindowT_float_t);
   }
   
   arg2 = (float)lua_tonumber(L, 2);
-  result = (bool)gam_SlidingWindow_Sl_SampleType_Sg__get__SWIG_0(arg1,arg2);
+  result = (bool)gam_SlidingWindow_Sl_SampleType_Sg__Tick__SWIG(arg1,arg2);
   lua_pushboolean(L,(int)(result!=0)); SWIG_arg++;
   return SWIG_arg;
   
@@ -16613,29 +16734,29 @@ fail:
 }
 
 
-static int _wrap_SlidingWindow_get__SWIG_1(lua_State* L) {
+static int _wrap_SlidingWindow_Process(lua_State* L) {
   int SWIG_arg = 0;
   gam::SlidingWindow< SampleType > *arg1 = (gam::SlidingWindow< SampleType > *) 0 ;
   float *arg2 = (float *) 0 ;
   float arg3 ;
   bool result;
   
-  SWIG_check_num_args("gam::SlidingWindow< SampleType >::get",3,3)
-  if(!SWIG_isptrtype(L,1)) SWIG_fail_arg("gam::SlidingWindow< SampleType >::get",1,"gam::SlidingWindow< SampleType > *");
-  if(!SWIG_isptrtype(L,2)) SWIG_fail_arg("gam::SlidingWindow< SampleType >::get",2,"float *");
-  if(!lua_isnumber(L,3)) SWIG_fail_arg("gam::SlidingWindow< SampleType >::get",3,"float");
+  SWIG_check_num_args("gam::SlidingWindow< SampleType >::Process",3,3)
+  if(!SWIG_isptrtype(L,1)) SWIG_fail_arg("gam::SlidingWindow< SampleType >::Process",1,"gam::SlidingWindow< SampleType > *");
+  if(!SWIG_isptrtype(L,2)) SWIG_fail_arg("gam::SlidingWindow< SampleType >::Process",2,"float *");
+  if(!lua_isnumber(L,3)) SWIG_fail_arg("gam::SlidingWindow< SampleType >::Process",3,"float");
   
   if (!SWIG_IsOK(SWIG_ConvertPtr(L,1,(void**)&arg1,SWIGTYPE_p_gam__SlidingWindowT_float_t,0))){
-    SWIG_fail_ptr("SlidingWindow_get",1,SWIGTYPE_p_gam__SlidingWindowT_float_t);
+    SWIG_fail_ptr("SlidingWindow_Process",1,SWIGTYPE_p_gam__SlidingWindowT_float_t);
   }
   
   
   if (!SWIG_IsOK(SWIG_ConvertPtr(L,2,(void**)&arg2,SWIGTYPE_p_float,0))){
-    SWIG_fail_ptr("SlidingWindow_get",2,SWIGTYPE_p_float);
+    SWIG_fail_ptr("SlidingWindow_Process",2,SWIGTYPE_p_float);
   }
   
   arg3 = (float)lua_tonumber(L, 3);
-  result = (bool)gam_SlidingWindow_Sl_SampleType_Sg__get__SWIG_1(arg1,arg2,arg3);
+  result = (bool)gam_SlidingWindow_Sl_SampleType_Sg__Process__SWIG(arg1,arg2,arg3);
   lua_pushboolean(L,(int)(result!=0)); SWIG_arg++;
   return SWIG_arg;
   
@@ -16644,70 +16765,6 @@ static int _wrap_SlidingWindow_get__SWIG_1(lua_State* L) {
 fail:
   lua_error(L);
   return SWIG_arg;
-}
-
-
-static int _wrap_SlidingWindow_get(lua_State* L) {
-  int argc;
-  int argv[4]={
-    1,2,3,4
-  };
-  
-  argc = lua_gettop(L);
-  if (argc == 2) {
-    int _v = 0;
-    {
-      void *ptr;
-      if (SWIG_isptrtype(L,argv[0])==0 || SWIG_ConvertPtr(L,argv[0], (void **) &ptr, SWIGTYPE_p_gam__SlidingWindowT_float_t, 0)) {
-        _v = 0;
-      } else {
-        _v = 1;
-      }
-    }
-    if (_v) {
-      {
-        _v = lua_isnumber(L,argv[1]);
-      }
-      if (_v) {
-        return _wrap_SlidingWindow_get__SWIG_0(L);
-      }
-    }
-  }
-  if (argc == 3) {
-    int _v = 0;
-    {
-      void *ptr;
-      if (SWIG_isptrtype(L,argv[0])==0 || SWIG_ConvertPtr(L,argv[0], (void **) &ptr, SWIGTYPE_p_gam__SlidingWindowT_float_t, 0)) {
-        _v = 0;
-      } else {
-        _v = 1;
-      }
-    }
-    if (_v) {
-      {
-        void *ptr;
-        if (SWIG_isptrtype(L,argv[1])==0 || SWIG_ConvertPtr(L,argv[1], (void **) &ptr, SWIGTYPE_p_float, 0)) {
-          _v = 0;
-        } else {
-          _v = 1;
-        }
-      }
-      if (_v) {
-        {
-          _v = lua_isnumber(L,argv[2]);
-        }
-        if (_v) {
-          return _wrap_SlidingWindow_get__SWIG_1(L);
-        }
-      }
-    }
-  }
-  
-  SWIG_Lua_pusherrstring(L,"Wrong arguments for overloaded function 'SlidingWindow_get'\n"
-    "  Possible C/C++ prototypes are:\n"
-    "    gam::SlidingWindow< SampleType >::get(float)\n"
-    "    gam::SlidingWindow< SampleType >::get(float *,float)\n");
-  lua_error(L);return 0;
 }
 
 
@@ -16731,8 +16788,9 @@ static swig_lua_method swig_SlidingWindow_methods[]= {
     { "sizeHop", _wrap_SlidingWindow_sizeHop},
     { "sizeWin", _wrap_SlidingWindow_sizeWin},
     { "window", _wrap_SlidingWindow_window},
-    { "foo", _wrap_SlidingWindow_foo},
-    { "get", _wrap_SlidingWindow_get},
+    { "Get", _wrap_SlidingWindow_Get},
+    { "Tick", _wrap_SlidingWindow_Tick},
+    { "Process", _wrap_SlidingWindow_Process},
     {0,0}
 };
 static swig_lua_method swig_SlidingWindow_meta[] = {
@@ -19278,19 +19336,19 @@ static int _wrap_Comb___call(lua_State* L) {
 }
 
 
-static int _wrap_Comb_bang(lua_State* L) {
+static int _wrap_Comb_Tick(lua_State* L) {
   int SWIG_arg = 0;
   gam::Comb< SampleType > *arg1 = (gam::Comb< SampleType > *) 0 ;
   float result;
   
-  SWIG_check_num_args("gam::Comb< SampleType >::bang",1,1)
-  if(!SWIG_isptrtype(L,1)) SWIG_fail_arg("gam::Comb< SampleType >::bang",1,"gam::Comb< SampleType > *");
+  SWIG_check_num_args("gam::Comb< SampleType >::Tick",1,1)
+  if(!SWIG_isptrtype(L,1)) SWIG_fail_arg("gam::Comb< SampleType >::Tick",1,"gam::Comb< SampleType > *");
   
   if (!SWIG_IsOK(SWIG_ConvertPtr(L,1,(void**)&arg1,SWIGTYPE_p_gam__CombT_float_ipl__Linear_gam__real_GAM_DEFAULT_DOMAIN_t,0))){
-    SWIG_fail_ptr("Comb_bang",1,SWIGTYPE_p_gam__CombT_float_ipl__Linear_gam__real_GAM_DEFAULT_DOMAIN_t);
+    SWIG_fail_ptr("Comb_Tick",1,SWIGTYPE_p_gam__CombT_float_ipl__Linear_gam__real_GAM_DEFAULT_DOMAIN_t);
   }
   
-  result = (float)gam_Comb_Sl_SampleType_Sg__bang__SWIG(arg1);
+  result = (float)gam_Comb_Sl_SampleType_Sg__Tick__SWIG(arg1);
   lua_pushnumber(L, (lua_Number) result); SWIG_arg++;
   return SWIG_arg;
   
@@ -19677,7 +19735,7 @@ static swig_lua_method swig_Comb_methods[]= {
     { "feeds", _wrap_Comb_feeds},
     { "set", _wrap_Comb_set},
     { "__call", _wrap_Comb___call},
-    { "bang", _wrap_Comb_bang},
+    { "Tick", _wrap_Comb_Tick},
     { "flter", _wrap_Comb_flter},
     { "filter", _wrap_Comb_filter},
     { "circulateFbk", _wrap_Comb_circulateFbk},
@@ -21056,22 +21114,22 @@ fail:
 }
 
 
-static int _wrap_Biquad3___getitem(lua_State* L) {
+static int _wrap_Biquad3_Tick(lua_State* L) {
   int SWIG_arg = 0;
   gam::Biquad3 *arg1 = (gam::Biquad3 *) 0 ;
   float arg2 ;
   float result;
   
-  SWIG_check_num_args("gam::Biquad3::__getitem__",2,2)
-  if(!SWIG_isptrtype(L,1)) SWIG_fail_arg("gam::Biquad3::__getitem__",1,"gam::Biquad3 *");
-  if(!lua_isnumber(L,2)) SWIG_fail_arg("gam::Biquad3::__getitem__",2,"float");
+  SWIG_check_num_args("gam::Biquad3::Tick",2,2)
+  if(!SWIG_isptrtype(L,1)) SWIG_fail_arg("gam::Biquad3::Tick",1,"gam::Biquad3 *");
+  if(!lua_isnumber(L,2)) SWIG_fail_arg("gam::Biquad3::Tick",2,"float");
   
   if (!SWIG_IsOK(SWIG_ConvertPtr(L,1,(void**)&arg1,SWIGTYPE_p_gam__Biquad3,0))){
-    SWIG_fail_ptr("Biquad3___getitem",1,SWIGTYPE_p_gam__Biquad3);
+    SWIG_fail_ptr("Biquad3_Tick",1,SWIGTYPE_p_gam__Biquad3);
   }
   
   arg2 = (float)lua_tonumber(L, 2);
-  result = (float)gam_Biquad3___getitem____SWIG(arg1,arg2);
+  result = (float)gam_Biquad3_Tick__SWIG(arg1,arg2);
   lua_pushnumber(L, (lua_Number) result); SWIG_arg++;
   return SWIG_arg;
   
@@ -21086,7 +21144,7 @@ fail:
 static int _wrap_Biquad3_get_bq0(lua_State* L) {
   int SWIG_arg = 0;
   gam::Biquad3 *arg1 = (gam::Biquad3 *) 0 ;
-  gam::Biquad< > *result = 0 ;
+  gam::Biquad< gam::real,gam::real,GAM_DEFAULT_DOMAIN > *result = 0 ;
   
   SWIG_check_num_args("gam::Biquad3::get_bq0",1,1)
   if(!SWIG_isptrtype(L,1)) SWIG_fail_arg("gam::Biquad3::get_bq0",1,"gam::Biquad3 *");
@@ -21095,8 +21153,8 @@ static int _wrap_Biquad3_get_bq0(lua_State* L) {
     SWIG_fail_ptr("Biquad3_get_bq0",1,SWIGTYPE_p_gam__Biquad3);
   }
   
-  result = (gam::Biquad< > *) &gam_Biquad3_get_bq0__SWIG(arg1);
-  SWIG_NewPointerObj(L,result,SWIGTYPE_p_gam__BiquadT_t,0); SWIG_arg++; 
+  result = (gam::Biquad< gam::real,gam::real,GAM_DEFAULT_DOMAIN > *) &gam_Biquad3_get_bq0__SWIG(arg1);
+  SWIG_NewPointerObj(L,result,SWIGTYPE_p_gam__BiquadT_gam__real_gam__real_GAM_DEFAULT_DOMAIN_t,0); SWIG_arg++; 
   return SWIG_arg;
   
   if(0) SWIG_fail;
@@ -21110,7 +21168,7 @@ fail:
 static int _wrap_Biquad3_get_bq1(lua_State* L) {
   int SWIG_arg = 0;
   gam::Biquad3 *arg1 = (gam::Biquad3 *) 0 ;
-  gam::Biquad< > *result = 0 ;
+  gam::Biquad< gam::real,gam::real,GAM_DEFAULT_DOMAIN > *result = 0 ;
   
   SWIG_check_num_args("gam::Biquad3::get_bq1",1,1)
   if(!SWIG_isptrtype(L,1)) SWIG_fail_arg("gam::Biquad3::get_bq1",1,"gam::Biquad3 *");
@@ -21119,8 +21177,8 @@ static int _wrap_Biquad3_get_bq1(lua_State* L) {
     SWIG_fail_ptr("Biquad3_get_bq1",1,SWIGTYPE_p_gam__Biquad3);
   }
   
-  result = (gam::Biquad< > *) &gam_Biquad3_get_bq1__SWIG(arg1);
-  SWIG_NewPointerObj(L,result,SWIGTYPE_p_gam__BiquadT_t,0); SWIG_arg++; 
+  result = (gam::Biquad< gam::real,gam::real,GAM_DEFAULT_DOMAIN > *) &gam_Biquad3_get_bq1__SWIG(arg1);
+  SWIG_NewPointerObj(L,result,SWIGTYPE_p_gam__BiquadT_gam__real_gam__real_GAM_DEFAULT_DOMAIN_t,0); SWIG_arg++; 
   return SWIG_arg;
   
   if(0) SWIG_fail;
@@ -21134,7 +21192,7 @@ fail:
 static int _wrap_Biquad3_get_bq2(lua_State* L) {
   int SWIG_arg = 0;
   gam::Biquad3 *arg1 = (gam::Biquad3 *) 0 ;
-  gam::Biquad< > *result = 0 ;
+  gam::Biquad< gam::real,gam::real,GAM_DEFAULT_DOMAIN > *result = 0 ;
   
   SWIG_check_num_args("gam::Biquad3::get_bq2",1,1)
   if(!SWIG_isptrtype(L,1)) SWIG_fail_arg("gam::Biquad3::get_bq2",1,"gam::Biquad3 *");
@@ -21143,8 +21201,8 @@ static int _wrap_Biquad3_get_bq2(lua_State* L) {
     SWIG_fail_ptr("Biquad3_get_bq2",1,SWIGTYPE_p_gam__Biquad3);
   }
   
-  result = (gam::Biquad< > *) &gam_Biquad3_get_bq2__SWIG(arg1);
-  SWIG_NewPointerObj(L,result,SWIGTYPE_p_gam__BiquadT_t,0); SWIG_arg++; 
+  result = (gam::Biquad< gam::real,gam::real,GAM_DEFAULT_DOMAIN > *) &gam_Biquad3_get_bq2__SWIG(arg1);
+  SWIG_NewPointerObj(L,result,SWIGTYPE_p_gam__BiquadT_gam__real_gam__real_GAM_DEFAULT_DOMAIN_t,0); SWIG_arg++; 
   return SWIG_arg;
   
   if(0) SWIG_fail;
@@ -21352,14 +21410,13 @@ static swig_lua_attribute swig_Biquad3_attributes[] = {
 };
 static swig_lua_method swig_Biquad3_methods[]= {
     { "freq", _wrap_Biquad3_freq},
-    { "__getitem", _wrap_Biquad3___getitem},
+    { "Tick", _wrap_Biquad3_Tick},
     { "get_bq0", _wrap_Biquad3_get_bq0},
     { "get_bq1", _wrap_Biquad3_get_bq1},
     { "get_bq2", _wrap_Biquad3_get_bq2},
     {0,0}
 };
 static swig_lua_method swig_Biquad3_meta[] = {
-    { "__getitem", _wrap_Biquad3___getitem},
     {0,0}
 };
 
@@ -21677,7 +21734,7 @@ fail:
 static int _wrap_Burst_get_fil(lua_State* L) {
   int SWIG_arg = 0;
   gam::Burst *arg1 = (gam::Burst *) 0 ;
-  gam::Biquad< > *result = 0 ;
+  gam::Biquad< gam::real,gam::real,GAM_DEFAULT_DOMAIN > *result = 0 ;
   
   SWIG_check_num_args("gam::Burst::get_fil",1,1)
   if(!SWIG_isptrtype(L,1)) SWIG_fail_arg("gam::Burst::get_fil",1,"gam::Burst *");
@@ -21686,8 +21743,8 @@ static int _wrap_Burst_get_fil(lua_State* L) {
     SWIG_fail_ptr("Burst_get_fil",1,SWIGTYPE_p_gam__Burst);
   }
   
-  result = (gam::Biquad< > *) &gam_Burst_get_fil__SWIG(arg1);
-  SWIG_NewPointerObj(L,result,SWIGTYPE_p_gam__BiquadT_t,0); SWIG_arg++; 
+  result = (gam::Biquad< gam::real,gam::real,GAM_DEFAULT_DOMAIN > *) &gam_Burst_get_fil__SWIG(arg1);
+  SWIG_NewPointerObj(L,result,SWIGTYPE_p_gam__BiquadT_gam__real_gam__real_GAM_DEFAULT_DOMAIN_t,0); SWIG_arg++; 
   return SWIG_arg;
   
   if(0) SWIG_fail;
@@ -22396,19 +22453,19 @@ static int _wrap_new_MonoSynth(lua_State* L) {
 }
 
 
-static int _wrap_MonoSynth_bang(lua_State* L) {
+static int _wrap_MonoSynth_Tick(lua_State* L) {
   int SWIG_arg = 0;
   gam::MonoSynth *arg1 = (gam::MonoSynth *) 0 ;
   float result;
   
-  SWIG_check_num_args("gam::MonoSynth::bang",1,1)
-  if(!SWIG_isptrtype(L,1)) SWIG_fail_arg("gam::MonoSynth::bang",1,"gam::MonoSynth *");
+  SWIG_check_num_args("gam::MonoSynth::Tick",1,1)
+  if(!SWIG_isptrtype(L,1)) SWIG_fail_arg("gam::MonoSynth::Tick",1,"gam::MonoSynth *");
   
   if (!SWIG_IsOK(SWIG_ConvertPtr(L,1,(void**)&arg1,SWIGTYPE_p_gam__MonoSynth,0))){
-    SWIG_fail_ptr("MonoSynth_bang",1,SWIGTYPE_p_gam__MonoSynth);
+    SWIG_fail_ptr("MonoSynth_Tick",1,SWIGTYPE_p_gam__MonoSynth);
   }
   
-  result = (float)gam_MonoSynth_bang__SWIG(arg1);
+  result = (float)gam_MonoSynth_Tick__SWIG(arg1);
   lua_pushnumber(L, (lua_Number) result); SWIG_arg++;
   return SWIG_arg;
   
@@ -22423,7 +22480,7 @@ fail:
 static int _wrap_MonoSynth_get_osc(lua_State* L) {
   int SWIG_arg = 0;
   gam::MonoSynth *arg1 = (gam::MonoSynth *) 0 ;
-  gam::Saw< float > *result = 0 ;
+  gam::Saw< float,GAM_DEFAULT_DOMAIN > *result = 0 ;
   
   SWIG_check_num_args("gam::MonoSynth::get_osc",1,1)
   if(!SWIG_isptrtype(L,1)) SWIG_fail_arg("gam::MonoSynth::get_osc",1,"gam::MonoSynth *");
@@ -22432,8 +22489,8 @@ static int _wrap_MonoSynth_get_osc(lua_State* L) {
     SWIG_fail_ptr("MonoSynth_get_osc",1,SWIGTYPE_p_gam__MonoSynth);
   }
   
-  result = (gam::Saw< float > *) &gam_MonoSynth_get_osc__SWIG(arg1);
-  SWIG_NewPointerObj(L,result,SWIGTYPE_p_gam__SawT_float_t,0); SWIG_arg++; 
+  result = (gam::Saw< float,GAM_DEFAULT_DOMAIN > *) &gam_MonoSynth_get_osc__SWIG(arg1);
+  SWIG_NewPointerObj(L,result,SWIGTYPE_p_gam__SawT_float_GAM_DEFAULT_DOMAIN_t,0); SWIG_arg++; 
   return SWIG_arg;
   
   if(0) SWIG_fail;
@@ -22471,7 +22528,7 @@ fail:
 static int _wrap_MonoSynth_get_opEnv(lua_State* L) {
   int SWIG_arg = 0;
   gam::MonoSynth *arg1 = (gam::MonoSynth *) 0 ;
-  gam::OnePole< float > *result = 0 ;
+  gam::OnePole< float,gam::real,GAM_DEFAULT_DOMAIN > *result = 0 ;
   
   SWIG_check_num_args("gam::MonoSynth::get_opEnv",1,1)
   if(!SWIG_isptrtype(L,1)) SWIG_fail_arg("gam::MonoSynth::get_opEnv",1,"gam::MonoSynth *");
@@ -22480,8 +22537,8 @@ static int _wrap_MonoSynth_get_opEnv(lua_State* L) {
     SWIG_fail_ptr("MonoSynth_get_opEnv",1,SWIGTYPE_p_gam__MonoSynth);
   }
   
-  result = (gam::OnePole< float > *) &gam_MonoSynth_get_opEnv__SWIG(arg1);
-  SWIG_NewPointerObj(L,result,SWIGTYPE_p_gam__OnePoleT_float_t,0); SWIG_arg++; 
+  result = (gam::OnePole< float,gam::real,GAM_DEFAULT_DOMAIN > *) &gam_MonoSynth_get_opEnv__SWIG(arg1);
+  SWIG_NewPointerObj(L,result,SWIGTYPE_p_gam__OnePoleT_float_gam__real_GAM_DEFAULT_DOMAIN_t,0); SWIG_arg++; 
   return SWIG_arg;
   
   if(0) SWIG_fail;
@@ -22495,7 +22552,7 @@ fail:
 static int _wrap_MonoSynth_get_filter(lua_State* L) {
   int SWIG_arg = 0;
   gam::MonoSynth *arg1 = (gam::MonoSynth *) 0 ;
-  gam::Biquad< > *result = 0 ;
+  gam::Biquad< gam::real,gam::real,GAM_DEFAULT_DOMAIN > *result = 0 ;
   
   SWIG_check_num_args("gam::MonoSynth::get_filter",1,1)
   if(!SWIG_isptrtype(L,1)) SWIG_fail_arg("gam::MonoSynth::get_filter",1,"gam::MonoSynth *");
@@ -22504,8 +22561,8 @@ static int _wrap_MonoSynth_get_filter(lua_State* L) {
     SWIG_fail_ptr("MonoSynth_get_filter",1,SWIGTYPE_p_gam__MonoSynth);
   }
   
-  result = (gam::Biquad< > *) &gam_MonoSynth_get_filter__SWIG(arg1);
-  SWIG_NewPointerObj(L,result,SWIGTYPE_p_gam__BiquadT_t,0); SWIG_arg++; 
+  result = (gam::Biquad< gam::real,gam::real,GAM_DEFAULT_DOMAIN > *) &gam_MonoSynth_get_filter__SWIG(arg1);
+  SWIG_NewPointerObj(L,result,SWIGTYPE_p_gam__BiquadT_gam__real_gam__real_GAM_DEFAULT_DOMAIN_t,0); SWIG_arg++; 
   return SWIG_arg;
   
   if(0) SWIG_fail;
@@ -22923,7 +22980,7 @@ static swig_lua_attribute swig_MonoSynth_attributes[] = {
     {0,0,0}
 };
 static swig_lua_method swig_MonoSynth_methods[]= {
-    { "bang", _wrap_MonoSynth_bang},
+    { "Tick", _wrap_MonoSynth_Tick},
     { "get_osc", _wrap_MonoSynth_get_osc},
     { "get_env", _wrap_MonoSynth_get_env},
     { "get_opEnv", _wrap_MonoSynth_get_opEnv},
@@ -23064,19 +23121,19 @@ static int _wrap_new_Pluck(lua_State* L) {
 }
 
 
-static int _wrap_Pluck_bang(lua_State* L) {
+static int _wrap_Pluck_Tick(lua_State* L) {
   int SWIG_arg = 0;
   gam::Pluck *arg1 = (gam::Pluck *) 0 ;
   float result;
   
-  SWIG_check_num_args("gam::Pluck::bang",1,1)
-  if(!SWIG_isptrtype(L,1)) SWIG_fail_arg("gam::Pluck::bang",1,"gam::Pluck *");
+  SWIG_check_num_args("gam::Pluck::Tick",1,1)
+  if(!SWIG_isptrtype(L,1)) SWIG_fail_arg("gam::Pluck::Tick",1,"gam::Pluck *");
   
   if (!SWIG_IsOK(SWIG_ConvertPtr(L,1,(void**)&arg1,SWIGTYPE_p_gam__Pluck,0))){
-    SWIG_fail_ptr("Pluck_bang",1,SWIGTYPE_p_gam__Pluck);
+    SWIG_fail_ptr("Pluck_Tick",1,SWIGTYPE_p_gam__Pluck);
   }
   
-  result = (float)gam_Pluck_bang__SWIG(arg1);
+  result = (float)gam_Pluck_Tick__SWIG(arg1);
   lua_pushnumber(L, (lua_Number) result); SWIG_arg++;
   return SWIG_arg;
   
@@ -23360,7 +23417,7 @@ static swig_lua_attribute swig_Pluck_attributes[] = {
     {0,0,0}
 };
 static swig_lua_method swig_Pluck_methods[]= {
-    { "bang", _wrap_Pluck_bang},
+    { "Tick", _wrap_Pluck_Tick},
     { "filter", _wrap_Pluck_filter},
     { "reset", _wrap_Pluck_reset},
     { "freq", _wrap_Pluck_freq},
@@ -23486,25 +23543,25 @@ fail:
 }
 
 
-static int _wrap_AM_get(lua_State* L) {
+static int _wrap_AM_Tick(lua_State* L) {
   int SWIG_arg = 0;
   gam::AM< SampleType > *arg1 = (gam::AM< SampleType > *) 0 ;
   float arg2 ;
   float arg3 ;
   float result;
   
-  SWIG_check_num_args("gam::AM< SampleType >::get",3,3)
-  if(!SWIG_isptrtype(L,1)) SWIG_fail_arg("gam::AM< SampleType >::get",1,"gam::AM< SampleType > *");
-  if(!lua_isnumber(L,2)) SWIG_fail_arg("gam::AM< SampleType >::get",2,"float");
-  if(!lua_isnumber(L,3)) SWIG_fail_arg("gam::AM< SampleType >::get",3,"float");
+  SWIG_check_num_args("gam::AM< SampleType >::Tick",3,3)
+  if(!SWIG_isptrtype(L,1)) SWIG_fail_arg("gam::AM< SampleType >::Tick",1,"gam::AM< SampleType > *");
+  if(!lua_isnumber(L,2)) SWIG_fail_arg("gam::AM< SampleType >::Tick",2,"float");
+  if(!lua_isnumber(L,3)) SWIG_fail_arg("gam::AM< SampleType >::Tick",3,"float");
   
   if (!SWIG_IsOK(SWIG_ConvertPtr(L,1,(void**)&arg1,SWIGTYPE_p_gam__AMT_float_t,0))){
-    SWIG_fail_ptr("AM_get",1,SWIGTYPE_p_gam__AMT_float_t);
+    SWIG_fail_ptr("AM_Tick",1,SWIGTYPE_p_gam__AMT_float_t);
   }
   
   arg2 = (float)lua_tonumber(L, 2);
   arg3 = (float)lua_tonumber(L, 3);
-  result = (float)gam_AM_Sl_SampleType_Sg__get__SWIG(arg1,arg2,arg3);
+  result = (float)gam_AM_Sl_SampleType_Sg__Tick__SWIG(arg1,arg2,arg3);
   lua_pushnumber(L, (lua_Number) result); SWIG_arg++;
   return SWIG_arg;
   
@@ -23533,7 +23590,7 @@ static swig_lua_attribute swig_AM_attributes[] = {
 };
 static swig_lua_method swig_AM_methods[]= {
     { "depth", _wrap_AM_depth},
-    { "get", _wrap_AM_get},
+    { "Tick", _wrap_AM_Tick},
     {0,0}
 };
 static swig_lua_method swig_AM_meta[] = {
@@ -23738,19 +23795,19 @@ fail:
 }
 
 
-static int _wrap_Chirp_bang(lua_State* L) {
+static int _wrap_Chirp_Tick(lua_State* L) {
   int SWIG_arg = 0;
   gam::Chirp< SampleType > *arg1 = (gam::Chirp< SampleType > *) 0 ;
   float result;
   
-  SWIG_check_num_args("gam::Chirp< SampleType >::bang",1,1)
-  if(!SWIG_isptrtype(L,1)) SWIG_fail_arg("gam::Chirp< SampleType >::bang",1,"gam::Chirp< SampleType > *");
+  SWIG_check_num_args("gam::Chirp< SampleType >::Tick",1,1)
+  if(!SWIG_isptrtype(L,1)) SWIG_fail_arg("gam::Chirp< SampleType >::Tick",1,"gam::Chirp< SampleType > *");
   
   if (!SWIG_IsOK(SWIG_ConvertPtr(L,1,(void**)&arg1,SWIGTYPE_p_gam__ChirpT_float_t,0))){
-    SWIG_fail_ptr("Chirp_bang",1,SWIGTYPE_p_gam__ChirpT_float_t);
+    SWIG_fail_ptr("Chirp_Tick",1,SWIGTYPE_p_gam__ChirpT_float_t);
   }
   
-  result = (float)gam_Chirp_Sl_SampleType_Sg__bang__SWIG(arg1);
+  result = (float)gam_Chirp_Sl_SampleType_Sg__Tick__SWIG(arg1);
   lua_pushnumber(L, (lua_Number) result); SWIG_arg++;
   return SWIG_arg;
   
@@ -23762,7 +23819,7 @@ fail:
 }
 
 
-static int _wrap_Chirp_exec__SWIG_0(lua_State* L) {
+static int _wrap_Chirp_Process__SWIG_0(lua_State* L) {
   int SWIG_arg = 0;
   gam::Chirp< SampleType > *arg1 = (gam::Chirp< SampleType > *) 0 ;
   float arg2 ;
@@ -23770,22 +23827,22 @@ static int _wrap_Chirp_exec__SWIG_0(lua_State* L) {
   float arg4 ;
   bool arg5 ;
   
-  SWIG_check_num_args("gam::Chirp< SampleType >::exec",5,5)
-  if(!SWIG_isptrtype(L,1)) SWIG_fail_arg("gam::Chirp< SampleType >::exec",1,"gam::Chirp< SampleType > *");
-  if(!lua_isnumber(L,2)) SWIG_fail_arg("gam::Chirp< SampleType >::exec",2,"float");
-  if(!lua_isnumber(L,3)) SWIG_fail_arg("gam::Chirp< SampleType >::exec",3,"float");
-  if(!lua_isnumber(L,4)) SWIG_fail_arg("gam::Chirp< SampleType >::exec",4,"float");
-  if(!lua_isboolean(L,5)) SWIG_fail_arg("gam::Chirp< SampleType >::exec",5,"bool");
+  SWIG_check_num_args("gam::Chirp< SampleType >::Process",5,5)
+  if(!SWIG_isptrtype(L,1)) SWIG_fail_arg("gam::Chirp< SampleType >::Process",1,"gam::Chirp< SampleType > *");
+  if(!lua_isnumber(L,2)) SWIG_fail_arg("gam::Chirp< SampleType >::Process",2,"float");
+  if(!lua_isnumber(L,3)) SWIG_fail_arg("gam::Chirp< SampleType >::Process",3,"float");
+  if(!lua_isnumber(L,4)) SWIG_fail_arg("gam::Chirp< SampleType >::Process",4,"float");
+  if(!lua_isboolean(L,5)) SWIG_fail_arg("gam::Chirp< SampleType >::Process",5,"bool");
   
   if (!SWIG_IsOK(SWIG_ConvertPtr(L,1,(void**)&arg1,SWIGTYPE_p_gam__ChirpT_float_t,0))){
-    SWIG_fail_ptr("Chirp_exec",1,SWIGTYPE_p_gam__ChirpT_float_t);
+    SWIG_fail_ptr("Chirp_Process",1,SWIGTYPE_p_gam__ChirpT_float_t);
   }
   
   arg2 = (float)lua_tonumber(L, 2);
   arg3 = (float)lua_tonumber(L, 3);
   arg4 = (float)lua_tonumber(L, 4);
   arg5 = (lua_toboolean(L, 5)!=0);
-  gam_Chirp_Sl_SampleType_Sg__exec__SWIG_0(arg1,arg2,arg3,arg4,arg5);
+  gam_Chirp_Sl_SampleType_Sg__Process__SWIG_0(arg1,arg2,arg3,arg4,arg5);
   
   return SWIG_arg;
   
@@ -23797,27 +23854,27 @@ fail:
 }
 
 
-static int _wrap_Chirp_exec__SWIG_1(lua_State* L) {
+static int _wrap_Chirp_Process__SWIG_1(lua_State* L) {
   int SWIG_arg = 0;
   gam::Chirp< SampleType > *arg1 = (gam::Chirp< SampleType > *) 0 ;
   float arg2 ;
   float arg3 ;
   float arg4 ;
   
-  SWIG_check_num_args("gam::Chirp< SampleType >::exec",4,4)
-  if(!SWIG_isptrtype(L,1)) SWIG_fail_arg("gam::Chirp< SampleType >::exec",1,"gam::Chirp< SampleType > *");
-  if(!lua_isnumber(L,2)) SWIG_fail_arg("gam::Chirp< SampleType >::exec",2,"float");
-  if(!lua_isnumber(L,3)) SWIG_fail_arg("gam::Chirp< SampleType >::exec",3,"float");
-  if(!lua_isnumber(L,4)) SWIG_fail_arg("gam::Chirp< SampleType >::exec",4,"float");
+  SWIG_check_num_args("gam::Chirp< SampleType >::Process",4,4)
+  if(!SWIG_isptrtype(L,1)) SWIG_fail_arg("gam::Chirp< SampleType >::Process",1,"gam::Chirp< SampleType > *");
+  if(!lua_isnumber(L,2)) SWIG_fail_arg("gam::Chirp< SampleType >::Process",2,"float");
+  if(!lua_isnumber(L,3)) SWIG_fail_arg("gam::Chirp< SampleType >::Process",3,"float");
+  if(!lua_isnumber(L,4)) SWIG_fail_arg("gam::Chirp< SampleType >::Process",4,"float");
   
   if (!SWIG_IsOK(SWIG_ConvertPtr(L,1,(void**)&arg1,SWIGTYPE_p_gam__ChirpT_float_t,0))){
-    SWIG_fail_ptr("Chirp_exec",1,SWIGTYPE_p_gam__ChirpT_float_t);
+    SWIG_fail_ptr("Chirp_Process",1,SWIGTYPE_p_gam__ChirpT_float_t);
   }
   
   arg2 = (float)lua_tonumber(L, 2);
   arg3 = (float)lua_tonumber(L, 3);
   arg4 = (float)lua_tonumber(L, 4);
-  gam_Chirp_Sl_SampleType_Sg__exec__SWIG_0(arg1,arg2,arg3,arg4);
+  gam_Chirp_Sl_SampleType_Sg__Process__SWIG_0(arg1,arg2,arg3,arg4);
   
   return SWIG_arg;
   
@@ -23829,7 +23886,7 @@ fail:
 }
 
 
-static int _wrap_Chirp_exec(lua_State* L) {
+static int _wrap_Chirp_Process(lua_State* L) {
   int argc;
   int argv[6]={
     1,2,3,4,5,6
@@ -23859,7 +23916,7 @@ static int _wrap_Chirp_exec(lua_State* L) {
             _v = lua_isnumber(L,argv[3]);
           }
           if (_v) {
-            return _wrap_Chirp_exec__SWIG_1(L);
+            return _wrap_Chirp_Process__SWIG_1(L);
           }
         }
       }
@@ -23892,7 +23949,7 @@ static int _wrap_Chirp_exec(lua_State* L) {
               _v = lua_isboolean(L,argv[4]);
             }
             if (_v) {
-              return _wrap_Chirp_exec__SWIG_0(L);
+              return _wrap_Chirp_Process__SWIG_0(L);
             }
           }
         }
@@ -23900,10 +23957,10 @@ static int _wrap_Chirp_exec(lua_State* L) {
     }
   }
   
-  SWIG_Lua_pusherrstring(L,"Wrong arguments for overloaded function 'Chirp_exec'\n"
+  SWIG_Lua_pusherrstring(L,"Wrong arguments for overloaded function 'Chirp_Process'\n"
     "  Possible C/C++ prototypes are:\n"
-    "    gam::Chirp< SampleType >::exec(float,float,float,bool)\n"
-    "    gam::Chirp< SampleType >::exec(float,float,float)\n");
+    "    gam::Chirp< SampleType >::Process(float,float,float,bool)\n"
+    "    gam::Chirp< SampleType >::Process(float,float,float)\n");
   lua_error(L);return 0;
 }
 
@@ -23911,7 +23968,7 @@ static int _wrap_Chirp_exec(lua_State* L) {
 static int _wrap_Chirp_get_osc(lua_State* L) {
   int SWIG_arg = 0;
   gam::Chirp< SampleType > *arg1 = (gam::Chirp< SampleType > *) 0 ;
-  gam::Sine< float > *result = 0 ;
+  gam::Sine< float,GAM_DEFAULT_DOMAIN > *result = 0 ;
   
   SWIG_check_num_args("gam::Chirp< SampleType >::get_osc",1,1)
   if(!SWIG_isptrtype(L,1)) SWIG_fail_arg("gam::Chirp< SampleType >::get_osc",1,"gam::Chirp< SampleType > *");
@@ -23920,8 +23977,8 @@ static int _wrap_Chirp_get_osc(lua_State* L) {
     SWIG_fail_ptr("Chirp_get_osc",1,SWIGTYPE_p_gam__ChirpT_float_t);
   }
   
-  result = (gam::Sine< float > *) &gam_Chirp_Sl_SampleType_Sg__get_osc__SWIG(arg1);
-  SWIG_NewPointerObj(L,result,SWIGTYPE_p_gam__SineT_float_t,0); SWIG_arg++; 
+  result = (gam::Sine< float,GAM_DEFAULT_DOMAIN > *) &gam_Chirp_Sl_SampleType_Sg__get_osc__SWIG(arg1);
+  SWIG_NewPointerObj(L,result,SWIGTYPE_p_gam__SineT_float_GAM_DEFAULT_DOMAIN_t,0); SWIG_arg++; 
   return SWIG_arg;
   
   if(0) SWIG_fail;
@@ -24273,8 +24330,8 @@ static swig_lua_attribute swig_Chirp_attributes[] = {
 };
 static swig_lua_method swig_Chirp_methods[]= {
     { "__call", _wrap_Chirp___call},
-    { "bang", _wrap_Chirp_bang},
-    { "exec", _wrap_Chirp_exec},
+    { "Tick", _wrap_Chirp_Tick},
+    { "Process", _wrap_Chirp_Process},
     { "get_osc", _wrap_Chirp_get_osc},
     { "get_env", _wrap_Chirp_get_env},
     { "decay", _wrap_Chirp_decay},
@@ -28051,23 +28108,23 @@ fail:
 }
 
 
-static int _wrap_Chorus___call(lua_State* L) {
+static int _wrap_Chorus_Tick(lua_State* L) {
   int SWIG_arg = 0;
   gam::Chorus< SampleType > *arg1 = (gam::Chorus< SampleType > *) 0 ;
   float *arg2 = 0 ;
   float temp2 ;
   float result;
   
-  SWIG_check_num_args("gam::Chorus< SampleType >::operator ()",2,2)
-  if(!SWIG_isptrtype(L,1)) SWIG_fail_arg("gam::Chorus< SampleType >::operator ()",1,"gam::Chorus< SampleType > *");
-  if(!lua_isnumber(L,2)) SWIG_fail_arg("gam::Chorus< SampleType >::operator ()",2,"float const &");
+  SWIG_check_num_args("gam::Chorus< SampleType >::Tick",2,2)
+  if(!SWIG_isptrtype(L,1)) SWIG_fail_arg("gam::Chorus< SampleType >::Tick",1,"gam::Chorus< SampleType > *");
+  if(!lua_isnumber(L,2)) SWIG_fail_arg("gam::Chorus< SampleType >::Tick",2,"float const &");
   
   if (!SWIG_IsOK(SWIG_ConvertPtr(L,1,(void**)&arg1,SWIGTYPE_p_gam__ChorusT_float_t,0))){
-    SWIG_fail_ptr("Chorus___call",1,SWIGTYPE_p_gam__ChorusT_float_t);
+    SWIG_fail_ptr("Chorus_Tick",1,SWIGTYPE_p_gam__ChorusT_float_t);
   }
   
   temp2=(float)lua_tonumber(L,2); arg2=&temp2;
-  result = (float)(arg1)->operator ()((float const &)*arg2);
+  result = (float)gam_Chorus_Sl_SampleType_Sg__Tick__SWIG(arg1,(float const &)*arg2);
   lua_pushnumber(L, (lua_Number) result); SWIG_arg++;
   return SWIG_arg;
   
@@ -28079,35 +28136,7 @@ fail:
 }
 
 
-static int _wrap_Chorus_exec_sample(lua_State* L) {
-  int SWIG_arg = 0;
-  gam::Chorus< SampleType > *arg1 = (gam::Chorus< SampleType > *) 0 ;
-  float *arg2 = 0 ;
-  float temp2 ;
-  float result;
-  
-  SWIG_check_num_args("gam::Chorus< SampleType >::exec_sample",2,2)
-  if(!SWIG_isptrtype(L,1)) SWIG_fail_arg("gam::Chorus< SampleType >::exec_sample",1,"gam::Chorus< SampleType > *");
-  if(!lua_isnumber(L,2)) SWIG_fail_arg("gam::Chorus< SampleType >::exec_sample",2,"float const &");
-  
-  if (!SWIG_IsOK(SWIG_ConvertPtr(L,1,(void**)&arg1,SWIGTYPE_p_gam__ChorusT_float_t,0))){
-    SWIG_fail_ptr("Chorus_exec_sample",1,SWIGTYPE_p_gam__ChorusT_float_t);
-  }
-  
-  temp2=(float)lua_tonumber(L,2); arg2=&temp2;
-  result = (float)gam_Chorus_Sl_SampleType_Sg__exec_sample__SWIG(arg1,(float const &)*arg2);
-  lua_pushnumber(L, (lua_Number) result); SWIG_arg++;
-  return SWIG_arg;
-  
-  if(0) SWIG_fail;
-  
-fail:
-  lua_error(L);
-  return SWIG_arg;
-}
-
-
-static int _wrap_Chorus_exec_on(lua_State* L) {
+static int _wrap_Chorus_Process(lua_State* L) {
   int SWIG_arg = 0;
   gam::Chorus< SampleType > *arg1 = (gam::Chorus< SampleType > *) 0 ;
   float *arg2 = 0 ;
@@ -28115,28 +28144,28 @@ static int _wrap_Chorus_exec_on(lua_State* L) {
   float *arg4 = 0 ;
   float temp2 ;
   
-  SWIG_check_num_args("gam::Chorus< SampleType >::exec_on",4,4)
-  if(!SWIG_isptrtype(L,1)) SWIG_fail_arg("gam::Chorus< SampleType >::exec_on",1,"gam::Chorus< SampleType > *");
-  if(!lua_isnumber(L,2)) SWIG_fail_arg("gam::Chorus< SampleType >::exec_on",2,"float const &");
-  if(!lua_isuserdata(L,3)) SWIG_fail_arg("gam::Chorus< SampleType >::exec_on",3,"float &");
-  if(!lua_isuserdata(L,4)) SWIG_fail_arg("gam::Chorus< SampleType >::exec_on",4,"float &");
+  SWIG_check_num_args("gam::Chorus< SampleType >::Process",4,4)
+  if(!SWIG_isptrtype(L,1)) SWIG_fail_arg("gam::Chorus< SampleType >::Process",1,"gam::Chorus< SampleType > *");
+  if(!lua_isnumber(L,2)) SWIG_fail_arg("gam::Chorus< SampleType >::Process",2,"float const &");
+  if(!lua_isuserdata(L,3)) SWIG_fail_arg("gam::Chorus< SampleType >::Process",3,"float &");
+  if(!lua_isuserdata(L,4)) SWIG_fail_arg("gam::Chorus< SampleType >::Process",4,"float &");
   
   if (!SWIG_IsOK(SWIG_ConvertPtr(L,1,(void**)&arg1,SWIGTYPE_p_gam__ChorusT_float_t,0))){
-    SWIG_fail_ptr("Chorus_exec_on",1,SWIGTYPE_p_gam__ChorusT_float_t);
+    SWIG_fail_ptr("Chorus_Process",1,SWIGTYPE_p_gam__ChorusT_float_t);
   }
   
   temp2=(float)lua_tonumber(L,2); arg2=&temp2;
   
   if (!SWIG_IsOK(SWIG_ConvertPtr(L,3,(void**)&arg3,SWIGTYPE_p_float,0))){
-    SWIG_fail_ptr("Chorus_exec_on",3,SWIGTYPE_p_float);
+    SWIG_fail_ptr("Chorus_Process",3,SWIGTYPE_p_float);
   }
   
   
   if (!SWIG_IsOK(SWIG_ConvertPtr(L,4,(void**)&arg4,SWIGTYPE_p_float,0))){
-    SWIG_fail_ptr("Chorus_exec_on",4,SWIGTYPE_p_float);
+    SWIG_fail_ptr("Chorus_Process",4,SWIGTYPE_p_float);
   }
   
-  gam_Chorus_Sl_SampleType_Sg__exec_on__SWIG(arg1,(float const &)*arg2,*arg3,*arg4);
+  gam_Chorus_Sl_SampleType_Sg__Process__SWIG(arg1,(float const &)*arg2,*arg3,*arg4);
   
   return SWIG_arg;
   
@@ -28274,7 +28303,7 @@ fail:
 static int _wrap_Chorus_get_mod(lua_State* L) {
   int SWIG_arg = 0;
   gam::Chorus< SampleType > *arg1 = (gam::Chorus< SampleType > *) 0 ;
-  gam::CSine< double > *result = 0 ;
+  gam::CSine< double,GAM_DEFAULT_DOMAIN > *result = 0 ;
   
   SWIG_check_num_args("gam::Chorus< SampleType >::get_mod",1,1)
   if(!SWIG_isptrtype(L,1)) SWIG_fail_arg("gam::Chorus< SampleType >::get_mod",1,"gam::Chorus< SampleType > *");
@@ -28283,8 +28312,8 @@ static int _wrap_Chorus_get_mod(lua_State* L) {
     SWIG_fail_ptr("Chorus_get_mod",1,SWIGTYPE_p_gam__ChorusT_float_t);
   }
   
-  result = (gam::CSine< double > *) &gam_Chorus_Sl_SampleType_Sg__get_mod__SWIG(arg1);
-  SWIG_NewPointerObj(L,result,SWIGTYPE_p_gam__CSineT_double_t,0); SWIG_arg++; 
+  result = (gam::CSine< double,GAM_DEFAULT_DOMAIN > *) &gam_Chorus_Sl_SampleType_Sg__get_mod__SWIG(arg1);
+  SWIG_NewPointerObj(L,result,SWIGTYPE_p_gam__CSineT_double_GAM_DEFAULT_DOMAIN_t,0); SWIG_arg++; 
   return SWIG_arg;
   
   if(0) SWIG_fail;
@@ -28400,9 +28429,8 @@ static swig_lua_method swig_Chorus_methods[]= {
     { "ffd", _wrap_Chorus_ffd},
     { "freq", _wrap_Chorus_freq},
     { "depth", _wrap_Chorus_depth},
-    { "__call", _wrap_Chorus___call},
-    { "exec_sample", _wrap_Chorus_exec_sample},
-    { "exec_on", _wrap_Chorus_exec_on},
+    { "Tick", _wrap_Chorus_Tick},
+    { "Process", _wrap_Chorus_Process},
     { "filter_stereo", _wrap_Chorus_filter_stereo},
     { "filter_samples", _wrap_Chorus_filter_samples},
     { "get_comb1", _wrap_Chorus_get_comb1},
@@ -28412,7 +28440,6 @@ static swig_lua_method swig_Chorus_methods[]= {
     {0,0}
 };
 static swig_lua_method swig_Chorus_meta[] = {
-    { "__call", _wrap_Chorus___call},
     {0,0}
 };
 
@@ -28506,22 +28533,22 @@ static int _wrap_new_FreqShift(lua_State* L) {
 }
 
 
-static int _wrap_FreqShift_exec(lua_State* L) {
+static int _wrap_FreqShift_Tick(lua_State* L) {
   int SWIG_arg = 0;
   gam::FreqShift< SampleType > *arg1 = (gam::FreqShift< SampleType > *) 0 ;
   float arg2 ;
   float result;
   
-  SWIG_check_num_args("gam::FreqShift< SampleType >::exec",2,2)
-  if(!SWIG_isptrtype(L,1)) SWIG_fail_arg("gam::FreqShift< SampleType >::exec",1,"gam::FreqShift< SampleType > *");
-  if(!lua_isnumber(L,2)) SWIG_fail_arg("gam::FreqShift< SampleType >::exec",2,"float");
+  SWIG_check_num_args("gam::FreqShift< SampleType >::Tick",2,2)
+  if(!SWIG_isptrtype(L,1)) SWIG_fail_arg("gam::FreqShift< SampleType >::Tick",1,"gam::FreqShift< SampleType > *");
+  if(!lua_isnumber(L,2)) SWIG_fail_arg("gam::FreqShift< SampleType >::Tick",2,"float");
   
   if (!SWIG_IsOK(SWIG_ConvertPtr(L,1,(void**)&arg1,SWIGTYPE_p_gam__FreqShiftT_float_t,0))){
-    SWIG_fail_ptr("FreqShift_exec",1,SWIGTYPE_p_gam__FreqShiftT_float_t);
+    SWIG_fail_ptr("FreqShift_Tick",1,SWIGTYPE_p_gam__FreqShiftT_float_t);
   }
   
   arg2 = (float)lua_tonumber(L, 2);
-  result = (float)gam_FreqShift_Sl_SampleType_Sg__exec__SWIG(arg1,arg2);
+  result = (float)gam_FreqShift_Sl_SampleType_Sg__Tick__SWIG(arg1,arg2);
   lua_pushnumber(L, (lua_Number) result); SWIG_arg++;
   return SWIG_arg;
   
@@ -28536,7 +28563,7 @@ fail:
 static int _wrap_FreqShift_get_mod(lua_State* L) {
   int SWIG_arg = 0;
   gam::FreqShift< SampleType > *arg1 = (gam::FreqShift< SampleType > *) 0 ;
-  gam::CSine< float > result;
+  gam::CSine< float,GAM_DEFAULT_DOMAIN > result;
   
   SWIG_check_num_args("gam::FreqShift< SampleType >::get_mod",1,1)
   if(!SWIG_isptrtype(L,1)) SWIG_fail_arg("gam::FreqShift< SampleType >::get_mod",1,"gam::FreqShift< SampleType > *");
@@ -28547,8 +28574,8 @@ static int _wrap_FreqShift_get_mod(lua_State* L) {
   
   result = gam_FreqShift_Sl_SampleType_Sg__get_mod__SWIG(arg1);
   {
-    gam::CSine< float > * resultptr = new gam::CSine< float >((const gam::CSine< float > &) result);
-    SWIG_NewPointerObj(L,(void *) resultptr,SWIGTYPE_p_gam__CSineT_float_t,1); SWIG_arg++;
+    gam::CSine< float,GAM_DEFAULT_DOMAIN > * resultptr = new gam::CSine< float,GAM_DEFAULT_DOMAIN >((const gam::CSine< float,GAM_DEFAULT_DOMAIN > &) result);
+    SWIG_NewPointerObj(L,(void *) resultptr,SWIGTYPE_p_gam__CSineT_float_GAM_DEFAULT_DOMAIN_t,1); SWIG_arg++;
   }
   return SWIG_arg;
   
@@ -28563,7 +28590,7 @@ fail:
 static int _wrap_FreqShift_get_hil(lua_State* L) {
   int SWIG_arg = 0;
   gam::FreqShift< SampleType > *arg1 = (gam::FreqShift< SampleType > *) 0 ;
-  gam::Hilbert< float > result;
+  SwigValueWrapper< gam::Hilbert< float,gam::real > > result;
   
   SWIG_check_num_args("gam::FreqShift< SampleType >::get_hil",1,1)
   if(!SWIG_isptrtype(L,1)) SWIG_fail_arg("gam::FreqShift< SampleType >::get_hil",1,"gam::FreqShift< SampleType > *");
@@ -28574,8 +28601,8 @@ static int _wrap_FreqShift_get_hil(lua_State* L) {
   
   result = gam_FreqShift_Sl_SampleType_Sg__get_hil__SWIG(arg1);
   {
-    gam::Hilbert< float > * resultptr = new gam::Hilbert< float >((const gam::Hilbert< float > &) result);
-    SWIG_NewPointerObj(L,(void *) resultptr,SWIGTYPE_p_gam__HilbertT_float_t,1); SWIG_arg++;
+    gam::Hilbert< float,gam::real > * resultptr = new gam::Hilbert< float,gam::real >((const gam::Hilbert< float,gam::real > &) result);
+    SWIG_NewPointerObj(L,(void *) resultptr,SWIGTYPE_p_gam__HilbertT_float_gam__real_t,1); SWIG_arg++;
   }
   return SWIG_arg;
   
@@ -28750,7 +28777,7 @@ static swig_lua_attribute swig_FreqShift_attributes[] = {
     {0,0,0}
 };
 static swig_lua_method swig_FreqShift_methods[]= {
-    { "exec", _wrap_FreqShift_exec},
+    { "Tick", _wrap_FreqShift_Tick},
     { "get_mod", _wrap_FreqShift_get_mod},
     { "get_hil", _wrap_FreqShift_get_hil},
     { "freq", _wrap_FreqShift_freq},
@@ -28850,22 +28877,22 @@ static int _wrap_new_Pan(lua_State* L) {
 }
 
 
-static int _wrap_Pan_exec(lua_State* L) {
+static int _wrap_Pan_Tick(lua_State* L) {
   int SWIG_arg = 0;
   gam::Pan< SampleType > *arg1 = (gam::Pan< SampleType > *) 0 ;
   float arg2 ;
   gam::Vec< 2,float > result;
   
-  SWIG_check_num_args("gam::Pan< SampleType >::exec",2,2)
-  if(!SWIG_isptrtype(L,1)) SWIG_fail_arg("gam::Pan< SampleType >::exec",1,"gam::Pan< SampleType > *");
-  if(!lua_isnumber(L,2)) SWIG_fail_arg("gam::Pan< SampleType >::exec",2,"float");
+  SWIG_check_num_args("gam::Pan< SampleType >::Tick",2,2)
+  if(!SWIG_isptrtype(L,1)) SWIG_fail_arg("gam::Pan< SampleType >::Tick",1,"gam::Pan< SampleType > *");
+  if(!lua_isnumber(L,2)) SWIG_fail_arg("gam::Pan< SampleType >::Tick",2,"float");
   
   if (!SWIG_IsOK(SWIG_ConvertPtr(L,1,(void**)&arg1,SWIGTYPE_p_gam__PanT_float_t,0))){
-    SWIG_fail_ptr("Pan_exec",1,SWIGTYPE_p_gam__PanT_float_t);
+    SWIG_fail_ptr("Pan_Tick",1,SWIGTYPE_p_gam__PanT_float_t);
   }
   
   arg2 = (float)lua_tonumber(L, 2);
-  result = gam_Pan_Sl_SampleType_Sg__exec__SWIG(arg1,arg2);
+  result = gam_Pan_Sl_SampleType_Sg__Tick__SWIG(arg1,arg2);
   {
     gam::Vec< 2,float > * resultptr = new gam::Vec< 2,float >((const gam::Vec< 2,float > &) result);
     SWIG_NewPointerObj(L,(void *) resultptr,SWIGTYPE_p_gam__VecT_2_float_t,1); SWIG_arg++;
@@ -29119,7 +29146,7 @@ static swig_lua_attribute swig_Pan_attributes[] = {
     {0,0,0}
 };
 static swig_lua_method swig_Pan_methods[]= {
-    { "exec", _wrap_Pan_exec},
+    { "Tick", _wrap_Pan_Tick},
     { "filter", _wrap_Pan_filter},
     { "filter_sample", _wrap_Pan_filter_sample},
     { "pos", _wrap_Pan_pos},
@@ -29336,22 +29363,22 @@ fail:
 }
 
 
-static int _wrap_Quantizer___call(lua_State* L) {
+static int _wrap_Quantizer_Tick(lua_State* L) {
   int SWIG_arg = 0;
   gam::Quantizer< SampleType > *arg1 = (gam::Quantizer< SampleType > *) 0 ;
   float arg2 ;
   float result;
   
-  SWIG_check_num_args("gam::Quantizer< SampleType >::operator ()",2,2)
-  if(!SWIG_isptrtype(L,1)) SWIG_fail_arg("gam::Quantizer< SampleType >::operator ()",1,"gam::Quantizer< SampleType > *");
-  if(!lua_isnumber(L,2)) SWIG_fail_arg("gam::Quantizer< SampleType >::operator ()",2,"float");
+  SWIG_check_num_args("gam::Quantizer< SampleType >::Tick",2,2)
+  if(!SWIG_isptrtype(L,1)) SWIG_fail_arg("gam::Quantizer< SampleType >::Tick",1,"gam::Quantizer< SampleType > *");
+  if(!lua_isnumber(L,2)) SWIG_fail_arg("gam::Quantizer< SampleType >::Tick",2,"float");
   
   if (!SWIG_IsOK(SWIG_ConvertPtr(L,1,(void**)&arg1,SWIGTYPE_p_gam__QuantizerT_float_GAM_DEFAULT_DOMAIN_t,0))){
-    SWIG_fail_ptr("Quantizer___call",1,SWIGTYPE_p_gam__QuantizerT_float_GAM_DEFAULT_DOMAIN_t);
+    SWIG_fail_ptr("Quantizer_Tick",1,SWIGTYPE_p_gam__QuantizerT_float_GAM_DEFAULT_DOMAIN_t);
   }
   
   arg2 = (float)lua_tonumber(L, 2);
-  result = (float)(arg1)->operator ()(arg2);
+  result = (float)gam_Quantizer_Sl_SampleType_Sg__Tick__SWIG(arg1,arg2);
   lua_pushnumber(L, (lua_Number) result); SWIG_arg++;
   return SWIG_arg;
   
@@ -29408,12 +29435,11 @@ static swig_lua_method swig_Quantizer_methods[]= {
     { "freq", _wrap_Quantizer_freq},
     { "period", _wrap_Quantizer_period},
     { "step", _wrap_Quantizer_step},
-    { "__call", _wrap_Quantizer___call},
+    { "Tick", _wrap_Quantizer_Tick},
     { "onDomainChange", _wrap_Quantizer_onDomainChange},
     {0,0}
 };
 static swig_lua_method swig_Quantizer_meta[] = {
-    { "__call", _wrap_Quantizer___call},
     {0,0}
 };
 
@@ -29442,6 +29468,23500 @@ static swig_lua_class *swig_Quantizer_bases[] = {0};
 static const char *swig_Quantizer_base_names[] = {0};
 static swig_lua_class _wrap_class_Quantizer = { "Quantizer", "Quantizer", &SWIGTYPE_p_gam__QuantizerT_float_GAM_DEFAULT_DOMAIN_t,_proxy__wrap_new_Quantizer, swig_delete_Quantizer, swig_Quantizer_methods, swig_Quantizer_attributes, &swig_Quantizer_Sf_SwigStatic, swig_Quantizer_meta, swig_Quantizer_bases, swig_Quantizer_base_names };
 
+static int _wrap_new_AllPass1__SWIG_0(lua_State* L) {
+  int SWIG_arg = 0;
+  float arg1 ;
+  gam::AllPass1< SampleType,SampleType > *result = 0 ;
+  
+  SWIG_check_num_args("gam::AllPass1< SampleType,SampleType >::AllPass1",1,1)
+  if(!lua_isnumber(L,1)) SWIG_fail_arg("gam::AllPass1< SampleType,SampleType >::AllPass1",1,"float");
+  arg1 = (float)lua_tonumber(L, 1);
+  result = (gam::AllPass1< SampleType,SampleType > *)new gam::AllPass1< SampleType,SampleType >(arg1);
+  SWIG_NewPointerObj(L,result,SWIGTYPE_p_gam__AllPass1T_float_float_GAM_DEFAULT_DOMAIN_t,1); SWIG_arg++; 
+  return SWIG_arg;
+  
+  if(0) SWIG_fail;
+  
+fail:
+  lua_error(L);
+  return SWIG_arg;
+}
+
+
+static int _wrap_new_AllPass1__SWIG_1(lua_State* L) {
+  int SWIG_arg = 0;
+  gam::AllPass1< SampleType,SampleType > *result = 0 ;
+  
+  SWIG_check_num_args("gam::AllPass1< SampleType,SampleType >::AllPass1",0,0)
+  result = (gam::AllPass1< SampleType,SampleType > *)new gam::AllPass1< SampleType,SampleType >();
+  SWIG_NewPointerObj(L,result,SWIGTYPE_p_gam__AllPass1T_float_float_GAM_DEFAULT_DOMAIN_t,1); SWIG_arg++; 
+  return SWIG_arg;
+  
+  if(0) SWIG_fail;
+  
+fail:
+  lua_error(L);
+  return SWIG_arg;
+}
+
+
+static int _wrap_new_AllPass1(lua_State* L) {
+  int argc;
+  int argv[2]={
+    1,2
+  };
+  
+  argc = lua_gettop(L);
+  if (argc == 0) {
+    return _wrap_new_AllPass1__SWIG_1(L);
+  }
+  if (argc == 1) {
+    int _v = 0;
+    {
+      _v = lua_isnumber(L,argv[0]);
+    }
+    if (_v) {
+      return _wrap_new_AllPass1__SWIG_0(L);
+    }
+  }
+  
+  SWIG_Lua_pusherrstring(L,"Wrong arguments for overloaded function 'new_AllPass1'\n"
+    "  Possible C/C++ prototypes are:\n"
+    "    gam::AllPass1< SampleType,SampleType >::AllPass1(float)\n"
+    "    gam::AllPass1< SampleType,SampleType >::AllPass1()\n");
+  lua_error(L);return 0;
+}
+
+
+static int _wrap_AllPass1_freq__SWIG_0(lua_State* L) {
+  int SWIG_arg = 0;
+  gam::AllPass1< SampleType,SampleType > *arg1 = (gam::AllPass1< SampleType,SampleType > *) 0 ;
+  float arg2 ;
+  
+  SWIG_check_num_args("gam::AllPass1< SampleType,SampleType >::freq",2,2)
+  if(!SWIG_isptrtype(L,1)) SWIG_fail_arg("gam::AllPass1< SampleType,SampleType >::freq",1,"gam::AllPass1< SampleType,SampleType > *");
+  if(!lua_isnumber(L,2)) SWIG_fail_arg("gam::AllPass1< SampleType,SampleType >::freq",2,"float");
+  
+  if (!SWIG_IsOK(SWIG_ConvertPtr(L,1,(void**)&arg1,SWIGTYPE_p_gam__AllPass1T_float_float_GAM_DEFAULT_DOMAIN_t,0))){
+    SWIG_fail_ptr("AllPass1_freq",1,SWIGTYPE_p_gam__AllPass1T_float_float_GAM_DEFAULT_DOMAIN_t);
+  }
+  
+  arg2 = (float)lua_tonumber(L, 2);
+  (arg1)->freq(arg2);
+  
+  return SWIG_arg;
+  
+  if(0) SWIG_fail;
+  
+fail:
+  lua_error(L);
+  return SWIG_arg;
+}
+
+
+static int _wrap_AllPass1_freqF(lua_State* L) {
+  int SWIG_arg = 0;
+  gam::AllPass1< SampleType,SampleType > *arg1 = (gam::AllPass1< SampleType,SampleType > *) 0 ;
+  float arg2 ;
+  
+  SWIG_check_num_args("gam::AllPass1< SampleType,SampleType >::freqF",2,2)
+  if(!SWIG_isptrtype(L,1)) SWIG_fail_arg("gam::AllPass1< SampleType,SampleType >::freqF",1,"gam::AllPass1< SampleType,SampleType > *");
+  if(!lua_isnumber(L,2)) SWIG_fail_arg("gam::AllPass1< SampleType,SampleType >::freqF",2,"float");
+  
+  if (!SWIG_IsOK(SWIG_ConvertPtr(L,1,(void**)&arg1,SWIGTYPE_p_gam__AllPass1T_float_float_GAM_DEFAULT_DOMAIN_t,0))){
+    SWIG_fail_ptr("AllPass1_freqF",1,SWIGTYPE_p_gam__AllPass1T_float_float_GAM_DEFAULT_DOMAIN_t);
+  }
+  
+  arg2 = (float)lua_tonumber(L, 2);
+  (arg1)->freqF(arg2);
+  
+  return SWIG_arg;
+  
+  if(0) SWIG_fail;
+  
+fail:
+  lua_error(L);
+  return SWIG_arg;
+}
+
+
+static int _wrap_AllPass1_zero(lua_State* L) {
+  int SWIG_arg = 0;
+  gam::AllPass1< SampleType,SampleType > *arg1 = (gam::AllPass1< SampleType,SampleType > *) 0 ;
+  
+  SWIG_check_num_args("gam::AllPass1< SampleType,SampleType >::zero",1,1)
+  if(!SWIG_isptrtype(L,1)) SWIG_fail_arg("gam::AllPass1< SampleType,SampleType >::zero",1,"gam::AllPass1< SampleType,SampleType > *");
+  
+  if (!SWIG_IsOK(SWIG_ConvertPtr(L,1,(void**)&arg1,SWIGTYPE_p_gam__AllPass1T_float_float_GAM_DEFAULT_DOMAIN_t,0))){
+    SWIG_fail_ptr("AllPass1_zero",1,SWIGTYPE_p_gam__AllPass1T_float_float_GAM_DEFAULT_DOMAIN_t);
+  }
+  
+  (arg1)->zero();
+  
+  return SWIG_arg;
+  
+  if(0) SWIG_fail;
+  
+fail:
+  lua_error(L);
+  return SWIG_arg;
+}
+
+
+static int _wrap_AllPass1_Tick(lua_State* L) {
+  int SWIG_arg = 0;
+  gam::AllPass1< SampleType,SampleType > *arg1 = (gam::AllPass1< SampleType,SampleType > *) 0 ;
+  float arg2 ;
+  float result;
+  
+  SWIG_check_num_args("gam::AllPass1< SampleType,SampleType >::Tick",2,2)
+  if(!SWIG_isptrtype(L,1)) SWIG_fail_arg("gam::AllPass1< SampleType,SampleType >::Tick",1,"gam::AllPass1< SampleType,SampleType > *");
+  if(!lua_isnumber(L,2)) SWIG_fail_arg("gam::AllPass1< SampleType,SampleType >::Tick",2,"float");
+  
+  if (!SWIG_IsOK(SWIG_ConvertPtr(L,1,(void**)&arg1,SWIGTYPE_p_gam__AllPass1T_float_float_GAM_DEFAULT_DOMAIN_t,0))){
+    SWIG_fail_ptr("AllPass1_Tick",1,SWIGTYPE_p_gam__AllPass1T_float_float_GAM_DEFAULT_DOMAIN_t);
+  }
+  
+  arg2 = (float)lua_tonumber(L, 2);
+  result = (float)gam_AllPass1_Sl_SampleType_Sc_SampleType_Sg__Tick__SWIG(arg1,arg2);
+  lua_pushnumber(L, (lua_Number) result); SWIG_arg++;
+  return SWIG_arg;
+  
+  if(0) SWIG_fail;
+  
+fail:
+  lua_error(L);
+  return SWIG_arg;
+}
+
+
+static int _wrap_AllPass1_high(lua_State* L) {
+  int SWIG_arg = 0;
+  gam::AllPass1< SampleType,SampleType > *arg1 = (gam::AllPass1< SampleType,SampleType > *) 0 ;
+  float arg2 ;
+  float result;
+  
+  SWIG_check_num_args("gam::AllPass1< SampleType,SampleType >::high",2,2)
+  if(!SWIG_isptrtype(L,1)) SWIG_fail_arg("gam::AllPass1< SampleType,SampleType >::high",1,"gam::AllPass1< SampleType,SampleType > *");
+  if(!lua_isnumber(L,2)) SWIG_fail_arg("gam::AllPass1< SampleType,SampleType >::high",2,"float");
+  
+  if (!SWIG_IsOK(SWIG_ConvertPtr(L,1,(void**)&arg1,SWIGTYPE_p_gam__AllPass1T_float_float_GAM_DEFAULT_DOMAIN_t,0))){
+    SWIG_fail_ptr("AllPass1_high",1,SWIGTYPE_p_gam__AllPass1T_float_float_GAM_DEFAULT_DOMAIN_t);
+  }
+  
+  arg2 = (float)lua_tonumber(L, 2);
+  result = (float)(arg1)->high(arg2);
+  lua_pushnumber(L, (lua_Number) result); SWIG_arg++;
+  return SWIG_arg;
+  
+  if(0) SWIG_fail;
+  
+fail:
+  lua_error(L);
+  return SWIG_arg;
+}
+
+
+static int _wrap_AllPass1_low(lua_State* L) {
+  int SWIG_arg = 0;
+  gam::AllPass1< SampleType,SampleType > *arg1 = (gam::AllPass1< SampleType,SampleType > *) 0 ;
+  float arg2 ;
+  float result;
+  
+  SWIG_check_num_args("gam::AllPass1< SampleType,SampleType >::low",2,2)
+  if(!SWIG_isptrtype(L,1)) SWIG_fail_arg("gam::AllPass1< SampleType,SampleType >::low",1,"gam::AllPass1< SampleType,SampleType > *");
+  if(!lua_isnumber(L,2)) SWIG_fail_arg("gam::AllPass1< SampleType,SampleType >::low",2,"float");
+  
+  if (!SWIG_IsOK(SWIG_ConvertPtr(L,1,(void**)&arg1,SWIGTYPE_p_gam__AllPass1T_float_float_GAM_DEFAULT_DOMAIN_t,0))){
+    SWIG_fail_ptr("AllPass1_low",1,SWIGTYPE_p_gam__AllPass1T_float_float_GAM_DEFAULT_DOMAIN_t);
+  }
+  
+  arg2 = (float)lua_tonumber(L, 2);
+  result = (float)(arg1)->low(arg2);
+  lua_pushnumber(L, (lua_Number) result); SWIG_arg++;
+  return SWIG_arg;
+  
+  if(0) SWIG_fail;
+  
+fail:
+  lua_error(L);
+  return SWIG_arg;
+}
+
+
+static int _wrap_AllPass1_freq__SWIG_1(lua_State* L) {
+  int SWIG_arg = 0;
+  gam::AllPass1< SampleType,SampleType > *arg1 = (gam::AllPass1< SampleType,SampleType > *) 0 ;
+  float result;
+  
+  SWIG_check_num_args("gam::AllPass1< SampleType,SampleType >::freq",1,1)
+  if(!SWIG_isptrtype(L,1)) SWIG_fail_arg("gam::AllPass1< SampleType,SampleType >::freq",1,"gam::AllPass1< SampleType,SampleType > *");
+  
+  if (!SWIG_IsOK(SWIG_ConvertPtr(L,1,(void**)&arg1,SWIGTYPE_p_gam__AllPass1T_float_float_GAM_DEFAULT_DOMAIN_t,0))){
+    SWIG_fail_ptr("AllPass1_freq",1,SWIGTYPE_p_gam__AllPass1T_float_float_GAM_DEFAULT_DOMAIN_t);
+  }
+  
+  result = (float)(arg1)->freq();
+  lua_pushnumber(L, (lua_Number) result); SWIG_arg++;
+  return SWIG_arg;
+  
+  if(0) SWIG_fail;
+  
+fail:
+  lua_error(L);
+  return SWIG_arg;
+}
+
+
+static int _wrap_AllPass1_freq(lua_State* L) {
+  int argc;
+  int argv[3]={
+    1,2,3
+  };
+  
+  argc = lua_gettop(L);
+  if (argc == 1) {
+    int _v = 0;
+    {
+      void *ptr;
+      if (SWIG_isptrtype(L,argv[0])==0 || SWIG_ConvertPtr(L,argv[0], (void **) &ptr, SWIGTYPE_p_gam__AllPass1T_float_float_GAM_DEFAULT_DOMAIN_t, 0)) {
+        _v = 0;
+      } else {
+        _v = 1;
+      }
+    }
+    if (_v) {
+      return _wrap_AllPass1_freq__SWIG_1(L);
+    }
+  }
+  if (argc == 2) {
+    int _v = 0;
+    {
+      void *ptr;
+      if (SWIG_isptrtype(L,argv[0])==0 || SWIG_ConvertPtr(L,argv[0], (void **) &ptr, SWIGTYPE_p_gam__AllPass1T_float_float_GAM_DEFAULT_DOMAIN_t, 0)) {
+        _v = 0;
+      } else {
+        _v = 1;
+      }
+    }
+    if (_v) {
+      {
+        _v = lua_isnumber(L,argv[1]);
+      }
+      if (_v) {
+        return _wrap_AllPass1_freq__SWIG_0(L);
+      }
+    }
+  }
+  
+  SWIG_Lua_pusherrstring(L,"Wrong arguments for overloaded function 'AllPass1_freq'\n"
+    "  Possible C/C++ prototypes are:\n"
+    "    gam::AllPass1< SampleType,SampleType >::freq(float)\n"
+    "    gam::AllPass1< SampleType,SampleType >::freq()\n");
+  lua_error(L);return 0;
+}
+
+
+static int _wrap_AllPass1_onDomainChange(lua_State* L) {
+  int SWIG_arg = 0;
+  gam::AllPass1< SampleType,SampleType > *arg1 = (gam::AllPass1< SampleType,SampleType > *) 0 ;
+  double arg2 ;
+  
+  SWIG_check_num_args("gam::AllPass1< SampleType,SampleType >::onDomainChange",2,2)
+  if(!SWIG_isptrtype(L,1)) SWIG_fail_arg("gam::AllPass1< SampleType,SampleType >::onDomainChange",1,"gam::AllPass1< SampleType,SampleType > *");
+  if(!lua_isnumber(L,2)) SWIG_fail_arg("gam::AllPass1< SampleType,SampleType >::onDomainChange",2,"double");
+  
+  if (!SWIG_IsOK(SWIG_ConvertPtr(L,1,(void**)&arg1,SWIGTYPE_p_gam__AllPass1T_float_float_GAM_DEFAULT_DOMAIN_t,0))){
+    SWIG_fail_ptr("AllPass1_onDomainChange",1,SWIGTYPE_p_gam__AllPass1T_float_float_GAM_DEFAULT_DOMAIN_t);
+  }
+  
+  arg2 = (double)lua_tonumber(L, 2);
+  (arg1)->onDomainChange(arg2);
+  
+  return SWIG_arg;
+  
+  if(0) SWIG_fail;
+  
+fail:
+  lua_error(L);
+  return SWIG_arg;
+}
+
+
+static void swig_delete_AllPass1(void *obj) {
+gam::AllPass1< SampleType,SampleType > *arg1 = (gam::AllPass1< SampleType,SampleType > *) obj;
+delete arg1;
+}
+static int _proxy__wrap_new_AllPass1(lua_State *L) {
+    assert(lua_istable(L,1));
+    lua_pushcfunction(L,_wrap_new_AllPass1);
+    assert(!lua_isnil(L,-1));
+    lua_replace(L,1); /* replace our table with real constructor */
+    lua_call(L,lua_gettop(L)-1,1);
+    return 1;
+}
+static swig_lua_attribute swig_AllPass1_attributes[] = {
+    {0,0,0}
+};
+static swig_lua_method swig_AllPass1_methods[]= {
+    { "freqF", _wrap_AllPass1_freqF},
+    { "zero", _wrap_AllPass1_zero},
+    { "Tick", _wrap_AllPass1_Tick},
+    { "high", _wrap_AllPass1_high},
+    { "low", _wrap_AllPass1_low},
+    { "freq", _wrap_AllPass1_freq},
+    { "onDomainChange", _wrap_AllPass1_onDomainChange},
+    {0,0}
+};
+static swig_lua_method swig_AllPass1_meta[] = {
+    {0,0}
+};
+
+static swig_lua_attribute swig_AllPass1_Sf_SwigStatic_attributes[] = {
+    {0,0,0}
+};
+static swig_lua_const_info swig_AllPass1_Sf_SwigStatic_constants[]= {
+    {0,0,0,0,0,0}
+};
+static swig_lua_method swig_AllPass1_Sf_SwigStatic_methods[]= {
+    {0,0}
+};
+static swig_lua_class* swig_AllPass1_Sf_SwigStatic_classes[]= {
+    0
+};
+
+static swig_lua_namespace swig_AllPass1_Sf_SwigStatic = {
+    "AllPass1",
+    swig_AllPass1_Sf_SwigStatic_methods,
+    swig_AllPass1_Sf_SwigStatic_attributes,
+    swig_AllPass1_Sf_SwigStatic_constants,
+    swig_AllPass1_Sf_SwigStatic_classes,
+    0
+};
+static swig_lua_class *swig_AllPass1_bases[] = {0};
+static const char *swig_AllPass1_base_names[] = {0};
+static swig_lua_class _wrap_class_AllPass1 = { "AllPass1", "AllPass1", &SWIGTYPE_p_gam__AllPass1T_float_float_GAM_DEFAULT_DOMAIN_t,_proxy__wrap_new_AllPass1, swig_delete_AllPass1, swig_AllPass1_methods, swig_AllPass1_attributes, &swig_AllPass1_Sf_SwigStatic, swig_AllPass1_meta, swig_AllPass1_bases, swig_AllPass1_base_names };
+
+static int _wrap_new_Biquad__SWIG_0(lua_State* L) {
+  int SWIG_arg = 0;
+  float arg1 ;
+  float arg2 ;
+  gam::FilterType arg3 ;
+  float arg4 ;
+  gam::Biquad< SampleType,SampleType > *result = 0 ;
+  
+  SWIG_check_num_args("gam::Biquad< SampleType,SampleType >::Biquad",4,4)
+  if(!lua_isnumber(L,1)) SWIG_fail_arg("gam::Biquad< SampleType,SampleType >::Biquad",1,"float");
+  if(!lua_isnumber(L,2)) SWIG_fail_arg("gam::Biquad< SampleType,SampleType >::Biquad",2,"float");
+  if(!lua_isnumber(L,3)) SWIG_fail_arg("gam::Biquad< SampleType,SampleType >::Biquad",3,"gam::FilterType");
+  if(!lua_isnumber(L,4)) SWIG_fail_arg("gam::Biquad< SampleType,SampleType >::Biquad",4,"float");
+  arg1 = (float)lua_tonumber(L, 1);
+  arg2 = (float)lua_tonumber(L, 2);
+  arg3 = (gam::FilterType)(int)lua_tonumber(L, 3);
+  arg4 = (float)lua_tonumber(L, 4);
+  result = (gam::Biquad< SampleType,SampleType > *)new gam::Biquad< SampleType,SampleType >(arg1,arg2,arg3,arg4);
+  SWIG_NewPointerObj(L,result,SWIGTYPE_p_gam__BiquadT_float_float_GAM_DEFAULT_DOMAIN_t,1); SWIG_arg++; 
+  return SWIG_arg;
+  
+  if(0) SWIG_fail;
+  
+fail:
+  lua_error(L);
+  return SWIG_arg;
+}
+
+
+static int _wrap_new_Biquad__SWIG_1(lua_State* L) {
+  int SWIG_arg = 0;
+  float arg1 ;
+  float arg2 ;
+  gam::FilterType arg3 ;
+  gam::Biquad< SampleType,SampleType > *result = 0 ;
+  
+  SWIG_check_num_args("gam::Biquad< SampleType,SampleType >::Biquad",3,3)
+  if(!lua_isnumber(L,1)) SWIG_fail_arg("gam::Biquad< SampleType,SampleType >::Biquad",1,"float");
+  if(!lua_isnumber(L,2)) SWIG_fail_arg("gam::Biquad< SampleType,SampleType >::Biquad",2,"float");
+  if(!lua_isnumber(L,3)) SWIG_fail_arg("gam::Biquad< SampleType,SampleType >::Biquad",3,"gam::FilterType");
+  arg1 = (float)lua_tonumber(L, 1);
+  arg2 = (float)lua_tonumber(L, 2);
+  arg3 = (gam::FilterType)(int)lua_tonumber(L, 3);
+  result = (gam::Biquad< SampleType,SampleType > *)new gam::Biquad< SampleType,SampleType >(arg1,arg2,arg3);
+  SWIG_NewPointerObj(L,result,SWIGTYPE_p_gam__BiquadT_float_float_GAM_DEFAULT_DOMAIN_t,1); SWIG_arg++; 
+  return SWIG_arg;
+  
+  if(0) SWIG_fail;
+  
+fail:
+  lua_error(L);
+  return SWIG_arg;
+}
+
+
+static int _wrap_new_Biquad__SWIG_2(lua_State* L) {
+  int SWIG_arg = 0;
+  float arg1 ;
+  float arg2 ;
+  gam::Biquad< SampleType,SampleType > *result = 0 ;
+  
+  SWIG_check_num_args("gam::Biquad< SampleType,SampleType >::Biquad",2,2)
+  if(!lua_isnumber(L,1)) SWIG_fail_arg("gam::Biquad< SampleType,SampleType >::Biquad",1,"float");
+  if(!lua_isnumber(L,2)) SWIG_fail_arg("gam::Biquad< SampleType,SampleType >::Biquad",2,"float");
+  arg1 = (float)lua_tonumber(L, 1);
+  arg2 = (float)lua_tonumber(L, 2);
+  result = (gam::Biquad< SampleType,SampleType > *)new gam::Biquad< SampleType,SampleType >(arg1,arg2);
+  SWIG_NewPointerObj(L,result,SWIGTYPE_p_gam__BiquadT_float_float_GAM_DEFAULT_DOMAIN_t,1); SWIG_arg++; 
+  return SWIG_arg;
+  
+  if(0) SWIG_fail;
+  
+fail:
+  lua_error(L);
+  return SWIG_arg;
+}
+
+
+static int _wrap_new_Biquad__SWIG_3(lua_State* L) {
+  int SWIG_arg = 0;
+  float arg1 ;
+  gam::Biquad< SampleType,SampleType > *result = 0 ;
+  
+  SWIG_check_num_args("gam::Biquad< SampleType,SampleType >::Biquad",1,1)
+  if(!lua_isnumber(L,1)) SWIG_fail_arg("gam::Biquad< SampleType,SampleType >::Biquad",1,"float");
+  arg1 = (float)lua_tonumber(L, 1);
+  result = (gam::Biquad< SampleType,SampleType > *)new gam::Biquad< SampleType,SampleType >(arg1);
+  SWIG_NewPointerObj(L,result,SWIGTYPE_p_gam__BiquadT_float_float_GAM_DEFAULT_DOMAIN_t,1); SWIG_arg++; 
+  return SWIG_arg;
+  
+  if(0) SWIG_fail;
+  
+fail:
+  lua_error(L);
+  return SWIG_arg;
+}
+
+
+static int _wrap_new_Biquad__SWIG_4(lua_State* L) {
+  int SWIG_arg = 0;
+  gam::Biquad< SampleType,SampleType > *result = 0 ;
+  
+  SWIG_check_num_args("gam::Biquad< SampleType,SampleType >::Biquad",0,0)
+  result = (gam::Biquad< SampleType,SampleType > *)new gam::Biquad< SampleType,SampleType >();
+  SWIG_NewPointerObj(L,result,SWIGTYPE_p_gam__BiquadT_float_float_GAM_DEFAULT_DOMAIN_t,1); SWIG_arg++; 
+  return SWIG_arg;
+  
+  if(0) SWIG_fail;
+  
+fail:
+  lua_error(L);
+  return SWIG_arg;
+}
+
+
+static int _wrap_new_Biquad(lua_State* L) {
+  int argc;
+  int argv[5]={
+    1,2,3,4,5
+  };
+  
+  argc = lua_gettop(L);
+  if (argc == 0) {
+    return _wrap_new_Biquad__SWIG_4(L);
+  }
+  if (argc == 1) {
+    int _v = 0;
+    {
+      _v = lua_isnumber(L,argv[0]);
+    }
+    if (_v) {
+      return _wrap_new_Biquad__SWIG_3(L);
+    }
+  }
+  if (argc == 2) {
+    int _v = 0;
+    {
+      _v = lua_isnumber(L,argv[0]);
+    }
+    if (_v) {
+      {
+        _v = lua_isnumber(L,argv[1]);
+      }
+      if (_v) {
+        return _wrap_new_Biquad__SWIG_2(L);
+      }
+    }
+  }
+  if (argc == 3) {
+    int _v = 0;
+    {
+      _v = lua_isnumber(L,argv[0]);
+    }
+    if (_v) {
+      {
+        _v = lua_isnumber(L,argv[1]);
+      }
+      if (_v) {
+        {
+          _v = lua_isnumber(L,argv[2]);
+        }
+        if (_v) {
+          return _wrap_new_Biquad__SWIG_1(L);
+        }
+      }
+    }
+  }
+  if (argc == 4) {
+    int _v = 0;
+    {
+      _v = lua_isnumber(L,argv[0]);
+    }
+    if (_v) {
+      {
+        _v = lua_isnumber(L,argv[1]);
+      }
+      if (_v) {
+        {
+          _v = lua_isnumber(L,argv[2]);
+        }
+        if (_v) {
+          {
+            _v = lua_isnumber(L,argv[3]);
+          }
+          if (_v) {
+            return _wrap_new_Biquad__SWIG_0(L);
+          }
+        }
+      }
+    }
+  }
+  
+  SWIG_Lua_pusherrstring(L,"Wrong arguments for overloaded function 'new_Biquad'\n"
+    "  Possible C/C++ prototypes are:\n"
+    "    gam::Biquad< SampleType,SampleType >::Biquad(float,float,gam::FilterType,float)\n"
+    "    gam::Biquad< SampleType,SampleType >::Biquad(float,float,gam::FilterType)\n"
+    "    gam::Biquad< SampleType,SampleType >::Biquad(float,float)\n"
+    "    gam::Biquad< SampleType,SampleType >::Biquad(float)\n"
+    "    gam::Biquad< SampleType,SampleType >::Biquad()\n");
+  lua_error(L);return 0;
+}
+
+
+static int _wrap_Biquad_a__SWIG_0(lua_State* L) {
+  int SWIG_arg = 0;
+  gam::Biquad< SampleType,SampleType > *arg1 = (gam::Biquad< SampleType,SampleType > *) 0 ;
+  float *result = 0 ;
+  
+  SWIG_check_num_args("gam::Biquad< SampleType,SampleType >::a",1,1)
+  if(!SWIG_isptrtype(L,1)) SWIG_fail_arg("gam::Biquad< SampleType,SampleType >::a",1,"gam::Biquad< SampleType,SampleType > const *");
+  
+  if (!SWIG_IsOK(SWIG_ConvertPtr(L,1,(void**)&arg1,SWIGTYPE_p_gam__BiquadT_float_float_GAM_DEFAULT_DOMAIN_t,0))){
+    SWIG_fail_ptr("Biquad_a",1,SWIGTYPE_p_gam__BiquadT_float_float_GAM_DEFAULT_DOMAIN_t);
+  }
+  
+  result = (float *)((gam::Biquad< SampleType,SampleType > const *)arg1)->a();
+  SWIG_NewPointerObj(L,result,SWIGTYPE_p_float,0); SWIG_arg++; 
+  return SWIG_arg;
+  
+  if(0) SWIG_fail;
+  
+fail:
+  lua_error(L);
+  return SWIG_arg;
+}
+
+
+static int _wrap_Biquad_a__SWIG_1(lua_State* L) {
+  int SWIG_arg = 0;
+  gam::Biquad< SampleType,SampleType > *arg1 = (gam::Biquad< SampleType,SampleType > *) 0 ;
+  float *result = 0 ;
+  
+  SWIG_check_num_args("gam::Biquad< SampleType,SampleType >::a",1,1)
+  if(!SWIG_isptrtype(L,1)) SWIG_fail_arg("gam::Biquad< SampleType,SampleType >::a",1,"gam::Biquad< SampleType,SampleType > *");
+  
+  if (!SWIG_IsOK(SWIG_ConvertPtr(L,1,(void**)&arg1,SWIGTYPE_p_gam__BiquadT_float_float_GAM_DEFAULT_DOMAIN_t,0))){
+    SWIG_fail_ptr("Biquad_a",1,SWIGTYPE_p_gam__BiquadT_float_float_GAM_DEFAULT_DOMAIN_t);
+  }
+  
+  result = (float *)(arg1)->a();
+  SWIG_NewPointerObj(L,result,SWIGTYPE_p_float,0); SWIG_arg++; 
+  return SWIG_arg;
+  
+  if(0) SWIG_fail;
+  
+fail:
+  lua_error(L);
+  return SWIG_arg;
+}
+
+
+static int _wrap_Biquad_a(lua_State* L) {
+  int argc;
+  int argv[2]={
+    1,2
+  };
+  
+  argc = lua_gettop(L);
+  if (argc == 1) {
+    int _v = 0;
+    {
+      void *ptr;
+      if (SWIG_isptrtype(L,argv[0])==0 || SWIG_ConvertPtr(L,argv[0], (void **) &ptr, SWIGTYPE_p_gam__BiquadT_float_float_GAM_DEFAULT_DOMAIN_t, 0)) {
+        _v = 0;
+      } else {
+        _v = 1;
+      }
+    }
+    if (_v) {
+      return _wrap_Biquad_a__SWIG_1(L);
+    }
+  }
+  if (argc == 1) {
+    int _v = 0;
+    {
+      void *ptr;
+      if (SWIG_isptrtype(L,argv[0])==0 || SWIG_ConvertPtr(L,argv[0], (void **) &ptr, SWIGTYPE_p_gam__BiquadT_float_float_GAM_DEFAULT_DOMAIN_t, 0)) {
+        _v = 0;
+      } else {
+        _v = 1;
+      }
+    }
+    if (_v) {
+      return _wrap_Biquad_a__SWIG_0(L);
+    }
+  }
+  
+  SWIG_Lua_pusherrstring(L,"Wrong arguments for overloaded function 'Biquad_a'\n"
+    "  Possible C/C++ prototypes are:\n"
+    "    gam::Biquad< SampleType,SampleType >::a() const\n"
+    "    gam::Biquad< SampleType,SampleType >::a()\n");
+  lua_error(L);return 0;
+}
+
+
+static int _wrap_Biquad_b__SWIG_0(lua_State* L) {
+  int SWIG_arg = 0;
+  gam::Biquad< SampleType,SampleType > *arg1 = (gam::Biquad< SampleType,SampleType > *) 0 ;
+  float *result = 0 ;
+  
+  SWIG_check_num_args("gam::Biquad< SampleType,SampleType >::b",1,1)
+  if(!SWIG_isptrtype(L,1)) SWIG_fail_arg("gam::Biquad< SampleType,SampleType >::b",1,"gam::Biquad< SampleType,SampleType > const *");
+  
+  if (!SWIG_IsOK(SWIG_ConvertPtr(L,1,(void**)&arg1,SWIGTYPE_p_gam__BiquadT_float_float_GAM_DEFAULT_DOMAIN_t,0))){
+    SWIG_fail_ptr("Biquad_b",1,SWIGTYPE_p_gam__BiquadT_float_float_GAM_DEFAULT_DOMAIN_t);
+  }
+  
+  result = (float *)((gam::Biquad< SampleType,SampleType > const *)arg1)->b();
+  SWIG_NewPointerObj(L,result,SWIGTYPE_p_float,0); SWIG_arg++; 
+  return SWIG_arg;
+  
+  if(0) SWIG_fail;
+  
+fail:
+  lua_error(L);
+  return SWIG_arg;
+}
+
+
+static int _wrap_Biquad_b__SWIG_1(lua_State* L) {
+  int SWIG_arg = 0;
+  gam::Biquad< SampleType,SampleType > *arg1 = (gam::Biquad< SampleType,SampleType > *) 0 ;
+  float *result = 0 ;
+  
+  SWIG_check_num_args("gam::Biquad< SampleType,SampleType >::b",1,1)
+  if(!SWIG_isptrtype(L,1)) SWIG_fail_arg("gam::Biquad< SampleType,SampleType >::b",1,"gam::Biquad< SampleType,SampleType > *");
+  
+  if (!SWIG_IsOK(SWIG_ConvertPtr(L,1,(void**)&arg1,SWIGTYPE_p_gam__BiquadT_float_float_GAM_DEFAULT_DOMAIN_t,0))){
+    SWIG_fail_ptr("Biquad_b",1,SWIGTYPE_p_gam__BiquadT_float_float_GAM_DEFAULT_DOMAIN_t);
+  }
+  
+  result = (float *)(arg1)->b();
+  SWIG_NewPointerObj(L,result,SWIGTYPE_p_float,0); SWIG_arg++; 
+  return SWIG_arg;
+  
+  if(0) SWIG_fail;
+  
+fail:
+  lua_error(L);
+  return SWIG_arg;
+}
+
+
+static int _wrap_Biquad_b(lua_State* L) {
+  int argc;
+  int argv[2]={
+    1,2
+  };
+  
+  argc = lua_gettop(L);
+  if (argc == 1) {
+    int _v = 0;
+    {
+      void *ptr;
+      if (SWIG_isptrtype(L,argv[0])==0 || SWIG_ConvertPtr(L,argv[0], (void **) &ptr, SWIGTYPE_p_gam__BiquadT_float_float_GAM_DEFAULT_DOMAIN_t, 0)) {
+        _v = 0;
+      } else {
+        _v = 1;
+      }
+    }
+    if (_v) {
+      return _wrap_Biquad_b__SWIG_1(L);
+    }
+  }
+  if (argc == 1) {
+    int _v = 0;
+    {
+      void *ptr;
+      if (SWIG_isptrtype(L,argv[0])==0 || SWIG_ConvertPtr(L,argv[0], (void **) &ptr, SWIGTYPE_p_gam__BiquadT_float_float_GAM_DEFAULT_DOMAIN_t, 0)) {
+        _v = 0;
+      } else {
+        _v = 1;
+      }
+    }
+    if (_v) {
+      return _wrap_Biquad_b__SWIG_0(L);
+    }
+  }
+  
+  SWIG_Lua_pusherrstring(L,"Wrong arguments for overloaded function 'Biquad_b'\n"
+    "  Possible C/C++ prototypes are:\n"
+    "    gam::Biquad< SampleType,SampleType >::b() const\n"
+    "    gam::Biquad< SampleType,SampleType >::b()\n");
+  lua_error(L);return 0;
+}
+
+
+static int _wrap_Biquad_coef(lua_State* L) {
+  int SWIG_arg = 0;
+  gam::Biquad< SampleType,SampleType > *arg1 = (gam::Biquad< SampleType,SampleType > *) 0 ;
+  float arg2 ;
+  float arg3 ;
+  float arg4 ;
+  float arg5 ;
+  float arg6 ;
+  
+  SWIG_check_num_args("gam::Biquad< SampleType,SampleType >::coef",6,6)
+  if(!SWIG_isptrtype(L,1)) SWIG_fail_arg("gam::Biquad< SampleType,SampleType >::coef",1,"gam::Biquad< SampleType,SampleType > *");
+  if(!lua_isnumber(L,2)) SWIG_fail_arg("gam::Biquad< SampleType,SampleType >::coef",2,"float");
+  if(!lua_isnumber(L,3)) SWIG_fail_arg("gam::Biquad< SampleType,SampleType >::coef",3,"float");
+  if(!lua_isnumber(L,4)) SWIG_fail_arg("gam::Biquad< SampleType,SampleType >::coef",4,"float");
+  if(!lua_isnumber(L,5)) SWIG_fail_arg("gam::Biquad< SampleType,SampleType >::coef",5,"float");
+  if(!lua_isnumber(L,6)) SWIG_fail_arg("gam::Biquad< SampleType,SampleType >::coef",6,"float");
+  
+  if (!SWIG_IsOK(SWIG_ConvertPtr(L,1,(void**)&arg1,SWIGTYPE_p_gam__BiquadT_float_float_GAM_DEFAULT_DOMAIN_t,0))){
+    SWIG_fail_ptr("Biquad_coef",1,SWIGTYPE_p_gam__BiquadT_float_float_GAM_DEFAULT_DOMAIN_t);
+  }
+  
+  arg2 = (float)lua_tonumber(L, 2);
+  arg3 = (float)lua_tonumber(L, 3);
+  arg4 = (float)lua_tonumber(L, 4);
+  arg5 = (float)lua_tonumber(L, 5);
+  arg6 = (float)lua_tonumber(L, 6);
+  (arg1)->coef(arg2,arg3,arg4,arg5,arg6);
+  
+  return SWIG_arg;
+  
+  if(0) SWIG_fail;
+  
+fail:
+  lua_error(L);
+  return SWIG_arg;
+}
+
+
+static int _wrap_Biquad_freq__SWIG_0(lua_State* L) {
+  int SWIG_arg = 0;
+  gam::Biquad< SampleType,SampleType > *arg1 = (gam::Biquad< SampleType,SampleType > *) 0 ;
+  float arg2 ;
+  
+  SWIG_check_num_args("gam::Biquad< SampleType,SampleType >::freq",2,2)
+  if(!SWIG_isptrtype(L,1)) SWIG_fail_arg("gam::Biquad< SampleType,SampleType >::freq",1,"gam::Biquad< SampleType,SampleType > *");
+  if(!lua_isnumber(L,2)) SWIG_fail_arg("gam::Biquad< SampleType,SampleType >::freq",2,"float");
+  
+  if (!SWIG_IsOK(SWIG_ConvertPtr(L,1,(void**)&arg1,SWIGTYPE_p_gam__BiquadT_float_float_GAM_DEFAULT_DOMAIN_t,0))){
+    SWIG_fail_ptr("Biquad_freq",1,SWIGTYPE_p_gam__BiquadT_float_float_GAM_DEFAULT_DOMAIN_t);
+  }
+  
+  arg2 = (float)lua_tonumber(L, 2);
+  (arg1)->freq(arg2);
+  
+  return SWIG_arg;
+  
+  if(0) SWIG_fail;
+  
+fail:
+  lua_error(L);
+  return SWIG_arg;
+}
+
+
+static int _wrap_Biquad_res__SWIG_0(lua_State* L) {
+  int SWIG_arg = 0;
+  gam::Biquad< SampleType,SampleType > *arg1 = (gam::Biquad< SampleType,SampleType > *) 0 ;
+  float arg2 ;
+  
+  SWIG_check_num_args("gam::Biquad< SampleType,SampleType >::res",2,2)
+  if(!SWIG_isptrtype(L,1)) SWIG_fail_arg("gam::Biquad< SampleType,SampleType >::res",1,"gam::Biquad< SampleType,SampleType > *");
+  if(!lua_isnumber(L,2)) SWIG_fail_arg("gam::Biquad< SampleType,SampleType >::res",2,"float");
+  
+  if (!SWIG_IsOK(SWIG_ConvertPtr(L,1,(void**)&arg1,SWIGTYPE_p_gam__BiquadT_float_float_GAM_DEFAULT_DOMAIN_t,0))){
+    SWIG_fail_ptr("Biquad_res",1,SWIGTYPE_p_gam__BiquadT_float_float_GAM_DEFAULT_DOMAIN_t);
+  }
+  
+  arg2 = (float)lua_tonumber(L, 2);
+  (arg1)->res(arg2);
+  
+  return SWIG_arg;
+  
+  if(0) SWIG_fail;
+  
+fail:
+  lua_error(L);
+  return SWIG_arg;
+}
+
+
+static int _wrap_Biquad_level__SWIG_0(lua_State* L) {
+  int SWIG_arg = 0;
+  gam::Biquad< SampleType,SampleType > *arg1 = (gam::Biquad< SampleType,SampleType > *) 0 ;
+  float arg2 ;
+  
+  SWIG_check_num_args("gam::Biquad< SampleType,SampleType >::level",2,2)
+  if(!SWIG_isptrtype(L,1)) SWIG_fail_arg("gam::Biquad< SampleType,SampleType >::level",1,"gam::Biquad< SampleType,SampleType > *");
+  if(!lua_isnumber(L,2)) SWIG_fail_arg("gam::Biquad< SampleType,SampleType >::level",2,"float");
+  
+  if (!SWIG_IsOK(SWIG_ConvertPtr(L,1,(void**)&arg1,SWIGTYPE_p_gam__BiquadT_float_float_GAM_DEFAULT_DOMAIN_t,0))){
+    SWIG_fail_ptr("Biquad_level",1,SWIGTYPE_p_gam__BiquadT_float_float_GAM_DEFAULT_DOMAIN_t);
+  }
+  
+  arg2 = (float)lua_tonumber(L, 2);
+  (arg1)->level(arg2);
+  
+  return SWIG_arg;
+  
+  if(0) SWIG_fail;
+  
+fail:
+  lua_error(L);
+  return SWIG_arg;
+}
+
+
+static int _wrap_Biquad_set__SWIG_0(lua_State* L) {
+  int SWIG_arg = 0;
+  gam::Biquad< SampleType,SampleType > *arg1 = (gam::Biquad< SampleType,SampleType > *) 0 ;
+  float arg2 ;
+  float arg3 ;
+  
+  SWIG_check_num_args("gam::Biquad< SampleType,SampleType >::set",3,3)
+  if(!SWIG_isptrtype(L,1)) SWIG_fail_arg("gam::Biquad< SampleType,SampleType >::set",1,"gam::Biquad< SampleType,SampleType > *");
+  if(!lua_isnumber(L,2)) SWIG_fail_arg("gam::Biquad< SampleType,SampleType >::set",2,"float");
+  if(!lua_isnumber(L,3)) SWIG_fail_arg("gam::Biquad< SampleType,SampleType >::set",3,"float");
+  
+  if (!SWIG_IsOK(SWIG_ConvertPtr(L,1,(void**)&arg1,SWIGTYPE_p_gam__BiquadT_float_float_GAM_DEFAULT_DOMAIN_t,0))){
+    SWIG_fail_ptr("Biquad_set",1,SWIGTYPE_p_gam__BiquadT_float_float_GAM_DEFAULT_DOMAIN_t);
+  }
+  
+  arg2 = (float)lua_tonumber(L, 2);
+  arg3 = (float)lua_tonumber(L, 3);
+  (arg1)->set(arg2,arg3);
+  
+  return SWIG_arg;
+  
+  if(0) SWIG_fail;
+  
+fail:
+  lua_error(L);
+  return SWIG_arg;
+}
+
+
+static int _wrap_Biquad_set__SWIG_1(lua_State* L) {
+  int SWIG_arg = 0;
+  gam::Biquad< SampleType,SampleType > *arg1 = (gam::Biquad< SampleType,SampleType > *) 0 ;
+  float arg2 ;
+  float arg3 ;
+  gam::FilterType arg4 ;
+  
+  SWIG_check_num_args("gam::Biquad< SampleType,SampleType >::set",4,4)
+  if(!SWIG_isptrtype(L,1)) SWIG_fail_arg("gam::Biquad< SampleType,SampleType >::set",1,"gam::Biquad< SampleType,SampleType > *");
+  if(!lua_isnumber(L,2)) SWIG_fail_arg("gam::Biquad< SampleType,SampleType >::set",2,"float");
+  if(!lua_isnumber(L,3)) SWIG_fail_arg("gam::Biquad< SampleType,SampleType >::set",3,"float");
+  if(!lua_isnumber(L,4)) SWIG_fail_arg("gam::Biquad< SampleType,SampleType >::set",4,"gam::FilterType");
+  
+  if (!SWIG_IsOK(SWIG_ConvertPtr(L,1,(void**)&arg1,SWIGTYPE_p_gam__BiquadT_float_float_GAM_DEFAULT_DOMAIN_t,0))){
+    SWIG_fail_ptr("Biquad_set",1,SWIGTYPE_p_gam__BiquadT_float_float_GAM_DEFAULT_DOMAIN_t);
+  }
+  
+  arg2 = (float)lua_tonumber(L, 2);
+  arg3 = (float)lua_tonumber(L, 3);
+  arg4 = (gam::FilterType)(int)lua_tonumber(L, 4);
+  (arg1)->set(arg2,arg3,arg4);
+  
+  return SWIG_arg;
+  
+  if(0) SWIG_fail;
+  
+fail:
+  lua_error(L);
+  return SWIG_arg;
+}
+
+
+static int _wrap_Biquad_set(lua_State* L) {
+  int argc;
+  int argv[5]={
+    1,2,3,4,5
+  };
+  
+  argc = lua_gettop(L);
+  if (argc == 3) {
+    int _v = 0;
+    {
+      void *ptr;
+      if (SWIG_isptrtype(L,argv[0])==0 || SWIG_ConvertPtr(L,argv[0], (void **) &ptr, SWIGTYPE_p_gam__BiquadT_float_float_GAM_DEFAULT_DOMAIN_t, 0)) {
+        _v = 0;
+      } else {
+        _v = 1;
+      }
+    }
+    if (_v) {
+      {
+        _v = lua_isnumber(L,argv[1]);
+      }
+      if (_v) {
+        {
+          _v = lua_isnumber(L,argv[2]);
+        }
+        if (_v) {
+          return _wrap_Biquad_set__SWIG_0(L);
+        }
+      }
+    }
+  }
+  if (argc == 4) {
+    int _v = 0;
+    {
+      void *ptr;
+      if (SWIG_isptrtype(L,argv[0])==0 || SWIG_ConvertPtr(L,argv[0], (void **) &ptr, SWIGTYPE_p_gam__BiquadT_float_float_GAM_DEFAULT_DOMAIN_t, 0)) {
+        _v = 0;
+      } else {
+        _v = 1;
+      }
+    }
+    if (_v) {
+      {
+        _v = lua_isnumber(L,argv[1]);
+      }
+      if (_v) {
+        {
+          _v = lua_isnumber(L,argv[2]);
+        }
+        if (_v) {
+          {
+            _v = lua_isnumber(L,argv[3]);
+          }
+          if (_v) {
+            return _wrap_Biquad_set__SWIG_1(L);
+          }
+        }
+      }
+    }
+  }
+  
+  SWIG_Lua_pusherrstring(L,"Wrong arguments for overloaded function 'Biquad_set'\n"
+    "  Possible C/C++ prototypes are:\n"
+    "    gam::Biquad< SampleType,SampleType >::set(float,float)\n"
+    "    gam::Biquad< SampleType,SampleType >::set(float,float,gam::FilterType)\n");
+  lua_error(L);return 0;
+}
+
+
+static int _wrap_Biquad_type__SWIG_0(lua_State* L) {
+  int SWIG_arg = 0;
+  gam::Biquad< SampleType,SampleType > *arg1 = (gam::Biquad< SampleType,SampleType > *) 0 ;
+  gam::FilterType arg2 ;
+  
+  SWIG_check_num_args("gam::Biquad< SampleType,SampleType >::type",2,2)
+  if(!SWIG_isptrtype(L,1)) SWIG_fail_arg("gam::Biquad< SampleType,SampleType >::type",1,"gam::Biquad< SampleType,SampleType > *");
+  if(!lua_isnumber(L,2)) SWIG_fail_arg("gam::Biquad< SampleType,SampleType >::type",2,"gam::FilterType");
+  
+  if (!SWIG_IsOK(SWIG_ConvertPtr(L,1,(void**)&arg1,SWIGTYPE_p_gam__BiquadT_float_float_GAM_DEFAULT_DOMAIN_t,0))){
+    SWIG_fail_ptr("Biquad_type",1,SWIGTYPE_p_gam__BiquadT_float_float_GAM_DEFAULT_DOMAIN_t);
+  }
+  
+  arg2 = (gam::FilterType)(int)lua_tonumber(L, 2);
+  (arg1)->type(arg2);
+  
+  return SWIG_arg;
+  
+  if(0) SWIG_fail;
+  
+fail:
+  lua_error(L);
+  return SWIG_arg;
+}
+
+
+static int _wrap_Biquad_zero(lua_State* L) {
+  int SWIG_arg = 0;
+  gam::Biquad< SampleType,SampleType > *arg1 = (gam::Biquad< SampleType,SampleType > *) 0 ;
+  
+  SWIG_check_num_args("gam::Biquad< SampleType,SampleType >::zero",1,1)
+  if(!SWIG_isptrtype(L,1)) SWIG_fail_arg("gam::Biquad< SampleType,SampleType >::zero",1,"gam::Biquad< SampleType,SampleType > *");
+  
+  if (!SWIG_IsOK(SWIG_ConvertPtr(L,1,(void**)&arg1,SWIGTYPE_p_gam__BiquadT_float_float_GAM_DEFAULT_DOMAIN_t,0))){
+    SWIG_fail_ptr("Biquad_zero",1,SWIGTYPE_p_gam__BiquadT_float_float_GAM_DEFAULT_DOMAIN_t);
+  }
+  
+  (arg1)->zero();
+  
+  return SWIG_arg;
+  
+  if(0) SWIG_fail;
+  
+fail:
+  lua_error(L);
+  return SWIG_arg;
+}
+
+
+static int _wrap_Biquad___call(lua_State* L) {
+  int SWIG_arg = 0;
+  gam::Biquad< SampleType,SampleType > *arg1 = (gam::Biquad< SampleType,SampleType > *) 0 ;
+  float arg2 ;
+  float result;
+  
+  SWIG_check_num_args("gam::Biquad< SampleType,SampleType >::operator ()",2,2)
+  if(!SWIG_isptrtype(L,1)) SWIG_fail_arg("gam::Biquad< SampleType,SampleType >::operator ()",1,"gam::Biquad< SampleType,SampleType > *");
+  if(!lua_isnumber(L,2)) SWIG_fail_arg("gam::Biquad< SampleType,SampleType >::operator ()",2,"float");
+  
+  if (!SWIG_IsOK(SWIG_ConvertPtr(L,1,(void**)&arg1,SWIGTYPE_p_gam__BiquadT_float_float_GAM_DEFAULT_DOMAIN_t,0))){
+    SWIG_fail_ptr("Biquad___call",1,SWIGTYPE_p_gam__BiquadT_float_float_GAM_DEFAULT_DOMAIN_t);
+  }
+  
+  arg2 = (float)lua_tonumber(L, 2);
+  result = (float)(arg1)->operator ()(arg2);
+  lua_pushnumber(L, (lua_Number) result); SWIG_arg++;
+  return SWIG_arg;
+  
+  if(0) SWIG_fail;
+  
+fail:
+  lua_error(L);
+  return SWIG_arg;
+}
+
+
+static int _wrap_Biquad_nextBP(lua_State* L) {
+  int SWIG_arg = 0;
+  gam::Biquad< SampleType,SampleType > *arg1 = (gam::Biquad< SampleType,SampleType > *) 0 ;
+  float arg2 ;
+  float result;
+  
+  SWIG_check_num_args("gam::Biquad< SampleType,SampleType >::nextBP",2,2)
+  if(!SWIG_isptrtype(L,1)) SWIG_fail_arg("gam::Biquad< SampleType,SampleType >::nextBP",1,"gam::Biquad< SampleType,SampleType > *");
+  if(!lua_isnumber(L,2)) SWIG_fail_arg("gam::Biquad< SampleType,SampleType >::nextBP",2,"float");
+  
+  if (!SWIG_IsOK(SWIG_ConvertPtr(L,1,(void**)&arg1,SWIGTYPE_p_gam__BiquadT_float_float_GAM_DEFAULT_DOMAIN_t,0))){
+    SWIG_fail_ptr("Biquad_nextBP",1,SWIGTYPE_p_gam__BiquadT_float_float_GAM_DEFAULT_DOMAIN_t);
+  }
+  
+  arg2 = (float)lua_tonumber(L, 2);
+  result = (float)(arg1)->nextBP(arg2);
+  lua_pushnumber(L, (lua_Number) result); SWIG_arg++;
+  return SWIG_arg;
+  
+  if(0) SWIG_fail;
+  
+fail:
+  lua_error(L);
+  return SWIG_arg;
+}
+
+
+static int _wrap_Biquad_freq__SWIG_1(lua_State* L) {
+  int SWIG_arg = 0;
+  gam::Biquad< SampleType,SampleType > *arg1 = (gam::Biquad< SampleType,SampleType > *) 0 ;
+  float result;
+  
+  SWIG_check_num_args("gam::Biquad< SampleType,SampleType >::freq",1,1)
+  if(!SWIG_isptrtype(L,1)) SWIG_fail_arg("gam::Biquad< SampleType,SampleType >::freq",1,"gam::Biquad< SampleType,SampleType > const *");
+  
+  if (!SWIG_IsOK(SWIG_ConvertPtr(L,1,(void**)&arg1,SWIGTYPE_p_gam__BiquadT_float_float_GAM_DEFAULT_DOMAIN_t,0))){
+    SWIG_fail_ptr("Biquad_freq",1,SWIGTYPE_p_gam__BiquadT_float_float_GAM_DEFAULT_DOMAIN_t);
+  }
+  
+  result = (float)((gam::Biquad< SampleType,SampleType > const *)arg1)->freq();
+  lua_pushnumber(L, (lua_Number) result); SWIG_arg++;
+  return SWIG_arg;
+  
+  if(0) SWIG_fail;
+  
+fail:
+  lua_error(L);
+  return SWIG_arg;
+}
+
+
+static int _wrap_Biquad_freq(lua_State* L) {
+  int argc;
+  int argv[3]={
+    1,2,3
+  };
+  
+  argc = lua_gettop(L);
+  if (argc == 1) {
+    int _v = 0;
+    {
+      void *ptr;
+      if (SWIG_isptrtype(L,argv[0])==0 || SWIG_ConvertPtr(L,argv[0], (void **) &ptr, SWIGTYPE_p_gam__BiquadT_float_float_GAM_DEFAULT_DOMAIN_t, 0)) {
+        _v = 0;
+      } else {
+        _v = 1;
+      }
+    }
+    if (_v) {
+      return _wrap_Biquad_freq__SWIG_1(L);
+    }
+  }
+  if (argc == 2) {
+    int _v = 0;
+    {
+      void *ptr;
+      if (SWIG_isptrtype(L,argv[0])==0 || SWIG_ConvertPtr(L,argv[0], (void **) &ptr, SWIGTYPE_p_gam__BiquadT_float_float_GAM_DEFAULT_DOMAIN_t, 0)) {
+        _v = 0;
+      } else {
+        _v = 1;
+      }
+    }
+    if (_v) {
+      {
+        _v = lua_isnumber(L,argv[1]);
+      }
+      if (_v) {
+        return _wrap_Biquad_freq__SWIG_0(L);
+      }
+    }
+  }
+  
+  SWIG_Lua_pusherrstring(L,"Wrong arguments for overloaded function 'Biquad_freq'\n"
+    "  Possible C/C++ prototypes are:\n"
+    "    gam::Biquad< SampleType,SampleType >::freq(float)\n"
+    "    gam::Biquad< SampleType,SampleType >::freq() const\n");
+  lua_error(L);return 0;
+}
+
+
+static int _wrap_Biquad_res__SWIG_1(lua_State* L) {
+  int SWIG_arg = 0;
+  gam::Biquad< SampleType,SampleType > *arg1 = (gam::Biquad< SampleType,SampleType > *) 0 ;
+  float result;
+  
+  SWIG_check_num_args("gam::Biquad< SampleType,SampleType >::res",1,1)
+  if(!SWIG_isptrtype(L,1)) SWIG_fail_arg("gam::Biquad< SampleType,SampleType >::res",1,"gam::Biquad< SampleType,SampleType > const *");
+  
+  if (!SWIG_IsOK(SWIG_ConvertPtr(L,1,(void**)&arg1,SWIGTYPE_p_gam__BiquadT_float_float_GAM_DEFAULT_DOMAIN_t,0))){
+    SWIG_fail_ptr("Biquad_res",1,SWIGTYPE_p_gam__BiquadT_float_float_GAM_DEFAULT_DOMAIN_t);
+  }
+  
+  result = (float)((gam::Biquad< SampleType,SampleType > const *)arg1)->res();
+  lua_pushnumber(L, (lua_Number) result); SWIG_arg++;
+  return SWIG_arg;
+  
+  if(0) SWIG_fail;
+  
+fail:
+  lua_error(L);
+  return SWIG_arg;
+}
+
+
+static int _wrap_Biquad_res(lua_State* L) {
+  int argc;
+  int argv[3]={
+    1,2,3
+  };
+  
+  argc = lua_gettop(L);
+  if (argc == 1) {
+    int _v = 0;
+    {
+      void *ptr;
+      if (SWIG_isptrtype(L,argv[0])==0 || SWIG_ConvertPtr(L,argv[0], (void **) &ptr, SWIGTYPE_p_gam__BiquadT_float_float_GAM_DEFAULT_DOMAIN_t, 0)) {
+        _v = 0;
+      } else {
+        _v = 1;
+      }
+    }
+    if (_v) {
+      return _wrap_Biquad_res__SWIG_1(L);
+    }
+  }
+  if (argc == 2) {
+    int _v = 0;
+    {
+      void *ptr;
+      if (SWIG_isptrtype(L,argv[0])==0 || SWIG_ConvertPtr(L,argv[0], (void **) &ptr, SWIGTYPE_p_gam__BiquadT_float_float_GAM_DEFAULT_DOMAIN_t, 0)) {
+        _v = 0;
+      } else {
+        _v = 1;
+      }
+    }
+    if (_v) {
+      {
+        _v = lua_isnumber(L,argv[1]);
+      }
+      if (_v) {
+        return _wrap_Biquad_res__SWIG_0(L);
+      }
+    }
+  }
+  
+  SWIG_Lua_pusherrstring(L,"Wrong arguments for overloaded function 'Biquad_res'\n"
+    "  Possible C/C++ prototypes are:\n"
+    "    gam::Biquad< SampleType,SampleType >::res(float)\n"
+    "    gam::Biquad< SampleType,SampleType >::res() const\n");
+  lua_error(L);return 0;
+}
+
+
+static int _wrap_Biquad_level__SWIG_1(lua_State* L) {
+  int SWIG_arg = 0;
+  gam::Biquad< SampleType,SampleType > *arg1 = (gam::Biquad< SampleType,SampleType > *) 0 ;
+  float result;
+  
+  SWIG_check_num_args("gam::Biquad< SampleType,SampleType >::level",1,1)
+  if(!SWIG_isptrtype(L,1)) SWIG_fail_arg("gam::Biquad< SampleType,SampleType >::level",1,"gam::Biquad< SampleType,SampleType > const *");
+  
+  if (!SWIG_IsOK(SWIG_ConvertPtr(L,1,(void**)&arg1,SWIGTYPE_p_gam__BiquadT_float_float_GAM_DEFAULT_DOMAIN_t,0))){
+    SWIG_fail_ptr("Biquad_level",1,SWIGTYPE_p_gam__BiquadT_float_float_GAM_DEFAULT_DOMAIN_t);
+  }
+  
+  result = (float)((gam::Biquad< SampleType,SampleType > const *)arg1)->level();
+  lua_pushnumber(L, (lua_Number) result); SWIG_arg++;
+  return SWIG_arg;
+  
+  if(0) SWIG_fail;
+  
+fail:
+  lua_error(L);
+  return SWIG_arg;
+}
+
+
+static int _wrap_Biquad_level(lua_State* L) {
+  int argc;
+  int argv[3]={
+    1,2,3
+  };
+  
+  argc = lua_gettop(L);
+  if (argc == 1) {
+    int _v = 0;
+    {
+      void *ptr;
+      if (SWIG_isptrtype(L,argv[0])==0 || SWIG_ConvertPtr(L,argv[0], (void **) &ptr, SWIGTYPE_p_gam__BiquadT_float_float_GAM_DEFAULT_DOMAIN_t, 0)) {
+        _v = 0;
+      } else {
+        _v = 1;
+      }
+    }
+    if (_v) {
+      return _wrap_Biquad_level__SWIG_1(L);
+    }
+  }
+  if (argc == 2) {
+    int _v = 0;
+    {
+      void *ptr;
+      if (SWIG_isptrtype(L,argv[0])==0 || SWIG_ConvertPtr(L,argv[0], (void **) &ptr, SWIGTYPE_p_gam__BiquadT_float_float_GAM_DEFAULT_DOMAIN_t, 0)) {
+        _v = 0;
+      } else {
+        _v = 1;
+      }
+    }
+    if (_v) {
+      {
+        _v = lua_isnumber(L,argv[1]);
+      }
+      if (_v) {
+        return _wrap_Biquad_level__SWIG_0(L);
+      }
+    }
+  }
+  
+  SWIG_Lua_pusherrstring(L,"Wrong arguments for overloaded function 'Biquad_level'\n"
+    "  Possible C/C++ prototypes are:\n"
+    "    gam::Biquad< SampleType,SampleType >::level(float)\n"
+    "    gam::Biquad< SampleType,SampleType >::level() const\n");
+  lua_error(L);return 0;
+}
+
+
+static int _wrap_Biquad_type__SWIG_1(lua_State* L) {
+  int SWIG_arg = 0;
+  gam::Biquad< SampleType,SampleType > *arg1 = (gam::Biquad< SampleType,SampleType > *) 0 ;
+  gam::FilterType result;
+  
+  SWIG_check_num_args("gam::Biquad< SampleType,SampleType >::type",1,1)
+  if(!SWIG_isptrtype(L,1)) SWIG_fail_arg("gam::Biquad< SampleType,SampleType >::type",1,"gam::Biquad< SampleType,SampleType > const *");
+  
+  if (!SWIG_IsOK(SWIG_ConvertPtr(L,1,(void**)&arg1,SWIGTYPE_p_gam__BiquadT_float_float_GAM_DEFAULT_DOMAIN_t,0))){
+    SWIG_fail_ptr("Biquad_type",1,SWIGTYPE_p_gam__BiquadT_float_float_GAM_DEFAULT_DOMAIN_t);
+  }
+  
+  result = (gam::FilterType)((gam::Biquad< SampleType,SampleType > const *)arg1)->type();
+  lua_pushnumber(L, (lua_Number)(int)(result)); SWIG_arg++;
+  return SWIG_arg;
+  
+  if(0) SWIG_fail;
+  
+fail:
+  lua_error(L);
+  return SWIG_arg;
+}
+
+
+static int _wrap_Biquad_type(lua_State* L) {
+  int argc;
+  int argv[3]={
+    1,2,3
+  };
+  
+  argc = lua_gettop(L);
+  if (argc == 1) {
+    int _v = 0;
+    {
+      void *ptr;
+      if (SWIG_isptrtype(L,argv[0])==0 || SWIG_ConvertPtr(L,argv[0], (void **) &ptr, SWIGTYPE_p_gam__BiquadT_float_float_GAM_DEFAULT_DOMAIN_t, 0)) {
+        _v = 0;
+      } else {
+        _v = 1;
+      }
+    }
+    if (_v) {
+      return _wrap_Biquad_type__SWIG_1(L);
+    }
+  }
+  if (argc == 2) {
+    int _v = 0;
+    {
+      void *ptr;
+      if (SWIG_isptrtype(L,argv[0])==0 || SWIG_ConvertPtr(L,argv[0], (void **) &ptr, SWIGTYPE_p_gam__BiquadT_float_float_GAM_DEFAULT_DOMAIN_t, 0)) {
+        _v = 0;
+      } else {
+        _v = 1;
+      }
+    }
+    if (_v) {
+      {
+        _v = lua_isnumber(L,argv[1]);
+      }
+      if (_v) {
+        return _wrap_Biquad_type__SWIG_0(L);
+      }
+    }
+  }
+  
+  SWIG_Lua_pusherrstring(L,"Wrong arguments for overloaded function 'Biquad_type'\n"
+    "  Possible C/C++ prototypes are:\n"
+    "    gam::Biquad< SampleType,SampleType >::type(gam::FilterType)\n"
+    "    gam::Biquad< SampleType,SampleType >::type() const\n");
+  lua_error(L);return 0;
+}
+
+
+static int _wrap_Biquad_onDomainChange(lua_State* L) {
+  int SWIG_arg = 0;
+  gam::Biquad< SampleType,SampleType > *arg1 = (gam::Biquad< SampleType,SampleType > *) 0 ;
+  double arg2 ;
+  
+  SWIG_check_num_args("gam::Biquad< SampleType,SampleType >::onDomainChange",2,2)
+  if(!SWIG_isptrtype(L,1)) SWIG_fail_arg("gam::Biquad< SampleType,SampleType >::onDomainChange",1,"gam::Biquad< SampleType,SampleType > *");
+  if(!lua_isnumber(L,2)) SWIG_fail_arg("gam::Biquad< SampleType,SampleType >::onDomainChange",2,"double");
+  
+  if (!SWIG_IsOK(SWIG_ConvertPtr(L,1,(void**)&arg1,SWIGTYPE_p_gam__BiquadT_float_float_GAM_DEFAULT_DOMAIN_t,0))){
+    SWIG_fail_ptr("Biquad_onDomainChange",1,SWIGTYPE_p_gam__BiquadT_float_float_GAM_DEFAULT_DOMAIN_t);
+  }
+  
+  arg2 = (double)lua_tonumber(L, 2);
+  (arg1)->onDomainChange(arg2);
+  
+  return SWIG_arg;
+  
+  if(0) SWIG_fail;
+  
+fail:
+  lua_error(L);
+  return SWIG_arg;
+}
+
+
+static void swig_delete_Biquad(void *obj) {
+gam::Biquad< SampleType,SampleType > *arg1 = (gam::Biquad< SampleType,SampleType > *) obj;
+delete arg1;
+}
+static int _proxy__wrap_new_Biquad(lua_State *L) {
+    assert(lua_istable(L,1));
+    lua_pushcfunction(L,_wrap_new_Biquad);
+    assert(!lua_isnil(L,-1));
+    lua_replace(L,1); /* replace our table with real constructor */
+    lua_call(L,lua_gettop(L)-1,1);
+    return 1;
+}
+static swig_lua_attribute swig_Biquad_attributes[] = {
+    {0,0,0}
+};
+static swig_lua_method swig_Biquad_methods[]= {
+    { "a", _wrap_Biquad_a},
+    { "b", _wrap_Biquad_b},
+    { "coef", _wrap_Biquad_coef},
+    { "set", _wrap_Biquad_set},
+    { "zero", _wrap_Biquad_zero},
+    { "__call", _wrap_Biquad___call},
+    { "nextBP", _wrap_Biquad_nextBP},
+    { "freq", _wrap_Biquad_freq},
+    { "res", _wrap_Biquad_res},
+    { "level", _wrap_Biquad_level},
+    { "type", _wrap_Biquad_type},
+    { "onDomainChange", _wrap_Biquad_onDomainChange},
+    {0,0}
+};
+static swig_lua_method swig_Biquad_meta[] = {
+    { "__call", _wrap_Biquad___call},
+    {0,0}
+};
+
+static swig_lua_attribute swig_Biquad_Sf_SwigStatic_attributes[] = {
+    {0,0,0}
+};
+static swig_lua_const_info swig_Biquad_Sf_SwigStatic_constants[]= {
+    {0,0,0,0,0,0}
+};
+static swig_lua_method swig_Biquad_Sf_SwigStatic_methods[]= {
+    {0,0}
+};
+static swig_lua_class* swig_Biquad_Sf_SwigStatic_classes[]= {
+    0
+};
+
+static swig_lua_namespace swig_Biquad_Sf_SwigStatic = {
+    "Biquad",
+    swig_Biquad_Sf_SwigStatic_methods,
+    swig_Biquad_Sf_SwigStatic_attributes,
+    swig_Biquad_Sf_SwigStatic_constants,
+    swig_Biquad_Sf_SwigStatic_classes,
+    0
+};
+static swig_lua_class *swig_Biquad_bases[] = {0};
+static const char *swig_Biquad_base_names[] = {0};
+static swig_lua_class _wrap_class_Biquad = { "Biquad", "Biquad", &SWIGTYPE_p_gam__BiquadT_float_float_GAM_DEFAULT_DOMAIN_t,_proxy__wrap_new_Biquad, swig_delete_Biquad, swig_Biquad_methods, swig_Biquad_attributes, &swig_Biquad_Sf_SwigStatic, swig_Biquad_meta, swig_Biquad_bases, swig_Biquad_base_names };
+
+static int _wrap_new_BlockDC__SWIG_0(lua_State* L) {
+  int SWIG_arg = 0;
+  float arg1 ;
+  gam::BlockDC< SampleType,SampleType > *result = 0 ;
+  
+  SWIG_check_num_args("gam::BlockDC< SampleType,SampleType >::BlockDC",1,1)
+  if(!lua_isnumber(L,1)) SWIG_fail_arg("gam::BlockDC< SampleType,SampleType >::BlockDC",1,"float");
+  arg1 = (float)lua_tonumber(L, 1);
+  result = (gam::BlockDC< SampleType,SampleType > *)new gam::BlockDC< SampleType,SampleType >(arg1);
+  SWIG_NewPointerObj(L,result,SWIGTYPE_p_gam__BlockDCT_float_float_GAM_DEFAULT_DOMAIN_t,1); SWIG_arg++; 
+  return SWIG_arg;
+  
+  if(0) SWIG_fail;
+  
+fail:
+  lua_error(L);
+  return SWIG_arg;
+}
+
+
+static int _wrap_new_BlockDC__SWIG_1(lua_State* L) {
+  int SWIG_arg = 0;
+  gam::BlockDC< SampleType,SampleType > *result = 0 ;
+  
+  SWIG_check_num_args("gam::BlockDC< SampleType,SampleType >::BlockDC",0,0)
+  result = (gam::BlockDC< SampleType,SampleType > *)new gam::BlockDC< SampleType,SampleType >();
+  SWIG_NewPointerObj(L,result,SWIGTYPE_p_gam__BlockDCT_float_float_GAM_DEFAULT_DOMAIN_t,1); SWIG_arg++; 
+  return SWIG_arg;
+  
+  if(0) SWIG_fail;
+  
+fail:
+  lua_error(L);
+  return SWIG_arg;
+}
+
+
+static int _wrap_new_BlockDC(lua_State* L) {
+  int argc;
+  int argv[2]={
+    1,2
+  };
+  
+  argc = lua_gettop(L);
+  if (argc == 0) {
+    return _wrap_new_BlockDC__SWIG_1(L);
+  }
+  if (argc == 1) {
+    int _v = 0;
+    {
+      _v = lua_isnumber(L,argv[0]);
+    }
+    if (_v) {
+      return _wrap_new_BlockDC__SWIG_0(L);
+    }
+  }
+  
+  SWIG_Lua_pusherrstring(L,"Wrong arguments for overloaded function 'new_BlockDC'\n"
+    "  Possible C/C++ prototypes are:\n"
+    "    gam::BlockDC< SampleType,SampleType >::BlockDC(float)\n"
+    "    gam::BlockDC< SampleType,SampleType >::BlockDC()\n");
+  lua_error(L);return 0;
+}
+
+
+static int _wrap_BlockDC___call(lua_State* L) {
+  int SWIG_arg = 0;
+  gam::BlockDC< SampleType,SampleType > *arg1 = (gam::BlockDC< SampleType,SampleType > *) 0 ;
+  float arg2 ;
+  float result;
+  
+  SWIG_check_num_args("gam::BlockDC< SampleType,SampleType >::operator ()",2,2)
+  if(!SWIG_isptrtype(L,1)) SWIG_fail_arg("gam::BlockDC< SampleType,SampleType >::operator ()",1,"gam::BlockDC< SampleType,SampleType > *");
+  if(!lua_isnumber(L,2)) SWIG_fail_arg("gam::BlockDC< SampleType,SampleType >::operator ()",2,"float");
+  
+  if (!SWIG_IsOK(SWIG_ConvertPtr(L,1,(void**)&arg1,SWIGTYPE_p_gam__BlockDCT_float_float_GAM_DEFAULT_DOMAIN_t,0))){
+    SWIG_fail_ptr("BlockDC___call",1,SWIGTYPE_p_gam__BlockDCT_float_float_GAM_DEFAULT_DOMAIN_t);
+  }
+  
+  arg2 = (float)lua_tonumber(L, 2);
+  result = (float)(arg1)->operator ()(arg2);
+  lua_pushnumber(L, (lua_Number) result); SWIG_arg++;
+  return SWIG_arg;
+  
+  if(0) SWIG_fail;
+  
+fail:
+  lua_error(L);
+  return SWIG_arg;
+}
+
+
+static int _wrap_BlockDC_Tick(lua_State* L) {
+  int SWIG_arg = 0;
+  gam::BlockDC< SampleType,SampleType > *arg1 = (gam::BlockDC< SampleType,SampleType > *) 0 ;
+  float arg2 ;
+  float result;
+  
+  SWIG_check_num_args("gam::BlockDC< SampleType,SampleType >::Tick",2,2)
+  if(!SWIG_isptrtype(L,1)) SWIG_fail_arg("gam::BlockDC< SampleType,SampleType >::Tick",1,"gam::BlockDC< SampleType,SampleType > *");
+  if(!lua_isnumber(L,2)) SWIG_fail_arg("gam::BlockDC< SampleType,SampleType >::Tick",2,"float");
+  
+  if (!SWIG_IsOK(SWIG_ConvertPtr(L,1,(void**)&arg1,SWIGTYPE_p_gam__BlockDCT_float_float_GAM_DEFAULT_DOMAIN_t,0))){
+    SWIG_fail_ptr("BlockDC_Tick",1,SWIGTYPE_p_gam__BlockDCT_float_float_GAM_DEFAULT_DOMAIN_t);
+  }
+  
+  arg2 = (float)lua_tonumber(L, 2);
+  result = (float)gam_BlockDC_Sl_SampleType_Sc_SampleType_Sg__Tick__SWIG(arg1,arg2);
+  lua_pushnumber(L, (lua_Number) result); SWIG_arg++;
+  return SWIG_arg;
+  
+  if(0) SWIG_fail;
+  
+fail:
+  lua_error(L);
+  return SWIG_arg;
+}
+
+
+static int _wrap_BlockDC_width(lua_State* L) {
+  int SWIG_arg = 0;
+  gam::BlockDC< SampleType,SampleType > *arg1 = (gam::BlockDC< SampleType,SampleType > *) 0 ;
+  float arg2 ;
+  
+  SWIG_check_num_args("gam::BlockDC< SampleType,SampleType >::width",2,2)
+  if(!SWIG_isptrtype(L,1)) SWIG_fail_arg("gam::BlockDC< SampleType,SampleType >::width",1,"gam::BlockDC< SampleType,SampleType > *");
+  if(!lua_isnumber(L,2)) SWIG_fail_arg("gam::BlockDC< SampleType,SampleType >::width",2,"float");
+  
+  if (!SWIG_IsOK(SWIG_ConvertPtr(L,1,(void**)&arg1,SWIGTYPE_p_gam__BlockDCT_float_float_GAM_DEFAULT_DOMAIN_t,0))){
+    SWIG_fail_ptr("BlockDC_width",1,SWIGTYPE_p_gam__BlockDCT_float_float_GAM_DEFAULT_DOMAIN_t);
+  }
+  
+  arg2 = (float)lua_tonumber(L, 2);
+  (arg1)->width(arg2);
+  
+  return SWIG_arg;
+  
+  if(0) SWIG_fail;
+  
+fail:
+  lua_error(L);
+  return SWIG_arg;
+}
+
+
+static int _wrap_BlockDC_zero(lua_State* L) {
+  int SWIG_arg = 0;
+  gam::BlockDC< SampleType,SampleType > *arg1 = (gam::BlockDC< SampleType,SampleType > *) 0 ;
+  
+  SWIG_check_num_args("gam::BlockDC< SampleType,SampleType >::zero",1,1)
+  if(!SWIG_isptrtype(L,1)) SWIG_fail_arg("gam::BlockDC< SampleType,SampleType >::zero",1,"gam::BlockDC< SampleType,SampleType > *");
+  
+  if (!SWIG_IsOK(SWIG_ConvertPtr(L,1,(void**)&arg1,SWIGTYPE_p_gam__BlockDCT_float_float_GAM_DEFAULT_DOMAIN_t,0))){
+    SWIG_fail_ptr("BlockDC_zero",1,SWIGTYPE_p_gam__BlockDCT_float_float_GAM_DEFAULT_DOMAIN_t);
+  }
+  
+  (arg1)->zero();
+  
+  return SWIG_arg;
+  
+  if(0) SWIG_fail;
+  
+fail:
+  lua_error(L);
+  return SWIG_arg;
+}
+
+
+static int _wrap_BlockDC_onDomainChange(lua_State* L) {
+  int SWIG_arg = 0;
+  gam::BlockDC< SampleType,SampleType > *arg1 = (gam::BlockDC< SampleType,SampleType > *) 0 ;
+  double arg2 ;
+  
+  SWIG_check_num_args("gam::BlockDC< SampleType,SampleType >::onDomainChange",2,2)
+  if(!SWIG_isptrtype(L,1)) SWIG_fail_arg("gam::BlockDC< SampleType,SampleType >::onDomainChange",1,"gam::BlockDC< SampleType,SampleType > *");
+  if(!lua_isnumber(L,2)) SWIG_fail_arg("gam::BlockDC< SampleType,SampleType >::onDomainChange",2,"double");
+  
+  if (!SWIG_IsOK(SWIG_ConvertPtr(L,1,(void**)&arg1,SWIGTYPE_p_gam__BlockDCT_float_float_GAM_DEFAULT_DOMAIN_t,0))){
+    SWIG_fail_ptr("BlockDC_onDomainChange",1,SWIGTYPE_p_gam__BlockDCT_float_float_GAM_DEFAULT_DOMAIN_t);
+  }
+  
+  arg2 = (double)lua_tonumber(L, 2);
+  (arg1)->onDomainChange(arg2);
+  
+  return SWIG_arg;
+  
+  if(0) SWIG_fail;
+  
+fail:
+  lua_error(L);
+  return SWIG_arg;
+}
+
+
+static void swig_delete_BlockDC(void *obj) {
+gam::BlockDC< SampleType,SampleType > *arg1 = (gam::BlockDC< SampleType,SampleType > *) obj;
+delete arg1;
+}
+static int _proxy__wrap_new_BlockDC(lua_State *L) {
+    assert(lua_istable(L,1));
+    lua_pushcfunction(L,_wrap_new_BlockDC);
+    assert(!lua_isnil(L,-1));
+    lua_replace(L,1); /* replace our table with real constructor */
+    lua_call(L,lua_gettop(L)-1,1);
+    return 1;
+}
+static swig_lua_attribute swig_BlockDC_attributes[] = {
+    {0,0,0}
+};
+static swig_lua_method swig_BlockDC_methods[]= {
+    { "__call", _wrap_BlockDC___call},
+    { "Tick", _wrap_BlockDC_Tick},
+    { "width", _wrap_BlockDC_width},
+    { "zero", _wrap_BlockDC_zero},
+    { "onDomainChange", _wrap_BlockDC_onDomainChange},
+    {0,0}
+};
+static swig_lua_method swig_BlockDC_meta[] = {
+    { "__call", _wrap_BlockDC___call},
+    {0,0}
+};
+
+static swig_lua_attribute swig_BlockDC_Sf_SwigStatic_attributes[] = {
+    {0,0,0}
+};
+static swig_lua_const_info swig_BlockDC_Sf_SwigStatic_constants[]= {
+    {0,0,0,0,0,0}
+};
+static swig_lua_method swig_BlockDC_Sf_SwigStatic_methods[]= {
+    {0,0}
+};
+static swig_lua_class* swig_BlockDC_Sf_SwigStatic_classes[]= {
+    0
+};
+
+static swig_lua_namespace swig_BlockDC_Sf_SwigStatic = {
+    "BlockDC",
+    swig_BlockDC_Sf_SwigStatic_methods,
+    swig_BlockDC_Sf_SwigStatic_attributes,
+    swig_BlockDC_Sf_SwigStatic_constants,
+    swig_BlockDC_Sf_SwigStatic_classes,
+    0
+};
+static swig_lua_class *swig_BlockDC_bases[] = {0};
+static const char *swig_BlockDC_base_names[] = {0};
+static swig_lua_class _wrap_class_BlockDC = { "BlockDC", "BlockDC", &SWIGTYPE_p_gam__BlockDCT_float_float_GAM_DEFAULT_DOMAIN_t,_proxy__wrap_new_BlockDC, swig_delete_BlockDC, swig_BlockDC_methods, swig_BlockDC_attributes, &swig_BlockDC_Sf_SwigStatic, swig_BlockDC_meta, swig_BlockDC_bases, swig_BlockDC_base_names };
+
+static int _wrap_new_BlockNyq__SWIG_0(lua_State* L) {
+  int SWIG_arg = 0;
+  float arg1 ;
+  gam::BlockNyq< SampleType,SampleType > *result = 0 ;
+  
+  SWIG_check_num_args("gam::BlockNyq< SampleType,SampleType >::BlockNyq",1,1)
+  if(!lua_isnumber(L,1)) SWIG_fail_arg("gam::BlockNyq< SampleType,SampleType >::BlockNyq",1,"float");
+  arg1 = (float)lua_tonumber(L, 1);
+  result = (gam::BlockNyq< SampleType,SampleType > *)new gam::BlockNyq< SampleType,SampleType >(arg1);
+  SWIG_NewPointerObj(L,result,SWIGTYPE_p_gam__BlockNyqT_float_float_GAM_DEFAULT_DOMAIN_t,1); SWIG_arg++; 
+  return SWIG_arg;
+  
+  if(0) SWIG_fail;
+  
+fail:
+  lua_error(L);
+  return SWIG_arg;
+}
+
+
+static int _wrap_new_BlockNyq__SWIG_1(lua_State* L) {
+  int SWIG_arg = 0;
+  gam::BlockNyq< SampleType,SampleType > *result = 0 ;
+  
+  SWIG_check_num_args("gam::BlockNyq< SampleType,SampleType >::BlockNyq",0,0)
+  result = (gam::BlockNyq< SampleType,SampleType > *)new gam::BlockNyq< SampleType,SampleType >();
+  SWIG_NewPointerObj(L,result,SWIGTYPE_p_gam__BlockNyqT_float_float_GAM_DEFAULT_DOMAIN_t,1); SWIG_arg++; 
+  return SWIG_arg;
+  
+  if(0) SWIG_fail;
+  
+fail:
+  lua_error(L);
+  return SWIG_arg;
+}
+
+
+static int _wrap_new_BlockNyq(lua_State* L) {
+  int argc;
+  int argv[2]={
+    1,2
+  };
+  
+  argc = lua_gettop(L);
+  if (argc == 0) {
+    return _wrap_new_BlockNyq__SWIG_1(L);
+  }
+  if (argc == 1) {
+    int _v = 0;
+    {
+      _v = lua_isnumber(L,argv[0]);
+    }
+    if (_v) {
+      return _wrap_new_BlockNyq__SWIG_0(L);
+    }
+  }
+  
+  SWIG_Lua_pusherrstring(L,"Wrong arguments for overloaded function 'new_BlockNyq'\n"
+    "  Possible C/C++ prototypes are:\n"
+    "    gam::BlockNyq< SampleType,SampleType >::BlockNyq(float)\n"
+    "    gam::BlockNyq< SampleType,SampleType >::BlockNyq()\n");
+  lua_error(L);return 0;
+}
+
+
+static int _wrap_BlockNyq_Tick(lua_State* L) {
+  int SWIG_arg = 0;
+  gam::BlockNyq< SampleType,SampleType > *arg1 = (gam::BlockNyq< SampleType,SampleType > *) 0 ;
+  float arg2 ;
+  float result;
+  
+  SWIG_check_num_args("gam::BlockNyq< SampleType,SampleType >::Tick",2,2)
+  if(!SWIG_isptrtype(L,1)) SWIG_fail_arg("gam::BlockNyq< SampleType,SampleType >::Tick",1,"gam::BlockNyq< SampleType,SampleType > *");
+  if(!lua_isnumber(L,2)) SWIG_fail_arg("gam::BlockNyq< SampleType,SampleType >::Tick",2,"float");
+  
+  if (!SWIG_IsOK(SWIG_ConvertPtr(L,1,(void**)&arg1,SWIGTYPE_p_gam__BlockNyqT_float_float_GAM_DEFAULT_DOMAIN_t,0))){
+    SWIG_fail_ptr("BlockNyq_Tick",1,SWIGTYPE_p_gam__BlockNyqT_float_float_GAM_DEFAULT_DOMAIN_t);
+  }
+  
+  arg2 = (float)lua_tonumber(L, 2);
+  result = (float)gam_BlockNyq_Sl_SampleType_Sc_SampleType_Sg__Tick__SWIG(arg1,arg2);
+  lua_pushnumber(L, (lua_Number) result); SWIG_arg++;
+  return SWIG_arg;
+  
+  if(0) SWIG_fail;
+  
+fail:
+  lua_error(L);
+  return SWIG_arg;
+}
+
+
+static int _wrap_BlockNyq_width(lua_State* L) {
+  int SWIG_arg = 0;
+  gam::BlockNyq< SampleType,SampleType > *arg1 = (gam::BlockNyq< SampleType,SampleType > *) 0 ;
+  float arg2 ;
+  
+  SWIG_check_num_args("gam::BlockNyq< SampleType,SampleType >::width",2,2)
+  if(!SWIG_isptrtype(L,1)) SWIG_fail_arg("gam::BlockNyq< SampleType,SampleType >::width",1,"gam::BlockNyq< SampleType,SampleType > *");
+  if(!lua_isnumber(L,2)) SWIG_fail_arg("gam::BlockNyq< SampleType,SampleType >::width",2,"float");
+  
+  if (!SWIG_IsOK(SWIG_ConvertPtr(L,1,(void**)&arg1,SWIGTYPE_p_gam__BlockNyqT_float_float_GAM_DEFAULT_DOMAIN_t,0))){
+    SWIG_fail_ptr("BlockNyq_width",1,SWIGTYPE_p_gam__BlockNyqT_float_float_GAM_DEFAULT_DOMAIN_t);
+  }
+  
+  arg2 = (float)lua_tonumber(L, 2);
+  (arg1)->width(arg2);
+  
+  return SWIG_arg;
+  
+  if(0) SWIG_fail;
+  
+fail:
+  lua_error(L);
+  return SWIG_arg;
+}
+
+
+static void swig_delete_BlockNyq(void *obj) {
+gam::BlockNyq< SampleType,SampleType > *arg1 = (gam::BlockNyq< SampleType,SampleType > *) obj;
+delete arg1;
+}
+static int _proxy__wrap_new_BlockNyq(lua_State *L) {
+    assert(lua_istable(L,1));
+    lua_pushcfunction(L,_wrap_new_BlockNyq);
+    assert(!lua_isnil(L,-1));
+    lua_replace(L,1); /* replace our table with real constructor */
+    lua_call(L,lua_gettop(L)-1,1);
+    return 1;
+}
+static swig_lua_attribute swig_BlockNyq_attributes[] = {
+    {0,0,0}
+};
+static swig_lua_method swig_BlockNyq_methods[]= {
+    { "Tick", _wrap_BlockNyq_Tick},
+    { "width", _wrap_BlockNyq_width},
+    {0,0}
+};
+static swig_lua_method swig_BlockNyq_meta[] = {
+    {0,0}
+};
+
+static swig_lua_attribute swig_BlockNyq_Sf_SwigStatic_attributes[] = {
+    {0,0,0}
+};
+static swig_lua_const_info swig_BlockNyq_Sf_SwigStatic_constants[]= {
+    {0,0,0,0,0,0}
+};
+static swig_lua_method swig_BlockNyq_Sf_SwigStatic_methods[]= {
+    {0,0}
+};
+static swig_lua_class* swig_BlockNyq_Sf_SwigStatic_classes[]= {
+    0
+};
+
+static swig_lua_namespace swig_BlockNyq_Sf_SwigStatic = {
+    "BlockNyq",
+    swig_BlockNyq_Sf_SwigStatic_methods,
+    swig_BlockNyq_Sf_SwigStatic_attributes,
+    swig_BlockNyq_Sf_SwigStatic_constants,
+    swig_BlockNyq_Sf_SwigStatic_classes,
+    0
+};
+static swig_lua_class *swig_BlockNyq_bases[] = {0,0};
+static const char *swig_BlockNyq_base_names[] = {"gam::BlockDC< SampleType,SampleType > *",0};
+static swig_lua_class _wrap_class_BlockNyq = { "BlockNyq", "BlockNyq", &SWIGTYPE_p_gam__BlockNyqT_float_float_GAM_DEFAULT_DOMAIN_t,_proxy__wrap_new_BlockNyq, swig_delete_BlockNyq, swig_BlockNyq_methods, swig_BlockNyq_attributes, &swig_BlockNyq_Sf_SwigStatic, swig_BlockNyq_meta, swig_BlockNyq_bases, swig_BlockNyq_base_names };
+
+static int _wrap_new_AllPass2__SWIG_0(lua_State* L) {
+  int SWIG_arg = 0;
+  float arg1 ;
+  float arg2 ;
+  gam::AllPass2< SampleType,SampleType > *result = 0 ;
+  
+  SWIG_check_num_args("gam::AllPass2< SampleType,SampleType >::AllPass2",2,2)
+  if(!lua_isnumber(L,1)) SWIG_fail_arg("gam::AllPass2< SampleType,SampleType >::AllPass2",1,"float");
+  if(!lua_isnumber(L,2)) SWIG_fail_arg("gam::AllPass2< SampleType,SampleType >::AllPass2",2,"float");
+  arg1 = (float)lua_tonumber(L, 1);
+  arg2 = (float)lua_tonumber(L, 2);
+  result = (gam::AllPass2< SampleType,SampleType > *)new gam::AllPass2< SampleType,SampleType >(arg1,arg2);
+  SWIG_NewPointerObj(L,result,SWIGTYPE_p_gam__AllPass2T_float_float_GAM_DEFAULT_DOMAIN_t,1); SWIG_arg++; 
+  return SWIG_arg;
+  
+  if(0) SWIG_fail;
+  
+fail:
+  lua_error(L);
+  return SWIG_arg;
+}
+
+
+static int _wrap_new_AllPass2__SWIG_1(lua_State* L) {
+  int SWIG_arg = 0;
+  float arg1 ;
+  gam::AllPass2< SampleType,SampleType > *result = 0 ;
+  
+  SWIG_check_num_args("gam::AllPass2< SampleType,SampleType >::AllPass2",1,1)
+  if(!lua_isnumber(L,1)) SWIG_fail_arg("gam::AllPass2< SampleType,SampleType >::AllPass2",1,"float");
+  arg1 = (float)lua_tonumber(L, 1);
+  result = (gam::AllPass2< SampleType,SampleType > *)new gam::AllPass2< SampleType,SampleType >(arg1);
+  SWIG_NewPointerObj(L,result,SWIGTYPE_p_gam__AllPass2T_float_float_GAM_DEFAULT_DOMAIN_t,1); SWIG_arg++; 
+  return SWIG_arg;
+  
+  if(0) SWIG_fail;
+  
+fail:
+  lua_error(L);
+  return SWIG_arg;
+}
+
+
+static int _wrap_new_AllPass2__SWIG_2(lua_State* L) {
+  int SWIG_arg = 0;
+  gam::AllPass2< SampleType,SampleType > *result = 0 ;
+  
+  SWIG_check_num_args("gam::AllPass2< SampleType,SampleType >::AllPass2",0,0)
+  result = (gam::AllPass2< SampleType,SampleType > *)new gam::AllPass2< SampleType,SampleType >();
+  SWIG_NewPointerObj(L,result,SWIGTYPE_p_gam__AllPass2T_float_float_GAM_DEFAULT_DOMAIN_t,1); SWIG_arg++; 
+  return SWIG_arg;
+  
+  if(0) SWIG_fail;
+  
+fail:
+  lua_error(L);
+  return SWIG_arg;
+}
+
+
+static int _wrap_new_AllPass2(lua_State* L) {
+  int argc;
+  int argv[3]={
+    1,2,3
+  };
+  
+  argc = lua_gettop(L);
+  if (argc == 0) {
+    return _wrap_new_AllPass2__SWIG_2(L);
+  }
+  if (argc == 1) {
+    int _v = 0;
+    {
+      _v = lua_isnumber(L,argv[0]);
+    }
+    if (_v) {
+      return _wrap_new_AllPass2__SWIG_1(L);
+    }
+  }
+  if (argc == 2) {
+    int _v = 0;
+    {
+      _v = lua_isnumber(L,argv[0]);
+    }
+    if (_v) {
+      {
+        _v = lua_isnumber(L,argv[1]);
+      }
+      if (_v) {
+        return _wrap_new_AllPass2__SWIG_0(L);
+      }
+    }
+  }
+  
+  SWIG_Lua_pusherrstring(L,"Wrong arguments for overloaded function 'new_AllPass2'\n"
+    "  Possible C/C++ prototypes are:\n"
+    "    gam::AllPass2< SampleType,SampleType >::AllPass2(float,float)\n"
+    "    gam::AllPass2< SampleType,SampleType >::AllPass2(float)\n"
+    "    gam::AllPass2< SampleType,SampleType >::AllPass2()\n");
+  lua_error(L);return 0;
+}
+
+
+static int _wrap_AllPass2_Tick(lua_State* L) {
+  int SWIG_arg = 0;
+  gam::AllPass2< SampleType,SampleType > *arg1 = (gam::AllPass2< SampleType,SampleType > *) 0 ;
+  float arg2 ;
+  float result;
+  
+  SWIG_check_num_args("gam::AllPass2< SampleType,SampleType >::Tick",2,2)
+  if(!SWIG_isptrtype(L,1)) SWIG_fail_arg("gam::AllPass2< SampleType,SampleType >::Tick",1,"gam::AllPass2< SampleType,SampleType > *");
+  if(!lua_isnumber(L,2)) SWIG_fail_arg("gam::AllPass2< SampleType,SampleType >::Tick",2,"float");
+  
+  if (!SWIG_IsOK(SWIG_ConvertPtr(L,1,(void**)&arg1,SWIGTYPE_p_gam__AllPass2T_float_float_GAM_DEFAULT_DOMAIN_t,0))){
+    SWIG_fail_ptr("AllPass2_Tick",1,SWIGTYPE_p_gam__AllPass2T_float_float_GAM_DEFAULT_DOMAIN_t);
+  }
+  
+  arg2 = (float)lua_tonumber(L, 2);
+  result = (float)gam_AllPass2_Sl_SampleType_Sc_SampleType_Sg__Tick__SWIG(arg1,arg2);
+  lua_pushnumber(L, (lua_Number) result); SWIG_arg++;
+  return SWIG_arg;
+  
+  if(0) SWIG_fail;
+  
+fail:
+  lua_error(L);
+  return SWIG_arg;
+}
+
+
+static void swig_delete_AllPass2(void *obj) {
+gam::AllPass2< SampleType,SampleType > *arg1 = (gam::AllPass2< SampleType,SampleType > *) obj;
+delete arg1;
+}
+static int _proxy__wrap_new_AllPass2(lua_State *L) {
+    assert(lua_istable(L,1));
+    lua_pushcfunction(L,_wrap_new_AllPass2);
+    assert(!lua_isnil(L,-1));
+    lua_replace(L,1); /* replace our table with real constructor */
+    lua_call(L,lua_gettop(L)-1,1);
+    return 1;
+}
+static swig_lua_attribute swig_AllPass2_attributes[] = {
+    {0,0,0}
+};
+static swig_lua_method swig_AllPass2_methods[]= {
+    { "Tick", _wrap_AllPass2_Tick},
+    {0,0}
+};
+static swig_lua_method swig_AllPass2_meta[] = {
+    {0,0}
+};
+
+static swig_lua_attribute swig_AllPass2_Sf_SwigStatic_attributes[] = {
+    {0,0,0}
+};
+static swig_lua_const_info swig_AllPass2_Sf_SwigStatic_constants[]= {
+    {0,0,0,0,0,0}
+};
+static swig_lua_method swig_AllPass2_Sf_SwigStatic_methods[]= {
+    {0,0}
+};
+static swig_lua_class* swig_AllPass2_Sf_SwigStatic_classes[]= {
+    0
+};
+
+static swig_lua_namespace swig_AllPass2_Sf_SwigStatic = {
+    "AllPass2",
+    swig_AllPass2_Sf_SwigStatic_methods,
+    swig_AllPass2_Sf_SwigStatic_attributes,
+    swig_AllPass2_Sf_SwigStatic_constants,
+    swig_AllPass2_Sf_SwigStatic_classes,
+    0
+};
+static swig_lua_class *swig_AllPass2_bases[] = {0};
+static const char *swig_AllPass2_base_names[] = {0};
+static swig_lua_class _wrap_class_AllPass2 = { "AllPass2", "AllPass2", &SWIGTYPE_p_gam__AllPass2T_float_float_GAM_DEFAULT_DOMAIN_t,_proxy__wrap_new_AllPass2, swig_delete_AllPass2, swig_AllPass2_methods, swig_AllPass2_attributes, &swig_AllPass2_Sf_SwigStatic, swig_AllPass2_meta, swig_AllPass2_bases, swig_AllPass2_base_names };
+
+static int _wrap_new_Notch__SWIG_0(lua_State* L) {
+  int SWIG_arg = 0;
+  float arg1 ;
+  float arg2 ;
+  gam::Notch< SampleType,SampleType > *result = 0 ;
+  
+  SWIG_check_num_args("gam::Notch< SampleType,SampleType >::Notch",2,2)
+  if(!lua_isnumber(L,1)) SWIG_fail_arg("gam::Notch< SampleType,SampleType >::Notch",1,"float");
+  if(!lua_isnumber(L,2)) SWIG_fail_arg("gam::Notch< SampleType,SampleType >::Notch",2,"float");
+  arg1 = (float)lua_tonumber(L, 1);
+  arg2 = (float)lua_tonumber(L, 2);
+  result = (gam::Notch< SampleType,SampleType > *)new gam::Notch< SampleType,SampleType >(arg1,arg2);
+  SWIG_NewPointerObj(L,result,SWIGTYPE_p_gam__NotchT_float_float_GAM_DEFAULT_DOMAIN_t,1); SWIG_arg++; 
+  return SWIG_arg;
+  
+  if(0) SWIG_fail;
+  
+fail:
+  lua_error(L);
+  return SWIG_arg;
+}
+
+
+static int _wrap_new_Notch__SWIG_1(lua_State* L) {
+  int SWIG_arg = 0;
+  float arg1 ;
+  gam::Notch< SampleType,SampleType > *result = 0 ;
+  
+  SWIG_check_num_args("gam::Notch< SampleType,SampleType >::Notch",1,1)
+  if(!lua_isnumber(L,1)) SWIG_fail_arg("gam::Notch< SampleType,SampleType >::Notch",1,"float");
+  arg1 = (float)lua_tonumber(L, 1);
+  result = (gam::Notch< SampleType,SampleType > *)new gam::Notch< SampleType,SampleType >(arg1);
+  SWIG_NewPointerObj(L,result,SWIGTYPE_p_gam__NotchT_float_float_GAM_DEFAULT_DOMAIN_t,1); SWIG_arg++; 
+  return SWIG_arg;
+  
+  if(0) SWIG_fail;
+  
+fail:
+  lua_error(L);
+  return SWIG_arg;
+}
+
+
+static int _wrap_new_Notch__SWIG_2(lua_State* L) {
+  int SWIG_arg = 0;
+  gam::Notch< SampleType,SampleType > *result = 0 ;
+  
+  SWIG_check_num_args("gam::Notch< SampleType,SampleType >::Notch",0,0)
+  result = (gam::Notch< SampleType,SampleType > *)new gam::Notch< SampleType,SampleType >();
+  SWIG_NewPointerObj(L,result,SWIGTYPE_p_gam__NotchT_float_float_GAM_DEFAULT_DOMAIN_t,1); SWIG_arg++; 
+  return SWIG_arg;
+  
+  if(0) SWIG_fail;
+  
+fail:
+  lua_error(L);
+  return SWIG_arg;
+}
+
+
+static int _wrap_new_Notch(lua_State* L) {
+  int argc;
+  int argv[3]={
+    1,2,3
+  };
+  
+  argc = lua_gettop(L);
+  if (argc == 0) {
+    return _wrap_new_Notch__SWIG_2(L);
+  }
+  if (argc == 1) {
+    int _v = 0;
+    {
+      _v = lua_isnumber(L,argv[0]);
+    }
+    if (_v) {
+      return _wrap_new_Notch__SWIG_1(L);
+    }
+  }
+  if (argc == 2) {
+    int _v = 0;
+    {
+      _v = lua_isnumber(L,argv[0]);
+    }
+    if (_v) {
+      {
+        _v = lua_isnumber(L,argv[1]);
+      }
+      if (_v) {
+        return _wrap_new_Notch__SWIG_0(L);
+      }
+    }
+  }
+  
+  SWIG_Lua_pusherrstring(L,"Wrong arguments for overloaded function 'new_Notch'\n"
+    "  Possible C/C++ prototypes are:\n"
+    "    gam::Notch< SampleType,SampleType >::Notch(float,float)\n"
+    "    gam::Notch< SampleType,SampleType >::Notch(float)\n"
+    "    gam::Notch< SampleType,SampleType >::Notch()\n");
+  lua_error(L);return 0;
+}
+
+
+static int _wrap_Notch_freq(lua_State* L) {
+  int SWIG_arg = 0;
+  gam::Notch< SampleType,SampleType > *arg1 = (gam::Notch< SampleType,SampleType > *) 0 ;
+  float arg2 ;
+  
+  SWIG_check_num_args("gam::Notch< SampleType,SampleType >::freq",2,2)
+  if(!SWIG_isptrtype(L,1)) SWIG_fail_arg("gam::Notch< SampleType,SampleType >::freq",1,"gam::Notch< SampleType,SampleType > *");
+  if(!lua_isnumber(L,2)) SWIG_fail_arg("gam::Notch< SampleType,SampleType >::freq",2,"float");
+  
+  if (!SWIG_IsOK(SWIG_ConvertPtr(L,1,(void**)&arg1,SWIGTYPE_p_gam__NotchT_float_float_GAM_DEFAULT_DOMAIN_t,0))){
+    SWIG_fail_ptr("Notch_freq",1,SWIGTYPE_p_gam__NotchT_float_float_GAM_DEFAULT_DOMAIN_t);
+  }
+  
+  arg2 = (float)lua_tonumber(L, 2);
+  (arg1)->freq(arg2);
+  
+  return SWIG_arg;
+  
+  if(0) SWIG_fail;
+  
+fail:
+  lua_error(L);
+  return SWIG_arg;
+}
+
+
+static int _wrap_Notch_width(lua_State* L) {
+  int SWIG_arg = 0;
+  gam::Notch< SampleType,SampleType > *arg1 = (gam::Notch< SampleType,SampleType > *) 0 ;
+  float arg2 ;
+  
+  SWIG_check_num_args("gam::Notch< SampleType,SampleType >::width",2,2)
+  if(!SWIG_isptrtype(L,1)) SWIG_fail_arg("gam::Notch< SampleType,SampleType >::width",1,"gam::Notch< SampleType,SampleType > *");
+  if(!lua_isnumber(L,2)) SWIG_fail_arg("gam::Notch< SampleType,SampleType >::width",2,"float");
+  
+  if (!SWIG_IsOK(SWIG_ConvertPtr(L,1,(void**)&arg1,SWIGTYPE_p_gam__NotchT_float_float_GAM_DEFAULT_DOMAIN_t,0))){
+    SWIG_fail_ptr("Notch_width",1,SWIGTYPE_p_gam__NotchT_float_float_GAM_DEFAULT_DOMAIN_t);
+  }
+  
+  arg2 = (float)lua_tonumber(L, 2);
+  (arg1)->width(arg2);
+  
+  return SWIG_arg;
+  
+  if(0) SWIG_fail;
+  
+fail:
+  lua_error(L);
+  return SWIG_arg;
+}
+
+
+static int _wrap_Notch_Tick(lua_State* L) {
+  int SWIG_arg = 0;
+  gam::Notch< SampleType,SampleType > *arg1 = (gam::Notch< SampleType,SampleType > *) 0 ;
+  float arg2 ;
+  float result;
+  
+  SWIG_check_num_args("gam::Notch< SampleType,SampleType >::Tick",2,2)
+  if(!SWIG_isptrtype(L,1)) SWIG_fail_arg("gam::Notch< SampleType,SampleType >::Tick",1,"gam::Notch< SampleType,SampleType > *");
+  if(!lua_isnumber(L,2)) SWIG_fail_arg("gam::Notch< SampleType,SampleType >::Tick",2,"float");
+  
+  if (!SWIG_IsOK(SWIG_ConvertPtr(L,1,(void**)&arg1,SWIGTYPE_p_gam__NotchT_float_float_GAM_DEFAULT_DOMAIN_t,0))){
+    SWIG_fail_ptr("Notch_Tick",1,SWIGTYPE_p_gam__NotchT_float_float_GAM_DEFAULT_DOMAIN_t);
+  }
+  
+  arg2 = (float)lua_tonumber(L, 2);
+  result = (float)gam_Notch_Sl_SampleType_Sc_SampleType_Sg__Tick__SWIG(arg1,arg2);
+  lua_pushnumber(L, (lua_Number) result); SWIG_arg++;
+  return SWIG_arg;
+  
+  if(0) SWIG_fail;
+  
+fail:
+  lua_error(L);
+  return SWIG_arg;
+}
+
+
+static void swig_delete_Notch(void *obj) {
+gam::Notch< SampleType,SampleType > *arg1 = (gam::Notch< SampleType,SampleType > *) obj;
+delete arg1;
+}
+static int _proxy__wrap_new_Notch(lua_State *L) {
+    assert(lua_istable(L,1));
+    lua_pushcfunction(L,_wrap_new_Notch);
+    assert(!lua_isnil(L,-1));
+    lua_replace(L,1); /* replace our table with real constructor */
+    lua_call(L,lua_gettop(L)-1,1);
+    return 1;
+}
+static swig_lua_attribute swig_Notch_attributes[] = {
+    {0,0,0}
+};
+static swig_lua_method swig_Notch_methods[]= {
+    { "freq", _wrap_Notch_freq},
+    { "width", _wrap_Notch_width},
+    { "Tick", _wrap_Notch_Tick},
+    {0,0}
+};
+static swig_lua_method swig_Notch_meta[] = {
+    {0,0}
+};
+
+static swig_lua_attribute swig_Notch_Sf_SwigStatic_attributes[] = {
+    {0,0,0}
+};
+static swig_lua_const_info swig_Notch_Sf_SwigStatic_constants[]= {
+    {0,0,0,0,0,0}
+};
+static swig_lua_method swig_Notch_Sf_SwigStatic_methods[]= {
+    {0,0}
+};
+static swig_lua_class* swig_Notch_Sf_SwigStatic_classes[]= {
+    0
+};
+
+static swig_lua_namespace swig_Notch_Sf_SwigStatic = {
+    "Notch",
+    swig_Notch_Sf_SwigStatic_methods,
+    swig_Notch_Sf_SwigStatic_attributes,
+    swig_Notch_Sf_SwigStatic_constants,
+    swig_Notch_Sf_SwigStatic_classes,
+    0
+};
+static swig_lua_class *swig_Notch_bases[] = {0};
+static const char *swig_Notch_base_names[] = {0};
+static swig_lua_class _wrap_class_Notch = { "Notch", "Notch", &SWIGTYPE_p_gam__NotchT_float_float_GAM_DEFAULT_DOMAIN_t,_proxy__wrap_new_Notch, swig_delete_Notch, swig_Notch_methods, swig_Notch_attributes, &swig_Notch_Sf_SwigStatic, swig_Notch_meta, swig_Notch_bases, swig_Notch_base_names };
+
+static int _wrap_new_Reson__SWIG_0(lua_State* L) {
+  int SWIG_arg = 0;
+  float arg1 ;
+  float arg2 ;
+  gam::Reson< SampleType,SampleType > *result = 0 ;
+  
+  SWIG_check_num_args("gam::Reson< SampleType,SampleType >::Reson",2,2)
+  if(!lua_isnumber(L,1)) SWIG_fail_arg("gam::Reson< SampleType,SampleType >::Reson",1,"float");
+  if(!lua_isnumber(L,2)) SWIG_fail_arg("gam::Reson< SampleType,SampleType >::Reson",2,"float");
+  arg1 = (float)lua_tonumber(L, 1);
+  arg2 = (float)lua_tonumber(L, 2);
+  result = (gam::Reson< SampleType,SampleType > *)new gam::Reson< SampleType,SampleType >(arg1,arg2);
+  SWIG_NewPointerObj(L,result,SWIGTYPE_p_gam__ResonT_float_float_GAM_DEFAULT_DOMAIN_t,1); SWIG_arg++; 
+  return SWIG_arg;
+  
+  if(0) SWIG_fail;
+  
+fail:
+  lua_error(L);
+  return SWIG_arg;
+}
+
+
+static int _wrap_new_Reson__SWIG_1(lua_State* L) {
+  int SWIG_arg = 0;
+  float arg1 ;
+  gam::Reson< SampleType,SampleType > *result = 0 ;
+  
+  SWIG_check_num_args("gam::Reson< SampleType,SampleType >::Reson",1,1)
+  if(!lua_isnumber(L,1)) SWIG_fail_arg("gam::Reson< SampleType,SampleType >::Reson",1,"float");
+  arg1 = (float)lua_tonumber(L, 1);
+  result = (gam::Reson< SampleType,SampleType > *)new gam::Reson< SampleType,SampleType >(arg1);
+  SWIG_NewPointerObj(L,result,SWIGTYPE_p_gam__ResonT_float_float_GAM_DEFAULT_DOMAIN_t,1); SWIG_arg++; 
+  return SWIG_arg;
+  
+  if(0) SWIG_fail;
+  
+fail:
+  lua_error(L);
+  return SWIG_arg;
+}
+
+
+static int _wrap_new_Reson__SWIG_2(lua_State* L) {
+  int SWIG_arg = 0;
+  gam::Reson< SampleType,SampleType > *result = 0 ;
+  
+  SWIG_check_num_args("gam::Reson< SampleType,SampleType >::Reson",0,0)
+  result = (gam::Reson< SampleType,SampleType > *)new gam::Reson< SampleType,SampleType >();
+  SWIG_NewPointerObj(L,result,SWIGTYPE_p_gam__ResonT_float_float_GAM_DEFAULT_DOMAIN_t,1); SWIG_arg++; 
+  return SWIG_arg;
+  
+  if(0) SWIG_fail;
+  
+fail:
+  lua_error(L);
+  return SWIG_arg;
+}
+
+
+static int _wrap_new_Reson(lua_State* L) {
+  int argc;
+  int argv[3]={
+    1,2,3
+  };
+  
+  argc = lua_gettop(L);
+  if (argc == 0) {
+    return _wrap_new_Reson__SWIG_2(L);
+  }
+  if (argc == 1) {
+    int _v = 0;
+    {
+      _v = lua_isnumber(L,argv[0]);
+    }
+    if (_v) {
+      return _wrap_new_Reson__SWIG_1(L);
+    }
+  }
+  if (argc == 2) {
+    int _v = 0;
+    {
+      _v = lua_isnumber(L,argv[0]);
+    }
+    if (_v) {
+      {
+        _v = lua_isnumber(L,argv[1]);
+      }
+      if (_v) {
+        return _wrap_new_Reson__SWIG_0(L);
+      }
+    }
+  }
+  
+  SWIG_Lua_pusherrstring(L,"Wrong arguments for overloaded function 'new_Reson'\n"
+    "  Possible C/C++ prototypes are:\n"
+    "    gam::Reson< SampleType,SampleType >::Reson(float,float)\n"
+    "    gam::Reson< SampleType,SampleType >::Reson(float)\n"
+    "    gam::Reson< SampleType,SampleType >::Reson()\n");
+  lua_error(L);return 0;
+}
+
+
+static int _wrap_Reson_freq(lua_State* L) {
+  int SWIG_arg = 0;
+  gam::Reson< SampleType,SampleType > *arg1 = (gam::Reson< SampleType,SampleType > *) 0 ;
+  float arg2 ;
+  
+  SWIG_check_num_args("gam::Reson< SampleType,SampleType >::freq",2,2)
+  if(!SWIG_isptrtype(L,1)) SWIG_fail_arg("gam::Reson< SampleType,SampleType >::freq",1,"gam::Reson< SampleType,SampleType > *");
+  if(!lua_isnumber(L,2)) SWIG_fail_arg("gam::Reson< SampleType,SampleType >::freq",2,"float");
+  
+  if (!SWIG_IsOK(SWIG_ConvertPtr(L,1,(void**)&arg1,SWIGTYPE_p_gam__ResonT_float_float_GAM_DEFAULT_DOMAIN_t,0))){
+    SWIG_fail_ptr("Reson_freq",1,SWIGTYPE_p_gam__ResonT_float_float_GAM_DEFAULT_DOMAIN_t);
+  }
+  
+  arg2 = (float)lua_tonumber(L, 2);
+  (arg1)->freq(arg2);
+  
+  return SWIG_arg;
+  
+  if(0) SWIG_fail;
+  
+fail:
+  lua_error(L);
+  return SWIG_arg;
+}
+
+
+static int _wrap_Reson_width(lua_State* L) {
+  int SWIG_arg = 0;
+  gam::Reson< SampleType,SampleType > *arg1 = (gam::Reson< SampleType,SampleType > *) 0 ;
+  float arg2 ;
+  
+  SWIG_check_num_args("gam::Reson< SampleType,SampleType >::width",2,2)
+  if(!SWIG_isptrtype(L,1)) SWIG_fail_arg("gam::Reson< SampleType,SampleType >::width",1,"gam::Reson< SampleType,SampleType > *");
+  if(!lua_isnumber(L,2)) SWIG_fail_arg("gam::Reson< SampleType,SampleType >::width",2,"float");
+  
+  if (!SWIG_IsOK(SWIG_ConvertPtr(L,1,(void**)&arg1,SWIGTYPE_p_gam__ResonT_float_float_GAM_DEFAULT_DOMAIN_t,0))){
+    SWIG_fail_ptr("Reson_width",1,SWIGTYPE_p_gam__ResonT_float_float_GAM_DEFAULT_DOMAIN_t);
+  }
+  
+  arg2 = (float)lua_tonumber(L, 2);
+  (arg1)->width(arg2);
+  
+  return SWIG_arg;
+  
+  if(0) SWIG_fail;
+  
+fail:
+  lua_error(L);
+  return SWIG_arg;
+}
+
+
+static int _wrap_Reson_set(lua_State* L) {
+  int SWIG_arg = 0;
+  gam::Reson< SampleType,SampleType > *arg1 = (gam::Reson< SampleType,SampleType > *) 0 ;
+  float arg2 ;
+  float arg3 ;
+  
+  SWIG_check_num_args("gam::Reson< SampleType,SampleType >::set",3,3)
+  if(!SWIG_isptrtype(L,1)) SWIG_fail_arg("gam::Reson< SampleType,SampleType >::set",1,"gam::Reson< SampleType,SampleType > *");
+  if(!lua_isnumber(L,2)) SWIG_fail_arg("gam::Reson< SampleType,SampleType >::set",2,"float");
+  if(!lua_isnumber(L,3)) SWIG_fail_arg("gam::Reson< SampleType,SampleType >::set",3,"float");
+  
+  if (!SWIG_IsOK(SWIG_ConvertPtr(L,1,(void**)&arg1,SWIGTYPE_p_gam__ResonT_float_float_GAM_DEFAULT_DOMAIN_t,0))){
+    SWIG_fail_ptr("Reson_set",1,SWIGTYPE_p_gam__ResonT_float_float_GAM_DEFAULT_DOMAIN_t);
+  }
+  
+  arg2 = (float)lua_tonumber(L, 2);
+  arg3 = (float)lua_tonumber(L, 3);
+  (arg1)->set(arg2,arg3);
+  
+  return SWIG_arg;
+  
+  if(0) SWIG_fail;
+  
+fail:
+  lua_error(L);
+  return SWIG_arg;
+}
+
+
+static int _wrap_Reson___call(lua_State* L) {
+  int SWIG_arg = 0;
+  gam::Reson< SampleType,SampleType > *arg1 = (gam::Reson< SampleType,SampleType > *) 0 ;
+  float arg2 ;
+  float result;
+  
+  SWIG_check_num_args("gam::Reson< SampleType,SampleType >::operator ()",2,2)
+  if(!SWIG_isptrtype(L,1)) SWIG_fail_arg("gam::Reson< SampleType,SampleType >::operator ()",1,"gam::Reson< SampleType,SampleType > *");
+  if(!lua_isnumber(L,2)) SWIG_fail_arg("gam::Reson< SampleType,SampleType >::operator ()",2,"float");
+  
+  if (!SWIG_IsOK(SWIG_ConvertPtr(L,1,(void**)&arg1,SWIGTYPE_p_gam__ResonT_float_float_GAM_DEFAULT_DOMAIN_t,0))){
+    SWIG_fail_ptr("Reson___call",1,SWIGTYPE_p_gam__ResonT_float_float_GAM_DEFAULT_DOMAIN_t);
+  }
+  
+  arg2 = (float)lua_tonumber(L, 2);
+  result = (float)(arg1)->operator ()(arg2);
+  lua_pushnumber(L, (lua_Number) result); SWIG_arg++;
+  return SWIG_arg;
+  
+  if(0) SWIG_fail;
+  
+fail:
+  lua_error(L);
+  return SWIG_arg;
+}
+
+
+static int _wrap_Reson_Tick(lua_State* L) {
+  int SWIG_arg = 0;
+  gam::Reson< SampleType,SampleType > *arg1 = (gam::Reson< SampleType,SampleType > *) 0 ;
+  float arg2 ;
+  float result;
+  
+  SWIG_check_num_args("gam::Reson< SampleType,SampleType >::Tick",2,2)
+  if(!SWIG_isptrtype(L,1)) SWIG_fail_arg("gam::Reson< SampleType,SampleType >::Tick",1,"gam::Reson< SampleType,SampleType > *");
+  if(!lua_isnumber(L,2)) SWIG_fail_arg("gam::Reson< SampleType,SampleType >::Tick",2,"float");
+  
+  if (!SWIG_IsOK(SWIG_ConvertPtr(L,1,(void**)&arg1,SWIGTYPE_p_gam__ResonT_float_float_GAM_DEFAULT_DOMAIN_t,0))){
+    SWIG_fail_ptr("Reson_Tick",1,SWIGTYPE_p_gam__ResonT_float_float_GAM_DEFAULT_DOMAIN_t);
+  }
+  
+  arg2 = (float)lua_tonumber(L, 2);
+  result = (float)gam_Reson_Sl_SampleType_Sc_SampleType_Sg__Tick__SWIG(arg1,arg2);
+  lua_pushnumber(L, (lua_Number) result); SWIG_arg++;
+  return SWIG_arg;
+  
+  if(0) SWIG_fail;
+  
+fail:
+  lua_error(L);
+  return SWIG_arg;
+}
+
+
+static void swig_delete_Reson(void *obj) {
+gam::Reson< SampleType,SampleType > *arg1 = (gam::Reson< SampleType,SampleType > *) obj;
+delete arg1;
+}
+static int _proxy__wrap_new_Reson(lua_State *L) {
+    assert(lua_istable(L,1));
+    lua_pushcfunction(L,_wrap_new_Reson);
+    assert(!lua_isnil(L,-1));
+    lua_replace(L,1); /* replace our table with real constructor */
+    lua_call(L,lua_gettop(L)-1,1);
+    return 1;
+}
+static swig_lua_attribute swig_Reson_attributes[] = {
+    {0,0,0}
+};
+static swig_lua_method swig_Reson_methods[]= {
+    { "freq", _wrap_Reson_freq},
+    { "width", _wrap_Reson_width},
+    { "set", _wrap_Reson_set},
+    { "__call", _wrap_Reson___call},
+    { "Tick", _wrap_Reson_Tick},
+    {0,0}
+};
+static swig_lua_method swig_Reson_meta[] = {
+    { "__call", _wrap_Reson___call},
+    {0,0}
+};
+
+static swig_lua_attribute swig_Reson_Sf_SwigStatic_attributes[] = {
+    {0,0,0}
+};
+static swig_lua_const_info swig_Reson_Sf_SwigStatic_constants[]= {
+    {0,0,0,0,0,0}
+};
+static swig_lua_method swig_Reson_Sf_SwigStatic_methods[]= {
+    {0,0}
+};
+static swig_lua_class* swig_Reson_Sf_SwigStatic_classes[]= {
+    0
+};
+
+static swig_lua_namespace swig_Reson_Sf_SwigStatic = {
+    "Reson",
+    swig_Reson_Sf_SwigStatic_methods,
+    swig_Reson_Sf_SwigStatic_attributes,
+    swig_Reson_Sf_SwigStatic_constants,
+    swig_Reson_Sf_SwigStatic_classes,
+    0
+};
+static swig_lua_class *swig_Reson_bases[] = {0};
+static const char *swig_Reson_base_names[] = {0};
+static swig_lua_class _wrap_class_Reson = { "Reson", "Reson", &SWIGTYPE_p_gam__ResonT_float_float_GAM_DEFAULT_DOMAIN_t,_proxy__wrap_new_Reson, swig_delete_Reson, swig_Reson_methods, swig_Reson_attributes, &swig_Reson_Sf_SwigStatic, swig_Reson_meta, swig_Reson_bases, swig_Reson_base_names };
+
+static int _wrap_new_Hilbert(lua_State* L) {
+  int SWIG_arg = 0;
+  gam::Hilbert< SampleType,SampleType > *result = 0 ;
+  
+  SWIG_check_num_args("gam::Hilbert< SampleType,SampleType >::Hilbert",0,0)
+  result = (gam::Hilbert< SampleType,SampleType > *)new gam::Hilbert< SampleType,SampleType >();
+  SWIG_NewPointerObj(L,result,SWIGTYPE_p_gam__HilbertT_float_float_t,1); SWIG_arg++; 
+  return SWIG_arg;
+  
+  if(0) SWIG_fail;
+  
+fail:
+  lua_error(L);
+  return SWIG_arg;
+}
+
+
+static int _wrap_Hilbert_Tick(lua_State* L) {
+  int SWIG_arg = 0;
+  gam::Hilbert< SampleType,SampleType > *arg1 = (gam::Hilbert< SampleType,SampleType > *) 0 ;
+  float arg2 ;
+  gam::Complex< float > result;
+  
+  SWIG_check_num_args("gam::Hilbert< SampleType,SampleType >::Tick",2,2)
+  if(!SWIG_isptrtype(L,1)) SWIG_fail_arg("gam::Hilbert< SampleType,SampleType >::Tick",1,"gam::Hilbert< SampleType,SampleType > *");
+  if(!lua_isnumber(L,2)) SWIG_fail_arg("gam::Hilbert< SampleType,SampleType >::Tick",2,"float");
+  
+  if (!SWIG_IsOK(SWIG_ConvertPtr(L,1,(void**)&arg1,SWIGTYPE_p_gam__HilbertT_float_float_t,0))){
+    SWIG_fail_ptr("Hilbert_Tick",1,SWIGTYPE_p_gam__HilbertT_float_float_t);
+  }
+  
+  arg2 = (float)lua_tonumber(L, 2);
+  result = gam_Hilbert_Sl_SampleType_Sc_SampleType_Sg__Tick__SWIG(arg1,arg2);
+  {
+    gam::Complex< float > * resultptr = new gam::Complex< float >((const gam::Complex< float > &) result);
+    SWIG_NewPointerObj(L,(void *) resultptr,SWIGTYPE_p_gam__ComplexT_float_t,1); SWIG_arg++;
+  }
+  return SWIG_arg;
+  
+  if(0) SWIG_fail;
+  
+fail:
+  lua_error(L);
+  return SWIG_arg;
+}
+
+
+static int _wrap_Hilbert_zero(lua_State* L) {
+  int SWIG_arg = 0;
+  gam::Hilbert< SampleType,SampleType > *arg1 = (gam::Hilbert< SampleType,SampleType > *) 0 ;
+  
+  SWIG_check_num_args("gam::Hilbert< SampleType,SampleType >::zero",1,1)
+  if(!SWIG_isptrtype(L,1)) SWIG_fail_arg("gam::Hilbert< SampleType,SampleType >::zero",1,"gam::Hilbert< SampleType,SampleType > *");
+  
+  if (!SWIG_IsOK(SWIG_ConvertPtr(L,1,(void**)&arg1,SWIGTYPE_p_gam__HilbertT_float_float_t,0))){
+    SWIG_fail_ptr("Hilbert_zero",1,SWIGTYPE_p_gam__HilbertT_float_float_t);
+  }
+  
+  (arg1)->zero();
+  
+  return SWIG_arg;
+  
+  if(0) SWIG_fail;
+  
+fail:
+  lua_error(L);
+  return SWIG_arg;
+}
+
+
+static void swig_delete_Hilbert(void *obj) {
+gam::Hilbert< SampleType,SampleType > *arg1 = (gam::Hilbert< SampleType,SampleType > *) obj;
+delete arg1;
+}
+static int _proxy__wrap_new_Hilbert(lua_State *L) {
+    assert(lua_istable(L,1));
+    lua_pushcfunction(L,_wrap_new_Hilbert);
+    assert(!lua_isnil(L,-1));
+    lua_replace(L,1); /* replace our table with real constructor */
+    lua_call(L,lua_gettop(L)-1,1);
+    return 1;
+}
+static swig_lua_attribute swig_Hilbert_attributes[] = {
+    {0,0,0}
+};
+static swig_lua_method swig_Hilbert_methods[]= {
+    { "Tick", _wrap_Hilbert_Tick},
+    { "zero", _wrap_Hilbert_zero},
+    {0,0}
+};
+static swig_lua_method swig_Hilbert_meta[] = {
+    {0,0}
+};
+
+static swig_lua_attribute swig_Hilbert_Sf_SwigStatic_attributes[] = {
+    {0,0,0}
+};
+static swig_lua_const_info swig_Hilbert_Sf_SwigStatic_constants[]= {
+    {0,0,0,0,0,0}
+};
+static swig_lua_method swig_Hilbert_Sf_SwigStatic_methods[]= {
+    {0,0}
+};
+static swig_lua_class* swig_Hilbert_Sf_SwigStatic_classes[]= {
+    0
+};
+
+static swig_lua_namespace swig_Hilbert_Sf_SwigStatic = {
+    "Hilbert",
+    swig_Hilbert_Sf_SwigStatic_methods,
+    swig_Hilbert_Sf_SwigStatic_attributes,
+    swig_Hilbert_Sf_SwigStatic_constants,
+    swig_Hilbert_Sf_SwigStatic_classes,
+    0
+};
+static swig_lua_class *swig_Hilbert_bases[] = {0};
+static const char *swig_Hilbert_base_names[] = {0};
+static swig_lua_class _wrap_class_Hilbert = { "Hilbert", "Hilbert", &SWIGTYPE_p_gam__HilbertT_float_float_t,_proxy__wrap_new_Hilbert, swig_delete_Hilbert, swig_Hilbert_methods, swig_Hilbert_attributes, &swig_Hilbert_Sf_SwigStatic, swig_Hilbert_meta, swig_Hilbert_bases, swig_Hilbert_base_names };
+
+static int _wrap_new_Integrator__SWIG_0(lua_State* L) {
+  int SWIG_arg = 0;
+  float arg1 ;
+  float arg2 ;
+  gam::Integrator< SampleType,SampleType > *result = 0 ;
+  
+  SWIG_check_num_args("gam::Integrator< SampleType,SampleType >::Integrator",2,2)
+  if(!lua_isnumber(L,1)) SWIG_fail_arg("gam::Integrator< SampleType,SampleType >::Integrator",1,"float");
+  if(!lua_isnumber(L,2)) SWIG_fail_arg("gam::Integrator< SampleType,SampleType >::Integrator",2,"float");
+  arg1 = (float)lua_tonumber(L, 1);
+  arg2 = (float)lua_tonumber(L, 2);
+  result = (gam::Integrator< SampleType,SampleType > *)new gam::Integrator< SampleType,SampleType >(arg1,arg2);
+  SWIG_NewPointerObj(L,result,SWIGTYPE_p_gam__IntegratorT_float_float_t,1); SWIG_arg++; 
+  return SWIG_arg;
+  
+  if(0) SWIG_fail;
+  
+fail:
+  lua_error(L);
+  return SWIG_arg;
+}
+
+
+static int _wrap_new_Integrator__SWIG_1(lua_State* L) {
+  int SWIG_arg = 0;
+  float arg1 ;
+  gam::Integrator< SampleType,SampleType > *result = 0 ;
+  
+  SWIG_check_num_args("gam::Integrator< SampleType,SampleType >::Integrator",1,1)
+  if(!lua_isnumber(L,1)) SWIG_fail_arg("gam::Integrator< SampleType,SampleType >::Integrator",1,"float");
+  arg1 = (float)lua_tonumber(L, 1);
+  result = (gam::Integrator< SampleType,SampleType > *)new gam::Integrator< SampleType,SampleType >(arg1);
+  SWIG_NewPointerObj(L,result,SWIGTYPE_p_gam__IntegratorT_float_float_t,1); SWIG_arg++; 
+  return SWIG_arg;
+  
+  if(0) SWIG_fail;
+  
+fail:
+  lua_error(L);
+  return SWIG_arg;
+}
+
+
+static int _wrap_new_Integrator__SWIG_2(lua_State* L) {
+  int SWIG_arg = 0;
+  gam::Integrator< SampleType,SampleType > *result = 0 ;
+  
+  SWIG_check_num_args("gam::Integrator< SampleType,SampleType >::Integrator",0,0)
+  result = (gam::Integrator< SampleType,SampleType > *)new gam::Integrator< SampleType,SampleType >();
+  SWIG_NewPointerObj(L,result,SWIGTYPE_p_gam__IntegratorT_float_float_t,1); SWIG_arg++; 
+  return SWIG_arg;
+  
+  if(0) SWIG_fail;
+  
+fail:
+  lua_error(L);
+  return SWIG_arg;
+}
+
+
+static int _wrap_new_Integrator(lua_State* L) {
+  int argc;
+  int argv[3]={
+    1,2,3
+  };
+  
+  argc = lua_gettop(L);
+  if (argc == 0) {
+    return _wrap_new_Integrator__SWIG_2(L);
+  }
+  if (argc == 1) {
+    int _v = 0;
+    {
+      _v = lua_isnumber(L,argv[0]);
+    }
+    if (_v) {
+      return _wrap_new_Integrator__SWIG_1(L);
+    }
+  }
+  if (argc == 2) {
+    int _v = 0;
+    {
+      _v = lua_isnumber(L,argv[0]);
+    }
+    if (_v) {
+      {
+        _v = lua_isnumber(L,argv[1]);
+      }
+      if (_v) {
+        return _wrap_new_Integrator__SWIG_0(L);
+      }
+    }
+  }
+  
+  SWIG_Lua_pusherrstring(L,"Wrong arguments for overloaded function 'new_Integrator'\n"
+    "  Possible C/C++ prototypes are:\n"
+    "    gam::Integrator< SampleType,SampleType >::Integrator(float,float)\n"
+    "    gam::Integrator< SampleType,SampleType >::Integrator(float)\n"
+    "    gam::Integrator< SampleType,SampleType >::Integrator()\n");
+  lua_error(L);return 0;
+}
+
+
+static int _wrap_Integrator_Tick(lua_State* L) {
+  int SWIG_arg = 0;
+  gam::Integrator< SampleType,SampleType > *arg1 = (gam::Integrator< SampleType,SampleType > *) 0 ;
+  float arg2 ;
+  float result;
+  
+  SWIG_check_num_args("gam::Integrator< SampleType,SampleType >::Tick",2,2)
+  if(!SWIG_isptrtype(L,1)) SWIG_fail_arg("gam::Integrator< SampleType,SampleType >::Tick",1,"gam::Integrator< SampleType,SampleType > *");
+  if(!lua_isnumber(L,2)) SWIG_fail_arg("gam::Integrator< SampleType,SampleType >::Tick",2,"float");
+  
+  if (!SWIG_IsOK(SWIG_ConvertPtr(L,1,(void**)&arg1,SWIGTYPE_p_gam__IntegratorT_float_float_t,0))){
+    SWIG_fail_ptr("Integrator_Tick",1,SWIGTYPE_p_gam__IntegratorT_float_float_t);
+  }
+  
+  arg2 = (float)lua_tonumber(L, 2);
+  result = (float)gam_Integrator_Sl_SampleType_Sc_SampleType_Sg__Tick__SWIG(arg1,arg2);
+  lua_pushnumber(L, (lua_Number) result); SWIG_arg++;
+  return SWIG_arg;
+  
+  if(0) SWIG_fail;
+  
+fail:
+  lua_error(L);
+  return SWIG_arg;
+}
+
+
+static int _wrap_Integrator_leak(lua_State* L) {
+  int SWIG_arg = 0;
+  gam::Integrator< SampleType,SampleType > *arg1 = (gam::Integrator< SampleType,SampleType > *) 0 ;
+  float arg2 ;
+  gam::Integrator< SampleType,SampleType > *result = 0 ;
+  
+  SWIG_check_num_args("gam::Integrator< SampleType,SampleType >::leak",2,2)
+  if(!SWIG_isptrtype(L,1)) SWIG_fail_arg("gam::Integrator< SampleType,SampleType >::leak",1,"gam::Integrator< SampleType,SampleType > *");
+  if(!lua_isnumber(L,2)) SWIG_fail_arg("gam::Integrator< SampleType,SampleType >::leak",2,"float");
+  
+  if (!SWIG_IsOK(SWIG_ConvertPtr(L,1,(void**)&arg1,SWIGTYPE_p_gam__IntegratorT_float_float_t,0))){
+    SWIG_fail_ptr("Integrator_leak",1,SWIGTYPE_p_gam__IntegratorT_float_float_t);
+  }
+  
+  arg2 = (float)lua_tonumber(L, 2);
+  result = (gam::Integrator< SampleType,SampleType > *) &(arg1)->leak(arg2);
+  SWIG_NewPointerObj(L,result,SWIGTYPE_p_gam__IntegratorT_float_float_t,0); SWIG_arg++; 
+  return SWIG_arg;
+  
+  if(0) SWIG_fail;
+  
+fail:
+  lua_error(L);
+  return SWIG_arg;
+}
+
+
+static int _wrap_Integrator_zero(lua_State* L) {
+  int SWIG_arg = 0;
+  gam::Integrator< SampleType,SampleType > *arg1 = (gam::Integrator< SampleType,SampleType > *) 0 ;
+  gam::Integrator< SampleType,SampleType > *result = 0 ;
+  
+  SWIG_check_num_args("gam::Integrator< SampleType,SampleType >::zero",1,1)
+  if(!SWIG_isptrtype(L,1)) SWIG_fail_arg("gam::Integrator< SampleType,SampleType >::zero",1,"gam::Integrator< SampleType,SampleType > *");
+  
+  if (!SWIG_IsOK(SWIG_ConvertPtr(L,1,(void**)&arg1,SWIGTYPE_p_gam__IntegratorT_float_float_t,0))){
+    SWIG_fail_ptr("Integrator_zero",1,SWIGTYPE_p_gam__IntegratorT_float_float_t);
+  }
+  
+  result = (gam::Integrator< SampleType,SampleType > *) &(arg1)->zero();
+  SWIG_NewPointerObj(L,result,SWIGTYPE_p_gam__IntegratorT_float_float_t,0); SWIG_arg++; 
+  return SWIG_arg;
+  
+  if(0) SWIG_fail;
+  
+fail:
+  lua_error(L);
+  return SWIG_arg;
+}
+
+
+static void swig_delete_Integrator(void *obj) {
+gam::Integrator< SampleType,SampleType > *arg1 = (gam::Integrator< SampleType,SampleType > *) obj;
+delete arg1;
+}
+static int _proxy__wrap_new_Integrator(lua_State *L) {
+    assert(lua_istable(L,1));
+    lua_pushcfunction(L,_wrap_new_Integrator);
+    assert(!lua_isnil(L,-1));
+    lua_replace(L,1); /* replace our table with real constructor */
+    lua_call(L,lua_gettop(L)-1,1);
+    return 1;
+}
+static swig_lua_attribute swig_Integrator_attributes[] = {
+    {0,0,0}
+};
+static swig_lua_method swig_Integrator_methods[]= {
+    { "Tick", _wrap_Integrator_Tick},
+    { "leak", _wrap_Integrator_leak},
+    { "zero", _wrap_Integrator_zero},
+    {0,0}
+};
+static swig_lua_method swig_Integrator_meta[] = {
+    {0,0}
+};
+
+static swig_lua_attribute swig_Integrator_Sf_SwigStatic_attributes[] = {
+    {0,0,0}
+};
+static swig_lua_const_info swig_Integrator_Sf_SwigStatic_constants[]= {
+    {0,0,0,0,0,0}
+};
+static swig_lua_method swig_Integrator_Sf_SwigStatic_methods[]= {
+    {0,0}
+};
+static swig_lua_class* swig_Integrator_Sf_SwigStatic_classes[]= {
+    0
+};
+
+static swig_lua_namespace swig_Integrator_Sf_SwigStatic = {
+    "Integrator",
+    swig_Integrator_Sf_SwigStatic_methods,
+    swig_Integrator_Sf_SwigStatic_attributes,
+    swig_Integrator_Sf_SwigStatic_constants,
+    swig_Integrator_Sf_SwigStatic_classes,
+    0
+};
+static swig_lua_class *swig_Integrator_bases[] = {0};
+static const char *swig_Integrator_base_names[] = {0};
+static swig_lua_class _wrap_class_Integrator = { "Integrator", "Integrator", &SWIGTYPE_p_gam__IntegratorT_float_float_t,_proxy__wrap_new_Integrator, swig_delete_Integrator, swig_Integrator_methods, swig_Integrator_attributes, &swig_Integrator_Sf_SwigStatic, swig_Integrator_meta, swig_Integrator_bases, swig_Integrator_base_names };
+
+static int _wrap_Differencer_Tick(lua_State* L) {
+  int SWIG_arg = 0;
+  gam::Differencer< SampleType > *arg1 = (gam::Differencer< SampleType > *) 0 ;
+  float arg2 ;
+  float result;
+  
+  SWIG_check_num_args("gam::Differencer< SampleType >::Tick",2,2)
+  if(!SWIG_isptrtype(L,1)) SWIG_fail_arg("gam::Differencer< SampleType >::Tick",1,"gam::Differencer< SampleType > *");
+  if(!lua_isnumber(L,2)) SWIG_fail_arg("gam::Differencer< SampleType >::Tick",2,"float");
+  
+  if (!SWIG_IsOK(SWIG_ConvertPtr(L,1,(void**)&arg1,SWIGTYPE_p_gam__DifferencerT_float_t,0))){
+    SWIG_fail_ptr("Differencer_Tick",1,SWIGTYPE_p_gam__DifferencerT_float_t);
+  }
+  
+  arg2 = (float)lua_tonumber(L, 2);
+  result = (float)gam_Differencer_Sl_SampleType_Sg__Tick__SWIG(arg1,arg2);
+  lua_pushnumber(L, (lua_Number) result); SWIG_arg++;
+  return SWIG_arg;
+  
+  if(0) SWIG_fail;
+  
+fail:
+  lua_error(L);
+  return SWIG_arg;
+}
+
+
+static int _wrap_new_Differencer(lua_State* L) {
+  int SWIG_arg = 0;
+  gam::Differencer< SampleType > *result = 0 ;
+  
+  SWIG_check_num_args("gam::Differencer< SampleType >::Differencer",0,0)
+  result = (gam::Differencer< SampleType > *)new gam::Differencer< SampleType >();
+  SWIG_NewPointerObj(L,result,SWIGTYPE_p_gam__DifferencerT_float_t,1); SWIG_arg++; 
+  return SWIG_arg;
+  
+  if(0) SWIG_fail;
+  
+fail:
+  lua_error(L);
+  return SWIG_arg;
+}
+
+
+static void swig_delete_Differencer(void *obj) {
+gam::Differencer< SampleType > *arg1 = (gam::Differencer< SampleType > *) obj;
+delete arg1;
+}
+static int _proxy__wrap_new_Differencer(lua_State *L) {
+    assert(lua_istable(L,1));
+    lua_pushcfunction(L,_wrap_new_Differencer);
+    assert(!lua_isnil(L,-1));
+    lua_replace(L,1); /* replace our table with real constructor */
+    lua_call(L,lua_gettop(L)-1,1);
+    return 1;
+}
+static swig_lua_attribute swig_Differencer_attributes[] = {
+    {0,0,0}
+};
+static swig_lua_method swig_Differencer_methods[]= {
+    { "Tick", _wrap_Differencer_Tick},
+    {0,0}
+};
+static swig_lua_method swig_Differencer_meta[] = {
+    {0,0}
+};
+
+static swig_lua_attribute swig_Differencer_Sf_SwigStatic_attributes[] = {
+    {0,0,0}
+};
+static swig_lua_const_info swig_Differencer_Sf_SwigStatic_constants[]= {
+    {0,0,0,0,0,0}
+};
+static swig_lua_method swig_Differencer_Sf_SwigStatic_methods[]= {
+    {0,0}
+};
+static swig_lua_class* swig_Differencer_Sf_SwigStatic_classes[]= {
+    0
+};
+
+static swig_lua_namespace swig_Differencer_Sf_SwigStatic = {
+    "Differencer",
+    swig_Differencer_Sf_SwigStatic_methods,
+    swig_Differencer_Sf_SwigStatic_attributes,
+    swig_Differencer_Sf_SwigStatic_constants,
+    swig_Differencer_Sf_SwigStatic_classes,
+    0
+};
+static swig_lua_class *swig_Differencer_bases[] = {0};
+static const char *swig_Differencer_base_names[] = {0};
+static swig_lua_class _wrap_class_Differencer = { "Differencer", "Differencer", &SWIGTYPE_p_gam__DifferencerT_float_t,_proxy__wrap_new_Differencer, swig_delete_Differencer, swig_Differencer_methods, swig_Differencer_attributes, &swig_Differencer_Sf_SwigStatic, swig_Differencer_meta, swig_Differencer_bases, swig_Differencer_base_names };
+
+static int _wrap_new_MovingAvg__SWIG_0(lua_State* L) {
+  int SWIG_arg = 0;
+  gam::MovingAvg< SampleType > *result = 0 ;
+  
+  SWIG_check_num_args("gam::MovingAvg< SampleType >::MovingAvg",0,0)
+  result = (gam::MovingAvg< SampleType > *)new gam::MovingAvg< SampleType >();
+  SWIG_NewPointerObj(L,result,SWIGTYPE_p_gam__MovingAvgT_float_t,1); SWIG_arg++; 
+  return SWIG_arg;
+  
+  if(0) SWIG_fail;
+  
+fail:
+  lua_error(L);
+  return SWIG_arg;
+}
+
+
+static int _wrap_new_MovingAvg__SWIG_1(lua_State* L) {
+  int SWIG_arg = 0;
+  unsigned int arg1 ;
+  gam::MovingAvg< SampleType > *result = 0 ;
+  
+  SWIG_check_num_args("gam::MovingAvg< SampleType >::MovingAvg",1,1)
+  if(!lua_isnumber(L,1)) SWIG_fail_arg("gam::MovingAvg< SampleType >::MovingAvg",1,"unsigned int");
+  SWIG_contract_assert((lua_tonumber(L,1)>=0),"number must not be negative");
+  arg1 = (unsigned int)lua_tonumber(L, 1);
+  result = (gam::MovingAvg< SampleType > *)new gam::MovingAvg< SampleType >(arg1);
+  SWIG_NewPointerObj(L,result,SWIGTYPE_p_gam__MovingAvgT_float_t,1); SWIG_arg++; 
+  return SWIG_arg;
+  
+  if(0) SWIG_fail;
+  
+fail:
+  lua_error(L);
+  return SWIG_arg;
+}
+
+
+static int _wrap_new_MovingAvg(lua_State* L) {
+  int argc;
+  int argv[2]={
+    1,2
+  };
+  
+  argc = lua_gettop(L);
+  if (argc == 0) {
+    return _wrap_new_MovingAvg__SWIG_0(L);
+  }
+  if (argc == 1) {
+    int _v = 0;
+    {
+      _v = lua_isnumber(L,argv[0]);
+    }
+    if (_v) {
+      return _wrap_new_MovingAvg__SWIG_1(L);
+    }
+  }
+  
+  SWIG_Lua_pusherrstring(L,"Wrong arguments for overloaded function 'new_MovingAvg'\n"
+    "  Possible C/C++ prototypes are:\n"
+    "    gam::MovingAvg< SampleType >::MovingAvg()\n"
+    "    gam::MovingAvg< SampleType >::MovingAvg(unsigned int)\n");
+  lua_error(L);return 0;
+}
+
+
+static int _wrap_MovingAvg_Tick(lua_State* L) {
+  int SWIG_arg = 0;
+  gam::MovingAvg< SampleType > *arg1 = (gam::MovingAvg< SampleType > *) 0 ;
+  float arg2 ;
+  float result;
+  
+  SWIG_check_num_args("gam::MovingAvg< SampleType >::Tick",2,2)
+  if(!SWIG_isptrtype(L,1)) SWIG_fail_arg("gam::MovingAvg< SampleType >::Tick",1,"gam::MovingAvg< SampleType > *");
+  if(!lua_isnumber(L,2)) SWIG_fail_arg("gam::MovingAvg< SampleType >::Tick",2,"float");
+  
+  if (!SWIG_IsOK(SWIG_ConvertPtr(L,1,(void**)&arg1,SWIGTYPE_p_gam__MovingAvgT_float_t,0))){
+    SWIG_fail_ptr("MovingAvg_Tick",1,SWIGTYPE_p_gam__MovingAvgT_float_t);
+  }
+  
+  arg2 = (float)lua_tonumber(L, 2);
+  result = (float)gam_MovingAvg_Sl_SampleType_Sg__Tick__SWIG(arg1,arg2);
+  lua_pushnumber(L, (lua_Number) result); SWIG_arg++;
+  return SWIG_arg;
+  
+  if(0) SWIG_fail;
+  
+fail:
+  lua_error(L);
+  return SWIG_arg;
+}
+
+
+static int _wrap_MovingAvg_onResize(lua_State* L) {
+  int SWIG_arg = 0;
+  gam::MovingAvg< SampleType > *arg1 = (gam::MovingAvg< SampleType > *) 0 ;
+  
+  SWIG_check_num_args("gam::MovingAvg< SampleType >::onResize",1,1)
+  if(!SWIG_isptrtype(L,1)) SWIG_fail_arg("gam::MovingAvg< SampleType >::onResize",1,"gam::MovingAvg< SampleType > *");
+  
+  if (!SWIG_IsOK(SWIG_ConvertPtr(L,1,(void**)&arg1,SWIGTYPE_p_gam__MovingAvgT_float_t,0))){
+    SWIG_fail_ptr("MovingAvg_onResize",1,SWIGTYPE_p_gam__MovingAvgT_float_t);
+  }
+  
+  (arg1)->onResize();
+  
+  return SWIG_arg;
+  
+  if(0) SWIG_fail;
+  
+fail:
+  lua_error(L);
+  return SWIG_arg;
+}
+
+
+static void swig_delete_MovingAvg(void *obj) {
+gam::MovingAvg< SampleType > *arg1 = (gam::MovingAvg< SampleType > *) obj;
+delete arg1;
+}
+static int _proxy__wrap_new_MovingAvg(lua_State *L) {
+    assert(lua_istable(L,1));
+    lua_pushcfunction(L,_wrap_new_MovingAvg);
+    assert(!lua_isnil(L,-1));
+    lua_replace(L,1); /* replace our table with real constructor */
+    lua_call(L,lua_gettop(L)-1,1);
+    return 1;
+}
+static swig_lua_attribute swig_MovingAvg_attributes[] = {
+    {0,0,0}
+};
+static swig_lua_method swig_MovingAvg_methods[]= {
+    { "Tick", _wrap_MovingAvg_Tick},
+    { "onResize", _wrap_MovingAvg_onResize},
+    {0,0}
+};
+static swig_lua_method swig_MovingAvg_meta[] = {
+    {0,0}
+};
+
+static swig_lua_attribute swig_MovingAvg_Sf_SwigStatic_attributes[] = {
+    {0,0,0}
+};
+static swig_lua_const_info swig_MovingAvg_Sf_SwigStatic_constants[]= {
+    {0,0,0,0,0,0}
+};
+static swig_lua_method swig_MovingAvg_Sf_SwigStatic_methods[]= {
+    {0,0}
+};
+static swig_lua_class* swig_MovingAvg_Sf_SwigStatic_classes[]= {
+    0
+};
+
+static swig_lua_namespace swig_MovingAvg_Sf_SwigStatic = {
+    "MovingAvg",
+    swig_MovingAvg_Sf_SwigStatic_methods,
+    swig_MovingAvg_Sf_SwigStatic_attributes,
+    swig_MovingAvg_Sf_SwigStatic_constants,
+    swig_MovingAvg_Sf_SwigStatic_classes,
+    0
+};
+static swig_lua_class *swig_MovingAvg_bases[] = {0,0};
+static const char *swig_MovingAvg_base_names[] = {"gam::DelayN< SampleType > *",0};
+static swig_lua_class _wrap_class_MovingAvg = { "MovingAvg", "MovingAvg", &SWIGTYPE_p_gam__MovingAvgT_float_t,_proxy__wrap_new_MovingAvg, swig_delete_MovingAvg, swig_MovingAvg_methods, swig_MovingAvg_attributes, &swig_MovingAvg_Sf_SwigStatic, swig_MovingAvg_meta, swig_MovingAvg_bases, swig_MovingAvg_base_names };
+
+static int _wrap_new_OnePole__SWIG_0(lua_State* L) {
+  int SWIG_arg = 0;
+  float arg1 ;
+  gam::FilterType arg2 ;
+  float *arg3 = 0 ;
+  float temp3 ;
+  gam::OnePole< SampleType,SampleType > *result = 0 ;
+  
+  SWIG_check_num_args("gam::OnePole< SampleType,SampleType >::OnePole",3,3)
+  if(!lua_isnumber(L,1)) SWIG_fail_arg("gam::OnePole< SampleType,SampleType >::OnePole",1,"float");
+  if(!lua_isnumber(L,2)) SWIG_fail_arg("gam::OnePole< SampleType,SampleType >::OnePole",2,"gam::FilterType");
+  if(!lua_isnumber(L,3)) SWIG_fail_arg("gam::OnePole< SampleType,SampleType >::OnePole",3,"float const &");
+  arg1 = (float)lua_tonumber(L, 1);
+  arg2 = (gam::FilterType)(int)lua_tonumber(L, 2);
+  temp3=(float)lua_tonumber(L,3); arg3=&temp3;
+  result = (gam::OnePole< SampleType,SampleType > *)new gam::OnePole< SampleType,SampleType >(arg1,arg2,(float const &)*arg3);
+  SWIG_NewPointerObj(L,result,SWIGTYPE_p_gam__OnePoleT_float_float_GAM_DEFAULT_DOMAIN_t,1); SWIG_arg++; 
+  return SWIG_arg;
+  
+  if(0) SWIG_fail;
+  
+fail:
+  lua_error(L);
+  return SWIG_arg;
+}
+
+
+static int _wrap_new_OnePole__SWIG_1(lua_State* L) {
+  int SWIG_arg = 0;
+  float arg1 ;
+  gam::FilterType arg2 ;
+  gam::OnePole< SampleType,SampleType > *result = 0 ;
+  
+  SWIG_check_num_args("gam::OnePole< SampleType,SampleType >::OnePole",2,2)
+  if(!lua_isnumber(L,1)) SWIG_fail_arg("gam::OnePole< SampleType,SampleType >::OnePole",1,"float");
+  if(!lua_isnumber(L,2)) SWIG_fail_arg("gam::OnePole< SampleType,SampleType >::OnePole",2,"gam::FilterType");
+  arg1 = (float)lua_tonumber(L, 1);
+  arg2 = (gam::FilterType)(int)lua_tonumber(L, 2);
+  result = (gam::OnePole< SampleType,SampleType > *)new gam::OnePole< SampleType,SampleType >(arg1,arg2);
+  SWIG_NewPointerObj(L,result,SWIGTYPE_p_gam__OnePoleT_float_float_GAM_DEFAULT_DOMAIN_t,1); SWIG_arg++; 
+  return SWIG_arg;
+  
+  if(0) SWIG_fail;
+  
+fail:
+  lua_error(L);
+  return SWIG_arg;
+}
+
+
+static int _wrap_new_OnePole__SWIG_2(lua_State* L) {
+  int SWIG_arg = 0;
+  float arg1 ;
+  gam::OnePole< SampleType,SampleType > *result = 0 ;
+  
+  SWIG_check_num_args("gam::OnePole< SampleType,SampleType >::OnePole",1,1)
+  if(!lua_isnumber(L,1)) SWIG_fail_arg("gam::OnePole< SampleType,SampleType >::OnePole",1,"float");
+  arg1 = (float)lua_tonumber(L, 1);
+  result = (gam::OnePole< SampleType,SampleType > *)new gam::OnePole< SampleType,SampleType >(arg1);
+  SWIG_NewPointerObj(L,result,SWIGTYPE_p_gam__OnePoleT_float_float_GAM_DEFAULT_DOMAIN_t,1); SWIG_arg++; 
+  return SWIG_arg;
+  
+  if(0) SWIG_fail;
+  
+fail:
+  lua_error(L);
+  return SWIG_arg;
+}
+
+
+static int _wrap_new_OnePole__SWIG_3(lua_State* L) {
+  int SWIG_arg = 0;
+  gam::OnePole< SampleType,SampleType > *result = 0 ;
+  
+  SWIG_check_num_args("gam::OnePole< SampleType,SampleType >::OnePole",0,0)
+  result = (gam::OnePole< SampleType,SampleType > *)new gam::OnePole< SampleType,SampleType >();
+  SWIG_NewPointerObj(L,result,SWIGTYPE_p_gam__OnePoleT_float_float_GAM_DEFAULT_DOMAIN_t,1); SWIG_arg++; 
+  return SWIG_arg;
+  
+  if(0) SWIG_fail;
+  
+fail:
+  lua_error(L);
+  return SWIG_arg;
+}
+
+
+static int _wrap_new_OnePole(lua_State* L) {
+  int argc;
+  int argv[4]={
+    1,2,3,4
+  };
+  
+  argc = lua_gettop(L);
+  if (argc == 0) {
+    return _wrap_new_OnePole__SWIG_3(L);
+  }
+  if (argc == 1) {
+    int _v = 0;
+    {
+      _v = lua_isnumber(L,argv[0]);
+    }
+    if (_v) {
+      return _wrap_new_OnePole__SWIG_2(L);
+    }
+  }
+  if (argc == 2) {
+    int _v = 0;
+    {
+      _v = lua_isnumber(L,argv[0]);
+    }
+    if (_v) {
+      {
+        _v = lua_isnumber(L,argv[1]);
+      }
+      if (_v) {
+        return _wrap_new_OnePole__SWIG_1(L);
+      }
+    }
+  }
+  if (argc == 3) {
+    int _v = 0;
+    {
+      _v = lua_isnumber(L,argv[0]);
+    }
+    if (_v) {
+      {
+        _v = lua_isnumber(L,argv[1]);
+      }
+      if (_v) {
+        {
+          _v = lua_isnumber(L,argv[2]);
+        }
+        if (_v) {
+          return _wrap_new_OnePole__SWIG_0(L);
+        }
+      }
+    }
+  }
+  
+  SWIG_Lua_pusherrstring(L,"Wrong arguments for overloaded function 'new_OnePole'\n"
+    "  Possible C/C++ prototypes are:\n"
+    "    gam::OnePole< SampleType,SampleType >::OnePole(float,gam::FilterType,float const &)\n"
+    "    gam::OnePole< SampleType,SampleType >::OnePole(float,gam::FilterType)\n"
+    "    gam::OnePole< SampleType,SampleType >::OnePole(float)\n"
+    "    gam::OnePole< SampleType,SampleType >::OnePole()\n");
+  lua_error(L);return 0;
+}
+
+
+static int _wrap_OnePole_freq__SWIG_0(lua_State* L) {
+  int SWIG_arg = 0;
+  gam::OnePole< SampleType,SampleType > *arg1 = (gam::OnePole< SampleType,SampleType > *) 0 ;
+  float *result = 0 ;
+  
+  SWIG_check_num_args("gam::OnePole< SampleType,SampleType >::freq",1,1)
+  if(!SWIG_isptrtype(L,1)) SWIG_fail_arg("gam::OnePole< SampleType,SampleType >::freq",1,"gam::OnePole< SampleType,SampleType > const *");
+  
+  if (!SWIG_IsOK(SWIG_ConvertPtr(L,1,(void**)&arg1,SWIGTYPE_p_gam__OnePoleT_float_float_GAM_DEFAULT_DOMAIN_t,0))){
+    SWIG_fail_ptr("OnePole_freq",1,SWIGTYPE_p_gam__OnePoleT_float_float_GAM_DEFAULT_DOMAIN_t);
+  }
+  
+  result = (float *) &((gam::OnePole< SampleType,SampleType > const *)arg1)->freq();
+  lua_pushnumber(L, (lua_Number) *result); SWIG_arg++;
+  return SWIG_arg;
+  
+  if(0) SWIG_fail;
+  
+fail:
+  lua_error(L);
+  return SWIG_arg;
+}
+
+
+static int _wrap_OnePole_type(lua_State* L) {
+  int SWIG_arg = 0;
+  gam::OnePole< SampleType,SampleType > *arg1 = (gam::OnePole< SampleType,SampleType > *) 0 ;
+  gam::FilterType arg2 ;
+  
+  SWIG_check_num_args("gam::OnePole< SampleType,SampleType >::type",2,2)
+  if(!SWIG_isptrtype(L,1)) SWIG_fail_arg("gam::OnePole< SampleType,SampleType >::type",1,"gam::OnePole< SampleType,SampleType > *");
+  if(!lua_isnumber(L,2)) SWIG_fail_arg("gam::OnePole< SampleType,SampleType >::type",2,"gam::FilterType");
+  
+  if (!SWIG_IsOK(SWIG_ConvertPtr(L,1,(void**)&arg1,SWIGTYPE_p_gam__OnePoleT_float_float_GAM_DEFAULT_DOMAIN_t,0))){
+    SWIG_fail_ptr("OnePole_type",1,SWIGTYPE_p_gam__OnePoleT_float_float_GAM_DEFAULT_DOMAIN_t);
+  }
+  
+  arg2 = (gam::FilterType)(int)lua_tonumber(L, 2);
+  (arg1)->type(arg2);
+  
+  return SWIG_arg;
+  
+  if(0) SWIG_fail;
+  
+fail:
+  lua_error(L);
+  return SWIG_arg;
+}
+
+
+static int _wrap_OnePole_freq__SWIG_1(lua_State* L) {
+  int SWIG_arg = 0;
+  gam::OnePole< SampleType,SampleType > *arg1 = (gam::OnePole< SampleType,SampleType > *) 0 ;
+  float arg2 ;
+  
+  SWIG_check_num_args("gam::OnePole< SampleType,SampleType >::freq",2,2)
+  if(!SWIG_isptrtype(L,1)) SWIG_fail_arg("gam::OnePole< SampleType,SampleType >::freq",1,"gam::OnePole< SampleType,SampleType > *");
+  if(!lua_isnumber(L,2)) SWIG_fail_arg("gam::OnePole< SampleType,SampleType >::freq",2,"float");
+  
+  if (!SWIG_IsOK(SWIG_ConvertPtr(L,1,(void**)&arg1,SWIGTYPE_p_gam__OnePoleT_float_float_GAM_DEFAULT_DOMAIN_t,0))){
+    SWIG_fail_ptr("OnePole_freq",1,SWIGTYPE_p_gam__OnePoleT_float_float_GAM_DEFAULT_DOMAIN_t);
+  }
+  
+  arg2 = (float)lua_tonumber(L, 2);
+  (arg1)->freq(arg2);
+  
+  return SWIG_arg;
+  
+  if(0) SWIG_fail;
+  
+fail:
+  lua_error(L);
+  return SWIG_arg;
+}
+
+
+static int _wrap_OnePole_freq(lua_State* L) {
+  int argc;
+  int argv[3]={
+    1,2,3
+  };
+  
+  argc = lua_gettop(L);
+  if (argc == 1) {
+    int _v = 0;
+    {
+      void *ptr;
+      if (SWIG_isptrtype(L,argv[0])==0 || SWIG_ConvertPtr(L,argv[0], (void **) &ptr, SWIGTYPE_p_gam__OnePoleT_float_float_GAM_DEFAULT_DOMAIN_t, 0)) {
+        _v = 0;
+      } else {
+        _v = 1;
+      }
+    }
+    if (_v) {
+      return _wrap_OnePole_freq__SWIG_0(L);
+    }
+  }
+  if (argc == 2) {
+    int _v = 0;
+    {
+      void *ptr;
+      if (SWIG_isptrtype(L,argv[0])==0 || SWIG_ConvertPtr(L,argv[0], (void **) &ptr, SWIGTYPE_p_gam__OnePoleT_float_float_GAM_DEFAULT_DOMAIN_t, 0)) {
+        _v = 0;
+      } else {
+        _v = 1;
+      }
+    }
+    if (_v) {
+      {
+        _v = lua_isnumber(L,argv[1]);
+      }
+      if (_v) {
+        return _wrap_OnePole_freq__SWIG_1(L);
+      }
+    }
+  }
+  
+  SWIG_Lua_pusherrstring(L,"Wrong arguments for overloaded function 'OnePole_freq'\n"
+    "  Possible C/C++ prototypes are:\n"
+    "    gam::OnePole< SampleType,SampleType >::freq() const\n"
+    "    gam::OnePole< SampleType,SampleType >::freq(float)\n");
+  lua_error(L);return 0;
+}
+
+
+static int _wrap_OnePole_lag__SWIG_0(lua_State* L) {
+  int SWIG_arg = 0;
+  gam::OnePole< SampleType,SampleType > *arg1 = (gam::OnePole< SampleType,SampleType > *) 0 ;
+  float arg2 ;
+  float arg3 ;
+  
+  SWIG_check_num_args("gam::OnePole< SampleType,SampleType >::lag",3,3)
+  if(!SWIG_isptrtype(L,1)) SWIG_fail_arg("gam::OnePole< SampleType,SampleType >::lag",1,"gam::OnePole< SampleType,SampleType > *");
+  if(!lua_isnumber(L,2)) SWIG_fail_arg("gam::OnePole< SampleType,SampleType >::lag",2,"float");
+  if(!lua_isnumber(L,3)) SWIG_fail_arg("gam::OnePole< SampleType,SampleType >::lag",3,"float");
+  
+  if (!SWIG_IsOK(SWIG_ConvertPtr(L,1,(void**)&arg1,SWIGTYPE_p_gam__OnePoleT_float_float_GAM_DEFAULT_DOMAIN_t,0))){
+    SWIG_fail_ptr("OnePole_lag",1,SWIGTYPE_p_gam__OnePoleT_float_float_GAM_DEFAULT_DOMAIN_t);
+  }
+  
+  arg2 = (float)lua_tonumber(L, 2);
+  arg3 = (float)lua_tonumber(L, 3);
+  (arg1)->lag(arg2,arg3);
+  
+  return SWIG_arg;
+  
+  if(0) SWIG_fail;
+  
+fail:
+  lua_error(L);
+  return SWIG_arg;
+}
+
+
+static int _wrap_OnePole_lag__SWIG_1(lua_State* L) {
+  int SWIG_arg = 0;
+  gam::OnePole< SampleType,SampleType > *arg1 = (gam::OnePole< SampleType,SampleType > *) 0 ;
+  float arg2 ;
+  
+  SWIG_check_num_args("gam::OnePole< SampleType,SampleType >::lag",2,2)
+  if(!SWIG_isptrtype(L,1)) SWIG_fail_arg("gam::OnePole< SampleType,SampleType >::lag",1,"gam::OnePole< SampleType,SampleType > *");
+  if(!lua_isnumber(L,2)) SWIG_fail_arg("gam::OnePole< SampleType,SampleType >::lag",2,"float");
+  
+  if (!SWIG_IsOK(SWIG_ConvertPtr(L,1,(void**)&arg1,SWIGTYPE_p_gam__OnePoleT_float_float_GAM_DEFAULT_DOMAIN_t,0))){
+    SWIG_fail_ptr("OnePole_lag",1,SWIGTYPE_p_gam__OnePoleT_float_float_GAM_DEFAULT_DOMAIN_t);
+  }
+  
+  arg2 = (float)lua_tonumber(L, 2);
+  (arg1)->lag(arg2);
+  
+  return SWIG_arg;
+  
+  if(0) SWIG_fail;
+  
+fail:
+  lua_error(L);
+  return SWIG_arg;
+}
+
+
+static int _wrap_OnePole_lag(lua_State* L) {
+  int argc;
+  int argv[4]={
+    1,2,3,4
+  };
+  
+  argc = lua_gettop(L);
+  if (argc == 2) {
+    int _v = 0;
+    {
+      void *ptr;
+      if (SWIG_isptrtype(L,argv[0])==0 || SWIG_ConvertPtr(L,argv[0], (void **) &ptr, SWIGTYPE_p_gam__OnePoleT_float_float_GAM_DEFAULT_DOMAIN_t, 0)) {
+        _v = 0;
+      } else {
+        _v = 1;
+      }
+    }
+    if (_v) {
+      {
+        _v = lua_isnumber(L,argv[1]);
+      }
+      if (_v) {
+        return _wrap_OnePole_lag__SWIG_1(L);
+      }
+    }
+  }
+  if (argc == 3) {
+    int _v = 0;
+    {
+      void *ptr;
+      if (SWIG_isptrtype(L,argv[0])==0 || SWIG_ConvertPtr(L,argv[0], (void **) &ptr, SWIGTYPE_p_gam__OnePoleT_float_float_GAM_DEFAULT_DOMAIN_t, 0)) {
+        _v = 0;
+      } else {
+        _v = 1;
+      }
+    }
+    if (_v) {
+      {
+        _v = lua_isnumber(L,argv[1]);
+      }
+      if (_v) {
+        {
+          _v = lua_isnumber(L,argv[2]);
+        }
+        if (_v) {
+          return _wrap_OnePole_lag__SWIG_0(L);
+        }
+      }
+    }
+  }
+  
+  SWIG_Lua_pusherrstring(L,"Wrong arguments for overloaded function 'OnePole_lag'\n"
+    "  Possible C/C++ prototypes are:\n"
+    "    gam::OnePole< SampleType,SampleType >::lag(float,float)\n"
+    "    gam::OnePole< SampleType,SampleType >::lag(float)\n");
+  lua_error(L);return 0;
+}
+
+
+static int _wrap_OnePole_smooth(lua_State* L) {
+  int SWIG_arg = 0;
+  gam::OnePole< SampleType,SampleType > *arg1 = (gam::OnePole< SampleType,SampleType > *) 0 ;
+  float arg2 ;
+  
+  SWIG_check_num_args("gam::OnePole< SampleType,SampleType >::smooth",2,2)
+  if(!SWIG_isptrtype(L,1)) SWIG_fail_arg("gam::OnePole< SampleType,SampleType >::smooth",1,"gam::OnePole< SampleType,SampleType > *");
+  if(!lua_isnumber(L,2)) SWIG_fail_arg("gam::OnePole< SampleType,SampleType >::smooth",2,"float");
+  
+  if (!SWIG_IsOK(SWIG_ConvertPtr(L,1,(void**)&arg1,SWIGTYPE_p_gam__OnePoleT_float_float_GAM_DEFAULT_DOMAIN_t,0))){
+    SWIG_fail_ptr("OnePole_smooth",1,SWIGTYPE_p_gam__OnePoleT_float_float_GAM_DEFAULT_DOMAIN_t);
+  }
+  
+  arg2 = (float)lua_tonumber(L, 2);
+  (arg1)->smooth(arg2);
+  
+  return SWIG_arg;
+  
+  if(0) SWIG_fail;
+  
+fail:
+  lua_error(L);
+  return SWIG_arg;
+}
+
+
+static int _wrap_OnePole_zero(lua_State* L) {
+  int SWIG_arg = 0;
+  gam::OnePole< SampleType,SampleType > *arg1 = (gam::OnePole< SampleType,SampleType > *) 0 ;
+  
+  SWIG_check_num_args("gam::OnePole< SampleType,SampleType >::zero",1,1)
+  if(!SWIG_isptrtype(L,1)) SWIG_fail_arg("gam::OnePole< SampleType,SampleType >::zero",1,"gam::OnePole< SampleType,SampleType > *");
+  
+  if (!SWIG_IsOK(SWIG_ConvertPtr(L,1,(void**)&arg1,SWIGTYPE_p_gam__OnePoleT_float_float_GAM_DEFAULT_DOMAIN_t,0))){
+    SWIG_fail_ptr("OnePole_zero",1,SWIGTYPE_p_gam__OnePoleT_float_float_GAM_DEFAULT_DOMAIN_t);
+  }
+  
+  (arg1)->zero();
+  
+  return SWIG_arg;
+  
+  if(0) SWIG_fail;
+  
+fail:
+  lua_error(L);
+  return SWIG_arg;
+}
+
+
+static int _wrap_OnePole_reset__SWIG_0(lua_State* L) {
+  int SWIG_arg = 0;
+  gam::OnePole< SampleType,SampleType > *arg1 = (gam::OnePole< SampleType,SampleType > *) 0 ;
+  float arg2 ;
+  
+  SWIG_check_num_args("gam::OnePole< SampleType,SampleType >::reset",2,2)
+  if(!SWIG_isptrtype(L,1)) SWIG_fail_arg("gam::OnePole< SampleType,SampleType >::reset",1,"gam::OnePole< SampleType,SampleType > *");
+  if(!lua_isnumber(L,2)) SWIG_fail_arg("gam::OnePole< SampleType,SampleType >::reset",2,"float");
+  
+  if (!SWIG_IsOK(SWIG_ConvertPtr(L,1,(void**)&arg1,SWIGTYPE_p_gam__OnePoleT_float_float_GAM_DEFAULT_DOMAIN_t,0))){
+    SWIG_fail_ptr("OnePole_reset",1,SWIGTYPE_p_gam__OnePoleT_float_float_GAM_DEFAULT_DOMAIN_t);
+  }
+  
+  arg2 = (float)lua_tonumber(L, 2);
+  (arg1)->reset(arg2);
+  
+  return SWIG_arg;
+  
+  if(0) SWIG_fail;
+  
+fail:
+  lua_error(L);
+  return SWIG_arg;
+}
+
+
+static int _wrap_OnePole_reset__SWIG_1(lua_State* L) {
+  int SWIG_arg = 0;
+  gam::OnePole< SampleType,SampleType > *arg1 = (gam::OnePole< SampleType,SampleType > *) 0 ;
+  
+  SWIG_check_num_args("gam::OnePole< SampleType,SampleType >::reset",1,1)
+  if(!SWIG_isptrtype(L,1)) SWIG_fail_arg("gam::OnePole< SampleType,SampleType >::reset",1,"gam::OnePole< SampleType,SampleType > *");
+  
+  if (!SWIG_IsOK(SWIG_ConvertPtr(L,1,(void**)&arg1,SWIGTYPE_p_gam__OnePoleT_float_float_GAM_DEFAULT_DOMAIN_t,0))){
+    SWIG_fail_ptr("OnePole_reset",1,SWIGTYPE_p_gam__OnePoleT_float_float_GAM_DEFAULT_DOMAIN_t);
+  }
+  
+  (arg1)->reset();
+  
+  return SWIG_arg;
+  
+  if(0) SWIG_fail;
+  
+fail:
+  lua_error(L);
+  return SWIG_arg;
+}
+
+
+static int _wrap_OnePole_reset(lua_State* L) {
+  int argc;
+  int argv[3]={
+    1,2,3
+  };
+  
+  argc = lua_gettop(L);
+  if (argc == 1) {
+    int _v = 0;
+    {
+      void *ptr;
+      if (SWIG_isptrtype(L,argv[0])==0 || SWIG_ConvertPtr(L,argv[0], (void **) &ptr, SWIGTYPE_p_gam__OnePoleT_float_float_GAM_DEFAULT_DOMAIN_t, 0)) {
+        _v = 0;
+      } else {
+        _v = 1;
+      }
+    }
+    if (_v) {
+      return _wrap_OnePole_reset__SWIG_1(L);
+    }
+  }
+  if (argc == 2) {
+    int _v = 0;
+    {
+      void *ptr;
+      if (SWIG_isptrtype(L,argv[0])==0 || SWIG_ConvertPtr(L,argv[0], (void **) &ptr, SWIGTYPE_p_gam__OnePoleT_float_float_GAM_DEFAULT_DOMAIN_t, 0)) {
+        _v = 0;
+      } else {
+        _v = 1;
+      }
+    }
+    if (_v) {
+      {
+        _v = lua_isnumber(L,argv[1]);
+      }
+      if (_v) {
+        return _wrap_OnePole_reset__SWIG_0(L);
+      }
+    }
+  }
+  
+  SWIG_Lua_pusherrstring(L,"Wrong arguments for overloaded function 'OnePole_reset'\n"
+    "  Possible C/C++ prototypes are:\n"
+    "    gam::OnePole< SampleType,SampleType >::reset(float)\n"
+    "    gam::OnePole< SampleType,SampleType >::reset()\n");
+  lua_error(L);return 0;
+}
+
+
+static int _wrap_OnePole_Tick(lua_State* L) {
+  int SWIG_arg = 0;
+  gam::OnePole< SampleType,SampleType > *arg1 = (gam::OnePole< SampleType,SampleType > *) 0 ;
+  float *result = 0 ;
+  
+  SWIG_check_num_args("gam::OnePole< SampleType,SampleType >::Tick",1,1)
+  if(!SWIG_isptrtype(L,1)) SWIG_fail_arg("gam::OnePole< SampleType,SampleType >::Tick",1,"gam::OnePole< SampleType,SampleType > *");
+  
+  if (!SWIG_IsOK(SWIG_ConvertPtr(L,1,(void**)&arg1,SWIGTYPE_p_gam__OnePoleT_float_float_GAM_DEFAULT_DOMAIN_t,0))){
+    SWIG_fail_ptr("OnePole_Tick",1,SWIGTYPE_p_gam__OnePoleT_float_float_GAM_DEFAULT_DOMAIN_t);
+  }
+  
+  result = (float *) &gam_OnePole_Sl_SampleType_Sc_SampleType_Sg__Tick__SWIG(arg1);
+  lua_pushnumber(L, (lua_Number) *result); SWIG_arg++;
+  return SWIG_arg;
+  
+  if(0) SWIG_fail;
+  
+fail:
+  lua_error(L);
+  return SWIG_arg;
+}
+
+
+static int _wrap_OnePole_Process(lua_State* L) {
+  int SWIG_arg = 0;
+  gam::OnePole< SampleType,SampleType > *arg1 = (gam::OnePole< SampleType,SampleType > *) 0 ;
+  float arg2 ;
+  float *result = 0 ;
+  
+  SWIG_check_num_args("gam::OnePole< SampleType,SampleType >::Process",2,2)
+  if(!SWIG_isptrtype(L,1)) SWIG_fail_arg("gam::OnePole< SampleType,SampleType >::Process",1,"gam::OnePole< SampleType,SampleType > *");
+  if(!lua_isnumber(L,2)) SWIG_fail_arg("gam::OnePole< SampleType,SampleType >::Process",2,"float");
+  
+  if (!SWIG_IsOK(SWIG_ConvertPtr(L,1,(void**)&arg1,SWIGTYPE_p_gam__OnePoleT_float_float_GAM_DEFAULT_DOMAIN_t,0))){
+    SWIG_fail_ptr("OnePole_Process",1,SWIGTYPE_p_gam__OnePoleT_float_float_GAM_DEFAULT_DOMAIN_t);
+  }
+  
+  arg2 = (float)lua_tonumber(L, 2);
+  result = (float *) &gam_OnePole_Sl_SampleType_Sc_SampleType_Sg__Process__SWIG(arg1,arg2);
+  lua_pushnumber(L, (lua_Number) *result); SWIG_arg++;
+  return SWIG_arg;
+  
+  if(0) SWIG_fail;
+  
+fail:
+  lua_error(L);
+  return SWIG_arg;
+}
+
+
+static int _wrap_OnePole_last(lua_State* L) {
+  int SWIG_arg = 0;
+  gam::OnePole< SampleType,SampleType > *arg1 = (gam::OnePole< SampleType,SampleType > *) 0 ;
+  float *result = 0 ;
+  
+  SWIG_check_num_args("gam::OnePole< SampleType,SampleType >::last",1,1)
+  if(!SWIG_isptrtype(L,1)) SWIG_fail_arg("gam::OnePole< SampleType,SampleType >::last",1,"gam::OnePole< SampleType,SampleType > const *");
+  
+  if (!SWIG_IsOK(SWIG_ConvertPtr(L,1,(void**)&arg1,SWIGTYPE_p_gam__OnePoleT_float_float_GAM_DEFAULT_DOMAIN_t,0))){
+    SWIG_fail_ptr("OnePole_last",1,SWIGTYPE_p_gam__OnePoleT_float_float_GAM_DEFAULT_DOMAIN_t);
+  }
+  
+  result = (float *) &((gam::OnePole< SampleType,SampleType > const *)arg1)->last();
+  lua_pushnumber(L, (lua_Number) *result); SWIG_arg++;
+  return SWIG_arg;
+  
+  if(0) SWIG_fail;
+  
+fail:
+  lua_error(L);
+  return SWIG_arg;
+}
+
+
+static int _wrap_OnePole_stored__SWIG_0(lua_State* L) {
+  int SWIG_arg = 0;
+  gam::OnePole< SampleType,SampleType > *arg1 = (gam::OnePole< SampleType,SampleType > *) 0 ;
+  float *result = 0 ;
+  
+  SWIG_check_num_args("gam::OnePole< SampleType,SampleType >::stored",1,1)
+  if(!SWIG_isptrtype(L,1)) SWIG_fail_arg("gam::OnePole< SampleType,SampleType >::stored",1,"gam::OnePole< SampleType,SampleType > const *");
+  
+  if (!SWIG_IsOK(SWIG_ConvertPtr(L,1,(void**)&arg1,SWIGTYPE_p_gam__OnePoleT_float_float_GAM_DEFAULT_DOMAIN_t,0))){
+    SWIG_fail_ptr("OnePole_stored",1,SWIGTYPE_p_gam__OnePoleT_float_float_GAM_DEFAULT_DOMAIN_t);
+  }
+  
+  result = (float *) &((gam::OnePole< SampleType,SampleType > const *)arg1)->stored();
+  lua_pushnumber(L, (lua_Number) *result); SWIG_arg++;
+  return SWIG_arg;
+  
+  if(0) SWIG_fail;
+  
+fail:
+  lua_error(L);
+  return SWIG_arg;
+}
+
+
+static int _wrap_OnePole_stored__SWIG_1(lua_State* L) {
+  int SWIG_arg = 0;
+  gam::OnePole< SampleType,SampleType > *arg1 = (gam::OnePole< SampleType,SampleType > *) 0 ;
+  float *result = 0 ;
+  
+  SWIG_check_num_args("gam::OnePole< SampleType,SampleType >::stored",1,1)
+  if(!SWIG_isptrtype(L,1)) SWIG_fail_arg("gam::OnePole< SampleType,SampleType >::stored",1,"gam::OnePole< SampleType,SampleType > *");
+  
+  if (!SWIG_IsOK(SWIG_ConvertPtr(L,1,(void**)&arg1,SWIGTYPE_p_gam__OnePoleT_float_float_GAM_DEFAULT_DOMAIN_t,0))){
+    SWIG_fail_ptr("OnePole_stored",1,SWIGTYPE_p_gam__OnePoleT_float_float_GAM_DEFAULT_DOMAIN_t);
+  }
+  
+  result = (float *) &(arg1)->stored();
+  SWIG_NewPointerObj(L,result,SWIGTYPE_p_float,0); SWIG_arg++; 
+  return SWIG_arg;
+  
+  if(0) SWIG_fail;
+  
+fail:
+  lua_error(L);
+  return SWIG_arg;
+}
+
+
+static int _wrap_OnePole_stored(lua_State* L) {
+  int argc;
+  int argv[2]={
+    1,2
+  };
+  
+  argc = lua_gettop(L);
+  if (argc == 1) {
+    int _v = 0;
+    {
+      void *ptr;
+      if (SWIG_isptrtype(L,argv[0])==0 || SWIG_ConvertPtr(L,argv[0], (void **) &ptr, SWIGTYPE_p_gam__OnePoleT_float_float_GAM_DEFAULT_DOMAIN_t, 0)) {
+        _v = 0;
+      } else {
+        _v = 1;
+      }
+    }
+    if (_v) {
+      return _wrap_OnePole_stored__SWIG_1(L);
+    }
+  }
+  if (argc == 1) {
+    int _v = 0;
+    {
+      void *ptr;
+      if (SWIG_isptrtype(L,argv[0])==0 || SWIG_ConvertPtr(L,argv[0], (void **) &ptr, SWIGTYPE_p_gam__OnePoleT_float_float_GAM_DEFAULT_DOMAIN_t, 0)) {
+        _v = 0;
+      } else {
+        _v = 1;
+      }
+    }
+    if (_v) {
+      return _wrap_OnePole_stored__SWIG_0(L);
+    }
+  }
+  
+  SWIG_Lua_pusherrstring(L,"Wrong arguments for overloaded function 'OnePole_stored'\n"
+    "  Possible C/C++ prototypes are:\n"
+    "    gam::OnePole< SampleType,SampleType >::stored() const\n"
+    "    gam::OnePole< SampleType,SampleType >::stored()\n");
+  lua_error(L);return 0;
+}
+
+
+static int _wrap_OnePole_zeroing__SWIG_0(lua_State* L) {
+  int SWIG_arg = 0;
+  gam::OnePole< SampleType,SampleType > *arg1 = (gam::OnePole< SampleType,SampleType > *) 0 ;
+  float arg2 ;
+  bool result;
+  
+  SWIG_check_num_args("gam::OnePole< SampleType,SampleType >::zeroing",2,2)
+  if(!SWIG_isptrtype(L,1)) SWIG_fail_arg("gam::OnePole< SampleType,SampleType >::zeroing",1,"gam::OnePole< SampleType,SampleType > const *");
+  if(!lua_isnumber(L,2)) SWIG_fail_arg("gam::OnePole< SampleType,SampleType >::zeroing",2,"float");
+  
+  if (!SWIG_IsOK(SWIG_ConvertPtr(L,1,(void**)&arg1,SWIGTYPE_p_gam__OnePoleT_float_float_GAM_DEFAULT_DOMAIN_t,0))){
+    SWIG_fail_ptr("OnePole_zeroing",1,SWIGTYPE_p_gam__OnePoleT_float_float_GAM_DEFAULT_DOMAIN_t);
+  }
+  
+  arg2 = (float)lua_tonumber(L, 2);
+  result = (bool)((gam::OnePole< SampleType,SampleType > const *)arg1)->zeroing(arg2);
+  lua_pushboolean(L,(int)(result!=0)); SWIG_arg++;
+  return SWIG_arg;
+  
+  if(0) SWIG_fail;
+  
+fail:
+  lua_error(L);
+  return SWIG_arg;
+}
+
+
+static int _wrap_OnePole_zeroing__SWIG_1(lua_State* L) {
+  int SWIG_arg = 0;
+  gam::OnePole< SampleType,SampleType > *arg1 = (gam::OnePole< SampleType,SampleType > *) 0 ;
+  bool result;
+  
+  SWIG_check_num_args("gam::OnePole< SampleType,SampleType >::zeroing",1,1)
+  if(!SWIG_isptrtype(L,1)) SWIG_fail_arg("gam::OnePole< SampleType,SampleType >::zeroing",1,"gam::OnePole< SampleType,SampleType > const *");
+  
+  if (!SWIG_IsOK(SWIG_ConvertPtr(L,1,(void**)&arg1,SWIGTYPE_p_gam__OnePoleT_float_float_GAM_DEFAULT_DOMAIN_t,0))){
+    SWIG_fail_ptr("OnePole_zeroing",1,SWIGTYPE_p_gam__OnePoleT_float_float_GAM_DEFAULT_DOMAIN_t);
+  }
+  
+  result = (bool)((gam::OnePole< SampleType,SampleType > const *)arg1)->zeroing();
+  lua_pushboolean(L,(int)(result!=0)); SWIG_arg++;
+  return SWIG_arg;
+  
+  if(0) SWIG_fail;
+  
+fail:
+  lua_error(L);
+  return SWIG_arg;
+}
+
+
+static int _wrap_OnePole_zeroing(lua_State* L) {
+  int argc;
+  int argv[3]={
+    1,2,3
+  };
+  
+  argc = lua_gettop(L);
+  if (argc == 1) {
+    int _v = 0;
+    {
+      void *ptr;
+      if (SWIG_isptrtype(L,argv[0])==0 || SWIG_ConvertPtr(L,argv[0], (void **) &ptr, SWIGTYPE_p_gam__OnePoleT_float_float_GAM_DEFAULT_DOMAIN_t, 0)) {
+        _v = 0;
+      } else {
+        _v = 1;
+      }
+    }
+    if (_v) {
+      return _wrap_OnePole_zeroing__SWIG_1(L);
+    }
+  }
+  if (argc == 2) {
+    int _v = 0;
+    {
+      void *ptr;
+      if (SWIG_isptrtype(L,argv[0])==0 || SWIG_ConvertPtr(L,argv[0], (void **) &ptr, SWIGTYPE_p_gam__OnePoleT_float_float_GAM_DEFAULT_DOMAIN_t, 0)) {
+        _v = 0;
+      } else {
+        _v = 1;
+      }
+    }
+    if (_v) {
+      {
+        _v = lua_isnumber(L,argv[1]);
+      }
+      if (_v) {
+        return _wrap_OnePole_zeroing__SWIG_0(L);
+      }
+    }
+  }
+  
+  SWIG_Lua_pusherrstring(L,"Wrong arguments for overloaded function 'OnePole_zeroing'\n"
+    "  Possible C/C++ prototypes are:\n"
+    "    gam::OnePole< SampleType,SampleType >::zeroing(float) const\n"
+    "    gam::OnePole< SampleType,SampleType >::zeroing() const\n");
+  lua_error(L);return 0;
+}
+
+
+static int _wrap_OnePole_onDomainChange(lua_State* L) {
+  int SWIG_arg = 0;
+  gam::OnePole< SampleType,SampleType > *arg1 = (gam::OnePole< SampleType,SampleType > *) 0 ;
+  double arg2 ;
+  
+  SWIG_check_num_args("gam::OnePole< SampleType,SampleType >::onDomainChange",2,2)
+  if(!SWIG_isptrtype(L,1)) SWIG_fail_arg("gam::OnePole< SampleType,SampleType >::onDomainChange",1,"gam::OnePole< SampleType,SampleType > *");
+  if(!lua_isnumber(L,2)) SWIG_fail_arg("gam::OnePole< SampleType,SampleType >::onDomainChange",2,"double");
+  
+  if (!SWIG_IsOK(SWIG_ConvertPtr(L,1,(void**)&arg1,SWIGTYPE_p_gam__OnePoleT_float_float_GAM_DEFAULT_DOMAIN_t,0))){
+    SWIG_fail_ptr("OnePole_onDomainChange",1,SWIGTYPE_p_gam__OnePoleT_float_float_GAM_DEFAULT_DOMAIN_t);
+  }
+  
+  arg2 = (double)lua_tonumber(L, 2);
+  (arg1)->onDomainChange(arg2);
+  
+  return SWIG_arg;
+  
+  if(0) SWIG_fail;
+  
+fail:
+  lua_error(L);
+  return SWIG_arg;
+}
+
+
+static void swig_delete_OnePole(void *obj) {
+gam::OnePole< SampleType,SampleType > *arg1 = (gam::OnePole< SampleType,SampleType > *) obj;
+delete arg1;
+}
+static int _proxy__wrap_new_OnePole(lua_State *L) {
+    assert(lua_istable(L,1));
+    lua_pushcfunction(L,_wrap_new_OnePole);
+    assert(!lua_isnil(L,-1));
+    lua_replace(L,1); /* replace our table with real constructor */
+    lua_call(L,lua_gettop(L)-1,1);
+    return 1;
+}
+static swig_lua_attribute swig_OnePole_attributes[] = {
+    {0,0,0}
+};
+static swig_lua_method swig_OnePole_methods[]= {
+    { "type", _wrap_OnePole_type},
+    { "freq", _wrap_OnePole_freq},
+    { "lag", _wrap_OnePole_lag},
+    { "smooth", _wrap_OnePole_smooth},
+    { "zero", _wrap_OnePole_zero},
+    { "reset", _wrap_OnePole_reset},
+    { "Tick", _wrap_OnePole_Tick},
+    { "Process", _wrap_OnePole_Process},
+    { "last", _wrap_OnePole_last},
+    { "stored", _wrap_OnePole_stored},
+    { "zeroing", _wrap_OnePole_zeroing},
+    { "onDomainChange", _wrap_OnePole_onDomainChange},
+    {0,0}
+};
+static swig_lua_method swig_OnePole_meta[] = {
+    {0,0}
+};
+
+static swig_lua_attribute swig_OnePole_Sf_SwigStatic_attributes[] = {
+    {0,0,0}
+};
+static swig_lua_const_info swig_OnePole_Sf_SwigStatic_constants[]= {
+    {0,0,0,0,0,0}
+};
+static swig_lua_method swig_OnePole_Sf_SwigStatic_methods[]= {
+    {0,0}
+};
+static swig_lua_class* swig_OnePole_Sf_SwigStatic_classes[]= {
+    0
+};
+
+static swig_lua_namespace swig_OnePole_Sf_SwigStatic = {
+    "OnePole",
+    swig_OnePole_Sf_SwigStatic_methods,
+    swig_OnePole_Sf_SwigStatic_attributes,
+    swig_OnePole_Sf_SwigStatic_constants,
+    swig_OnePole_Sf_SwigStatic_classes,
+    0
+};
+static swig_lua_class *swig_OnePole_bases[] = {0};
+static const char *swig_OnePole_base_names[] = {0};
+static swig_lua_class _wrap_class_OnePole = { "OnePole", "OnePole", &SWIGTYPE_p_gam__OnePoleT_float_float_GAM_DEFAULT_DOMAIN_t,_proxy__wrap_new_OnePole, swig_delete_OnePole, swig_OnePole_methods, swig_OnePole_attributes, &swig_OnePole_Sf_SwigStatic, swig_OnePole_meta, swig_OnePole_bases, swig_OnePole_base_names };
+
+static int _wrap_Vowel_amp(lua_State* L) {
+  int SWIG_arg = 0;
+  gam::Vowel::Voice arg1 ;
+  gam::Vowel::Phoneme arg2 ;
+  int arg3 ;
+  float result;
+  
+  SWIG_check_num_args("gam::Vowel::amp",3,3)
+  if(!lua_isnumber(L,1)) SWIG_fail_arg("gam::Vowel::amp",1,"gam::Vowel::Voice");
+  if(!lua_isnumber(L,2)) SWIG_fail_arg("gam::Vowel::amp",2,"gam::Vowel::Phoneme");
+  if(!lua_isnumber(L,3)) SWIG_fail_arg("gam::Vowel::amp",3,"int");
+  arg1 = (gam::Vowel::Voice)(int)lua_tonumber(L, 1);
+  arg2 = (gam::Vowel::Phoneme)(int)lua_tonumber(L, 2);
+  arg3 = (int)lua_tonumber(L, 3);
+  result = (float)gam::Vowel::amp(arg1,arg2,arg3);
+  lua_pushnumber(L, (lua_Number) result); SWIG_arg++;
+  return SWIG_arg;
+  
+  if(0) SWIG_fail;
+  
+fail:
+  lua_error(L);
+  return SWIG_arg;
+}
+
+
+static int _wrap_Vowel_dB(lua_State* L) {
+  int SWIG_arg = 0;
+  gam::Vowel::Voice arg1 ;
+  gam::Vowel::Phoneme arg2 ;
+  int arg3 ;
+  float result;
+  
+  SWIG_check_num_args("gam::Vowel::dB",3,3)
+  if(!lua_isnumber(L,1)) SWIG_fail_arg("gam::Vowel::dB",1,"gam::Vowel::Voice");
+  if(!lua_isnumber(L,2)) SWIG_fail_arg("gam::Vowel::dB",2,"gam::Vowel::Phoneme");
+  if(!lua_isnumber(L,3)) SWIG_fail_arg("gam::Vowel::dB",3,"int");
+  arg1 = (gam::Vowel::Voice)(int)lua_tonumber(L, 1);
+  arg2 = (gam::Vowel::Phoneme)(int)lua_tonumber(L, 2);
+  arg3 = (int)lua_tonumber(L, 3);
+  result = (float)gam::Vowel::dB(arg1,arg2,arg3);
+  lua_pushnumber(L, (lua_Number) result); SWIG_arg++;
+  return SWIG_arg;
+  
+  if(0) SWIG_fail;
+  
+fail:
+  lua_error(L);
+  return SWIG_arg;
+}
+
+
+static int _wrap_Vowel_freq(lua_State* L) {
+  int SWIG_arg = 0;
+  gam::Vowel::Voice arg1 ;
+  gam::Vowel::Phoneme arg2 ;
+  int arg3 ;
+  float result;
+  
+  SWIG_check_num_args("gam::Vowel::freq",3,3)
+  if(!lua_isnumber(L,1)) SWIG_fail_arg("gam::Vowel::freq",1,"gam::Vowel::Voice");
+  if(!lua_isnumber(L,2)) SWIG_fail_arg("gam::Vowel::freq",2,"gam::Vowel::Phoneme");
+  if(!lua_isnumber(L,3)) SWIG_fail_arg("gam::Vowel::freq",3,"int");
+  arg1 = (gam::Vowel::Voice)(int)lua_tonumber(L, 1);
+  arg2 = (gam::Vowel::Phoneme)(int)lua_tonumber(L, 2);
+  arg3 = (int)lua_tonumber(L, 3);
+  result = (float)gam::Vowel::freq(arg1,arg2,arg3);
+  lua_pushnumber(L, (lua_Number) result); SWIG_arg++;
+  return SWIG_arg;
+  
+  if(0) SWIG_fail;
+  
+fail:
+  lua_error(L);
+  return SWIG_arg;
+}
+
+
+static int _wrap_Vowel_pitch(lua_State* L) {
+  int SWIG_arg = 0;
+  gam::Vowel::Voice arg1 ;
+  gam::Vowel::Phoneme arg2 ;
+  int arg3 ;
+  float result;
+  
+  SWIG_check_num_args("gam::Vowel::pitch",3,3)
+  if(!lua_isnumber(L,1)) SWIG_fail_arg("gam::Vowel::pitch",1,"gam::Vowel::Voice");
+  if(!lua_isnumber(L,2)) SWIG_fail_arg("gam::Vowel::pitch",2,"gam::Vowel::Phoneme");
+  if(!lua_isnumber(L,3)) SWIG_fail_arg("gam::Vowel::pitch",3,"int");
+  arg1 = (gam::Vowel::Voice)(int)lua_tonumber(L, 1);
+  arg2 = (gam::Vowel::Phoneme)(int)lua_tonumber(L, 2);
+  arg3 = (int)lua_tonumber(L, 3);
+  result = (float)gam::Vowel::pitch(arg1,arg2,arg3);
+  lua_pushnumber(L, (lua_Number) result); SWIG_arg++;
+  return SWIG_arg;
+  
+  if(0) SWIG_fail;
+  
+fail:
+  lua_error(L);
+  return SWIG_arg;
+}
+
+
+static int _wrap_new_Vowel(lua_State* L) {
+  int SWIG_arg = 0;
+  gam::Vowel *result = 0 ;
+  
+  SWIG_check_num_args("gam::Vowel::Vowel",0,0)
+  result = (gam::Vowel *)new gam::Vowel();
+  SWIG_NewPointerObj(L,result,SWIGTYPE_p_gam__Vowel,1); SWIG_arg++; 
+  return SWIG_arg;
+  
+  if(0) SWIG_fail;
+  
+fail:
+  lua_error(L);
+  return SWIG_arg;
+}
+
+
+static void swig_delete_Vowel(void *obj) {
+gam::Vowel *arg1 = (gam::Vowel *) obj;
+delete arg1;
+}
+static int _proxy__wrap_new_Vowel(lua_State *L) {
+    assert(lua_istable(L,1));
+    lua_pushcfunction(L,_wrap_new_Vowel);
+    assert(!lua_isnil(L,-1));
+    lua_replace(L,1); /* replace our table with real constructor */
+    lua_call(L,lua_gettop(L)-1,1);
+    return 1;
+}
+static swig_lua_attribute swig_Vowel_attributes[] = {
+    {0,0,0}
+};
+static swig_lua_method swig_Vowel_methods[]= {
+    {0,0}
+};
+static swig_lua_method swig_Vowel_meta[] = {
+    {0,0}
+};
+
+static swig_lua_attribute swig_Vowel_Sf_SwigStatic_attributes[] = {
+    {0,0,0}
+};
+static swig_lua_const_info swig_Vowel_Sf_SwigStatic_constants[]= {
+    {SWIG_LUA_CONSTTAB_INT("MAN", gam::Vowel::MAN)},
+    {SWIG_LUA_CONSTTAB_INT("WOMAN", gam::Vowel::WOMAN)},
+    {SWIG_LUA_CONSTTAB_INT("CHILD", gam::Vowel::CHILD)},
+    {SWIG_LUA_CONSTTAB_INT("NUM_VOICES", gam::Vowel::NUM_VOICES)},
+    {SWIG_LUA_CONSTTAB_INT("HEED", gam::Vowel::HEED)},
+    {SWIG_LUA_CONSTTAB_INT("HID", gam::Vowel::HID)},
+    {SWIG_LUA_CONSTTAB_INT("HEAD", gam::Vowel::HEAD)},
+    {SWIG_LUA_CONSTTAB_INT("HAD", gam::Vowel::HAD)},
+    {SWIG_LUA_CONSTTAB_INT("HOD", gam::Vowel::HOD)},
+    {SWIG_LUA_CONSTTAB_INT("HAWED", gam::Vowel::HAWED)},
+    {SWIG_LUA_CONSTTAB_INT("HOOD", gam::Vowel::HOOD)},
+    {SWIG_LUA_CONSTTAB_INT("WHOD", gam::Vowel::WHOD)},
+    {SWIG_LUA_CONSTTAB_INT("HUD", gam::Vowel::HUD)},
+    {SWIG_LUA_CONSTTAB_INT("HEARD", gam::Vowel::HEARD)},
+    {SWIG_LUA_CONSTTAB_INT("NUM_PHONEMES", gam::Vowel::NUM_PHONEMES)},
+    {0,0,0,0,0,0}
+};
+static swig_lua_method swig_Vowel_Sf_SwigStatic_methods[]= {
+    { "amp", _wrap_Vowel_amp},
+    { "dB", _wrap_Vowel_dB},
+    { "freq", _wrap_Vowel_freq},
+    { "pitch", _wrap_Vowel_pitch},
+    {0,0}
+};
+static swig_lua_class* swig_Vowel_Sf_SwigStatic_classes[]= {
+    0
+};
+
+static swig_lua_namespace swig_Vowel_Sf_SwigStatic = {
+    "Vowel",
+    swig_Vowel_Sf_SwigStatic_methods,
+    swig_Vowel_Sf_SwigStatic_attributes,
+    swig_Vowel_Sf_SwigStatic_constants,
+    swig_Vowel_Sf_SwigStatic_classes,
+    0
+};
+static swig_lua_class *swig_Vowel_bases[] = {0};
+static const char *swig_Vowel_base_names[] = {0};
+static swig_lua_class _wrap_class_Vowel = { "Vowel", "Vowel", &SWIGTYPE_p_gam__Vowel,_proxy__wrap_new_Vowel, swig_delete_Vowel, swig_Vowel_methods, swig_Vowel_attributes, &swig_Vowel_Sf_SwigStatic, swig_Vowel_meta, swig_Vowel_bases, swig_Vowel_base_names };
+
+static int _wrap_new_NoiseBrown__SWIG_0(lua_State* L) {
+  int SWIG_arg = 0;
+  float arg1 ;
+  float arg2 ;
+  float arg3 ;
+  float arg4 ;
+  uint32_t arg5 ;
+  gam::NoiseBrown< > *result = 0 ;
+  
+  SWIG_check_num_args("gam::NoiseBrown< >::NoiseBrown",5,5)
+  if(!lua_isnumber(L,1)) SWIG_fail_arg("gam::NoiseBrown< >::NoiseBrown",1,"float");
+  if(!lua_isnumber(L,2)) SWIG_fail_arg("gam::NoiseBrown< >::NoiseBrown",2,"float");
+  if(!lua_isnumber(L,3)) SWIG_fail_arg("gam::NoiseBrown< >::NoiseBrown",3,"float");
+  if(!lua_isnumber(L,4)) SWIG_fail_arg("gam::NoiseBrown< >::NoiseBrown",4,"float");
+  if(!lua_isnumber(L,5)) SWIG_fail_arg("gam::NoiseBrown< >::NoiseBrown",5,"uint32_t");
+  arg1 = (float)lua_tonumber(L, 1);
+  arg2 = (float)lua_tonumber(L, 2);
+  arg3 = (float)lua_tonumber(L, 3);
+  arg4 = (float)lua_tonumber(L, 4);
+  SWIG_contract_assert((lua_tonumber(L,5)>=0),"number must not be negative");
+  arg5 = (uint32_t)lua_tonumber(L, 5);
+  result = (gam::NoiseBrown< > *)new gam::NoiseBrown< >(arg1,arg2,arg3,arg4,arg5);
+  SWIG_NewPointerObj(L,result,SWIGTYPE_p_gam__NoiseBrownT_RNGLinCon_t,1); SWIG_arg++; 
+  return SWIG_arg;
+  
+  if(0) SWIG_fail;
+  
+fail:
+  lua_error(L);
+  return SWIG_arg;
+}
+
+
+static int _wrap_new_NoiseBrown__SWIG_1(lua_State* L) {
+  int SWIG_arg = 0;
+  float arg1 ;
+  float arg2 ;
+  float arg3 ;
+  float arg4 ;
+  gam::NoiseBrown< > *result = 0 ;
+  
+  SWIG_check_num_args("gam::NoiseBrown< >::NoiseBrown",4,4)
+  if(!lua_isnumber(L,1)) SWIG_fail_arg("gam::NoiseBrown< >::NoiseBrown",1,"float");
+  if(!lua_isnumber(L,2)) SWIG_fail_arg("gam::NoiseBrown< >::NoiseBrown",2,"float");
+  if(!lua_isnumber(L,3)) SWIG_fail_arg("gam::NoiseBrown< >::NoiseBrown",3,"float");
+  if(!lua_isnumber(L,4)) SWIG_fail_arg("gam::NoiseBrown< >::NoiseBrown",4,"float");
+  arg1 = (float)lua_tonumber(L, 1);
+  arg2 = (float)lua_tonumber(L, 2);
+  arg3 = (float)lua_tonumber(L, 3);
+  arg4 = (float)lua_tonumber(L, 4);
+  result = (gam::NoiseBrown< > *)new gam::NoiseBrown< >(arg1,arg2,arg3,arg4);
+  SWIG_NewPointerObj(L,result,SWIGTYPE_p_gam__NoiseBrownT_RNGLinCon_t,1); SWIG_arg++; 
+  return SWIG_arg;
+  
+  if(0) SWIG_fail;
+  
+fail:
+  lua_error(L);
+  return SWIG_arg;
+}
+
+
+static int _wrap_new_NoiseBrown__SWIG_2(lua_State* L) {
+  int SWIG_arg = 0;
+  float arg1 ;
+  float arg2 ;
+  float arg3 ;
+  gam::NoiseBrown< > *result = 0 ;
+  
+  SWIG_check_num_args("gam::NoiseBrown< >::NoiseBrown",3,3)
+  if(!lua_isnumber(L,1)) SWIG_fail_arg("gam::NoiseBrown< >::NoiseBrown",1,"float");
+  if(!lua_isnumber(L,2)) SWIG_fail_arg("gam::NoiseBrown< >::NoiseBrown",2,"float");
+  if(!lua_isnumber(L,3)) SWIG_fail_arg("gam::NoiseBrown< >::NoiseBrown",3,"float");
+  arg1 = (float)lua_tonumber(L, 1);
+  arg2 = (float)lua_tonumber(L, 2);
+  arg3 = (float)lua_tonumber(L, 3);
+  result = (gam::NoiseBrown< > *)new gam::NoiseBrown< >(arg1,arg2,arg3);
+  SWIG_NewPointerObj(L,result,SWIGTYPE_p_gam__NoiseBrownT_RNGLinCon_t,1); SWIG_arg++; 
+  return SWIG_arg;
+  
+  if(0) SWIG_fail;
+  
+fail:
+  lua_error(L);
+  return SWIG_arg;
+}
+
+
+static int _wrap_new_NoiseBrown__SWIG_3(lua_State* L) {
+  int SWIG_arg = 0;
+  float arg1 ;
+  float arg2 ;
+  gam::NoiseBrown< > *result = 0 ;
+  
+  SWIG_check_num_args("gam::NoiseBrown< >::NoiseBrown",2,2)
+  if(!lua_isnumber(L,1)) SWIG_fail_arg("gam::NoiseBrown< >::NoiseBrown",1,"float");
+  if(!lua_isnumber(L,2)) SWIG_fail_arg("gam::NoiseBrown< >::NoiseBrown",2,"float");
+  arg1 = (float)lua_tonumber(L, 1);
+  arg2 = (float)lua_tonumber(L, 2);
+  result = (gam::NoiseBrown< > *)new gam::NoiseBrown< >(arg1,arg2);
+  SWIG_NewPointerObj(L,result,SWIGTYPE_p_gam__NoiseBrownT_RNGLinCon_t,1); SWIG_arg++; 
+  return SWIG_arg;
+  
+  if(0) SWIG_fail;
+  
+fail:
+  lua_error(L);
+  return SWIG_arg;
+}
+
+
+static int _wrap_new_NoiseBrown__SWIG_4(lua_State* L) {
+  int SWIG_arg = 0;
+  float arg1 ;
+  gam::NoiseBrown< > *result = 0 ;
+  
+  SWIG_check_num_args("gam::NoiseBrown< >::NoiseBrown",1,1)
+  if(!lua_isnumber(L,1)) SWIG_fail_arg("gam::NoiseBrown< >::NoiseBrown",1,"float");
+  arg1 = (float)lua_tonumber(L, 1);
+  result = (gam::NoiseBrown< > *)new gam::NoiseBrown< >(arg1);
+  SWIG_NewPointerObj(L,result,SWIGTYPE_p_gam__NoiseBrownT_RNGLinCon_t,1); SWIG_arg++; 
+  return SWIG_arg;
+  
+  if(0) SWIG_fail;
+  
+fail:
+  lua_error(L);
+  return SWIG_arg;
+}
+
+
+static int _wrap_new_NoiseBrown__SWIG_5(lua_State* L) {
+  int SWIG_arg = 0;
+  gam::NoiseBrown< > *result = 0 ;
+  
+  SWIG_check_num_args("gam::NoiseBrown< >::NoiseBrown",0,0)
+  result = (gam::NoiseBrown< > *)new gam::NoiseBrown< >();
+  SWIG_NewPointerObj(L,result,SWIGTYPE_p_gam__NoiseBrownT_RNGLinCon_t,1); SWIG_arg++; 
+  return SWIG_arg;
+  
+  if(0) SWIG_fail;
+  
+fail:
+  lua_error(L);
+  return SWIG_arg;
+}
+
+
+static int _wrap_new_NoiseBrown(lua_State* L) {
+  int argc;
+  int argv[6]={
+    1,2,3,4,5,6
+  };
+  
+  argc = lua_gettop(L);
+  if (argc == 0) {
+    return _wrap_new_NoiseBrown__SWIG_5(L);
+  }
+  if (argc == 1) {
+    int _v = 0;
+    {
+      _v = lua_isnumber(L,argv[0]);
+    }
+    if (_v) {
+      return _wrap_new_NoiseBrown__SWIG_4(L);
+    }
+  }
+  if (argc == 2) {
+    int _v = 0;
+    {
+      _v = lua_isnumber(L,argv[0]);
+    }
+    if (_v) {
+      {
+        _v = lua_isnumber(L,argv[1]);
+      }
+      if (_v) {
+        return _wrap_new_NoiseBrown__SWIG_3(L);
+      }
+    }
+  }
+  if (argc == 3) {
+    int _v = 0;
+    {
+      _v = lua_isnumber(L,argv[0]);
+    }
+    if (_v) {
+      {
+        _v = lua_isnumber(L,argv[1]);
+      }
+      if (_v) {
+        {
+          _v = lua_isnumber(L,argv[2]);
+        }
+        if (_v) {
+          return _wrap_new_NoiseBrown__SWIG_2(L);
+        }
+      }
+    }
+  }
+  if (argc == 4) {
+    int _v = 0;
+    {
+      _v = lua_isnumber(L,argv[0]);
+    }
+    if (_v) {
+      {
+        _v = lua_isnumber(L,argv[1]);
+      }
+      if (_v) {
+        {
+          _v = lua_isnumber(L,argv[2]);
+        }
+        if (_v) {
+          {
+            _v = lua_isnumber(L,argv[3]);
+          }
+          if (_v) {
+            return _wrap_new_NoiseBrown__SWIG_1(L);
+          }
+        }
+      }
+    }
+  }
+  if (argc == 5) {
+    int _v = 0;
+    {
+      _v = lua_isnumber(L,argv[0]);
+    }
+    if (_v) {
+      {
+        _v = lua_isnumber(L,argv[1]);
+      }
+      if (_v) {
+        {
+          _v = lua_isnumber(L,argv[2]);
+        }
+        if (_v) {
+          {
+            _v = lua_isnumber(L,argv[3]);
+          }
+          if (_v) {
+            {
+              _v = lua_isnumber(L,argv[4]);
+            }
+            if (_v) {
+              return _wrap_new_NoiseBrown__SWIG_0(L);
+            }
+          }
+        }
+      }
+    }
+  }
+  
+  SWIG_Lua_pusherrstring(L,"Wrong arguments for overloaded function 'new_NoiseBrown'\n"
+    "  Possible C/C++ prototypes are:\n"
+    "    gam::NoiseBrown< >::NoiseBrown(float,float,float,float,uint32_t)\n"
+    "    gam::NoiseBrown< >::NoiseBrown(float,float,float,float)\n"
+    "    gam::NoiseBrown< >::NoiseBrown(float,float,float)\n"
+    "    gam::NoiseBrown< >::NoiseBrown(float,float)\n"
+    "    gam::NoiseBrown< >::NoiseBrown(float)\n"
+    "    gam::NoiseBrown< >::NoiseBrown()\n");
+  lua_error(L);return 0;
+}
+
+
+static int _wrap_NoiseBrown_Tick(lua_State* L) {
+  int SWIG_arg = 0;
+  gam::NoiseBrown< > *arg1 = (gam::NoiseBrown< > *) 0 ;
+  float result;
+  
+  SWIG_check_num_args("gam::NoiseBrown< >::Tick",1,1)
+  if(!SWIG_isptrtype(L,1)) SWIG_fail_arg("gam::NoiseBrown< >::Tick",1,"gam::NoiseBrown< > *");
+  
+  if (!SWIG_IsOK(SWIG_ConvertPtr(L,1,(void**)&arg1,SWIGTYPE_p_gam__NoiseBrownT_RNGLinCon_t,0))){
+    SWIG_fail_ptr("NoiseBrown_Tick",1,SWIGTYPE_p_gam__NoiseBrownT_RNGLinCon_t);
+  }
+  
+  result = (float)gam_NoiseBrown_Sl__Sg__Tick__SWIG(arg1);
+  lua_pushnumber(L, (lua_Number) result); SWIG_arg++;
+  return SWIG_arg;
+  
+  if(0) SWIG_fail;
+  
+fail:
+  lua_error(L);
+  return SWIG_arg;
+}
+
+
+static int _wrap_NoiseBrown_val_set(lua_State* L) {
+  int SWIG_arg = 0;
+  gam::NoiseBrown< > *arg1 = (gam::NoiseBrown< > *) 0 ;
+  float arg2 ;
+  
+  SWIG_check_num_args("gam::NoiseBrown< >::val",2,2)
+  if(!SWIG_isptrtype(L,1)) SWIG_fail_arg("gam::NoiseBrown< >::val",1,"gam::NoiseBrown< > *");
+  if(!lua_isnumber(L,2)) SWIG_fail_arg("gam::NoiseBrown< >::val",2,"float");
+  
+  if (!SWIG_IsOK(SWIG_ConvertPtr(L,1,(void**)&arg1,SWIGTYPE_p_gam__NoiseBrownT_RNGLinCon_t,0))){
+    SWIG_fail_ptr("NoiseBrown_val_set",1,SWIGTYPE_p_gam__NoiseBrownT_RNGLinCon_t);
+  }
+  
+  arg2 = (float)lua_tonumber(L, 2);
+  if (arg1) (arg1)->val = arg2;
+  
+  return SWIG_arg;
+  
+  if(0) SWIG_fail;
+  
+fail:
+  lua_error(L);
+  return SWIG_arg;
+}
+
+
+static int _wrap_NoiseBrown_val_get(lua_State* L) {
+  int SWIG_arg = 0;
+  gam::NoiseBrown< > *arg1 = (gam::NoiseBrown< > *) 0 ;
+  float result;
+  
+  SWIG_check_num_args("gam::NoiseBrown< >::val",1,1)
+  if(!SWIG_isptrtype(L,1)) SWIG_fail_arg("gam::NoiseBrown< >::val",1,"gam::NoiseBrown< > *");
+  
+  if (!SWIG_IsOK(SWIG_ConvertPtr(L,1,(void**)&arg1,SWIGTYPE_p_gam__NoiseBrownT_RNGLinCon_t,0))){
+    SWIG_fail_ptr("NoiseBrown_val_get",1,SWIGTYPE_p_gam__NoiseBrownT_RNGLinCon_t);
+  }
+  
+  result = (float) ((arg1)->val);
+  lua_pushnumber(L, (lua_Number) result); SWIG_arg++;
+  return SWIG_arg;
+  
+  if(0) SWIG_fail;
+  
+fail:
+  lua_error(L);
+  return SWIG_arg;
+}
+
+
+static int _wrap_NoiseBrown_step_set(lua_State* L) {
+  int SWIG_arg = 0;
+  gam::NoiseBrown< > *arg1 = (gam::NoiseBrown< > *) 0 ;
+  float arg2 ;
+  
+  SWIG_check_num_args("gam::NoiseBrown< >::step",2,2)
+  if(!SWIG_isptrtype(L,1)) SWIG_fail_arg("gam::NoiseBrown< >::step",1,"gam::NoiseBrown< > *");
+  if(!lua_isnumber(L,2)) SWIG_fail_arg("gam::NoiseBrown< >::step",2,"float");
+  
+  if (!SWIG_IsOK(SWIG_ConvertPtr(L,1,(void**)&arg1,SWIGTYPE_p_gam__NoiseBrownT_RNGLinCon_t,0))){
+    SWIG_fail_ptr("NoiseBrown_step_set",1,SWIGTYPE_p_gam__NoiseBrownT_RNGLinCon_t);
+  }
+  
+  arg2 = (float)lua_tonumber(L, 2);
+  if (arg1) (arg1)->step = arg2;
+  
+  return SWIG_arg;
+  
+  if(0) SWIG_fail;
+  
+fail:
+  lua_error(L);
+  return SWIG_arg;
+}
+
+
+static int _wrap_NoiseBrown_step_get(lua_State* L) {
+  int SWIG_arg = 0;
+  gam::NoiseBrown< > *arg1 = (gam::NoiseBrown< > *) 0 ;
+  float result;
+  
+  SWIG_check_num_args("gam::NoiseBrown< >::step",1,1)
+  if(!SWIG_isptrtype(L,1)) SWIG_fail_arg("gam::NoiseBrown< >::step",1,"gam::NoiseBrown< > *");
+  
+  if (!SWIG_IsOK(SWIG_ConvertPtr(L,1,(void**)&arg1,SWIGTYPE_p_gam__NoiseBrownT_RNGLinCon_t,0))){
+    SWIG_fail_ptr("NoiseBrown_step_get",1,SWIGTYPE_p_gam__NoiseBrownT_RNGLinCon_t);
+  }
+  
+  result = (float) ((arg1)->step);
+  lua_pushnumber(L, (lua_Number) result); SWIG_arg++;
+  return SWIG_arg;
+  
+  if(0) SWIG_fail;
+  
+fail:
+  lua_error(L);
+  return SWIG_arg;
+}
+
+
+static int _wrap_NoiseBrown_min_set(lua_State* L) {
+  int SWIG_arg = 0;
+  gam::NoiseBrown< > *arg1 = (gam::NoiseBrown< > *) 0 ;
+  float arg2 ;
+  
+  SWIG_check_num_args("gam::NoiseBrown< >::min",2,2)
+  if(!SWIG_isptrtype(L,1)) SWIG_fail_arg("gam::NoiseBrown< >::min",1,"gam::NoiseBrown< > *");
+  if(!lua_isnumber(L,2)) SWIG_fail_arg("gam::NoiseBrown< >::min",2,"float");
+  
+  if (!SWIG_IsOK(SWIG_ConvertPtr(L,1,(void**)&arg1,SWIGTYPE_p_gam__NoiseBrownT_RNGLinCon_t,0))){
+    SWIG_fail_ptr("NoiseBrown_min_set",1,SWIGTYPE_p_gam__NoiseBrownT_RNGLinCon_t);
+  }
+  
+  arg2 = (float)lua_tonumber(L, 2);
+  if (arg1) (arg1)->min = arg2;
+  
+  return SWIG_arg;
+  
+  if(0) SWIG_fail;
+  
+fail:
+  lua_error(L);
+  return SWIG_arg;
+}
+
+
+static int _wrap_NoiseBrown_min_get(lua_State* L) {
+  int SWIG_arg = 0;
+  gam::NoiseBrown< > *arg1 = (gam::NoiseBrown< > *) 0 ;
+  float result;
+  
+  SWIG_check_num_args("gam::NoiseBrown< >::min",1,1)
+  if(!SWIG_isptrtype(L,1)) SWIG_fail_arg("gam::NoiseBrown< >::min",1,"gam::NoiseBrown< > *");
+  
+  if (!SWIG_IsOK(SWIG_ConvertPtr(L,1,(void**)&arg1,SWIGTYPE_p_gam__NoiseBrownT_RNGLinCon_t,0))){
+    SWIG_fail_ptr("NoiseBrown_min_get",1,SWIGTYPE_p_gam__NoiseBrownT_RNGLinCon_t);
+  }
+  
+  result = (float) ((arg1)->min);
+  lua_pushnumber(L, (lua_Number) result); SWIG_arg++;
+  return SWIG_arg;
+  
+  if(0) SWIG_fail;
+  
+fail:
+  lua_error(L);
+  return SWIG_arg;
+}
+
+
+static int _wrap_NoiseBrown_max_set(lua_State* L) {
+  int SWIG_arg = 0;
+  gam::NoiseBrown< > *arg1 = (gam::NoiseBrown< > *) 0 ;
+  float arg2 ;
+  
+  SWIG_check_num_args("gam::NoiseBrown< >::max",2,2)
+  if(!SWIG_isptrtype(L,1)) SWIG_fail_arg("gam::NoiseBrown< >::max",1,"gam::NoiseBrown< > *");
+  if(!lua_isnumber(L,2)) SWIG_fail_arg("gam::NoiseBrown< >::max",2,"float");
+  
+  if (!SWIG_IsOK(SWIG_ConvertPtr(L,1,(void**)&arg1,SWIGTYPE_p_gam__NoiseBrownT_RNGLinCon_t,0))){
+    SWIG_fail_ptr("NoiseBrown_max_set",1,SWIGTYPE_p_gam__NoiseBrownT_RNGLinCon_t);
+  }
+  
+  arg2 = (float)lua_tonumber(L, 2);
+  if (arg1) (arg1)->max = arg2;
+  
+  return SWIG_arg;
+  
+  if(0) SWIG_fail;
+  
+fail:
+  lua_error(L);
+  return SWIG_arg;
+}
+
+
+static int _wrap_NoiseBrown_max_get(lua_State* L) {
+  int SWIG_arg = 0;
+  gam::NoiseBrown< > *arg1 = (gam::NoiseBrown< > *) 0 ;
+  float result;
+  
+  SWIG_check_num_args("gam::NoiseBrown< >::max",1,1)
+  if(!SWIG_isptrtype(L,1)) SWIG_fail_arg("gam::NoiseBrown< >::max",1,"gam::NoiseBrown< > *");
+  
+  if (!SWIG_IsOK(SWIG_ConvertPtr(L,1,(void**)&arg1,SWIGTYPE_p_gam__NoiseBrownT_RNGLinCon_t,0))){
+    SWIG_fail_ptr("NoiseBrown_max_get",1,SWIGTYPE_p_gam__NoiseBrownT_RNGLinCon_t);
+  }
+  
+  result = (float) ((arg1)->max);
+  lua_pushnumber(L, (lua_Number) result); SWIG_arg++;
+  return SWIG_arg;
+  
+  if(0) SWIG_fail;
+  
+fail:
+  lua_error(L);
+  return SWIG_arg;
+}
+
+
+static void swig_delete_NoiseBrown(void *obj) {
+gam::NoiseBrown< > *arg1 = (gam::NoiseBrown< > *) obj;
+delete arg1;
+}
+static int _proxy__wrap_new_NoiseBrown(lua_State *L) {
+    assert(lua_istable(L,1));
+    lua_pushcfunction(L,_wrap_new_NoiseBrown);
+    assert(!lua_isnil(L,-1));
+    lua_replace(L,1); /* replace our table with real constructor */
+    lua_call(L,lua_gettop(L)-1,1);
+    return 1;
+}
+static swig_lua_attribute swig_NoiseBrown_attributes[] = {
+    { "val", _wrap_NoiseBrown_val_get, _wrap_NoiseBrown_val_set },
+    { "step", _wrap_NoiseBrown_step_get, _wrap_NoiseBrown_step_set },
+    { "min", _wrap_NoiseBrown_min_get, _wrap_NoiseBrown_min_set },
+    { "max", _wrap_NoiseBrown_max_get, _wrap_NoiseBrown_max_set },
+    {0,0,0}
+};
+static swig_lua_method swig_NoiseBrown_methods[]= {
+    { "Tick", _wrap_NoiseBrown_Tick},
+    {0,0}
+};
+static swig_lua_method swig_NoiseBrown_meta[] = {
+    {0,0}
+};
+
+static swig_lua_attribute swig_NoiseBrown_Sf_SwigStatic_attributes[] = {
+    {0,0,0}
+};
+static swig_lua_const_info swig_NoiseBrown_Sf_SwigStatic_constants[]= {
+    {0,0,0,0,0,0}
+};
+static swig_lua_method swig_NoiseBrown_Sf_SwigStatic_methods[]= {
+    {0,0}
+};
+static swig_lua_class* swig_NoiseBrown_Sf_SwigStatic_classes[]= {
+    0
+};
+
+static swig_lua_namespace swig_NoiseBrown_Sf_SwigStatic = {
+    "NoiseBrown",
+    swig_NoiseBrown_Sf_SwigStatic_methods,
+    swig_NoiseBrown_Sf_SwigStatic_attributes,
+    swig_NoiseBrown_Sf_SwigStatic_constants,
+    swig_NoiseBrown_Sf_SwigStatic_classes,
+    0
+};
+static swig_lua_class *swig_NoiseBrown_bases[] = {0};
+static const char *swig_NoiseBrown_base_names[] = {0};
+static swig_lua_class _wrap_class_NoiseBrown = { "NoiseBrown", "NoiseBrown", &SWIGTYPE_p_gam__NoiseBrownT_RNGLinCon_t,_proxy__wrap_new_NoiseBrown, swig_delete_NoiseBrown, swig_NoiseBrown_methods, swig_NoiseBrown_attributes, &swig_NoiseBrown_Sf_SwigStatic, swig_NoiseBrown_meta, swig_NoiseBrown_bases, swig_NoiseBrown_base_names };
+
+static int _wrap_new_NoisePink__SWIG_0(lua_State* L) {
+  int SWIG_arg = 0;
+  gam::NoisePink< > *result = 0 ;
+  
+  SWIG_check_num_args("gam::NoisePink< >::NoisePink",0,0)
+  result = (gam::NoisePink< > *)new gam::NoisePink< >();
+  SWIG_NewPointerObj(L,result,SWIGTYPE_p_gam__NoisePinkT_RNGLinCon_t,1); SWIG_arg++; 
+  return SWIG_arg;
+  
+  if(0) SWIG_fail;
+  
+fail:
+  lua_error(L);
+  return SWIG_arg;
+}
+
+
+static int _wrap_new_NoisePink__SWIG_1(lua_State* L) {
+  int SWIG_arg = 0;
+  uint32_t arg1 ;
+  gam::NoisePink< > *result = 0 ;
+  
+  SWIG_check_num_args("gam::NoisePink< >::NoisePink",1,1)
+  if(!lua_isnumber(L,1)) SWIG_fail_arg("gam::NoisePink< >::NoisePink",1,"uint32_t");
+  SWIG_contract_assert((lua_tonumber(L,1)>=0),"number must not be negative");
+  arg1 = (uint32_t)lua_tonumber(L, 1);
+  result = (gam::NoisePink< > *)new gam::NoisePink< >(arg1);
+  SWIG_NewPointerObj(L,result,SWIGTYPE_p_gam__NoisePinkT_RNGLinCon_t,1); SWIG_arg++; 
+  return SWIG_arg;
+  
+  if(0) SWIG_fail;
+  
+fail:
+  lua_error(L);
+  return SWIG_arg;
+}
+
+
+static int _wrap_new_NoisePink(lua_State* L) {
+  int argc;
+  int argv[2]={
+    1,2
+  };
+  
+  argc = lua_gettop(L);
+  if (argc == 0) {
+    return _wrap_new_NoisePink__SWIG_0(L);
+  }
+  if (argc == 1) {
+    int _v = 0;
+    {
+      _v = lua_isnumber(L,argv[0]);
+    }
+    if (_v) {
+      return _wrap_new_NoisePink__SWIG_1(L);
+    }
+  }
+  
+  SWIG_Lua_pusherrstring(L,"Wrong arguments for overloaded function 'new_NoisePink'\n"
+    "  Possible C/C++ prototypes are:\n"
+    "    gam::NoisePink< >::NoisePink()\n"
+    "    gam::NoisePink< >::NoisePink(uint32_t)\n");
+  lua_error(L);return 0;
+}
+
+
+static int _wrap_NoisePink_Tick(lua_State* L) {
+  int SWIG_arg = 0;
+  gam::NoisePink< > *arg1 = (gam::NoisePink< > *) 0 ;
+  float result;
+  
+  SWIG_check_num_args("gam::NoisePink< >::Tick",1,1)
+  if(!SWIG_isptrtype(L,1)) SWIG_fail_arg("gam::NoisePink< >::Tick",1,"gam::NoisePink< > *");
+  
+  if (!SWIG_IsOK(SWIG_ConvertPtr(L,1,(void**)&arg1,SWIGTYPE_p_gam__NoisePinkT_RNGLinCon_t,0))){
+    SWIG_fail_ptr("NoisePink_Tick",1,SWIGTYPE_p_gam__NoisePinkT_RNGLinCon_t);
+  }
+  
+  result = (float)gam_NoisePink_Sl__Sg__Tick__SWIG(arg1);
+  lua_pushnumber(L, (lua_Number) result); SWIG_arg++;
+  return SWIG_arg;
+  
+  if(0) SWIG_fail;
+  
+fail:
+  lua_error(L);
+  return SWIG_arg;
+}
+
+
+static void swig_delete_NoisePink(void *obj) {
+gam::NoisePink< > *arg1 = (gam::NoisePink< > *) obj;
+delete arg1;
+}
+static int _proxy__wrap_new_NoisePink(lua_State *L) {
+    assert(lua_istable(L,1));
+    lua_pushcfunction(L,_wrap_new_NoisePink);
+    assert(!lua_isnil(L,-1));
+    lua_replace(L,1); /* replace our table with real constructor */
+    lua_call(L,lua_gettop(L)-1,1);
+    return 1;
+}
+static swig_lua_attribute swig_NoisePink_attributes[] = {
+    {0,0,0}
+};
+static swig_lua_method swig_NoisePink_methods[]= {
+    { "Tick", _wrap_NoisePink_Tick},
+    {0,0}
+};
+static swig_lua_method swig_NoisePink_meta[] = {
+    {0,0}
+};
+
+static swig_lua_attribute swig_NoisePink_Sf_SwigStatic_attributes[] = {
+    {0,0,0}
+};
+static swig_lua_const_info swig_NoisePink_Sf_SwigStatic_constants[]= {
+    {0,0,0,0,0,0}
+};
+static swig_lua_method swig_NoisePink_Sf_SwigStatic_methods[]= {
+    {0,0}
+};
+static swig_lua_class* swig_NoisePink_Sf_SwigStatic_classes[]= {
+    0
+};
+
+static swig_lua_namespace swig_NoisePink_Sf_SwigStatic = {
+    "NoisePink",
+    swig_NoisePink_Sf_SwigStatic_methods,
+    swig_NoisePink_Sf_SwigStatic_attributes,
+    swig_NoisePink_Sf_SwigStatic_constants,
+    swig_NoisePink_Sf_SwigStatic_classes,
+    0
+};
+static swig_lua_class *swig_NoisePink_bases[] = {0};
+static const char *swig_NoisePink_base_names[] = {0};
+static swig_lua_class _wrap_class_NoisePink = { "NoisePink", "NoisePink", &SWIGTYPE_p_gam__NoisePinkT_RNGLinCon_t,_proxy__wrap_new_NoisePink, swig_delete_NoisePink, swig_NoisePink_methods, swig_NoisePink_attributes, &swig_NoisePink_Sf_SwigStatic, swig_NoisePink_meta, swig_NoisePink_bases, swig_NoisePink_base_names };
+
+static int _wrap_NoiseWhite_Tick(lua_State* L) {
+  int SWIG_arg = 0;
+  gam::NoiseWhite< > *arg1 = (gam::NoiseWhite< > *) 0 ;
+  float result;
+  
+  SWIG_check_num_args("gam::NoiseWhite< >::Tick",1,1)
+  if(!SWIG_isptrtype(L,1)) SWIG_fail_arg("gam::NoiseWhite< >::Tick",1,"gam::NoiseWhite< > *");
+  
+  if (!SWIG_IsOK(SWIG_ConvertPtr(L,1,(void**)&arg1,SWIGTYPE_p_gam__NoiseWhiteT_RNGLinCon_t,0))){
+    SWIG_fail_ptr("NoiseWhite_Tick",1,SWIGTYPE_p_gam__NoiseWhiteT_RNGLinCon_t);
+  }
+  
+  result = (float)gam_NoiseWhite_Sl__Sg__Tick__SWIG(arg1);
+  lua_pushnumber(L, (lua_Number) result); SWIG_arg++;
+  return SWIG_arg;
+  
+  if(0) SWIG_fail;
+  
+fail:
+  lua_error(L);
+  return SWIG_arg;
+}
+
+
+static int _wrap_new_NoiseWhite(lua_State* L) {
+  int SWIG_arg = 0;
+  gam::NoiseWhite< > *result = 0 ;
+  
+  SWIG_check_num_args("gam::NoiseWhite< >::NoiseWhite",0,0)
+  result = (gam::NoiseWhite< > *)new gam::NoiseWhite< >();
+  SWIG_NewPointerObj(L,result,SWIGTYPE_p_gam__NoiseWhiteT_RNGLinCon_t,1); SWIG_arg++; 
+  return SWIG_arg;
+  
+  if(0) SWIG_fail;
+  
+fail:
+  lua_error(L);
+  return SWIG_arg;
+}
+
+
+static void swig_delete_NoiseWhite(void *obj) {
+gam::NoiseWhite< > *arg1 = (gam::NoiseWhite< > *) obj;
+delete arg1;
+}
+static int _proxy__wrap_new_NoiseWhite(lua_State *L) {
+    assert(lua_istable(L,1));
+    lua_pushcfunction(L,_wrap_new_NoiseWhite);
+    assert(!lua_isnil(L,-1));
+    lua_replace(L,1); /* replace our table with real constructor */
+    lua_call(L,lua_gettop(L)-1,1);
+    return 1;
+}
+static swig_lua_attribute swig_NoiseWhite_attributes[] = {
+    {0,0,0}
+};
+static swig_lua_method swig_NoiseWhite_methods[]= {
+    { "Tick", _wrap_NoiseWhite_Tick},
+    {0,0}
+};
+static swig_lua_method swig_NoiseWhite_meta[] = {
+    {0,0}
+};
+
+static swig_lua_attribute swig_NoiseWhite_Sf_SwigStatic_attributes[] = {
+    {0,0,0}
+};
+static swig_lua_const_info swig_NoiseWhite_Sf_SwigStatic_constants[]= {
+    {0,0,0,0,0,0}
+};
+static swig_lua_method swig_NoiseWhite_Sf_SwigStatic_methods[]= {
+    {0,0}
+};
+static swig_lua_class* swig_NoiseWhite_Sf_SwigStatic_classes[]= {
+    0
+};
+
+static swig_lua_namespace swig_NoiseWhite_Sf_SwigStatic = {
+    "NoiseWhite",
+    swig_NoiseWhite_Sf_SwigStatic_methods,
+    swig_NoiseWhite_Sf_SwigStatic_attributes,
+    swig_NoiseWhite_Sf_SwigStatic_constants,
+    swig_NoiseWhite_Sf_SwigStatic_classes,
+    0
+};
+static swig_lua_class *swig_NoiseWhite_bases[] = {0};
+static const char *swig_NoiseWhite_base_names[] = {0};
+static swig_lua_class _wrap_class_NoiseWhite = { "NoiseWhite", "NoiseWhite", &SWIGTYPE_p_gam__NoiseWhiteT_RNGLinCon_t,_proxy__wrap_new_NoiseWhite, swig_delete_NoiseWhite, swig_NoiseWhite_methods, swig_NoiseWhite_attributes, &swig_NoiseWhite_Sf_SwigStatic, swig_NoiseWhite_meta, swig_NoiseWhite_bases, swig_NoiseWhite_base_names };
+
+static int _wrap_new_NoiseBinary__SWIG_0(lua_State* L) {
+  int SWIG_arg = 0;
+  float arg1 ;
+  uint32_t arg2 ;
+  gam::NoiseBinary< > *result = 0 ;
+  
+  SWIG_check_num_args("gam::NoiseBinary< >::NoiseBinary",2,2)
+  if(!lua_isnumber(L,1)) SWIG_fail_arg("gam::NoiseBinary< >::NoiseBinary",1,"float");
+  if(!lua_isnumber(L,2)) SWIG_fail_arg("gam::NoiseBinary< >::NoiseBinary",2,"uint32_t");
+  arg1 = (float)lua_tonumber(L, 1);
+  SWIG_contract_assert((lua_tonumber(L,2)>=0),"number must not be negative");
+  arg2 = (uint32_t)lua_tonumber(L, 2);
+  result = (gam::NoiseBinary< > *)new gam::NoiseBinary< >(arg1,arg2);
+  SWIG_NewPointerObj(L,result,SWIGTYPE_p_gam__NoiseBinaryT_RNGLinCon_t,1); SWIG_arg++; 
+  return SWIG_arg;
+  
+  if(0) SWIG_fail;
+  
+fail:
+  lua_error(L);
+  return SWIG_arg;
+}
+
+
+static int _wrap_new_NoiseBinary__SWIG_1(lua_State* L) {
+  int SWIG_arg = 0;
+  float arg1 ;
+  gam::NoiseBinary< > *result = 0 ;
+  
+  SWIG_check_num_args("gam::NoiseBinary< >::NoiseBinary",1,1)
+  if(!lua_isnumber(L,1)) SWIG_fail_arg("gam::NoiseBinary< >::NoiseBinary",1,"float");
+  arg1 = (float)lua_tonumber(L, 1);
+  result = (gam::NoiseBinary< > *)new gam::NoiseBinary< >(arg1);
+  SWIG_NewPointerObj(L,result,SWIGTYPE_p_gam__NoiseBinaryT_RNGLinCon_t,1); SWIG_arg++; 
+  return SWIG_arg;
+  
+  if(0) SWIG_fail;
+  
+fail:
+  lua_error(L);
+  return SWIG_arg;
+}
+
+
+static int _wrap_new_NoiseBinary__SWIG_2(lua_State* L) {
+  int SWIG_arg = 0;
+  gam::NoiseBinary< > *result = 0 ;
+  
+  SWIG_check_num_args("gam::NoiseBinary< >::NoiseBinary",0,0)
+  result = (gam::NoiseBinary< > *)new gam::NoiseBinary< >();
+  SWIG_NewPointerObj(L,result,SWIGTYPE_p_gam__NoiseBinaryT_RNGLinCon_t,1); SWIG_arg++; 
+  return SWIG_arg;
+  
+  if(0) SWIG_fail;
+  
+fail:
+  lua_error(L);
+  return SWIG_arg;
+}
+
+
+static int _wrap_new_NoiseBinary(lua_State* L) {
+  int argc;
+  int argv[3]={
+    1,2,3
+  };
+  
+  argc = lua_gettop(L);
+  if (argc == 0) {
+    return _wrap_new_NoiseBinary__SWIG_2(L);
+  }
+  if (argc == 1) {
+    int _v = 0;
+    {
+      _v = lua_isnumber(L,argv[0]);
+    }
+    if (_v) {
+      return _wrap_new_NoiseBinary__SWIG_1(L);
+    }
+  }
+  if (argc == 2) {
+    int _v = 0;
+    {
+      _v = lua_isnumber(L,argv[0]);
+    }
+    if (_v) {
+      {
+        _v = lua_isnumber(L,argv[1]);
+      }
+      if (_v) {
+        return _wrap_new_NoiseBinary__SWIG_0(L);
+      }
+    }
+  }
+  
+  SWIG_Lua_pusherrstring(L,"Wrong arguments for overloaded function 'new_NoiseBinary'\n"
+    "  Possible C/C++ prototypes are:\n"
+    "    gam::NoiseBinary< >::NoiseBinary(float,uint32_t)\n"
+    "    gam::NoiseBinary< >::NoiseBinary(float)\n"
+    "    gam::NoiseBinary< >::NoiseBinary()\n");
+  lua_error(L);return 0;
+}
+
+
+static int _wrap_NoiseBinary_Tick(lua_State* L) {
+  int SWIG_arg = 0;
+  gam::NoiseBinary< > *arg1 = (gam::NoiseBinary< > *) 0 ;
+  float result;
+  
+  SWIG_check_num_args("gam::NoiseBinary< >::Tick",1,1)
+  if(!SWIG_isptrtype(L,1)) SWIG_fail_arg("gam::NoiseBinary< >::Tick",1,"gam::NoiseBinary< > *");
+  
+  if (!SWIG_IsOK(SWIG_ConvertPtr(L,1,(void**)&arg1,SWIGTYPE_p_gam__NoiseBinaryT_RNGLinCon_t,0))){
+    SWIG_fail_ptr("NoiseBinary_Tick",1,SWIGTYPE_p_gam__NoiseBinaryT_RNGLinCon_t);
+  }
+  
+  result = (float)gam_NoiseBinary_Sl__Sg__Tick__SWIG(arg1);
+  lua_pushnumber(L, (lua_Number) result); SWIG_arg++;
+  return SWIG_arg;
+  
+  if(0) SWIG_fail;
+  
+fail:
+  lua_error(L);
+  return SWIG_arg;
+}
+
+
+static int _wrap_NoiseBinary_amp_set(lua_State* L) {
+  int SWIG_arg = 0;
+  gam::NoiseBinary< > *arg1 = (gam::NoiseBinary< > *) 0 ;
+  float arg2 ;
+  
+  SWIG_check_num_args("gam::NoiseBinary< >::amp",2,2)
+  if(!SWIG_isptrtype(L,1)) SWIG_fail_arg("gam::NoiseBinary< >::amp",1,"gam::NoiseBinary< > *");
+  if(!lua_isnumber(L,2)) SWIG_fail_arg("gam::NoiseBinary< >::amp",2,"float");
+  
+  if (!SWIG_IsOK(SWIG_ConvertPtr(L,1,(void**)&arg1,SWIGTYPE_p_gam__NoiseBinaryT_RNGLinCon_t,0))){
+    SWIG_fail_ptr("NoiseBinary_amp_set",1,SWIGTYPE_p_gam__NoiseBinaryT_RNGLinCon_t);
+  }
+  
+  arg2 = (float)lua_tonumber(L, 2);
+  if (arg1) (arg1)->amp = arg2;
+  
+  return SWIG_arg;
+  
+  if(0) SWIG_fail;
+  
+fail:
+  lua_error(L);
+  return SWIG_arg;
+}
+
+
+static int _wrap_NoiseBinary_amp_get(lua_State* L) {
+  int SWIG_arg = 0;
+  gam::NoiseBinary< > *arg1 = (gam::NoiseBinary< > *) 0 ;
+  float result;
+  
+  SWIG_check_num_args("gam::NoiseBinary< >::amp",1,1)
+  if(!SWIG_isptrtype(L,1)) SWIG_fail_arg("gam::NoiseBinary< >::amp",1,"gam::NoiseBinary< > *");
+  
+  if (!SWIG_IsOK(SWIG_ConvertPtr(L,1,(void**)&arg1,SWIGTYPE_p_gam__NoiseBinaryT_RNGLinCon_t,0))){
+    SWIG_fail_ptr("NoiseBinary_amp_get",1,SWIGTYPE_p_gam__NoiseBinaryT_RNGLinCon_t);
+  }
+  
+  result = (float) ((arg1)->amp);
+  lua_pushnumber(L, (lua_Number) result); SWIG_arg++;
+  return SWIG_arg;
+  
+  if(0) SWIG_fail;
+  
+fail:
+  lua_error(L);
+  return SWIG_arg;
+}
+
+
+static void swig_delete_NoiseBinary(void *obj) {
+gam::NoiseBinary< > *arg1 = (gam::NoiseBinary< > *) obj;
+delete arg1;
+}
+static int _proxy__wrap_new_NoiseBinary(lua_State *L) {
+    assert(lua_istable(L,1));
+    lua_pushcfunction(L,_wrap_new_NoiseBinary);
+    assert(!lua_isnil(L,-1));
+    lua_replace(L,1); /* replace our table with real constructor */
+    lua_call(L,lua_gettop(L)-1,1);
+    return 1;
+}
+static swig_lua_attribute swig_NoiseBinary_attributes[] = {
+    { "amp", _wrap_NoiseBinary_amp_get, _wrap_NoiseBinary_amp_set },
+    {0,0,0}
+};
+static swig_lua_method swig_NoiseBinary_methods[]= {
+    { "Tick", _wrap_NoiseBinary_Tick},
+    {0,0}
+};
+static swig_lua_method swig_NoiseBinary_meta[] = {
+    {0,0}
+};
+
+static swig_lua_attribute swig_NoiseBinary_Sf_SwigStatic_attributes[] = {
+    {0,0,0}
+};
+static swig_lua_const_info swig_NoiseBinary_Sf_SwigStatic_constants[]= {
+    {0,0,0,0,0,0}
+};
+static swig_lua_method swig_NoiseBinary_Sf_SwigStatic_methods[]= {
+    {0,0}
+};
+static swig_lua_class* swig_NoiseBinary_Sf_SwigStatic_classes[]= {
+    0
+};
+
+static swig_lua_namespace swig_NoiseBinary_Sf_SwigStatic = {
+    "NoiseBinary",
+    swig_NoiseBinary_Sf_SwigStatic_methods,
+    swig_NoiseBinary_Sf_SwigStatic_attributes,
+    swig_NoiseBinary_Sf_SwigStatic_constants,
+    swig_NoiseBinary_Sf_SwigStatic_classes,
+    0
+};
+static swig_lua_class *swig_NoiseBinary_bases[] = {0};
+static const char *swig_NoiseBinary_base_names[] = {0};
+static swig_lua_class _wrap_class_NoiseBinary = { "NoiseBinary", "NoiseBinary", &SWIGTYPE_p_gam__NoiseBinaryT_RNGLinCon_t,_proxy__wrap_new_NoiseBinary, swig_delete_NoiseBinary, swig_NoiseBinary_methods, swig_NoiseBinary_attributes, &swig_NoiseBinary_Sf_SwigStatic, swig_NoiseBinary_meta, swig_NoiseBinary_bases, swig_NoiseBinary_base_names };
+
+static int _wrap_NoiseViolet_Tick(lua_State* L) {
+  int SWIG_arg = 0;
+  gam::NoiseViolet< > *arg1 = (gam::NoiseViolet< > *) 0 ;
+  float result;
+  
+  SWIG_check_num_args("gam::NoiseViolet< >::Tick",1,1)
+  if(!SWIG_isptrtype(L,1)) SWIG_fail_arg("gam::NoiseViolet< >::Tick",1,"gam::NoiseViolet< > *");
+  
+  if (!SWIG_IsOK(SWIG_ConvertPtr(L,1,(void**)&arg1,SWIGTYPE_p_gam__NoiseVioletT_RNGLinCon_t,0))){
+    SWIG_fail_ptr("NoiseViolet_Tick",1,SWIGTYPE_p_gam__NoiseVioletT_RNGLinCon_t);
+  }
+  
+  result = (float)gam_NoiseViolet_Sl__Sg__Tick__SWIG(arg1);
+  lua_pushnumber(L, (lua_Number) result); SWIG_arg++;
+  return SWIG_arg;
+  
+  if(0) SWIG_fail;
+  
+fail:
+  lua_error(L);
+  return SWIG_arg;
+}
+
+
+static int _wrap_new_NoiseViolet(lua_State* L) {
+  int SWIG_arg = 0;
+  gam::NoiseViolet< > *result = 0 ;
+  
+  SWIG_check_num_args("gam::NoiseViolet< >::NoiseViolet",0,0)
+  result = (gam::NoiseViolet< > *)new gam::NoiseViolet< >();
+  SWIG_NewPointerObj(L,result,SWIGTYPE_p_gam__NoiseVioletT_RNGLinCon_t,1); SWIG_arg++; 
+  return SWIG_arg;
+  
+  if(0) SWIG_fail;
+  
+fail:
+  lua_error(L);
+  return SWIG_arg;
+}
+
+
+static void swig_delete_NoiseViolet(void *obj) {
+gam::NoiseViolet< > *arg1 = (gam::NoiseViolet< > *) obj;
+delete arg1;
+}
+static int _proxy__wrap_new_NoiseViolet(lua_State *L) {
+    assert(lua_istable(L,1));
+    lua_pushcfunction(L,_wrap_new_NoiseViolet);
+    assert(!lua_isnil(L,-1));
+    lua_replace(L,1); /* replace our table with real constructor */
+    lua_call(L,lua_gettop(L)-1,1);
+    return 1;
+}
+static swig_lua_attribute swig_NoiseViolet_attributes[] = {
+    {0,0,0}
+};
+static swig_lua_method swig_NoiseViolet_methods[]= {
+    { "Tick", _wrap_NoiseViolet_Tick},
+    {0,0}
+};
+static swig_lua_method swig_NoiseViolet_meta[] = {
+    {0,0}
+};
+
+static swig_lua_attribute swig_NoiseViolet_Sf_SwigStatic_attributes[] = {
+    {0,0,0}
+};
+static swig_lua_const_info swig_NoiseViolet_Sf_SwigStatic_constants[]= {
+    {0,0,0,0,0,0}
+};
+static swig_lua_method swig_NoiseViolet_Sf_SwigStatic_methods[]= {
+    {0,0}
+};
+static swig_lua_class* swig_NoiseViolet_Sf_SwigStatic_classes[]= {
+    0
+};
+
+static swig_lua_namespace swig_NoiseViolet_Sf_SwigStatic = {
+    "NoiseViolet",
+    swig_NoiseViolet_Sf_SwigStatic_methods,
+    swig_NoiseViolet_Sf_SwigStatic_attributes,
+    swig_NoiseViolet_Sf_SwigStatic_constants,
+    swig_NoiseViolet_Sf_SwigStatic_classes,
+    0
+};
+static swig_lua_class *swig_NoiseViolet_bases[] = {0};
+static const char *swig_NoiseViolet_base_names[] = {0};
+static swig_lua_class _wrap_class_NoiseViolet = { "NoiseViolet", "NoiseViolet", &SWIGTYPE_p_gam__NoiseVioletT_RNGLinCon_t,_proxy__wrap_new_NoiseViolet, swig_delete_NoiseViolet, swig_NoiseViolet_methods, swig_NoiseViolet_attributes, &swig_NoiseViolet_Sf_SwigStatic, swig_NoiseViolet_meta, swig_NoiseViolet_bases, swig_NoiseViolet_base_names };
+
+static int _wrap_new_Accum__SWIG_0(lua_State* L) {
+  int SWIG_arg = 0;
+  float arg1 ;
+  float arg2 ;
+  gam::Accum< > *result = 0 ;
+  
+  SWIG_check_num_args("gam::Accum< >::Accum",2,2)
+  if(!lua_isnumber(L,1)) SWIG_fail_arg("gam::Accum< >::Accum",1,"float");
+  if(!lua_isnumber(L,2)) SWIG_fail_arg("gam::Accum< >::Accum",2,"float");
+  arg1 = (float)lua_tonumber(L, 1);
+  arg2 = (float)lua_tonumber(L, 2);
+  result = (gam::Accum< > *)new gam::Accum< >(arg1,arg2);
+  SWIG_NewPointerObj(L,result,SWIGTYPE_p_gam__AccumT_phsInc__Loop_GAM_DEFAULT_DOMAIN_t,1); SWIG_arg++; 
+  return SWIG_arg;
+  
+  if(0) SWIG_fail;
+  
+fail:
+  lua_error(L);
+  return SWIG_arg;
+}
+
+
+static int _wrap_new_Accum__SWIG_1(lua_State* L) {
+  int SWIG_arg = 0;
+  float arg1 ;
+  gam::Accum< > *result = 0 ;
+  
+  SWIG_check_num_args("gam::Accum< >::Accum",1,1)
+  if(!lua_isnumber(L,1)) SWIG_fail_arg("gam::Accum< >::Accum",1,"float");
+  arg1 = (float)lua_tonumber(L, 1);
+  result = (gam::Accum< > *)new gam::Accum< >(arg1);
+  SWIG_NewPointerObj(L,result,SWIGTYPE_p_gam__AccumT_phsInc__Loop_GAM_DEFAULT_DOMAIN_t,1); SWIG_arg++; 
+  return SWIG_arg;
+  
+  if(0) SWIG_fail;
+  
+fail:
+  lua_error(L);
+  return SWIG_arg;
+}
+
+
+static int _wrap_new_Accum__SWIG_2(lua_State* L) {
+  int SWIG_arg = 0;
+  gam::Accum< > *result = 0 ;
+  
+  SWIG_check_num_args("gam::Accum< >::Accum",0,0)
+  result = (gam::Accum< > *)new gam::Accum< >();
+  SWIG_NewPointerObj(L,result,SWIGTYPE_p_gam__AccumT_phsInc__Loop_GAM_DEFAULT_DOMAIN_t,1); SWIG_arg++; 
+  return SWIG_arg;
+  
+  if(0) SWIG_fail;
+  
+fail:
+  lua_error(L);
+  return SWIG_arg;
+}
+
+
+static int _wrap_new_Accum(lua_State* L) {
+  int argc;
+  int argv[3]={
+    1,2,3
+  };
+  
+  argc = lua_gettop(L);
+  if (argc == 0) {
+    return _wrap_new_Accum__SWIG_2(L);
+  }
+  if (argc == 1) {
+    int _v = 0;
+    {
+      _v = lua_isnumber(L,argv[0]);
+    }
+    if (_v) {
+      return _wrap_new_Accum__SWIG_1(L);
+    }
+  }
+  if (argc == 2) {
+    int _v = 0;
+    {
+      _v = lua_isnumber(L,argv[0]);
+    }
+    if (_v) {
+      {
+        _v = lua_isnumber(L,argv[1]);
+      }
+      if (_v) {
+        return _wrap_new_Accum__SWIG_0(L);
+      }
+    }
+  }
+  
+  SWIG_Lua_pusherrstring(L,"Wrong arguments for overloaded function 'new_Accum'\n"
+    "  Possible C/C++ prototypes are:\n"
+    "    gam::Accum< >::Accum(float,float)\n"
+    "    gam::Accum< >::Accum(float)\n"
+    "    gam::Accum< >::Accum()\n");
+  lua_error(L);return 0;
+}
+
+
+static int _wrap_Accum_freq__SWIG_0(lua_State* L) {
+  int SWIG_arg = 0;
+  gam::Accum< > *arg1 = (gam::Accum< > *) 0 ;
+  float arg2 ;
+  
+  SWIG_check_num_args("gam::Accum< >::freq",2,2)
+  if(!SWIG_isptrtype(L,1)) SWIG_fail_arg("gam::Accum< >::freq",1,"gam::Accum< > *");
+  if(!lua_isnumber(L,2)) SWIG_fail_arg("gam::Accum< >::freq",2,"float");
+  
+  if (!SWIG_IsOK(SWIG_ConvertPtr(L,1,(void**)&arg1,SWIGTYPE_p_gam__AccumT_phsInc__Loop_GAM_DEFAULT_DOMAIN_t,0))){
+    SWIG_fail_ptr("Accum_freq",1,SWIGTYPE_p_gam__AccumT_phsInc__Loop_GAM_DEFAULT_DOMAIN_t);
+  }
+  
+  arg2 = (float)lua_tonumber(L, 2);
+  (arg1)->freq(arg2);
+  
+  return SWIG_arg;
+  
+  if(0) SWIG_fail;
+  
+fail:
+  lua_error(L);
+  return SWIG_arg;
+}
+
+
+static int _wrap_Accum_freqI__SWIG_0(lua_State* L) {
+  int SWIG_arg = 0;
+  gam::Accum< > *arg1 = (gam::Accum< > *) 0 ;
+  uint32_t arg2 ;
+  
+  SWIG_check_num_args("gam::Accum< >::freqI",2,2)
+  if(!SWIG_isptrtype(L,1)) SWIG_fail_arg("gam::Accum< >::freqI",1,"gam::Accum< > *");
+  if(!lua_isnumber(L,2)) SWIG_fail_arg("gam::Accum< >::freqI",2,"uint32_t");
+  
+  if (!SWIG_IsOK(SWIG_ConvertPtr(L,1,(void**)&arg1,SWIGTYPE_p_gam__AccumT_phsInc__Loop_GAM_DEFAULT_DOMAIN_t,0))){
+    SWIG_fail_ptr("Accum_freqI",1,SWIGTYPE_p_gam__AccumT_phsInc__Loop_GAM_DEFAULT_DOMAIN_t);
+  }
+  
+  SWIG_contract_assert((lua_tonumber(L,2)>=0),"number must not be negative");
+  arg2 = (uint32_t)lua_tonumber(L, 2);
+  (arg1)->freqI(arg2);
+  
+  return SWIG_arg;
+  
+  if(0) SWIG_fail;
+  
+fail:
+  lua_error(L);
+  return SWIG_arg;
+}
+
+
+static int _wrap_Accum_freqAdd(lua_State* L) {
+  int SWIG_arg = 0;
+  gam::Accum< > *arg1 = (gam::Accum< > *) 0 ;
+  float arg2 ;
+  
+  SWIG_check_num_args("gam::Accum< >::freqAdd",2,2)
+  if(!SWIG_isptrtype(L,1)) SWIG_fail_arg("gam::Accum< >::freqAdd",1,"gam::Accum< > *");
+  if(!lua_isnumber(L,2)) SWIG_fail_arg("gam::Accum< >::freqAdd",2,"float");
+  
+  if (!SWIG_IsOK(SWIG_ConvertPtr(L,1,(void**)&arg1,SWIGTYPE_p_gam__AccumT_phsInc__Loop_GAM_DEFAULT_DOMAIN_t,0))){
+    SWIG_fail_ptr("Accum_freqAdd",1,SWIGTYPE_p_gam__AccumT_phsInc__Loop_GAM_DEFAULT_DOMAIN_t);
+  }
+  
+  arg2 = (float)lua_tonumber(L, 2);
+  (arg1)->freqAdd(arg2);
+  
+  return SWIG_arg;
+  
+  if(0) SWIG_fail;
+  
+fail:
+  lua_error(L);
+  return SWIG_arg;
+}
+
+
+static int _wrap_Accum_freqMul(lua_State* L) {
+  int SWIG_arg = 0;
+  gam::Accum< > *arg1 = (gam::Accum< > *) 0 ;
+  float arg2 ;
+  
+  SWIG_check_num_args("gam::Accum< >::freqMul",2,2)
+  if(!SWIG_isptrtype(L,1)) SWIG_fail_arg("gam::Accum< >::freqMul",1,"gam::Accum< > *");
+  if(!lua_isnumber(L,2)) SWIG_fail_arg("gam::Accum< >::freqMul",2,"float");
+  
+  if (!SWIG_IsOK(SWIG_ConvertPtr(L,1,(void**)&arg1,SWIGTYPE_p_gam__AccumT_phsInc__Loop_GAM_DEFAULT_DOMAIN_t,0))){
+    SWIG_fail_ptr("Accum_freqMul",1,SWIGTYPE_p_gam__AccumT_phsInc__Loop_GAM_DEFAULT_DOMAIN_t);
+  }
+  
+  arg2 = (float)lua_tonumber(L, 2);
+  (arg1)->freqMul(arg2);
+  
+  return SWIG_arg;
+  
+  if(0) SWIG_fail;
+  
+fail:
+  lua_error(L);
+  return SWIG_arg;
+}
+
+
+static int _wrap_Accum_phase__SWIG_0(lua_State* L) {
+  int SWIG_arg = 0;
+  gam::Accum< > *arg1 = (gam::Accum< > *) 0 ;
+  float arg2 ;
+  
+  SWIG_check_num_args("gam::Accum< >::phase",2,2)
+  if(!SWIG_isptrtype(L,1)) SWIG_fail_arg("gam::Accum< >::phase",1,"gam::Accum< > *");
+  if(!lua_isnumber(L,2)) SWIG_fail_arg("gam::Accum< >::phase",2,"float");
+  
+  if (!SWIG_IsOK(SWIG_ConvertPtr(L,1,(void**)&arg1,SWIGTYPE_p_gam__AccumT_phsInc__Loop_GAM_DEFAULT_DOMAIN_t,0))){
+    SWIG_fail_ptr("Accum_phase",1,SWIGTYPE_p_gam__AccumT_phsInc__Loop_GAM_DEFAULT_DOMAIN_t);
+  }
+  
+  arg2 = (float)lua_tonumber(L, 2);
+  (arg1)->phase(arg2);
+  
+  return SWIG_arg;
+  
+  if(0) SWIG_fail;
+  
+fail:
+  lua_error(L);
+  return SWIG_arg;
+}
+
+
+static int _wrap_Accum_phaseMax(lua_State* L) {
+  int SWIG_arg = 0;
+  gam::Accum< > *arg1 = (gam::Accum< > *) 0 ;
+  
+  SWIG_check_num_args("gam::Accum< >::phaseMax",1,1)
+  if(!SWIG_isptrtype(L,1)) SWIG_fail_arg("gam::Accum< >::phaseMax",1,"gam::Accum< > *");
+  
+  if (!SWIG_IsOK(SWIG_ConvertPtr(L,1,(void**)&arg1,SWIGTYPE_p_gam__AccumT_phsInc__Loop_GAM_DEFAULT_DOMAIN_t,0))){
+    SWIG_fail_ptr("Accum_phaseMax",1,SWIGTYPE_p_gam__AccumT_phsInc__Loop_GAM_DEFAULT_DOMAIN_t);
+  }
+  
+  (arg1)->phaseMax();
+  
+  return SWIG_arg;
+  
+  if(0) SWIG_fail;
+  
+fail:
+  lua_error(L);
+  return SWIG_arg;
+}
+
+
+static int _wrap_Accum_phaseAdd(lua_State* L) {
+  int SWIG_arg = 0;
+  gam::Accum< > *arg1 = (gam::Accum< > *) 0 ;
+  float arg2 ;
+  
+  SWIG_check_num_args("gam::Accum< >::phaseAdd",2,2)
+  if(!SWIG_isptrtype(L,1)) SWIG_fail_arg("gam::Accum< >::phaseAdd",1,"gam::Accum< > *");
+  if(!lua_isnumber(L,2)) SWIG_fail_arg("gam::Accum< >::phaseAdd",2,"float");
+  
+  if (!SWIG_IsOK(SWIG_ConvertPtr(L,1,(void**)&arg1,SWIGTYPE_p_gam__AccumT_phsInc__Loop_GAM_DEFAULT_DOMAIN_t,0))){
+    SWIG_fail_ptr("Accum_phaseAdd",1,SWIGTYPE_p_gam__AccumT_phsInc__Loop_GAM_DEFAULT_DOMAIN_t);
+  }
+  
+  arg2 = (float)lua_tonumber(L, 2);
+  (arg1)->phaseAdd(arg2);
+  
+  return SWIG_arg;
+  
+  if(0) SWIG_fail;
+  
+fail:
+  lua_error(L);
+  return SWIG_arg;
+}
+
+
+static int _wrap_Accum_period__SWIG_0(lua_State* L) {
+  int SWIG_arg = 0;
+  gam::Accum< > *arg1 = (gam::Accum< > *) 0 ;
+  float arg2 ;
+  
+  SWIG_check_num_args("gam::Accum< >::period",2,2)
+  if(!SWIG_isptrtype(L,1)) SWIG_fail_arg("gam::Accum< >::period",1,"gam::Accum< > *");
+  if(!lua_isnumber(L,2)) SWIG_fail_arg("gam::Accum< >::period",2,"float");
+  
+  if (!SWIG_IsOK(SWIG_ConvertPtr(L,1,(void**)&arg1,SWIGTYPE_p_gam__AccumT_phsInc__Loop_GAM_DEFAULT_DOMAIN_t,0))){
+    SWIG_fail_ptr("Accum_period",1,SWIGTYPE_p_gam__AccumT_phsInc__Loop_GAM_DEFAULT_DOMAIN_t);
+  }
+  
+  arg2 = (float)lua_tonumber(L, 2);
+  (arg1)->period(arg2);
+  
+  return SWIG_arg;
+  
+  if(0) SWIG_fail;
+  
+fail:
+  lua_error(L);
+  return SWIG_arg;
+}
+
+
+static int _wrap_Accum_reset(lua_State* L) {
+  int SWIG_arg = 0;
+  gam::Accum< > *arg1 = (gam::Accum< > *) 0 ;
+  
+  SWIG_check_num_args("gam::Accum< >::reset",1,1)
+  if(!SWIG_isptrtype(L,1)) SWIG_fail_arg("gam::Accum< >::reset",1,"gam::Accum< > *");
+  
+  if (!SWIG_IsOK(SWIG_ConvertPtr(L,1,(void**)&arg1,SWIGTYPE_p_gam__AccumT_phsInc__Loop_GAM_DEFAULT_DOMAIN_t,0))){
+    SWIG_fail_ptr("Accum_reset",1,SWIGTYPE_p_gam__AccumT_phsInc__Loop_GAM_DEFAULT_DOMAIN_t);
+  }
+  
+  (arg1)->reset();
+  
+  return SWIG_arg;
+  
+  if(0) SWIG_fail;
+  
+fail:
+  lua_error(L);
+  return SWIG_arg;
+}
+
+
+static int _wrap_Accum_finish(lua_State* L) {
+  int SWIG_arg = 0;
+  gam::Accum< > *arg1 = (gam::Accum< > *) 0 ;
+  
+  SWIG_check_num_args("gam::Accum< >::finish",1,1)
+  if(!SWIG_isptrtype(L,1)) SWIG_fail_arg("gam::Accum< >::finish",1,"gam::Accum< > *");
+  
+  if (!SWIG_IsOK(SWIG_ConvertPtr(L,1,(void**)&arg1,SWIGTYPE_p_gam__AccumT_phsInc__Loop_GAM_DEFAULT_DOMAIN_t,0))){
+    SWIG_fail_ptr("Accum_finish",1,SWIGTYPE_p_gam__AccumT_phsInc__Loop_GAM_DEFAULT_DOMAIN_t);
+  }
+  
+  (arg1)->finish();
+  
+  return SWIG_arg;
+  
+  if(0) SWIG_fail;
+  
+fail:
+  lua_error(L);
+  return SWIG_arg;
+}
+
+
+static int _wrap_Accum_phsInc(lua_State* L) {
+  int SWIG_arg = 0;
+  gam::Accum< > *arg1 = (gam::Accum< > *) 0 ;
+  phsInc::Loop *result = 0 ;
+  
+  SWIG_check_num_args("gam::Accum< >::phsInc",1,1)
+  if(!SWIG_isptrtype(L,1)) SWIG_fail_arg("gam::Accum< >::phsInc",1,"gam::Accum< > *");
+  
+  if (!SWIG_IsOK(SWIG_ConvertPtr(L,1,(void**)&arg1,SWIGTYPE_p_gam__AccumT_phsInc__Loop_GAM_DEFAULT_DOMAIN_t,0))){
+    SWIG_fail_ptr("Accum_phsInc",1,SWIGTYPE_p_gam__AccumT_phsInc__Loop_GAM_DEFAULT_DOMAIN_t);
+  }
+  
+  result = (phsInc::Loop *) &(arg1)->phsInc();
+  SWIG_NewPointerObj(L,result,SWIGTYPE_p_phsInc__Loop,0); SWIG_arg++; 
+  return SWIG_arg;
+  
+  if(0) SWIG_fail;
+  
+fail:
+  lua_error(L);
+  return SWIG_arg;
+}
+
+
+static int _wrap_Accum_done(lua_State* L) {
+  int SWIG_arg = 0;
+  gam::Accum< > *arg1 = (gam::Accum< > *) 0 ;
+  bool result;
+  
+  SWIG_check_num_args("gam::Accum< >::done",1,1)
+  if(!SWIG_isptrtype(L,1)) SWIG_fail_arg("gam::Accum< >::done",1,"gam::Accum< > const *");
+  
+  if (!SWIG_IsOK(SWIG_ConvertPtr(L,1,(void**)&arg1,SWIGTYPE_p_gam__AccumT_phsInc__Loop_GAM_DEFAULT_DOMAIN_t,0))){
+    SWIG_fail_ptr("Accum_done",1,SWIGTYPE_p_gam__AccumT_phsInc__Loop_GAM_DEFAULT_DOMAIN_t);
+  }
+  
+  result = (bool)((gam::Accum< > const *)arg1)->done();
+  lua_pushboolean(L,(int)(result!=0)); SWIG_arg++;
+  return SWIG_arg;
+  
+  if(0) SWIG_fail;
+  
+fail:
+  lua_error(L);
+  return SWIG_arg;
+}
+
+
+static int _wrap_Accum_cycled(lua_State* L) {
+  int SWIG_arg = 0;
+  gam::Accum< > *arg1 = (gam::Accum< > *) 0 ;
+  bool result;
+  
+  SWIG_check_num_args("gam::Accum< >::cycled",1,1)
+  if(!SWIG_isptrtype(L,1)) SWIG_fail_arg("gam::Accum< >::cycled",1,"gam::Accum< > const *");
+  
+  if (!SWIG_IsOK(SWIG_ConvertPtr(L,1,(void**)&arg1,SWIGTYPE_p_gam__AccumT_phsInc__Loop_GAM_DEFAULT_DOMAIN_t,0))){
+    SWIG_fail_ptr("Accum_cycled",1,SWIGTYPE_p_gam__AccumT_phsInc__Loop_GAM_DEFAULT_DOMAIN_t);
+  }
+  
+  result = (bool)((gam::Accum< > const *)arg1)->cycled();
+  lua_pushboolean(L,(int)(result!=0)); SWIG_arg++;
+  return SWIG_arg;
+  
+  if(0) SWIG_fail;
+  
+fail:
+  lua_error(L);
+  return SWIG_arg;
+}
+
+
+static int _wrap_Accum_freq__SWIG_1(lua_State* L) {
+  int SWIG_arg = 0;
+  gam::Accum< > *arg1 = (gam::Accum< > *) 0 ;
+  float result;
+  
+  SWIG_check_num_args("gam::Accum< >::freq",1,1)
+  if(!SWIG_isptrtype(L,1)) SWIG_fail_arg("gam::Accum< >::freq",1,"gam::Accum< > const *");
+  
+  if (!SWIG_IsOK(SWIG_ConvertPtr(L,1,(void**)&arg1,SWIGTYPE_p_gam__AccumT_phsInc__Loop_GAM_DEFAULT_DOMAIN_t,0))){
+    SWIG_fail_ptr("Accum_freq",1,SWIGTYPE_p_gam__AccumT_phsInc__Loop_GAM_DEFAULT_DOMAIN_t);
+  }
+  
+  result = (float)((gam::Accum< > const *)arg1)->freq();
+  lua_pushnumber(L, (lua_Number) result); SWIG_arg++;
+  return SWIG_arg;
+  
+  if(0) SWIG_fail;
+  
+fail:
+  lua_error(L);
+  return SWIG_arg;
+}
+
+
+static int _wrap_Accum_freq(lua_State* L) {
+  int argc;
+  int argv[3]={
+    1,2,3
+  };
+  
+  argc = lua_gettop(L);
+  if (argc == 1) {
+    int _v = 0;
+    {
+      void *ptr;
+      if (SWIG_isptrtype(L,argv[0])==0 || SWIG_ConvertPtr(L,argv[0], (void **) &ptr, SWIGTYPE_p_gam__AccumT_phsInc__Loop_GAM_DEFAULT_DOMAIN_t, 0)) {
+        _v = 0;
+      } else {
+        _v = 1;
+      }
+    }
+    if (_v) {
+      return _wrap_Accum_freq__SWIG_1(L);
+    }
+  }
+  if (argc == 2) {
+    int _v = 0;
+    {
+      void *ptr;
+      if (SWIG_isptrtype(L,argv[0])==0 || SWIG_ConvertPtr(L,argv[0], (void **) &ptr, SWIGTYPE_p_gam__AccumT_phsInc__Loop_GAM_DEFAULT_DOMAIN_t, 0)) {
+        _v = 0;
+      } else {
+        _v = 1;
+      }
+    }
+    if (_v) {
+      {
+        _v = lua_isnumber(L,argv[1]);
+      }
+      if (_v) {
+        return _wrap_Accum_freq__SWIG_0(L);
+      }
+    }
+  }
+  
+  SWIG_Lua_pusherrstring(L,"Wrong arguments for overloaded function 'Accum_freq'\n"
+    "  Possible C/C++ prototypes are:\n"
+    "    gam::Accum< >::freq(float)\n"
+    "    gam::Accum< >::freq() const\n");
+  lua_error(L);return 0;
+}
+
+
+static int _wrap_Accum_freqI__SWIG_1(lua_State* L) {
+  int SWIG_arg = 0;
+  gam::Accum< > *arg1 = (gam::Accum< > *) 0 ;
+  uint32_t result;
+  
+  SWIG_check_num_args("gam::Accum< >::freqI",1,1)
+  if(!SWIG_isptrtype(L,1)) SWIG_fail_arg("gam::Accum< >::freqI",1,"gam::Accum< > const *");
+  
+  if (!SWIG_IsOK(SWIG_ConvertPtr(L,1,(void**)&arg1,SWIGTYPE_p_gam__AccumT_phsInc__Loop_GAM_DEFAULT_DOMAIN_t,0))){
+    SWIG_fail_ptr("Accum_freqI",1,SWIGTYPE_p_gam__AccumT_phsInc__Loop_GAM_DEFAULT_DOMAIN_t);
+  }
+  
+  result = (uint32_t)((gam::Accum< > const *)arg1)->freqI();
+  lua_pushnumber(L, (lua_Number) result); SWIG_arg++;
+  return SWIG_arg;
+  
+  if(0) SWIG_fail;
+  
+fail:
+  lua_error(L);
+  return SWIG_arg;
+}
+
+
+static int _wrap_Accum_freqI(lua_State* L) {
+  int argc;
+  int argv[3]={
+    1,2,3
+  };
+  
+  argc = lua_gettop(L);
+  if (argc == 1) {
+    int _v = 0;
+    {
+      void *ptr;
+      if (SWIG_isptrtype(L,argv[0])==0 || SWIG_ConvertPtr(L,argv[0], (void **) &ptr, SWIGTYPE_p_gam__AccumT_phsInc__Loop_GAM_DEFAULT_DOMAIN_t, 0)) {
+        _v = 0;
+      } else {
+        _v = 1;
+      }
+    }
+    if (_v) {
+      return _wrap_Accum_freqI__SWIG_1(L);
+    }
+  }
+  if (argc == 2) {
+    int _v = 0;
+    {
+      void *ptr;
+      if (SWIG_isptrtype(L,argv[0])==0 || SWIG_ConvertPtr(L,argv[0], (void **) &ptr, SWIGTYPE_p_gam__AccumT_phsInc__Loop_GAM_DEFAULT_DOMAIN_t, 0)) {
+        _v = 0;
+      } else {
+        _v = 1;
+      }
+    }
+    if (_v) {
+      {
+        _v = lua_isnumber(L,argv[1]);
+      }
+      if (_v) {
+        return _wrap_Accum_freqI__SWIG_0(L);
+      }
+    }
+  }
+  
+  SWIG_Lua_pusherrstring(L,"Wrong arguments for overloaded function 'Accum_freqI'\n"
+    "  Possible C/C++ prototypes are:\n"
+    "    gam::Accum< >::freqI(uint32_t)\n"
+    "    gam::Accum< >::freqI() const\n");
+  lua_error(L);return 0;
+}
+
+
+static int _wrap_Accum_freqUnit(lua_State* L) {
+  int SWIG_arg = 0;
+  gam::Accum< > *arg1 = (gam::Accum< > *) 0 ;
+  float result;
+  
+  SWIG_check_num_args("gam::Accum< >::freqUnit",1,1)
+  if(!SWIG_isptrtype(L,1)) SWIG_fail_arg("gam::Accum< >::freqUnit",1,"gam::Accum< > const *");
+  
+  if (!SWIG_IsOK(SWIG_ConvertPtr(L,1,(void**)&arg1,SWIGTYPE_p_gam__AccumT_phsInc__Loop_GAM_DEFAULT_DOMAIN_t,0))){
+    SWIG_fail_ptr("Accum_freqUnit",1,SWIGTYPE_p_gam__AccumT_phsInc__Loop_GAM_DEFAULT_DOMAIN_t);
+  }
+  
+  result = (float)((gam::Accum< > const *)arg1)->freqUnit();
+  lua_pushnumber(L, (lua_Number) result); SWIG_arg++;
+  return SWIG_arg;
+  
+  if(0) SWIG_fail;
+  
+fail:
+  lua_error(L);
+  return SWIG_arg;
+}
+
+
+static int _wrap_Accum_period__SWIG_1(lua_State* L) {
+  int SWIG_arg = 0;
+  gam::Accum< > *arg1 = (gam::Accum< > *) 0 ;
+  float result;
+  
+  SWIG_check_num_args("gam::Accum< >::period",1,1)
+  if(!SWIG_isptrtype(L,1)) SWIG_fail_arg("gam::Accum< >::period",1,"gam::Accum< > const *");
+  
+  if (!SWIG_IsOK(SWIG_ConvertPtr(L,1,(void**)&arg1,SWIGTYPE_p_gam__AccumT_phsInc__Loop_GAM_DEFAULT_DOMAIN_t,0))){
+    SWIG_fail_ptr("Accum_period",1,SWIGTYPE_p_gam__AccumT_phsInc__Loop_GAM_DEFAULT_DOMAIN_t);
+  }
+  
+  result = (float)((gam::Accum< > const *)arg1)->period();
+  lua_pushnumber(L, (lua_Number) result); SWIG_arg++;
+  return SWIG_arg;
+  
+  if(0) SWIG_fail;
+  
+fail:
+  lua_error(L);
+  return SWIG_arg;
+}
+
+
+static int _wrap_Accum_period(lua_State* L) {
+  int argc;
+  int argv[3]={
+    1,2,3
+  };
+  
+  argc = lua_gettop(L);
+  if (argc == 1) {
+    int _v = 0;
+    {
+      void *ptr;
+      if (SWIG_isptrtype(L,argv[0])==0 || SWIG_ConvertPtr(L,argv[0], (void **) &ptr, SWIGTYPE_p_gam__AccumT_phsInc__Loop_GAM_DEFAULT_DOMAIN_t, 0)) {
+        _v = 0;
+      } else {
+        _v = 1;
+      }
+    }
+    if (_v) {
+      return _wrap_Accum_period__SWIG_1(L);
+    }
+  }
+  if (argc == 2) {
+    int _v = 0;
+    {
+      void *ptr;
+      if (SWIG_isptrtype(L,argv[0])==0 || SWIG_ConvertPtr(L,argv[0], (void **) &ptr, SWIGTYPE_p_gam__AccumT_phsInc__Loop_GAM_DEFAULT_DOMAIN_t, 0)) {
+        _v = 0;
+      } else {
+        _v = 1;
+      }
+    }
+    if (_v) {
+      {
+        _v = lua_isnumber(L,argv[1]);
+      }
+      if (_v) {
+        return _wrap_Accum_period__SWIG_0(L);
+      }
+    }
+  }
+  
+  SWIG_Lua_pusherrstring(L,"Wrong arguments for overloaded function 'Accum_period'\n"
+    "  Possible C/C++ prototypes are:\n"
+    "    gam::Accum< >::period(float)\n"
+    "    gam::Accum< >::period() const\n");
+  lua_error(L);return 0;
+}
+
+
+static int _wrap_Accum_phase__SWIG_1(lua_State* L) {
+  int SWIG_arg = 0;
+  gam::Accum< > *arg1 = (gam::Accum< > *) 0 ;
+  float result;
+  
+  SWIG_check_num_args("gam::Accum< >::phase",1,1)
+  if(!SWIG_isptrtype(L,1)) SWIG_fail_arg("gam::Accum< >::phase",1,"gam::Accum< > const *");
+  
+  if (!SWIG_IsOK(SWIG_ConvertPtr(L,1,(void**)&arg1,SWIGTYPE_p_gam__AccumT_phsInc__Loop_GAM_DEFAULT_DOMAIN_t,0))){
+    SWIG_fail_ptr("Accum_phase",1,SWIGTYPE_p_gam__AccumT_phsInc__Loop_GAM_DEFAULT_DOMAIN_t);
+  }
+  
+  result = (float)((gam::Accum< > const *)arg1)->phase();
+  lua_pushnumber(L, (lua_Number) result); SWIG_arg++;
+  return SWIG_arg;
+  
+  if(0) SWIG_fail;
+  
+fail:
+  lua_error(L);
+  return SWIG_arg;
+}
+
+
+static int _wrap_Accum_phase(lua_State* L) {
+  int argc;
+  int argv[3]={
+    1,2,3
+  };
+  
+  argc = lua_gettop(L);
+  if (argc == 1) {
+    int _v = 0;
+    {
+      void *ptr;
+      if (SWIG_isptrtype(L,argv[0])==0 || SWIG_ConvertPtr(L,argv[0], (void **) &ptr, SWIGTYPE_p_gam__AccumT_phsInc__Loop_GAM_DEFAULT_DOMAIN_t, 0)) {
+        _v = 0;
+      } else {
+        _v = 1;
+      }
+    }
+    if (_v) {
+      return _wrap_Accum_phase__SWIG_1(L);
+    }
+  }
+  if (argc == 2) {
+    int _v = 0;
+    {
+      void *ptr;
+      if (SWIG_isptrtype(L,argv[0])==0 || SWIG_ConvertPtr(L,argv[0], (void **) &ptr, SWIGTYPE_p_gam__AccumT_phsInc__Loop_GAM_DEFAULT_DOMAIN_t, 0)) {
+        _v = 0;
+      } else {
+        _v = 1;
+      }
+    }
+    if (_v) {
+      {
+        _v = lua_isnumber(L,argv[1]);
+      }
+      if (_v) {
+        return _wrap_Accum_phase__SWIG_0(L);
+      }
+    }
+  }
+  
+  SWIG_Lua_pusherrstring(L,"Wrong arguments for overloaded function 'Accum_phase'\n"
+    "  Possible C/C++ prototypes are:\n"
+    "    gam::Accum< >::phase(float)\n"
+    "    gam::Accum< >::phase() const\n");
+  lua_error(L);return 0;
+}
+
+
+static int _wrap_Accum_phaseI(lua_State* L) {
+  int SWIG_arg = 0;
+  gam::Accum< > *arg1 = (gam::Accum< > *) 0 ;
+  uint32_t result;
+  
+  SWIG_check_num_args("gam::Accum< >::phaseI",1,1)
+  if(!SWIG_isptrtype(L,1)) SWIG_fail_arg("gam::Accum< >::phaseI",1,"gam::Accum< > const *");
+  
+  if (!SWIG_IsOK(SWIG_ConvertPtr(L,1,(void**)&arg1,SWIGTYPE_p_gam__AccumT_phsInc__Loop_GAM_DEFAULT_DOMAIN_t,0))){
+    SWIG_fail_ptr("Accum_phaseI",1,SWIGTYPE_p_gam__AccumT_phsInc__Loop_GAM_DEFAULT_DOMAIN_t);
+  }
+  
+  result = (uint32_t)((gam::Accum< > const *)arg1)->phaseI();
+  lua_pushnumber(L, (lua_Number) result); SWIG_arg++;
+  return SWIG_arg;
+  
+  if(0) SWIG_fail;
+  
+fail:
+  lua_error(L);
+  return SWIG_arg;
+}
+
+
+static int _wrap_Accum_Tick(lua_State* L) {
+  int SWIG_arg = 0;
+  gam::Accum< > *arg1 = (gam::Accum< > *) 0 ;
+  bool result;
+  
+  SWIG_check_num_args("gam::Accum< >::Tick",1,1)
+  if(!SWIG_isptrtype(L,1)) SWIG_fail_arg("gam::Accum< >::Tick",1,"gam::Accum< > *");
+  
+  if (!SWIG_IsOK(SWIG_ConvertPtr(L,1,(void**)&arg1,SWIGTYPE_p_gam__AccumT_phsInc__Loop_GAM_DEFAULT_DOMAIN_t,0))){
+    SWIG_fail_ptr("Accum_Tick",1,SWIGTYPE_p_gam__AccumT_phsInc__Loop_GAM_DEFAULT_DOMAIN_t);
+  }
+  
+  result = (bool)gam_Accum_Sl__Sg__Tick__SWIG(arg1);
+  lua_pushboolean(L,(int)(result!=0)); SWIG_arg++;
+  return SWIG_arg;
+  
+  if(0) SWIG_fail;
+  
+fail:
+  lua_error(L);
+  return SWIG_arg;
+}
+
+
+static int _wrap_Accum_nextPhase__SWIG_0(lua_State* L) {
+  int SWIG_arg = 0;
+  gam::Accum< > *arg1 = (gam::Accum< > *) 0 ;
+  uint32_t result;
+  
+  SWIG_check_num_args("gam::Accum< >::nextPhase",1,1)
+  if(!SWIG_isptrtype(L,1)) SWIG_fail_arg("gam::Accum< >::nextPhase",1,"gam::Accum< > *");
+  
+  if (!SWIG_IsOK(SWIG_ConvertPtr(L,1,(void**)&arg1,SWIGTYPE_p_gam__AccumT_phsInc__Loop_GAM_DEFAULT_DOMAIN_t,0))){
+    SWIG_fail_ptr("Accum_nextPhase",1,SWIGTYPE_p_gam__AccumT_phsInc__Loop_GAM_DEFAULT_DOMAIN_t);
+  }
+  
+  result = (uint32_t)(arg1)->nextPhase();
+  lua_pushnumber(L, (lua_Number) result); SWIG_arg++;
+  return SWIG_arg;
+  
+  if(0) SWIG_fail;
+  
+fail:
+  lua_error(L);
+  return SWIG_arg;
+}
+
+
+static int _wrap_Accum_nextPhase__SWIG_1(lua_State* L) {
+  int SWIG_arg = 0;
+  gam::Accum< > *arg1 = (gam::Accum< > *) 0 ;
+  float arg2 ;
+  uint32_t result;
+  
+  SWIG_check_num_args("gam::Accum< >::nextPhase",2,2)
+  if(!SWIG_isptrtype(L,1)) SWIG_fail_arg("gam::Accum< >::nextPhase",1,"gam::Accum< > *");
+  if(!lua_isnumber(L,2)) SWIG_fail_arg("gam::Accum< >::nextPhase",2,"float");
+  
+  if (!SWIG_IsOK(SWIG_ConvertPtr(L,1,(void**)&arg1,SWIGTYPE_p_gam__AccumT_phsInc__Loop_GAM_DEFAULT_DOMAIN_t,0))){
+    SWIG_fail_ptr("Accum_nextPhase",1,SWIGTYPE_p_gam__AccumT_phsInc__Loop_GAM_DEFAULT_DOMAIN_t);
+  }
+  
+  arg2 = (float)lua_tonumber(L, 2);
+  result = (uint32_t)(arg1)->nextPhase(arg2);
+  lua_pushnumber(L, (lua_Number) result); SWIG_arg++;
+  return SWIG_arg;
+  
+  if(0) SWIG_fail;
+  
+fail:
+  lua_error(L);
+  return SWIG_arg;
+}
+
+
+static int _wrap_Accum_nextPhase(lua_State* L) {
+  int argc;
+  int argv[3]={
+    1,2,3
+  };
+  
+  argc = lua_gettop(L);
+  if (argc == 1) {
+    int _v = 0;
+    {
+      void *ptr;
+      if (SWIG_isptrtype(L,argv[0])==0 || SWIG_ConvertPtr(L,argv[0], (void **) &ptr, SWIGTYPE_p_gam__AccumT_phsInc__Loop_GAM_DEFAULT_DOMAIN_t, 0)) {
+        _v = 0;
+      } else {
+        _v = 1;
+      }
+    }
+    if (_v) {
+      return _wrap_Accum_nextPhase__SWIG_0(L);
+    }
+  }
+  if (argc == 2) {
+    int _v = 0;
+    {
+      void *ptr;
+      if (SWIG_isptrtype(L,argv[0])==0 || SWIG_ConvertPtr(L,argv[0], (void **) &ptr, SWIGTYPE_p_gam__AccumT_phsInc__Loop_GAM_DEFAULT_DOMAIN_t, 0)) {
+        _v = 0;
+      } else {
+        _v = 1;
+      }
+    }
+    if (_v) {
+      {
+        _v = lua_isnumber(L,argv[1]);
+      }
+      if (_v) {
+        return _wrap_Accum_nextPhase__SWIG_1(L);
+      }
+    }
+  }
+  
+  SWIG_Lua_pusherrstring(L,"Wrong arguments for overloaded function 'Accum_nextPhase'\n"
+    "  Possible C/C++ prototypes are:\n"
+    "    gam::Accum< >::nextPhase()\n"
+    "    gam::Accum< >::nextPhase(float)\n");
+  lua_error(L);return 0;
+}
+
+
+static int _wrap_Accum_cycles(lua_State* L) {
+  int SWIG_arg = 0;
+  gam::Accum< > *arg1 = (gam::Accum< > *) 0 ;
+  uint32_t result;
+  
+  SWIG_check_num_args("gam::Accum< >::cycles",1,1)
+  if(!SWIG_isptrtype(L,1)) SWIG_fail_arg("gam::Accum< >::cycles",1,"gam::Accum< > *");
+  
+  if (!SWIG_IsOK(SWIG_ConvertPtr(L,1,(void**)&arg1,SWIGTYPE_p_gam__AccumT_phsInc__Loop_GAM_DEFAULT_DOMAIN_t,0))){
+    SWIG_fail_ptr("Accum_cycles",1,SWIGTYPE_p_gam__AccumT_phsInc__Loop_GAM_DEFAULT_DOMAIN_t);
+  }
+  
+  result = (uint32_t)(arg1)->cycles();
+  lua_pushnumber(L, (lua_Number) result); SWIG_arg++;
+  return SWIG_arg;
+  
+  if(0) SWIG_fail;
+  
+fail:
+  lua_error(L);
+  return SWIG_arg;
+}
+
+
+static int _wrap_Accum_cycle(lua_State* L) {
+  int SWIG_arg = 0;
+  gam::Accum< > *arg1 = (gam::Accum< > *) 0 ;
+  bool result;
+  
+  SWIG_check_num_args("gam::Accum< >::cycle",1,1)
+  if(!SWIG_isptrtype(L,1)) SWIG_fail_arg("gam::Accum< >::cycle",1,"gam::Accum< > *");
+  
+  if (!SWIG_IsOK(SWIG_ConvertPtr(L,1,(void**)&arg1,SWIGTYPE_p_gam__AccumT_phsInc__Loop_GAM_DEFAULT_DOMAIN_t,0))){
+    SWIG_fail_ptr("Accum_cycle",1,SWIGTYPE_p_gam__AccumT_phsInc__Loop_GAM_DEFAULT_DOMAIN_t);
+  }
+  
+  result = (bool)(arg1)->cycle();
+  lua_pushboolean(L,(int)(result!=0)); SWIG_arg++;
+  return SWIG_arg;
+  
+  if(0) SWIG_fail;
+  
+fail:
+  lua_error(L);
+  return SWIG_arg;
+}
+
+
+static int _wrap_Accum_once(lua_State* L) {
+  int SWIG_arg = 0;
+  gam::Accum< > *arg1 = (gam::Accum< > *) 0 ;
+  bool result;
+  
+  SWIG_check_num_args("gam::Accum< >::once",1,1)
+  if(!SWIG_isptrtype(L,1)) SWIG_fail_arg("gam::Accum< >::once",1,"gam::Accum< > *");
+  
+  if (!SWIG_IsOK(SWIG_ConvertPtr(L,1,(void**)&arg1,SWIGTYPE_p_gam__AccumT_phsInc__Loop_GAM_DEFAULT_DOMAIN_t,0))){
+    SWIG_fail_ptr("Accum_once",1,SWIGTYPE_p_gam__AccumT_phsInc__Loop_GAM_DEFAULT_DOMAIN_t);
+  }
+  
+  result = (bool)(arg1)->once();
+  lua_pushboolean(L,(int)(result!=0)); SWIG_arg++;
+  return SWIG_arg;
+  
+  if(0) SWIG_fail;
+  
+fail:
+  lua_error(L);
+  return SWIG_arg;
+}
+
+
+static int _wrap_Accum_seq(lua_State* L) {
+  int SWIG_arg = 0;
+  gam::Accum< > *arg1 = (gam::Accum< > *) 0 ;
+  uint32_t arg2 ;
+  bool result;
+  
+  SWIG_check_num_args("gam::Accum< >::seq",2,2)
+  if(!SWIG_isptrtype(L,1)) SWIG_fail_arg("gam::Accum< >::seq",1,"gam::Accum< > *");
+  if(!lua_isnumber(L,2)) SWIG_fail_arg("gam::Accum< >::seq",2,"uint32_t");
+  
+  if (!SWIG_IsOK(SWIG_ConvertPtr(L,1,(void**)&arg1,SWIGTYPE_p_gam__AccumT_phsInc__Loop_GAM_DEFAULT_DOMAIN_t,0))){
+    SWIG_fail_ptr("Accum_seq",1,SWIGTYPE_p_gam__AccumT_phsInc__Loop_GAM_DEFAULT_DOMAIN_t);
+  }
+  
+  SWIG_contract_assert((lua_tonumber(L,2)>=0),"number must not be negative");
+  arg2 = (uint32_t)lua_tonumber(L, 2);
+  result = (bool)(arg1)->seq(arg2);
+  lua_pushboolean(L,(int)(result!=0)); SWIG_arg++;
+  return SWIG_arg;
+  
+  if(0) SWIG_fail;
+  
+fail:
+  lua_error(L);
+  return SWIG_arg;
+}
+
+
+static int _wrap_Accum_onDomainChange(lua_State* L) {
+  int SWIG_arg = 0;
+  gam::Accum< > *arg1 = (gam::Accum< > *) 0 ;
+  double arg2 ;
+  
+  SWIG_check_num_args("gam::Accum< >::onDomainChange",2,2)
+  if(!SWIG_isptrtype(L,1)) SWIG_fail_arg("gam::Accum< >::onDomainChange",1,"gam::Accum< > *");
+  if(!lua_isnumber(L,2)) SWIG_fail_arg("gam::Accum< >::onDomainChange",2,"double");
+  
+  if (!SWIG_IsOK(SWIG_ConvertPtr(L,1,(void**)&arg1,SWIGTYPE_p_gam__AccumT_phsInc__Loop_GAM_DEFAULT_DOMAIN_t,0))){
+    SWIG_fail_ptr("Accum_onDomainChange",1,SWIGTYPE_p_gam__AccumT_phsInc__Loop_GAM_DEFAULT_DOMAIN_t);
+  }
+  
+  arg2 = (double)lua_tonumber(L, 2);
+  (arg1)->onDomainChange(arg2);
+  
+  return SWIG_arg;
+  
+  if(0) SWIG_fail;
+  
+fail:
+  lua_error(L);
+  return SWIG_arg;
+}
+
+
+static void swig_delete_Accum(void *obj) {
+gam::Accum< > *arg1 = (gam::Accum< > *) obj;
+delete arg1;
+}
+static int _proxy__wrap_new_Accum(lua_State *L) {
+    assert(lua_istable(L,1));
+    lua_pushcfunction(L,_wrap_new_Accum);
+    assert(!lua_isnil(L,-1));
+    lua_replace(L,1); /* replace our table with real constructor */
+    lua_call(L,lua_gettop(L)-1,1);
+    return 1;
+}
+static swig_lua_attribute swig_Accum_attributes[] = {
+    {0,0,0}
+};
+static swig_lua_method swig_Accum_methods[]= {
+    { "freqAdd", _wrap_Accum_freqAdd},
+    { "freqMul", _wrap_Accum_freqMul},
+    { "phaseMax", _wrap_Accum_phaseMax},
+    { "phaseAdd", _wrap_Accum_phaseAdd},
+    { "reset", _wrap_Accum_reset},
+    { "finish", _wrap_Accum_finish},
+    { "phsInc", _wrap_Accum_phsInc},
+    { "done", _wrap_Accum_done},
+    { "cycled", _wrap_Accum_cycled},
+    { "freq", _wrap_Accum_freq},
+    { "freqI", _wrap_Accum_freqI},
+    { "freqUnit", _wrap_Accum_freqUnit},
+    { "period", _wrap_Accum_period},
+    { "phase", _wrap_Accum_phase},
+    { "phaseI", _wrap_Accum_phaseI},
+    { "Tick", _wrap_Accum_Tick},
+    { "nextPhase", _wrap_Accum_nextPhase},
+    { "cycles", _wrap_Accum_cycles},
+    { "cycle", _wrap_Accum_cycle},
+    { "once", _wrap_Accum_once},
+    { "seq", _wrap_Accum_seq},
+    { "onDomainChange", _wrap_Accum_onDomainChange},
+    {0,0}
+};
+static swig_lua_method swig_Accum_meta[] = {
+    {0,0}
+};
+
+static swig_lua_attribute swig_Accum_Sf_SwigStatic_attributes[] = {
+    {0,0,0}
+};
+static swig_lua_const_info swig_Accum_Sf_SwigStatic_constants[]= {
+    {0,0,0,0,0,0}
+};
+static swig_lua_method swig_Accum_Sf_SwigStatic_methods[]= {
+    {0,0}
+};
+static swig_lua_class* swig_Accum_Sf_SwigStatic_classes[]= {
+    0
+};
+
+static swig_lua_namespace swig_Accum_Sf_SwigStatic = {
+    "Accum",
+    swig_Accum_Sf_SwigStatic_methods,
+    swig_Accum_Sf_SwigStatic_attributes,
+    swig_Accum_Sf_SwigStatic_constants,
+    swig_Accum_Sf_SwigStatic_classes,
+    0
+};
+static swig_lua_class *swig_Accum_bases[] = {0};
+static const char *swig_Accum_base_names[] = {0};
+static swig_lua_class _wrap_class_Accum = { "Accum", "Accum", &SWIGTYPE_p_gam__AccumT_phsInc__Loop_GAM_DEFAULT_DOMAIN_t,_proxy__wrap_new_Accum, swig_delete_Accum, swig_Accum_methods, swig_Accum_attributes, &swig_Accum_Sf_SwigStatic, swig_Accum_meta, swig_Accum_bases, swig_Accum_base_names };
+
+static int _wrap_new_Sweep__SWIG_0(lua_State* L) {
+  int SWIG_arg = 0;
+  float arg1 ;
+  float arg2 ;
+  gam::Sweep< > *result = 0 ;
+  
+  SWIG_check_num_args("gam::Sweep< >::Sweep",2,2)
+  if(!lua_isnumber(L,1)) SWIG_fail_arg("gam::Sweep< >::Sweep",1,"float");
+  if(!lua_isnumber(L,2)) SWIG_fail_arg("gam::Sweep< >::Sweep",2,"float");
+  arg1 = (float)lua_tonumber(L, 1);
+  arg2 = (float)lua_tonumber(L, 2);
+  result = (gam::Sweep< > *)new gam::Sweep< >(arg1,arg2);
+  SWIG_NewPointerObj(L,result,SWIGTYPE_p_gam__SweepT_phsInc__Loop_GAM_DEFAULT_DOMAIN_t,1); SWIG_arg++; 
+  return SWIG_arg;
+  
+  if(0) SWIG_fail;
+  
+fail:
+  lua_error(L);
+  return SWIG_arg;
+}
+
+
+static int _wrap_new_Sweep__SWIG_1(lua_State* L) {
+  int SWIG_arg = 0;
+  float arg1 ;
+  gam::Sweep< > *result = 0 ;
+  
+  SWIG_check_num_args("gam::Sweep< >::Sweep",1,1)
+  if(!lua_isnumber(L,1)) SWIG_fail_arg("gam::Sweep< >::Sweep",1,"float");
+  arg1 = (float)lua_tonumber(L, 1);
+  result = (gam::Sweep< > *)new gam::Sweep< >(arg1);
+  SWIG_NewPointerObj(L,result,SWIGTYPE_p_gam__SweepT_phsInc__Loop_GAM_DEFAULT_DOMAIN_t,1); SWIG_arg++; 
+  return SWIG_arg;
+  
+  if(0) SWIG_fail;
+  
+fail:
+  lua_error(L);
+  return SWIG_arg;
+}
+
+
+static int _wrap_new_Sweep__SWIG_2(lua_State* L) {
+  int SWIG_arg = 0;
+  gam::Sweep< > *result = 0 ;
+  
+  SWIG_check_num_args("gam::Sweep< >::Sweep",0,0)
+  result = (gam::Sweep< > *)new gam::Sweep< >();
+  SWIG_NewPointerObj(L,result,SWIGTYPE_p_gam__SweepT_phsInc__Loop_GAM_DEFAULT_DOMAIN_t,1); SWIG_arg++; 
+  return SWIG_arg;
+  
+  if(0) SWIG_fail;
+  
+fail:
+  lua_error(L);
+  return SWIG_arg;
+}
+
+
+static int _wrap_new_Sweep(lua_State* L) {
+  int argc;
+  int argv[3]={
+    1,2,3
+  };
+  
+  argc = lua_gettop(L);
+  if (argc == 0) {
+    return _wrap_new_Sweep__SWIG_2(L);
+  }
+  if (argc == 1) {
+    int _v = 0;
+    {
+      _v = lua_isnumber(L,argv[0]);
+    }
+    if (_v) {
+      return _wrap_new_Sweep__SWIG_1(L);
+    }
+  }
+  if (argc == 2) {
+    int _v = 0;
+    {
+      _v = lua_isnumber(L,argv[0]);
+    }
+    if (_v) {
+      {
+        _v = lua_isnumber(L,argv[1]);
+      }
+      if (_v) {
+        return _wrap_new_Sweep__SWIG_0(L);
+      }
+    }
+  }
+  
+  SWIG_Lua_pusherrstring(L,"Wrong arguments for overloaded function 'new_Sweep'\n"
+    "  Possible C/C++ prototypes are:\n"
+    "    gam::Sweep< >::Sweep(float,float)\n"
+    "    gam::Sweep< >::Sweep(float)\n"
+    "    gam::Sweep< >::Sweep()\n");
+  lua_error(L);return 0;
+}
+
+
+static int _wrap_Sweep_Tick(lua_State* L) {
+  int SWIG_arg = 0;
+  gam::Sweep< > *arg1 = (gam::Sweep< > *) 0 ;
+  float result;
+  
+  SWIG_check_num_args("gam::Sweep< >::Tick",1,1)
+  if(!SWIG_isptrtype(L,1)) SWIG_fail_arg("gam::Sweep< >::Tick",1,"gam::Sweep< > *");
+  
+  if (!SWIG_IsOK(SWIG_ConvertPtr(L,1,(void**)&arg1,SWIGTYPE_p_gam__SweepT_phsInc__Loop_GAM_DEFAULT_DOMAIN_t,0))){
+    SWIG_fail_ptr("Sweep_Tick",1,SWIGTYPE_p_gam__SweepT_phsInc__Loop_GAM_DEFAULT_DOMAIN_t);
+  }
+  
+  result = (float)gam_Sweep_Sl__Sg__Tick__SWIG(arg1);
+  lua_pushnumber(L, (lua_Number) result); SWIG_arg++;
+  return SWIG_arg;
+  
+  if(0) SWIG_fail;
+  
+fail:
+  lua_error(L);
+  return SWIG_arg;
+}
+
+
+static void swig_delete_Sweep(void *obj) {
+gam::Sweep< > *arg1 = (gam::Sweep< > *) obj;
+delete arg1;
+}
+static int _proxy__wrap_new_Sweep(lua_State *L) {
+    assert(lua_istable(L,1));
+    lua_pushcfunction(L,_wrap_new_Sweep);
+    assert(!lua_isnil(L,-1));
+    lua_replace(L,1); /* replace our table with real constructor */
+    lua_call(L,lua_gettop(L)-1,1);
+    return 1;
+}
+static swig_lua_attribute swig_Sweep_attributes[] = {
+    {0,0,0}
+};
+static swig_lua_method swig_Sweep_methods[]= {
+    { "Tick", _wrap_Sweep_Tick},
+    {0,0}
+};
+static swig_lua_method swig_Sweep_meta[] = {
+    {0,0}
+};
+
+static swig_lua_attribute swig_Sweep_SwigStatic_attributes[] = {
+    {0,0,0}
+};
+static swig_lua_const_info swig_Sweep_SwigStatic_constants[]= {
+    {0,0,0,0,0,0}
+};
+static swig_lua_method swig_Sweep_SwigStatic_methods[]= {
+    {0,0}
+};
+static swig_lua_class* swig_Sweep_SwigStatic_classes[]= {
+    0
+};
+
+static swig_lua_namespace swig_Sweep_SwigStatic = {
+    "Sweep",
+    swig_Sweep_SwigStatic_methods,
+    swig_Sweep_SwigStatic_attributes,
+    swig_Sweep_SwigStatic_constants,
+    swig_Sweep_SwigStatic_classes,
+    0
+};
+static swig_lua_class *swig_Sweep_bases[] = {0,0};
+static const char *swig_Sweep_base_names[] = {"gam::Accum< > *",0};
+static swig_lua_class _wrap_class_Sweep = { "Sweep", "Sweep", &SWIGTYPE_p_gam__SweepT_phsInc__Loop_GAM_DEFAULT_DOMAIN_t,_proxy__wrap_new_Sweep, swig_delete_Sweep, swig_Sweep_methods, swig_Sweep_attributes, &swig_Sweep_SwigStatic, swig_Sweep_meta, swig_Sweep_bases, swig_Sweep_base_names };
+
+static int _wrap_new_AccumPhase__SWIG_0(lua_State* L) {
+  int SWIG_arg = 0;
+  float arg1 ;
+  float arg2 ;
+  float arg3 ;
+  gam::AccumPhase< SampleType > *result = 0 ;
+  
+  SWIG_check_num_args("gam::AccumPhase< SampleType >::AccumPhase",3,3)
+  if(!lua_isnumber(L,1)) SWIG_fail_arg("gam::AccumPhase< SampleType >::AccumPhase",1,"float");
+  if(!lua_isnumber(L,2)) SWIG_fail_arg("gam::AccumPhase< SampleType >::AccumPhase",2,"float");
+  if(!lua_isnumber(L,3)) SWIG_fail_arg("gam::AccumPhase< SampleType >::AccumPhase",3,"float");
+  arg1 = (float)lua_tonumber(L, 1);
+  arg2 = (float)lua_tonumber(L, 2);
+  arg3 = (float)lua_tonumber(L, 3);
+  result = (gam::AccumPhase< SampleType > *)new gam::AccumPhase< SampleType >(arg1,arg2,arg3);
+  SWIG_NewPointerObj(L,result,SWIGTYPE_p_gam__AccumPhaseT_float_GAM_DEFAULT_DOMAIN_t,1); SWIG_arg++; 
+  return SWIG_arg;
+  
+  if(0) SWIG_fail;
+  
+fail:
+  lua_error(L);
+  return SWIG_arg;
+}
+
+
+static int _wrap_new_AccumPhase__SWIG_1(lua_State* L) {
+  int SWIG_arg = 0;
+  float arg1 ;
+  float arg2 ;
+  gam::AccumPhase< SampleType > *result = 0 ;
+  
+  SWIG_check_num_args("gam::AccumPhase< SampleType >::AccumPhase",2,2)
+  if(!lua_isnumber(L,1)) SWIG_fail_arg("gam::AccumPhase< SampleType >::AccumPhase",1,"float");
+  if(!lua_isnumber(L,2)) SWIG_fail_arg("gam::AccumPhase< SampleType >::AccumPhase",2,"float");
+  arg1 = (float)lua_tonumber(L, 1);
+  arg2 = (float)lua_tonumber(L, 2);
+  result = (gam::AccumPhase< SampleType > *)new gam::AccumPhase< SampleType >(arg1,arg2);
+  SWIG_NewPointerObj(L,result,SWIGTYPE_p_gam__AccumPhaseT_float_GAM_DEFAULT_DOMAIN_t,1); SWIG_arg++; 
+  return SWIG_arg;
+  
+  if(0) SWIG_fail;
+  
+fail:
+  lua_error(L);
+  return SWIG_arg;
+}
+
+
+static int _wrap_new_AccumPhase__SWIG_2(lua_State* L) {
+  int SWIG_arg = 0;
+  float arg1 ;
+  gam::AccumPhase< SampleType > *result = 0 ;
+  
+  SWIG_check_num_args("gam::AccumPhase< SampleType >::AccumPhase",1,1)
+  if(!lua_isnumber(L,1)) SWIG_fail_arg("gam::AccumPhase< SampleType >::AccumPhase",1,"float");
+  arg1 = (float)lua_tonumber(L, 1);
+  result = (gam::AccumPhase< SampleType > *)new gam::AccumPhase< SampleType >(arg1);
+  SWIG_NewPointerObj(L,result,SWIGTYPE_p_gam__AccumPhaseT_float_GAM_DEFAULT_DOMAIN_t,1); SWIG_arg++; 
+  return SWIG_arg;
+  
+  if(0) SWIG_fail;
+  
+fail:
+  lua_error(L);
+  return SWIG_arg;
+}
+
+
+static int _wrap_new_AccumPhase__SWIG_3(lua_State* L) {
+  int SWIG_arg = 0;
+  gam::AccumPhase< SampleType > *result = 0 ;
+  
+  SWIG_check_num_args("gam::AccumPhase< SampleType >::AccumPhase",0,0)
+  result = (gam::AccumPhase< SampleType > *)new gam::AccumPhase< SampleType >();
+  SWIG_NewPointerObj(L,result,SWIGTYPE_p_gam__AccumPhaseT_float_GAM_DEFAULT_DOMAIN_t,1); SWIG_arg++; 
+  return SWIG_arg;
+  
+  if(0) SWIG_fail;
+  
+fail:
+  lua_error(L);
+  return SWIG_arg;
+}
+
+
+static int _wrap_new_AccumPhase(lua_State* L) {
+  int argc;
+  int argv[4]={
+    1,2,3,4
+  };
+  
+  argc = lua_gettop(L);
+  if (argc == 0) {
+    return _wrap_new_AccumPhase__SWIG_3(L);
+  }
+  if (argc == 1) {
+    int _v = 0;
+    {
+      _v = lua_isnumber(L,argv[0]);
+    }
+    if (_v) {
+      return _wrap_new_AccumPhase__SWIG_2(L);
+    }
+  }
+  if (argc == 2) {
+    int _v = 0;
+    {
+      _v = lua_isnumber(L,argv[0]);
+    }
+    if (_v) {
+      {
+        _v = lua_isnumber(L,argv[1]);
+      }
+      if (_v) {
+        return _wrap_new_AccumPhase__SWIG_1(L);
+      }
+    }
+  }
+  if (argc == 3) {
+    int _v = 0;
+    {
+      _v = lua_isnumber(L,argv[0]);
+    }
+    if (_v) {
+      {
+        _v = lua_isnumber(L,argv[1]);
+      }
+      if (_v) {
+        {
+          _v = lua_isnumber(L,argv[2]);
+        }
+        if (_v) {
+          return _wrap_new_AccumPhase__SWIG_0(L);
+        }
+      }
+    }
+  }
+  
+  SWIG_Lua_pusherrstring(L,"Wrong arguments for overloaded function 'new_AccumPhase'\n"
+    "  Possible C/C++ prototypes are:\n"
+    "    gam::AccumPhase< SampleType >::AccumPhase(float,float,float)\n"
+    "    gam::AccumPhase< SampleType >::AccumPhase(float,float)\n"
+    "    gam::AccumPhase< SampleType >::AccumPhase(float)\n"
+    "    gam::AccumPhase< SampleType >::AccumPhase()\n");
+  lua_error(L);return 0;
+}
+
+
+static int _wrap_AccumPhase_nextPhase__SWIG_0(lua_State* L) {
+  int SWIG_arg = 0;
+  gam::AccumPhase< SampleType > *arg1 = (gam::AccumPhase< SampleType > *) 0 ;
+  float result;
+  
+  SWIG_check_num_args("gam::AccumPhase< SampleType >::nextPhase",1,1)
+  if(!SWIG_isptrtype(L,1)) SWIG_fail_arg("gam::AccumPhase< SampleType >::nextPhase",1,"gam::AccumPhase< SampleType > *");
+  
+  if (!SWIG_IsOK(SWIG_ConvertPtr(L,1,(void**)&arg1,SWIGTYPE_p_gam__AccumPhaseT_float_GAM_DEFAULT_DOMAIN_t,0))){
+    SWIG_fail_ptr("AccumPhase_nextPhase",1,SWIGTYPE_p_gam__AccumPhaseT_float_GAM_DEFAULT_DOMAIN_t);
+  }
+  
+  result = (float)(arg1)->nextPhase();
+  lua_pushnumber(L, (lua_Number) result); SWIG_arg++;
+  return SWIG_arg;
+  
+  if(0) SWIG_fail;
+  
+fail:
+  lua_error(L);
+  return SWIG_arg;
+}
+
+
+static int _wrap_AccumPhase_nextPhase__SWIG_1(lua_State* L) {
+  int SWIG_arg = 0;
+  gam::AccumPhase< SampleType > *arg1 = (gam::AccumPhase< SampleType > *) 0 ;
+  float arg2 ;
+  float result;
+  
+  SWIG_check_num_args("gam::AccumPhase< SampleType >::nextPhase",2,2)
+  if(!SWIG_isptrtype(L,1)) SWIG_fail_arg("gam::AccumPhase< SampleType >::nextPhase",1,"gam::AccumPhase< SampleType > *");
+  if(!lua_isnumber(L,2)) SWIG_fail_arg("gam::AccumPhase< SampleType >::nextPhase",2,"float");
+  
+  if (!SWIG_IsOK(SWIG_ConvertPtr(L,1,(void**)&arg1,SWIGTYPE_p_gam__AccumPhaseT_float_GAM_DEFAULT_DOMAIN_t,0))){
+    SWIG_fail_ptr("AccumPhase_nextPhase",1,SWIGTYPE_p_gam__AccumPhaseT_float_GAM_DEFAULT_DOMAIN_t);
+  }
+  
+  arg2 = (float)lua_tonumber(L, 2);
+  result = (float)(arg1)->nextPhase(arg2);
+  lua_pushnumber(L, (lua_Number) result); SWIG_arg++;
+  return SWIG_arg;
+  
+  if(0) SWIG_fail;
+  
+fail:
+  lua_error(L);
+  return SWIG_arg;
+}
+
+
+static int _wrap_AccumPhase_nextPhase(lua_State* L) {
+  int argc;
+  int argv[3]={
+    1,2,3
+  };
+  
+  argc = lua_gettop(L);
+  if (argc == 1) {
+    int _v = 0;
+    {
+      void *ptr;
+      if (SWIG_isptrtype(L,argv[0])==0 || SWIG_ConvertPtr(L,argv[0], (void **) &ptr, SWIGTYPE_p_gam__AccumPhaseT_float_GAM_DEFAULT_DOMAIN_t, 0)) {
+        _v = 0;
+      } else {
+        _v = 1;
+      }
+    }
+    if (_v) {
+      return _wrap_AccumPhase_nextPhase__SWIG_0(L);
+    }
+  }
+  if (argc == 2) {
+    int _v = 0;
+    {
+      void *ptr;
+      if (SWIG_isptrtype(L,argv[0])==0 || SWIG_ConvertPtr(L,argv[0], (void **) &ptr, SWIGTYPE_p_gam__AccumPhaseT_float_GAM_DEFAULT_DOMAIN_t, 0)) {
+        _v = 0;
+      } else {
+        _v = 1;
+      }
+    }
+    if (_v) {
+      {
+        _v = lua_isnumber(L,argv[1]);
+      }
+      if (_v) {
+        return _wrap_AccumPhase_nextPhase__SWIG_1(L);
+      }
+    }
+  }
+  
+  SWIG_Lua_pusherrstring(L,"Wrong arguments for overloaded function 'AccumPhase_nextPhase'\n"
+    "  Possible C/C++ prototypes are:\n"
+    "    gam::AccumPhase< SampleType >::nextPhase()\n"
+    "    gam::AccumPhase< SampleType >::nextPhase(float)\n");
+  lua_error(L);return 0;
+}
+
+
+static int _wrap_AccumPhase_freq__SWIG_0(lua_State* L) {
+  int SWIG_arg = 0;
+  gam::AccumPhase< SampleType > *arg1 = (gam::AccumPhase< SampleType > *) 0 ;
+  float arg2 ;
+  
+  SWIG_check_num_args("gam::AccumPhase< SampleType >::freq",2,2)
+  if(!SWIG_isptrtype(L,1)) SWIG_fail_arg("gam::AccumPhase< SampleType >::freq",1,"gam::AccumPhase< SampleType > *");
+  if(!lua_isnumber(L,2)) SWIG_fail_arg("gam::AccumPhase< SampleType >::freq",2,"float");
+  
+  if (!SWIG_IsOK(SWIG_ConvertPtr(L,1,(void**)&arg1,SWIGTYPE_p_gam__AccumPhaseT_float_GAM_DEFAULT_DOMAIN_t,0))){
+    SWIG_fail_ptr("AccumPhase_freq",1,SWIGTYPE_p_gam__AccumPhaseT_float_GAM_DEFAULT_DOMAIN_t);
+  }
+  
+  arg2 = (float)lua_tonumber(L, 2);
+  (arg1)->freq(arg2);
+  
+  return SWIG_arg;
+  
+  if(0) SWIG_fail;
+  
+fail:
+  lua_error(L);
+  return SWIG_arg;
+}
+
+
+static int _wrap_AccumPhase_freqAdd(lua_State* L) {
+  int SWIG_arg = 0;
+  gam::AccumPhase< SampleType > *arg1 = (gam::AccumPhase< SampleType > *) 0 ;
+  float arg2 ;
+  
+  SWIG_check_num_args("gam::AccumPhase< SampleType >::freqAdd",2,2)
+  if(!SWIG_isptrtype(L,1)) SWIG_fail_arg("gam::AccumPhase< SampleType >::freqAdd",1,"gam::AccumPhase< SampleType > *");
+  if(!lua_isnumber(L,2)) SWIG_fail_arg("gam::AccumPhase< SampleType >::freqAdd",2,"float");
+  
+  if (!SWIG_IsOK(SWIG_ConvertPtr(L,1,(void**)&arg1,SWIGTYPE_p_gam__AccumPhaseT_float_GAM_DEFAULT_DOMAIN_t,0))){
+    SWIG_fail_ptr("AccumPhase_freqAdd",1,SWIGTYPE_p_gam__AccumPhaseT_float_GAM_DEFAULT_DOMAIN_t);
+  }
+  
+  arg2 = (float)lua_tonumber(L, 2);
+  (arg1)->freqAdd(arg2);
+  
+  return SWIG_arg;
+  
+  if(0) SWIG_fail;
+  
+fail:
+  lua_error(L);
+  return SWIG_arg;
+}
+
+
+static int _wrap_AccumPhase_freqMul(lua_State* L) {
+  int SWIG_arg = 0;
+  gam::AccumPhase< SampleType > *arg1 = (gam::AccumPhase< SampleType > *) 0 ;
+  float arg2 ;
+  
+  SWIG_check_num_args("gam::AccumPhase< SampleType >::freqMul",2,2)
+  if(!SWIG_isptrtype(L,1)) SWIG_fail_arg("gam::AccumPhase< SampleType >::freqMul",1,"gam::AccumPhase< SampleType > *");
+  if(!lua_isnumber(L,2)) SWIG_fail_arg("gam::AccumPhase< SampleType >::freqMul",2,"float");
+  
+  if (!SWIG_IsOK(SWIG_ConvertPtr(L,1,(void**)&arg1,SWIGTYPE_p_gam__AccumPhaseT_float_GAM_DEFAULT_DOMAIN_t,0))){
+    SWIG_fail_ptr("AccumPhase_freqMul",1,SWIGTYPE_p_gam__AccumPhaseT_float_GAM_DEFAULT_DOMAIN_t);
+  }
+  
+  arg2 = (float)lua_tonumber(L, 2);
+  (arg1)->freqMul(arg2);
+  
+  return SWIG_arg;
+  
+  if(0) SWIG_fail;
+  
+fail:
+  lua_error(L);
+  return SWIG_arg;
+}
+
+
+static int _wrap_AccumPhase_period__SWIG_0(lua_State* L) {
+  int SWIG_arg = 0;
+  gam::AccumPhase< SampleType > *arg1 = (gam::AccumPhase< SampleType > *) 0 ;
+  float arg2 ;
+  
+  SWIG_check_num_args("gam::AccumPhase< SampleType >::period",2,2)
+  if(!SWIG_isptrtype(L,1)) SWIG_fail_arg("gam::AccumPhase< SampleType >::period",1,"gam::AccumPhase< SampleType > *");
+  if(!lua_isnumber(L,2)) SWIG_fail_arg("gam::AccumPhase< SampleType >::period",2,"float");
+  
+  if (!SWIG_IsOK(SWIG_ConvertPtr(L,1,(void**)&arg1,SWIGTYPE_p_gam__AccumPhaseT_float_GAM_DEFAULT_DOMAIN_t,0))){
+    SWIG_fail_ptr("AccumPhase_period",1,SWIGTYPE_p_gam__AccumPhaseT_float_GAM_DEFAULT_DOMAIN_t);
+  }
+  
+  arg2 = (float)lua_tonumber(L, 2);
+  (arg1)->period(arg2);
+  
+  return SWIG_arg;
+  
+  if(0) SWIG_fail;
+  
+fail:
+  lua_error(L);
+  return SWIG_arg;
+}
+
+
+static int _wrap_AccumPhase_phase__SWIG_0(lua_State* L) {
+  int SWIG_arg = 0;
+  gam::AccumPhase< SampleType > *arg1 = (gam::AccumPhase< SampleType > *) 0 ;
+  float arg2 ;
+  
+  SWIG_check_num_args("gam::AccumPhase< SampleType >::phase",2,2)
+  if(!SWIG_isptrtype(L,1)) SWIG_fail_arg("gam::AccumPhase< SampleType >::phase",1,"gam::AccumPhase< SampleType > *");
+  if(!lua_isnumber(L,2)) SWIG_fail_arg("gam::AccumPhase< SampleType >::phase",2,"float");
+  
+  if (!SWIG_IsOK(SWIG_ConvertPtr(L,1,(void**)&arg1,SWIGTYPE_p_gam__AccumPhaseT_float_GAM_DEFAULT_DOMAIN_t,0))){
+    SWIG_fail_ptr("AccumPhase_phase",1,SWIGTYPE_p_gam__AccumPhaseT_float_GAM_DEFAULT_DOMAIN_t);
+  }
+  
+  arg2 = (float)lua_tonumber(L, 2);
+  (arg1)->phase(arg2);
+  
+  return SWIG_arg;
+  
+  if(0) SWIG_fail;
+  
+fail:
+  lua_error(L);
+  return SWIG_arg;
+}
+
+
+static int _wrap_AccumPhase_phaseAdd(lua_State* L) {
+  int SWIG_arg = 0;
+  gam::AccumPhase< SampleType > *arg1 = (gam::AccumPhase< SampleType > *) 0 ;
+  float arg2 ;
+  
+  SWIG_check_num_args("gam::AccumPhase< SampleType >::phaseAdd",2,2)
+  if(!SWIG_isptrtype(L,1)) SWIG_fail_arg("gam::AccumPhase< SampleType >::phaseAdd",1,"gam::AccumPhase< SampleType > *");
+  if(!lua_isnumber(L,2)) SWIG_fail_arg("gam::AccumPhase< SampleType >::phaseAdd",2,"float");
+  
+  if (!SWIG_IsOK(SWIG_ConvertPtr(L,1,(void**)&arg1,SWIGTYPE_p_gam__AccumPhaseT_float_GAM_DEFAULT_DOMAIN_t,0))){
+    SWIG_fail_ptr("AccumPhase_phaseAdd",1,SWIGTYPE_p_gam__AccumPhaseT_float_GAM_DEFAULT_DOMAIN_t);
+  }
+  
+  arg2 = (float)lua_tonumber(L, 2);
+  (arg1)->phaseAdd(arg2);
+  
+  return SWIG_arg;
+  
+  if(0) SWIG_fail;
+  
+fail:
+  lua_error(L);
+  return SWIG_arg;
+}
+
+
+static int _wrap_AccumPhase_radius__SWIG_0(lua_State* L) {
+  int SWIG_arg = 0;
+  gam::AccumPhase< SampleType > *arg1 = (gam::AccumPhase< SampleType > *) 0 ;
+  float arg2 ;
+  
+  SWIG_check_num_args("gam::AccumPhase< SampleType >::radius",2,2)
+  if(!SWIG_isptrtype(L,1)) SWIG_fail_arg("gam::AccumPhase< SampleType >::radius",1,"gam::AccumPhase< SampleType > *");
+  if(!lua_isnumber(L,2)) SWIG_fail_arg("gam::AccumPhase< SampleType >::radius",2,"float");
+  
+  if (!SWIG_IsOK(SWIG_ConvertPtr(L,1,(void**)&arg1,SWIGTYPE_p_gam__AccumPhaseT_float_GAM_DEFAULT_DOMAIN_t,0))){
+    SWIG_fail_ptr("AccumPhase_radius",1,SWIGTYPE_p_gam__AccumPhaseT_float_GAM_DEFAULT_DOMAIN_t);
+  }
+  
+  arg2 = (float)lua_tonumber(L, 2);
+  (arg1)->radius(arg2);
+  
+  return SWIG_arg;
+  
+  if(0) SWIG_fail;
+  
+fail:
+  lua_error(L);
+  return SWIG_arg;
+}
+
+
+static int _wrap_AccumPhase_freq__SWIG_1(lua_State* L) {
+  int SWIG_arg = 0;
+  gam::AccumPhase< SampleType > *arg1 = (gam::AccumPhase< SampleType > *) 0 ;
+  float result;
+  
+  SWIG_check_num_args("gam::AccumPhase< SampleType >::freq",1,1)
+  if(!SWIG_isptrtype(L,1)) SWIG_fail_arg("gam::AccumPhase< SampleType >::freq",1,"gam::AccumPhase< SampleType > const *");
+  
+  if (!SWIG_IsOK(SWIG_ConvertPtr(L,1,(void**)&arg1,SWIGTYPE_p_gam__AccumPhaseT_float_GAM_DEFAULT_DOMAIN_t,0))){
+    SWIG_fail_ptr("AccumPhase_freq",1,SWIGTYPE_p_gam__AccumPhaseT_float_GAM_DEFAULT_DOMAIN_t);
+  }
+  
+  result = (float)((gam::AccumPhase< SampleType > const *)arg1)->freq();
+  lua_pushnumber(L, (lua_Number) result); SWIG_arg++;
+  return SWIG_arg;
+  
+  if(0) SWIG_fail;
+  
+fail:
+  lua_error(L);
+  return SWIG_arg;
+}
+
+
+static int _wrap_AccumPhase_freq(lua_State* L) {
+  int argc;
+  int argv[3]={
+    1,2,3
+  };
+  
+  argc = lua_gettop(L);
+  if (argc == 1) {
+    int _v = 0;
+    {
+      void *ptr;
+      if (SWIG_isptrtype(L,argv[0])==0 || SWIG_ConvertPtr(L,argv[0], (void **) &ptr, SWIGTYPE_p_gam__AccumPhaseT_float_GAM_DEFAULT_DOMAIN_t, 0)) {
+        _v = 0;
+      } else {
+        _v = 1;
+      }
+    }
+    if (_v) {
+      return _wrap_AccumPhase_freq__SWIG_1(L);
+    }
+  }
+  if (argc == 2) {
+    int _v = 0;
+    {
+      void *ptr;
+      if (SWIG_isptrtype(L,argv[0])==0 || SWIG_ConvertPtr(L,argv[0], (void **) &ptr, SWIGTYPE_p_gam__AccumPhaseT_float_GAM_DEFAULT_DOMAIN_t, 0)) {
+        _v = 0;
+      } else {
+        _v = 1;
+      }
+    }
+    if (_v) {
+      {
+        _v = lua_isnumber(L,argv[1]);
+      }
+      if (_v) {
+        return _wrap_AccumPhase_freq__SWIG_0(L);
+      }
+    }
+  }
+  
+  SWIG_Lua_pusherrstring(L,"Wrong arguments for overloaded function 'AccumPhase_freq'\n"
+    "  Possible C/C++ prototypes are:\n"
+    "    gam::AccumPhase< SampleType >::freq(float)\n"
+    "    gam::AccumPhase< SampleType >::freq() const\n");
+  lua_error(L);return 0;
+}
+
+
+static int _wrap_AccumPhase_freqUnit(lua_State* L) {
+  int SWIG_arg = 0;
+  gam::AccumPhase< SampleType > *arg1 = (gam::AccumPhase< SampleType > *) 0 ;
+  float result;
+  
+  SWIG_check_num_args("gam::AccumPhase< SampleType >::freqUnit",1,1)
+  if(!SWIG_isptrtype(L,1)) SWIG_fail_arg("gam::AccumPhase< SampleType >::freqUnit",1,"gam::AccumPhase< SampleType > const *");
+  
+  if (!SWIG_IsOK(SWIG_ConvertPtr(L,1,(void**)&arg1,SWIGTYPE_p_gam__AccumPhaseT_float_GAM_DEFAULT_DOMAIN_t,0))){
+    SWIG_fail_ptr("AccumPhase_freqUnit",1,SWIGTYPE_p_gam__AccumPhaseT_float_GAM_DEFAULT_DOMAIN_t);
+  }
+  
+  result = (float)((gam::AccumPhase< SampleType > const *)arg1)->freqUnit();
+  lua_pushnumber(L, (lua_Number) result); SWIG_arg++;
+  return SWIG_arg;
+  
+  if(0) SWIG_fail;
+  
+fail:
+  lua_error(L);
+  return SWIG_arg;
+}
+
+
+static int _wrap_AccumPhase_period__SWIG_1(lua_State* L) {
+  int SWIG_arg = 0;
+  gam::AccumPhase< SampleType > *arg1 = (gam::AccumPhase< SampleType > *) 0 ;
+  float result;
+  
+  SWIG_check_num_args("gam::AccumPhase< SampleType >::period",1,1)
+  if(!SWIG_isptrtype(L,1)) SWIG_fail_arg("gam::AccumPhase< SampleType >::period",1,"gam::AccumPhase< SampleType > const *");
+  
+  if (!SWIG_IsOK(SWIG_ConvertPtr(L,1,(void**)&arg1,SWIGTYPE_p_gam__AccumPhaseT_float_GAM_DEFAULT_DOMAIN_t,0))){
+    SWIG_fail_ptr("AccumPhase_period",1,SWIGTYPE_p_gam__AccumPhaseT_float_GAM_DEFAULT_DOMAIN_t);
+  }
+  
+  result = (float)((gam::AccumPhase< SampleType > const *)arg1)->period();
+  lua_pushnumber(L, (lua_Number) result); SWIG_arg++;
+  return SWIG_arg;
+  
+  if(0) SWIG_fail;
+  
+fail:
+  lua_error(L);
+  return SWIG_arg;
+}
+
+
+static int _wrap_AccumPhase_period(lua_State* L) {
+  int argc;
+  int argv[3]={
+    1,2,3
+  };
+  
+  argc = lua_gettop(L);
+  if (argc == 1) {
+    int _v = 0;
+    {
+      void *ptr;
+      if (SWIG_isptrtype(L,argv[0])==0 || SWIG_ConvertPtr(L,argv[0], (void **) &ptr, SWIGTYPE_p_gam__AccumPhaseT_float_GAM_DEFAULT_DOMAIN_t, 0)) {
+        _v = 0;
+      } else {
+        _v = 1;
+      }
+    }
+    if (_v) {
+      return _wrap_AccumPhase_period__SWIG_1(L);
+    }
+  }
+  if (argc == 2) {
+    int _v = 0;
+    {
+      void *ptr;
+      if (SWIG_isptrtype(L,argv[0])==0 || SWIG_ConvertPtr(L,argv[0], (void **) &ptr, SWIGTYPE_p_gam__AccumPhaseT_float_GAM_DEFAULT_DOMAIN_t, 0)) {
+        _v = 0;
+      } else {
+        _v = 1;
+      }
+    }
+    if (_v) {
+      {
+        _v = lua_isnumber(L,argv[1]);
+      }
+      if (_v) {
+        return _wrap_AccumPhase_period__SWIG_0(L);
+      }
+    }
+  }
+  
+  SWIG_Lua_pusherrstring(L,"Wrong arguments for overloaded function 'AccumPhase_period'\n"
+    "  Possible C/C++ prototypes are:\n"
+    "    gam::AccumPhase< SampleType >::period(float)\n"
+    "    gam::AccumPhase< SampleType >::period() const\n");
+  lua_error(L);return 0;
+}
+
+
+static int _wrap_AccumPhase_phase__SWIG_1(lua_State* L) {
+  int SWIG_arg = 0;
+  gam::AccumPhase< SampleType > *arg1 = (gam::AccumPhase< SampleType > *) 0 ;
+  float result;
+  
+  SWIG_check_num_args("gam::AccumPhase< SampleType >::phase",1,1)
+  if(!SWIG_isptrtype(L,1)) SWIG_fail_arg("gam::AccumPhase< SampleType >::phase",1,"gam::AccumPhase< SampleType > const *");
+  
+  if (!SWIG_IsOK(SWIG_ConvertPtr(L,1,(void**)&arg1,SWIGTYPE_p_gam__AccumPhaseT_float_GAM_DEFAULT_DOMAIN_t,0))){
+    SWIG_fail_ptr("AccumPhase_phase",1,SWIGTYPE_p_gam__AccumPhaseT_float_GAM_DEFAULT_DOMAIN_t);
+  }
+  
+  result = (float)((gam::AccumPhase< SampleType > const *)arg1)->phase();
+  lua_pushnumber(L, (lua_Number) result); SWIG_arg++;
+  return SWIG_arg;
+  
+  if(0) SWIG_fail;
+  
+fail:
+  lua_error(L);
+  return SWIG_arg;
+}
+
+
+static int _wrap_AccumPhase_phase(lua_State* L) {
+  int argc;
+  int argv[3]={
+    1,2,3
+  };
+  
+  argc = lua_gettop(L);
+  if (argc == 1) {
+    int _v = 0;
+    {
+      void *ptr;
+      if (SWIG_isptrtype(L,argv[0])==0 || SWIG_ConvertPtr(L,argv[0], (void **) &ptr, SWIGTYPE_p_gam__AccumPhaseT_float_GAM_DEFAULT_DOMAIN_t, 0)) {
+        _v = 0;
+      } else {
+        _v = 1;
+      }
+    }
+    if (_v) {
+      return _wrap_AccumPhase_phase__SWIG_1(L);
+    }
+  }
+  if (argc == 2) {
+    int _v = 0;
+    {
+      void *ptr;
+      if (SWIG_isptrtype(L,argv[0])==0 || SWIG_ConvertPtr(L,argv[0], (void **) &ptr, SWIGTYPE_p_gam__AccumPhaseT_float_GAM_DEFAULT_DOMAIN_t, 0)) {
+        _v = 0;
+      } else {
+        _v = 1;
+      }
+    }
+    if (_v) {
+      {
+        _v = lua_isnumber(L,argv[1]);
+      }
+      if (_v) {
+        return _wrap_AccumPhase_phase__SWIG_0(L);
+      }
+    }
+  }
+  
+  SWIG_Lua_pusherrstring(L,"Wrong arguments for overloaded function 'AccumPhase_phase'\n"
+    "  Possible C/C++ prototypes are:\n"
+    "    gam::AccumPhase< SampleType >::phase(float)\n"
+    "    gam::AccumPhase< SampleType >::phase() const\n");
+  lua_error(L);return 0;
+}
+
+
+static int _wrap_AccumPhase_radius__SWIG_1(lua_State* L) {
+  int SWIG_arg = 0;
+  gam::AccumPhase< SampleType > *arg1 = (gam::AccumPhase< SampleType > *) 0 ;
+  float result;
+  
+  SWIG_check_num_args("gam::AccumPhase< SampleType >::radius",1,1)
+  if(!SWIG_isptrtype(L,1)) SWIG_fail_arg("gam::AccumPhase< SampleType >::radius",1,"gam::AccumPhase< SampleType > const *");
+  
+  if (!SWIG_IsOK(SWIG_ConvertPtr(L,1,(void**)&arg1,SWIGTYPE_p_gam__AccumPhaseT_float_GAM_DEFAULT_DOMAIN_t,0))){
+    SWIG_fail_ptr("AccumPhase_radius",1,SWIGTYPE_p_gam__AccumPhaseT_float_GAM_DEFAULT_DOMAIN_t);
+  }
+  
+  result = (float)((gam::AccumPhase< SampleType > const *)arg1)->radius();
+  lua_pushnumber(L, (lua_Number) result); SWIG_arg++;
+  return SWIG_arg;
+  
+  if(0) SWIG_fail;
+  
+fail:
+  lua_error(L);
+  return SWIG_arg;
+}
+
+
+static int _wrap_AccumPhase_radius(lua_State* L) {
+  int argc;
+  int argv[3]={
+    1,2,3
+  };
+  
+  argc = lua_gettop(L);
+  if (argc == 1) {
+    int _v = 0;
+    {
+      void *ptr;
+      if (SWIG_isptrtype(L,argv[0])==0 || SWIG_ConvertPtr(L,argv[0], (void **) &ptr, SWIGTYPE_p_gam__AccumPhaseT_float_GAM_DEFAULT_DOMAIN_t, 0)) {
+        _v = 0;
+      } else {
+        _v = 1;
+      }
+    }
+    if (_v) {
+      return _wrap_AccumPhase_radius__SWIG_1(L);
+    }
+  }
+  if (argc == 2) {
+    int _v = 0;
+    {
+      void *ptr;
+      if (SWIG_isptrtype(L,argv[0])==0 || SWIG_ConvertPtr(L,argv[0], (void **) &ptr, SWIGTYPE_p_gam__AccumPhaseT_float_GAM_DEFAULT_DOMAIN_t, 0)) {
+        _v = 0;
+      } else {
+        _v = 1;
+      }
+    }
+    if (_v) {
+      {
+        _v = lua_isnumber(L,argv[1]);
+      }
+      if (_v) {
+        return _wrap_AccumPhase_radius__SWIG_0(L);
+      }
+    }
+  }
+  
+  SWIG_Lua_pusherrstring(L,"Wrong arguments for overloaded function 'AccumPhase_radius'\n"
+    "  Possible C/C++ prototypes are:\n"
+    "    gam::AccumPhase< SampleType >::radius(float)\n"
+    "    gam::AccumPhase< SampleType >::radius() const\n");
+  lua_error(L);return 0;
+}
+
+
+static int _wrap_AccumPhase_onDomainChange(lua_State* L) {
+  int SWIG_arg = 0;
+  gam::AccumPhase< SampleType > *arg1 = (gam::AccumPhase< SampleType > *) 0 ;
+  double arg2 ;
+  
+  SWIG_check_num_args("gam::AccumPhase< SampleType >::onDomainChange",2,2)
+  if(!SWIG_isptrtype(L,1)) SWIG_fail_arg("gam::AccumPhase< SampleType >::onDomainChange",1,"gam::AccumPhase< SampleType > *");
+  if(!lua_isnumber(L,2)) SWIG_fail_arg("gam::AccumPhase< SampleType >::onDomainChange",2,"double");
+  
+  if (!SWIG_IsOK(SWIG_ConvertPtr(L,1,(void**)&arg1,SWIGTYPE_p_gam__AccumPhaseT_float_GAM_DEFAULT_DOMAIN_t,0))){
+    SWIG_fail_ptr("AccumPhase_onDomainChange",1,SWIGTYPE_p_gam__AccumPhaseT_float_GAM_DEFAULT_DOMAIN_t);
+  }
+  
+  arg2 = (double)lua_tonumber(L, 2);
+  (arg1)->onDomainChange(arg2);
+  
+  return SWIG_arg;
+  
+  if(0) SWIG_fail;
+  
+fail:
+  lua_error(L);
+  return SWIG_arg;
+}
+
+
+static int _wrap_AccumPhase_print__SWIG_0(lua_State* L) {
+  int SWIG_arg = 0;
+  gam::AccumPhase< SampleType > *arg1 = (gam::AccumPhase< SampleType > *) 0 ;
+  FILE *arg2 = (FILE *) 0 ;
+  char *arg3 = (char *) 0 ;
+  
+  SWIG_check_num_args("gam::AccumPhase< SampleType >::print",3,3)
+  if(!SWIG_isptrtype(L,1)) SWIG_fail_arg("gam::AccumPhase< SampleType >::print",1,"gam::AccumPhase< SampleType > *");
+  if(!SWIG_isptrtype(L,2)) SWIG_fail_arg("gam::AccumPhase< SampleType >::print",2,"FILE *");
+  if(!SWIG_lua_isnilstring(L,3)) SWIG_fail_arg("gam::AccumPhase< SampleType >::print",3,"char const *");
+  
+  if (!SWIG_IsOK(SWIG_ConvertPtr(L,1,(void**)&arg1,SWIGTYPE_p_gam__AccumPhaseT_float_GAM_DEFAULT_DOMAIN_t,0))){
+    SWIG_fail_ptr("AccumPhase_print",1,SWIGTYPE_p_gam__AccumPhaseT_float_GAM_DEFAULT_DOMAIN_t);
+  }
+  
+  
+  if (!SWIG_IsOK(SWIG_ConvertPtr(L,2,(void**)&arg2,SWIGTYPE_p_FILE,0))){
+    SWIG_fail_ptr("AccumPhase_print",2,SWIGTYPE_p_FILE);
+  }
+  
+  arg3 = (char *)lua_tostring(L, 3);
+  (arg1)->print(arg2,(char const *)arg3);
+  
+  return SWIG_arg;
+  
+  if(0) SWIG_fail;
+  
+fail:
+  lua_error(L);
+  return SWIG_arg;
+}
+
+
+static int _wrap_AccumPhase_print__SWIG_1(lua_State* L) {
+  int SWIG_arg = 0;
+  gam::AccumPhase< SampleType > *arg1 = (gam::AccumPhase< SampleType > *) 0 ;
+  FILE *arg2 = (FILE *) 0 ;
+  
+  SWIG_check_num_args("gam::AccumPhase< SampleType >::print",2,2)
+  if(!SWIG_isptrtype(L,1)) SWIG_fail_arg("gam::AccumPhase< SampleType >::print",1,"gam::AccumPhase< SampleType > *");
+  if(!SWIG_isptrtype(L,2)) SWIG_fail_arg("gam::AccumPhase< SampleType >::print",2,"FILE *");
+  
+  if (!SWIG_IsOK(SWIG_ConvertPtr(L,1,(void**)&arg1,SWIGTYPE_p_gam__AccumPhaseT_float_GAM_DEFAULT_DOMAIN_t,0))){
+    SWIG_fail_ptr("AccumPhase_print",1,SWIGTYPE_p_gam__AccumPhaseT_float_GAM_DEFAULT_DOMAIN_t);
+  }
+  
+  
+  if (!SWIG_IsOK(SWIG_ConvertPtr(L,2,(void**)&arg2,SWIGTYPE_p_FILE,0))){
+    SWIG_fail_ptr("AccumPhase_print",2,SWIGTYPE_p_FILE);
+  }
+  
+  (arg1)->print(arg2);
+  
+  return SWIG_arg;
+  
+  if(0) SWIG_fail;
+  
+fail:
+  lua_error(L);
+  return SWIG_arg;
+}
+
+
+static int _wrap_AccumPhase_print__SWIG_2(lua_State* L) {
+  int SWIG_arg = 0;
+  gam::AccumPhase< SampleType > *arg1 = (gam::AccumPhase< SampleType > *) 0 ;
+  
+  SWIG_check_num_args("gam::AccumPhase< SampleType >::print",1,1)
+  if(!SWIG_isptrtype(L,1)) SWIG_fail_arg("gam::AccumPhase< SampleType >::print",1,"gam::AccumPhase< SampleType > *");
+  
+  if (!SWIG_IsOK(SWIG_ConvertPtr(L,1,(void**)&arg1,SWIGTYPE_p_gam__AccumPhaseT_float_GAM_DEFAULT_DOMAIN_t,0))){
+    SWIG_fail_ptr("AccumPhase_print",1,SWIGTYPE_p_gam__AccumPhaseT_float_GAM_DEFAULT_DOMAIN_t);
+  }
+  
+  (arg1)->print();
+  
+  return SWIG_arg;
+  
+  if(0) SWIG_fail;
+  
+fail:
+  lua_error(L);
+  return SWIG_arg;
+}
+
+
+static int _wrap_AccumPhase_print(lua_State* L) {
+  int argc;
+  int argv[4]={
+    1,2,3,4
+  };
+  
+  argc = lua_gettop(L);
+  if (argc == 1) {
+    int _v = 0;
+    {
+      void *ptr;
+      if (SWIG_isptrtype(L,argv[0])==0 || SWIG_ConvertPtr(L,argv[0], (void **) &ptr, SWIGTYPE_p_gam__AccumPhaseT_float_GAM_DEFAULT_DOMAIN_t, 0)) {
+        _v = 0;
+      } else {
+        _v = 1;
+      }
+    }
+    if (_v) {
+      return _wrap_AccumPhase_print__SWIG_2(L);
+    }
+  }
+  if (argc == 2) {
+    int _v = 0;
+    {
+      void *ptr;
+      if (SWIG_isptrtype(L,argv[0])==0 || SWIG_ConvertPtr(L,argv[0], (void **) &ptr, SWIGTYPE_p_gam__AccumPhaseT_float_GAM_DEFAULT_DOMAIN_t, 0)) {
+        _v = 0;
+      } else {
+        _v = 1;
+      }
+    }
+    if (_v) {
+      {
+        void *ptr;
+        if (SWIG_isptrtype(L,argv[1])==0 || SWIG_ConvertPtr(L,argv[1], (void **) &ptr, SWIGTYPE_p_FILE, 0)) {
+          _v = 0;
+        } else {
+          _v = 1;
+        }
+      }
+      if (_v) {
+        return _wrap_AccumPhase_print__SWIG_1(L);
+      }
+    }
+  }
+  if (argc == 3) {
+    int _v = 0;
+    {
+      void *ptr;
+      if (SWIG_isptrtype(L,argv[0])==0 || SWIG_ConvertPtr(L,argv[0], (void **) &ptr, SWIGTYPE_p_gam__AccumPhaseT_float_GAM_DEFAULT_DOMAIN_t, 0)) {
+        _v = 0;
+      } else {
+        _v = 1;
+      }
+    }
+    if (_v) {
+      {
+        void *ptr;
+        if (SWIG_isptrtype(L,argv[1])==0 || SWIG_ConvertPtr(L,argv[1], (void **) &ptr, SWIGTYPE_p_FILE, 0)) {
+          _v = 0;
+        } else {
+          _v = 1;
+        }
+      }
+      if (_v) {
+        {
+          _v = SWIG_lua_isnilstring(L,argv[2]);
+        }
+        if (_v) {
+          return _wrap_AccumPhase_print__SWIG_0(L);
+        }
+      }
+    }
+  }
+  
+  SWIG_Lua_pusherrstring(L,"Wrong arguments for overloaded function 'AccumPhase_print'\n"
+    "  Possible C/C++ prototypes are:\n"
+    "    gam::AccumPhase< SampleType >::print(FILE *,char const *)\n"
+    "    gam::AccumPhase< SampleType >::print(FILE *)\n"
+    "    gam::AccumPhase< SampleType >::print()\n");
+  lua_error(L);return 0;
+}
+
+
+static void swig_delete_AccumPhase(void *obj) {
+gam::AccumPhase< SampleType > *arg1 = (gam::AccumPhase< SampleType > *) obj;
+delete arg1;
+}
+static int _proxy__wrap_new_AccumPhase(lua_State *L) {
+    assert(lua_istable(L,1));
+    lua_pushcfunction(L,_wrap_new_AccumPhase);
+    assert(!lua_isnil(L,-1));
+    lua_replace(L,1); /* replace our table with real constructor */
+    lua_call(L,lua_gettop(L)-1,1);
+    return 1;
+}
+static swig_lua_attribute swig_AccumPhase_attributes[] = {
+    {0,0,0}
+};
+static swig_lua_method swig_AccumPhase_methods[]= {
+    { "nextPhase", _wrap_AccumPhase_nextPhase},
+    { "freqAdd", _wrap_AccumPhase_freqAdd},
+    { "freqMul", _wrap_AccumPhase_freqMul},
+    { "phaseAdd", _wrap_AccumPhase_phaseAdd},
+    { "freq", _wrap_AccumPhase_freq},
+    { "freqUnit", _wrap_AccumPhase_freqUnit},
+    { "period", _wrap_AccumPhase_period},
+    { "phase", _wrap_AccumPhase_phase},
+    { "radius", _wrap_AccumPhase_radius},
+    { "onDomainChange", _wrap_AccumPhase_onDomainChange},
+    { "print", _wrap_AccumPhase_print},
+    {0,0}
+};
+static swig_lua_method swig_AccumPhase_meta[] = {
+    {0,0}
+};
+
+static swig_lua_attribute swig_AccumPhase_Sf_SwigStatic_attributes[] = {
+    {0,0,0}
+};
+static swig_lua_const_info swig_AccumPhase_Sf_SwigStatic_constants[]= {
+    {0,0,0,0,0,0}
+};
+static swig_lua_method swig_AccumPhase_Sf_SwigStatic_methods[]= {
+    {0,0}
+};
+static swig_lua_class* swig_AccumPhase_Sf_SwigStatic_classes[]= {
+    0
+};
+
+static swig_lua_namespace swig_AccumPhase_Sf_SwigStatic = {
+    "AccumPhase",
+    swig_AccumPhase_Sf_SwigStatic_methods,
+    swig_AccumPhase_Sf_SwigStatic_attributes,
+    swig_AccumPhase_Sf_SwigStatic_constants,
+    swig_AccumPhase_Sf_SwigStatic_classes,
+    0
+};
+static swig_lua_class *swig_AccumPhase_bases[] = {0};
+static const char *swig_AccumPhase_base_names[] = {0};
+static swig_lua_class _wrap_class_AccumPhase = { "AccumPhase", "AccumPhase", &SWIGTYPE_p_gam__AccumPhaseT_float_GAM_DEFAULT_DOMAIN_t,_proxy__wrap_new_AccumPhase, swig_delete_AccumPhase, swig_AccumPhase_methods, swig_AccumPhase_attributes, &swig_AccumPhase_Sf_SwigStatic, swig_AccumPhase_meta, swig_AccumPhase_bases, swig_AccumPhase_base_names };
+
+static int _wrap_new_Osc__SWIG_0(lua_State* L) {
+  int SWIG_arg = 0;
+  gam::Osc< SampleType > *result = 0 ;
+  
+  SWIG_check_num_args("gam::Osc< SampleType >::Osc",0,0)
+  result = (gam::Osc< SampleType > *)new gam::Osc< SampleType >();
+  SWIG_NewPointerObj(L,result,SWIGTYPE_p_gam__OscT_float_ipl__Linear_phsInc__Loop_GAM_DEFAULT_DOMAIN_t,1); SWIG_arg++; 
+  return SWIG_arg;
+  
+  if(0) SWIG_fail;
+  
+fail:
+  lua_error(L);
+  return SWIG_arg;
+}
+
+
+static int _wrap_new_Osc__SWIG_1(lua_State* L) {
+  int SWIG_arg = 0;
+  float arg1 ;
+  float arg2 ;
+  uint32_t arg3 ;
+  gam::Osc< SampleType > *result = 0 ;
+  
+  SWIG_check_num_args("gam::Osc< SampleType >::Osc",3,3)
+  if(!lua_isnumber(L,1)) SWIG_fail_arg("gam::Osc< SampleType >::Osc",1,"float");
+  if(!lua_isnumber(L,2)) SWIG_fail_arg("gam::Osc< SampleType >::Osc",2,"float");
+  if(!lua_isnumber(L,3)) SWIG_fail_arg("gam::Osc< SampleType >::Osc",3,"uint32_t");
+  arg1 = (float)lua_tonumber(L, 1);
+  arg2 = (float)lua_tonumber(L, 2);
+  SWIG_contract_assert((lua_tonumber(L,3)>=0),"number must not be negative");
+  arg3 = (uint32_t)lua_tonumber(L, 3);
+  result = (gam::Osc< SampleType > *)new gam::Osc< SampleType >(arg1,arg2,arg3);
+  SWIG_NewPointerObj(L,result,SWIGTYPE_p_gam__OscT_float_ipl__Linear_phsInc__Loop_GAM_DEFAULT_DOMAIN_t,1); SWIG_arg++; 
+  return SWIG_arg;
+  
+  if(0) SWIG_fail;
+  
+fail:
+  lua_error(L);
+  return SWIG_arg;
+}
+
+
+static int _wrap_new_Osc__SWIG_2(lua_State* L) {
+  int SWIG_arg = 0;
+  float arg1 ;
+  float arg2 ;
+  gam::Osc< SampleType > *result = 0 ;
+  
+  SWIG_check_num_args("gam::Osc< SampleType >::Osc",2,2)
+  if(!lua_isnumber(L,1)) SWIG_fail_arg("gam::Osc< SampleType >::Osc",1,"float");
+  if(!lua_isnumber(L,2)) SWIG_fail_arg("gam::Osc< SampleType >::Osc",2,"float");
+  arg1 = (float)lua_tonumber(L, 1);
+  arg2 = (float)lua_tonumber(L, 2);
+  result = (gam::Osc< SampleType > *)new gam::Osc< SampleType >(arg1,arg2);
+  SWIG_NewPointerObj(L,result,SWIGTYPE_p_gam__OscT_float_ipl__Linear_phsInc__Loop_GAM_DEFAULT_DOMAIN_t,1); SWIG_arg++; 
+  return SWIG_arg;
+  
+  if(0) SWIG_fail;
+  
+fail:
+  lua_error(L);
+  return SWIG_arg;
+}
+
+
+static int _wrap_new_Osc__SWIG_3(lua_State* L) {
+  int SWIG_arg = 0;
+  float arg1 ;
+  gam::Osc< SampleType > *result = 0 ;
+  
+  SWIG_check_num_args("gam::Osc< SampleType >::Osc",1,1)
+  if(!lua_isnumber(L,1)) SWIG_fail_arg("gam::Osc< SampleType >::Osc",1,"float");
+  arg1 = (float)lua_tonumber(L, 1);
+  result = (gam::Osc< SampleType > *)new gam::Osc< SampleType >(arg1);
+  SWIG_NewPointerObj(L,result,SWIGTYPE_p_gam__OscT_float_ipl__Linear_phsInc__Loop_GAM_DEFAULT_DOMAIN_t,1); SWIG_arg++; 
+  return SWIG_arg;
+  
+  if(0) SWIG_fail;
+  
+fail:
+  lua_error(L);
+  return SWIG_arg;
+}
+
+
+static int _wrap_new_Osc__SWIG_4(lua_State* L) {
+  int SWIG_arg = 0;
+  float arg1 ;
+  float arg2 ;
+  gam::ArrayPow2< float > *arg3 = 0 ;
+  gam::Osc< SampleType > *result = 0 ;
+  
+  SWIG_check_num_args("gam::Osc< SampleType >::Osc",3,3)
+  if(!lua_isnumber(L,1)) SWIG_fail_arg("gam::Osc< SampleType >::Osc",1,"float");
+  if(!lua_isnumber(L,2)) SWIG_fail_arg("gam::Osc< SampleType >::Osc",2,"float");
+  if(!lua_isuserdata(L,3)) SWIG_fail_arg("gam::Osc< SampleType >::Osc",3,"gam::ArrayPow2< float > &");
+  arg1 = (float)lua_tonumber(L, 1);
+  arg2 = (float)lua_tonumber(L, 2);
+  
+  if (!SWIG_IsOK(SWIG_ConvertPtr(L,3,(void**)&arg3,SWIGTYPE_p_gam__ArrayPow2T_float_t,0))){
+    SWIG_fail_ptr("new_Osc",3,SWIGTYPE_p_gam__ArrayPow2T_float_t);
+  }
+  
+  result = (gam::Osc< SampleType > *)new gam::Osc< SampleType >(arg1,arg2,*arg3);
+  SWIG_NewPointerObj(L,result,SWIGTYPE_p_gam__OscT_float_ipl__Linear_phsInc__Loop_GAM_DEFAULT_DOMAIN_t,1); SWIG_arg++; 
+  return SWIG_arg;
+  
+  if(0) SWIG_fail;
+  
+fail:
+  lua_error(L);
+  return SWIG_arg;
+}
+
+
+static int _wrap_new_Osc(lua_State* L) {
+  int argc;
+  int argv[4]={
+    1,2,3,4
+  };
+  
+  argc = lua_gettop(L);
+  if (argc == 0) {
+    return _wrap_new_Osc__SWIG_0(L);
+  }
+  if (argc == 1) {
+    int _v = 0;
+    {
+      _v = lua_isnumber(L,argv[0]);
+    }
+    if (_v) {
+      return _wrap_new_Osc__SWIG_3(L);
+    }
+  }
+  if (argc == 2) {
+    int _v = 0;
+    {
+      _v = lua_isnumber(L,argv[0]);
+    }
+    if (_v) {
+      {
+        _v = lua_isnumber(L,argv[1]);
+      }
+      if (_v) {
+        return _wrap_new_Osc__SWIG_2(L);
+      }
+    }
+  }
+  if (argc == 3) {
+    int _v = 0;
+    {
+      _v = lua_isnumber(L,argv[0]);
+    }
+    if (_v) {
+      {
+        _v = lua_isnumber(L,argv[1]);
+      }
+      if (_v) {
+        {
+          void *ptr;
+          if (lua_isuserdata(L,argv[2])==0 || SWIG_ConvertPtr(L,argv[2], (void **) &ptr, SWIGTYPE_p_gam__ArrayPow2T_float_t, SWIG_POINTER_NO_NULL)) {
+            _v = 0;
+          } else {
+            _v = 1;
+          }
+        }
+        if (_v) {
+          return _wrap_new_Osc__SWIG_4(L);
+        }
+      }
+    }
+  }
+  if (argc == 3) {
+    int _v = 0;
+    {
+      _v = lua_isnumber(L,argv[0]);
+    }
+    if (_v) {
+      {
+        _v = lua_isnumber(L,argv[1]);
+      }
+      if (_v) {
+        {
+          _v = lua_isnumber(L,argv[2]);
+        }
+        if (_v) {
+          return _wrap_new_Osc__SWIG_1(L);
+        }
+      }
+    }
+  }
+  
+  SWIG_Lua_pusherrstring(L,"Wrong arguments for overloaded function 'new_Osc'\n"
+    "  Possible C/C++ prototypes are:\n"
+    "    gam::Osc< SampleType >::Osc()\n"
+    "    gam::Osc< SampleType >::Osc(float,float,uint32_t)\n"
+    "    gam::Osc< SampleType >::Osc(float,float)\n"
+    "    gam::Osc< SampleType >::Osc(float)\n"
+    "    gam::Osc< SampleType >::Osc(float,float,gam::ArrayPow2< float > &)\n");
+  lua_error(L);return 0;
+}
+
+
+static int _wrap_Osc_Tick(lua_State* L) {
+  int SWIG_arg = 0;
+  gam::Osc< SampleType > *arg1 = (gam::Osc< SampleType > *) 0 ;
+  float result;
+  
+  SWIG_check_num_args("gam::Osc< SampleType >::Tick",1,1)
+  if(!SWIG_isptrtype(L,1)) SWIG_fail_arg("gam::Osc< SampleType >::Tick",1,"gam::Osc< SampleType > *");
+  
+  if (!SWIG_IsOK(SWIG_ConvertPtr(L,1,(void**)&arg1,SWIGTYPE_p_gam__OscT_float_ipl__Linear_phsInc__Loop_GAM_DEFAULT_DOMAIN_t,0))){
+    SWIG_fail_ptr("Osc_Tick",1,SWIGTYPE_p_gam__OscT_float_ipl__Linear_phsInc__Loop_GAM_DEFAULT_DOMAIN_t);
+  }
+  
+  result = (float)gam_Osc_Sl_SampleType_Sg__Tick__SWIG(arg1);
+  lua_pushnumber(L, (lua_Number) result); SWIG_arg++;
+  return SWIG_arg;
+  
+  if(0) SWIG_fail;
+  
+fail:
+  lua_error(L);
+  return SWIG_arg;
+}
+
+
+static int _wrap_Osc_val(lua_State* L) {
+  int SWIG_arg = 0;
+  gam::Osc< SampleType > *arg1 = (gam::Osc< SampleType > *) 0 ;
+  float result;
+  
+  SWIG_check_num_args("gam::Osc< SampleType >::val",1,1)
+  if(!SWIG_isptrtype(L,1)) SWIG_fail_arg("gam::Osc< SampleType >::val",1,"gam::Osc< SampleType > const *");
+  
+  if (!SWIG_IsOK(SWIG_ConvertPtr(L,1,(void**)&arg1,SWIGTYPE_p_gam__OscT_float_ipl__Linear_phsInc__Loop_GAM_DEFAULT_DOMAIN_t,0))){
+    SWIG_fail_ptr("Osc_val",1,SWIGTYPE_p_gam__OscT_float_ipl__Linear_phsInc__Loop_GAM_DEFAULT_DOMAIN_t);
+  }
+  
+  result = (float)((gam::Osc< SampleType > const *)arg1)->val();
+  lua_pushnumber(L, (lua_Number) result); SWIG_arg++;
+  return SWIG_arg;
+  
+  if(0) SWIG_fail;
+  
+fail:
+  lua_error(L);
+  return SWIG_arg;
+}
+
+
+static int _wrap_Osc_atPhaseI(lua_State* L) {
+  int SWIG_arg = 0;
+  gam::Osc< SampleType > *arg1 = (gam::Osc< SampleType > *) 0 ;
+  uint32_t arg2 ;
+  float result;
+  
+  SWIG_check_num_args("gam::Osc< SampleType >::atPhaseI",2,2)
+  if(!SWIG_isptrtype(L,1)) SWIG_fail_arg("gam::Osc< SampleType >::atPhaseI",1,"gam::Osc< SampleType > const *");
+  if(!lua_isnumber(L,2)) SWIG_fail_arg("gam::Osc< SampleType >::atPhaseI",2,"uint32_t");
+  
+  if (!SWIG_IsOK(SWIG_ConvertPtr(L,1,(void**)&arg1,SWIGTYPE_p_gam__OscT_float_ipl__Linear_phsInc__Loop_GAM_DEFAULT_DOMAIN_t,0))){
+    SWIG_fail_ptr("Osc_atPhaseI",1,SWIGTYPE_p_gam__OscT_float_ipl__Linear_phsInc__Loop_GAM_DEFAULT_DOMAIN_t);
+  }
+  
+  SWIG_contract_assert((lua_tonumber(L,2)>=0),"number must not be negative");
+  arg2 = (uint32_t)lua_tonumber(L, 2);
+  result = (float)((gam::Osc< SampleType > const *)arg1)->atPhaseI(arg2);
+  lua_pushnumber(L, (lua_Number) result); SWIG_arg++;
+  return SWIG_arg;
+  
+  if(0) SWIG_fail;
+  
+fail:
+  lua_error(L);
+  return SWIG_arg;
+}
+
+
+static int _wrap_Osc_addSine__SWIG_0(lua_State* L) {
+  int SWIG_arg = 0;
+  gam::Osc< SampleType > *arg1 = (gam::Osc< SampleType > *) 0 ;
+  double arg2 ;
+  double arg3 ;
+  double arg4 ;
+  gam::Osc< SampleType > *result = 0 ;
+  
+  SWIG_check_num_args("gam::Osc< SampleType >::addSine",4,4)
+  if(!SWIG_isptrtype(L,1)) SWIG_fail_arg("gam::Osc< SampleType >::addSine",1,"gam::Osc< SampleType > *");
+  if(!lua_isnumber(L,2)) SWIG_fail_arg("gam::Osc< SampleType >::addSine",2,"double");
+  if(!lua_isnumber(L,3)) SWIG_fail_arg("gam::Osc< SampleType >::addSine",3,"double");
+  if(!lua_isnumber(L,4)) SWIG_fail_arg("gam::Osc< SampleType >::addSine",4,"double");
+  
+  if (!SWIG_IsOK(SWIG_ConvertPtr(L,1,(void**)&arg1,SWIGTYPE_p_gam__OscT_float_ipl__Linear_phsInc__Loop_GAM_DEFAULT_DOMAIN_t,0))){
+    SWIG_fail_ptr("Osc_addSine",1,SWIGTYPE_p_gam__OscT_float_ipl__Linear_phsInc__Loop_GAM_DEFAULT_DOMAIN_t);
+  }
+  
+  arg2 = (double)lua_tonumber(L, 2);
+  arg3 = (double)lua_tonumber(L, 3);
+  arg4 = (double)lua_tonumber(L, 4);
+  result = (gam::Osc< SampleType > *) &(arg1)->addSine(arg2,arg3,arg4);
+  SWIG_NewPointerObj(L,result,SWIGTYPE_p_gam__OscT_float_ipl__Linear_phsInc__Loop_GAM_DEFAULT_DOMAIN_t,0); SWIG_arg++; 
+  return SWIG_arg;
+  
+  if(0) SWIG_fail;
+  
+fail:
+  lua_error(L);
+  return SWIG_arg;
+}
+
+
+static int _wrap_Osc_addSine__SWIG_1(lua_State* L) {
+  int SWIG_arg = 0;
+  gam::Osc< SampleType > *arg1 = (gam::Osc< SampleType > *) 0 ;
+  double arg2 ;
+  double arg3 ;
+  gam::Osc< SampleType > *result = 0 ;
+  
+  SWIG_check_num_args("gam::Osc< SampleType >::addSine",3,3)
+  if(!SWIG_isptrtype(L,1)) SWIG_fail_arg("gam::Osc< SampleType >::addSine",1,"gam::Osc< SampleType > *");
+  if(!lua_isnumber(L,2)) SWIG_fail_arg("gam::Osc< SampleType >::addSine",2,"double");
+  if(!lua_isnumber(L,3)) SWIG_fail_arg("gam::Osc< SampleType >::addSine",3,"double");
+  
+  if (!SWIG_IsOK(SWIG_ConvertPtr(L,1,(void**)&arg1,SWIGTYPE_p_gam__OscT_float_ipl__Linear_phsInc__Loop_GAM_DEFAULT_DOMAIN_t,0))){
+    SWIG_fail_ptr("Osc_addSine",1,SWIGTYPE_p_gam__OscT_float_ipl__Linear_phsInc__Loop_GAM_DEFAULT_DOMAIN_t);
+  }
+  
+  arg2 = (double)lua_tonumber(L, 2);
+  arg3 = (double)lua_tonumber(L, 3);
+  result = (gam::Osc< SampleType > *) &(arg1)->addSine(arg2,arg3);
+  SWIG_NewPointerObj(L,result,SWIGTYPE_p_gam__OscT_float_ipl__Linear_phsInc__Loop_GAM_DEFAULT_DOMAIN_t,0); SWIG_arg++; 
+  return SWIG_arg;
+  
+  if(0) SWIG_fail;
+  
+fail:
+  lua_error(L);
+  return SWIG_arg;
+}
+
+
+static int _wrap_Osc_addSine__SWIG_2(lua_State* L) {
+  int SWIG_arg = 0;
+  gam::Osc< SampleType > *arg1 = (gam::Osc< SampleType > *) 0 ;
+  double arg2 ;
+  gam::Osc< SampleType > *result = 0 ;
+  
+  SWIG_check_num_args("gam::Osc< SampleType >::addSine",2,2)
+  if(!SWIG_isptrtype(L,1)) SWIG_fail_arg("gam::Osc< SampleType >::addSine",1,"gam::Osc< SampleType > *");
+  if(!lua_isnumber(L,2)) SWIG_fail_arg("gam::Osc< SampleType >::addSine",2,"double");
+  
+  if (!SWIG_IsOK(SWIG_ConvertPtr(L,1,(void**)&arg1,SWIGTYPE_p_gam__OscT_float_ipl__Linear_phsInc__Loop_GAM_DEFAULT_DOMAIN_t,0))){
+    SWIG_fail_ptr("Osc_addSine",1,SWIGTYPE_p_gam__OscT_float_ipl__Linear_phsInc__Loop_GAM_DEFAULT_DOMAIN_t);
+  }
+  
+  arg2 = (double)lua_tonumber(L, 2);
+  result = (gam::Osc< SampleType > *) &(arg1)->addSine(arg2);
+  SWIG_NewPointerObj(L,result,SWIGTYPE_p_gam__OscT_float_ipl__Linear_phsInc__Loop_GAM_DEFAULT_DOMAIN_t,0); SWIG_arg++; 
+  return SWIG_arg;
+  
+  if(0) SWIG_fail;
+  
+fail:
+  lua_error(L);
+  return SWIG_arg;
+}
+
+
+static int _wrap_Osc_addSine(lua_State* L) {
+  int argc;
+  int argv[5]={
+    1,2,3,4,5
+  };
+  
+  argc = lua_gettop(L);
+  if (argc == 2) {
+    int _v = 0;
+    {
+      void *ptr;
+      if (SWIG_isptrtype(L,argv[0])==0 || SWIG_ConvertPtr(L,argv[0], (void **) &ptr, SWIGTYPE_p_gam__OscT_float_ipl__Linear_phsInc__Loop_GAM_DEFAULT_DOMAIN_t, 0)) {
+        _v = 0;
+      } else {
+        _v = 1;
+      }
+    }
+    if (_v) {
+      {
+        _v = lua_isnumber(L,argv[1]);
+      }
+      if (_v) {
+        return _wrap_Osc_addSine__SWIG_2(L);
+      }
+    }
+  }
+  if (argc == 3) {
+    int _v = 0;
+    {
+      void *ptr;
+      if (SWIG_isptrtype(L,argv[0])==0 || SWIG_ConvertPtr(L,argv[0], (void **) &ptr, SWIGTYPE_p_gam__OscT_float_ipl__Linear_phsInc__Loop_GAM_DEFAULT_DOMAIN_t, 0)) {
+        _v = 0;
+      } else {
+        _v = 1;
+      }
+    }
+    if (_v) {
+      {
+        _v = lua_isnumber(L,argv[1]);
+      }
+      if (_v) {
+        {
+          _v = lua_isnumber(L,argv[2]);
+        }
+        if (_v) {
+          return _wrap_Osc_addSine__SWIG_1(L);
+        }
+      }
+    }
+  }
+  if (argc == 4) {
+    int _v = 0;
+    {
+      void *ptr;
+      if (SWIG_isptrtype(L,argv[0])==0 || SWIG_ConvertPtr(L,argv[0], (void **) &ptr, SWIGTYPE_p_gam__OscT_float_ipl__Linear_phsInc__Loop_GAM_DEFAULT_DOMAIN_t, 0)) {
+        _v = 0;
+      } else {
+        _v = 1;
+      }
+    }
+    if (_v) {
+      {
+        _v = lua_isnumber(L,argv[1]);
+      }
+      if (_v) {
+        {
+          _v = lua_isnumber(L,argv[2]);
+        }
+        if (_v) {
+          {
+            _v = lua_isnumber(L,argv[3]);
+          }
+          if (_v) {
+            return _wrap_Osc_addSine__SWIG_0(L);
+          }
+        }
+      }
+    }
+  }
+  
+  SWIG_Lua_pusherrstring(L,"Wrong arguments for overloaded function 'Osc_addSine'\n"
+    "  Possible C/C++ prototypes are:\n"
+    "    gam::Osc< SampleType >::addSine(double,double,double)\n"
+    "    gam::Osc< SampleType >::addSine(double,double)\n"
+    "    gam::Osc< SampleType >::addSine(double)\n");
+  lua_error(L);return 0;
+}
+
+
+static int _wrap_Osc_table__SWIG_0(lua_State* L) {
+  int SWIG_arg = 0;
+  gam::Osc< SampleType > *arg1 = (gam::Osc< SampleType > *) 0 ;
+  gam::ArrayPow2< float > *result = 0 ;
+  
+  SWIG_check_num_args("gam::Osc< SampleType >::table",1,1)
+  if(!SWIG_isptrtype(L,1)) SWIG_fail_arg("gam::Osc< SampleType >::table",1,"gam::Osc< SampleType > *");
+  
+  if (!SWIG_IsOK(SWIG_ConvertPtr(L,1,(void**)&arg1,SWIGTYPE_p_gam__OscT_float_ipl__Linear_phsInc__Loop_GAM_DEFAULT_DOMAIN_t,0))){
+    SWIG_fail_ptr("Osc_table",1,SWIGTYPE_p_gam__OscT_float_ipl__Linear_phsInc__Loop_GAM_DEFAULT_DOMAIN_t);
+  }
+  
+  result = (gam::ArrayPow2< float > *) &(arg1)->table();
+  SWIG_NewPointerObj(L,result,SWIGTYPE_p_gam__ArrayPow2T_float_t,0); SWIG_arg++; 
+  return SWIG_arg;
+  
+  if(0) SWIG_fail;
+  
+fail:
+  lua_error(L);
+  return SWIG_arg;
+}
+
+
+static int _wrap_Osc_table__SWIG_1(lua_State* L) {
+  int SWIG_arg = 0;
+  gam::Osc< SampleType > *arg1 = (gam::Osc< SampleType > *) 0 ;
+  gam::ArrayPow2< float > *result = 0 ;
+  
+  SWIG_check_num_args("gam::Osc< SampleType >::table",1,1)
+  if(!SWIG_isptrtype(L,1)) SWIG_fail_arg("gam::Osc< SampleType >::table",1,"gam::Osc< SampleType > const *");
+  
+  if (!SWIG_IsOK(SWIG_ConvertPtr(L,1,(void**)&arg1,SWIGTYPE_p_gam__OscT_float_ipl__Linear_phsInc__Loop_GAM_DEFAULT_DOMAIN_t,0))){
+    SWIG_fail_ptr("Osc_table",1,SWIGTYPE_p_gam__OscT_float_ipl__Linear_phsInc__Loop_GAM_DEFAULT_DOMAIN_t);
+  }
+  
+  result = (gam::ArrayPow2< float > *) &((gam::Osc< SampleType > const *)arg1)->table();
+  SWIG_NewPointerObj(L,result,SWIGTYPE_p_gam__ArrayPow2T_float_t,0); SWIG_arg++; 
+  return SWIG_arg;
+  
+  if(0) SWIG_fail;
+  
+fail:
+  lua_error(L);
+  return SWIG_arg;
+}
+
+
+static int _wrap_Osc_table(lua_State* L) {
+  int argc;
+  int argv[2]={
+    1,2
+  };
+  
+  argc = lua_gettop(L);
+  if (argc == 1) {
+    int _v = 0;
+    {
+      void *ptr;
+      if (SWIG_isptrtype(L,argv[0])==0 || SWIG_ConvertPtr(L,argv[0], (void **) &ptr, SWIGTYPE_p_gam__OscT_float_ipl__Linear_phsInc__Loop_GAM_DEFAULT_DOMAIN_t, 0)) {
+        _v = 0;
+      } else {
+        _v = 1;
+      }
+    }
+    if (_v) {
+      return _wrap_Osc_table__SWIG_0(L);
+    }
+  }
+  if (argc == 1) {
+    int _v = 0;
+    {
+      void *ptr;
+      if (SWIG_isptrtype(L,argv[0])==0 || SWIG_ConvertPtr(L,argv[0], (void **) &ptr, SWIGTYPE_p_gam__OscT_float_ipl__Linear_phsInc__Loop_GAM_DEFAULT_DOMAIN_t, 0)) {
+        _v = 0;
+      } else {
+        _v = 1;
+      }
+    }
+    if (_v) {
+      return _wrap_Osc_table__SWIG_1(L);
+    }
+  }
+  
+  SWIG_Lua_pusherrstring(L,"Wrong arguments for overloaded function 'Osc_table'\n"
+    "  Possible C/C++ prototypes are:\n"
+    "    gam::Osc< SampleType >::table()\n"
+    "    gam::Osc< SampleType >::table() const\n");
+  lua_error(L);return 0;
+}
+
+
+static void swig_delete_Osc(void *obj) {
+gam::Osc< SampleType > *arg1 = (gam::Osc< SampleType > *) obj;
+delete arg1;
+}
+static int _proxy__wrap_new_Osc(lua_State *L) {
+    assert(lua_istable(L,1));
+    lua_pushcfunction(L,_wrap_new_Osc);
+    assert(!lua_isnil(L,-1));
+    lua_replace(L,1); /* replace our table with real constructor */
+    lua_call(L,lua_gettop(L)-1,1);
+    return 1;
+}
+static swig_lua_attribute swig_Osc_attributes[] = {
+    {0,0,0}
+};
+static swig_lua_method swig_Osc_methods[]= {
+    { "Tick", _wrap_Osc_Tick},
+    { "val", _wrap_Osc_val},
+    { "atPhaseI", _wrap_Osc_atPhaseI},
+    { "addSine", _wrap_Osc_addSine},
+    { "table", _wrap_Osc_table},
+    {0,0}
+};
+static swig_lua_method swig_Osc_meta[] = {
+    {0,0}
+};
+
+static swig_lua_attribute swig_Osc_Sf_SwigStatic_attributes[] = {
+    {0,0,0}
+};
+static swig_lua_const_info swig_Osc_Sf_SwigStatic_constants[]= {
+    {0,0,0,0,0,0}
+};
+static swig_lua_method swig_Osc_Sf_SwigStatic_methods[]= {
+    {0,0}
+};
+static swig_lua_class* swig_Osc_Sf_SwigStatic_classes[]= {
+    0
+};
+
+static swig_lua_namespace swig_Osc_Sf_SwigStatic = {
+    "Osc",
+    swig_Osc_Sf_SwigStatic_methods,
+    swig_Osc_Sf_SwigStatic_attributes,
+    swig_Osc_Sf_SwigStatic_constants,
+    swig_Osc_Sf_SwigStatic_classes,
+    0
+};
+static swig_lua_class *swig_Osc_bases[] = {0,0,0};
+static const char *swig_Osc_base_names[] = {"gam::Accum< > *","gam::ArrayPow2< SampleType > *",0};
+static swig_lua_class _wrap_class_Osc = { "Osc", "Osc", &SWIGTYPE_p_gam__OscT_float_ipl__Linear_phsInc__Loop_GAM_DEFAULT_DOMAIN_t,_proxy__wrap_new_Osc, swig_delete_Osc, swig_Osc_methods, swig_Osc_attributes, &swig_Osc_Sf_SwigStatic, swig_Osc_meta, swig_Osc_bases, swig_Osc_base_names };
+
+static int _wrap_new_CSine__SWIG_0(lua_State* L) {
+  int SWIG_arg = 0;
+  float arg1 ;
+  float arg2 ;
+  float arg3 ;
+  float arg4 ;
+  gam::CSine< SampleType > *result = 0 ;
+  
+  SWIG_check_num_args("gam::CSine< SampleType >::CSine",4,4)
+  if(!lua_isnumber(L,1)) SWIG_fail_arg("gam::CSine< SampleType >::CSine",1,"float");
+  if(!lua_isnumber(L,2)) SWIG_fail_arg("gam::CSine< SampleType >::CSine",2,"float");
+  if(!lua_isnumber(L,3)) SWIG_fail_arg("gam::CSine< SampleType >::CSine",3,"float");
+  if(!lua_isnumber(L,4)) SWIG_fail_arg("gam::CSine< SampleType >::CSine",4,"float");
+  arg1 = (float)lua_tonumber(L, 1);
+  arg2 = (float)lua_tonumber(L, 2);
+  arg3 = (float)lua_tonumber(L, 3);
+  arg4 = (float)lua_tonumber(L, 4);
+  result = (gam::CSine< SampleType > *)new gam::CSine< SampleType >(arg1,arg2,arg3,arg4);
+  SWIG_NewPointerObj(L,result,SWIGTYPE_p_gam__CSineT_float_GAM_DEFAULT_DOMAIN_t,1); SWIG_arg++; 
+  return SWIG_arg;
+  
+  if(0) SWIG_fail;
+  
+fail:
+  lua_error(L);
+  return SWIG_arg;
+}
+
+
+static int _wrap_new_CSine__SWIG_1(lua_State* L) {
+  int SWIG_arg = 0;
+  float arg1 ;
+  float arg2 ;
+  float arg3 ;
+  gam::CSine< SampleType > *result = 0 ;
+  
+  SWIG_check_num_args("gam::CSine< SampleType >::CSine",3,3)
+  if(!lua_isnumber(L,1)) SWIG_fail_arg("gam::CSine< SampleType >::CSine",1,"float");
+  if(!lua_isnumber(L,2)) SWIG_fail_arg("gam::CSine< SampleType >::CSine",2,"float");
+  if(!lua_isnumber(L,3)) SWIG_fail_arg("gam::CSine< SampleType >::CSine",3,"float");
+  arg1 = (float)lua_tonumber(L, 1);
+  arg2 = (float)lua_tonumber(L, 2);
+  arg3 = (float)lua_tonumber(L, 3);
+  result = (gam::CSine< SampleType > *)new gam::CSine< SampleType >(arg1,arg2,arg3);
+  SWIG_NewPointerObj(L,result,SWIGTYPE_p_gam__CSineT_float_GAM_DEFAULT_DOMAIN_t,1); SWIG_arg++; 
+  return SWIG_arg;
+  
+  if(0) SWIG_fail;
+  
+fail:
+  lua_error(L);
+  return SWIG_arg;
+}
+
+
+static int _wrap_new_CSine__SWIG_2(lua_State* L) {
+  int SWIG_arg = 0;
+  float arg1 ;
+  float arg2 ;
+  gam::CSine< SampleType > *result = 0 ;
+  
+  SWIG_check_num_args("gam::CSine< SampleType >::CSine",2,2)
+  if(!lua_isnumber(L,1)) SWIG_fail_arg("gam::CSine< SampleType >::CSine",1,"float");
+  if(!lua_isnumber(L,2)) SWIG_fail_arg("gam::CSine< SampleType >::CSine",2,"float");
+  arg1 = (float)lua_tonumber(L, 1);
+  arg2 = (float)lua_tonumber(L, 2);
+  result = (gam::CSine< SampleType > *)new gam::CSine< SampleType >(arg1,arg2);
+  SWIG_NewPointerObj(L,result,SWIGTYPE_p_gam__CSineT_float_GAM_DEFAULT_DOMAIN_t,1); SWIG_arg++; 
+  return SWIG_arg;
+  
+  if(0) SWIG_fail;
+  
+fail:
+  lua_error(L);
+  return SWIG_arg;
+}
+
+
+static int _wrap_new_CSine__SWIG_3(lua_State* L) {
+  int SWIG_arg = 0;
+  float arg1 ;
+  gam::CSine< SampleType > *result = 0 ;
+  
+  SWIG_check_num_args("gam::CSine< SampleType >::CSine",1,1)
+  if(!lua_isnumber(L,1)) SWIG_fail_arg("gam::CSine< SampleType >::CSine",1,"float");
+  arg1 = (float)lua_tonumber(L, 1);
+  result = (gam::CSine< SampleType > *)new gam::CSine< SampleType >(arg1);
+  SWIG_NewPointerObj(L,result,SWIGTYPE_p_gam__CSineT_float_GAM_DEFAULT_DOMAIN_t,1); SWIG_arg++; 
+  return SWIG_arg;
+  
+  if(0) SWIG_fail;
+  
+fail:
+  lua_error(L);
+  return SWIG_arg;
+}
+
+
+static int _wrap_new_CSine__SWIG_4(lua_State* L) {
+  int SWIG_arg = 0;
+  gam::CSine< SampleType > *result = 0 ;
+  
+  SWIG_check_num_args("gam::CSine< SampleType >::CSine",0,0)
+  result = (gam::CSine< SampleType > *)new gam::CSine< SampleType >();
+  SWIG_NewPointerObj(L,result,SWIGTYPE_p_gam__CSineT_float_GAM_DEFAULT_DOMAIN_t,1); SWIG_arg++; 
+  return SWIG_arg;
+  
+  if(0) SWIG_fail;
+  
+fail:
+  lua_error(L);
+  return SWIG_arg;
+}
+
+
+static int _wrap_new_CSine(lua_State* L) {
+  int argc;
+  int argv[5]={
+    1,2,3,4,5
+  };
+  
+  argc = lua_gettop(L);
+  if (argc == 0) {
+    return _wrap_new_CSine__SWIG_4(L);
+  }
+  if (argc == 1) {
+    int _v = 0;
+    {
+      _v = lua_isnumber(L,argv[0]);
+    }
+    if (_v) {
+      return _wrap_new_CSine__SWIG_3(L);
+    }
+  }
+  if (argc == 2) {
+    int _v = 0;
+    {
+      _v = lua_isnumber(L,argv[0]);
+    }
+    if (_v) {
+      {
+        _v = lua_isnumber(L,argv[1]);
+      }
+      if (_v) {
+        return _wrap_new_CSine__SWIG_2(L);
+      }
+    }
+  }
+  if (argc == 3) {
+    int _v = 0;
+    {
+      _v = lua_isnumber(L,argv[0]);
+    }
+    if (_v) {
+      {
+        _v = lua_isnumber(L,argv[1]);
+      }
+      if (_v) {
+        {
+          _v = lua_isnumber(L,argv[2]);
+        }
+        if (_v) {
+          return _wrap_new_CSine__SWIG_1(L);
+        }
+      }
+    }
+  }
+  if (argc == 4) {
+    int _v = 0;
+    {
+      _v = lua_isnumber(L,argv[0]);
+    }
+    if (_v) {
+      {
+        _v = lua_isnumber(L,argv[1]);
+      }
+      if (_v) {
+        {
+          _v = lua_isnumber(L,argv[2]);
+        }
+        if (_v) {
+          {
+            _v = lua_isnumber(L,argv[3]);
+          }
+          if (_v) {
+            return _wrap_new_CSine__SWIG_0(L);
+          }
+        }
+      }
+    }
+  }
+  
+  SWIG_Lua_pusherrstring(L,"Wrong arguments for overloaded function 'new_CSine'\n"
+    "  Possible C/C++ prototypes are:\n"
+    "    gam::CSine< SampleType >::CSine(float,float,float,float)\n"
+    "    gam::CSine< SampleType >::CSine(float,float,float)\n"
+    "    gam::CSine< SampleType >::CSine(float,float)\n"
+    "    gam::CSine< SampleType >::CSine(float)\n"
+    "    gam::CSine< SampleType >::CSine()\n");
+  lua_error(L);return 0;
+}
+
+
+static int _wrap_CSine_val_set(lua_State* L) {
+  int SWIG_arg = 0;
+  gam::CSine< SampleType > *arg1 = (gam::CSine< SampleType > *) 0 ;
+  gam::CSine< float >::complex arg2 ;
+  gam::CSine< float >::complex *argp2 ;
+  
+  SWIG_check_num_args("gam::CSine< SampleType >::val",2,2)
+  if(!SWIG_isptrtype(L,1)) SWIG_fail_arg("gam::CSine< SampleType >::val",1,"gam::CSine< SampleType > *");
+  if(!lua_isuserdata(L,2)) SWIG_fail_arg("gam::CSine< SampleType >::val",2,"gam::CSine< float >::complex");
+  
+  if (!SWIG_IsOK(SWIG_ConvertPtr(L,1,(void**)&arg1,SWIGTYPE_p_gam__CSineT_float_GAM_DEFAULT_DOMAIN_t,0))){
+    SWIG_fail_ptr("CSine_val_set",1,SWIGTYPE_p_gam__CSineT_float_GAM_DEFAULT_DOMAIN_t);
+  }
+  
+  
+  if (!SWIG_IsOK(SWIG_ConvertPtr(L,2,(void**)&argp2,SWIGTYPE_p_ComplexT_float_t,0))){
+    SWIG_fail_ptr("CSine_val_set",2,SWIGTYPE_p_ComplexT_float_t);
+  }
+  arg2 = *argp2;
+  
+  if (arg1) (arg1)->val = arg2;
+  
+  return SWIG_arg;
+  
+  if(0) SWIG_fail;
+  
+fail:
+  lua_error(L);
+  return SWIG_arg;
+}
+
+
+static int _wrap_CSine_val_get(lua_State* L) {
+  int SWIG_arg = 0;
+  gam::CSine< SampleType > *arg1 = (gam::CSine< SampleType > *) 0 ;
+  gam::CSine< float >::complex result;
+  
+  SWIG_check_num_args("gam::CSine< SampleType >::val",1,1)
+  if(!SWIG_isptrtype(L,1)) SWIG_fail_arg("gam::CSine< SampleType >::val",1,"gam::CSine< SampleType > *");
+  
+  if (!SWIG_IsOK(SWIG_ConvertPtr(L,1,(void**)&arg1,SWIGTYPE_p_gam__CSineT_float_GAM_DEFAULT_DOMAIN_t,0))){
+    SWIG_fail_ptr("CSine_val_get",1,SWIGTYPE_p_gam__CSineT_float_GAM_DEFAULT_DOMAIN_t);
+  }
+  
+  result =  ((arg1)->val);
+  {
+    gam::CSine< float >::complex * resultptr = new gam::CSine< float >::complex((const gam::CSine< float >::complex &) result);
+    SWIG_NewPointerObj(L,(void *) resultptr,SWIGTYPE_p_ComplexT_float_t,1); SWIG_arg++;
+  }
+  return SWIG_arg;
+  
+  if(0) SWIG_fail;
+  
+fail:
+  lua_error(L);
+  return SWIG_arg;
+}
+
+
+static int _wrap_CSine_Tick(lua_State* L) {
+  int SWIG_arg = 0;
+  gam::CSine< SampleType > *arg1 = (gam::CSine< SampleType > *) 0 ;
+  gam::CSine< float >::complex result;
+  
+  SWIG_check_num_args("gam::CSine< SampleType >::Tick",1,1)
+  if(!SWIG_isptrtype(L,1)) SWIG_fail_arg("gam::CSine< SampleType >::Tick",1,"gam::CSine< SampleType > *");
+  
+  if (!SWIG_IsOK(SWIG_ConvertPtr(L,1,(void**)&arg1,SWIGTYPE_p_gam__CSineT_float_GAM_DEFAULT_DOMAIN_t,0))){
+    SWIG_fail_ptr("CSine_Tick",1,SWIGTYPE_p_gam__CSineT_float_GAM_DEFAULT_DOMAIN_t);
+  }
+  
+  result = gam_CSine_Sl_SampleType_Sg__Tick__SWIG(arg1);
+  {
+    gam::CSine< float >::complex * resultptr = new gam::CSine< float >::complex((const gam::CSine< float >::complex &) result);
+    SWIG_NewPointerObj(L,(void *) resultptr,SWIGTYPE_p_ComplexT_float_t,1); SWIG_arg++;
+  }
+  return SWIG_arg;
+  
+  if(0) SWIG_fail;
+  
+fail:
+  lua_error(L);
+  return SWIG_arg;
+}
+
+
+static int _wrap_CSine_amp__SWIG_0(lua_State* L) {
+  int SWIG_arg = 0;
+  gam::CSine< SampleType > *arg1 = (gam::CSine< SampleType > *) 0 ;
+  float arg2 ;
+  
+  SWIG_check_num_args("gam::CSine< SampleType >::amp",2,2)
+  if(!SWIG_isptrtype(L,1)) SWIG_fail_arg("gam::CSine< SampleType >::amp",1,"gam::CSine< SampleType > *");
+  if(!lua_isnumber(L,2)) SWIG_fail_arg("gam::CSine< SampleType >::amp",2,"float");
+  
+  if (!SWIG_IsOK(SWIG_ConvertPtr(L,1,(void**)&arg1,SWIGTYPE_p_gam__CSineT_float_GAM_DEFAULT_DOMAIN_t,0))){
+    SWIG_fail_ptr("CSine_amp",1,SWIGTYPE_p_gam__CSineT_float_GAM_DEFAULT_DOMAIN_t);
+  }
+  
+  arg2 = (float)lua_tonumber(L, 2);
+  (arg1)->amp(arg2);
+  
+  return SWIG_arg;
+  
+  if(0) SWIG_fail;
+  
+fail:
+  lua_error(L);
+  return SWIG_arg;
+}
+
+
+static int _wrap_CSine_decay__SWIG_0(lua_State* L) {
+  int SWIG_arg = 0;
+  gam::CSine< SampleType > *arg1 = (gam::CSine< SampleType > *) 0 ;
+  float arg2 ;
+  
+  SWIG_check_num_args("gam::CSine< SampleType >::decay",2,2)
+  if(!SWIG_isptrtype(L,1)) SWIG_fail_arg("gam::CSine< SampleType >::decay",1,"gam::CSine< SampleType > *");
+  if(!lua_isnumber(L,2)) SWIG_fail_arg("gam::CSine< SampleType >::decay",2,"float");
+  
+  if (!SWIG_IsOK(SWIG_ConvertPtr(L,1,(void**)&arg1,SWIGTYPE_p_gam__CSineT_float_GAM_DEFAULT_DOMAIN_t,0))){
+    SWIG_fail_ptr("CSine_decay",1,SWIGTYPE_p_gam__CSineT_float_GAM_DEFAULT_DOMAIN_t);
+  }
+  
+  arg2 = (float)lua_tonumber(L, 2);
+  (arg1)->decay(arg2);
+  
+  return SWIG_arg;
+  
+  if(0) SWIG_fail;
+  
+fail:
+  lua_error(L);
+  return SWIG_arg;
+}
+
+
+static int _wrap_CSine_freq__SWIG_0(lua_State* L) {
+  int SWIG_arg = 0;
+  gam::CSine< SampleType > *arg1 = (gam::CSine< SampleType > *) 0 ;
+  float arg2 ;
+  
+  SWIG_check_num_args("gam::CSine< SampleType >::freq",2,2)
+  if(!SWIG_isptrtype(L,1)) SWIG_fail_arg("gam::CSine< SampleType >::freq",1,"gam::CSine< SampleType > *");
+  if(!lua_isnumber(L,2)) SWIG_fail_arg("gam::CSine< SampleType >::freq",2,"float");
+  
+  if (!SWIG_IsOK(SWIG_ConvertPtr(L,1,(void**)&arg1,SWIGTYPE_p_gam__CSineT_float_GAM_DEFAULT_DOMAIN_t,0))){
+    SWIG_fail_ptr("CSine_freq",1,SWIGTYPE_p_gam__CSineT_float_GAM_DEFAULT_DOMAIN_t);
+  }
+  
+  arg2 = (float)lua_tonumber(L, 2);
+  (arg1)->freq(arg2);
+  
+  return SWIG_arg;
+  
+  if(0) SWIG_fail;
+  
+fail:
+  lua_error(L);
+  return SWIG_arg;
+}
+
+
+static int _wrap_CSine_freq__SWIG_1(lua_State* L) {
+  int SWIG_arg = 0;
+  gam::CSine< SampleType > *arg1 = (gam::CSine< SampleType > *) 0 ;
+  gam::CSine< float >::complex arg2 ;
+  gam::CSine< float >::complex *argp2 ;
+  
+  SWIG_check_num_args("gam::CSine< SampleType >::freq",2,2)
+  if(!SWIG_isptrtype(L,1)) SWIG_fail_arg("gam::CSine< SampleType >::freq",1,"gam::CSine< SampleType > *");
+  if(!lua_isuserdata(L,2)) SWIG_fail_arg("gam::CSine< SampleType >::freq",2,"gam::CSine< float >::complex");
+  
+  if (!SWIG_IsOK(SWIG_ConvertPtr(L,1,(void**)&arg1,SWIGTYPE_p_gam__CSineT_float_GAM_DEFAULT_DOMAIN_t,0))){
+    SWIG_fail_ptr("CSine_freq",1,SWIGTYPE_p_gam__CSineT_float_GAM_DEFAULT_DOMAIN_t);
+  }
+  
+  
+  if (!SWIG_IsOK(SWIG_ConvertPtr(L,2,(void**)&argp2,SWIGTYPE_p_ComplexT_float_t,0))){
+    SWIG_fail_ptr("CSine_freq",2,SWIGTYPE_p_ComplexT_float_t);
+  }
+  arg2 = *argp2;
+  
+  (arg1)->freq(arg2);
+  
+  return SWIG_arg;
+  
+  if(0) SWIG_fail;
+  
+fail:
+  lua_error(L);
+  return SWIG_arg;
+}
+
+
+static int _wrap_CSine_phase(lua_State* L) {
+  int SWIG_arg = 0;
+  gam::CSine< SampleType > *arg1 = (gam::CSine< SampleType > *) 0 ;
+  float arg2 ;
+  
+  SWIG_check_num_args("gam::CSine< SampleType >::phase",2,2)
+  if(!SWIG_isptrtype(L,1)) SWIG_fail_arg("gam::CSine< SampleType >::phase",1,"gam::CSine< SampleType > *");
+  if(!lua_isnumber(L,2)) SWIG_fail_arg("gam::CSine< SampleType >::phase",2,"float");
+  
+  if (!SWIG_IsOK(SWIG_ConvertPtr(L,1,(void**)&arg1,SWIGTYPE_p_gam__CSineT_float_GAM_DEFAULT_DOMAIN_t,0))){
+    SWIG_fail_ptr("CSine_phase",1,SWIGTYPE_p_gam__CSineT_float_GAM_DEFAULT_DOMAIN_t);
+  }
+  
+  arg2 = (float)lua_tonumber(L, 2);
+  (arg1)->phase(arg2);
+  
+  return SWIG_arg;
+  
+  if(0) SWIG_fail;
+  
+fail:
+  lua_error(L);
+  return SWIG_arg;
+}
+
+
+static int _wrap_CSine_reset(lua_State* L) {
+  int SWIG_arg = 0;
+  gam::CSine< SampleType > *arg1 = (gam::CSine< SampleType > *) 0 ;
+  
+  SWIG_check_num_args("gam::CSine< SampleType >::reset",1,1)
+  if(!SWIG_isptrtype(L,1)) SWIG_fail_arg("gam::CSine< SampleType >::reset",1,"gam::CSine< SampleType > *");
+  
+  if (!SWIG_IsOK(SWIG_ConvertPtr(L,1,(void**)&arg1,SWIGTYPE_p_gam__CSineT_float_GAM_DEFAULT_DOMAIN_t,0))){
+    SWIG_fail_ptr("CSine_reset",1,SWIGTYPE_p_gam__CSineT_float_GAM_DEFAULT_DOMAIN_t);
+  }
+  
+  (arg1)->reset();
+  
+  return SWIG_arg;
+  
+  if(0) SWIG_fail;
+  
+fail:
+  lua_error(L);
+  return SWIG_arg;
+}
+
+
+static int _wrap_CSine_set(lua_State* L) {
+  int SWIG_arg = 0;
+  gam::CSine< SampleType > *arg1 = (gam::CSine< SampleType > *) 0 ;
+  float arg2 ;
+  float arg3 ;
+  float arg4 ;
+  float arg5 ;
+  
+  SWIG_check_num_args("gam::CSine< SampleType >::set",5,5)
+  if(!SWIG_isptrtype(L,1)) SWIG_fail_arg("gam::CSine< SampleType >::set",1,"gam::CSine< SampleType > *");
+  if(!lua_isnumber(L,2)) SWIG_fail_arg("gam::CSine< SampleType >::set",2,"float");
+  if(!lua_isnumber(L,3)) SWIG_fail_arg("gam::CSine< SampleType >::set",3,"float");
+  if(!lua_isnumber(L,4)) SWIG_fail_arg("gam::CSine< SampleType >::set",4,"float");
+  if(!lua_isnumber(L,5)) SWIG_fail_arg("gam::CSine< SampleType >::set",5,"float");
+  
+  if (!SWIG_IsOK(SWIG_ConvertPtr(L,1,(void**)&arg1,SWIGTYPE_p_gam__CSineT_float_GAM_DEFAULT_DOMAIN_t,0))){
+    SWIG_fail_ptr("CSine_set",1,SWIGTYPE_p_gam__CSineT_float_GAM_DEFAULT_DOMAIN_t);
+  }
+  
+  arg2 = (float)lua_tonumber(L, 2);
+  arg3 = (float)lua_tonumber(L, 3);
+  arg4 = (float)lua_tonumber(L, 4);
+  arg5 = (float)lua_tonumber(L, 5);
+  (arg1)->set(arg2,arg3,arg4,arg5);
+  
+  return SWIG_arg;
+  
+  if(0) SWIG_fail;
+  
+fail:
+  lua_error(L);
+  return SWIG_arg;
+}
+
+
+static int _wrap_CSine_amp__SWIG_1(lua_State* L) {
+  int SWIG_arg = 0;
+  gam::CSine< SampleType > *arg1 = (gam::CSine< SampleType > *) 0 ;
+  float result;
+  
+  SWIG_check_num_args("gam::CSine< SampleType >::amp",1,1)
+  if(!SWIG_isptrtype(L,1)) SWIG_fail_arg("gam::CSine< SampleType >::amp",1,"gam::CSine< SampleType > const *");
+  
+  if (!SWIG_IsOK(SWIG_ConvertPtr(L,1,(void**)&arg1,SWIGTYPE_p_gam__CSineT_float_GAM_DEFAULT_DOMAIN_t,0))){
+    SWIG_fail_ptr("CSine_amp",1,SWIGTYPE_p_gam__CSineT_float_GAM_DEFAULT_DOMAIN_t);
+  }
+  
+  result = (float)((gam::CSine< SampleType > const *)arg1)->amp();
+  lua_pushnumber(L, (lua_Number) result); SWIG_arg++;
+  return SWIG_arg;
+  
+  if(0) SWIG_fail;
+  
+fail:
+  lua_error(L);
+  return SWIG_arg;
+}
+
+
+static int _wrap_CSine_amp(lua_State* L) {
+  int argc;
+  int argv[3]={
+    1,2,3
+  };
+  
+  argc = lua_gettop(L);
+  if (argc == 1) {
+    int _v = 0;
+    {
+      void *ptr;
+      if (SWIG_isptrtype(L,argv[0])==0 || SWIG_ConvertPtr(L,argv[0], (void **) &ptr, SWIGTYPE_p_gam__CSineT_float_GAM_DEFAULT_DOMAIN_t, 0)) {
+        _v = 0;
+      } else {
+        _v = 1;
+      }
+    }
+    if (_v) {
+      return _wrap_CSine_amp__SWIG_1(L);
+    }
+  }
+  if (argc == 2) {
+    int _v = 0;
+    {
+      void *ptr;
+      if (SWIG_isptrtype(L,argv[0])==0 || SWIG_ConvertPtr(L,argv[0], (void **) &ptr, SWIGTYPE_p_gam__CSineT_float_GAM_DEFAULT_DOMAIN_t, 0)) {
+        _v = 0;
+      } else {
+        _v = 1;
+      }
+    }
+    if (_v) {
+      {
+        _v = lua_isnumber(L,argv[1]);
+      }
+      if (_v) {
+        return _wrap_CSine_amp__SWIG_0(L);
+      }
+    }
+  }
+  
+  SWIG_Lua_pusherrstring(L,"Wrong arguments for overloaded function 'CSine_amp'\n"
+    "  Possible C/C++ prototypes are:\n"
+    "    gam::CSine< SampleType >::amp(float)\n"
+    "    gam::CSine< SampleType >::amp() const\n");
+  lua_error(L);return 0;
+}
+
+
+static int _wrap_CSine_decay__SWIG_1(lua_State* L) {
+  int SWIG_arg = 0;
+  gam::CSine< SampleType > *arg1 = (gam::CSine< SampleType > *) 0 ;
+  float result;
+  
+  SWIG_check_num_args("gam::CSine< SampleType >::decay",1,1)
+  if(!SWIG_isptrtype(L,1)) SWIG_fail_arg("gam::CSine< SampleType >::decay",1,"gam::CSine< SampleType > const *");
+  
+  if (!SWIG_IsOK(SWIG_ConvertPtr(L,1,(void**)&arg1,SWIGTYPE_p_gam__CSineT_float_GAM_DEFAULT_DOMAIN_t,0))){
+    SWIG_fail_ptr("CSine_decay",1,SWIGTYPE_p_gam__CSineT_float_GAM_DEFAULT_DOMAIN_t);
+  }
+  
+  result = (float)((gam::CSine< SampleType > const *)arg1)->decay();
+  lua_pushnumber(L, (lua_Number) result); SWIG_arg++;
+  return SWIG_arg;
+  
+  if(0) SWIG_fail;
+  
+fail:
+  lua_error(L);
+  return SWIG_arg;
+}
+
+
+static int _wrap_CSine_decay(lua_State* L) {
+  int argc;
+  int argv[3]={
+    1,2,3
+  };
+  
+  argc = lua_gettop(L);
+  if (argc == 1) {
+    int _v = 0;
+    {
+      void *ptr;
+      if (SWIG_isptrtype(L,argv[0])==0 || SWIG_ConvertPtr(L,argv[0], (void **) &ptr, SWIGTYPE_p_gam__CSineT_float_GAM_DEFAULT_DOMAIN_t, 0)) {
+        _v = 0;
+      } else {
+        _v = 1;
+      }
+    }
+    if (_v) {
+      return _wrap_CSine_decay__SWIG_1(L);
+    }
+  }
+  if (argc == 2) {
+    int _v = 0;
+    {
+      void *ptr;
+      if (SWIG_isptrtype(L,argv[0])==0 || SWIG_ConvertPtr(L,argv[0], (void **) &ptr, SWIGTYPE_p_gam__CSineT_float_GAM_DEFAULT_DOMAIN_t, 0)) {
+        _v = 0;
+      } else {
+        _v = 1;
+      }
+    }
+    if (_v) {
+      {
+        _v = lua_isnumber(L,argv[1]);
+      }
+      if (_v) {
+        return _wrap_CSine_decay__SWIG_0(L);
+      }
+    }
+  }
+  
+  SWIG_Lua_pusherrstring(L,"Wrong arguments for overloaded function 'CSine_decay'\n"
+    "  Possible C/C++ prototypes are:\n"
+    "    gam::CSine< SampleType >::decay(float)\n"
+    "    gam::CSine< SampleType >::decay() const\n");
+  lua_error(L);return 0;
+}
+
+
+static int _wrap_CSine_freq__SWIG_2(lua_State* L) {
+  int SWIG_arg = 0;
+  gam::CSine< SampleType > *arg1 = (gam::CSine< SampleType > *) 0 ;
+  float result;
+  
+  SWIG_check_num_args("gam::CSine< SampleType >::freq",1,1)
+  if(!SWIG_isptrtype(L,1)) SWIG_fail_arg("gam::CSine< SampleType >::freq",1,"gam::CSine< SampleType > const *");
+  
+  if (!SWIG_IsOK(SWIG_ConvertPtr(L,1,(void**)&arg1,SWIGTYPE_p_gam__CSineT_float_GAM_DEFAULT_DOMAIN_t,0))){
+    SWIG_fail_ptr("CSine_freq",1,SWIGTYPE_p_gam__CSineT_float_GAM_DEFAULT_DOMAIN_t);
+  }
+  
+  result = (float)((gam::CSine< SampleType > const *)arg1)->freq();
+  lua_pushnumber(L, (lua_Number) result); SWIG_arg++;
+  return SWIG_arg;
+  
+  if(0) SWIG_fail;
+  
+fail:
+  lua_error(L);
+  return SWIG_arg;
+}
+
+
+static int _wrap_CSine_freq(lua_State* L) {
+  int argc;
+  int argv[3]={
+    1,2,3
+  };
+  
+  argc = lua_gettop(L);
+  if (argc == 1) {
+    int _v = 0;
+    {
+      void *ptr;
+      if (SWIG_isptrtype(L,argv[0])==0 || SWIG_ConvertPtr(L,argv[0], (void **) &ptr, SWIGTYPE_p_gam__CSineT_float_GAM_DEFAULT_DOMAIN_t, 0)) {
+        _v = 0;
+      } else {
+        _v = 1;
+      }
+    }
+    if (_v) {
+      return _wrap_CSine_freq__SWIG_2(L);
+    }
+  }
+  if (argc == 2) {
+    int _v = 0;
+    {
+      void *ptr;
+      if (SWIG_isptrtype(L,argv[0])==0 || SWIG_ConvertPtr(L,argv[0], (void **) &ptr, SWIGTYPE_p_gam__CSineT_float_GAM_DEFAULT_DOMAIN_t, 0)) {
+        _v = 0;
+      } else {
+        _v = 1;
+      }
+    }
+    if (_v) {
+      {
+        void *ptr;
+        if (lua_isuserdata(L,argv[1])==0 || SWIG_ConvertPtr(L,argv[1], (void **) &ptr, SWIGTYPE_p_ComplexT_float_t, SWIG_POINTER_NO_NULL)) {
+          _v = 0;
+        } else {
+          _v = 1;
+        }
+      }
+      if (_v) {
+        return _wrap_CSine_freq__SWIG_1(L);
+      }
+    }
+  }
+  if (argc == 2) {
+    int _v = 0;
+    {
+      void *ptr;
+      if (SWIG_isptrtype(L,argv[0])==0 || SWIG_ConvertPtr(L,argv[0], (void **) &ptr, SWIGTYPE_p_gam__CSineT_float_GAM_DEFAULT_DOMAIN_t, 0)) {
+        _v = 0;
+      } else {
+        _v = 1;
+      }
+    }
+    if (_v) {
+      {
+        _v = lua_isnumber(L,argv[1]);
+      }
+      if (_v) {
+        return _wrap_CSine_freq__SWIG_0(L);
+      }
+    }
+  }
+  
+  SWIG_Lua_pusherrstring(L,"Wrong arguments for overloaded function 'CSine_freq'\n"
+    "  Possible C/C++ prototypes are:\n"
+    "    gam::CSine< SampleType >::freq(float)\n"
+    "    gam::CSine< SampleType >::freq(gam::CSine< float >::complex)\n"
+    "    gam::CSine< SampleType >::freq() const\n");
+  lua_error(L);return 0;
+}
+
+
+static int _wrap_CSine_onDomainChange(lua_State* L) {
+  int SWIG_arg = 0;
+  gam::CSine< SampleType > *arg1 = (gam::CSine< SampleType > *) 0 ;
+  double arg2 ;
+  
+  SWIG_check_num_args("gam::CSine< SampleType >::onDomainChange",2,2)
+  if(!SWIG_isptrtype(L,1)) SWIG_fail_arg("gam::CSine< SampleType >::onDomainChange",1,"gam::CSine< SampleType > *");
+  if(!lua_isnumber(L,2)) SWIG_fail_arg("gam::CSine< SampleType >::onDomainChange",2,"double");
+  
+  if (!SWIG_IsOK(SWIG_ConvertPtr(L,1,(void**)&arg1,SWIGTYPE_p_gam__CSineT_float_GAM_DEFAULT_DOMAIN_t,0))){
+    SWIG_fail_ptr("CSine_onDomainChange",1,SWIGTYPE_p_gam__CSineT_float_GAM_DEFAULT_DOMAIN_t);
+  }
+  
+  arg2 = (double)lua_tonumber(L, 2);
+  (arg1)->onDomainChange(arg2);
+  
+  return SWIG_arg;
+  
+  if(0) SWIG_fail;
+  
+fail:
+  lua_error(L);
+  return SWIG_arg;
+}
+
+
+static void swig_delete_CSine(void *obj) {
+gam::CSine< SampleType > *arg1 = (gam::CSine< SampleType > *) obj;
+delete arg1;
+}
+static int _proxy__wrap_new_CSine(lua_State *L) {
+    assert(lua_istable(L,1));
+    lua_pushcfunction(L,_wrap_new_CSine);
+    assert(!lua_isnil(L,-1));
+    lua_replace(L,1); /* replace our table with real constructor */
+    lua_call(L,lua_gettop(L)-1,1);
+    return 1;
+}
+static swig_lua_attribute swig_CSine_attributes[] = {
+    { "val", _wrap_CSine_val_get, _wrap_CSine_val_set },
+    {0,0,0}
+};
+static swig_lua_method swig_CSine_methods[]= {
+    { "Tick", _wrap_CSine_Tick},
+    { "phase", _wrap_CSine_phase},
+    { "reset", _wrap_CSine_reset},
+    { "set", _wrap_CSine_set},
+    { "amp", _wrap_CSine_amp},
+    { "decay", _wrap_CSine_decay},
+    { "freq", _wrap_CSine_freq},
+    { "onDomainChange", _wrap_CSine_onDomainChange},
+    {0,0}
+};
+static swig_lua_method swig_CSine_meta[] = {
+    {0,0}
+};
+
+static swig_lua_attribute swig_CSine_Sf_SwigStatic_attributes[] = {
+    {0,0,0}
+};
+static swig_lua_const_info swig_CSine_Sf_SwigStatic_constants[]= {
+    {0,0,0,0,0,0}
+};
+static swig_lua_method swig_CSine_Sf_SwigStatic_methods[]= {
+    {0,0}
+};
+static swig_lua_class* swig_CSine_Sf_SwigStatic_classes[]= {
+    0
+};
+
+static swig_lua_namespace swig_CSine_Sf_SwigStatic = {
+    "CSine",
+    swig_CSine_Sf_SwigStatic_methods,
+    swig_CSine_Sf_SwigStatic_attributes,
+    swig_CSine_Sf_SwigStatic_constants,
+    swig_CSine_Sf_SwigStatic_classes,
+    0
+};
+static swig_lua_class *swig_CSine_bases[] = {0};
+static const char *swig_CSine_base_names[] = {0};
+static swig_lua_class _wrap_class_CSine = { "CSine", "CSine", &SWIGTYPE_p_gam__CSineT_float_GAM_DEFAULT_DOMAIN_t,_proxy__wrap_new_CSine, swig_delete_CSine, swig_CSine_methods, swig_CSine_attributes, &swig_CSine_Sf_SwigStatic, swig_CSine_meta, swig_CSine_bases, swig_CSine_base_names };
+
+static int _wrap_new_Sine__SWIG_0(lua_State* L) {
+  int SWIG_arg = 0;
+  float arg1 ;
+  float arg2 ;
+  gam::Sine< SampleType > *result = 0 ;
+  
+  SWIG_check_num_args("gam::Sine< SampleType >::Sine",2,2)
+  if(!lua_isnumber(L,1)) SWIG_fail_arg("gam::Sine< SampleType >::Sine",1,"float");
+  if(!lua_isnumber(L,2)) SWIG_fail_arg("gam::Sine< SampleType >::Sine",2,"float");
+  arg1 = (float)lua_tonumber(L, 1);
+  arg2 = (float)lua_tonumber(L, 2);
+  result = (gam::Sine< SampleType > *)new gam::Sine< SampleType >(arg1,arg2);
+  SWIG_NewPointerObj(L,result,SWIGTYPE_p_gam__SineT_float_GAM_DEFAULT_DOMAIN_t,1); SWIG_arg++; 
+  return SWIG_arg;
+  
+  if(0) SWIG_fail;
+  
+fail:
+  lua_error(L);
+  return SWIG_arg;
+}
+
+
+static int _wrap_new_Sine__SWIG_1(lua_State* L) {
+  int SWIG_arg = 0;
+  float arg1 ;
+  gam::Sine< SampleType > *result = 0 ;
+  
+  SWIG_check_num_args("gam::Sine< SampleType >::Sine",1,1)
+  if(!lua_isnumber(L,1)) SWIG_fail_arg("gam::Sine< SampleType >::Sine",1,"float");
+  arg1 = (float)lua_tonumber(L, 1);
+  result = (gam::Sine< SampleType > *)new gam::Sine< SampleType >(arg1);
+  SWIG_NewPointerObj(L,result,SWIGTYPE_p_gam__SineT_float_GAM_DEFAULT_DOMAIN_t,1); SWIG_arg++; 
+  return SWIG_arg;
+  
+  if(0) SWIG_fail;
+  
+fail:
+  lua_error(L);
+  return SWIG_arg;
+}
+
+
+static int _wrap_new_Sine__SWIG_2(lua_State* L) {
+  int SWIG_arg = 0;
+  gam::Sine< SampleType > *result = 0 ;
+  
+  SWIG_check_num_args("gam::Sine< SampleType >::Sine",0,0)
+  result = (gam::Sine< SampleType > *)new gam::Sine< SampleType >();
+  SWIG_NewPointerObj(L,result,SWIGTYPE_p_gam__SineT_float_GAM_DEFAULT_DOMAIN_t,1); SWIG_arg++; 
+  return SWIG_arg;
+  
+  if(0) SWIG_fail;
+  
+fail:
+  lua_error(L);
+  return SWIG_arg;
+}
+
+
+static int _wrap_new_Sine(lua_State* L) {
+  int argc;
+  int argv[3]={
+    1,2,3
+  };
+  
+  argc = lua_gettop(L);
+  if (argc == 0) {
+    return _wrap_new_Sine__SWIG_2(L);
+  }
+  if (argc == 1) {
+    int _v = 0;
+    {
+      _v = lua_isnumber(L,argv[0]);
+    }
+    if (_v) {
+      return _wrap_new_Sine__SWIG_1(L);
+    }
+  }
+  if (argc == 2) {
+    int _v = 0;
+    {
+      _v = lua_isnumber(L,argv[0]);
+    }
+    if (_v) {
+      {
+        _v = lua_isnumber(L,argv[1]);
+      }
+      if (_v) {
+        return _wrap_new_Sine__SWIG_0(L);
+      }
+    }
+  }
+  
+  SWIG_Lua_pusherrstring(L,"Wrong arguments for overloaded function 'new_Sine'\n"
+    "  Possible C/C++ prototypes are:\n"
+    "    gam::Sine< SampleType >::Sine(float,float)\n"
+    "    gam::Sine< SampleType >::Sine(float)\n"
+    "    gam::Sine< SampleType >::Sine()\n");
+  lua_error(L);return 0;
+}
+
+
+static int _wrap_Sine_Tick__SWIG_0(lua_State* L) {
+  int SWIG_arg = 0;
+  gam::Sine< SampleType > *arg1 = (gam::Sine< SampleType > *) 0 ;
+  float arg2 ;
+  float result;
+  
+  SWIG_check_num_args("gam::Sine< SampleType >::Tick",2,2)
+  if(!SWIG_isptrtype(L,1)) SWIG_fail_arg("gam::Sine< SampleType >::Tick",1,"gam::Sine< SampleType > *");
+  if(!lua_isnumber(L,2)) SWIG_fail_arg("gam::Sine< SampleType >::Tick",2,"float");
+  
+  if (!SWIG_IsOK(SWIG_ConvertPtr(L,1,(void**)&arg1,SWIGTYPE_p_gam__SineT_float_GAM_DEFAULT_DOMAIN_t,0))){
+    SWIG_fail_ptr("Sine_Tick",1,SWIGTYPE_p_gam__SineT_float_GAM_DEFAULT_DOMAIN_t);
+  }
+  
+  arg2 = (float)lua_tonumber(L, 2);
+  result = (float)gam_Sine_Sl_SampleType_Sg__Tick__SWIG_0(arg1,arg2);
+  lua_pushnumber(L, (lua_Number) result); SWIG_arg++;
+  return SWIG_arg;
+  
+  if(0) SWIG_fail;
+  
+fail:
+  lua_error(L);
+  return SWIG_arg;
+}
+
+
+static int _wrap_Sine_Tick__SWIG_1(lua_State* L) {
+  int SWIG_arg = 0;
+  gam::Sine< SampleType > *arg1 = (gam::Sine< SampleType > *) 0 ;
+  float result;
+  
+  SWIG_check_num_args("gam::Sine< SampleType >::Tick",1,1)
+  if(!SWIG_isptrtype(L,1)) SWIG_fail_arg("gam::Sine< SampleType >::Tick",1,"gam::Sine< SampleType > *");
+  
+  if (!SWIG_IsOK(SWIG_ConvertPtr(L,1,(void**)&arg1,SWIGTYPE_p_gam__SineT_float_GAM_DEFAULT_DOMAIN_t,0))){
+    SWIG_fail_ptr("Sine_Tick",1,SWIGTYPE_p_gam__SineT_float_GAM_DEFAULT_DOMAIN_t);
+  }
+  
+  result = (float)gam_Sine_Sl_SampleType_Sg__Tick__SWIG_0(arg1);
+  lua_pushnumber(L, (lua_Number) result); SWIG_arg++;
+  return SWIG_arg;
+  
+  if(0) SWIG_fail;
+  
+fail:
+  lua_error(L);
+  return SWIG_arg;
+}
+
+
+static int _wrap_Sine_Tick(lua_State* L) {
+  int argc;
+  int argv[3]={
+    1,2,3
+  };
+  
+  argc = lua_gettop(L);
+  if (argc == 1) {
+    int _v = 0;
+    {
+      void *ptr;
+      if (SWIG_isptrtype(L,argv[0])==0 || SWIG_ConvertPtr(L,argv[0], (void **) &ptr, SWIGTYPE_p_gam__SineT_float_GAM_DEFAULT_DOMAIN_t, 0)) {
+        _v = 0;
+      } else {
+        _v = 1;
+      }
+    }
+    if (_v) {
+      return _wrap_Sine_Tick__SWIG_1(L);
+    }
+  }
+  if (argc == 2) {
+    int _v = 0;
+    {
+      void *ptr;
+      if (SWIG_isptrtype(L,argv[0])==0 || SWIG_ConvertPtr(L,argv[0], (void **) &ptr, SWIGTYPE_p_gam__SineT_float_GAM_DEFAULT_DOMAIN_t, 0)) {
+        _v = 0;
+      } else {
+        _v = 1;
+      }
+    }
+    if (_v) {
+      {
+        _v = lua_isnumber(L,argv[1]);
+      }
+      if (_v) {
+        return _wrap_Sine_Tick__SWIG_0(L);
+      }
+    }
+  }
+  
+  SWIG_Lua_pusherrstring(L,"Wrong arguments for overloaded function 'Sine_Tick'\n"
+    "  Possible C/C++ prototypes are:\n"
+    "    gam::Sine< SampleType >::Tick(float)\n"
+    "    gam::Sine< SampleType >::Tick()\n");
+  lua_error(L);return 0;
+}
+
+
+static void swig_delete_Sine(void *obj) {
+gam::Sine< SampleType > *arg1 = (gam::Sine< SampleType > *) obj;
+delete arg1;
+}
+static int _proxy__wrap_new_Sine(lua_State *L) {
+    assert(lua_istable(L,1));
+    lua_pushcfunction(L,_wrap_new_Sine);
+    assert(!lua_isnil(L,-1));
+    lua_replace(L,1); /* replace our table with real constructor */
+    lua_call(L,lua_gettop(L)-1,1);
+    return 1;
+}
+static swig_lua_attribute swig_Sine_attributes[] = {
+    {0,0,0}
+};
+static swig_lua_method swig_Sine_methods[]= {
+    { "Tick", _wrap_Sine_Tick},
+    {0,0}
+};
+static swig_lua_method swig_Sine_meta[] = {
+    {0,0}
+};
+
+static swig_lua_attribute swig_Sine_Sf_SwigStatic_attributes[] = {
+    {0,0,0}
+};
+static swig_lua_const_info swig_Sine_Sf_SwigStatic_constants[]= {
+    {0,0,0,0,0,0}
+};
+static swig_lua_method swig_Sine_Sf_SwigStatic_methods[]= {
+    {0,0}
+};
+static swig_lua_class* swig_Sine_Sf_SwigStatic_classes[]= {
+    0
+};
+
+static swig_lua_namespace swig_Sine_Sf_SwigStatic = {
+    "Sine",
+    swig_Sine_Sf_SwigStatic_methods,
+    swig_Sine_Sf_SwigStatic_attributes,
+    swig_Sine_Sf_SwigStatic_constants,
+    swig_Sine_Sf_SwigStatic_classes,
+    0
+};
+static swig_lua_class *swig_Sine_bases[] = {0,0};
+static const char *swig_Sine_base_names[] = {"gam::AccumPhase< SampleType > *",0};
+static swig_lua_class _wrap_class_Sine = { "Sine", "Sine", &SWIGTYPE_p_gam__SineT_float_GAM_DEFAULT_DOMAIN_t,_proxy__wrap_new_Sine, swig_delete_Sine, swig_Sine_methods, swig_Sine_attributes, &swig_Sine_Sf_SwigStatic, swig_Sine_meta, swig_Sine_bases, swig_Sine_base_names };
+
+static int _wrap_new_SineR__SWIG_0(lua_State* L) {
+  int SWIG_arg = 0;
+  float arg1 ;
+  float arg2 ;
+  float arg3 ;
+  gam::SineR< SampleType > *result = 0 ;
+  
+  SWIG_check_num_args("gam::SineR< SampleType >::SineR",3,3)
+  if(!lua_isnumber(L,1)) SWIG_fail_arg("gam::SineR< SampleType >::SineR",1,"float");
+  if(!lua_isnumber(L,2)) SWIG_fail_arg("gam::SineR< SampleType >::SineR",2,"float");
+  if(!lua_isnumber(L,3)) SWIG_fail_arg("gam::SineR< SampleType >::SineR",3,"float");
+  arg1 = (float)lua_tonumber(L, 1);
+  arg2 = (float)lua_tonumber(L, 2);
+  arg3 = (float)lua_tonumber(L, 3);
+  result = (gam::SineR< SampleType > *)new gam::SineR< SampleType >(arg1,arg2,arg3);
+  SWIG_NewPointerObj(L,result,SWIGTYPE_p_gam__SineRT_float_GAM_DEFAULT_DOMAIN_t,1); SWIG_arg++; 
+  return SWIG_arg;
+  
+  if(0) SWIG_fail;
+  
+fail:
+  lua_error(L);
+  return SWIG_arg;
+}
+
+
+static int _wrap_new_SineR__SWIG_1(lua_State* L) {
+  int SWIG_arg = 0;
+  float arg1 ;
+  float arg2 ;
+  gam::SineR< SampleType > *result = 0 ;
+  
+  SWIG_check_num_args("gam::SineR< SampleType >::SineR",2,2)
+  if(!lua_isnumber(L,1)) SWIG_fail_arg("gam::SineR< SampleType >::SineR",1,"float");
+  if(!lua_isnumber(L,2)) SWIG_fail_arg("gam::SineR< SampleType >::SineR",2,"float");
+  arg1 = (float)lua_tonumber(L, 1);
+  arg2 = (float)lua_tonumber(L, 2);
+  result = (gam::SineR< SampleType > *)new gam::SineR< SampleType >(arg1,arg2);
+  SWIG_NewPointerObj(L,result,SWIGTYPE_p_gam__SineRT_float_GAM_DEFAULT_DOMAIN_t,1); SWIG_arg++; 
+  return SWIG_arg;
+  
+  if(0) SWIG_fail;
+  
+fail:
+  lua_error(L);
+  return SWIG_arg;
+}
+
+
+static int _wrap_new_SineR__SWIG_2(lua_State* L) {
+  int SWIG_arg = 0;
+  float arg1 ;
+  gam::SineR< SampleType > *result = 0 ;
+  
+  SWIG_check_num_args("gam::SineR< SampleType >::SineR",1,1)
+  if(!lua_isnumber(L,1)) SWIG_fail_arg("gam::SineR< SampleType >::SineR",1,"float");
+  arg1 = (float)lua_tonumber(L, 1);
+  result = (gam::SineR< SampleType > *)new gam::SineR< SampleType >(arg1);
+  SWIG_NewPointerObj(L,result,SWIGTYPE_p_gam__SineRT_float_GAM_DEFAULT_DOMAIN_t,1); SWIG_arg++; 
+  return SWIG_arg;
+  
+  if(0) SWIG_fail;
+  
+fail:
+  lua_error(L);
+  return SWIG_arg;
+}
+
+
+static int _wrap_new_SineR__SWIG_3(lua_State* L) {
+  int SWIG_arg = 0;
+  gam::SineR< SampleType > *result = 0 ;
+  
+  SWIG_check_num_args("gam::SineR< SampleType >::SineR",0,0)
+  result = (gam::SineR< SampleType > *)new gam::SineR< SampleType >();
+  SWIG_NewPointerObj(L,result,SWIGTYPE_p_gam__SineRT_float_GAM_DEFAULT_DOMAIN_t,1); SWIG_arg++; 
+  return SWIG_arg;
+  
+  if(0) SWIG_fail;
+  
+fail:
+  lua_error(L);
+  return SWIG_arg;
+}
+
+
+static int _wrap_new_SineR(lua_State* L) {
+  int argc;
+  int argv[4]={
+    1,2,3,4
+  };
+  
+  argc = lua_gettop(L);
+  if (argc == 0) {
+    return _wrap_new_SineR__SWIG_3(L);
+  }
+  if (argc == 1) {
+    int _v = 0;
+    {
+      _v = lua_isnumber(L,argv[0]);
+    }
+    if (_v) {
+      return _wrap_new_SineR__SWIG_2(L);
+    }
+  }
+  if (argc == 2) {
+    int _v = 0;
+    {
+      _v = lua_isnumber(L,argv[0]);
+    }
+    if (_v) {
+      {
+        _v = lua_isnumber(L,argv[1]);
+      }
+      if (_v) {
+        return _wrap_new_SineR__SWIG_1(L);
+      }
+    }
+  }
+  if (argc == 3) {
+    int _v = 0;
+    {
+      _v = lua_isnumber(L,argv[0]);
+    }
+    if (_v) {
+      {
+        _v = lua_isnumber(L,argv[1]);
+      }
+      if (_v) {
+        {
+          _v = lua_isnumber(L,argv[2]);
+        }
+        if (_v) {
+          return _wrap_new_SineR__SWIG_0(L);
+        }
+      }
+    }
+  }
+  
+  SWIG_Lua_pusherrstring(L,"Wrong arguments for overloaded function 'new_SineR'\n"
+    "  Possible C/C++ prototypes are:\n"
+    "    gam::SineR< SampleType >::SineR(float,float,float)\n"
+    "    gam::SineR< SampleType >::SineR(float,float)\n"
+    "    gam::SineR< SampleType >::SineR(float)\n"
+    "    gam::SineR< SampleType >::SineR()\n");
+  lua_error(L);return 0;
+}
+
+
+static int _wrap_SineR_freq__SWIG_0(lua_State* L) {
+  int SWIG_arg = 0;
+  gam::SineR< SampleType > *arg1 = (gam::SineR< SampleType > *) 0 ;
+  float result;
+  
+  SWIG_check_num_args("gam::SineR< SampleType >::freq",1,1)
+  if(!SWIG_isptrtype(L,1)) SWIG_fail_arg("gam::SineR< SampleType >::freq",1,"gam::SineR< SampleType > const *");
+  
+  if (!SWIG_IsOK(SWIG_ConvertPtr(L,1,(void**)&arg1,SWIGTYPE_p_gam__SineRT_float_GAM_DEFAULT_DOMAIN_t,0))){
+    SWIG_fail_ptr("SineR_freq",1,SWIGTYPE_p_gam__SineRT_float_GAM_DEFAULT_DOMAIN_t);
+  }
+  
+  result = (float)((gam::SineR< SampleType > const *)arg1)->freq();
+  lua_pushnumber(L, (lua_Number) result); SWIG_arg++;
+  return SWIG_arg;
+  
+  if(0) SWIG_fail;
+  
+fail:
+  lua_error(L);
+  return SWIG_arg;
+}
+
+
+static int _wrap_SineR_ampPhase__SWIG_0(lua_State* L) {
+  int SWIG_arg = 0;
+  gam::SineR< SampleType > *arg1 = (gam::SineR< SampleType > *) 0 ;
+  float arg2 ;
+  float arg3 ;
+  
+  SWIG_check_num_args("gam::SineR< SampleType >::ampPhase",3,3)
+  if(!SWIG_isptrtype(L,1)) SWIG_fail_arg("gam::SineR< SampleType >::ampPhase",1,"gam::SineR< SampleType > *");
+  if(!lua_isnumber(L,2)) SWIG_fail_arg("gam::SineR< SampleType >::ampPhase",2,"float");
+  if(!lua_isnumber(L,3)) SWIG_fail_arg("gam::SineR< SampleType >::ampPhase",3,"float");
+  
+  if (!SWIG_IsOK(SWIG_ConvertPtr(L,1,(void**)&arg1,SWIGTYPE_p_gam__SineRT_float_GAM_DEFAULT_DOMAIN_t,0))){
+    SWIG_fail_ptr("SineR_ampPhase",1,SWIGTYPE_p_gam__SineRT_float_GAM_DEFAULT_DOMAIN_t);
+  }
+  
+  arg2 = (float)lua_tonumber(L, 2);
+  arg3 = (float)lua_tonumber(L, 3);
+  (arg1)->ampPhase(arg2,arg3);
+  
+  return SWIG_arg;
+  
+  if(0) SWIG_fail;
+  
+fail:
+  lua_error(L);
+  return SWIG_arg;
+}
+
+
+static int _wrap_SineR_ampPhase__SWIG_1(lua_State* L) {
+  int SWIG_arg = 0;
+  gam::SineR< SampleType > *arg1 = (gam::SineR< SampleType > *) 0 ;
+  float arg2 ;
+  
+  SWIG_check_num_args("gam::SineR< SampleType >::ampPhase",2,2)
+  if(!SWIG_isptrtype(L,1)) SWIG_fail_arg("gam::SineR< SampleType >::ampPhase",1,"gam::SineR< SampleType > *");
+  if(!lua_isnumber(L,2)) SWIG_fail_arg("gam::SineR< SampleType >::ampPhase",2,"float");
+  
+  if (!SWIG_IsOK(SWIG_ConvertPtr(L,1,(void**)&arg1,SWIGTYPE_p_gam__SineRT_float_GAM_DEFAULT_DOMAIN_t,0))){
+    SWIG_fail_ptr("SineR_ampPhase",1,SWIGTYPE_p_gam__SineRT_float_GAM_DEFAULT_DOMAIN_t);
+  }
+  
+  arg2 = (float)lua_tonumber(L, 2);
+  (arg1)->ampPhase(arg2);
+  
+  return SWIG_arg;
+  
+  if(0) SWIG_fail;
+  
+fail:
+  lua_error(L);
+  return SWIG_arg;
+}
+
+
+static int _wrap_SineR_ampPhase__SWIG_2(lua_State* L) {
+  int SWIG_arg = 0;
+  gam::SineR< SampleType > *arg1 = (gam::SineR< SampleType > *) 0 ;
+  
+  SWIG_check_num_args("gam::SineR< SampleType >::ampPhase",1,1)
+  if(!SWIG_isptrtype(L,1)) SWIG_fail_arg("gam::SineR< SampleType >::ampPhase",1,"gam::SineR< SampleType > *");
+  
+  if (!SWIG_IsOK(SWIG_ConvertPtr(L,1,(void**)&arg1,SWIGTYPE_p_gam__SineRT_float_GAM_DEFAULT_DOMAIN_t,0))){
+    SWIG_fail_ptr("SineR_ampPhase",1,SWIGTYPE_p_gam__SineRT_float_GAM_DEFAULT_DOMAIN_t);
+  }
+  
+  (arg1)->ampPhase();
+  
+  return SWIG_arg;
+  
+  if(0) SWIG_fail;
+  
+fail:
+  lua_error(L);
+  return SWIG_arg;
+}
+
+
+static int _wrap_SineR_ampPhase(lua_State* L) {
+  int argc;
+  int argv[4]={
+    1,2,3,4
+  };
+  
+  argc = lua_gettop(L);
+  if (argc == 1) {
+    int _v = 0;
+    {
+      void *ptr;
+      if (SWIG_isptrtype(L,argv[0])==0 || SWIG_ConvertPtr(L,argv[0], (void **) &ptr, SWIGTYPE_p_gam__SineRT_float_GAM_DEFAULT_DOMAIN_t, 0)) {
+        _v = 0;
+      } else {
+        _v = 1;
+      }
+    }
+    if (_v) {
+      return _wrap_SineR_ampPhase__SWIG_2(L);
+    }
+  }
+  if (argc == 2) {
+    int _v = 0;
+    {
+      void *ptr;
+      if (SWIG_isptrtype(L,argv[0])==0 || SWIG_ConvertPtr(L,argv[0], (void **) &ptr, SWIGTYPE_p_gam__SineRT_float_GAM_DEFAULT_DOMAIN_t, 0)) {
+        _v = 0;
+      } else {
+        _v = 1;
+      }
+    }
+    if (_v) {
+      {
+        _v = lua_isnumber(L,argv[1]);
+      }
+      if (_v) {
+        return _wrap_SineR_ampPhase__SWIG_1(L);
+      }
+    }
+  }
+  if (argc == 3) {
+    int _v = 0;
+    {
+      void *ptr;
+      if (SWIG_isptrtype(L,argv[0])==0 || SWIG_ConvertPtr(L,argv[0], (void **) &ptr, SWIGTYPE_p_gam__SineRT_float_GAM_DEFAULT_DOMAIN_t, 0)) {
+        _v = 0;
+      } else {
+        _v = 1;
+      }
+    }
+    if (_v) {
+      {
+        _v = lua_isnumber(L,argv[1]);
+      }
+      if (_v) {
+        {
+          _v = lua_isnumber(L,argv[2]);
+        }
+        if (_v) {
+          return _wrap_SineR_ampPhase__SWIG_0(L);
+        }
+      }
+    }
+  }
+  
+  SWIG_Lua_pusherrstring(L,"Wrong arguments for overloaded function 'SineR_ampPhase'\n"
+    "  Possible C/C++ prototypes are:\n"
+    "    gam::SineR< SampleType >::ampPhase(float,float)\n"
+    "    gam::SineR< SampleType >::ampPhase(float)\n"
+    "    gam::SineR< SampleType >::ampPhase()\n");
+  lua_error(L);return 0;
+}
+
+
+static int _wrap_SineR_freq__SWIG_1(lua_State* L) {
+  int SWIG_arg = 0;
+  gam::SineR< SampleType > *arg1 = (gam::SineR< SampleType > *) 0 ;
+  float arg2 ;
+  
+  SWIG_check_num_args("gam::SineR< SampleType >::freq",2,2)
+  if(!SWIG_isptrtype(L,1)) SWIG_fail_arg("gam::SineR< SampleType >::freq",1,"gam::SineR< SampleType > *");
+  if(!lua_isnumber(L,2)) SWIG_fail_arg("gam::SineR< SampleType >::freq",2,"float");
+  
+  if (!SWIG_IsOK(SWIG_ConvertPtr(L,1,(void**)&arg1,SWIGTYPE_p_gam__SineRT_float_GAM_DEFAULT_DOMAIN_t,0))){
+    SWIG_fail_ptr("SineR_freq",1,SWIGTYPE_p_gam__SineRT_float_GAM_DEFAULT_DOMAIN_t);
+  }
+  
+  arg2 = (float)lua_tonumber(L, 2);
+  (arg1)->freq(arg2);
+  
+  return SWIG_arg;
+  
+  if(0) SWIG_fail;
+  
+fail:
+  lua_error(L);
+  return SWIG_arg;
+}
+
+
+static int _wrap_SineR_freq(lua_State* L) {
+  int argc;
+  int argv[3]={
+    1,2,3
+  };
+  
+  argc = lua_gettop(L);
+  if (argc == 1) {
+    int _v = 0;
+    {
+      void *ptr;
+      if (SWIG_isptrtype(L,argv[0])==0 || SWIG_ConvertPtr(L,argv[0], (void **) &ptr, SWIGTYPE_p_gam__SineRT_float_GAM_DEFAULT_DOMAIN_t, 0)) {
+        _v = 0;
+      } else {
+        _v = 1;
+      }
+    }
+    if (_v) {
+      return _wrap_SineR_freq__SWIG_0(L);
+    }
+  }
+  if (argc == 2) {
+    int _v = 0;
+    {
+      void *ptr;
+      if (SWIG_isptrtype(L,argv[0])==0 || SWIG_ConvertPtr(L,argv[0], (void **) &ptr, SWIGTYPE_p_gam__SineRT_float_GAM_DEFAULT_DOMAIN_t, 0)) {
+        _v = 0;
+      } else {
+        _v = 1;
+      }
+    }
+    if (_v) {
+      {
+        _v = lua_isnumber(L,argv[1]);
+      }
+      if (_v) {
+        return _wrap_SineR_freq__SWIG_1(L);
+      }
+    }
+  }
+  
+  SWIG_Lua_pusherrstring(L,"Wrong arguments for overloaded function 'SineR_freq'\n"
+    "  Possible C/C++ prototypes are:\n"
+    "    gam::SineR< SampleType >::freq() const\n"
+    "    gam::SineR< SampleType >::freq(float)\n");
+  lua_error(L);return 0;
+}
+
+
+static int _wrap_SineR_period(lua_State* L) {
+  int SWIG_arg = 0;
+  gam::SineR< SampleType > *arg1 = (gam::SineR< SampleType > *) 0 ;
+  float arg2 ;
+  
+  SWIG_check_num_args("gam::SineR< SampleType >::period",2,2)
+  if(!SWIG_isptrtype(L,1)) SWIG_fail_arg("gam::SineR< SampleType >::period",1,"gam::SineR< SampleType > *");
+  if(!lua_isnumber(L,2)) SWIG_fail_arg("gam::SineR< SampleType >::period",2,"float");
+  
+  if (!SWIG_IsOK(SWIG_ConvertPtr(L,1,(void**)&arg1,SWIGTYPE_p_gam__SineRT_float_GAM_DEFAULT_DOMAIN_t,0))){
+    SWIG_fail_ptr("SineR_period",1,SWIGTYPE_p_gam__SineRT_float_GAM_DEFAULT_DOMAIN_t);
+  }
+  
+  arg2 = (float)lua_tonumber(L, 2);
+  (arg1)->period(arg2);
+  
+  return SWIG_arg;
+  
+  if(0) SWIG_fail;
+  
+fail:
+  lua_error(L);
+  return SWIG_arg;
+}
+
+
+static int _wrap_SineR_set__SWIG_0(lua_State* L) {
+  int SWIG_arg = 0;
+  gam::SineR< SampleType > *arg1 = (gam::SineR< SampleType > *) 0 ;
+  float arg2 ;
+  float arg3 ;
+  float arg4 ;
+  
+  SWIG_check_num_args("gam::SineR< SampleType >::set",4,4)
+  if(!SWIG_isptrtype(L,1)) SWIG_fail_arg("gam::SineR< SampleType >::set",1,"gam::SineR< SampleType > *");
+  if(!lua_isnumber(L,2)) SWIG_fail_arg("gam::SineR< SampleType >::set",2,"float");
+  if(!lua_isnumber(L,3)) SWIG_fail_arg("gam::SineR< SampleType >::set",3,"float");
+  if(!lua_isnumber(L,4)) SWIG_fail_arg("gam::SineR< SampleType >::set",4,"float");
+  
+  if (!SWIG_IsOK(SWIG_ConvertPtr(L,1,(void**)&arg1,SWIGTYPE_p_gam__SineRT_float_GAM_DEFAULT_DOMAIN_t,0))){
+    SWIG_fail_ptr("SineR_set",1,SWIGTYPE_p_gam__SineRT_float_GAM_DEFAULT_DOMAIN_t);
+  }
+  
+  arg2 = (float)lua_tonumber(L, 2);
+  arg3 = (float)lua_tonumber(L, 3);
+  arg4 = (float)lua_tonumber(L, 4);
+  (arg1)->set(arg2,arg3,arg4);
+  
+  return SWIG_arg;
+  
+  if(0) SWIG_fail;
+  
+fail:
+  lua_error(L);
+  return SWIG_arg;
+}
+
+
+static int _wrap_SineR_set__SWIG_1(lua_State* L) {
+  int SWIG_arg = 0;
+  gam::SineR< SampleType > *arg1 = (gam::SineR< SampleType > *) 0 ;
+  float arg2 ;
+  float arg3 ;
+  
+  SWIG_check_num_args("gam::SineR< SampleType >::set",3,3)
+  if(!SWIG_isptrtype(L,1)) SWIG_fail_arg("gam::SineR< SampleType >::set",1,"gam::SineR< SampleType > *");
+  if(!lua_isnumber(L,2)) SWIG_fail_arg("gam::SineR< SampleType >::set",2,"float");
+  if(!lua_isnumber(L,3)) SWIG_fail_arg("gam::SineR< SampleType >::set",3,"float");
+  
+  if (!SWIG_IsOK(SWIG_ConvertPtr(L,1,(void**)&arg1,SWIGTYPE_p_gam__SineRT_float_GAM_DEFAULT_DOMAIN_t,0))){
+    SWIG_fail_ptr("SineR_set",1,SWIGTYPE_p_gam__SineRT_float_GAM_DEFAULT_DOMAIN_t);
+  }
+  
+  arg2 = (float)lua_tonumber(L, 2);
+  arg3 = (float)lua_tonumber(L, 3);
+  (arg1)->set(arg2,arg3);
+  
+  return SWIG_arg;
+  
+  if(0) SWIG_fail;
+  
+fail:
+  lua_error(L);
+  return SWIG_arg;
+}
+
+
+static int _wrap_SineR_set(lua_State* L) {
+  int argc;
+  int argv[5]={
+    1,2,3,4,5
+  };
+  
+  argc = lua_gettop(L);
+  if (argc == 3) {
+    int _v = 0;
+    {
+      void *ptr;
+      if (SWIG_isptrtype(L,argv[0])==0 || SWIG_ConvertPtr(L,argv[0], (void **) &ptr, SWIGTYPE_p_gam__SineRT_float_GAM_DEFAULT_DOMAIN_t, 0)) {
+        _v = 0;
+      } else {
+        _v = 1;
+      }
+    }
+    if (_v) {
+      {
+        _v = lua_isnumber(L,argv[1]);
+      }
+      if (_v) {
+        {
+          _v = lua_isnumber(L,argv[2]);
+        }
+        if (_v) {
+          return _wrap_SineR_set__SWIG_1(L);
+        }
+      }
+    }
+  }
+  if (argc == 4) {
+    int _v = 0;
+    {
+      void *ptr;
+      if (SWIG_isptrtype(L,argv[0])==0 || SWIG_ConvertPtr(L,argv[0], (void **) &ptr, SWIGTYPE_p_gam__SineRT_float_GAM_DEFAULT_DOMAIN_t, 0)) {
+        _v = 0;
+      } else {
+        _v = 1;
+      }
+    }
+    if (_v) {
+      {
+        _v = lua_isnumber(L,argv[1]);
+      }
+      if (_v) {
+        {
+          _v = lua_isnumber(L,argv[2]);
+        }
+        if (_v) {
+          {
+            _v = lua_isnumber(L,argv[3]);
+          }
+          if (_v) {
+            return _wrap_SineR_set__SWIG_0(L);
+          }
+        }
+      }
+    }
+  }
+  
+  SWIG_Lua_pusherrstring(L,"Wrong arguments for overloaded function 'SineR_set'\n"
+    "  Possible C/C++ prototypes are:\n"
+    "    gam::SineR< SampleType >::set(float,float,float)\n"
+    "    gam::SineR< SampleType >::set(float,float)\n");
+  lua_error(L);return 0;
+}
+
+
+static int _wrap_SineR_onDomainChange(lua_State* L) {
+  int SWIG_arg = 0;
+  gam::SineR< SampleType > *arg1 = (gam::SineR< SampleType > *) 0 ;
+  double arg2 ;
+  
+  SWIG_check_num_args("gam::SineR< SampleType >::onDomainChange",2,2)
+  if(!SWIG_isptrtype(L,1)) SWIG_fail_arg("gam::SineR< SampleType >::onDomainChange",1,"gam::SineR< SampleType > *");
+  if(!lua_isnumber(L,2)) SWIG_fail_arg("gam::SineR< SampleType >::onDomainChange",2,"double");
+  
+  if (!SWIG_IsOK(SWIG_ConvertPtr(L,1,(void**)&arg1,SWIGTYPE_p_gam__SineRT_float_GAM_DEFAULT_DOMAIN_t,0))){
+    SWIG_fail_ptr("SineR_onDomainChange",1,SWIGTYPE_p_gam__SineRT_float_GAM_DEFAULT_DOMAIN_t);
+  }
+  
+  arg2 = (double)lua_tonumber(L, 2);
+  (arg1)->onDomainChange(arg2);
+  
+  return SWIG_arg;
+  
+  if(0) SWIG_fail;
+  
+fail:
+  lua_error(L);
+  return SWIG_arg;
+}
+
+
+static void swig_delete_SineR(void *obj) {
+gam::SineR< SampleType > *arg1 = (gam::SineR< SampleType > *) obj;
+delete arg1;
+}
+static int _proxy__wrap_new_SineR(lua_State *L) {
+    assert(lua_istable(L,1));
+    lua_pushcfunction(L,_wrap_new_SineR);
+    assert(!lua_isnil(L,-1));
+    lua_replace(L,1); /* replace our table with real constructor */
+    lua_call(L,lua_gettop(L)-1,1);
+    return 1;
+}
+static swig_lua_attribute swig_SineR_attributes[] = {
+    {0,0,0}
+};
+static swig_lua_method swig_SineR_methods[]= {
+    { "ampPhase", _wrap_SineR_ampPhase},
+    { "freq", _wrap_SineR_freq},
+    { "period", _wrap_SineR_period},
+    { "set", _wrap_SineR_set},
+    { "onDomainChange", _wrap_SineR_onDomainChange},
+    {0,0}
+};
+static swig_lua_method swig_SineR_meta[] = {
+    {0,0}
+};
+
+static swig_lua_attribute swig_SineR_Sf_SwigStatic_attributes[] = {
+    {0,0,0}
+};
+static swig_lua_const_info swig_SineR_Sf_SwigStatic_constants[]= {
+    {0,0,0,0,0,0}
+};
+static swig_lua_method swig_SineR_Sf_SwigStatic_methods[]= {
+    {0,0}
+};
+static swig_lua_class* swig_SineR_Sf_SwigStatic_classes[]= {
+    0
+};
+
+static swig_lua_namespace swig_SineR_Sf_SwigStatic = {
+    "SineR",
+    swig_SineR_Sf_SwigStatic_methods,
+    swig_SineR_Sf_SwigStatic_attributes,
+    swig_SineR_Sf_SwigStatic_constants,
+    swig_SineR_Sf_SwigStatic_classes,
+    0
+};
+static swig_lua_class *swig_SineR_bases[] = {0};
+static const char *swig_SineR_base_names[] = {0};
+static swig_lua_class _wrap_class_SineR = { "SineR", "SineR", &SWIGTYPE_p_gam__SineRT_float_GAM_DEFAULT_DOMAIN_t,_proxy__wrap_new_SineR, swig_delete_SineR, swig_SineR_methods, swig_SineR_attributes, &swig_SineR_Sf_SwigStatic, swig_SineR_meta, swig_SineR_bases, swig_SineR_base_names };
+
+static int _wrap_new_SineRs__SWIG_0(lua_State* L) {
+  int SWIG_arg = 0;
+  gam::SineRs< SampleType > *result = 0 ;
+  
+  SWIG_check_num_args("gam::SineRs< SampleType >::SineRs",0,0)
+  result = (gam::SineRs< SampleType > *)new gam::SineRs< SampleType >();
+  SWIG_NewPointerObj(L,result,SWIGTYPE_p_gam__SineRsT_float_GAM_DEFAULT_DOMAIN_t,1); SWIG_arg++; 
+  return SWIG_arg;
+  
+  if(0) SWIG_fail;
+  
+fail:
+  lua_error(L);
+  return SWIG_arg;
+}
+
+
+static int _wrap_new_SineRs__SWIG_1(lua_State* L) {
+  int SWIG_arg = 0;
+  unsigned int arg1 ;
+  gam::SineRs< SampleType > *result = 0 ;
+  
+  SWIG_check_num_args("gam::SineRs< SampleType >::SineRs",1,1)
+  if(!lua_isnumber(L,1)) SWIG_fail_arg("gam::SineRs< SampleType >::SineRs",1,"unsigned int");
+  SWIG_contract_assert((lua_tonumber(L,1)>=0),"number must not be negative");
+  arg1 = (unsigned int)lua_tonumber(L, 1);
+  result = (gam::SineRs< SampleType > *)new gam::SineRs< SampleType >(arg1);
+  SWIG_NewPointerObj(L,result,SWIGTYPE_p_gam__SineRsT_float_GAM_DEFAULT_DOMAIN_t,1); SWIG_arg++; 
+  return SWIG_arg;
+  
+  if(0) SWIG_fail;
+  
+fail:
+  lua_error(L);
+  return SWIG_arg;
+}
+
+
+static int _wrap_new_SineRs(lua_State* L) {
+  int argc;
+  int argv[2]={
+    1,2
+  };
+  
+  argc = lua_gettop(L);
+  if (argc == 0) {
+    return _wrap_new_SineRs__SWIG_0(L);
+  }
+  if (argc == 1) {
+    int _v = 0;
+    {
+      _v = lua_isnumber(L,argv[0]);
+    }
+    if (_v) {
+      return _wrap_new_SineRs__SWIG_1(L);
+    }
+  }
+  
+  SWIG_Lua_pusherrstring(L,"Wrong arguments for overloaded function 'new_SineRs'\n"
+    "  Possible C/C++ prototypes are:\n"
+    "    gam::SineRs< SampleType >::SineRs()\n"
+    "    gam::SineRs< SampleType >::SineRs(unsigned int)\n");
+  lua_error(L);return 0;
+}
+
+
+static int _wrap_SineRs_Tick(lua_State* L) {
+  int SWIG_arg = 0;
+  gam::SineRs< SampleType > *arg1 = (gam::SineRs< SampleType > *) 0 ;
+  float result;
+  
+  SWIG_check_num_args("gam::SineRs< SampleType >::Tick",1,1)
+  if(!SWIG_isptrtype(L,1)) SWIG_fail_arg("gam::SineRs< SampleType >::Tick",1,"gam::SineRs< SampleType > *");
+  
+  if (!SWIG_IsOK(SWIG_ConvertPtr(L,1,(void**)&arg1,SWIGTYPE_p_gam__SineRsT_float_GAM_DEFAULT_DOMAIN_t,0))){
+    SWIG_fail_ptr("SineRs_Tick",1,SWIGTYPE_p_gam__SineRsT_float_GAM_DEFAULT_DOMAIN_t);
+  }
+  
+  result = (float)gam_SineRs_Sl_SampleType_Sg__Tick__SWIG(arg1);
+  lua_pushnumber(L, (lua_Number) result); SWIG_arg++;
+  return SWIG_arg;
+  
+  if(0) SWIG_fail;
+  
+fail:
+  lua_error(L);
+  return SWIG_arg;
+}
+
+
+static int _wrap_SineRs_last(lua_State* L) {
+  int SWIG_arg = 0;
+  gam::SineRs< SampleType > *arg1 = (gam::SineRs< SampleType > *) 0 ;
+  unsigned int arg2 ;
+  float result;
+  
+  SWIG_check_num_args("gam::SineRs< SampleType >::last",2,2)
+  if(!SWIG_isptrtype(L,1)) SWIG_fail_arg("gam::SineRs< SampleType >::last",1,"gam::SineRs< SampleType > const *");
+  if(!lua_isnumber(L,2)) SWIG_fail_arg("gam::SineRs< SampleType >::last",2,"unsigned int");
+  
+  if (!SWIG_IsOK(SWIG_ConvertPtr(L,1,(void**)&arg1,SWIGTYPE_p_gam__SineRsT_float_GAM_DEFAULT_DOMAIN_t,0))){
+    SWIG_fail_ptr("SineRs_last",1,SWIGTYPE_p_gam__SineRsT_float_GAM_DEFAULT_DOMAIN_t);
+  }
+  
+  SWIG_contract_assert((lua_tonumber(L,2)>=0),"number must not be negative");
+  arg2 = (unsigned int)lua_tonumber(L, 2);
+  result = (float)((gam::SineRs< SampleType > const *)arg1)->last(arg2);
+  lua_pushnumber(L, (lua_Number) result); SWIG_arg++;
+  return SWIG_arg;
+  
+  if(0) SWIG_fail;
+  
+fail:
+  lua_error(L);
+  return SWIG_arg;
+}
+
+
+static int _wrap_SineRs_set__SWIG_0(lua_State* L) {
+  int SWIG_arg = 0;
+  gam::SineRs< SampleType > *arg1 = (gam::SineRs< SampleType > *) 0 ;
+  unsigned int arg2 ;
+  float arg3 ;
+  float arg4 ;
+  float arg5 ;
+  
+  SWIG_check_num_args("gam::SineRs< SampleType >::set",5,5)
+  if(!SWIG_isptrtype(L,1)) SWIG_fail_arg("gam::SineRs< SampleType >::set",1,"gam::SineRs< SampleType > *");
+  if(!lua_isnumber(L,2)) SWIG_fail_arg("gam::SineRs< SampleType >::set",2,"unsigned int");
+  if(!lua_isnumber(L,3)) SWIG_fail_arg("gam::SineRs< SampleType >::set",3,"float");
+  if(!lua_isnumber(L,4)) SWIG_fail_arg("gam::SineRs< SampleType >::set",4,"float");
+  if(!lua_isnumber(L,5)) SWIG_fail_arg("gam::SineRs< SampleType >::set",5,"float");
+  
+  if (!SWIG_IsOK(SWIG_ConvertPtr(L,1,(void**)&arg1,SWIGTYPE_p_gam__SineRsT_float_GAM_DEFAULT_DOMAIN_t,0))){
+    SWIG_fail_ptr("SineRs_set",1,SWIGTYPE_p_gam__SineRsT_float_GAM_DEFAULT_DOMAIN_t);
+  }
+  
+  SWIG_contract_assert((lua_tonumber(L,2)>=0),"number must not be negative");
+  arg2 = (unsigned int)lua_tonumber(L, 2);
+  arg3 = (float)lua_tonumber(L, 3);
+  arg4 = (float)lua_tonumber(L, 4);
+  arg5 = (float)lua_tonumber(L, 5);
+  (arg1)->set(arg2,arg3,arg4,arg5);
+  
+  return SWIG_arg;
+  
+  if(0) SWIG_fail;
+  
+fail:
+  lua_error(L);
+  return SWIG_arg;
+}
+
+
+static int _wrap_SineRs_set__SWIG_1(lua_State* L) {
+  int SWIG_arg = 0;
+  gam::SineRs< SampleType > *arg1 = (gam::SineRs< SampleType > *) 0 ;
+  unsigned int arg2 ;
+  float arg3 ;
+  float arg4 ;
+  
+  SWIG_check_num_args("gam::SineRs< SampleType >::set",4,4)
+  if(!SWIG_isptrtype(L,1)) SWIG_fail_arg("gam::SineRs< SampleType >::set",1,"gam::SineRs< SampleType > *");
+  if(!lua_isnumber(L,2)) SWIG_fail_arg("gam::SineRs< SampleType >::set",2,"unsigned int");
+  if(!lua_isnumber(L,3)) SWIG_fail_arg("gam::SineRs< SampleType >::set",3,"float");
+  if(!lua_isnumber(L,4)) SWIG_fail_arg("gam::SineRs< SampleType >::set",4,"float");
+  
+  if (!SWIG_IsOK(SWIG_ConvertPtr(L,1,(void**)&arg1,SWIGTYPE_p_gam__SineRsT_float_GAM_DEFAULT_DOMAIN_t,0))){
+    SWIG_fail_ptr("SineRs_set",1,SWIGTYPE_p_gam__SineRsT_float_GAM_DEFAULT_DOMAIN_t);
+  }
+  
+  SWIG_contract_assert((lua_tonumber(L,2)>=0),"number must not be negative");
+  arg2 = (unsigned int)lua_tonumber(L, 2);
+  arg3 = (float)lua_tonumber(L, 3);
+  arg4 = (float)lua_tonumber(L, 4);
+  (arg1)->set(arg2,arg3,arg4);
+  
+  return SWIG_arg;
+  
+  if(0) SWIG_fail;
+  
+fail:
+  lua_error(L);
+  return SWIG_arg;
+}
+
+
+static int _wrap_SineRs_set__SWIG_2(lua_State* L) {
+  int SWIG_arg = 0;
+  gam::SineRs< SampleType > *arg1 = (gam::SineRs< SampleType > *) 0 ;
+  unsigned int arg2 ;
+  float arg3 ;
+  
+  SWIG_check_num_args("gam::SineRs< SampleType >::set",3,3)
+  if(!SWIG_isptrtype(L,1)) SWIG_fail_arg("gam::SineRs< SampleType >::set",1,"gam::SineRs< SampleType > *");
+  if(!lua_isnumber(L,2)) SWIG_fail_arg("gam::SineRs< SampleType >::set",2,"unsigned int");
+  if(!lua_isnumber(L,3)) SWIG_fail_arg("gam::SineRs< SampleType >::set",3,"float");
+  
+  if (!SWIG_IsOK(SWIG_ConvertPtr(L,1,(void**)&arg1,SWIGTYPE_p_gam__SineRsT_float_GAM_DEFAULT_DOMAIN_t,0))){
+    SWIG_fail_ptr("SineRs_set",1,SWIGTYPE_p_gam__SineRsT_float_GAM_DEFAULT_DOMAIN_t);
+  }
+  
+  SWIG_contract_assert((lua_tonumber(L,2)>=0),"number must not be negative");
+  arg2 = (unsigned int)lua_tonumber(L, 2);
+  arg3 = (float)lua_tonumber(L, 3);
+  (arg1)->set(arg2,arg3);
+  
+  return SWIG_arg;
+  
+  if(0) SWIG_fail;
+  
+fail:
+  lua_error(L);
+  return SWIG_arg;
+}
+
+
+static int _wrap_SineRs_set(lua_State* L) {
+  int argc;
+  int argv[6]={
+    1,2,3,4,5,6
+  };
+  
+  argc = lua_gettop(L);
+  if (argc == 3) {
+    int _v = 0;
+    {
+      void *ptr;
+      if (SWIG_isptrtype(L,argv[0])==0 || SWIG_ConvertPtr(L,argv[0], (void **) &ptr, SWIGTYPE_p_gam__SineRsT_float_GAM_DEFAULT_DOMAIN_t, 0)) {
+        _v = 0;
+      } else {
+        _v = 1;
+      }
+    }
+    if (_v) {
+      {
+        _v = lua_isnumber(L,argv[1]);
+      }
+      if (_v) {
+        {
+          _v = lua_isnumber(L,argv[2]);
+        }
+        if (_v) {
+          return _wrap_SineRs_set__SWIG_2(L);
+        }
+      }
+    }
+  }
+  if (argc == 4) {
+    int _v = 0;
+    {
+      void *ptr;
+      if (SWIG_isptrtype(L,argv[0])==0 || SWIG_ConvertPtr(L,argv[0], (void **) &ptr, SWIGTYPE_p_gam__SineRsT_float_GAM_DEFAULT_DOMAIN_t, 0)) {
+        _v = 0;
+      } else {
+        _v = 1;
+      }
+    }
+    if (_v) {
+      {
+        _v = lua_isnumber(L,argv[1]);
+      }
+      if (_v) {
+        {
+          _v = lua_isnumber(L,argv[2]);
+        }
+        if (_v) {
+          {
+            _v = lua_isnumber(L,argv[3]);
+          }
+          if (_v) {
+            return _wrap_SineRs_set__SWIG_1(L);
+          }
+        }
+      }
+    }
+  }
+  if (argc == 5) {
+    int _v = 0;
+    {
+      void *ptr;
+      if (SWIG_isptrtype(L,argv[0])==0 || SWIG_ConvertPtr(L,argv[0], (void **) &ptr, SWIGTYPE_p_gam__SineRsT_float_GAM_DEFAULT_DOMAIN_t, 0)) {
+        _v = 0;
+      } else {
+        _v = 1;
+      }
+    }
+    if (_v) {
+      {
+        _v = lua_isnumber(L,argv[1]);
+      }
+      if (_v) {
+        {
+          _v = lua_isnumber(L,argv[2]);
+        }
+        if (_v) {
+          {
+            _v = lua_isnumber(L,argv[3]);
+          }
+          if (_v) {
+            {
+              _v = lua_isnumber(L,argv[4]);
+            }
+            if (_v) {
+              return _wrap_SineRs_set__SWIG_0(L);
+            }
+          }
+        }
+      }
+    }
+  }
+  
+  SWIG_Lua_pusherrstring(L,"Wrong arguments for overloaded function 'SineRs_set'\n"
+    "  Possible C/C++ prototypes are:\n"
+    "    gam::SineRs< SampleType >::set(unsigned int,float,float,float)\n"
+    "    gam::SineRs< SampleType >::set(unsigned int,float,float)\n"
+    "    gam::SineRs< SampleType >::set(unsigned int,float)\n");
+  lua_error(L);return 0;
+}
+
+
+static int _wrap_SineRs_onDomainChange(lua_State* L) {
+  int SWIG_arg = 0;
+  gam::SineRs< SampleType > *arg1 = (gam::SineRs< SampleType > *) 0 ;
+  double arg2 ;
+  
+  SWIG_check_num_args("gam::SineRs< SampleType >::onDomainChange",2,2)
+  if(!SWIG_isptrtype(L,1)) SWIG_fail_arg("gam::SineRs< SampleType >::onDomainChange",1,"gam::SineRs< SampleType > *");
+  if(!lua_isnumber(L,2)) SWIG_fail_arg("gam::SineRs< SampleType >::onDomainChange",2,"double");
+  
+  if (!SWIG_IsOK(SWIG_ConvertPtr(L,1,(void**)&arg1,SWIGTYPE_p_gam__SineRsT_float_GAM_DEFAULT_DOMAIN_t,0))){
+    SWIG_fail_ptr("SineRs_onDomainChange",1,SWIGTYPE_p_gam__SineRsT_float_GAM_DEFAULT_DOMAIN_t);
+  }
+  
+  arg2 = (double)lua_tonumber(L, 2);
+  (arg1)->onDomainChange(arg2);
+  
+  return SWIG_arg;
+  
+  if(0) SWIG_fail;
+  
+fail:
+  lua_error(L);
+  return SWIG_arg;
+}
+
+
+static void swig_delete_SineRs(void *obj) {
+gam::SineRs< SampleType > *arg1 = (gam::SineRs< SampleType > *) obj;
+delete arg1;
+}
+static int _proxy__wrap_new_SineRs(lua_State *L) {
+    assert(lua_istable(L,1));
+    lua_pushcfunction(L,_wrap_new_SineRs);
+    assert(!lua_isnil(L,-1));
+    lua_replace(L,1); /* replace our table with real constructor */
+    lua_call(L,lua_gettop(L)-1,1);
+    return 1;
+}
+static swig_lua_attribute swig_SineRs_attributes[] = {
+    {0,0,0}
+};
+static swig_lua_method swig_SineRs_methods[]= {
+    { "Tick", _wrap_SineRs_Tick},
+    { "last", _wrap_SineRs_last},
+    { "set", _wrap_SineRs_set},
+    { "onDomainChange", _wrap_SineRs_onDomainChange},
+    {0,0}
+};
+static swig_lua_method swig_SineRs_meta[] = {
+    {0,0}
+};
+
+static swig_lua_attribute swig_SineRs_Sf_SwigStatic_attributes[] = {
+    {0,0,0}
+};
+static swig_lua_const_info swig_SineRs_Sf_SwigStatic_constants[]= {
+    {0,0,0,0,0,0}
+};
+static swig_lua_method swig_SineRs_Sf_SwigStatic_methods[]= {
+    {0,0}
+};
+static swig_lua_class* swig_SineRs_Sf_SwigStatic_classes[]= {
+    0
+};
+
+static swig_lua_namespace swig_SineRs_Sf_SwigStatic = {
+    "SineRs",
+    swig_SineRs_Sf_SwigStatic_methods,
+    swig_SineRs_Sf_SwigStatic_attributes,
+    swig_SineRs_Sf_SwigStatic_constants,
+    swig_SineRs_Sf_SwigStatic_classes,
+    0
+};
+static swig_lua_class *swig_SineRs_bases[] = {0};
+static const char *swig_SineRs_base_names[] = {0};
+static swig_lua_class _wrap_class_SineRs = { "SineRs", "SineRs", &SWIGTYPE_p_gam__SineRsT_float_GAM_DEFAULT_DOMAIN_t,_proxy__wrap_new_SineRs, swig_delete_SineRs, swig_SineRs_methods, swig_SineRs_attributes, &swig_SineRs_Sf_SwigStatic, swig_SineRs_meta, swig_SineRs_bases, swig_SineRs_base_names };
+
+static int _wrap_new_SineD__SWIG_0(lua_State* L) {
+  int SWIG_arg = 0;
+  float arg1 ;
+  float arg2 ;
+  float arg3 ;
+  float arg4 ;
+  gam::SineD< SampleType > *result = 0 ;
+  
+  SWIG_check_num_args("gam::SineD< SampleType >::SineD",4,4)
+  if(!lua_isnumber(L,1)) SWIG_fail_arg("gam::SineD< SampleType >::SineD",1,"float");
+  if(!lua_isnumber(L,2)) SWIG_fail_arg("gam::SineD< SampleType >::SineD",2,"float");
+  if(!lua_isnumber(L,3)) SWIG_fail_arg("gam::SineD< SampleType >::SineD",3,"float");
+  if(!lua_isnumber(L,4)) SWIG_fail_arg("gam::SineD< SampleType >::SineD",4,"float");
+  arg1 = (float)lua_tonumber(L, 1);
+  arg2 = (float)lua_tonumber(L, 2);
+  arg3 = (float)lua_tonumber(L, 3);
+  arg4 = (float)lua_tonumber(L, 4);
+  result = (gam::SineD< SampleType > *)new gam::SineD< SampleType >(arg1,arg2,arg3,arg4);
+  SWIG_NewPointerObj(L,result,SWIGTYPE_p_gam__SineDT_float_GAM_DEFAULT_DOMAIN_t,1); SWIG_arg++; 
+  return SWIG_arg;
+  
+  if(0) SWIG_fail;
+  
+fail:
+  lua_error(L);
+  return SWIG_arg;
+}
+
+
+static int _wrap_new_SineD__SWIG_1(lua_State* L) {
+  int SWIG_arg = 0;
+  float arg1 ;
+  float arg2 ;
+  float arg3 ;
+  gam::SineD< SampleType > *result = 0 ;
+  
+  SWIG_check_num_args("gam::SineD< SampleType >::SineD",3,3)
+  if(!lua_isnumber(L,1)) SWIG_fail_arg("gam::SineD< SampleType >::SineD",1,"float");
+  if(!lua_isnumber(L,2)) SWIG_fail_arg("gam::SineD< SampleType >::SineD",2,"float");
+  if(!lua_isnumber(L,3)) SWIG_fail_arg("gam::SineD< SampleType >::SineD",3,"float");
+  arg1 = (float)lua_tonumber(L, 1);
+  arg2 = (float)lua_tonumber(L, 2);
+  arg3 = (float)lua_tonumber(L, 3);
+  result = (gam::SineD< SampleType > *)new gam::SineD< SampleType >(arg1,arg2,arg3);
+  SWIG_NewPointerObj(L,result,SWIGTYPE_p_gam__SineDT_float_GAM_DEFAULT_DOMAIN_t,1); SWIG_arg++; 
+  return SWIG_arg;
+  
+  if(0) SWIG_fail;
+  
+fail:
+  lua_error(L);
+  return SWIG_arg;
+}
+
+
+static int _wrap_new_SineD__SWIG_2(lua_State* L) {
+  int SWIG_arg = 0;
+  float arg1 ;
+  float arg2 ;
+  gam::SineD< SampleType > *result = 0 ;
+  
+  SWIG_check_num_args("gam::SineD< SampleType >::SineD",2,2)
+  if(!lua_isnumber(L,1)) SWIG_fail_arg("gam::SineD< SampleType >::SineD",1,"float");
+  if(!lua_isnumber(L,2)) SWIG_fail_arg("gam::SineD< SampleType >::SineD",2,"float");
+  arg1 = (float)lua_tonumber(L, 1);
+  arg2 = (float)lua_tonumber(L, 2);
+  result = (gam::SineD< SampleType > *)new gam::SineD< SampleType >(arg1,arg2);
+  SWIG_NewPointerObj(L,result,SWIGTYPE_p_gam__SineDT_float_GAM_DEFAULT_DOMAIN_t,1); SWIG_arg++; 
+  return SWIG_arg;
+  
+  if(0) SWIG_fail;
+  
+fail:
+  lua_error(L);
+  return SWIG_arg;
+}
+
+
+static int _wrap_new_SineD__SWIG_3(lua_State* L) {
+  int SWIG_arg = 0;
+  float arg1 ;
+  gam::SineD< SampleType > *result = 0 ;
+  
+  SWIG_check_num_args("gam::SineD< SampleType >::SineD",1,1)
+  if(!lua_isnumber(L,1)) SWIG_fail_arg("gam::SineD< SampleType >::SineD",1,"float");
+  arg1 = (float)lua_tonumber(L, 1);
+  result = (gam::SineD< SampleType > *)new gam::SineD< SampleType >(arg1);
+  SWIG_NewPointerObj(L,result,SWIGTYPE_p_gam__SineDT_float_GAM_DEFAULT_DOMAIN_t,1); SWIG_arg++; 
+  return SWIG_arg;
+  
+  if(0) SWIG_fail;
+  
+fail:
+  lua_error(L);
+  return SWIG_arg;
+}
+
+
+static int _wrap_new_SineD__SWIG_4(lua_State* L) {
+  int SWIG_arg = 0;
+  gam::SineD< SampleType > *result = 0 ;
+  
+  SWIG_check_num_args("gam::SineD< SampleType >::SineD",0,0)
+  result = (gam::SineD< SampleType > *)new gam::SineD< SampleType >();
+  SWIG_NewPointerObj(L,result,SWIGTYPE_p_gam__SineDT_float_GAM_DEFAULT_DOMAIN_t,1); SWIG_arg++; 
+  return SWIG_arg;
+  
+  if(0) SWIG_fail;
+  
+fail:
+  lua_error(L);
+  return SWIG_arg;
+}
+
+
+static int _wrap_new_SineD(lua_State* L) {
+  int argc;
+  int argv[5]={
+    1,2,3,4,5
+  };
+  
+  argc = lua_gettop(L);
+  if (argc == 0) {
+    return _wrap_new_SineD__SWIG_4(L);
+  }
+  if (argc == 1) {
+    int _v = 0;
+    {
+      _v = lua_isnumber(L,argv[0]);
+    }
+    if (_v) {
+      return _wrap_new_SineD__SWIG_3(L);
+    }
+  }
+  if (argc == 2) {
+    int _v = 0;
+    {
+      _v = lua_isnumber(L,argv[0]);
+    }
+    if (_v) {
+      {
+        _v = lua_isnumber(L,argv[1]);
+      }
+      if (_v) {
+        return _wrap_new_SineD__SWIG_2(L);
+      }
+    }
+  }
+  if (argc == 3) {
+    int _v = 0;
+    {
+      _v = lua_isnumber(L,argv[0]);
+    }
+    if (_v) {
+      {
+        _v = lua_isnumber(L,argv[1]);
+      }
+      if (_v) {
+        {
+          _v = lua_isnumber(L,argv[2]);
+        }
+        if (_v) {
+          return _wrap_new_SineD__SWIG_1(L);
+        }
+      }
+    }
+  }
+  if (argc == 4) {
+    int _v = 0;
+    {
+      _v = lua_isnumber(L,argv[0]);
+    }
+    if (_v) {
+      {
+        _v = lua_isnumber(L,argv[1]);
+      }
+      if (_v) {
+        {
+          _v = lua_isnumber(L,argv[2]);
+        }
+        if (_v) {
+          {
+            _v = lua_isnumber(L,argv[3]);
+          }
+          if (_v) {
+            return _wrap_new_SineD__SWIG_0(L);
+          }
+        }
+      }
+    }
+  }
+  
+  SWIG_Lua_pusherrstring(L,"Wrong arguments for overloaded function 'new_SineD'\n"
+    "  Possible C/C++ prototypes are:\n"
+    "    gam::SineD< SampleType >::SineD(float,float,float,float)\n"
+    "    gam::SineD< SampleType >::SineD(float,float,float)\n"
+    "    gam::SineD< SampleType >::SineD(float,float)\n"
+    "    gam::SineD< SampleType >::SineD(float)\n"
+    "    gam::SineD< SampleType >::SineD()\n");
+  lua_error(L);return 0;
+}
+
+
+static int _wrap_SineD_freq__SWIG_0(lua_State* L) {
+  int SWIG_arg = 0;
+  gam::SineD< SampleType > *arg1 = (gam::SineD< SampleType > *) 0 ;
+  float result;
+  
+  SWIG_check_num_args("gam::SineD< SampleType >::freq",1,1)
+  if(!SWIG_isptrtype(L,1)) SWIG_fail_arg("gam::SineD< SampleType >::freq",1,"gam::SineD< SampleType > const *");
+  
+  if (!SWIG_IsOK(SWIG_ConvertPtr(L,1,(void**)&arg1,SWIGTYPE_p_gam__SineDT_float_GAM_DEFAULT_DOMAIN_t,0))){
+    SWIG_fail_ptr("SineD_freq",1,SWIGTYPE_p_gam__SineDT_float_GAM_DEFAULT_DOMAIN_t);
+  }
+  
+  result = (float)((gam::SineD< SampleType > const *)arg1)->freq();
+  lua_pushnumber(L, (lua_Number) result); SWIG_arg++;
+  return SWIG_arg;
+  
+  if(0) SWIG_fail;
+  
+fail:
+  lua_error(L);
+  return SWIG_arg;
+}
+
+
+static int _wrap_SineD_ampPhase__SWIG_0(lua_State* L) {
+  int SWIG_arg = 0;
+  gam::SineD< SampleType > *arg1 = (gam::SineD< SampleType > *) 0 ;
+  float arg2 ;
+  float arg3 ;
+  
+  SWIG_check_num_args("gam::SineD< SampleType >::ampPhase",3,3)
+  if(!SWIG_isptrtype(L,1)) SWIG_fail_arg("gam::SineD< SampleType >::ampPhase",1,"gam::SineD< SampleType > *");
+  if(!lua_isnumber(L,2)) SWIG_fail_arg("gam::SineD< SampleType >::ampPhase",2,"float");
+  if(!lua_isnumber(L,3)) SWIG_fail_arg("gam::SineD< SampleType >::ampPhase",3,"float");
+  
+  if (!SWIG_IsOK(SWIG_ConvertPtr(L,1,(void**)&arg1,SWIGTYPE_p_gam__SineDT_float_GAM_DEFAULT_DOMAIN_t,0))){
+    SWIG_fail_ptr("SineD_ampPhase",1,SWIGTYPE_p_gam__SineDT_float_GAM_DEFAULT_DOMAIN_t);
+  }
+  
+  arg2 = (float)lua_tonumber(L, 2);
+  arg3 = (float)lua_tonumber(L, 3);
+  (arg1)->ampPhase(arg2,arg3);
+  
+  return SWIG_arg;
+  
+  if(0) SWIG_fail;
+  
+fail:
+  lua_error(L);
+  return SWIG_arg;
+}
+
+
+static int _wrap_SineD_ampPhase__SWIG_1(lua_State* L) {
+  int SWIG_arg = 0;
+  gam::SineD< SampleType > *arg1 = (gam::SineD< SampleType > *) 0 ;
+  float arg2 ;
+  
+  SWIG_check_num_args("gam::SineD< SampleType >::ampPhase",2,2)
+  if(!SWIG_isptrtype(L,1)) SWIG_fail_arg("gam::SineD< SampleType >::ampPhase",1,"gam::SineD< SampleType > *");
+  if(!lua_isnumber(L,2)) SWIG_fail_arg("gam::SineD< SampleType >::ampPhase",2,"float");
+  
+  if (!SWIG_IsOK(SWIG_ConvertPtr(L,1,(void**)&arg1,SWIGTYPE_p_gam__SineDT_float_GAM_DEFAULT_DOMAIN_t,0))){
+    SWIG_fail_ptr("SineD_ampPhase",1,SWIGTYPE_p_gam__SineDT_float_GAM_DEFAULT_DOMAIN_t);
+  }
+  
+  arg2 = (float)lua_tonumber(L, 2);
+  (arg1)->ampPhase(arg2);
+  
+  return SWIG_arg;
+  
+  if(0) SWIG_fail;
+  
+fail:
+  lua_error(L);
+  return SWIG_arg;
+}
+
+
+static int _wrap_SineD_ampPhase__SWIG_2(lua_State* L) {
+  int SWIG_arg = 0;
+  gam::SineD< SampleType > *arg1 = (gam::SineD< SampleType > *) 0 ;
+  
+  SWIG_check_num_args("gam::SineD< SampleType >::ampPhase",1,1)
+  if(!SWIG_isptrtype(L,1)) SWIG_fail_arg("gam::SineD< SampleType >::ampPhase",1,"gam::SineD< SampleType > *");
+  
+  if (!SWIG_IsOK(SWIG_ConvertPtr(L,1,(void**)&arg1,SWIGTYPE_p_gam__SineDT_float_GAM_DEFAULT_DOMAIN_t,0))){
+    SWIG_fail_ptr("SineD_ampPhase",1,SWIGTYPE_p_gam__SineDT_float_GAM_DEFAULT_DOMAIN_t);
+  }
+  
+  (arg1)->ampPhase();
+  
+  return SWIG_arg;
+  
+  if(0) SWIG_fail;
+  
+fail:
+  lua_error(L);
+  return SWIG_arg;
+}
+
+
+static int _wrap_SineD_ampPhase(lua_State* L) {
+  int argc;
+  int argv[4]={
+    1,2,3,4
+  };
+  
+  argc = lua_gettop(L);
+  if (argc == 1) {
+    int _v = 0;
+    {
+      void *ptr;
+      if (SWIG_isptrtype(L,argv[0])==0 || SWIG_ConvertPtr(L,argv[0], (void **) &ptr, SWIGTYPE_p_gam__SineDT_float_GAM_DEFAULT_DOMAIN_t, 0)) {
+        _v = 0;
+      } else {
+        _v = 1;
+      }
+    }
+    if (_v) {
+      return _wrap_SineD_ampPhase__SWIG_2(L);
+    }
+  }
+  if (argc == 2) {
+    int _v = 0;
+    {
+      void *ptr;
+      if (SWIG_isptrtype(L,argv[0])==0 || SWIG_ConvertPtr(L,argv[0], (void **) &ptr, SWIGTYPE_p_gam__SineDT_float_GAM_DEFAULT_DOMAIN_t, 0)) {
+        _v = 0;
+      } else {
+        _v = 1;
+      }
+    }
+    if (_v) {
+      {
+        _v = lua_isnumber(L,argv[1]);
+      }
+      if (_v) {
+        return _wrap_SineD_ampPhase__SWIG_1(L);
+      }
+    }
+  }
+  if (argc == 3) {
+    int _v = 0;
+    {
+      void *ptr;
+      if (SWIG_isptrtype(L,argv[0])==0 || SWIG_ConvertPtr(L,argv[0], (void **) &ptr, SWIGTYPE_p_gam__SineDT_float_GAM_DEFAULT_DOMAIN_t, 0)) {
+        _v = 0;
+      } else {
+        _v = 1;
+      }
+    }
+    if (_v) {
+      {
+        _v = lua_isnumber(L,argv[1]);
+      }
+      if (_v) {
+        {
+          _v = lua_isnumber(L,argv[2]);
+        }
+        if (_v) {
+          return _wrap_SineD_ampPhase__SWIG_0(L);
+        }
+      }
+    }
+  }
+  
+  SWIG_Lua_pusherrstring(L,"Wrong arguments for overloaded function 'SineD_ampPhase'\n"
+    "  Possible C/C++ prototypes are:\n"
+    "    gam::SineD< SampleType >::ampPhase(float,float)\n"
+    "    gam::SineD< SampleType >::ampPhase(float)\n"
+    "    gam::SineD< SampleType >::ampPhase()\n");
+  lua_error(L);return 0;
+}
+
+
+static int _wrap_SineD_decay(lua_State* L) {
+  int SWIG_arg = 0;
+  gam::SineD< SampleType > *arg1 = (gam::SineD< SampleType > *) 0 ;
+  float arg2 ;
+  
+  SWIG_check_num_args("gam::SineD< SampleType >::decay",2,2)
+  if(!SWIG_isptrtype(L,1)) SWIG_fail_arg("gam::SineD< SampleType >::decay",1,"gam::SineD< SampleType > *");
+  if(!lua_isnumber(L,2)) SWIG_fail_arg("gam::SineD< SampleType >::decay",2,"float");
+  
+  if (!SWIG_IsOK(SWIG_ConvertPtr(L,1,(void**)&arg1,SWIGTYPE_p_gam__SineDT_float_GAM_DEFAULT_DOMAIN_t,0))){
+    SWIG_fail_ptr("SineD_decay",1,SWIGTYPE_p_gam__SineDT_float_GAM_DEFAULT_DOMAIN_t);
+  }
+  
+  arg2 = (float)lua_tonumber(L, 2);
+  (arg1)->decay(arg2);
+  
+  return SWIG_arg;
+  
+  if(0) SWIG_fail;
+  
+fail:
+  lua_error(L);
+  return SWIG_arg;
+}
+
+
+static int _wrap_SineD_freq__SWIG_1(lua_State* L) {
+  int SWIG_arg = 0;
+  gam::SineD< SampleType > *arg1 = (gam::SineD< SampleType > *) 0 ;
+  float arg2 ;
+  
+  SWIG_check_num_args("gam::SineD< SampleType >::freq",2,2)
+  if(!SWIG_isptrtype(L,1)) SWIG_fail_arg("gam::SineD< SampleType >::freq",1,"gam::SineD< SampleType > *");
+  if(!lua_isnumber(L,2)) SWIG_fail_arg("gam::SineD< SampleType >::freq",2,"float");
+  
+  if (!SWIG_IsOK(SWIG_ConvertPtr(L,1,(void**)&arg1,SWIGTYPE_p_gam__SineDT_float_GAM_DEFAULT_DOMAIN_t,0))){
+    SWIG_fail_ptr("SineD_freq",1,SWIGTYPE_p_gam__SineDT_float_GAM_DEFAULT_DOMAIN_t);
+  }
+  
+  arg2 = (float)lua_tonumber(L, 2);
+  (arg1)->freq(arg2);
+  
+  return SWIG_arg;
+  
+  if(0) SWIG_fail;
+  
+fail:
+  lua_error(L);
+  return SWIG_arg;
+}
+
+
+static int _wrap_SineD_freq(lua_State* L) {
+  int argc;
+  int argv[3]={
+    1,2,3
+  };
+  
+  argc = lua_gettop(L);
+  if (argc == 1) {
+    int _v = 0;
+    {
+      void *ptr;
+      if (SWIG_isptrtype(L,argv[0])==0 || SWIG_ConvertPtr(L,argv[0], (void **) &ptr, SWIGTYPE_p_gam__SineDT_float_GAM_DEFAULT_DOMAIN_t, 0)) {
+        _v = 0;
+      } else {
+        _v = 1;
+      }
+    }
+    if (_v) {
+      return _wrap_SineD_freq__SWIG_0(L);
+    }
+  }
+  if (argc == 2) {
+    int _v = 0;
+    {
+      void *ptr;
+      if (SWIG_isptrtype(L,argv[0])==0 || SWIG_ConvertPtr(L,argv[0], (void **) &ptr, SWIGTYPE_p_gam__SineDT_float_GAM_DEFAULT_DOMAIN_t, 0)) {
+        _v = 0;
+      } else {
+        _v = 1;
+      }
+    }
+    if (_v) {
+      {
+        _v = lua_isnumber(L,argv[1]);
+      }
+      if (_v) {
+        return _wrap_SineD_freq__SWIG_1(L);
+      }
+    }
+  }
+  
+  SWIG_Lua_pusherrstring(L,"Wrong arguments for overloaded function 'SineD_freq'\n"
+    "  Possible C/C++ prototypes are:\n"
+    "    gam::SineD< SampleType >::freq() const\n"
+    "    gam::SineD< SampleType >::freq(float)\n");
+  lua_error(L);return 0;
+}
+
+
+static int _wrap_SineD_period(lua_State* L) {
+  int SWIG_arg = 0;
+  gam::SineD< SampleType > *arg1 = (gam::SineD< SampleType > *) 0 ;
+  float arg2 ;
+  
+  SWIG_check_num_args("gam::SineD< SampleType >::period",2,2)
+  if(!SWIG_isptrtype(L,1)) SWIG_fail_arg("gam::SineD< SampleType >::period",1,"gam::SineD< SampleType > *");
+  if(!lua_isnumber(L,2)) SWIG_fail_arg("gam::SineD< SampleType >::period",2,"float");
+  
+  if (!SWIG_IsOK(SWIG_ConvertPtr(L,1,(void**)&arg1,SWIGTYPE_p_gam__SineDT_float_GAM_DEFAULT_DOMAIN_t,0))){
+    SWIG_fail_ptr("SineD_period",1,SWIGTYPE_p_gam__SineDT_float_GAM_DEFAULT_DOMAIN_t);
+  }
+  
+  arg2 = (float)lua_tonumber(L, 2);
+  (arg1)->period(arg2);
+  
+  return SWIG_arg;
+  
+  if(0) SWIG_fail;
+  
+fail:
+  lua_error(L);
+  return SWIG_arg;
+}
+
+
+static int _wrap_SineD_set__SWIG_0(lua_State* L) {
+  int SWIG_arg = 0;
+  gam::SineD< SampleType > *arg1 = (gam::SineD< SampleType > *) 0 ;
+  float arg2 ;
+  float arg3 ;
+  float arg4 ;
+  float arg5 ;
+  
+  SWIG_check_num_args("gam::SineD< SampleType >::set",5,5)
+  if(!SWIG_isptrtype(L,1)) SWIG_fail_arg("gam::SineD< SampleType >::set",1,"gam::SineD< SampleType > *");
+  if(!lua_isnumber(L,2)) SWIG_fail_arg("gam::SineD< SampleType >::set",2,"float");
+  if(!lua_isnumber(L,3)) SWIG_fail_arg("gam::SineD< SampleType >::set",3,"float");
+  if(!lua_isnumber(L,4)) SWIG_fail_arg("gam::SineD< SampleType >::set",4,"float");
+  if(!lua_isnumber(L,5)) SWIG_fail_arg("gam::SineD< SampleType >::set",5,"float");
+  
+  if (!SWIG_IsOK(SWIG_ConvertPtr(L,1,(void**)&arg1,SWIGTYPE_p_gam__SineDT_float_GAM_DEFAULT_DOMAIN_t,0))){
+    SWIG_fail_ptr("SineD_set",1,SWIGTYPE_p_gam__SineDT_float_GAM_DEFAULT_DOMAIN_t);
+  }
+  
+  arg2 = (float)lua_tonumber(L, 2);
+  arg3 = (float)lua_tonumber(L, 3);
+  arg4 = (float)lua_tonumber(L, 4);
+  arg5 = (float)lua_tonumber(L, 5);
+  (arg1)->set(arg2,arg3,arg4,arg5);
+  
+  return SWIG_arg;
+  
+  if(0) SWIG_fail;
+  
+fail:
+  lua_error(L);
+  return SWIG_arg;
+}
+
+
+static int _wrap_SineD_set__SWIG_1(lua_State* L) {
+  int SWIG_arg = 0;
+  gam::SineD< SampleType > *arg1 = (gam::SineD< SampleType > *) 0 ;
+  float arg2 ;
+  float arg3 ;
+  float arg4 ;
+  
+  SWIG_check_num_args("gam::SineD< SampleType >::set",4,4)
+  if(!SWIG_isptrtype(L,1)) SWIG_fail_arg("gam::SineD< SampleType >::set",1,"gam::SineD< SampleType > *");
+  if(!lua_isnumber(L,2)) SWIG_fail_arg("gam::SineD< SampleType >::set",2,"float");
+  if(!lua_isnumber(L,3)) SWIG_fail_arg("gam::SineD< SampleType >::set",3,"float");
+  if(!lua_isnumber(L,4)) SWIG_fail_arg("gam::SineD< SampleType >::set",4,"float");
+  
+  if (!SWIG_IsOK(SWIG_ConvertPtr(L,1,(void**)&arg1,SWIGTYPE_p_gam__SineDT_float_GAM_DEFAULT_DOMAIN_t,0))){
+    SWIG_fail_ptr("SineD_set",1,SWIGTYPE_p_gam__SineDT_float_GAM_DEFAULT_DOMAIN_t);
+  }
+  
+  arg2 = (float)lua_tonumber(L, 2);
+  arg3 = (float)lua_tonumber(L, 3);
+  arg4 = (float)lua_tonumber(L, 4);
+  (arg1)->set(arg2,arg3,arg4);
+  
+  return SWIG_arg;
+  
+  if(0) SWIG_fail;
+  
+fail:
+  lua_error(L);
+  return SWIG_arg;
+}
+
+
+static int _wrap_SineD_set(lua_State* L) {
+  int argc;
+  int argv[6]={
+    1,2,3,4,5,6
+  };
+  
+  argc = lua_gettop(L);
+  if (argc == 4) {
+    int _v = 0;
+    {
+      void *ptr;
+      if (SWIG_isptrtype(L,argv[0])==0 || SWIG_ConvertPtr(L,argv[0], (void **) &ptr, SWIGTYPE_p_gam__SineDT_float_GAM_DEFAULT_DOMAIN_t, 0)) {
+        _v = 0;
+      } else {
+        _v = 1;
+      }
+    }
+    if (_v) {
+      {
+        _v = lua_isnumber(L,argv[1]);
+      }
+      if (_v) {
+        {
+          _v = lua_isnumber(L,argv[2]);
+        }
+        if (_v) {
+          {
+            _v = lua_isnumber(L,argv[3]);
+          }
+          if (_v) {
+            return _wrap_SineD_set__SWIG_1(L);
+          }
+        }
+      }
+    }
+  }
+  if (argc == 5) {
+    int _v = 0;
+    {
+      void *ptr;
+      if (SWIG_isptrtype(L,argv[0])==0 || SWIG_ConvertPtr(L,argv[0], (void **) &ptr, SWIGTYPE_p_gam__SineDT_float_GAM_DEFAULT_DOMAIN_t, 0)) {
+        _v = 0;
+      } else {
+        _v = 1;
+      }
+    }
+    if (_v) {
+      {
+        _v = lua_isnumber(L,argv[1]);
+      }
+      if (_v) {
+        {
+          _v = lua_isnumber(L,argv[2]);
+        }
+        if (_v) {
+          {
+            _v = lua_isnumber(L,argv[3]);
+          }
+          if (_v) {
+            {
+              _v = lua_isnumber(L,argv[4]);
+            }
+            if (_v) {
+              return _wrap_SineD_set__SWIG_0(L);
+            }
+          }
+        }
+      }
+    }
+  }
+  
+  SWIG_Lua_pusherrstring(L,"Wrong arguments for overloaded function 'SineD_set'\n"
+    "  Possible C/C++ prototypes are:\n"
+    "    gam::SineD< SampleType >::set(float,float,float,float)\n"
+    "    gam::SineD< SampleType >::set(float,float,float)\n");
+  lua_error(L);return 0;
+}
+
+
+static int _wrap_SineD_onDomainChange(lua_State* L) {
+  int SWIG_arg = 0;
+  gam::SineD< SampleType > *arg1 = (gam::SineD< SampleType > *) 0 ;
+  double arg2 ;
+  
+  SWIG_check_num_args("gam::SineD< SampleType >::onDomainChange",2,2)
+  if(!SWIG_isptrtype(L,1)) SWIG_fail_arg("gam::SineD< SampleType >::onDomainChange",1,"gam::SineD< SampleType > *");
+  if(!lua_isnumber(L,2)) SWIG_fail_arg("gam::SineD< SampleType >::onDomainChange",2,"double");
+  
+  if (!SWIG_IsOK(SWIG_ConvertPtr(L,1,(void**)&arg1,SWIGTYPE_p_gam__SineDT_float_GAM_DEFAULT_DOMAIN_t,0))){
+    SWIG_fail_ptr("SineD_onDomainChange",1,SWIGTYPE_p_gam__SineDT_float_GAM_DEFAULT_DOMAIN_t);
+  }
+  
+  arg2 = (double)lua_tonumber(L, 2);
+  (arg1)->onDomainChange(arg2);
+  
+  return SWIG_arg;
+  
+  if(0) SWIG_fail;
+  
+fail:
+  lua_error(L);
+  return SWIG_arg;
+}
+
+
+static void swig_delete_SineD(void *obj) {
+gam::SineD< SampleType > *arg1 = (gam::SineD< SampleType > *) obj;
+delete arg1;
+}
+static int _proxy__wrap_new_SineD(lua_State *L) {
+    assert(lua_istable(L,1));
+    lua_pushcfunction(L,_wrap_new_SineD);
+    assert(!lua_isnil(L,-1));
+    lua_replace(L,1); /* replace our table with real constructor */
+    lua_call(L,lua_gettop(L)-1,1);
+    return 1;
+}
+static swig_lua_attribute swig_SineD_attributes[] = {
+    {0,0,0}
+};
+static swig_lua_method swig_SineD_methods[]= {
+    { "ampPhase", _wrap_SineD_ampPhase},
+    { "decay", _wrap_SineD_decay},
+    { "freq", _wrap_SineD_freq},
+    { "period", _wrap_SineD_period},
+    { "set", _wrap_SineD_set},
+    { "onDomainChange", _wrap_SineD_onDomainChange},
+    {0,0}
+};
+static swig_lua_method swig_SineD_meta[] = {
+    {0,0}
+};
+
+static swig_lua_attribute swig_SineD_Sf_SwigStatic_attributes[] = {
+    {0,0,0}
+};
+static swig_lua_const_info swig_SineD_Sf_SwigStatic_constants[]= {
+    {0,0,0,0,0,0}
+};
+static swig_lua_method swig_SineD_Sf_SwigStatic_methods[]= {
+    {0,0}
+};
+static swig_lua_class* swig_SineD_Sf_SwigStatic_classes[]= {
+    0
+};
+
+static swig_lua_namespace swig_SineD_Sf_SwigStatic = {
+    "SineD",
+    swig_SineD_Sf_SwigStatic_methods,
+    swig_SineD_Sf_SwigStatic_attributes,
+    swig_SineD_Sf_SwigStatic_constants,
+    swig_SineD_Sf_SwigStatic_classes,
+    0
+};
+static swig_lua_class *swig_SineD_bases[] = {0};
+static const char *swig_SineD_base_names[] = {0};
+static swig_lua_class _wrap_class_SineD = { "SineD", "SineD", &SWIGTYPE_p_gam__SineDT_float_GAM_DEFAULT_DOMAIN_t,_proxy__wrap_new_SineD, swig_delete_SineD, swig_SineD_methods, swig_SineD_attributes, &swig_SineD_Sf_SwigStatic, swig_SineD_meta, swig_SineD_bases, swig_SineD_base_names };
+
+static int _wrap_new_SineDs__SWIG_0(lua_State* L) {
+  int SWIG_arg = 0;
+  gam::SineDs< SampleType > *result = 0 ;
+  
+  SWIG_check_num_args("gam::SineDs< SampleType >::SineDs",0,0)
+  result = (gam::SineDs< SampleType > *)new gam::SineDs< SampleType >();
+  SWIG_NewPointerObj(L,result,SWIGTYPE_p_gam__SineDsT_float_GAM_DEFAULT_DOMAIN_t,1); SWIG_arg++; 
+  return SWIG_arg;
+  
+  if(0) SWIG_fail;
+  
+fail:
+  lua_error(L);
+  return SWIG_arg;
+}
+
+
+static int _wrap_new_SineDs__SWIG_1(lua_State* L) {
+  int SWIG_arg = 0;
+  unsigned int arg1 ;
+  gam::SineDs< SampleType > *result = 0 ;
+  
+  SWIG_check_num_args("gam::SineDs< SampleType >::SineDs",1,1)
+  if(!lua_isnumber(L,1)) SWIG_fail_arg("gam::SineDs< SampleType >::SineDs",1,"unsigned int");
+  SWIG_contract_assert((lua_tonumber(L,1)>=0),"number must not be negative");
+  arg1 = (unsigned int)lua_tonumber(L, 1);
+  result = (gam::SineDs< SampleType > *)new gam::SineDs< SampleType >(arg1);
+  SWIG_NewPointerObj(L,result,SWIGTYPE_p_gam__SineDsT_float_GAM_DEFAULT_DOMAIN_t,1); SWIG_arg++; 
+  return SWIG_arg;
+  
+  if(0) SWIG_fail;
+  
+fail:
+  lua_error(L);
+  return SWIG_arg;
+}
+
+
+static int _wrap_new_SineDs(lua_State* L) {
+  int argc;
+  int argv[2]={
+    1,2
+  };
+  
+  argc = lua_gettop(L);
+  if (argc == 0) {
+    return _wrap_new_SineDs__SWIG_0(L);
+  }
+  if (argc == 1) {
+    int _v = 0;
+    {
+      _v = lua_isnumber(L,argv[0]);
+    }
+    if (_v) {
+      return _wrap_new_SineDs__SWIG_1(L);
+    }
+  }
+  
+  SWIG_Lua_pusherrstring(L,"Wrong arguments for overloaded function 'new_SineDs'\n"
+    "  Possible C/C++ prototypes are:\n"
+    "    gam::SineDs< SampleType >::SineDs()\n"
+    "    gam::SineDs< SampleType >::SineDs(unsigned int)\n");
+  lua_error(L);return 0;
+}
+
+
+static int _wrap_SineDs___call(lua_State* L) {
+  int SWIG_arg = 0;
+  gam::SineDs< SampleType > *arg1 = (gam::SineDs< SampleType > *) 0 ;
+  float result;
+  
+  SWIG_check_num_args("gam::SineDs< SampleType >::operator ()",1,1)
+  if(!SWIG_isptrtype(L,1)) SWIG_fail_arg("gam::SineDs< SampleType >::operator ()",1,"gam::SineDs< SampleType > *");
+  
+  if (!SWIG_IsOK(SWIG_ConvertPtr(L,1,(void**)&arg1,SWIGTYPE_p_gam__SineDsT_float_GAM_DEFAULT_DOMAIN_t,0))){
+    SWIG_fail_ptr("SineDs___call",1,SWIGTYPE_p_gam__SineDsT_float_GAM_DEFAULT_DOMAIN_t);
+  }
+  
+  result = (float)(arg1)->operator ()();
+  lua_pushnumber(L, (lua_Number) result); SWIG_arg++;
+  return SWIG_arg;
+  
+  if(0) SWIG_fail;
+  
+fail:
+  lua_error(L);
+  return SWIG_arg;
+}
+
+
+static int _wrap_SineDs_Tick(lua_State* L) {
+  int SWIG_arg = 0;
+  gam::SineDs< SampleType > *arg1 = (gam::SineDs< SampleType > *) 0 ;
+  float result;
+  
+  SWIG_check_num_args("gam::SineDs< SampleType >::Tick",1,1)
+  if(!SWIG_isptrtype(L,1)) SWIG_fail_arg("gam::SineDs< SampleType >::Tick",1,"gam::SineDs< SampleType > *");
+  
+  if (!SWIG_IsOK(SWIG_ConvertPtr(L,1,(void**)&arg1,SWIGTYPE_p_gam__SineDsT_float_GAM_DEFAULT_DOMAIN_t,0))){
+    SWIG_fail_ptr("SineDs_Tick",1,SWIGTYPE_p_gam__SineDsT_float_GAM_DEFAULT_DOMAIN_t);
+  }
+  
+  result = (float)gam_SineDs_Sl_SampleType_Sg__Tick__SWIG(arg1);
+  lua_pushnumber(L, (lua_Number) result); SWIG_arg++;
+  return SWIG_arg;
+  
+  if(0) SWIG_fail;
+  
+fail:
+  lua_error(L);
+  return SWIG_arg;
+}
+
+
+static int _wrap_SineDs_last(lua_State* L) {
+  int SWIG_arg = 0;
+  gam::SineDs< SampleType > *arg1 = (gam::SineDs< SampleType > *) 0 ;
+  unsigned int arg2 ;
+  float result;
+  
+  SWIG_check_num_args("gam::SineDs< SampleType >::last",2,2)
+  if(!SWIG_isptrtype(L,1)) SWIG_fail_arg("gam::SineDs< SampleType >::last",1,"gam::SineDs< SampleType > const *");
+  if(!lua_isnumber(L,2)) SWIG_fail_arg("gam::SineDs< SampleType >::last",2,"unsigned int");
+  
+  if (!SWIG_IsOK(SWIG_ConvertPtr(L,1,(void**)&arg1,SWIGTYPE_p_gam__SineDsT_float_GAM_DEFAULT_DOMAIN_t,0))){
+    SWIG_fail_ptr("SineDs_last",1,SWIGTYPE_p_gam__SineDsT_float_GAM_DEFAULT_DOMAIN_t);
+  }
+  
+  SWIG_contract_assert((lua_tonumber(L,2)>=0),"number must not be negative");
+  arg2 = (unsigned int)lua_tonumber(L, 2);
+  result = (float)((gam::SineDs< SampleType > const *)arg1)->last(arg2);
+  lua_pushnumber(L, (lua_Number) result); SWIG_arg++;
+  return SWIG_arg;
+  
+  if(0) SWIG_fail;
+  
+fail:
+  lua_error(L);
+  return SWIG_arg;
+}
+
+
+static int _wrap_SineDs_set__SWIG_0(lua_State* L) {
+  int SWIG_arg = 0;
+  gam::SineDs< SampleType > *arg1 = (gam::SineDs< SampleType > *) 0 ;
+  unsigned int arg2 ;
+  float arg3 ;
+  float arg4 ;
+  float arg5 ;
+  float arg6 ;
+  
+  SWIG_check_num_args("gam::SineDs< SampleType >::set",6,6)
+  if(!SWIG_isptrtype(L,1)) SWIG_fail_arg("gam::SineDs< SampleType >::set",1,"gam::SineDs< SampleType > *");
+  if(!lua_isnumber(L,2)) SWIG_fail_arg("gam::SineDs< SampleType >::set",2,"unsigned int");
+  if(!lua_isnumber(L,3)) SWIG_fail_arg("gam::SineDs< SampleType >::set",3,"float");
+  if(!lua_isnumber(L,4)) SWIG_fail_arg("gam::SineDs< SampleType >::set",4,"float");
+  if(!lua_isnumber(L,5)) SWIG_fail_arg("gam::SineDs< SampleType >::set",5,"float");
+  if(!lua_isnumber(L,6)) SWIG_fail_arg("gam::SineDs< SampleType >::set",6,"float");
+  
+  if (!SWIG_IsOK(SWIG_ConvertPtr(L,1,(void**)&arg1,SWIGTYPE_p_gam__SineDsT_float_GAM_DEFAULT_DOMAIN_t,0))){
+    SWIG_fail_ptr("SineDs_set",1,SWIGTYPE_p_gam__SineDsT_float_GAM_DEFAULT_DOMAIN_t);
+  }
+  
+  SWIG_contract_assert((lua_tonumber(L,2)>=0),"number must not be negative");
+  arg2 = (unsigned int)lua_tonumber(L, 2);
+  arg3 = (float)lua_tonumber(L, 3);
+  arg4 = (float)lua_tonumber(L, 4);
+  arg5 = (float)lua_tonumber(L, 5);
+  arg6 = (float)lua_tonumber(L, 6);
+  (arg1)->set(arg2,arg3,arg4,arg5,arg6);
+  
+  return SWIG_arg;
+  
+  if(0) SWIG_fail;
+  
+fail:
+  lua_error(L);
+  return SWIG_arg;
+}
+
+
+static int _wrap_SineDs_set__SWIG_1(lua_State* L) {
+  int SWIG_arg = 0;
+  gam::SineDs< SampleType > *arg1 = (gam::SineDs< SampleType > *) 0 ;
+  unsigned int arg2 ;
+  float arg3 ;
+  float arg4 ;
+  float arg5 ;
+  
+  SWIG_check_num_args("gam::SineDs< SampleType >::set",5,5)
+  if(!SWIG_isptrtype(L,1)) SWIG_fail_arg("gam::SineDs< SampleType >::set",1,"gam::SineDs< SampleType > *");
+  if(!lua_isnumber(L,2)) SWIG_fail_arg("gam::SineDs< SampleType >::set",2,"unsigned int");
+  if(!lua_isnumber(L,3)) SWIG_fail_arg("gam::SineDs< SampleType >::set",3,"float");
+  if(!lua_isnumber(L,4)) SWIG_fail_arg("gam::SineDs< SampleType >::set",4,"float");
+  if(!lua_isnumber(L,5)) SWIG_fail_arg("gam::SineDs< SampleType >::set",5,"float");
+  
+  if (!SWIG_IsOK(SWIG_ConvertPtr(L,1,(void**)&arg1,SWIGTYPE_p_gam__SineDsT_float_GAM_DEFAULT_DOMAIN_t,0))){
+    SWIG_fail_ptr("SineDs_set",1,SWIGTYPE_p_gam__SineDsT_float_GAM_DEFAULT_DOMAIN_t);
+  }
+  
+  SWIG_contract_assert((lua_tonumber(L,2)>=0),"number must not be negative");
+  arg2 = (unsigned int)lua_tonumber(L, 2);
+  arg3 = (float)lua_tonumber(L, 3);
+  arg4 = (float)lua_tonumber(L, 4);
+  arg5 = (float)lua_tonumber(L, 5);
+  (arg1)->set(arg2,arg3,arg4,arg5);
+  
+  return SWIG_arg;
+  
+  if(0) SWIG_fail;
+  
+fail:
+  lua_error(L);
+  return SWIG_arg;
+}
+
+
+static int _wrap_SineDs_set(lua_State* L) {
+  int argc;
+  int argv[7]={
+    1,2,3,4,5,6,7
+  };
+  
+  argc = lua_gettop(L);
+  if (argc == 5) {
+    int _v = 0;
+    {
+      void *ptr;
+      if (SWIG_isptrtype(L,argv[0])==0 || SWIG_ConvertPtr(L,argv[0], (void **) &ptr, SWIGTYPE_p_gam__SineDsT_float_GAM_DEFAULT_DOMAIN_t, 0)) {
+        _v = 0;
+      } else {
+        _v = 1;
+      }
+    }
+    if (_v) {
+      {
+        _v = lua_isnumber(L,argv[1]);
+      }
+      if (_v) {
+        {
+          _v = lua_isnumber(L,argv[2]);
+        }
+        if (_v) {
+          {
+            _v = lua_isnumber(L,argv[3]);
+          }
+          if (_v) {
+            {
+              _v = lua_isnumber(L,argv[4]);
+            }
+            if (_v) {
+              return _wrap_SineDs_set__SWIG_1(L);
+            }
+          }
+        }
+      }
+    }
+  }
+  if (argc == 6) {
+    int _v = 0;
+    {
+      void *ptr;
+      if (SWIG_isptrtype(L,argv[0])==0 || SWIG_ConvertPtr(L,argv[0], (void **) &ptr, SWIGTYPE_p_gam__SineDsT_float_GAM_DEFAULT_DOMAIN_t, 0)) {
+        _v = 0;
+      } else {
+        _v = 1;
+      }
+    }
+    if (_v) {
+      {
+        _v = lua_isnumber(L,argv[1]);
+      }
+      if (_v) {
+        {
+          _v = lua_isnumber(L,argv[2]);
+        }
+        if (_v) {
+          {
+            _v = lua_isnumber(L,argv[3]);
+          }
+          if (_v) {
+            {
+              _v = lua_isnumber(L,argv[4]);
+            }
+            if (_v) {
+              {
+                _v = lua_isnumber(L,argv[5]);
+              }
+              if (_v) {
+                return _wrap_SineDs_set__SWIG_0(L);
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+  
+  SWIG_Lua_pusherrstring(L,"Wrong arguments for overloaded function 'SineDs_set'\n"
+    "  Possible C/C++ prototypes are:\n"
+    "    gam::SineDs< SampleType >::set(unsigned int,float,float,float,float)\n"
+    "    gam::SineDs< SampleType >::set(unsigned int,float,float,float)\n");
+  lua_error(L);return 0;
+}
+
+
+static int _wrap_SineDs_onDomainChange(lua_State* L) {
+  int SWIG_arg = 0;
+  gam::SineDs< SampleType > *arg1 = (gam::SineDs< SampleType > *) 0 ;
+  double arg2 ;
+  
+  SWIG_check_num_args("gam::SineDs< SampleType >::onDomainChange",2,2)
+  if(!SWIG_isptrtype(L,1)) SWIG_fail_arg("gam::SineDs< SampleType >::onDomainChange",1,"gam::SineDs< SampleType > *");
+  if(!lua_isnumber(L,2)) SWIG_fail_arg("gam::SineDs< SampleType >::onDomainChange",2,"double");
+  
+  if (!SWIG_IsOK(SWIG_ConvertPtr(L,1,(void**)&arg1,SWIGTYPE_p_gam__SineDsT_float_GAM_DEFAULT_DOMAIN_t,0))){
+    SWIG_fail_ptr("SineDs_onDomainChange",1,SWIGTYPE_p_gam__SineDsT_float_GAM_DEFAULT_DOMAIN_t);
+  }
+  
+  arg2 = (double)lua_tonumber(L, 2);
+  (arg1)->onDomainChange(arg2);
+  
+  return SWIG_arg;
+  
+  if(0) SWIG_fail;
+  
+fail:
+  lua_error(L);
+  return SWIG_arg;
+}
+
+
+static void swig_delete_SineDs(void *obj) {
+gam::SineDs< SampleType > *arg1 = (gam::SineDs< SampleType > *) obj;
+delete arg1;
+}
+static int _proxy__wrap_new_SineDs(lua_State *L) {
+    assert(lua_istable(L,1));
+    lua_pushcfunction(L,_wrap_new_SineDs);
+    assert(!lua_isnil(L,-1));
+    lua_replace(L,1); /* replace our table with real constructor */
+    lua_call(L,lua_gettop(L)-1,1);
+    return 1;
+}
+static swig_lua_attribute swig_SineDs_attributes[] = {
+    {0,0,0}
+};
+static swig_lua_method swig_SineDs_methods[]= {
+    { "__call", _wrap_SineDs___call},
+    { "Tick", _wrap_SineDs_Tick},
+    { "last", _wrap_SineDs_last},
+    { "set", _wrap_SineDs_set},
+    { "onDomainChange", _wrap_SineDs_onDomainChange},
+    {0,0}
+};
+static swig_lua_method swig_SineDs_meta[] = {
+    { "__call", _wrap_SineDs___call},
+    {0,0}
+};
+
+static swig_lua_attribute swig_SineDs_Sf_SwigStatic_attributes[] = {
+    {0,0,0}
+};
+static swig_lua_const_info swig_SineDs_Sf_SwigStatic_constants[]= {
+    {0,0,0,0,0,0}
+};
+static swig_lua_method swig_SineDs_Sf_SwigStatic_methods[]= {
+    {0,0}
+};
+static swig_lua_class* swig_SineDs_Sf_SwigStatic_classes[]= {
+    0
+};
+
+static swig_lua_namespace swig_SineDs_Sf_SwigStatic = {
+    "SineDs",
+    swig_SineDs_Sf_SwigStatic_methods,
+    swig_SineDs_Sf_SwigStatic_attributes,
+    swig_SineDs_Sf_SwigStatic_constants,
+    swig_SineDs_Sf_SwigStatic_classes,
+    0
+};
+static swig_lua_class *swig_SineDs_bases[] = {0};
+static const char *swig_SineDs_base_names[] = {0};
+static swig_lua_class _wrap_class_SineDs = { "SineDs", "SineDs", &SWIGTYPE_p_gam__SineDsT_float_GAM_DEFAULT_DOMAIN_t,_proxy__wrap_new_SineDs, swig_delete_SineDs, swig_SineDs_methods, swig_SineDs_attributes, &swig_SineDs_Sf_SwigStatic, swig_SineDs_meta, swig_SineDs_bases, swig_SineDs_base_names };
+
+static int _wrap_new_Chirplet__SWIG_0(lua_State* L) {
+  int SWIG_arg = 0;
+  float arg1 ;
+  float arg2 ;
+  float arg3 ;
+  float arg4 ;
+  float arg5 ;
+  gam::Chirplet< SampleType > *result = 0 ;
+  
+  SWIG_check_num_args("gam::Chirplet< SampleType >::Chirplet",5,5)
+  if(!lua_isnumber(L,1)) SWIG_fail_arg("gam::Chirplet< SampleType >::Chirplet",1,"float");
+  if(!lua_isnumber(L,2)) SWIG_fail_arg("gam::Chirplet< SampleType >::Chirplet",2,"float");
+  if(!lua_isnumber(L,3)) SWIG_fail_arg("gam::Chirplet< SampleType >::Chirplet",3,"float");
+  if(!lua_isnumber(L,4)) SWIG_fail_arg("gam::Chirplet< SampleType >::Chirplet",4,"float");
+  if(!lua_isnumber(L,5)) SWIG_fail_arg("gam::Chirplet< SampleType >::Chirplet",5,"float");
+  arg1 = (float)lua_tonumber(L, 1);
+  arg2 = (float)lua_tonumber(L, 2);
+  arg3 = (float)lua_tonumber(L, 3);
+  arg4 = (float)lua_tonumber(L, 4);
+  arg5 = (float)lua_tonumber(L, 5);
+  result = (gam::Chirplet< SampleType > *)new gam::Chirplet< SampleType >(arg1,arg2,arg3,arg4,arg5);
+  SWIG_NewPointerObj(L,result,SWIGTYPE_p_gam__ChirpletT_float_GAM_DEFAULT_DOMAIN_t,1); SWIG_arg++; 
+  return SWIG_arg;
+  
+  if(0) SWIG_fail;
+  
+fail:
+  lua_error(L);
+  return SWIG_arg;
+}
+
+
+static int _wrap_new_Chirplet__SWIG_1(lua_State* L) {
+  int SWIG_arg = 0;
+  float arg1 ;
+  float arg2 ;
+  float arg3 ;
+  float arg4 ;
+  gam::Chirplet< SampleType > *result = 0 ;
+  
+  SWIG_check_num_args("gam::Chirplet< SampleType >::Chirplet",4,4)
+  if(!lua_isnumber(L,1)) SWIG_fail_arg("gam::Chirplet< SampleType >::Chirplet",1,"float");
+  if(!lua_isnumber(L,2)) SWIG_fail_arg("gam::Chirplet< SampleType >::Chirplet",2,"float");
+  if(!lua_isnumber(L,3)) SWIG_fail_arg("gam::Chirplet< SampleType >::Chirplet",3,"float");
+  if(!lua_isnumber(L,4)) SWIG_fail_arg("gam::Chirplet< SampleType >::Chirplet",4,"float");
+  arg1 = (float)lua_tonumber(L, 1);
+  arg2 = (float)lua_tonumber(L, 2);
+  arg3 = (float)lua_tonumber(L, 3);
+  arg4 = (float)lua_tonumber(L, 4);
+  result = (gam::Chirplet< SampleType > *)new gam::Chirplet< SampleType >(arg1,arg2,arg3,arg4);
+  SWIG_NewPointerObj(L,result,SWIGTYPE_p_gam__ChirpletT_float_GAM_DEFAULT_DOMAIN_t,1); SWIG_arg++; 
+  return SWIG_arg;
+  
+  if(0) SWIG_fail;
+  
+fail:
+  lua_error(L);
+  return SWIG_arg;
+}
+
+
+static int _wrap_new_Chirplet__SWIG_2(lua_State* L) {
+  int SWIG_arg = 0;
+  float arg1 ;
+  float arg2 ;
+  float arg3 ;
+  gam::Chirplet< SampleType > *result = 0 ;
+  
+  SWIG_check_num_args("gam::Chirplet< SampleType >::Chirplet",3,3)
+  if(!lua_isnumber(L,1)) SWIG_fail_arg("gam::Chirplet< SampleType >::Chirplet",1,"float");
+  if(!lua_isnumber(L,2)) SWIG_fail_arg("gam::Chirplet< SampleType >::Chirplet",2,"float");
+  if(!lua_isnumber(L,3)) SWIG_fail_arg("gam::Chirplet< SampleType >::Chirplet",3,"float");
+  arg1 = (float)lua_tonumber(L, 1);
+  arg2 = (float)lua_tonumber(L, 2);
+  arg3 = (float)lua_tonumber(L, 3);
+  result = (gam::Chirplet< SampleType > *)new gam::Chirplet< SampleType >(arg1,arg2,arg3);
+  SWIG_NewPointerObj(L,result,SWIGTYPE_p_gam__ChirpletT_float_GAM_DEFAULT_DOMAIN_t,1); SWIG_arg++; 
+  return SWIG_arg;
+  
+  if(0) SWIG_fail;
+  
+fail:
+  lua_error(L);
+  return SWIG_arg;
+}
+
+
+static int _wrap_new_Chirplet__SWIG_3(lua_State* L) {
+  int SWIG_arg = 0;
+  float arg1 ;
+  float arg2 ;
+  gam::Chirplet< SampleType > *result = 0 ;
+  
+  SWIG_check_num_args("gam::Chirplet< SampleType >::Chirplet",2,2)
+  if(!lua_isnumber(L,1)) SWIG_fail_arg("gam::Chirplet< SampleType >::Chirplet",1,"float");
+  if(!lua_isnumber(L,2)) SWIG_fail_arg("gam::Chirplet< SampleType >::Chirplet",2,"float");
+  arg1 = (float)lua_tonumber(L, 1);
+  arg2 = (float)lua_tonumber(L, 2);
+  result = (gam::Chirplet< SampleType > *)new gam::Chirplet< SampleType >(arg1,arg2);
+  SWIG_NewPointerObj(L,result,SWIGTYPE_p_gam__ChirpletT_float_GAM_DEFAULT_DOMAIN_t,1); SWIG_arg++; 
+  return SWIG_arg;
+  
+  if(0) SWIG_fail;
+  
+fail:
+  lua_error(L);
+  return SWIG_arg;
+}
+
+
+static int _wrap_new_Chirplet__SWIG_4(lua_State* L) {
+  int SWIG_arg = 0;
+  float arg1 ;
+  gam::Chirplet< SampleType > *result = 0 ;
+  
+  SWIG_check_num_args("gam::Chirplet< SampleType >::Chirplet",1,1)
+  if(!lua_isnumber(L,1)) SWIG_fail_arg("gam::Chirplet< SampleType >::Chirplet",1,"float");
+  arg1 = (float)lua_tonumber(L, 1);
+  result = (gam::Chirplet< SampleType > *)new gam::Chirplet< SampleType >(arg1);
+  SWIG_NewPointerObj(L,result,SWIGTYPE_p_gam__ChirpletT_float_GAM_DEFAULT_DOMAIN_t,1); SWIG_arg++; 
+  return SWIG_arg;
+  
+  if(0) SWIG_fail;
+  
+fail:
+  lua_error(L);
+  return SWIG_arg;
+}
+
+
+static int _wrap_new_Chirplet__SWIG_5(lua_State* L) {
+  int SWIG_arg = 0;
+  gam::Chirplet< SampleType > *result = 0 ;
+  
+  SWIG_check_num_args("gam::Chirplet< SampleType >::Chirplet",0,0)
+  result = (gam::Chirplet< SampleType > *)new gam::Chirplet< SampleType >();
+  SWIG_NewPointerObj(L,result,SWIGTYPE_p_gam__ChirpletT_float_GAM_DEFAULT_DOMAIN_t,1); SWIG_arg++; 
+  return SWIG_arg;
+  
+  if(0) SWIG_fail;
+  
+fail:
+  lua_error(L);
+  return SWIG_arg;
+}
+
+
+static int _wrap_new_Chirplet(lua_State* L) {
+  int argc;
+  int argv[6]={
+    1,2,3,4,5,6
+  };
+  
+  argc = lua_gettop(L);
+  if (argc == 0) {
+    return _wrap_new_Chirplet__SWIG_5(L);
+  }
+  if (argc == 1) {
+    int _v = 0;
+    {
+      _v = lua_isnumber(L,argv[0]);
+    }
+    if (_v) {
+      return _wrap_new_Chirplet__SWIG_4(L);
+    }
+  }
+  if (argc == 2) {
+    int _v = 0;
+    {
+      _v = lua_isnumber(L,argv[0]);
+    }
+    if (_v) {
+      {
+        _v = lua_isnumber(L,argv[1]);
+      }
+      if (_v) {
+        return _wrap_new_Chirplet__SWIG_3(L);
+      }
+    }
+  }
+  if (argc == 3) {
+    int _v = 0;
+    {
+      _v = lua_isnumber(L,argv[0]);
+    }
+    if (_v) {
+      {
+        _v = lua_isnumber(L,argv[1]);
+      }
+      if (_v) {
+        {
+          _v = lua_isnumber(L,argv[2]);
+        }
+        if (_v) {
+          return _wrap_new_Chirplet__SWIG_2(L);
+        }
+      }
+    }
+  }
+  if (argc == 4) {
+    int _v = 0;
+    {
+      _v = lua_isnumber(L,argv[0]);
+    }
+    if (_v) {
+      {
+        _v = lua_isnumber(L,argv[1]);
+      }
+      if (_v) {
+        {
+          _v = lua_isnumber(L,argv[2]);
+        }
+        if (_v) {
+          {
+            _v = lua_isnumber(L,argv[3]);
+          }
+          if (_v) {
+            return _wrap_new_Chirplet__SWIG_1(L);
+          }
+        }
+      }
+    }
+  }
+  if (argc == 5) {
+    int _v = 0;
+    {
+      _v = lua_isnumber(L,argv[0]);
+    }
+    if (_v) {
+      {
+        _v = lua_isnumber(L,argv[1]);
+      }
+      if (_v) {
+        {
+          _v = lua_isnumber(L,argv[2]);
+        }
+        if (_v) {
+          {
+            _v = lua_isnumber(L,argv[3]);
+          }
+          if (_v) {
+            {
+              _v = lua_isnumber(L,argv[4]);
+            }
+            if (_v) {
+              return _wrap_new_Chirplet__SWIG_0(L);
+            }
+          }
+        }
+      }
+    }
+  }
+  
+  SWIG_Lua_pusherrstring(L,"Wrong arguments for overloaded function 'new_Chirplet'\n"
+    "  Possible C/C++ prototypes are:\n"
+    "    gam::Chirplet< SampleType >::Chirplet(float,float,float,float,float)\n"
+    "    gam::Chirplet< SampleType >::Chirplet(float,float,float,float)\n"
+    "    gam::Chirplet< SampleType >::Chirplet(float,float,float)\n"
+    "    gam::Chirplet< SampleType >::Chirplet(float,float)\n"
+    "    gam::Chirplet< SampleType >::Chirplet(float)\n"
+    "    gam::Chirplet< SampleType >::Chirplet()\n");
+  lua_error(L);return 0;
+}
+
+
+static int _wrap_Chirplet_freq__SWIG_0(lua_State* L) {
+  int SWIG_arg = 0;
+  gam::Chirplet< SampleType > *arg1 = (gam::Chirplet< SampleType > *) 0 ;
+  double arg2 ;
+  double arg3 ;
+  gam::Chirplet< SampleType > *result = 0 ;
+  
+  SWIG_check_num_args("gam::Chirplet< SampleType >::freq",3,3)
+  if(!SWIG_isptrtype(L,1)) SWIG_fail_arg("gam::Chirplet< SampleType >::freq",1,"gam::Chirplet< SampleType > *");
+  if(!lua_isnumber(L,2)) SWIG_fail_arg("gam::Chirplet< SampleType >::freq",2,"double");
+  if(!lua_isnumber(L,3)) SWIG_fail_arg("gam::Chirplet< SampleType >::freq",3,"double");
+  
+  if (!SWIG_IsOK(SWIG_ConvertPtr(L,1,(void**)&arg1,SWIGTYPE_p_gam__ChirpletT_float_GAM_DEFAULT_DOMAIN_t,0))){
+    SWIG_fail_ptr("Chirplet_freq",1,SWIGTYPE_p_gam__ChirpletT_float_GAM_DEFAULT_DOMAIN_t);
+  }
+  
+  arg2 = (double)lua_tonumber(L, 2);
+  arg3 = (double)lua_tonumber(L, 3);
+  result = (gam::Chirplet< SampleType > *) &(arg1)->freq(arg2,arg3);
+  SWIG_NewPointerObj(L,result,SWIGTYPE_p_gam__ChirpletT_float_GAM_DEFAULT_DOMAIN_t,0); SWIG_arg++; 
+  return SWIG_arg;
+  
+  if(0) SWIG_fail;
+  
+fail:
+  lua_error(L);
+  return SWIG_arg;
+}
+
+
+static int _wrap_Chirplet_freq__SWIG_1(lua_State* L) {
+  int SWIG_arg = 0;
+  gam::Chirplet< SampleType > *arg1 = (gam::Chirplet< SampleType > *) 0 ;
+  double arg2 ;
+  gam::Chirplet< SampleType > *result = 0 ;
+  
+  SWIG_check_num_args("gam::Chirplet< SampleType >::freq",2,2)
+  if(!SWIG_isptrtype(L,1)) SWIG_fail_arg("gam::Chirplet< SampleType >::freq",1,"gam::Chirplet< SampleType > *");
+  if(!lua_isnumber(L,2)) SWIG_fail_arg("gam::Chirplet< SampleType >::freq",2,"double");
+  
+  if (!SWIG_IsOK(SWIG_ConvertPtr(L,1,(void**)&arg1,SWIGTYPE_p_gam__ChirpletT_float_GAM_DEFAULT_DOMAIN_t,0))){
+    SWIG_fail_ptr("Chirplet_freq",1,SWIGTYPE_p_gam__ChirpletT_float_GAM_DEFAULT_DOMAIN_t);
+  }
+  
+  arg2 = (double)lua_tonumber(L, 2);
+  result = (gam::Chirplet< SampleType > *) &(arg1)->freq(arg2);
+  SWIG_NewPointerObj(L,result,SWIGTYPE_p_gam__ChirpletT_float_GAM_DEFAULT_DOMAIN_t,0); SWIG_arg++; 
+  return SWIG_arg;
+  
+  if(0) SWIG_fail;
+  
+fail:
+  lua_error(L);
+  return SWIG_arg;
+}
+
+
+static int _wrap_Chirplet_freq(lua_State* L) {
+  int argc;
+  int argv[4]={
+    1,2,3,4
+  };
+  
+  argc = lua_gettop(L);
+  if (argc == 2) {
+    int _v = 0;
+    {
+      void *ptr;
+      if (SWIG_isptrtype(L,argv[0])==0 || SWIG_ConvertPtr(L,argv[0], (void **) &ptr, SWIGTYPE_p_gam__ChirpletT_float_GAM_DEFAULT_DOMAIN_t, 0)) {
+        _v = 0;
+      } else {
+        _v = 1;
+      }
+    }
+    if (_v) {
+      {
+        _v = lua_isnumber(L,argv[1]);
+      }
+      if (_v) {
+        return _wrap_Chirplet_freq__SWIG_1(L);
+      }
+    }
+  }
+  if (argc == 3) {
+    int _v = 0;
+    {
+      void *ptr;
+      if (SWIG_isptrtype(L,argv[0])==0 || SWIG_ConvertPtr(L,argv[0], (void **) &ptr, SWIGTYPE_p_gam__ChirpletT_float_GAM_DEFAULT_DOMAIN_t, 0)) {
+        _v = 0;
+      } else {
+        _v = 1;
+      }
+    }
+    if (_v) {
+      {
+        _v = lua_isnumber(L,argv[1]);
+      }
+      if (_v) {
+        {
+          _v = lua_isnumber(L,argv[2]);
+        }
+        if (_v) {
+          return _wrap_Chirplet_freq__SWIG_0(L);
+        }
+      }
+    }
+  }
+  
+  SWIG_Lua_pusherrstring(L,"Wrong arguments for overloaded function 'Chirplet_freq'\n"
+    "  Possible C/C++ prototypes are:\n"
+    "    gam::Chirplet< SampleType >::freq(double,double)\n"
+    "    gam::Chirplet< SampleType >::freq(double)\n");
+  lua_error(L);return 0;
+}
+
+
+static int _wrap_Chirplet_length__SWIG_0(lua_State* L) {
+  int SWIG_arg = 0;
+  gam::Chirplet< SampleType > *arg1 = (gam::Chirplet< SampleType > *) 0 ;
+  double arg2 ;
+  gam::Chirplet< float >::complex *arg3 = 0 ;
+  gam::Chirplet< SampleType > *result = 0 ;
+  
+  SWIG_check_num_args("gam::Chirplet< SampleType >::length",3,3)
+  if(!SWIG_isptrtype(L,1)) SWIG_fail_arg("gam::Chirplet< SampleType >::length",1,"gam::Chirplet< SampleType > *");
+  if(!lua_isnumber(L,2)) SWIG_fail_arg("gam::Chirplet< SampleType >::length",2,"double");
+  if(!lua_isuserdata(L,3)) SWIG_fail_arg("gam::Chirplet< SampleType >::length",3,"gam::Chirplet< float >::complex const &");
+  
+  if (!SWIG_IsOK(SWIG_ConvertPtr(L,1,(void**)&arg1,SWIGTYPE_p_gam__ChirpletT_float_GAM_DEFAULT_DOMAIN_t,0))){
+    SWIG_fail_ptr("Chirplet_length",1,SWIGTYPE_p_gam__ChirpletT_float_GAM_DEFAULT_DOMAIN_t);
+  }
+  
+  arg2 = (double)lua_tonumber(L, 2);
+  
+  if (!SWIG_IsOK(SWIG_ConvertPtr(L,3,(void**)&arg3,SWIGTYPE_p_ComplexT_float_t,0))){
+    SWIG_fail_ptr("Chirplet_length",3,SWIGTYPE_p_ComplexT_float_t);
+  }
+  
+  result = (gam::Chirplet< SampleType > *) &(arg1)->length(arg2,(gam::Chirplet< float >::complex const &)*arg3);
+  SWIG_NewPointerObj(L,result,SWIGTYPE_p_gam__ChirpletT_float_GAM_DEFAULT_DOMAIN_t,0); SWIG_arg++; 
+  return SWIG_arg;
+  
+  if(0) SWIG_fail;
+  
+fail:
+  lua_error(L);
+  return SWIG_arg;
+}
+
+
+static int _wrap_Chirplet_length__SWIG_1(lua_State* L) {
+  int SWIG_arg = 0;
+  gam::Chirplet< SampleType > *arg1 = (gam::Chirplet< SampleType > *) 0 ;
+  double arg2 ;
+  gam::Chirplet< SampleType > *result = 0 ;
+  
+  SWIG_check_num_args("gam::Chirplet< SampleType >::length",2,2)
+  if(!SWIG_isptrtype(L,1)) SWIG_fail_arg("gam::Chirplet< SampleType >::length",1,"gam::Chirplet< SampleType > *");
+  if(!lua_isnumber(L,2)) SWIG_fail_arg("gam::Chirplet< SampleType >::length",2,"double");
+  
+  if (!SWIG_IsOK(SWIG_ConvertPtr(L,1,(void**)&arg1,SWIGTYPE_p_gam__ChirpletT_float_GAM_DEFAULT_DOMAIN_t,0))){
+    SWIG_fail_ptr("Chirplet_length",1,SWIGTYPE_p_gam__ChirpletT_float_GAM_DEFAULT_DOMAIN_t);
+  }
+  
+  arg2 = (double)lua_tonumber(L, 2);
+  result = (gam::Chirplet< SampleType > *) &(arg1)->length(arg2);
+  SWIG_NewPointerObj(L,result,SWIGTYPE_p_gam__ChirpletT_float_GAM_DEFAULT_DOMAIN_t,0); SWIG_arg++; 
+  return SWIG_arg;
+  
+  if(0) SWIG_fail;
+  
+fail:
+  lua_error(L);
+  return SWIG_arg;
+}
+
+
+static int _wrap_Chirplet_amp(lua_State* L) {
+  int SWIG_arg = 0;
+  gam::Chirplet< SampleType > *arg1 = (gam::Chirplet< SampleType > *) 0 ;
+  double arg2 ;
+  gam::Chirplet< SampleType > *result = 0 ;
+  
+  SWIG_check_num_args("gam::Chirplet< SampleType >::amp",2,2)
+  if(!SWIG_isptrtype(L,1)) SWIG_fail_arg("gam::Chirplet< SampleType >::amp",1,"gam::Chirplet< SampleType > *");
+  if(!lua_isnumber(L,2)) SWIG_fail_arg("gam::Chirplet< SampleType >::amp",2,"double");
+  
+  if (!SWIG_IsOK(SWIG_ConvertPtr(L,1,(void**)&arg1,SWIGTYPE_p_gam__ChirpletT_float_GAM_DEFAULT_DOMAIN_t,0))){
+    SWIG_fail_ptr("Chirplet_amp",1,SWIGTYPE_p_gam__ChirpletT_float_GAM_DEFAULT_DOMAIN_t);
+  }
+  
+  arg2 = (double)lua_tonumber(L, 2);
+  result = (gam::Chirplet< SampleType > *) &(arg1)->amp(arg2);
+  SWIG_NewPointerObj(L,result,SWIGTYPE_p_gam__ChirpletT_float_GAM_DEFAULT_DOMAIN_t,0); SWIG_arg++; 
+  return SWIG_arg;
+  
+  if(0) SWIG_fail;
+  
+fail:
+  lua_error(L);
+  return SWIG_arg;
+}
+
+
+static int _wrap_Chirplet_Tick(lua_State* L) {
+  int SWIG_arg = 0;
+  gam::Chirplet< SampleType > *arg1 = (gam::Chirplet< SampleType > *) 0 ;
+  gam::Chirplet< float >::complex result;
+  
+  SWIG_check_num_args("gam::Chirplet< SampleType >::Tick",1,1)
+  if(!SWIG_isptrtype(L,1)) SWIG_fail_arg("gam::Chirplet< SampleType >::Tick",1,"gam::Chirplet< SampleType > *");
+  
+  if (!SWIG_IsOK(SWIG_ConvertPtr(L,1,(void**)&arg1,SWIGTYPE_p_gam__ChirpletT_float_GAM_DEFAULT_DOMAIN_t,0))){
+    SWIG_fail_ptr("Chirplet_Tick",1,SWIGTYPE_p_gam__ChirpletT_float_GAM_DEFAULT_DOMAIN_t);
+  }
+  
+  result = gam_Chirplet_Sl_SampleType_Sg__Tick__SWIG(arg1);
+  {
+    gam::Chirplet< float >::complex * resultptr = new gam::Chirplet< float >::complex((const gam::Chirplet< float >::complex &) result);
+    SWIG_NewPointerObj(L,(void *) resultptr,SWIGTYPE_p_ComplexT_float_t,1); SWIG_arg++;
+  }
+  return SWIG_arg;
+  
+  if(0) SWIG_fail;
+  
+fail:
+  lua_error(L);
+  return SWIG_arg;
+}
+
+
+static int _wrap_Chirplet_reset(lua_State* L) {
+  int SWIG_arg = 0;
+  gam::Chirplet< SampleType > *arg1 = (gam::Chirplet< SampleType > *) 0 ;
+  gam::Chirplet< SampleType > *result = 0 ;
+  
+  SWIG_check_num_args("gam::Chirplet< SampleType >::reset",1,1)
+  if(!SWIG_isptrtype(L,1)) SWIG_fail_arg("gam::Chirplet< SampleType >::reset",1,"gam::Chirplet< SampleType > *");
+  
+  if (!SWIG_IsOK(SWIG_ConvertPtr(L,1,(void**)&arg1,SWIGTYPE_p_gam__ChirpletT_float_GAM_DEFAULT_DOMAIN_t,0))){
+    SWIG_fail_ptr("Chirplet_reset",1,SWIGTYPE_p_gam__ChirpletT_float_GAM_DEFAULT_DOMAIN_t);
+  }
+  
+  result = (gam::Chirplet< SampleType > *) &(arg1)->reset();
+  SWIG_NewPointerObj(L,result,SWIGTYPE_p_gam__ChirpletT_float_GAM_DEFAULT_DOMAIN_t,0); SWIG_arg++; 
+  return SWIG_arg;
+  
+  if(0) SWIG_fail;
+  
+fail:
+  lua_error(L);
+  return SWIG_arg;
+}
+
+
+static int _wrap_Chirplet_done__SWIG_0(lua_State* L) {
+  int SWIG_arg = 0;
+  gam::Chirplet< SampleType > *arg1 = (gam::Chirplet< SampleType > *) 0 ;
+  float arg2 ;
+  bool result;
+  
+  SWIG_check_num_args("gam::Chirplet< SampleType >::done",2,2)
+  if(!SWIG_isptrtype(L,1)) SWIG_fail_arg("gam::Chirplet< SampleType >::done",1,"gam::Chirplet< SampleType > const *");
+  if(!lua_isnumber(L,2)) SWIG_fail_arg("gam::Chirplet< SampleType >::done",2,"float");
+  
+  if (!SWIG_IsOK(SWIG_ConvertPtr(L,1,(void**)&arg1,SWIGTYPE_p_gam__ChirpletT_float_GAM_DEFAULT_DOMAIN_t,0))){
+    SWIG_fail_ptr("Chirplet_done",1,SWIGTYPE_p_gam__ChirpletT_float_GAM_DEFAULT_DOMAIN_t);
+  }
+  
+  arg2 = (float)lua_tonumber(L, 2);
+  result = (bool)((gam::Chirplet< SampleType > const *)arg1)->done(arg2);
+  lua_pushboolean(L,(int)(result!=0)); SWIG_arg++;
+  return SWIG_arg;
+  
+  if(0) SWIG_fail;
+  
+fail:
+  lua_error(L);
+  return SWIG_arg;
+}
+
+
+static int _wrap_Chirplet_done__SWIG_1(lua_State* L) {
+  int SWIG_arg = 0;
+  gam::Chirplet< SampleType > *arg1 = (gam::Chirplet< SampleType > *) 0 ;
+  bool result;
+  
+  SWIG_check_num_args("gam::Chirplet< SampleType >::done",1,1)
+  if(!SWIG_isptrtype(L,1)) SWIG_fail_arg("gam::Chirplet< SampleType >::done",1,"gam::Chirplet< SampleType > const *");
+  
+  if (!SWIG_IsOK(SWIG_ConvertPtr(L,1,(void**)&arg1,SWIGTYPE_p_gam__ChirpletT_float_GAM_DEFAULT_DOMAIN_t,0))){
+    SWIG_fail_ptr("Chirplet_done",1,SWIGTYPE_p_gam__ChirpletT_float_GAM_DEFAULT_DOMAIN_t);
+  }
+  
+  result = (bool)((gam::Chirplet< SampleType > const *)arg1)->done();
+  lua_pushboolean(L,(int)(result!=0)); SWIG_arg++;
+  return SWIG_arg;
+  
+  if(0) SWIG_fail;
+  
+fail:
+  lua_error(L);
+  return SWIG_arg;
+}
+
+
+static int _wrap_Chirplet_done(lua_State* L) {
+  int argc;
+  int argv[3]={
+    1,2,3
+  };
+  
+  argc = lua_gettop(L);
+  if (argc == 1) {
+    int _v = 0;
+    {
+      void *ptr;
+      if (SWIG_isptrtype(L,argv[0])==0 || SWIG_ConvertPtr(L,argv[0], (void **) &ptr, SWIGTYPE_p_gam__ChirpletT_float_GAM_DEFAULT_DOMAIN_t, 0)) {
+        _v = 0;
+      } else {
+        _v = 1;
+      }
+    }
+    if (_v) {
+      return _wrap_Chirplet_done__SWIG_1(L);
+    }
+  }
+  if (argc == 2) {
+    int _v = 0;
+    {
+      void *ptr;
+      if (SWIG_isptrtype(L,argv[0])==0 || SWIG_ConvertPtr(L,argv[0], (void **) &ptr, SWIGTYPE_p_gam__ChirpletT_float_GAM_DEFAULT_DOMAIN_t, 0)) {
+        _v = 0;
+      } else {
+        _v = 1;
+      }
+    }
+    if (_v) {
+      {
+        _v = lua_isnumber(L,argv[1]);
+      }
+      if (_v) {
+        return _wrap_Chirplet_done__SWIG_0(L);
+      }
+    }
+  }
+  
+  SWIG_Lua_pusherrstring(L,"Wrong arguments for overloaded function 'Chirplet_done'\n"
+    "  Possible C/C++ prototypes are:\n"
+    "    gam::Chirplet< SampleType >::done(float) const\n"
+    "    gam::Chirplet< SampleType >::done() const\n");
+  lua_error(L);return 0;
+}
+
+
+static int _wrap_Chirplet_length__SWIG_2(lua_State* L) {
+  int SWIG_arg = 0;
+  gam::Chirplet< SampleType > *arg1 = (gam::Chirplet< SampleType > *) 0 ;
+  float result;
+  
+  SWIG_check_num_args("gam::Chirplet< SampleType >::length",1,1)
+  if(!SWIG_isptrtype(L,1)) SWIG_fail_arg("gam::Chirplet< SampleType >::length",1,"gam::Chirplet< SampleType > const *");
+  
+  if (!SWIG_IsOK(SWIG_ConvertPtr(L,1,(void**)&arg1,SWIGTYPE_p_gam__ChirpletT_float_GAM_DEFAULT_DOMAIN_t,0))){
+    SWIG_fail_ptr("Chirplet_length",1,SWIGTYPE_p_gam__ChirpletT_float_GAM_DEFAULT_DOMAIN_t);
+  }
+  
+  result = (float)((gam::Chirplet< SampleType > const *)arg1)->length();
+  lua_pushnumber(L, (lua_Number) result); SWIG_arg++;
+  return SWIG_arg;
+  
+  if(0) SWIG_fail;
+  
+fail:
+  lua_error(L);
+  return SWIG_arg;
+}
+
+
+static int _wrap_Chirplet_length(lua_State* L) {
+  int argc;
+  int argv[4]={
+    1,2,3,4
+  };
+  
+  argc = lua_gettop(L);
+  if (argc == 1) {
+    int _v = 0;
+    {
+      void *ptr;
+      if (SWIG_isptrtype(L,argv[0])==0 || SWIG_ConvertPtr(L,argv[0], (void **) &ptr, SWIGTYPE_p_gam__ChirpletT_float_GAM_DEFAULT_DOMAIN_t, 0)) {
+        _v = 0;
+      } else {
+        _v = 1;
+      }
+    }
+    if (_v) {
+      return _wrap_Chirplet_length__SWIG_2(L);
+    }
+  }
+  if (argc == 2) {
+    int _v = 0;
+    {
+      void *ptr;
+      if (SWIG_isptrtype(L,argv[0])==0 || SWIG_ConvertPtr(L,argv[0], (void **) &ptr, SWIGTYPE_p_gam__ChirpletT_float_GAM_DEFAULT_DOMAIN_t, 0)) {
+        _v = 0;
+      } else {
+        _v = 1;
+      }
+    }
+    if (_v) {
+      {
+        _v = lua_isnumber(L,argv[1]);
+      }
+      if (_v) {
+        return _wrap_Chirplet_length__SWIG_1(L);
+      }
+    }
+  }
+  if (argc == 3) {
+    int _v = 0;
+    {
+      void *ptr;
+      if (SWIG_isptrtype(L,argv[0])==0 || SWIG_ConvertPtr(L,argv[0], (void **) &ptr, SWIGTYPE_p_gam__ChirpletT_float_GAM_DEFAULT_DOMAIN_t, 0)) {
+        _v = 0;
+      } else {
+        _v = 1;
+      }
+    }
+    if (_v) {
+      {
+        _v = lua_isnumber(L,argv[1]);
+      }
+      if (_v) {
+        {
+          void *ptr;
+          if (lua_isuserdata(L,argv[2])==0 || SWIG_ConvertPtr(L,argv[2], (void **) &ptr, SWIGTYPE_p_ComplexT_float_t, SWIG_POINTER_NO_NULL)) {
+            _v = 0;
+          } else {
+            _v = 1;
+          }
+        }
+        if (_v) {
+          return _wrap_Chirplet_length__SWIG_0(L);
+        }
+      }
+    }
+  }
+  
+  SWIG_Lua_pusherrstring(L,"Wrong arguments for overloaded function 'Chirplet_length'\n"
+    "  Possible C/C++ prototypes are:\n"
+    "    gam::Chirplet< SampleType >::length(double,gam::Chirplet< float >::complex const &)\n"
+    "    gam::Chirplet< SampleType >::length(double)\n"
+    "    gam::Chirplet< SampleType >::length() const\n");
+  lua_error(L);return 0;
+}
+
+
+static void swig_delete_Chirplet(void *obj) {
+gam::Chirplet< SampleType > *arg1 = (gam::Chirplet< SampleType > *) obj;
+delete arg1;
+}
+static int _proxy__wrap_new_Chirplet(lua_State *L) {
+    assert(lua_istable(L,1));
+    lua_pushcfunction(L,_wrap_new_Chirplet);
+    assert(!lua_isnil(L,-1));
+    lua_replace(L,1); /* replace our table with real constructor */
+    lua_call(L,lua_gettop(L)-1,1);
+    return 1;
+}
+static swig_lua_attribute swig_Chirplet_attributes[] = {
+    {0,0,0}
+};
+static swig_lua_method swig_Chirplet_methods[]= {
+    { "freq", _wrap_Chirplet_freq},
+    { "amp", _wrap_Chirplet_amp},
+    { "Tick", _wrap_Chirplet_Tick},
+    { "reset", _wrap_Chirplet_reset},
+    { "done", _wrap_Chirplet_done},
+    { "length", _wrap_Chirplet_length},
+    {0,0}
+};
+static swig_lua_method swig_Chirplet_meta[] = {
+    {0,0}
+};
+
+static swig_lua_attribute swig_Chirplet_Sf_SwigStatic_attributes[] = {
+    {0,0,0}
+};
+static swig_lua_const_info swig_Chirplet_Sf_SwigStatic_constants[]= {
+    {0,0,0,0,0,0}
+};
+static swig_lua_method swig_Chirplet_Sf_SwigStatic_methods[]= {
+    {0,0}
+};
+static swig_lua_class* swig_Chirplet_Sf_SwigStatic_classes[]= {
+    0
+};
+
+static swig_lua_namespace swig_Chirplet_Sf_SwigStatic = {
+    "Chirplet",
+    swig_Chirplet_Sf_SwigStatic_methods,
+    swig_Chirplet_Sf_SwigStatic_attributes,
+    swig_Chirplet_Sf_SwigStatic_constants,
+    swig_Chirplet_Sf_SwigStatic_classes,
+    0
+};
+static swig_lua_class *swig_Chirplet_bases[] = {0};
+static const char *swig_Chirplet_base_names[] = {0};
+static swig_lua_class _wrap_class_Chirplet = { "Chirplet", "Chirplet", &SWIGTYPE_p_gam__ChirpletT_float_GAM_DEFAULT_DOMAIN_t,_proxy__wrap_new_Chirplet, swig_delete_Chirplet, swig_Chirplet_methods, swig_Chirplet_attributes, &swig_Chirplet_Sf_SwigStatic, swig_Chirplet_meta, swig_Chirplet_bases, swig_Chirplet_base_names };
+
+static int _wrap_new_LFO__SWIG_0(lua_State* L) {
+  int SWIG_arg = 0;
+  gam::LFO< > *result = 0 ;
+  
+  SWIG_check_num_args("gam::LFO< >::LFO",0,0)
+  result = (gam::LFO< > *)new gam::LFO< >();
+  SWIG_NewPointerObj(L,result,SWIGTYPE_p_gam__LFOT_phsInc__Loop_GAM_DEFAULT_DOMAIN_t,1); SWIG_arg++; 
+  return SWIG_arg;
+  
+  if(0) SWIG_fail;
+  
+fail:
+  lua_error(L);
+  return SWIG_arg;
+}
+
+
+static int _wrap_new_LFO__SWIG_1(lua_State* L) {
+  int SWIG_arg = 0;
+  double arg1 ;
+  double arg2 ;
+  double arg3 ;
+  gam::LFO< > *result = 0 ;
+  
+  SWIG_check_num_args("gam::LFO< >::LFO",3,3)
+  if(!lua_isnumber(L,1)) SWIG_fail_arg("gam::LFO< >::LFO",1,"double");
+  if(!lua_isnumber(L,2)) SWIG_fail_arg("gam::LFO< >::LFO",2,"double");
+  if(!lua_isnumber(L,3)) SWIG_fail_arg("gam::LFO< >::LFO",3,"double");
+  arg1 = (double)lua_tonumber(L, 1);
+  arg2 = (double)lua_tonumber(L, 2);
+  arg3 = (double)lua_tonumber(L, 3);
+  result = (gam::LFO< > *)new gam::LFO< >(arg1,arg2,arg3);
+  SWIG_NewPointerObj(L,result,SWIGTYPE_p_gam__LFOT_phsInc__Loop_GAM_DEFAULT_DOMAIN_t,1); SWIG_arg++; 
+  return SWIG_arg;
+  
+  if(0) SWIG_fail;
+  
+fail:
+  lua_error(L);
+  return SWIG_arg;
+}
+
+
+static int _wrap_new_LFO__SWIG_2(lua_State* L) {
+  int SWIG_arg = 0;
+  double arg1 ;
+  double arg2 ;
+  gam::LFO< > *result = 0 ;
+  
+  SWIG_check_num_args("gam::LFO< >::LFO",2,2)
+  if(!lua_isnumber(L,1)) SWIG_fail_arg("gam::LFO< >::LFO",1,"double");
+  if(!lua_isnumber(L,2)) SWIG_fail_arg("gam::LFO< >::LFO",2,"double");
+  arg1 = (double)lua_tonumber(L, 1);
+  arg2 = (double)lua_tonumber(L, 2);
+  result = (gam::LFO< > *)new gam::LFO< >(arg1,arg2);
+  SWIG_NewPointerObj(L,result,SWIGTYPE_p_gam__LFOT_phsInc__Loop_GAM_DEFAULT_DOMAIN_t,1); SWIG_arg++; 
+  return SWIG_arg;
+  
+  if(0) SWIG_fail;
+  
+fail:
+  lua_error(L);
+  return SWIG_arg;
+}
+
+
+static int _wrap_new_LFO__SWIG_3(lua_State* L) {
+  int SWIG_arg = 0;
+  double arg1 ;
+  gam::LFO< > *result = 0 ;
+  
+  SWIG_check_num_args("gam::LFO< >::LFO",1,1)
+  if(!lua_isnumber(L,1)) SWIG_fail_arg("gam::LFO< >::LFO",1,"double");
+  arg1 = (double)lua_tonumber(L, 1);
+  result = (gam::LFO< > *)new gam::LFO< >(arg1);
+  SWIG_NewPointerObj(L,result,SWIGTYPE_p_gam__LFOT_phsInc__Loop_GAM_DEFAULT_DOMAIN_t,1); SWIG_arg++; 
+  return SWIG_arg;
+  
+  if(0) SWIG_fail;
+  
+fail:
+  lua_error(L);
+  return SWIG_arg;
+}
+
+
+static int _wrap_new_LFO(lua_State* L) {
+  int argc;
+  int argv[4]={
+    1,2,3,4
+  };
+  
+  argc = lua_gettop(L);
+  if (argc == 0) {
+    return _wrap_new_LFO__SWIG_0(L);
+  }
+  if (argc == 1) {
+    int _v = 0;
+    {
+      _v = lua_isnumber(L,argv[0]);
+    }
+    if (_v) {
+      return _wrap_new_LFO__SWIG_3(L);
+    }
+  }
+  if (argc == 2) {
+    int _v = 0;
+    {
+      _v = lua_isnumber(L,argv[0]);
+    }
+    if (_v) {
+      {
+        _v = lua_isnumber(L,argv[1]);
+      }
+      if (_v) {
+        return _wrap_new_LFO__SWIG_2(L);
+      }
+    }
+  }
+  if (argc == 3) {
+    int _v = 0;
+    {
+      _v = lua_isnumber(L,argv[0]);
+    }
+    if (_v) {
+      {
+        _v = lua_isnumber(L,argv[1]);
+      }
+      if (_v) {
+        {
+          _v = lua_isnumber(L,argv[2]);
+        }
+        if (_v) {
+          return _wrap_new_LFO__SWIG_1(L);
+        }
+      }
+    }
+  }
+  
+  SWIG_Lua_pusherrstring(L,"Wrong arguments for overloaded function 'new_LFO'\n"
+    "  Possible C/C++ prototypes are:\n"
+    "    gam::LFO< >::LFO()\n"
+    "    gam::LFO< >::LFO(double,double,double)\n"
+    "    gam::LFO< >::LFO(double,double)\n"
+    "    gam::LFO< >::LFO(double)\n");
+  lua_error(L);return 0;
+}
+
+
+static int _wrap_LFO_set(lua_State* L) {
+  int SWIG_arg = 0;
+  gam::LFO< > *arg1 = (gam::LFO< > *) 0 ;
+  float arg2 ;
+  float arg3 ;
+  float arg4 ;
+  gam::LFO< > *result = 0 ;
+  
+  SWIG_check_num_args("gam::LFO< >::set",4,4)
+  if(!SWIG_isptrtype(L,1)) SWIG_fail_arg("gam::LFO< >::set",1,"gam::LFO< > *");
+  if(!lua_isnumber(L,2)) SWIG_fail_arg("gam::LFO< >::set",2,"float");
+  if(!lua_isnumber(L,3)) SWIG_fail_arg("gam::LFO< >::set",3,"float");
+  if(!lua_isnumber(L,4)) SWIG_fail_arg("gam::LFO< >::set",4,"float");
+  
+  if (!SWIG_IsOK(SWIG_ConvertPtr(L,1,(void**)&arg1,SWIGTYPE_p_gam__LFOT_phsInc__Loop_GAM_DEFAULT_DOMAIN_t,0))){
+    SWIG_fail_ptr("LFO_set",1,SWIGTYPE_p_gam__LFOT_phsInc__Loop_GAM_DEFAULT_DOMAIN_t);
+  }
+  
+  arg2 = (float)lua_tonumber(L, 2);
+  arg3 = (float)lua_tonumber(L, 3);
+  arg4 = (float)lua_tonumber(L, 4);
+  result = (gam::LFO< > *) &(arg1)->set(arg2,arg3,arg4);
+  SWIG_NewPointerObj(L,result,SWIGTYPE_p_gam__LFOT_phsInc__Loop_GAM_DEFAULT_DOMAIN_t,0); SWIG_arg++; 
+  return SWIG_arg;
+  
+  if(0) SWIG_fail;
+  
+fail:
+  lua_error(L);
+  return SWIG_arg;
+}
+
+
+static int _wrap_LFO_mod__SWIG_0(lua_State* L) {
+  int SWIG_arg = 0;
+  gam::LFO< > *arg1 = (gam::LFO< > *) 0 ;
+  double arg2 ;
+  gam::LFO< > *result = 0 ;
+  
+  SWIG_check_num_args("gam::LFO< >::mod",2,2)
+  if(!SWIG_isptrtype(L,1)) SWIG_fail_arg("gam::LFO< >::mod",1,"gam::LFO< > *");
+  if(!lua_isnumber(L,2)) SWIG_fail_arg("gam::LFO< >::mod",2,"double");
+  
+  if (!SWIG_IsOK(SWIG_ConvertPtr(L,1,(void**)&arg1,SWIGTYPE_p_gam__LFOT_phsInc__Loop_GAM_DEFAULT_DOMAIN_t,0))){
+    SWIG_fail_ptr("LFO_mod",1,SWIGTYPE_p_gam__LFOT_phsInc__Loop_GAM_DEFAULT_DOMAIN_t);
+  }
+  
+  arg2 = (double)lua_tonumber(L, 2);
+  result = (gam::LFO< > *) &(arg1)->mod(arg2);
+  SWIG_NewPointerObj(L,result,SWIGTYPE_p_gam__LFOT_phsInc__Loop_GAM_DEFAULT_DOMAIN_t,0); SWIG_arg++; 
+  return SWIG_arg;
+  
+  if(0) SWIG_fail;
+  
+fail:
+  lua_error(L);
+  return SWIG_arg;
+}
+
+
+static int _wrap_LFO_modI__SWIG_0(lua_State* L) {
+  int SWIG_arg = 0;
+  gam::LFO< > *arg1 = (gam::LFO< > *) 0 ;
+  uint32_t arg2 ;
+  gam::LFO< > *result = 0 ;
+  
+  SWIG_check_num_args("gam::LFO< >::modI",2,2)
+  if(!SWIG_isptrtype(L,1)) SWIG_fail_arg("gam::LFO< >::modI",1,"gam::LFO< > *");
+  if(!lua_isnumber(L,2)) SWIG_fail_arg("gam::LFO< >::modI",2,"uint32_t");
+  
+  if (!SWIG_IsOK(SWIG_ConvertPtr(L,1,(void**)&arg1,SWIGTYPE_p_gam__LFOT_phsInc__Loop_GAM_DEFAULT_DOMAIN_t,0))){
+    SWIG_fail_ptr("LFO_modI",1,SWIGTYPE_p_gam__LFOT_phsInc__Loop_GAM_DEFAULT_DOMAIN_t);
+  }
+  
+  SWIG_contract_assert((lua_tonumber(L,2)>=0),"number must not be negative");
+  arg2 = (uint32_t)lua_tonumber(L, 2);
+  result = (gam::LFO< > *) &(arg1)->modI(arg2);
+  SWIG_NewPointerObj(L,result,SWIGTYPE_p_gam__LFOT_phsInc__Loop_GAM_DEFAULT_DOMAIN_t,0); SWIG_arg++; 
+  return SWIG_arg;
+  
+  if(0) SWIG_fail;
+  
+fail:
+  lua_error(L);
+  return SWIG_arg;
+}
+
+
+static int _wrap_LFO_modI__SWIG_1(lua_State* L) {
+  int SWIG_arg = 0;
+  gam::LFO< > *arg1 = (gam::LFO< > *) 0 ;
+  uint32_t result;
+  
+  SWIG_check_num_args("gam::LFO< >::modI",1,1)
+  if(!SWIG_isptrtype(L,1)) SWIG_fail_arg("gam::LFO< >::modI",1,"gam::LFO< > const *");
+  
+  if (!SWIG_IsOK(SWIG_ConvertPtr(L,1,(void**)&arg1,SWIGTYPE_p_gam__LFOT_phsInc__Loop_GAM_DEFAULT_DOMAIN_t,0))){
+    SWIG_fail_ptr("LFO_modI",1,SWIGTYPE_p_gam__LFOT_phsInc__Loop_GAM_DEFAULT_DOMAIN_t);
+  }
+  
+  result = (uint32_t)((gam::LFO< > const *)arg1)->modI();
+  lua_pushnumber(L, (lua_Number) result); SWIG_arg++;
+  return SWIG_arg;
+  
+  if(0) SWIG_fail;
+  
+fail:
+  lua_error(L);
+  return SWIG_arg;
+}
+
+
+static int _wrap_LFO_modI(lua_State* L) {
+  int argc;
+  int argv[3]={
+    1,2,3
+  };
+  
+  argc = lua_gettop(L);
+  if (argc == 1) {
+    int _v = 0;
+    {
+      void *ptr;
+      if (SWIG_isptrtype(L,argv[0])==0 || SWIG_ConvertPtr(L,argv[0], (void **) &ptr, SWIGTYPE_p_gam__LFOT_phsInc__Loop_GAM_DEFAULT_DOMAIN_t, 0)) {
+        _v = 0;
+      } else {
+        _v = 1;
+      }
+    }
+    if (_v) {
+      return _wrap_LFO_modI__SWIG_1(L);
+    }
+  }
+  if (argc == 2) {
+    int _v = 0;
+    {
+      void *ptr;
+      if (SWIG_isptrtype(L,argv[0])==0 || SWIG_ConvertPtr(L,argv[0], (void **) &ptr, SWIGTYPE_p_gam__LFOT_phsInc__Loop_GAM_DEFAULT_DOMAIN_t, 0)) {
+        _v = 0;
+      } else {
+        _v = 1;
+      }
+    }
+    if (_v) {
+      {
+        _v = lua_isnumber(L,argv[1]);
+      }
+      if (_v) {
+        return _wrap_LFO_modI__SWIG_0(L);
+      }
+    }
+  }
+  
+  SWIG_Lua_pusherrstring(L,"Wrong arguments for overloaded function 'LFO_modI'\n"
+    "  Possible C/C++ prototypes are:\n"
+    "    gam::LFO< >::modI(uint32_t)\n"
+    "    gam::LFO< >::modI() const\n");
+  lua_error(L);return 0;
+}
+
+
+static int _wrap_LFO_mod__SWIG_1(lua_State* L) {
+  int SWIG_arg = 0;
+  gam::LFO< > *arg1 = (gam::LFO< > *) 0 ;
+  double result;
+  
+  SWIG_check_num_args("gam::LFO< >::mod",1,1)
+  if(!SWIG_isptrtype(L,1)) SWIG_fail_arg("gam::LFO< >::mod",1,"gam::LFO< > const *");
+  
+  if (!SWIG_IsOK(SWIG_ConvertPtr(L,1,(void**)&arg1,SWIGTYPE_p_gam__LFOT_phsInc__Loop_GAM_DEFAULT_DOMAIN_t,0))){
+    SWIG_fail_ptr("LFO_mod",1,SWIGTYPE_p_gam__LFOT_phsInc__Loop_GAM_DEFAULT_DOMAIN_t);
+  }
+  
+  result = (double)((gam::LFO< > const *)arg1)->mod();
+  lua_pushnumber(L, (lua_Number) result); SWIG_arg++;
+  return SWIG_arg;
+  
+  if(0) SWIG_fail;
+  
+fail:
+  lua_error(L);
+  return SWIG_arg;
+}
+
+
+static int _wrap_LFO_mod(lua_State* L) {
+  int argc;
+  int argv[3]={
+    1,2,3
+  };
+  
+  argc = lua_gettop(L);
+  if (argc == 1) {
+    int _v = 0;
+    {
+      void *ptr;
+      if (SWIG_isptrtype(L,argv[0])==0 || SWIG_ConvertPtr(L,argv[0], (void **) &ptr, SWIGTYPE_p_gam__LFOT_phsInc__Loop_GAM_DEFAULT_DOMAIN_t, 0)) {
+        _v = 0;
+      } else {
+        _v = 1;
+      }
+    }
+    if (_v) {
+      return _wrap_LFO_mod__SWIG_1(L);
+    }
+  }
+  if (argc == 2) {
+    int _v = 0;
+    {
+      void *ptr;
+      if (SWIG_isptrtype(L,argv[0])==0 || SWIG_ConvertPtr(L,argv[0], (void **) &ptr, SWIGTYPE_p_gam__LFOT_phsInc__Loop_GAM_DEFAULT_DOMAIN_t, 0)) {
+        _v = 0;
+      } else {
+        _v = 1;
+      }
+    }
+    if (_v) {
+      {
+        _v = lua_isnumber(L,argv[1]);
+      }
+      if (_v) {
+        return _wrap_LFO_mod__SWIG_0(L);
+      }
+    }
+  }
+  
+  SWIG_Lua_pusherrstring(L,"Wrong arguments for overloaded function 'LFO_mod'\n"
+    "  Possible C/C++ prototypes are:\n"
+    "    gam::LFO< >::mod(double)\n"
+    "    gam::LFO< >::mod() const\n");
+  lua_error(L);return 0;
+}
+
+
+static int _wrap_LFO_cos(lua_State* L) {
+  int SWIG_arg = 0;
+  gam::LFO< > *arg1 = (gam::LFO< > *) 0 ;
+  float result;
+  
+  SWIG_check_num_args("gam::LFO< >::cos",1,1)
+  if(!SWIG_isptrtype(L,1)) SWIG_fail_arg("gam::LFO< >::cos",1,"gam::LFO< > *");
+  
+  if (!SWIG_IsOK(SWIG_ConvertPtr(L,1,(void**)&arg1,SWIGTYPE_p_gam__LFOT_phsInc__Loop_GAM_DEFAULT_DOMAIN_t,0))){
+    SWIG_fail_ptr("LFO_cos",1,SWIGTYPE_p_gam__LFOT_phsInc__Loop_GAM_DEFAULT_DOMAIN_t);
+  }
+  
+  result = (float)(arg1)->cos();
+  lua_pushnumber(L, (lua_Number) result); SWIG_arg++;
+  return SWIG_arg;
+  
+  if(0) SWIG_fail;
+  
+fail:
+  lua_error(L);
+  return SWIG_arg;
+}
+
+
+static int _wrap_LFO_down(lua_State* L) {
+  int SWIG_arg = 0;
+  gam::LFO< > *arg1 = (gam::LFO< > *) 0 ;
+  float result;
+  
+  SWIG_check_num_args("gam::LFO< >::down",1,1)
+  if(!SWIG_isptrtype(L,1)) SWIG_fail_arg("gam::LFO< >::down",1,"gam::LFO< > *");
+  
+  if (!SWIG_IsOK(SWIG_ConvertPtr(L,1,(void**)&arg1,SWIGTYPE_p_gam__LFOT_phsInc__Loop_GAM_DEFAULT_DOMAIN_t,0))){
+    SWIG_fail_ptr("LFO_down",1,SWIGTYPE_p_gam__LFOT_phsInc__Loop_GAM_DEFAULT_DOMAIN_t);
+  }
+  
+  result = (float)(arg1)->down();
+  lua_pushnumber(L, (lua_Number) result); SWIG_arg++;
+  return SWIG_arg;
+  
+  if(0) SWIG_fail;
+  
+fail:
+  lua_error(L);
+  return SWIG_arg;
+}
+
+
+static int _wrap_LFO_even3(lua_State* L) {
+  int SWIG_arg = 0;
+  gam::LFO< > *arg1 = (gam::LFO< > *) 0 ;
+  float result;
+  
+  SWIG_check_num_args("gam::LFO< >::even3",1,1)
+  if(!SWIG_isptrtype(L,1)) SWIG_fail_arg("gam::LFO< >::even3",1,"gam::LFO< > *");
+  
+  if (!SWIG_IsOK(SWIG_ConvertPtr(L,1,(void**)&arg1,SWIGTYPE_p_gam__LFOT_phsInc__Loop_GAM_DEFAULT_DOMAIN_t,0))){
+    SWIG_fail_ptr("LFO_even3",1,SWIGTYPE_p_gam__LFOT_phsInc__Loop_GAM_DEFAULT_DOMAIN_t);
+  }
+  
+  result = (float)(arg1)->even3();
+  lua_pushnumber(L, (lua_Number) result); SWIG_arg++;
+  return SWIG_arg;
+  
+  if(0) SWIG_fail;
+  
+fail:
+  lua_error(L);
+  return SWIG_arg;
+}
+
+
+static int _wrap_LFO_even5(lua_State* L) {
+  int SWIG_arg = 0;
+  gam::LFO< > *arg1 = (gam::LFO< > *) 0 ;
+  float result;
+  
+  SWIG_check_num_args("gam::LFO< >::even5",1,1)
+  if(!SWIG_isptrtype(L,1)) SWIG_fail_arg("gam::LFO< >::even5",1,"gam::LFO< > *");
+  
+  if (!SWIG_IsOK(SWIG_ConvertPtr(L,1,(void**)&arg1,SWIGTYPE_p_gam__LFOT_phsInc__Loop_GAM_DEFAULT_DOMAIN_t,0))){
+    SWIG_fail_ptr("LFO_even5",1,SWIGTYPE_p_gam__LFOT_phsInc__Loop_GAM_DEFAULT_DOMAIN_t);
+  }
+  
+  result = (float)(arg1)->even5();
+  lua_pushnumber(L, (lua_Number) result); SWIG_arg++;
+  return SWIG_arg;
+  
+  if(0) SWIG_fail;
+  
+fail:
+  lua_error(L);
+  return SWIG_arg;
+}
+
+
+static int _wrap_LFO_imp(lua_State* L) {
+  int SWIG_arg = 0;
+  gam::LFO< > *arg1 = (gam::LFO< > *) 0 ;
+  float result;
+  
+  SWIG_check_num_args("gam::LFO< >::imp",1,1)
+  if(!SWIG_isptrtype(L,1)) SWIG_fail_arg("gam::LFO< >::imp",1,"gam::LFO< > *");
+  
+  if (!SWIG_IsOK(SWIG_ConvertPtr(L,1,(void**)&arg1,SWIGTYPE_p_gam__LFOT_phsInc__Loop_GAM_DEFAULT_DOMAIN_t,0))){
+    SWIG_fail_ptr("LFO_imp",1,SWIGTYPE_p_gam__LFOT_phsInc__Loop_GAM_DEFAULT_DOMAIN_t);
+  }
+  
+  result = (float)(arg1)->imp();
+  lua_pushnumber(L, (lua_Number) result); SWIG_arg++;
+  return SWIG_arg;
+  
+  if(0) SWIG_fail;
+  
+fail:
+  lua_error(L);
+  return SWIG_arg;
+}
+
+
+static int _wrap_LFO_line2(lua_State* L) {
+  int SWIG_arg = 0;
+  gam::LFO< > *arg1 = (gam::LFO< > *) 0 ;
+  float result;
+  
+  SWIG_check_num_args("gam::LFO< >::line2",1,1)
+  if(!SWIG_isptrtype(L,1)) SWIG_fail_arg("gam::LFO< >::line2",1,"gam::LFO< > *");
+  
+  if (!SWIG_IsOK(SWIG_ConvertPtr(L,1,(void**)&arg1,SWIGTYPE_p_gam__LFOT_phsInc__Loop_GAM_DEFAULT_DOMAIN_t,0))){
+    SWIG_fail_ptr("LFO_line2",1,SWIGTYPE_p_gam__LFOT_phsInc__Loop_GAM_DEFAULT_DOMAIN_t);
+  }
+  
+  result = (float)(arg1)->line2();
+  lua_pushnumber(L, (lua_Number) result); SWIG_arg++;
+  return SWIG_arg;
+  
+  if(0) SWIG_fail;
+  
+fail:
+  lua_error(L);
+  return SWIG_arg;
+}
+
+
+static int _wrap_LFO_para(lua_State* L) {
+  int SWIG_arg = 0;
+  gam::LFO< > *arg1 = (gam::LFO< > *) 0 ;
+  float result;
+  
+  SWIG_check_num_args("gam::LFO< >::para",1,1)
+  if(!SWIG_isptrtype(L,1)) SWIG_fail_arg("gam::LFO< >::para",1,"gam::LFO< > *");
+  
+  if (!SWIG_IsOK(SWIG_ConvertPtr(L,1,(void**)&arg1,SWIGTYPE_p_gam__LFOT_phsInc__Loop_GAM_DEFAULT_DOMAIN_t,0))){
+    SWIG_fail_ptr("LFO_para",1,SWIGTYPE_p_gam__LFOT_phsInc__Loop_GAM_DEFAULT_DOMAIN_t);
+  }
+  
+  result = (float)(arg1)->para();
+  lua_pushnumber(L, (lua_Number) result); SWIG_arg++;
+  return SWIG_arg;
+  
+  if(0) SWIG_fail;
+  
+fail:
+  lua_error(L);
+  return SWIG_arg;
+}
+
+
+static int _wrap_LFO_pulse(lua_State* L) {
+  int SWIG_arg = 0;
+  gam::LFO< > *arg1 = (gam::LFO< > *) 0 ;
+  float result;
+  
+  SWIG_check_num_args("gam::LFO< >::pulse",1,1)
+  if(!SWIG_isptrtype(L,1)) SWIG_fail_arg("gam::LFO< >::pulse",1,"gam::LFO< > *");
+  
+  if (!SWIG_IsOK(SWIG_ConvertPtr(L,1,(void**)&arg1,SWIGTYPE_p_gam__LFOT_phsInc__Loop_GAM_DEFAULT_DOMAIN_t,0))){
+    SWIG_fail_ptr("LFO_pulse",1,SWIGTYPE_p_gam__LFOT_phsInc__Loop_GAM_DEFAULT_DOMAIN_t);
+  }
+  
+  result = (float)(arg1)->pulse();
+  lua_pushnumber(L, (lua_Number) result); SWIG_arg++;
+  return SWIG_arg;
+  
+  if(0) SWIG_fail;
+  
+fail:
+  lua_error(L);
+  return SWIG_arg;
+}
+
+
+static int _wrap_LFO_pulseRange(lua_State* L) {
+  int SWIG_arg = 0;
+  gam::LFO< > *arg1 = (gam::LFO< > *) 0 ;
+  float result;
+  
+  SWIG_check_num_args("gam::LFO< >::pulseRange",1,1)
+  if(!SWIG_isptrtype(L,1)) SWIG_fail_arg("gam::LFO< >::pulseRange",1,"gam::LFO< > *");
+  
+  if (!SWIG_IsOK(SWIG_ConvertPtr(L,1,(void**)&arg1,SWIGTYPE_p_gam__LFOT_phsInc__Loop_GAM_DEFAULT_DOMAIN_t,0))){
+    SWIG_fail_ptr("LFO_pulseRange",1,SWIGTYPE_p_gam__LFOT_phsInc__Loop_GAM_DEFAULT_DOMAIN_t);
+  }
+  
+  result = (float)(arg1)->pulseRange();
+  lua_pushnumber(L, (lua_Number) result); SWIG_arg++;
+  return SWIG_arg;
+  
+  if(0) SWIG_fail;
+  
+fail:
+  lua_error(L);
+  return SWIG_arg;
+}
+
+
+static int _wrap_LFO_saw(lua_State* L) {
+  int SWIG_arg = 0;
+  gam::LFO< > *arg1 = (gam::LFO< > *) 0 ;
+  float result;
+  
+  SWIG_check_num_args("gam::LFO< >::saw",1,1)
+  if(!SWIG_isptrtype(L,1)) SWIG_fail_arg("gam::LFO< >::saw",1,"gam::LFO< > *");
+  
+  if (!SWIG_IsOK(SWIG_ConvertPtr(L,1,(void**)&arg1,SWIGTYPE_p_gam__LFOT_phsInc__Loop_GAM_DEFAULT_DOMAIN_t,0))){
+    SWIG_fail_ptr("LFO_saw",1,SWIGTYPE_p_gam__LFOT_phsInc__Loop_GAM_DEFAULT_DOMAIN_t);
+  }
+  
+  result = (float)(arg1)->saw();
+  lua_pushnumber(L, (lua_Number) result); SWIG_arg++;
+  return SWIG_arg;
+  
+  if(0) SWIG_fail;
+  
+fail:
+  lua_error(L);
+  return SWIG_arg;
+}
+
+
+static int _wrap_LFO_sinPara(lua_State* L) {
+  int SWIG_arg = 0;
+  gam::LFO< > *arg1 = (gam::LFO< > *) 0 ;
+  float result;
+  
+  SWIG_check_num_args("gam::LFO< >::sinPara",1,1)
+  if(!SWIG_isptrtype(L,1)) SWIG_fail_arg("gam::LFO< >::sinPara",1,"gam::LFO< > *");
+  
+  if (!SWIG_IsOK(SWIG_ConvertPtr(L,1,(void**)&arg1,SWIGTYPE_p_gam__LFOT_phsInc__Loop_GAM_DEFAULT_DOMAIN_t,0))){
+    SWIG_fail_ptr("LFO_sinPara",1,SWIGTYPE_p_gam__LFOT_phsInc__Loop_GAM_DEFAULT_DOMAIN_t);
+  }
+  
+  result = (float)(arg1)->sinPara();
+  lua_pushnumber(L, (lua_Number) result); SWIG_arg++;
+  return SWIG_arg;
+  
+  if(0) SWIG_fail;
+  
+fail:
+  lua_error(L);
+  return SWIG_arg;
+}
+
+
+static int _wrap_LFO_stair(lua_State* L) {
+  int SWIG_arg = 0;
+  gam::LFO< > *arg1 = (gam::LFO< > *) 0 ;
+  float result;
+  
+  SWIG_check_num_args("gam::LFO< >::stair",1,1)
+  if(!SWIG_isptrtype(L,1)) SWIG_fail_arg("gam::LFO< >::stair",1,"gam::LFO< > *");
+  
+  if (!SWIG_IsOK(SWIG_ConvertPtr(L,1,(void**)&arg1,SWIGTYPE_p_gam__LFOT_phsInc__Loop_GAM_DEFAULT_DOMAIN_t,0))){
+    SWIG_fail_ptr("LFO_stair",1,SWIGTYPE_p_gam__LFOT_phsInc__Loop_GAM_DEFAULT_DOMAIN_t);
+  }
+  
+  result = (float)(arg1)->stair();
+  lua_pushnumber(L, (lua_Number) result); SWIG_arg++;
+  return SWIG_arg;
+  
+  if(0) SWIG_fail;
+  
+fail:
+  lua_error(L);
+  return SWIG_arg;
+}
+
+
+static int _wrap_LFO_sqr(lua_State* L) {
+  int SWIG_arg = 0;
+  gam::LFO< > *arg1 = (gam::LFO< > *) 0 ;
+  float result;
+  
+  SWIG_check_num_args("gam::LFO< >::sqr",1,1)
+  if(!SWIG_isptrtype(L,1)) SWIG_fail_arg("gam::LFO< >::sqr",1,"gam::LFO< > *");
+  
+  if (!SWIG_IsOK(SWIG_ConvertPtr(L,1,(void**)&arg1,SWIGTYPE_p_gam__LFOT_phsInc__Loop_GAM_DEFAULT_DOMAIN_t,0))){
+    SWIG_fail_ptr("LFO_sqr",1,SWIGTYPE_p_gam__LFOT_phsInc__Loop_GAM_DEFAULT_DOMAIN_t);
+  }
+  
+  result = (float)(arg1)->sqr();
+  lua_pushnumber(L, (lua_Number) result); SWIG_arg++;
+  return SWIG_arg;
+  
+  if(0) SWIG_fail;
+  
+fail:
+  lua_error(L);
+  return SWIG_arg;
+}
+
+
+static int _wrap_LFO_tri(lua_State* L) {
+  int SWIG_arg = 0;
+  gam::LFO< > *arg1 = (gam::LFO< > *) 0 ;
+  float result;
+  
+  SWIG_check_num_args("gam::LFO< >::tri",1,1)
+  if(!SWIG_isptrtype(L,1)) SWIG_fail_arg("gam::LFO< >::tri",1,"gam::LFO< > *");
+  
+  if (!SWIG_IsOK(SWIG_ConvertPtr(L,1,(void**)&arg1,SWIGTYPE_p_gam__LFOT_phsInc__Loop_GAM_DEFAULT_DOMAIN_t,0))){
+    SWIG_fail_ptr("LFO_tri",1,SWIGTYPE_p_gam__LFOT_phsInc__Loop_GAM_DEFAULT_DOMAIN_t);
+  }
+  
+  result = (float)(arg1)->tri();
+  lua_pushnumber(L, (lua_Number) result); SWIG_arg++;
+  return SWIG_arg;
+  
+  if(0) SWIG_fail;
+  
+fail:
+  lua_error(L);
+  return SWIG_arg;
+}
+
+
+static int _wrap_LFO_up(lua_State* L) {
+  int SWIG_arg = 0;
+  gam::LFO< > *arg1 = (gam::LFO< > *) 0 ;
+  float result;
+  
+  SWIG_check_num_args("gam::LFO< >::up",1,1)
+  if(!SWIG_isptrtype(L,1)) SWIG_fail_arg("gam::LFO< >::up",1,"gam::LFO< > *");
+  
+  if (!SWIG_IsOK(SWIG_ConvertPtr(L,1,(void**)&arg1,SWIGTYPE_p_gam__LFOT_phsInc__Loop_GAM_DEFAULT_DOMAIN_t,0))){
+    SWIG_fail_ptr("LFO_up",1,SWIGTYPE_p_gam__LFOT_phsInc__Loop_GAM_DEFAULT_DOMAIN_t);
+  }
+  
+  result = (float)(arg1)->up();
+  lua_pushnumber(L, (lua_Number) result); SWIG_arg++;
+  return SWIG_arg;
+  
+  if(0) SWIG_fail;
+  
+fail:
+  lua_error(L);
+  return SWIG_arg;
+}
+
+
+static int _wrap_LFO_up2(lua_State* L) {
+  int SWIG_arg = 0;
+  gam::LFO< > *arg1 = (gam::LFO< > *) 0 ;
+  float result;
+  
+  SWIG_check_num_args("gam::LFO< >::up2",1,1)
+  if(!SWIG_isptrtype(L,1)) SWIG_fail_arg("gam::LFO< >::up2",1,"gam::LFO< > *");
+  
+  if (!SWIG_IsOK(SWIG_ConvertPtr(L,1,(void**)&arg1,SWIGTYPE_p_gam__LFOT_phsInc__Loop_GAM_DEFAULT_DOMAIN_t,0))){
+    SWIG_fail_ptr("LFO_up2",1,SWIGTYPE_p_gam__LFOT_phsInc__Loop_GAM_DEFAULT_DOMAIN_t);
+  }
+  
+  result = (float)(arg1)->up2();
+  lua_pushnumber(L, (lua_Number) result); SWIG_arg++;
+  return SWIG_arg;
+  
+  if(0) SWIG_fail;
+  
+fail:
+  lua_error(L);
+  return SWIG_arg;
+}
+
+
+static int _wrap_LFO_S1(lua_State* L) {
+  int SWIG_arg = 0;
+  gam::LFO< > *arg1 = (gam::LFO< > *) 0 ;
+  float result;
+  
+  SWIG_check_num_args("gam::LFO< >::S1",1,1)
+  if(!SWIG_isptrtype(L,1)) SWIG_fail_arg("gam::LFO< >::S1",1,"gam::LFO< > *");
+  
+  if (!SWIG_IsOK(SWIG_ConvertPtr(L,1,(void**)&arg1,SWIGTYPE_p_gam__LFOT_phsInc__Loop_GAM_DEFAULT_DOMAIN_t,0))){
+    SWIG_fail_ptr("LFO_S1",1,SWIGTYPE_p_gam__LFOT_phsInc__Loop_GAM_DEFAULT_DOMAIN_t);
+  }
+  
+  result = (float)(arg1)->S1();
+  lua_pushnumber(L, (lua_Number) result); SWIG_arg++;
+  return SWIG_arg;
+  
+  if(0) SWIG_fail;
+  
+fail:
+  lua_error(L);
+  return SWIG_arg;
+}
+
+
+static int _wrap_LFO_C2(lua_State* L) {
+  int SWIG_arg = 0;
+  gam::LFO< > *arg1 = (gam::LFO< > *) 0 ;
+  float result;
+  
+  SWIG_check_num_args("gam::LFO< >::C2",1,1)
+  if(!SWIG_isptrtype(L,1)) SWIG_fail_arg("gam::LFO< >::C2",1,"gam::LFO< > *");
+  
+  if (!SWIG_IsOK(SWIG_ConvertPtr(L,1,(void**)&arg1,SWIGTYPE_p_gam__LFOT_phsInc__Loop_GAM_DEFAULT_DOMAIN_t,0))){
+    SWIG_fail_ptr("LFO_C2",1,SWIGTYPE_p_gam__LFOT_phsInc__Loop_GAM_DEFAULT_DOMAIN_t);
+  }
+  
+  result = (float)(arg1)->C2();
+  lua_pushnumber(L, (lua_Number) result); SWIG_arg++;
+  return SWIG_arg;
+  
+  if(0) SWIG_fail;
+  
+fail:
+  lua_error(L);
+  return SWIG_arg;
+}
+
+
+static int _wrap_LFO_S3(lua_State* L) {
+  int SWIG_arg = 0;
+  gam::LFO< > *arg1 = (gam::LFO< > *) 0 ;
+  float result;
+  
+  SWIG_check_num_args("gam::LFO< >::S3",1,1)
+  if(!SWIG_isptrtype(L,1)) SWIG_fail_arg("gam::LFO< >::S3",1,"gam::LFO< > *");
+  
+  if (!SWIG_IsOK(SWIG_ConvertPtr(L,1,(void**)&arg1,SWIGTYPE_p_gam__LFOT_phsInc__Loop_GAM_DEFAULT_DOMAIN_t,0))){
+    SWIG_fail_ptr("LFO_S3",1,SWIGTYPE_p_gam__LFOT_phsInc__Loop_GAM_DEFAULT_DOMAIN_t);
+  }
+  
+  result = (float)(arg1)->S3();
+  lua_pushnumber(L, (lua_Number) result); SWIG_arg++;
+  return SWIG_arg;
+  
+  if(0) SWIG_fail;
+  
+fail:
+  lua_error(L);
+  return SWIG_arg;
+}
+
+
+static int _wrap_LFO_C4(lua_State* L) {
+  int SWIG_arg = 0;
+  gam::LFO< > *arg1 = (gam::LFO< > *) 0 ;
+  float result;
+  
+  SWIG_check_num_args("gam::LFO< >::C4",1,1)
+  if(!SWIG_isptrtype(L,1)) SWIG_fail_arg("gam::LFO< >::C4",1,"gam::LFO< > *");
+  
+  if (!SWIG_IsOK(SWIG_ConvertPtr(L,1,(void**)&arg1,SWIGTYPE_p_gam__LFOT_phsInc__Loop_GAM_DEFAULT_DOMAIN_t,0))){
+    SWIG_fail_ptr("LFO_C4",1,SWIGTYPE_p_gam__LFOT_phsInc__Loop_GAM_DEFAULT_DOMAIN_t);
+  }
+  
+  result = (float)(arg1)->C4();
+  lua_pushnumber(L, (lua_Number) result); SWIG_arg++;
+  return SWIG_arg;
+  
+  if(0) SWIG_fail;
+  
+fail:
+  lua_error(L);
+  return SWIG_arg;
+}
+
+
+static int _wrap_LFO_S5(lua_State* L) {
+  int SWIG_arg = 0;
+  gam::LFO< > *arg1 = (gam::LFO< > *) 0 ;
+  float result;
+  
+  SWIG_check_num_args("gam::LFO< >::S5",1,1)
+  if(!SWIG_isptrtype(L,1)) SWIG_fail_arg("gam::LFO< >::S5",1,"gam::LFO< > *");
+  
+  if (!SWIG_IsOK(SWIG_ConvertPtr(L,1,(void**)&arg1,SWIGTYPE_p_gam__LFOT_phsInc__Loop_GAM_DEFAULT_DOMAIN_t,0))){
+    SWIG_fail_ptr("LFO_S5",1,SWIGTYPE_p_gam__LFOT_phsInc__Loop_GAM_DEFAULT_DOMAIN_t);
+  }
+  
+  result = (float)(arg1)->S5();
+  lua_pushnumber(L, (lua_Number) result); SWIG_arg++;
+  return SWIG_arg;
+  
+  if(0) SWIG_fail;
+  
+fail:
+  lua_error(L);
+  return SWIG_arg;
+}
+
+
+static int _wrap_LFO_cosU(lua_State* L) {
+  int SWIG_arg = 0;
+  gam::LFO< > *arg1 = (gam::LFO< > *) 0 ;
+  float result;
+  
+  SWIG_check_num_args("gam::LFO< >::cosU",1,1)
+  if(!SWIG_isptrtype(L,1)) SWIG_fail_arg("gam::LFO< >::cosU",1,"gam::LFO< > *");
+  
+  if (!SWIG_IsOK(SWIG_ConvertPtr(L,1,(void**)&arg1,SWIGTYPE_p_gam__LFOT_phsInc__Loop_GAM_DEFAULT_DOMAIN_t,0))){
+    SWIG_fail_ptr("LFO_cosU",1,SWIGTYPE_p_gam__LFOT_phsInc__Loop_GAM_DEFAULT_DOMAIN_t);
+  }
+  
+  result = (float)(arg1)->cosU();
+  lua_pushnumber(L, (lua_Number) result); SWIG_arg++;
+  return SWIG_arg;
+  
+  if(0) SWIG_fail;
+  
+fail:
+  lua_error(L);
+  return SWIG_arg;
+}
+
+
+static int _wrap_LFO_downU(lua_State* L) {
+  int SWIG_arg = 0;
+  gam::LFO< > *arg1 = (gam::LFO< > *) 0 ;
+  float result;
+  
+  SWIG_check_num_args("gam::LFO< >::downU",1,1)
+  if(!SWIG_isptrtype(L,1)) SWIG_fail_arg("gam::LFO< >::downU",1,"gam::LFO< > *");
+  
+  if (!SWIG_IsOK(SWIG_ConvertPtr(L,1,(void**)&arg1,SWIGTYPE_p_gam__LFOT_phsInc__Loop_GAM_DEFAULT_DOMAIN_t,0))){
+    SWIG_fail_ptr("LFO_downU",1,SWIGTYPE_p_gam__LFOT_phsInc__Loop_GAM_DEFAULT_DOMAIN_t);
+  }
+  
+  result = (float)(arg1)->downU();
+  lua_pushnumber(L, (lua_Number) result); SWIG_arg++;
+  return SWIG_arg;
+  
+  if(0) SWIG_fail;
+  
+fail:
+  lua_error(L);
+  return SWIG_arg;
+}
+
+
+static int _wrap_LFO_hann(lua_State* L) {
+  int SWIG_arg = 0;
+  gam::LFO< > *arg1 = (gam::LFO< > *) 0 ;
+  float result;
+  
+  SWIG_check_num_args("gam::LFO< >::hann",1,1)
+  if(!SWIG_isptrtype(L,1)) SWIG_fail_arg("gam::LFO< >::hann",1,"gam::LFO< > *");
+  
+  if (!SWIG_IsOK(SWIG_ConvertPtr(L,1,(void**)&arg1,SWIGTYPE_p_gam__LFOT_phsInc__Loop_GAM_DEFAULT_DOMAIN_t,0))){
+    SWIG_fail_ptr("LFO_hann",1,SWIGTYPE_p_gam__LFOT_phsInc__Loop_GAM_DEFAULT_DOMAIN_t);
+  }
+  
+  result = (float)(arg1)->hann();
+  lua_pushnumber(L, (lua_Number) result); SWIG_arg++;
+  return SWIG_arg;
+  
+  if(0) SWIG_fail;
+  
+fail:
+  lua_error(L);
+  return SWIG_arg;
+}
+
+
+static int _wrap_LFO_impU(lua_State* L) {
+  int SWIG_arg = 0;
+  gam::LFO< > *arg1 = (gam::LFO< > *) 0 ;
+  float result;
+  
+  SWIG_check_num_args("gam::LFO< >::impU",1,1)
+  if(!SWIG_isptrtype(L,1)) SWIG_fail_arg("gam::LFO< >::impU",1,"gam::LFO< > *");
+  
+  if (!SWIG_IsOK(SWIG_ConvertPtr(L,1,(void**)&arg1,SWIGTYPE_p_gam__LFOT_phsInc__Loop_GAM_DEFAULT_DOMAIN_t,0))){
+    SWIG_fail_ptr("LFO_impU",1,SWIGTYPE_p_gam__LFOT_phsInc__Loop_GAM_DEFAULT_DOMAIN_t);
+  }
+  
+  result = (float)(arg1)->impU();
+  lua_pushnumber(L, (lua_Number) result); SWIG_arg++;
+  return SWIG_arg;
+  
+  if(0) SWIG_fail;
+  
+fail:
+  lua_error(L);
+  return SWIG_arg;
+}
+
+
+static int _wrap_LFO_line2U(lua_State* L) {
+  int SWIG_arg = 0;
+  gam::LFO< > *arg1 = (gam::LFO< > *) 0 ;
+  float result;
+  
+  SWIG_check_num_args("gam::LFO< >::line2U",1,1)
+  if(!SWIG_isptrtype(L,1)) SWIG_fail_arg("gam::LFO< >::line2U",1,"gam::LFO< > *");
+  
+  if (!SWIG_IsOK(SWIG_ConvertPtr(L,1,(void**)&arg1,SWIGTYPE_p_gam__LFOT_phsInc__Loop_GAM_DEFAULT_DOMAIN_t,0))){
+    SWIG_fail_ptr("LFO_line2U",1,SWIGTYPE_p_gam__LFOT_phsInc__Loop_GAM_DEFAULT_DOMAIN_t);
+  }
+  
+  result = (float)(arg1)->line2U();
+  lua_pushnumber(L, (lua_Number) result); SWIG_arg++;
+  return SWIG_arg;
+  
+  if(0) SWIG_fail;
+  
+fail:
+  lua_error(L);
+  return SWIG_arg;
+}
+
+
+static int _wrap_LFO_paraU(lua_State* L) {
+  int SWIG_arg = 0;
+  gam::LFO< > *arg1 = (gam::LFO< > *) 0 ;
+  float result;
+  
+  SWIG_check_num_args("gam::LFO< >::paraU",1,1)
+  if(!SWIG_isptrtype(L,1)) SWIG_fail_arg("gam::LFO< >::paraU",1,"gam::LFO< > *");
+  
+  if (!SWIG_IsOK(SWIG_ConvertPtr(L,1,(void**)&arg1,SWIGTYPE_p_gam__LFOT_phsInc__Loop_GAM_DEFAULT_DOMAIN_t,0))){
+    SWIG_fail_ptr("LFO_paraU",1,SWIGTYPE_p_gam__LFOT_phsInc__Loop_GAM_DEFAULT_DOMAIN_t);
+  }
+  
+  result = (float)(arg1)->paraU();
+  lua_pushnumber(L, (lua_Number) result); SWIG_arg++;
+  return SWIG_arg;
+  
+  if(0) SWIG_fail;
+  
+fail:
+  lua_error(L);
+  return SWIG_arg;
+}
+
+
+static int _wrap_LFO_pulseU(lua_State* L) {
+  int SWIG_arg = 0;
+  gam::LFO< > *arg1 = (gam::LFO< > *) 0 ;
+  float result;
+  
+  SWIG_check_num_args("gam::LFO< >::pulseU",1,1)
+  if(!SWIG_isptrtype(L,1)) SWIG_fail_arg("gam::LFO< >::pulseU",1,"gam::LFO< > *");
+  
+  if (!SWIG_IsOK(SWIG_ConvertPtr(L,1,(void**)&arg1,SWIGTYPE_p_gam__LFOT_phsInc__Loop_GAM_DEFAULT_DOMAIN_t,0))){
+    SWIG_fail_ptr("LFO_pulseU",1,SWIGTYPE_p_gam__LFOT_phsInc__Loop_GAM_DEFAULT_DOMAIN_t);
+  }
+  
+  result = (float)(arg1)->pulseU();
+  lua_pushnumber(L, (lua_Number) result); SWIG_arg++;
+  return SWIG_arg;
+  
+  if(0) SWIG_fail;
+  
+fail:
+  lua_error(L);
+  return SWIG_arg;
+}
+
+
+static int _wrap_LFO_stairU(lua_State* L) {
+  int SWIG_arg = 0;
+  gam::LFO< > *arg1 = (gam::LFO< > *) 0 ;
+  float result;
+  
+  SWIG_check_num_args("gam::LFO< >::stairU",1,1)
+  if(!SWIG_isptrtype(L,1)) SWIG_fail_arg("gam::LFO< >::stairU",1,"gam::LFO< > *");
+  
+  if (!SWIG_IsOK(SWIG_ConvertPtr(L,1,(void**)&arg1,SWIGTYPE_p_gam__LFOT_phsInc__Loop_GAM_DEFAULT_DOMAIN_t,0))){
+    SWIG_fail_ptr("LFO_stairU",1,SWIGTYPE_p_gam__LFOT_phsInc__Loop_GAM_DEFAULT_DOMAIN_t);
+  }
+  
+  result = (float)(arg1)->stairU();
+  lua_pushnumber(L, (lua_Number) result); SWIG_arg++;
+  return SWIG_arg;
+  
+  if(0) SWIG_fail;
+  
+fail:
+  lua_error(L);
+  return SWIG_arg;
+}
+
+
+static int _wrap_LFO_sqrU(lua_State* L) {
+  int SWIG_arg = 0;
+  gam::LFO< > *arg1 = (gam::LFO< > *) 0 ;
+  float result;
+  
+  SWIG_check_num_args("gam::LFO< >::sqrU",1,1)
+  if(!SWIG_isptrtype(L,1)) SWIG_fail_arg("gam::LFO< >::sqrU",1,"gam::LFO< > *");
+  
+  if (!SWIG_IsOK(SWIG_ConvertPtr(L,1,(void**)&arg1,SWIGTYPE_p_gam__LFOT_phsInc__Loop_GAM_DEFAULT_DOMAIN_t,0))){
+    SWIG_fail_ptr("LFO_sqrU",1,SWIGTYPE_p_gam__LFOT_phsInc__Loop_GAM_DEFAULT_DOMAIN_t);
+  }
+  
+  result = (float)(arg1)->sqrU();
+  lua_pushnumber(L, (lua_Number) result); SWIG_arg++;
+  return SWIG_arg;
+  
+  if(0) SWIG_fail;
+  
+fail:
+  lua_error(L);
+  return SWIG_arg;
+}
+
+
+static int _wrap_LFO_triU(lua_State* L) {
+  int SWIG_arg = 0;
+  gam::LFO< > *arg1 = (gam::LFO< > *) 0 ;
+  float result;
+  
+  SWIG_check_num_args("gam::LFO< >::triU",1,1)
+  if(!SWIG_isptrtype(L,1)) SWIG_fail_arg("gam::LFO< >::triU",1,"gam::LFO< > *");
+  
+  if (!SWIG_IsOK(SWIG_ConvertPtr(L,1,(void**)&arg1,SWIGTYPE_p_gam__LFOT_phsInc__Loop_GAM_DEFAULT_DOMAIN_t,0))){
+    SWIG_fail_ptr("LFO_triU",1,SWIGTYPE_p_gam__LFOT_phsInc__Loop_GAM_DEFAULT_DOMAIN_t);
+  }
+  
+  result = (float)(arg1)->triU();
+  lua_pushnumber(L, (lua_Number) result); SWIG_arg++;
+  return SWIG_arg;
+  
+  if(0) SWIG_fail;
+  
+fail:
+  lua_error(L);
+  return SWIG_arg;
+}
+
+
+static int _wrap_LFO_upU(lua_State* L) {
+  int SWIG_arg = 0;
+  gam::LFO< > *arg1 = (gam::LFO< > *) 0 ;
+  float result;
+  
+  SWIG_check_num_args("gam::LFO< >::upU",1,1)
+  if(!SWIG_isptrtype(L,1)) SWIG_fail_arg("gam::LFO< >::upU",1,"gam::LFO< > *");
+  
+  if (!SWIG_IsOK(SWIG_ConvertPtr(L,1,(void**)&arg1,SWIGTYPE_p_gam__LFOT_phsInc__Loop_GAM_DEFAULT_DOMAIN_t,0))){
+    SWIG_fail_ptr("LFO_upU",1,SWIGTYPE_p_gam__LFOT_phsInc__Loop_GAM_DEFAULT_DOMAIN_t);
+  }
+  
+  result = (float)(arg1)->upU();
+  lua_pushnumber(L, (lua_Number) result); SWIG_arg++;
+  return SWIG_arg;
+  
+  if(0) SWIG_fail;
+  
+fail:
+  lua_error(L);
+  return SWIG_arg;
+}
+
+
+static int _wrap_LFO_up2U(lua_State* L) {
+  int SWIG_arg = 0;
+  gam::LFO< > *arg1 = (gam::LFO< > *) 0 ;
+  float result;
+  
+  SWIG_check_num_args("gam::LFO< >::up2U",1,1)
+  if(!SWIG_isptrtype(L,1)) SWIG_fail_arg("gam::LFO< >::up2U",1,"gam::LFO< > *");
+  
+  if (!SWIG_IsOK(SWIG_ConvertPtr(L,1,(void**)&arg1,SWIGTYPE_p_gam__LFOT_phsInc__Loop_GAM_DEFAULT_DOMAIN_t,0))){
+    SWIG_fail_ptr("LFO_up2U",1,SWIGTYPE_p_gam__LFOT_phsInc__Loop_GAM_DEFAULT_DOMAIN_t);
+  }
+  
+  result = (float)(arg1)->up2U();
+  lua_pushnumber(L, (lua_Number) result); SWIG_arg++;
+  return SWIG_arg;
+  
+  if(0) SWIG_fail;
+  
+fail:
+  lua_error(L);
+  return SWIG_arg;
+}
+
+
+static int _wrap_LFO_patU__SWIG_0(lua_State* L) {
+  int SWIG_arg = 0;
+  gam::LFO< > *arg1 = (gam::LFO< > *) 0 ;
+  float result;
+  
+  SWIG_check_num_args("gam::LFO< >::patU",1,1)
+  if(!SWIG_isptrtype(L,1)) SWIG_fail_arg("gam::LFO< >::patU",1,"gam::LFO< > *");
+  
+  if (!SWIG_IsOK(SWIG_ConvertPtr(L,1,(void**)&arg1,SWIGTYPE_p_gam__LFOT_phsInc__Loop_GAM_DEFAULT_DOMAIN_t,0))){
+    SWIG_fail_ptr("LFO_patU",1,SWIGTYPE_p_gam__LFOT_phsInc__Loop_GAM_DEFAULT_DOMAIN_t);
+  }
+  
+  result = (float)(arg1)->patU();
+  lua_pushnumber(L, (lua_Number) result); SWIG_arg++;
+  return SWIG_arg;
+  
+  if(0) SWIG_fail;
+  
+fail:
+  lua_error(L);
+  return SWIG_arg;
+}
+
+
+static int _wrap_LFO_patU__SWIG_1(lua_State* L) {
+  int SWIG_arg = 0;
+  gam::LFO< > *arg1 = (gam::LFO< > *) 0 ;
+  uint32_t arg2 ;
+  float result;
+  
+  SWIG_check_num_args("gam::LFO< >::patU",2,2)
+  if(!SWIG_isptrtype(L,1)) SWIG_fail_arg("gam::LFO< >::patU",1,"gam::LFO< > *");
+  if(!lua_isnumber(L,2)) SWIG_fail_arg("gam::LFO< >::patU",2,"uint32_t");
+  
+  if (!SWIG_IsOK(SWIG_ConvertPtr(L,1,(void**)&arg1,SWIGTYPE_p_gam__LFOT_phsInc__Loop_GAM_DEFAULT_DOMAIN_t,0))){
+    SWIG_fail_ptr("LFO_patU",1,SWIGTYPE_p_gam__LFOT_phsInc__Loop_GAM_DEFAULT_DOMAIN_t);
+  }
+  
+  SWIG_contract_assert((lua_tonumber(L,2)>=0),"number must not be negative");
+  arg2 = (uint32_t)lua_tonumber(L, 2);
+  result = (float)(arg1)->patU(arg2);
+  lua_pushnumber(L, (lua_Number) result); SWIG_arg++;
+  return SWIG_arg;
+  
+  if(0) SWIG_fail;
+  
+fail:
+  lua_error(L);
+  return SWIG_arg;
+}
+
+
+static int _wrap_LFO_patU(lua_State* L) {
+  int argc;
+  int argv[3]={
+    1,2,3
+  };
+  
+  argc = lua_gettop(L);
+  if (argc == 1) {
+    int _v = 0;
+    {
+      void *ptr;
+      if (SWIG_isptrtype(L,argv[0])==0 || SWIG_ConvertPtr(L,argv[0], (void **) &ptr, SWIGTYPE_p_gam__LFOT_phsInc__Loop_GAM_DEFAULT_DOMAIN_t, 0)) {
+        _v = 0;
+      } else {
+        _v = 1;
+      }
+    }
+    if (_v) {
+      return _wrap_LFO_patU__SWIG_0(L);
+    }
+  }
+  if (argc == 2) {
+    int _v = 0;
+    {
+      void *ptr;
+      if (SWIG_isptrtype(L,argv[0])==0 || SWIG_ConvertPtr(L,argv[0], (void **) &ptr, SWIGTYPE_p_gam__LFOT_phsInc__Loop_GAM_DEFAULT_DOMAIN_t, 0)) {
+        _v = 0;
+      } else {
+        _v = 1;
+      }
+    }
+    if (_v) {
+      {
+        _v = lua_isnumber(L,argv[1]);
+      }
+      if (_v) {
+        return _wrap_LFO_patU__SWIG_1(L);
+      }
+    }
+  }
+  
+  SWIG_Lua_pusherrstring(L,"Wrong arguments for overloaded function 'LFO_patU'\n"
+    "  Possible C/C++ prototypes are:\n"
+    "    gam::LFO< >::patU()\n"
+    "    gam::LFO< >::patU(uint32_t)\n");
+  lua_error(L);return 0;
+}
+
+
+static int _wrap_LFO_sineT9(lua_State* L) {
+  int SWIG_arg = 0;
+  gam::LFO< > *arg1 = (gam::LFO< > *) 0 ;
+  float result;
+  
+  SWIG_check_num_args("gam::LFO< >::sineT9",1,1)
+  if(!SWIG_isptrtype(L,1)) SWIG_fail_arg("gam::LFO< >::sineT9",1,"gam::LFO< > *");
+  
+  if (!SWIG_IsOK(SWIG_ConvertPtr(L,1,(void**)&arg1,SWIGTYPE_p_gam__LFOT_phsInc__Loop_GAM_DEFAULT_DOMAIN_t,0))){
+    SWIG_fail_ptr("LFO_sineT9",1,SWIGTYPE_p_gam__LFOT_phsInc__Loop_GAM_DEFAULT_DOMAIN_t);
+  }
+  
+  result = (float)(arg1)->sineT9();
+  lua_pushnumber(L, (lua_Number) result); SWIG_arg++;
+  return SWIG_arg;
+  
+  if(0) SWIG_fail;
+  
+fail:
+  lua_error(L);
+  return SWIG_arg;
+}
+
+
+static int _wrap_LFO_sineP9(lua_State* L) {
+  int SWIG_arg = 0;
+  gam::LFO< > *arg1 = (gam::LFO< > *) 0 ;
+  float result;
+  
+  SWIG_check_num_args("gam::LFO< >::sineP9",1,1)
+  if(!SWIG_isptrtype(L,1)) SWIG_fail_arg("gam::LFO< >::sineP9",1,"gam::LFO< > *");
+  
+  if (!SWIG_IsOK(SWIG_ConvertPtr(L,1,(void**)&arg1,SWIGTYPE_p_gam__LFOT_phsInc__Loop_GAM_DEFAULT_DOMAIN_t,0))){
+    SWIG_fail_ptr("LFO_sineP9",1,SWIGTYPE_p_gam__LFOT_phsInc__Loop_GAM_DEFAULT_DOMAIN_t);
+  }
+  
+  result = (float)(arg1)->sineP9();
+  lua_pushnumber(L, (lua_Number) result); SWIG_arg++;
+  return SWIG_arg;
+  
+  if(0) SWIG_fail;
+  
+fail:
+  lua_error(L);
+  return SWIG_arg;
+}
+
+
+static void swig_delete_LFO(void *obj) {
+gam::LFO< > *arg1 = (gam::LFO< > *) obj;
+delete arg1;
+}
+static int _proxy__wrap_new_LFO(lua_State *L) {
+    assert(lua_istable(L,1));
+    lua_pushcfunction(L,_wrap_new_LFO);
+    assert(!lua_isnil(L,-1));
+    lua_replace(L,1); /* replace our table with real constructor */
+    lua_call(L,lua_gettop(L)-1,1);
+    return 1;
+}
+static swig_lua_attribute swig_LFO_attributes[] = {
+    {0,0,0}
+};
+static swig_lua_method swig_LFO_methods[]= {
+    { "set", _wrap_LFO_set},
+    { "modI", _wrap_LFO_modI},
+    { "mod", _wrap_LFO_mod},
+    { "cos", _wrap_LFO_cos},
+    { "down", _wrap_LFO_down},
+    { "even3", _wrap_LFO_even3},
+    { "even5", _wrap_LFO_even5},
+    { "imp", _wrap_LFO_imp},
+    { "line2", _wrap_LFO_line2},
+    { "para", _wrap_LFO_para},
+    { "pulse", _wrap_LFO_pulse},
+    { "pulseRange", _wrap_LFO_pulseRange},
+    { "saw", _wrap_LFO_saw},
+    { "sinPara", _wrap_LFO_sinPara},
+    { "stair", _wrap_LFO_stair},
+    { "sqr", _wrap_LFO_sqr},
+    { "tri", _wrap_LFO_tri},
+    { "up", _wrap_LFO_up},
+    { "up2", _wrap_LFO_up2},
+    { "S1", _wrap_LFO_S1},
+    { "C2", _wrap_LFO_C2},
+    { "S3", _wrap_LFO_S3},
+    { "C4", _wrap_LFO_C4},
+    { "S5", _wrap_LFO_S5},
+    { "cosU", _wrap_LFO_cosU},
+    { "downU", _wrap_LFO_downU},
+    { "hann", _wrap_LFO_hann},
+    { "impU", _wrap_LFO_impU},
+    { "line2U", _wrap_LFO_line2U},
+    { "paraU", _wrap_LFO_paraU},
+    { "pulseU", _wrap_LFO_pulseU},
+    { "stairU", _wrap_LFO_stairU},
+    { "sqrU", _wrap_LFO_sqrU},
+    { "triU", _wrap_LFO_triU},
+    { "upU", _wrap_LFO_upU},
+    { "up2U", _wrap_LFO_up2U},
+    { "patU", _wrap_LFO_patU},
+    { "sineT9", _wrap_LFO_sineT9},
+    { "sineP9", _wrap_LFO_sineP9},
+    {0,0}
+};
+static swig_lua_method swig_LFO_meta[] = {
+    {0,0}
+};
+
+static swig_lua_attribute swig_LFO_Sf_SwigStatic_attributes[] = {
+    {0,0,0}
+};
+static swig_lua_const_info swig_LFO_Sf_SwigStatic_constants[]= {
+    {0,0,0,0,0,0}
+};
+static swig_lua_method swig_LFO_Sf_SwigStatic_methods[]= {
+    {0,0}
+};
+static swig_lua_class* swig_LFO_Sf_SwigStatic_classes[]= {
+    0
+};
+
+static swig_lua_namespace swig_LFO_Sf_SwigStatic = {
+    "LFO",
+    swig_LFO_Sf_SwigStatic_methods,
+    swig_LFO_Sf_SwigStatic_attributes,
+    swig_LFO_Sf_SwigStatic_constants,
+    swig_LFO_Sf_SwigStatic_classes,
+    0
+};
+static swig_lua_class *swig_LFO_bases[] = {0,0};
+static const char *swig_LFO_base_names[] = {"gam::Accum< > *",0};
+static swig_lua_class _wrap_class_LFO = { "LFO", "LFO", &SWIGTYPE_p_gam__LFOT_phsInc__Loop_GAM_DEFAULT_DOMAIN_t,_proxy__wrap_new_LFO, swig_delete_LFO, swig_LFO_methods, swig_LFO_attributes, &swig_LFO_Sf_SwigStatic, swig_LFO_meta, swig_LFO_bases, swig_LFO_base_names };
+
+static int _wrap_new_DWO__SWIG_0(lua_State* L) {
+  int SWIG_arg = 0;
+  gam::DWO< > *result = 0 ;
+  
+  SWIG_check_num_args("gam::DWO< >::DWO",0,0)
+  result = (gam::DWO< > *)new gam::DWO< >();
+  SWIG_NewPointerObj(L,result,SWIGTYPE_p_gam__DWOT_phsInc__Loop_GAM_DEFAULT_DOMAIN_t,1); SWIG_arg++; 
+  return SWIG_arg;
+  
+  if(0) SWIG_fail;
+  
+fail:
+  lua_error(L);
+  return SWIG_arg;
+}
+
+
+static int _wrap_new_DWO__SWIG_1(lua_State* L) {
+  int SWIG_arg = 0;
+  float arg1 ;
+  float arg2 ;
+  float arg3 ;
+  gam::DWO< > *result = 0 ;
+  
+  SWIG_check_num_args("gam::DWO< >::DWO",3,3)
+  if(!lua_isnumber(L,1)) SWIG_fail_arg("gam::DWO< >::DWO",1,"float");
+  if(!lua_isnumber(L,2)) SWIG_fail_arg("gam::DWO< >::DWO",2,"float");
+  if(!lua_isnumber(L,3)) SWIG_fail_arg("gam::DWO< >::DWO",3,"float");
+  arg1 = (float)lua_tonumber(L, 1);
+  arg2 = (float)lua_tonumber(L, 2);
+  arg3 = (float)lua_tonumber(L, 3);
+  result = (gam::DWO< > *)new gam::DWO< >(arg1,arg2,arg3);
+  SWIG_NewPointerObj(L,result,SWIGTYPE_p_gam__DWOT_phsInc__Loop_GAM_DEFAULT_DOMAIN_t,1); SWIG_arg++; 
+  return SWIG_arg;
+  
+  if(0) SWIG_fail;
+  
+fail:
+  lua_error(L);
+  return SWIG_arg;
+}
+
+
+static int _wrap_new_DWO__SWIG_2(lua_State* L) {
+  int SWIG_arg = 0;
+  float arg1 ;
+  float arg2 ;
+  gam::DWO< > *result = 0 ;
+  
+  SWIG_check_num_args("gam::DWO< >::DWO",2,2)
+  if(!lua_isnumber(L,1)) SWIG_fail_arg("gam::DWO< >::DWO",1,"float");
+  if(!lua_isnumber(L,2)) SWIG_fail_arg("gam::DWO< >::DWO",2,"float");
+  arg1 = (float)lua_tonumber(L, 1);
+  arg2 = (float)lua_tonumber(L, 2);
+  result = (gam::DWO< > *)new gam::DWO< >(arg1,arg2);
+  SWIG_NewPointerObj(L,result,SWIGTYPE_p_gam__DWOT_phsInc__Loop_GAM_DEFAULT_DOMAIN_t,1); SWIG_arg++; 
+  return SWIG_arg;
+  
+  if(0) SWIG_fail;
+  
+fail:
+  lua_error(L);
+  return SWIG_arg;
+}
+
+
+static int _wrap_new_DWO__SWIG_3(lua_State* L) {
+  int SWIG_arg = 0;
+  float arg1 ;
+  gam::DWO< > *result = 0 ;
+  
+  SWIG_check_num_args("gam::DWO< >::DWO",1,1)
+  if(!lua_isnumber(L,1)) SWIG_fail_arg("gam::DWO< >::DWO",1,"float");
+  arg1 = (float)lua_tonumber(L, 1);
+  result = (gam::DWO< > *)new gam::DWO< >(arg1);
+  SWIG_NewPointerObj(L,result,SWIGTYPE_p_gam__DWOT_phsInc__Loop_GAM_DEFAULT_DOMAIN_t,1); SWIG_arg++; 
+  return SWIG_arg;
+  
+  if(0) SWIG_fail;
+  
+fail:
+  lua_error(L);
+  return SWIG_arg;
+}
+
+
+static int _wrap_new_DWO(lua_State* L) {
+  int argc;
+  int argv[4]={
+    1,2,3,4
+  };
+  
+  argc = lua_gettop(L);
+  if (argc == 0) {
+    return _wrap_new_DWO__SWIG_0(L);
+  }
+  if (argc == 1) {
+    int _v = 0;
+    {
+      _v = lua_isnumber(L,argv[0]);
+    }
+    if (_v) {
+      return _wrap_new_DWO__SWIG_3(L);
+    }
+  }
+  if (argc == 2) {
+    int _v = 0;
+    {
+      _v = lua_isnumber(L,argv[0]);
+    }
+    if (_v) {
+      {
+        _v = lua_isnumber(L,argv[1]);
+      }
+      if (_v) {
+        return _wrap_new_DWO__SWIG_2(L);
+      }
+    }
+  }
+  if (argc == 3) {
+    int _v = 0;
+    {
+      _v = lua_isnumber(L,argv[0]);
+    }
+    if (_v) {
+      {
+        _v = lua_isnumber(L,argv[1]);
+      }
+      if (_v) {
+        {
+          _v = lua_isnumber(L,argv[2]);
+        }
+        if (_v) {
+          return _wrap_new_DWO__SWIG_1(L);
+        }
+      }
+    }
+  }
+  
+  SWIG_Lua_pusherrstring(L,"Wrong arguments for overloaded function 'new_DWO'\n"
+    "  Possible C/C++ prototypes are:\n"
+    "    gam::DWO< >::DWO()\n"
+    "    gam::DWO< >::DWO(float,float,float)\n"
+    "    gam::DWO< >::DWO(float,float)\n"
+    "    gam::DWO< >::DWO(float)\n");
+  lua_error(L);return 0;
+}
+
+
+static int _wrap_DWO_mod__SWIG_0(lua_State* L) {
+  int SWIG_arg = 0;
+  gam::DWO< > *arg1 = (gam::DWO< > *) 0 ;
+  double arg2 ;
+  gam::DWO< > *result = 0 ;
+  
+  SWIG_check_num_args("gam::DWO< >::mod",2,2)
+  if(!SWIG_isptrtype(L,1)) SWIG_fail_arg("gam::DWO< >::mod",1,"gam::DWO< > *");
+  if(!lua_isnumber(L,2)) SWIG_fail_arg("gam::DWO< >::mod",2,"double");
+  
+  if (!SWIG_IsOK(SWIG_ConvertPtr(L,1,(void**)&arg1,SWIGTYPE_p_gam__DWOT_phsInc__Loop_GAM_DEFAULT_DOMAIN_t,0))){
+    SWIG_fail_ptr("DWO_mod",1,SWIGTYPE_p_gam__DWOT_phsInc__Loop_GAM_DEFAULT_DOMAIN_t);
+  }
+  
+  arg2 = (double)lua_tonumber(L, 2);
+  result = (gam::DWO< > *) &(arg1)->mod(arg2);
+  SWIG_NewPointerObj(L,result,SWIGTYPE_p_gam__DWOT_phsInc__Loop_GAM_DEFAULT_DOMAIN_t,0); SWIG_arg++; 
+  return SWIG_arg;
+  
+  if(0) SWIG_fail;
+  
+fail:
+  lua_error(L);
+  return SWIG_arg;
+}
+
+
+static int _wrap_DWO_modI__SWIG_0(lua_State* L) {
+  int SWIG_arg = 0;
+  gam::DWO< > *arg1 = (gam::DWO< > *) 0 ;
+  uint32_t arg2 ;
+  gam::DWO< > *result = 0 ;
+  
+  SWIG_check_num_args("gam::DWO< >::modI",2,2)
+  if(!SWIG_isptrtype(L,1)) SWIG_fail_arg("gam::DWO< >::modI",1,"gam::DWO< > *");
+  if(!lua_isnumber(L,2)) SWIG_fail_arg("gam::DWO< >::modI",2,"uint32_t");
+  
+  if (!SWIG_IsOK(SWIG_ConvertPtr(L,1,(void**)&arg1,SWIGTYPE_p_gam__DWOT_phsInc__Loop_GAM_DEFAULT_DOMAIN_t,0))){
+    SWIG_fail_ptr("DWO_modI",1,SWIGTYPE_p_gam__DWOT_phsInc__Loop_GAM_DEFAULT_DOMAIN_t);
+  }
+  
+  SWIG_contract_assert((lua_tonumber(L,2)>=0),"number must not be negative");
+  arg2 = (uint32_t)lua_tonumber(L, 2);
+  result = (gam::DWO< > *) &(arg1)->modI(arg2);
+  SWIG_NewPointerObj(L,result,SWIGTYPE_p_gam__DWOT_phsInc__Loop_GAM_DEFAULT_DOMAIN_t,0); SWIG_arg++; 
+  return SWIG_arg;
+  
+  if(0) SWIG_fail;
+  
+fail:
+  lua_error(L);
+  return SWIG_arg;
+}
+
+
+static int _wrap_DWO_modI__SWIG_1(lua_State* L) {
+  int SWIG_arg = 0;
+  gam::DWO< > *arg1 = (gam::DWO< > *) 0 ;
+  uint32_t result;
+  
+  SWIG_check_num_args("gam::DWO< >::modI",1,1)
+  if(!SWIG_isptrtype(L,1)) SWIG_fail_arg("gam::DWO< >::modI",1,"gam::DWO< > const *");
+  
+  if (!SWIG_IsOK(SWIG_ConvertPtr(L,1,(void**)&arg1,SWIGTYPE_p_gam__DWOT_phsInc__Loop_GAM_DEFAULT_DOMAIN_t,0))){
+    SWIG_fail_ptr("DWO_modI",1,SWIGTYPE_p_gam__DWOT_phsInc__Loop_GAM_DEFAULT_DOMAIN_t);
+  }
+  
+  result = (uint32_t)((gam::DWO< > const *)arg1)->modI();
+  lua_pushnumber(L, (lua_Number) result); SWIG_arg++;
+  return SWIG_arg;
+  
+  if(0) SWIG_fail;
+  
+fail:
+  lua_error(L);
+  return SWIG_arg;
+}
+
+
+static int _wrap_DWO_modI(lua_State* L) {
+  int argc;
+  int argv[3]={
+    1,2,3
+  };
+  
+  argc = lua_gettop(L);
+  if (argc == 1) {
+    int _v = 0;
+    {
+      void *ptr;
+      if (SWIG_isptrtype(L,argv[0])==0 || SWIG_ConvertPtr(L,argv[0], (void **) &ptr, SWIGTYPE_p_gam__DWOT_phsInc__Loop_GAM_DEFAULT_DOMAIN_t, 0)) {
+        _v = 0;
+      } else {
+        _v = 1;
+      }
+    }
+    if (_v) {
+      return _wrap_DWO_modI__SWIG_1(L);
+    }
+  }
+  if (argc == 2) {
+    int _v = 0;
+    {
+      void *ptr;
+      if (SWIG_isptrtype(L,argv[0])==0 || SWIG_ConvertPtr(L,argv[0], (void **) &ptr, SWIGTYPE_p_gam__DWOT_phsInc__Loop_GAM_DEFAULT_DOMAIN_t, 0)) {
+        _v = 0;
+      } else {
+        _v = 1;
+      }
+    }
+    if (_v) {
+      {
+        _v = lua_isnumber(L,argv[1]);
+      }
+      if (_v) {
+        return _wrap_DWO_modI__SWIG_0(L);
+      }
+    }
+  }
+  
+  SWIG_Lua_pusherrstring(L,"Wrong arguments for overloaded function 'DWO_modI'\n"
+    "  Possible C/C++ prototypes are:\n"
+    "    gam::DWO< >::modI(uint32_t)\n"
+    "    gam::DWO< >::modI() const\n");
+  lua_error(L);return 0;
+}
+
+
+static int _wrap_DWO_mod__SWIG_1(lua_State* L) {
+  int SWIG_arg = 0;
+  gam::DWO< > *arg1 = (gam::DWO< > *) 0 ;
+  double result;
+  
+  SWIG_check_num_args("gam::DWO< >::mod",1,1)
+  if(!SWIG_isptrtype(L,1)) SWIG_fail_arg("gam::DWO< >::mod",1,"gam::DWO< > const *");
+  
+  if (!SWIG_IsOK(SWIG_ConvertPtr(L,1,(void**)&arg1,SWIGTYPE_p_gam__DWOT_phsInc__Loop_GAM_DEFAULT_DOMAIN_t,0))){
+    SWIG_fail_ptr("DWO_mod",1,SWIGTYPE_p_gam__DWOT_phsInc__Loop_GAM_DEFAULT_DOMAIN_t);
+  }
+  
+  result = (double)((gam::DWO< > const *)arg1)->mod();
+  lua_pushnumber(L, (lua_Number) result); SWIG_arg++;
+  return SWIG_arg;
+  
+  if(0) SWIG_fail;
+  
+fail:
+  lua_error(L);
+  return SWIG_arg;
+}
+
+
+static int _wrap_DWO_mod(lua_State* L) {
+  int argc;
+  int argv[3]={
+    1,2,3
+  };
+  
+  argc = lua_gettop(L);
+  if (argc == 1) {
+    int _v = 0;
+    {
+      void *ptr;
+      if (SWIG_isptrtype(L,argv[0])==0 || SWIG_ConvertPtr(L,argv[0], (void **) &ptr, SWIGTYPE_p_gam__DWOT_phsInc__Loop_GAM_DEFAULT_DOMAIN_t, 0)) {
+        _v = 0;
+      } else {
+        _v = 1;
+      }
+    }
+    if (_v) {
+      return _wrap_DWO_mod__SWIG_1(L);
+    }
+  }
+  if (argc == 2) {
+    int _v = 0;
+    {
+      void *ptr;
+      if (SWIG_isptrtype(L,argv[0])==0 || SWIG_ConvertPtr(L,argv[0], (void **) &ptr, SWIGTYPE_p_gam__DWOT_phsInc__Loop_GAM_DEFAULT_DOMAIN_t, 0)) {
+        _v = 0;
+      } else {
+        _v = 1;
+      }
+    }
+    if (_v) {
+      {
+        _v = lua_isnumber(L,argv[1]);
+      }
+      if (_v) {
+        return _wrap_DWO_mod__SWIG_0(L);
+      }
+    }
+  }
+  
+  SWIG_Lua_pusherrstring(L,"Wrong arguments for overloaded function 'DWO_mod'\n"
+    "  Possible C/C++ prototypes are:\n"
+    "    gam::DWO< >::mod(double)\n"
+    "    gam::DWO< >::mod() const\n");
+  lua_error(L);return 0;
+}
+
+
+static int _wrap_DWO_freq(lua_State* L) {
+  int SWIG_arg = 0;
+  gam::DWO< > *arg1 = (gam::DWO< > *) 0 ;
+  float arg2 ;
+  
+  SWIG_check_num_args("gam::DWO< >::freq",2,2)
+  if(!SWIG_isptrtype(L,1)) SWIG_fail_arg("gam::DWO< >::freq",1,"gam::DWO< > *");
+  if(!lua_isnumber(L,2)) SWIG_fail_arg("gam::DWO< >::freq",2,"float");
+  
+  if (!SWIG_IsOK(SWIG_ConvertPtr(L,1,(void**)&arg1,SWIGTYPE_p_gam__DWOT_phsInc__Loop_GAM_DEFAULT_DOMAIN_t,0))){
+    SWIG_fail_ptr("DWO_freq",1,SWIGTYPE_p_gam__DWOT_phsInc__Loop_GAM_DEFAULT_DOMAIN_t);
+  }
+  
+  arg2 = (float)lua_tonumber(L, 2);
+  (arg1)->freq(arg2);
+  
+  return SWIG_arg;
+  
+  if(0) SWIG_fail;
+  
+fail:
+  lua_error(L);
+  return SWIG_arg;
+}
+
+
+static int _wrap_DWO_period(lua_State* L) {
+  int SWIG_arg = 0;
+  gam::DWO< > *arg1 = (gam::DWO< > *) 0 ;
+  float arg2 ;
+  
+  SWIG_check_num_args("gam::DWO< >::period",2,2)
+  if(!SWIG_isptrtype(L,1)) SWIG_fail_arg("gam::DWO< >::period",1,"gam::DWO< > *");
+  if(!lua_isnumber(L,2)) SWIG_fail_arg("gam::DWO< >::period",2,"float");
+  
+  if (!SWIG_IsOK(SWIG_ConvertPtr(L,1,(void**)&arg1,SWIGTYPE_p_gam__DWOT_phsInc__Loop_GAM_DEFAULT_DOMAIN_t,0))){
+    SWIG_fail_ptr("DWO_period",1,SWIGTYPE_p_gam__DWOT_phsInc__Loop_GAM_DEFAULT_DOMAIN_t);
+  }
+  
+  arg2 = (float)lua_tonumber(L, 2);
+  (arg1)->period(arg2);
+  
+  return SWIG_arg;
+  
+  if(0) SWIG_fail;
+  
+fail:
+  lua_error(L);
+  return SWIG_arg;
+}
+
+
+static int _wrap_DWO_up(lua_State* L) {
+  int SWIG_arg = 0;
+  gam::DWO< > *arg1 = (gam::DWO< > *) 0 ;
+  float result;
+  
+  SWIG_check_num_args("gam::DWO< >::up",1,1)
+  if(!SWIG_isptrtype(L,1)) SWIG_fail_arg("gam::DWO< >::up",1,"gam::DWO< > *");
+  
+  if (!SWIG_IsOK(SWIG_ConvertPtr(L,1,(void**)&arg1,SWIGTYPE_p_gam__DWOT_phsInc__Loop_GAM_DEFAULT_DOMAIN_t,0))){
+    SWIG_fail_ptr("DWO_up",1,SWIGTYPE_p_gam__DWOT_phsInc__Loop_GAM_DEFAULT_DOMAIN_t);
+  }
+  
+  result = (float)(arg1)->up();
+  lua_pushnumber(L, (lua_Number) result); SWIG_arg++;
+  return SWIG_arg;
+  
+  if(0) SWIG_fail;
+  
+fail:
+  lua_error(L);
+  return SWIG_arg;
+}
+
+
+static int _wrap_DWO_down(lua_State* L) {
+  int SWIG_arg = 0;
+  gam::DWO< > *arg1 = (gam::DWO< > *) 0 ;
+  float result;
+  
+  SWIG_check_num_args("gam::DWO< >::down",1,1)
+  if(!SWIG_isptrtype(L,1)) SWIG_fail_arg("gam::DWO< >::down",1,"gam::DWO< > *");
+  
+  if (!SWIG_IsOK(SWIG_ConvertPtr(L,1,(void**)&arg1,SWIGTYPE_p_gam__DWOT_phsInc__Loop_GAM_DEFAULT_DOMAIN_t,0))){
+    SWIG_fail_ptr("DWO_down",1,SWIGTYPE_p_gam__DWOT_phsInc__Loop_GAM_DEFAULT_DOMAIN_t);
+  }
+  
+  result = (float)(arg1)->down();
+  lua_pushnumber(L, (lua_Number) result); SWIG_arg++;
+  return SWIG_arg;
+  
+  if(0) SWIG_fail;
+  
+fail:
+  lua_error(L);
+  return SWIG_arg;
+}
+
+
+static int _wrap_DWO_saw(lua_State* L) {
+  int SWIG_arg = 0;
+  gam::DWO< > *arg1 = (gam::DWO< > *) 0 ;
+  float result;
+  
+  SWIG_check_num_args("gam::DWO< >::saw",1,1)
+  if(!SWIG_isptrtype(L,1)) SWIG_fail_arg("gam::DWO< >::saw",1,"gam::DWO< > *");
+  
+  if (!SWIG_IsOK(SWIG_ConvertPtr(L,1,(void**)&arg1,SWIGTYPE_p_gam__DWOT_phsInc__Loop_GAM_DEFAULT_DOMAIN_t,0))){
+    SWIG_fail_ptr("DWO_saw",1,SWIGTYPE_p_gam__DWOT_phsInc__Loop_GAM_DEFAULT_DOMAIN_t);
+  }
+  
+  result = (float)(arg1)->saw();
+  lua_pushnumber(L, (lua_Number) result); SWIG_arg++;
+  return SWIG_arg;
+  
+  if(0) SWIG_fail;
+  
+fail:
+  lua_error(L);
+  return SWIG_arg;
+}
+
+
+static int _wrap_DWO_sqr(lua_State* L) {
+  int SWIG_arg = 0;
+  gam::DWO< > *arg1 = (gam::DWO< > *) 0 ;
+  float result;
+  
+  SWIG_check_num_args("gam::DWO< >::sqr",1,1)
+  if(!SWIG_isptrtype(L,1)) SWIG_fail_arg("gam::DWO< >::sqr",1,"gam::DWO< > *");
+  
+  if (!SWIG_IsOK(SWIG_ConvertPtr(L,1,(void**)&arg1,SWIGTYPE_p_gam__DWOT_phsInc__Loop_GAM_DEFAULT_DOMAIN_t,0))){
+    SWIG_fail_ptr("DWO_sqr",1,SWIGTYPE_p_gam__DWOT_phsInc__Loop_GAM_DEFAULT_DOMAIN_t);
+  }
+  
+  result = (float)(arg1)->sqr();
+  lua_pushnumber(L, (lua_Number) result); SWIG_arg++;
+  return SWIG_arg;
+  
+  if(0) SWIG_fail;
+  
+fail:
+  lua_error(L);
+  return SWIG_arg;
+}
+
+
+static int _wrap_DWO_para(lua_State* L) {
+  int SWIG_arg = 0;
+  gam::DWO< > *arg1 = (gam::DWO< > *) 0 ;
+  float result;
+  
+  SWIG_check_num_args("gam::DWO< >::para",1,1)
+  if(!SWIG_isptrtype(L,1)) SWIG_fail_arg("gam::DWO< >::para",1,"gam::DWO< > *");
+  
+  if (!SWIG_IsOK(SWIG_ConvertPtr(L,1,(void**)&arg1,SWIGTYPE_p_gam__DWOT_phsInc__Loop_GAM_DEFAULT_DOMAIN_t,0))){
+    SWIG_fail_ptr("DWO_para",1,SWIGTYPE_p_gam__DWOT_phsInc__Loop_GAM_DEFAULT_DOMAIN_t);
+  }
+  
+  result = (float)(arg1)->para();
+  lua_pushnumber(L, (lua_Number) result); SWIG_arg++;
+  return SWIG_arg;
+  
+  if(0) SWIG_fail;
+  
+fail:
+  lua_error(L);
+  return SWIG_arg;
+}
+
+
+static int _wrap_DWO_tri(lua_State* L) {
+  int SWIG_arg = 0;
+  gam::DWO< > *arg1 = (gam::DWO< > *) 0 ;
+  float result;
+  
+  SWIG_check_num_args("gam::DWO< >::tri",1,1)
+  if(!SWIG_isptrtype(L,1)) SWIG_fail_arg("gam::DWO< >::tri",1,"gam::DWO< > *");
+  
+  if (!SWIG_IsOK(SWIG_ConvertPtr(L,1,(void**)&arg1,SWIGTYPE_p_gam__DWOT_phsInc__Loop_GAM_DEFAULT_DOMAIN_t,0))){
+    SWIG_fail_ptr("DWO_tri",1,SWIGTYPE_p_gam__DWOT_phsInc__Loop_GAM_DEFAULT_DOMAIN_t);
+  }
+  
+  result = (float)(arg1)->tri();
+  lua_pushnumber(L, (lua_Number) result); SWIG_arg++;
+  return SWIG_arg;
+  
+  if(0) SWIG_fail;
+  
+fail:
+  lua_error(L);
+  return SWIG_arg;
+}
+
+
+static int _wrap_DWO_pulse(lua_State* L) {
+  int SWIG_arg = 0;
+  gam::DWO< > *arg1 = (gam::DWO< > *) 0 ;
+  float result;
+  
+  SWIG_check_num_args("gam::DWO< >::pulse",1,1)
+  if(!SWIG_isptrtype(L,1)) SWIG_fail_arg("gam::DWO< >::pulse",1,"gam::DWO< > *");
+  
+  if (!SWIG_IsOK(SWIG_ConvertPtr(L,1,(void**)&arg1,SWIGTYPE_p_gam__DWOT_phsInc__Loop_GAM_DEFAULT_DOMAIN_t,0))){
+    SWIG_fail_ptr("DWO_pulse",1,SWIGTYPE_p_gam__DWOT_phsInc__Loop_GAM_DEFAULT_DOMAIN_t);
+  }
+  
+  result = (float)(arg1)->pulse();
+  lua_pushnumber(L, (lua_Number) result); SWIG_arg++;
+  return SWIG_arg;
+  
+  if(0) SWIG_fail;
+  
+fail:
+  lua_error(L);
+  return SWIG_arg;
+}
+
+
+static int _wrap_DWO_imp(lua_State* L) {
+  int SWIG_arg = 0;
+  gam::DWO< > *arg1 = (gam::DWO< > *) 0 ;
+  float result;
+  
+  SWIG_check_num_args("gam::DWO< >::imp",1,1)
+  if(!SWIG_isptrtype(L,1)) SWIG_fail_arg("gam::DWO< >::imp",1,"gam::DWO< > *");
+  
+  if (!SWIG_IsOK(SWIG_ConvertPtr(L,1,(void**)&arg1,SWIGTYPE_p_gam__DWOT_phsInc__Loop_GAM_DEFAULT_DOMAIN_t,0))){
+    SWIG_fail_ptr("DWO_imp",1,SWIGTYPE_p_gam__DWOT_phsInc__Loop_GAM_DEFAULT_DOMAIN_t);
+  }
+  
+  result = (float)(arg1)->imp();
+  lua_pushnumber(L, (lua_Number) result); SWIG_arg++;
+  return SWIG_arg;
+  
+  if(0) SWIG_fail;
+  
+fail:
+  lua_error(L);
+  return SWIG_arg;
+}
+
+
+static int _wrap_DWO_onDomainChange(lua_State* L) {
+  int SWIG_arg = 0;
+  gam::DWO< > *arg1 = (gam::DWO< > *) 0 ;
+  double arg2 ;
+  
+  SWIG_check_num_args("gam::DWO< >::onDomainChange",2,2)
+  if(!SWIG_isptrtype(L,1)) SWIG_fail_arg("gam::DWO< >::onDomainChange",1,"gam::DWO< > *");
+  if(!lua_isnumber(L,2)) SWIG_fail_arg("gam::DWO< >::onDomainChange",2,"double");
+  
+  if (!SWIG_IsOK(SWIG_ConvertPtr(L,1,(void**)&arg1,SWIGTYPE_p_gam__DWOT_phsInc__Loop_GAM_DEFAULT_DOMAIN_t,0))){
+    SWIG_fail_ptr("DWO_onDomainChange",1,SWIGTYPE_p_gam__DWOT_phsInc__Loop_GAM_DEFAULT_DOMAIN_t);
+  }
+  
+  arg2 = (double)lua_tonumber(L, 2);
+  (arg1)->onDomainChange(arg2);
+  
+  return SWIG_arg;
+  
+  if(0) SWIG_fail;
+  
+fail:
+  lua_error(L);
+  return SWIG_arg;
+}
+
+
+static void swig_delete_DWO(void *obj) {
+gam::DWO< > *arg1 = (gam::DWO< > *) obj;
+delete arg1;
+}
+static int _proxy__wrap_new_DWO(lua_State *L) {
+    assert(lua_istable(L,1));
+    lua_pushcfunction(L,_wrap_new_DWO);
+    assert(!lua_isnil(L,-1));
+    lua_replace(L,1); /* replace our table with real constructor */
+    lua_call(L,lua_gettop(L)-1,1);
+    return 1;
+}
+static swig_lua_attribute swig_DWO_attributes[] = {
+    {0,0,0}
+};
+static swig_lua_method swig_DWO_methods[]= {
+    { "modI", _wrap_DWO_modI},
+    { "mod", _wrap_DWO_mod},
+    { "freq", _wrap_DWO_freq},
+    { "period", _wrap_DWO_period},
+    { "up", _wrap_DWO_up},
+    { "down", _wrap_DWO_down},
+    { "saw", _wrap_DWO_saw},
+    { "sqr", _wrap_DWO_sqr},
+    { "para", _wrap_DWO_para},
+    { "tri", _wrap_DWO_tri},
+    { "pulse", _wrap_DWO_pulse},
+    { "imp", _wrap_DWO_imp},
+    { "onDomainChange", _wrap_DWO_onDomainChange},
+    {0,0}
+};
+static swig_lua_method swig_DWO_meta[] = {
+    {0,0}
+};
+
+static swig_lua_attribute swig_DWO_Sf_SwigStatic_attributes[] = {
+    {0,0,0}
+};
+static swig_lua_const_info swig_DWO_Sf_SwigStatic_constants[]= {
+    {0,0,0,0,0,0}
+};
+static swig_lua_method swig_DWO_Sf_SwigStatic_methods[]= {
+    {0,0}
+};
+static swig_lua_class* swig_DWO_Sf_SwigStatic_classes[]= {
+    0
+};
+
+static swig_lua_namespace swig_DWO_Sf_SwigStatic = {
+    "DWO",
+    swig_DWO_Sf_SwigStatic_methods,
+    swig_DWO_Sf_SwigStatic_attributes,
+    swig_DWO_Sf_SwigStatic_constants,
+    swig_DWO_Sf_SwigStatic_classes,
+    0
+};
+static swig_lua_class *swig_DWO_bases[] = {0,0};
+static const char *swig_DWO_base_names[] = {"gam::Accum< > *",0};
+static swig_lua_class _wrap_class_DWO = { "DWO", "DWO", &SWIGTYPE_p_gam__DWOT_phsInc__Loop_GAM_DEFAULT_DOMAIN_t,_proxy__wrap_new_DWO, swig_delete_DWO, swig_DWO_methods, swig_DWO_attributes, &swig_DWO_Sf_SwigStatic, swig_DWO_meta, swig_DWO_bases, swig_DWO_base_names };
+
+static int _wrap_new_Buzz__SWIG_0(lua_State* L) {
+  int SWIG_arg = 0;
+  float arg1 ;
+  float arg2 ;
+  float arg3 ;
+  gam::Buzz< SampleType > *result = 0 ;
+  
+  SWIG_check_num_args("gam::Buzz< SampleType >::Buzz",3,3)
+  if(!lua_isnumber(L,1)) SWIG_fail_arg("gam::Buzz< SampleType >::Buzz",1,"float");
+  if(!lua_isnumber(L,2)) SWIG_fail_arg("gam::Buzz< SampleType >::Buzz",2,"float");
+  if(!lua_isnumber(L,3)) SWIG_fail_arg("gam::Buzz< SampleType >::Buzz",3,"float");
+  arg1 = (float)lua_tonumber(L, 1);
+  arg2 = (float)lua_tonumber(L, 2);
+  arg3 = (float)lua_tonumber(L, 3);
+  result = (gam::Buzz< SampleType > *)new gam::Buzz< SampleType >(arg1,arg2,arg3);
+  SWIG_NewPointerObj(L,result,SWIGTYPE_p_gam__BuzzT_float_GAM_DEFAULT_DOMAIN_t,1); SWIG_arg++; 
+  return SWIG_arg;
+  
+  if(0) SWIG_fail;
+  
+fail:
+  lua_error(L);
+  return SWIG_arg;
+}
+
+
+static int _wrap_new_Buzz__SWIG_1(lua_State* L) {
+  int SWIG_arg = 0;
+  float arg1 ;
+  float arg2 ;
+  gam::Buzz< SampleType > *result = 0 ;
+  
+  SWIG_check_num_args("gam::Buzz< SampleType >::Buzz",2,2)
+  if(!lua_isnumber(L,1)) SWIG_fail_arg("gam::Buzz< SampleType >::Buzz",1,"float");
+  if(!lua_isnumber(L,2)) SWIG_fail_arg("gam::Buzz< SampleType >::Buzz",2,"float");
+  arg1 = (float)lua_tonumber(L, 1);
+  arg2 = (float)lua_tonumber(L, 2);
+  result = (gam::Buzz< SampleType > *)new gam::Buzz< SampleType >(arg1,arg2);
+  SWIG_NewPointerObj(L,result,SWIGTYPE_p_gam__BuzzT_float_GAM_DEFAULT_DOMAIN_t,1); SWIG_arg++; 
+  return SWIG_arg;
+  
+  if(0) SWIG_fail;
+  
+fail:
+  lua_error(L);
+  return SWIG_arg;
+}
+
+
+static int _wrap_new_Buzz__SWIG_2(lua_State* L) {
+  int SWIG_arg = 0;
+  float arg1 ;
+  gam::Buzz< SampleType > *result = 0 ;
+  
+  SWIG_check_num_args("gam::Buzz< SampleType >::Buzz",1,1)
+  if(!lua_isnumber(L,1)) SWIG_fail_arg("gam::Buzz< SampleType >::Buzz",1,"float");
+  arg1 = (float)lua_tonumber(L, 1);
+  result = (gam::Buzz< SampleType > *)new gam::Buzz< SampleType >(arg1);
+  SWIG_NewPointerObj(L,result,SWIGTYPE_p_gam__BuzzT_float_GAM_DEFAULT_DOMAIN_t,1); SWIG_arg++; 
+  return SWIG_arg;
+  
+  if(0) SWIG_fail;
+  
+fail:
+  lua_error(L);
+  return SWIG_arg;
+}
+
+
+static int _wrap_new_Buzz__SWIG_3(lua_State* L) {
+  int SWIG_arg = 0;
+  gam::Buzz< SampleType > *result = 0 ;
+  
+  SWIG_check_num_args("gam::Buzz< SampleType >::Buzz",0,0)
+  result = (gam::Buzz< SampleType > *)new gam::Buzz< SampleType >();
+  SWIG_NewPointerObj(L,result,SWIGTYPE_p_gam__BuzzT_float_GAM_DEFAULT_DOMAIN_t,1); SWIG_arg++; 
+  return SWIG_arg;
+  
+  if(0) SWIG_fail;
+  
+fail:
+  lua_error(L);
+  return SWIG_arg;
+}
+
+
+static int _wrap_new_Buzz(lua_State* L) {
+  int argc;
+  int argv[4]={
+    1,2,3,4
+  };
+  
+  argc = lua_gettop(L);
+  if (argc == 0) {
+    return _wrap_new_Buzz__SWIG_3(L);
+  }
+  if (argc == 1) {
+    int _v = 0;
+    {
+      _v = lua_isnumber(L,argv[0]);
+    }
+    if (_v) {
+      return _wrap_new_Buzz__SWIG_2(L);
+    }
+  }
+  if (argc == 2) {
+    int _v = 0;
+    {
+      _v = lua_isnumber(L,argv[0]);
+    }
+    if (_v) {
+      {
+        _v = lua_isnumber(L,argv[1]);
+      }
+      if (_v) {
+        return _wrap_new_Buzz__SWIG_1(L);
+      }
+    }
+  }
+  if (argc == 3) {
+    int _v = 0;
+    {
+      _v = lua_isnumber(L,argv[0]);
+    }
+    if (_v) {
+      {
+        _v = lua_isnumber(L,argv[1]);
+      }
+      if (_v) {
+        {
+          _v = lua_isnumber(L,argv[2]);
+        }
+        if (_v) {
+          return _wrap_new_Buzz__SWIG_0(L);
+        }
+      }
+    }
+  }
+  
+  SWIG_Lua_pusherrstring(L,"Wrong arguments for overloaded function 'new_Buzz'\n"
+    "  Possible C/C++ prototypes are:\n"
+    "    gam::Buzz< SampleType >::Buzz(float,float,float)\n"
+    "    gam::Buzz< SampleType >::Buzz(float,float)\n"
+    "    gam::Buzz< SampleType >::Buzz(float)\n"
+    "    gam::Buzz< SampleType >::Buzz()\n");
+  lua_error(L);return 0;
+}
+
+
+static int _wrap_Buzz_antialias(lua_State* L) {
+  int SWIG_arg = 0;
+  gam::Buzz< SampleType > *arg1 = (gam::Buzz< SampleType > *) 0 ;
+  
+  SWIG_check_num_args("gam::Buzz< SampleType >::antialias",1,1)
+  if(!SWIG_isptrtype(L,1)) SWIG_fail_arg("gam::Buzz< SampleType >::antialias",1,"gam::Buzz< SampleType > *");
+  
+  if (!SWIG_IsOK(SWIG_ConvertPtr(L,1,(void**)&arg1,SWIGTYPE_p_gam__BuzzT_float_GAM_DEFAULT_DOMAIN_t,0))){
+    SWIG_fail_ptr("Buzz_antialias",1,SWIGTYPE_p_gam__BuzzT_float_GAM_DEFAULT_DOMAIN_t);
+  }
+  
+  (arg1)->antialias();
+  
+  return SWIG_arg;
+  
+  if(0) SWIG_fail;
+  
+fail:
+  lua_error(L);
+  return SWIG_arg;
+}
+
+
+static int _wrap_Buzz_harmonics(lua_State* L) {
+  int SWIG_arg = 0;
+  gam::Buzz< SampleType > *arg1 = (gam::Buzz< SampleType > *) 0 ;
+  float arg2 ;
+  
+  SWIG_check_num_args("gam::Buzz< SampleType >::harmonics",2,2)
+  if(!SWIG_isptrtype(L,1)) SWIG_fail_arg("gam::Buzz< SampleType >::harmonics",1,"gam::Buzz< SampleType > *");
+  if(!lua_isnumber(L,2)) SWIG_fail_arg("gam::Buzz< SampleType >::harmonics",2,"float");
+  
+  if (!SWIG_IsOK(SWIG_ConvertPtr(L,1,(void**)&arg1,SWIGTYPE_p_gam__BuzzT_float_GAM_DEFAULT_DOMAIN_t,0))){
+    SWIG_fail_ptr("Buzz_harmonics",1,SWIGTYPE_p_gam__BuzzT_float_GAM_DEFAULT_DOMAIN_t);
+  }
+  
+  arg2 = (float)lua_tonumber(L, 2);
+  (arg1)->harmonics(arg2);
+  
+  return SWIG_arg;
+  
+  if(0) SWIG_fail;
+  
+fail:
+  lua_error(L);
+  return SWIG_arg;
+}
+
+
+static int _wrap_Buzz_harmonicsMax(lua_State* L) {
+  int SWIG_arg = 0;
+  gam::Buzz< SampleType > *arg1 = (gam::Buzz< SampleType > *) 0 ;
+  
+  SWIG_check_num_args("gam::Buzz< SampleType >::harmonicsMax",1,1)
+  if(!SWIG_isptrtype(L,1)) SWIG_fail_arg("gam::Buzz< SampleType >::harmonicsMax",1,"gam::Buzz< SampleType > *");
+  
+  if (!SWIG_IsOK(SWIG_ConvertPtr(L,1,(void**)&arg1,SWIGTYPE_p_gam__BuzzT_float_GAM_DEFAULT_DOMAIN_t,0))){
+    SWIG_fail_ptr("Buzz_harmonicsMax",1,SWIGTYPE_p_gam__BuzzT_float_GAM_DEFAULT_DOMAIN_t);
+  }
+  
+  (arg1)->harmonicsMax();
+  
+  return SWIG_arg;
+  
+  if(0) SWIG_fail;
+  
+fail:
+  lua_error(L);
+  return SWIG_arg;
+}
+
+
+static int _wrap_Buzz_normalize(lua_State* L) {
+  int SWIG_arg = 0;
+  gam::Buzz< SampleType > *arg1 = (gam::Buzz< SampleType > *) 0 ;
+  bool arg2 ;
+  
+  SWIG_check_num_args("gam::Buzz< SampleType >::normalize",2,2)
+  if(!SWIG_isptrtype(L,1)) SWIG_fail_arg("gam::Buzz< SampleType >::normalize",1,"gam::Buzz< SampleType > *");
+  if(!lua_isboolean(L,2)) SWIG_fail_arg("gam::Buzz< SampleType >::normalize",2,"bool");
+  
+  if (!SWIG_IsOK(SWIG_ConvertPtr(L,1,(void**)&arg1,SWIGTYPE_p_gam__BuzzT_float_GAM_DEFAULT_DOMAIN_t,0))){
+    SWIG_fail_ptr("Buzz_normalize",1,SWIGTYPE_p_gam__BuzzT_float_GAM_DEFAULT_DOMAIN_t);
+  }
+  
+  arg2 = (lua_toboolean(L, 2)!=0);
+  (arg1)->normalize(arg2);
+  
+  return SWIG_arg;
+  
+  if(0) SWIG_fail;
+  
+fail:
+  lua_error(L);
+  return SWIG_arg;
+}
+
+
+static int _wrap_Buzz___call(lua_State* L) {
+  int SWIG_arg = 0;
+  gam::Buzz< SampleType > *arg1 = (gam::Buzz< SampleType > *) 0 ;
+  float result;
+  
+  SWIG_check_num_args("gam::Buzz< SampleType >::operator ()",1,1)
+  if(!SWIG_isptrtype(L,1)) SWIG_fail_arg("gam::Buzz< SampleType >::operator ()",1,"gam::Buzz< SampleType > *");
+  
+  if (!SWIG_IsOK(SWIG_ConvertPtr(L,1,(void**)&arg1,SWIGTYPE_p_gam__BuzzT_float_GAM_DEFAULT_DOMAIN_t,0))){
+    SWIG_fail_ptr("Buzz___call",1,SWIGTYPE_p_gam__BuzzT_float_GAM_DEFAULT_DOMAIN_t);
+  }
+  
+  result = (float)(arg1)->operator ()();
+  lua_pushnumber(L, (lua_Number) result); SWIG_arg++;
+  return SWIG_arg;
+  
+  if(0) SWIG_fail;
+  
+fail:
+  lua_error(L);
+  return SWIG_arg;
+}
+
+
+static int _wrap_Buzz_odd(lua_State* L) {
+  int SWIG_arg = 0;
+  gam::Buzz< SampleType > *arg1 = (gam::Buzz< SampleType > *) 0 ;
+  float result;
+  
+  SWIG_check_num_args("gam::Buzz< SampleType >::odd",1,1)
+  if(!SWIG_isptrtype(L,1)) SWIG_fail_arg("gam::Buzz< SampleType >::odd",1,"gam::Buzz< SampleType > *");
+  
+  if (!SWIG_IsOK(SWIG_ConvertPtr(L,1,(void**)&arg1,SWIGTYPE_p_gam__BuzzT_float_GAM_DEFAULT_DOMAIN_t,0))){
+    SWIG_fail_ptr("Buzz_odd",1,SWIGTYPE_p_gam__BuzzT_float_GAM_DEFAULT_DOMAIN_t);
+  }
+  
+  result = (float)(arg1)->odd();
+  lua_pushnumber(L, (lua_Number) result); SWIG_arg++;
+  return SWIG_arg;
+  
+  if(0) SWIG_fail;
+  
+fail:
+  lua_error(L);
+  return SWIG_arg;
+}
+
+
+static int _wrap_Buzz_saw__SWIG_0(lua_State* L) {
+  int SWIG_arg = 0;
+  gam::Buzz< SampleType > *arg1 = (gam::Buzz< SampleType > *) 0 ;
+  float arg2 ;
+  float result;
+  
+  SWIG_check_num_args("gam::Buzz< SampleType >::saw",2,2)
+  if(!SWIG_isptrtype(L,1)) SWIG_fail_arg("gam::Buzz< SampleType >::saw",1,"gam::Buzz< SampleType > *");
+  if(!lua_isnumber(L,2)) SWIG_fail_arg("gam::Buzz< SampleType >::saw",2,"float");
+  
+  if (!SWIG_IsOK(SWIG_ConvertPtr(L,1,(void**)&arg1,SWIGTYPE_p_gam__BuzzT_float_GAM_DEFAULT_DOMAIN_t,0))){
+    SWIG_fail_ptr("Buzz_saw",1,SWIGTYPE_p_gam__BuzzT_float_GAM_DEFAULT_DOMAIN_t);
+  }
+  
+  arg2 = (float)lua_tonumber(L, 2);
+  result = (float)(arg1)->saw(arg2);
+  lua_pushnumber(L, (lua_Number) result); SWIG_arg++;
+  return SWIG_arg;
+  
+  if(0) SWIG_fail;
+  
+fail:
+  lua_error(L);
+  return SWIG_arg;
+}
+
+
+static int _wrap_Buzz_saw__SWIG_1(lua_State* L) {
+  int SWIG_arg = 0;
+  gam::Buzz< SampleType > *arg1 = (gam::Buzz< SampleType > *) 0 ;
+  float result;
+  
+  SWIG_check_num_args("gam::Buzz< SampleType >::saw",1,1)
+  if(!SWIG_isptrtype(L,1)) SWIG_fail_arg("gam::Buzz< SampleType >::saw",1,"gam::Buzz< SampleType > *");
+  
+  if (!SWIG_IsOK(SWIG_ConvertPtr(L,1,(void**)&arg1,SWIGTYPE_p_gam__BuzzT_float_GAM_DEFAULT_DOMAIN_t,0))){
+    SWIG_fail_ptr("Buzz_saw",1,SWIGTYPE_p_gam__BuzzT_float_GAM_DEFAULT_DOMAIN_t);
+  }
+  
+  result = (float)(arg1)->saw();
+  lua_pushnumber(L, (lua_Number) result); SWIG_arg++;
+  return SWIG_arg;
+  
+  if(0) SWIG_fail;
+  
+fail:
+  lua_error(L);
+  return SWIG_arg;
+}
+
+
+static int _wrap_Buzz_saw(lua_State* L) {
+  int argc;
+  int argv[3]={
+    1,2,3
+  };
+  
+  argc = lua_gettop(L);
+  if (argc == 1) {
+    int _v = 0;
+    {
+      void *ptr;
+      if (SWIG_isptrtype(L,argv[0])==0 || SWIG_ConvertPtr(L,argv[0], (void **) &ptr, SWIGTYPE_p_gam__BuzzT_float_GAM_DEFAULT_DOMAIN_t, 0)) {
+        _v = 0;
+      } else {
+        _v = 1;
+      }
+    }
+    if (_v) {
+      return _wrap_Buzz_saw__SWIG_1(L);
+    }
+  }
+  if (argc == 2) {
+    int _v = 0;
+    {
+      void *ptr;
+      if (SWIG_isptrtype(L,argv[0])==0 || SWIG_ConvertPtr(L,argv[0], (void **) &ptr, SWIGTYPE_p_gam__BuzzT_float_GAM_DEFAULT_DOMAIN_t, 0)) {
+        _v = 0;
+      } else {
+        _v = 1;
+      }
+    }
+    if (_v) {
+      {
+        _v = lua_isnumber(L,argv[1]);
+      }
+      if (_v) {
+        return _wrap_Buzz_saw__SWIG_0(L);
+      }
+    }
+  }
+  
+  SWIG_Lua_pusherrstring(L,"Wrong arguments for overloaded function 'Buzz_saw'\n"
+    "  Possible C/C++ prototypes are:\n"
+    "    gam::Buzz< SampleType >::saw(float)\n"
+    "    gam::Buzz< SampleType >::saw()\n");
+  lua_error(L);return 0;
+}
+
+
+static int _wrap_Buzz_square__SWIG_0(lua_State* L) {
+  int SWIG_arg = 0;
+  gam::Buzz< SampleType > *arg1 = (gam::Buzz< SampleType > *) 0 ;
+  float arg2 ;
+  float result;
+  
+  SWIG_check_num_args("gam::Buzz< SampleType >::square",2,2)
+  if(!SWIG_isptrtype(L,1)) SWIG_fail_arg("gam::Buzz< SampleType >::square",1,"gam::Buzz< SampleType > *");
+  if(!lua_isnumber(L,2)) SWIG_fail_arg("gam::Buzz< SampleType >::square",2,"float");
+  
+  if (!SWIG_IsOK(SWIG_ConvertPtr(L,1,(void**)&arg1,SWIGTYPE_p_gam__BuzzT_float_GAM_DEFAULT_DOMAIN_t,0))){
+    SWIG_fail_ptr("Buzz_square",1,SWIGTYPE_p_gam__BuzzT_float_GAM_DEFAULT_DOMAIN_t);
+  }
+  
+  arg2 = (float)lua_tonumber(L, 2);
+  result = (float)(arg1)->square(arg2);
+  lua_pushnumber(L, (lua_Number) result); SWIG_arg++;
+  return SWIG_arg;
+  
+  if(0) SWIG_fail;
+  
+fail:
+  lua_error(L);
+  return SWIG_arg;
+}
+
+
+static int _wrap_Buzz_square__SWIG_1(lua_State* L) {
+  int SWIG_arg = 0;
+  gam::Buzz< SampleType > *arg1 = (gam::Buzz< SampleType > *) 0 ;
+  float result;
+  
+  SWIG_check_num_args("gam::Buzz< SampleType >::square",1,1)
+  if(!SWIG_isptrtype(L,1)) SWIG_fail_arg("gam::Buzz< SampleType >::square",1,"gam::Buzz< SampleType > *");
+  
+  if (!SWIG_IsOK(SWIG_ConvertPtr(L,1,(void**)&arg1,SWIGTYPE_p_gam__BuzzT_float_GAM_DEFAULT_DOMAIN_t,0))){
+    SWIG_fail_ptr("Buzz_square",1,SWIGTYPE_p_gam__BuzzT_float_GAM_DEFAULT_DOMAIN_t);
+  }
+  
+  result = (float)(arg1)->square();
+  lua_pushnumber(L, (lua_Number) result); SWIG_arg++;
+  return SWIG_arg;
+  
+  if(0) SWIG_fail;
+  
+fail:
+  lua_error(L);
+  return SWIG_arg;
+}
+
+
+static int _wrap_Buzz_square(lua_State* L) {
+  int argc;
+  int argv[3]={
+    1,2,3
+  };
+  
+  argc = lua_gettop(L);
+  if (argc == 1) {
+    int _v = 0;
+    {
+      void *ptr;
+      if (SWIG_isptrtype(L,argv[0])==0 || SWIG_ConvertPtr(L,argv[0], (void **) &ptr, SWIGTYPE_p_gam__BuzzT_float_GAM_DEFAULT_DOMAIN_t, 0)) {
+        _v = 0;
+      } else {
+        _v = 1;
+      }
+    }
+    if (_v) {
+      return _wrap_Buzz_square__SWIG_1(L);
+    }
+  }
+  if (argc == 2) {
+    int _v = 0;
+    {
+      void *ptr;
+      if (SWIG_isptrtype(L,argv[0])==0 || SWIG_ConvertPtr(L,argv[0], (void **) &ptr, SWIGTYPE_p_gam__BuzzT_float_GAM_DEFAULT_DOMAIN_t, 0)) {
+        _v = 0;
+      } else {
+        _v = 1;
+      }
+    }
+    if (_v) {
+      {
+        _v = lua_isnumber(L,argv[1]);
+      }
+      if (_v) {
+        return _wrap_Buzz_square__SWIG_0(L);
+      }
+    }
+  }
+  
+  SWIG_Lua_pusherrstring(L,"Wrong arguments for overloaded function 'Buzz_square'\n"
+    "  Possible C/C++ prototypes are:\n"
+    "    gam::Buzz< SampleType >::square(float)\n"
+    "    gam::Buzz< SampleType >::square()\n");
+  lua_error(L);return 0;
+}
+
+
+static int _wrap_Buzz_maxHarmonics(lua_State* L) {
+  int SWIG_arg = 0;
+  gam::Buzz< SampleType > *arg1 = (gam::Buzz< SampleType > *) 0 ;
+  float result;
+  
+  SWIG_check_num_args("gam::Buzz< SampleType >::maxHarmonics",1,1)
+  if(!SWIG_isptrtype(L,1)) SWIG_fail_arg("gam::Buzz< SampleType >::maxHarmonics",1,"gam::Buzz< SampleType > const *");
+  
+  if (!SWIG_IsOK(SWIG_ConvertPtr(L,1,(void**)&arg1,SWIGTYPE_p_gam__BuzzT_float_GAM_DEFAULT_DOMAIN_t,0))){
+    SWIG_fail_ptr("Buzz_maxHarmonics",1,SWIGTYPE_p_gam__BuzzT_float_GAM_DEFAULT_DOMAIN_t);
+  }
+  
+  result = (float)((gam::Buzz< SampleType > const *)arg1)->maxHarmonics();
+  lua_pushnumber(L, (lua_Number) result); SWIG_arg++;
+  return SWIG_arg;
+  
+  if(0) SWIG_fail;
+  
+fail:
+  lua_error(L);
+  return SWIG_arg;
+}
+
+
+static int _wrap_Buzz_onDomainChange(lua_State* L) {
+  int SWIG_arg = 0;
+  gam::Buzz< SampleType > *arg1 = (gam::Buzz< SampleType > *) 0 ;
+  double arg2 ;
+  
+  SWIG_check_num_args("gam::Buzz< SampleType >::onDomainChange",2,2)
+  if(!SWIG_isptrtype(L,1)) SWIG_fail_arg("gam::Buzz< SampleType >::onDomainChange",1,"gam::Buzz< SampleType > *");
+  if(!lua_isnumber(L,2)) SWIG_fail_arg("gam::Buzz< SampleType >::onDomainChange",2,"double");
+  
+  if (!SWIG_IsOK(SWIG_ConvertPtr(L,1,(void**)&arg1,SWIGTYPE_p_gam__BuzzT_float_GAM_DEFAULT_DOMAIN_t,0))){
+    SWIG_fail_ptr("Buzz_onDomainChange",1,SWIGTYPE_p_gam__BuzzT_float_GAM_DEFAULT_DOMAIN_t);
+  }
+  
+  arg2 = (double)lua_tonumber(L, 2);
+  (arg1)->onDomainChange(arg2);
+  
+  return SWIG_arg;
+  
+  if(0) SWIG_fail;
+  
+fail:
+  lua_error(L);
+  return SWIG_arg;
+}
+
+
+static void swig_delete_Buzz(void *obj) {
+gam::Buzz< SampleType > *arg1 = (gam::Buzz< SampleType > *) obj;
+delete arg1;
+}
+static int _proxy__wrap_new_Buzz(lua_State *L) {
+    assert(lua_istable(L,1));
+    lua_pushcfunction(L,_wrap_new_Buzz);
+    assert(!lua_isnil(L,-1));
+    lua_replace(L,1); /* replace our table with real constructor */
+    lua_call(L,lua_gettop(L)-1,1);
+    return 1;
+}
+static swig_lua_attribute swig_Buzz_attributes[] = {
+    {0,0,0}
+};
+static swig_lua_method swig_Buzz_methods[]= {
+    { "antialias", _wrap_Buzz_antialias},
+    { "harmonics", _wrap_Buzz_harmonics},
+    { "harmonicsMax", _wrap_Buzz_harmonicsMax},
+    { "normalize", _wrap_Buzz_normalize},
+    { "__call", _wrap_Buzz___call},
+    { "odd", _wrap_Buzz_odd},
+    { "saw", _wrap_Buzz_saw},
+    { "square", _wrap_Buzz_square},
+    { "maxHarmonics", _wrap_Buzz_maxHarmonics},
+    { "onDomainChange", _wrap_Buzz_onDomainChange},
+    {0,0}
+};
+static swig_lua_method swig_Buzz_meta[] = {
+    { "__call", _wrap_Buzz___call},
+    {0,0}
+};
+
+static swig_lua_attribute swig_Buzz_Sf_SwigStatic_attributes[] = {
+    {0,0,0}
+};
+static swig_lua_const_info swig_Buzz_Sf_SwigStatic_constants[]= {
+    {0,0,0,0,0,0}
+};
+static swig_lua_method swig_Buzz_Sf_SwigStatic_methods[]= {
+    {0,0}
+};
+static swig_lua_class* swig_Buzz_Sf_SwigStatic_classes[]= {
+    0
+};
+
+static swig_lua_namespace swig_Buzz_Sf_SwigStatic = {
+    "Buzz",
+    swig_Buzz_Sf_SwigStatic_methods,
+    swig_Buzz_Sf_SwigStatic_attributes,
+    swig_Buzz_Sf_SwigStatic_constants,
+    swig_Buzz_Sf_SwigStatic_classes,
+    0
+};
+static swig_lua_class *swig_Buzz_bases[] = {0,0};
+static const char *swig_Buzz_base_names[] = {"gam::AccumPhase< SampleType > *",0};
+static swig_lua_class _wrap_class_Buzz = { "Buzz", "Buzz", &SWIGTYPE_p_gam__BuzzT_float_GAM_DEFAULT_DOMAIN_t,_proxy__wrap_new_Buzz, swig_delete_Buzz, swig_Buzz_methods, swig_Buzz_attributes, &swig_Buzz_Sf_SwigStatic, swig_Buzz_meta, swig_Buzz_bases, swig_Buzz_base_names };
+
+static int _wrap_new_Saw__SWIG_0(lua_State* L) {
+  int SWIG_arg = 0;
+  float arg1 ;
+  float arg2 ;
+  gam::Saw< SampleType > *result = 0 ;
+  
+  SWIG_check_num_args("gam::Saw< SampleType >::Saw",2,2)
+  if(!lua_isnumber(L,1)) SWIG_fail_arg("gam::Saw< SampleType >::Saw",1,"float");
+  if(!lua_isnumber(L,2)) SWIG_fail_arg("gam::Saw< SampleType >::Saw",2,"float");
+  arg1 = (float)lua_tonumber(L, 1);
+  arg2 = (float)lua_tonumber(L, 2);
+  result = (gam::Saw< SampleType > *)new gam::Saw< SampleType >(arg1,arg2);
+  SWIG_NewPointerObj(L,result,SWIGTYPE_p_gam__SawT_float_GAM_DEFAULT_DOMAIN_t,1); SWIG_arg++; 
+  return SWIG_arg;
+  
+  if(0) SWIG_fail;
+  
+fail:
+  lua_error(L);
+  return SWIG_arg;
+}
+
+
+static int _wrap_new_Saw__SWIG_1(lua_State* L) {
+  int SWIG_arg = 0;
+  float arg1 ;
+  gam::Saw< SampleType > *result = 0 ;
+  
+  SWIG_check_num_args("gam::Saw< SampleType >::Saw",1,1)
+  if(!lua_isnumber(L,1)) SWIG_fail_arg("gam::Saw< SampleType >::Saw",1,"float");
+  arg1 = (float)lua_tonumber(L, 1);
+  result = (gam::Saw< SampleType > *)new gam::Saw< SampleType >(arg1);
+  SWIG_NewPointerObj(L,result,SWIGTYPE_p_gam__SawT_float_GAM_DEFAULT_DOMAIN_t,1); SWIG_arg++; 
+  return SWIG_arg;
+  
+  if(0) SWIG_fail;
+  
+fail:
+  lua_error(L);
+  return SWIG_arg;
+}
+
+
+static int _wrap_new_Saw__SWIG_2(lua_State* L) {
+  int SWIG_arg = 0;
+  gam::Saw< SampleType > *result = 0 ;
+  
+  SWIG_check_num_args("gam::Saw< SampleType >::Saw",0,0)
+  result = (gam::Saw< SampleType > *)new gam::Saw< SampleType >();
+  SWIG_NewPointerObj(L,result,SWIGTYPE_p_gam__SawT_float_GAM_DEFAULT_DOMAIN_t,1); SWIG_arg++; 
+  return SWIG_arg;
+  
+  if(0) SWIG_fail;
+  
+fail:
+  lua_error(L);
+  return SWIG_arg;
+}
+
+
+static int _wrap_new_Saw(lua_State* L) {
+  int argc;
+  int argv[3]={
+    1,2,3
+  };
+  
+  argc = lua_gettop(L);
+  if (argc == 0) {
+    return _wrap_new_Saw__SWIG_2(L);
+  }
+  if (argc == 1) {
+    int _v = 0;
+    {
+      _v = lua_isnumber(L,argv[0]);
+    }
+    if (_v) {
+      return _wrap_new_Saw__SWIG_1(L);
+    }
+  }
+  if (argc == 2) {
+    int _v = 0;
+    {
+      _v = lua_isnumber(L,argv[0]);
+    }
+    if (_v) {
+      {
+        _v = lua_isnumber(L,argv[1]);
+      }
+      if (_v) {
+        return _wrap_new_Saw__SWIG_0(L);
+      }
+    }
+  }
+  
+  SWIG_Lua_pusherrstring(L,"Wrong arguments for overloaded function 'new_Saw'\n"
+    "  Possible C/C++ prototypes are:\n"
+    "    gam::Saw< SampleType >::Saw(float,float)\n"
+    "    gam::Saw< SampleType >::Saw(float)\n"
+    "    gam::Saw< SampleType >::Saw()\n");
+  lua_error(L);return 0;
+}
+
+
+static int _wrap_Saw_Tick__SWIG_0(lua_State* L) {
+  int SWIG_arg = 0;
+  gam::Saw< SampleType > *arg1 = (gam::Saw< SampleType > *) 0 ;
+  float arg2 ;
+  float result;
+  
+  SWIG_check_num_args("gam::Saw< SampleType >::Tick",2,2)
+  if(!SWIG_isptrtype(L,1)) SWIG_fail_arg("gam::Saw< SampleType >::Tick",1,"gam::Saw< SampleType > *");
+  if(!lua_isnumber(L,2)) SWIG_fail_arg("gam::Saw< SampleType >::Tick",2,"float");
+  
+  if (!SWIG_IsOK(SWIG_ConvertPtr(L,1,(void**)&arg1,SWIGTYPE_p_gam__SawT_float_GAM_DEFAULT_DOMAIN_t,0))){
+    SWIG_fail_ptr("Saw_Tick",1,SWIGTYPE_p_gam__SawT_float_GAM_DEFAULT_DOMAIN_t);
+  }
+  
+  arg2 = (float)lua_tonumber(L, 2);
+  result = (float)gam_Saw_Sl_SampleType_Sg__Tick__SWIG_0(arg1,arg2);
+  lua_pushnumber(L, (lua_Number) result); SWIG_arg++;
+  return SWIG_arg;
+  
+  if(0) SWIG_fail;
+  
+fail:
+  lua_error(L);
+  return SWIG_arg;
+}
+
+
+static int _wrap_Saw_Tick__SWIG_1(lua_State* L) {
+  int SWIG_arg = 0;
+  gam::Saw< SampleType > *arg1 = (gam::Saw< SampleType > *) 0 ;
+  float result;
+  
+  SWIG_check_num_args("gam::Saw< SampleType >::Tick",1,1)
+  if(!SWIG_isptrtype(L,1)) SWIG_fail_arg("gam::Saw< SampleType >::Tick",1,"gam::Saw< SampleType > *");
+  
+  if (!SWIG_IsOK(SWIG_ConvertPtr(L,1,(void**)&arg1,SWIGTYPE_p_gam__SawT_float_GAM_DEFAULT_DOMAIN_t,0))){
+    SWIG_fail_ptr("Saw_Tick",1,SWIGTYPE_p_gam__SawT_float_GAM_DEFAULT_DOMAIN_t);
+  }
+  
+  result = (float)gam_Saw_Sl_SampleType_Sg__Tick__SWIG_0(arg1);
+  lua_pushnumber(L, (lua_Number) result); SWIG_arg++;
+  return SWIG_arg;
+  
+  if(0) SWIG_fail;
+  
+fail:
+  lua_error(L);
+  return SWIG_arg;
+}
+
+
+static int _wrap_Saw_Tick(lua_State* L) {
+  int argc;
+  int argv[3]={
+    1,2,3
+  };
+  
+  argc = lua_gettop(L);
+  if (argc == 1) {
+    int _v = 0;
+    {
+      void *ptr;
+      if (SWIG_isptrtype(L,argv[0])==0 || SWIG_ConvertPtr(L,argv[0], (void **) &ptr, SWIGTYPE_p_gam__SawT_float_GAM_DEFAULT_DOMAIN_t, 0)) {
+        _v = 0;
+      } else {
+        _v = 1;
+      }
+    }
+    if (_v) {
+      return _wrap_Saw_Tick__SWIG_1(L);
+    }
+  }
+  if (argc == 2) {
+    int _v = 0;
+    {
+      void *ptr;
+      if (SWIG_isptrtype(L,argv[0])==0 || SWIG_ConvertPtr(L,argv[0], (void **) &ptr, SWIGTYPE_p_gam__SawT_float_GAM_DEFAULT_DOMAIN_t, 0)) {
+        _v = 0;
+      } else {
+        _v = 1;
+      }
+    }
+    if (_v) {
+      {
+        _v = lua_isnumber(L,argv[1]);
+      }
+      if (_v) {
+        return _wrap_Saw_Tick__SWIG_0(L);
+      }
+    }
+  }
+  
+  SWIG_Lua_pusherrstring(L,"Wrong arguments for overloaded function 'Saw_Tick'\n"
+    "  Possible C/C++ prototypes are:\n"
+    "    gam::Saw< SampleType >::Tick(float)\n"
+    "    gam::Saw< SampleType >::Tick()\n");
+  lua_error(L);return 0;
+}
+
+
+static void swig_delete_Saw(void *obj) {
+gam::Saw< SampleType > *arg1 = (gam::Saw< SampleType > *) obj;
+delete arg1;
+}
+static int _proxy__wrap_new_Saw(lua_State *L) {
+    assert(lua_istable(L,1));
+    lua_pushcfunction(L,_wrap_new_Saw);
+    assert(!lua_isnil(L,-1));
+    lua_replace(L,1); /* replace our table with real constructor */
+    lua_call(L,lua_gettop(L)-1,1);
+    return 1;
+}
+static swig_lua_attribute swig_Saw_attributes[] = {
+    {0,0,0}
+};
+static swig_lua_method swig_Saw_methods[]= {
+    { "Tick", _wrap_Saw_Tick},
+    {0,0}
+};
+static swig_lua_method swig_Saw_meta[] = {
+    {0,0}
+};
+
+static swig_lua_attribute swig_Saw_Sf_SwigStatic_attributes[] = {
+    {0,0,0}
+};
+static swig_lua_const_info swig_Saw_Sf_SwigStatic_constants[]= {
+    {0,0,0,0,0,0}
+};
+static swig_lua_method swig_Saw_Sf_SwigStatic_methods[]= {
+    {0,0}
+};
+static swig_lua_class* swig_Saw_Sf_SwigStatic_classes[]= {
+    0
+};
+
+static swig_lua_namespace swig_Saw_Sf_SwigStatic = {
+    "Saw",
+    swig_Saw_Sf_SwigStatic_methods,
+    swig_Saw_Sf_SwigStatic_attributes,
+    swig_Saw_Sf_SwigStatic_constants,
+    swig_Saw_Sf_SwigStatic_classes,
+    0
+};
+static swig_lua_class *swig_Saw_bases[] = {0};
+static const char *swig_Saw_base_names[] = {0};
+static swig_lua_class _wrap_class_Saw = { "Saw", "Saw", &SWIGTYPE_p_gam__SawT_float_GAM_DEFAULT_DOMAIN_t,_proxy__wrap_new_Saw, swig_delete_Saw, swig_Saw_methods, swig_Saw_attributes, &swig_Saw_Sf_SwigStatic, swig_Saw_meta, swig_Saw_bases, swig_Saw_base_names };
+
+static int _wrap_new_Square__SWIG_0(lua_State* L) {
+  int SWIG_arg = 0;
+  float arg1 ;
+  float arg2 ;
+  gam::Square< SampleType > *result = 0 ;
+  
+  SWIG_check_num_args("gam::Square< SampleType >::Square",2,2)
+  if(!lua_isnumber(L,1)) SWIG_fail_arg("gam::Square< SampleType >::Square",1,"float");
+  if(!lua_isnumber(L,2)) SWIG_fail_arg("gam::Square< SampleType >::Square",2,"float");
+  arg1 = (float)lua_tonumber(L, 1);
+  arg2 = (float)lua_tonumber(L, 2);
+  result = (gam::Square< SampleType > *)new gam::Square< SampleType >(arg1,arg2);
+  SWIG_NewPointerObj(L,result,SWIGTYPE_p_gam__SquareT_float_GAM_DEFAULT_DOMAIN_t,1); SWIG_arg++; 
+  return SWIG_arg;
+  
+  if(0) SWIG_fail;
+  
+fail:
+  lua_error(L);
+  return SWIG_arg;
+}
+
+
+static int _wrap_new_Square__SWIG_1(lua_State* L) {
+  int SWIG_arg = 0;
+  float arg1 ;
+  gam::Square< SampleType > *result = 0 ;
+  
+  SWIG_check_num_args("gam::Square< SampleType >::Square",1,1)
+  if(!lua_isnumber(L,1)) SWIG_fail_arg("gam::Square< SampleType >::Square",1,"float");
+  arg1 = (float)lua_tonumber(L, 1);
+  result = (gam::Square< SampleType > *)new gam::Square< SampleType >(arg1);
+  SWIG_NewPointerObj(L,result,SWIGTYPE_p_gam__SquareT_float_GAM_DEFAULT_DOMAIN_t,1); SWIG_arg++; 
+  return SWIG_arg;
+  
+  if(0) SWIG_fail;
+  
+fail:
+  lua_error(L);
+  return SWIG_arg;
+}
+
+
+static int _wrap_new_Square__SWIG_2(lua_State* L) {
+  int SWIG_arg = 0;
+  gam::Square< SampleType > *result = 0 ;
+  
+  SWIG_check_num_args("gam::Square< SampleType >::Square",0,0)
+  result = (gam::Square< SampleType > *)new gam::Square< SampleType >();
+  SWIG_NewPointerObj(L,result,SWIGTYPE_p_gam__SquareT_float_GAM_DEFAULT_DOMAIN_t,1); SWIG_arg++; 
+  return SWIG_arg;
+  
+  if(0) SWIG_fail;
+  
+fail:
+  lua_error(L);
+  return SWIG_arg;
+}
+
+
+static int _wrap_new_Square(lua_State* L) {
+  int argc;
+  int argv[3]={
+    1,2,3
+  };
+  
+  argc = lua_gettop(L);
+  if (argc == 0) {
+    return _wrap_new_Square__SWIG_2(L);
+  }
+  if (argc == 1) {
+    int _v = 0;
+    {
+      _v = lua_isnumber(L,argv[0]);
+    }
+    if (_v) {
+      return _wrap_new_Square__SWIG_1(L);
+    }
+  }
+  if (argc == 2) {
+    int _v = 0;
+    {
+      _v = lua_isnumber(L,argv[0]);
+    }
+    if (_v) {
+      {
+        _v = lua_isnumber(L,argv[1]);
+      }
+      if (_v) {
+        return _wrap_new_Square__SWIG_0(L);
+      }
+    }
+  }
+  
+  SWIG_Lua_pusherrstring(L,"Wrong arguments for overloaded function 'new_Square'\n"
+    "  Possible C/C++ prototypes are:\n"
+    "    gam::Square< SampleType >::Square(float,float)\n"
+    "    gam::Square< SampleType >::Square(float)\n"
+    "    gam::Square< SampleType >::Square()\n");
+  lua_error(L);return 0;
+}
+
+
+static int _wrap_Square_Tick__SWIG_0(lua_State* L) {
+  int SWIG_arg = 0;
+  gam::Square< SampleType > *arg1 = (gam::Square< SampleType > *) 0 ;
+  float arg2 ;
+  float result;
+  
+  SWIG_check_num_args("gam::Square< SampleType >::Tick",2,2)
+  if(!SWIG_isptrtype(L,1)) SWIG_fail_arg("gam::Square< SampleType >::Tick",1,"gam::Square< SampleType > *");
+  if(!lua_isnumber(L,2)) SWIG_fail_arg("gam::Square< SampleType >::Tick",2,"float");
+  
+  if (!SWIG_IsOK(SWIG_ConvertPtr(L,1,(void**)&arg1,SWIGTYPE_p_gam__SquareT_float_GAM_DEFAULT_DOMAIN_t,0))){
+    SWIG_fail_ptr("Square_Tick",1,SWIGTYPE_p_gam__SquareT_float_GAM_DEFAULT_DOMAIN_t);
+  }
+  
+  arg2 = (float)lua_tonumber(L, 2);
+  result = (float)gam_Square_Sl_SampleType_Sg__Tick__SWIG_0(arg1,arg2);
+  lua_pushnumber(L, (lua_Number) result); SWIG_arg++;
+  return SWIG_arg;
+  
+  if(0) SWIG_fail;
+  
+fail:
+  lua_error(L);
+  return SWIG_arg;
+}
+
+
+static int _wrap_Square_Tick__SWIG_1(lua_State* L) {
+  int SWIG_arg = 0;
+  gam::Square< SampleType > *arg1 = (gam::Square< SampleType > *) 0 ;
+  float result;
+  
+  SWIG_check_num_args("gam::Square< SampleType >::Tick",1,1)
+  if(!SWIG_isptrtype(L,1)) SWIG_fail_arg("gam::Square< SampleType >::Tick",1,"gam::Square< SampleType > *");
+  
+  if (!SWIG_IsOK(SWIG_ConvertPtr(L,1,(void**)&arg1,SWIGTYPE_p_gam__SquareT_float_GAM_DEFAULT_DOMAIN_t,0))){
+    SWIG_fail_ptr("Square_Tick",1,SWIGTYPE_p_gam__SquareT_float_GAM_DEFAULT_DOMAIN_t);
+  }
+  
+  result = (float)gam_Square_Sl_SampleType_Sg__Tick__SWIG_0(arg1);
+  lua_pushnumber(L, (lua_Number) result); SWIG_arg++;
+  return SWIG_arg;
+  
+  if(0) SWIG_fail;
+  
+fail:
+  lua_error(L);
+  return SWIG_arg;
+}
+
+
+static int _wrap_Square_Tick(lua_State* L) {
+  int argc;
+  int argv[3]={
+    1,2,3
+  };
+  
+  argc = lua_gettop(L);
+  if (argc == 1) {
+    int _v = 0;
+    {
+      void *ptr;
+      if (SWIG_isptrtype(L,argv[0])==0 || SWIG_ConvertPtr(L,argv[0], (void **) &ptr, SWIGTYPE_p_gam__SquareT_float_GAM_DEFAULT_DOMAIN_t, 0)) {
+        _v = 0;
+      } else {
+        _v = 1;
+      }
+    }
+    if (_v) {
+      return _wrap_Square_Tick__SWIG_1(L);
+    }
+  }
+  if (argc == 2) {
+    int _v = 0;
+    {
+      void *ptr;
+      if (SWIG_isptrtype(L,argv[0])==0 || SWIG_ConvertPtr(L,argv[0], (void **) &ptr, SWIGTYPE_p_gam__SquareT_float_GAM_DEFAULT_DOMAIN_t, 0)) {
+        _v = 0;
+      } else {
+        _v = 1;
+      }
+    }
+    if (_v) {
+      {
+        _v = lua_isnumber(L,argv[1]);
+      }
+      if (_v) {
+        return _wrap_Square_Tick__SWIG_0(L);
+      }
+    }
+  }
+  
+  SWIG_Lua_pusherrstring(L,"Wrong arguments for overloaded function 'Square_Tick'\n"
+    "  Possible C/C++ prototypes are:\n"
+    "    gam::Square< SampleType >::Tick(float)\n"
+    "    gam::Square< SampleType >::Tick()\n");
+  lua_error(L);return 0;
+}
+
+
+static void swig_delete_Square(void *obj) {
+gam::Square< SampleType > *arg1 = (gam::Square< SampleType > *) obj;
+delete arg1;
+}
+static int _proxy__wrap_new_Square(lua_State *L) {
+    assert(lua_istable(L,1));
+    lua_pushcfunction(L,_wrap_new_Square);
+    assert(!lua_isnil(L,-1));
+    lua_replace(L,1); /* replace our table with real constructor */
+    lua_call(L,lua_gettop(L)-1,1);
+    return 1;
+}
+static swig_lua_attribute swig_Square_attributes[] = {
+    {0,0,0}
+};
+static swig_lua_method swig_Square_methods[]= {
+    { "Tick", _wrap_Square_Tick},
+    {0,0}
+};
+static swig_lua_method swig_Square_meta[] = {
+    {0,0}
+};
+
+static swig_lua_attribute swig_Square_Sf_SwigStatic_attributes[] = {
+    {0,0,0}
+};
+static swig_lua_const_info swig_Square_Sf_SwigStatic_constants[]= {
+    {0,0,0,0,0,0}
+};
+static swig_lua_method swig_Square_Sf_SwigStatic_methods[]= {
+    {0,0}
+};
+static swig_lua_class* swig_Square_Sf_SwigStatic_classes[]= {
+    0
+};
+
+static swig_lua_namespace swig_Square_Sf_SwigStatic = {
+    "Square",
+    swig_Square_Sf_SwigStatic_methods,
+    swig_Square_Sf_SwigStatic_attributes,
+    swig_Square_Sf_SwigStatic_constants,
+    swig_Square_Sf_SwigStatic_classes,
+    0
+};
+static swig_lua_class *swig_Square_bases[] = {0};
+static const char *swig_Square_base_names[] = {0};
+static swig_lua_class _wrap_class_Square = { "Square", "Square", &SWIGTYPE_p_gam__SquareT_float_GAM_DEFAULT_DOMAIN_t,_proxy__wrap_new_Square, swig_delete_Square, swig_Square_methods, swig_Square_attributes, &swig_Square_Sf_SwigStatic, swig_Square_meta, swig_Square_bases, swig_Square_base_names };
+
+static int _wrap_new_DSF__SWIG_0(lua_State* L) {
+  int SWIG_arg = 0;
+  float arg1 ;
+  float arg2 ;
+  float arg3 ;
+  float arg4 ;
+  gam::DSF< SampleType > *result = 0 ;
+  
+  SWIG_check_num_args("gam::DSF< SampleType >::DSF",4,4)
+  if(!lua_isnumber(L,1)) SWIG_fail_arg("gam::DSF< SampleType >::DSF",1,"float");
+  if(!lua_isnumber(L,2)) SWIG_fail_arg("gam::DSF< SampleType >::DSF",2,"float");
+  if(!lua_isnumber(L,3)) SWIG_fail_arg("gam::DSF< SampleType >::DSF",3,"float");
+  if(!lua_isnumber(L,4)) SWIG_fail_arg("gam::DSF< SampleType >::DSF",4,"float");
+  arg1 = (float)lua_tonumber(L, 1);
+  arg2 = (float)lua_tonumber(L, 2);
+  arg3 = (float)lua_tonumber(L, 3);
+  arg4 = (float)lua_tonumber(L, 4);
+  result = (gam::DSF< SampleType > *)new gam::DSF< SampleType >(arg1,arg2,arg3,arg4);
+  SWIG_NewPointerObj(L,result,SWIGTYPE_p_gam__DSFT_float_GAM_DEFAULT_DOMAIN_t,1); SWIG_arg++; 
+  return SWIG_arg;
+  
+  if(0) SWIG_fail;
+  
+fail:
+  lua_error(L);
+  return SWIG_arg;
+}
+
+
+static int _wrap_new_DSF__SWIG_1(lua_State* L) {
+  int SWIG_arg = 0;
+  float arg1 ;
+  float arg2 ;
+  float arg3 ;
+  gam::DSF< SampleType > *result = 0 ;
+  
+  SWIG_check_num_args("gam::DSF< SampleType >::DSF",3,3)
+  if(!lua_isnumber(L,1)) SWIG_fail_arg("gam::DSF< SampleType >::DSF",1,"float");
+  if(!lua_isnumber(L,2)) SWIG_fail_arg("gam::DSF< SampleType >::DSF",2,"float");
+  if(!lua_isnumber(L,3)) SWIG_fail_arg("gam::DSF< SampleType >::DSF",3,"float");
+  arg1 = (float)lua_tonumber(L, 1);
+  arg2 = (float)lua_tonumber(L, 2);
+  arg3 = (float)lua_tonumber(L, 3);
+  result = (gam::DSF< SampleType > *)new gam::DSF< SampleType >(arg1,arg2,arg3);
+  SWIG_NewPointerObj(L,result,SWIGTYPE_p_gam__DSFT_float_GAM_DEFAULT_DOMAIN_t,1); SWIG_arg++; 
+  return SWIG_arg;
+  
+  if(0) SWIG_fail;
+  
+fail:
+  lua_error(L);
+  return SWIG_arg;
+}
+
+
+static int _wrap_new_DSF__SWIG_2(lua_State* L) {
+  int SWIG_arg = 0;
+  float arg1 ;
+  float arg2 ;
+  gam::DSF< SampleType > *result = 0 ;
+  
+  SWIG_check_num_args("gam::DSF< SampleType >::DSF",2,2)
+  if(!lua_isnumber(L,1)) SWIG_fail_arg("gam::DSF< SampleType >::DSF",1,"float");
+  if(!lua_isnumber(L,2)) SWIG_fail_arg("gam::DSF< SampleType >::DSF",2,"float");
+  arg1 = (float)lua_tonumber(L, 1);
+  arg2 = (float)lua_tonumber(L, 2);
+  result = (gam::DSF< SampleType > *)new gam::DSF< SampleType >(arg1,arg2);
+  SWIG_NewPointerObj(L,result,SWIGTYPE_p_gam__DSFT_float_GAM_DEFAULT_DOMAIN_t,1); SWIG_arg++; 
+  return SWIG_arg;
+  
+  if(0) SWIG_fail;
+  
+fail:
+  lua_error(L);
+  return SWIG_arg;
+}
+
+
+static int _wrap_new_DSF__SWIG_3(lua_State* L) {
+  int SWIG_arg = 0;
+  float arg1 ;
+  gam::DSF< SampleType > *result = 0 ;
+  
+  SWIG_check_num_args("gam::DSF< SampleType >::DSF",1,1)
+  if(!lua_isnumber(L,1)) SWIG_fail_arg("gam::DSF< SampleType >::DSF",1,"float");
+  arg1 = (float)lua_tonumber(L, 1);
+  result = (gam::DSF< SampleType > *)new gam::DSF< SampleType >(arg1);
+  SWIG_NewPointerObj(L,result,SWIGTYPE_p_gam__DSFT_float_GAM_DEFAULT_DOMAIN_t,1); SWIG_arg++; 
+  return SWIG_arg;
+  
+  if(0) SWIG_fail;
+  
+fail:
+  lua_error(L);
+  return SWIG_arg;
+}
+
+
+static int _wrap_new_DSF__SWIG_4(lua_State* L) {
+  int SWIG_arg = 0;
+  gam::DSF< SampleType > *result = 0 ;
+  
+  SWIG_check_num_args("gam::DSF< SampleType >::DSF",0,0)
+  result = (gam::DSF< SampleType > *)new gam::DSF< SampleType >();
+  SWIG_NewPointerObj(L,result,SWIGTYPE_p_gam__DSFT_float_GAM_DEFAULT_DOMAIN_t,1); SWIG_arg++; 
+  return SWIG_arg;
+  
+  if(0) SWIG_fail;
+  
+fail:
+  lua_error(L);
+  return SWIG_arg;
+}
+
+
+static int _wrap_new_DSF(lua_State* L) {
+  int argc;
+  int argv[5]={
+    1,2,3,4,5
+  };
+  
+  argc = lua_gettop(L);
+  if (argc == 0) {
+    return _wrap_new_DSF__SWIG_4(L);
+  }
+  if (argc == 1) {
+    int _v = 0;
+    {
+      _v = lua_isnumber(L,argv[0]);
+    }
+    if (_v) {
+      return _wrap_new_DSF__SWIG_3(L);
+    }
+  }
+  if (argc == 2) {
+    int _v = 0;
+    {
+      _v = lua_isnumber(L,argv[0]);
+    }
+    if (_v) {
+      {
+        _v = lua_isnumber(L,argv[1]);
+      }
+      if (_v) {
+        return _wrap_new_DSF__SWIG_2(L);
+      }
+    }
+  }
+  if (argc == 3) {
+    int _v = 0;
+    {
+      _v = lua_isnumber(L,argv[0]);
+    }
+    if (_v) {
+      {
+        _v = lua_isnumber(L,argv[1]);
+      }
+      if (_v) {
+        {
+          _v = lua_isnumber(L,argv[2]);
+        }
+        if (_v) {
+          return _wrap_new_DSF__SWIG_1(L);
+        }
+      }
+    }
+  }
+  if (argc == 4) {
+    int _v = 0;
+    {
+      _v = lua_isnumber(L,argv[0]);
+    }
+    if (_v) {
+      {
+        _v = lua_isnumber(L,argv[1]);
+      }
+      if (_v) {
+        {
+          _v = lua_isnumber(L,argv[2]);
+        }
+        if (_v) {
+          {
+            _v = lua_isnumber(L,argv[3]);
+          }
+          if (_v) {
+            return _wrap_new_DSF__SWIG_0(L);
+          }
+        }
+      }
+    }
+  }
+  
+  SWIG_Lua_pusherrstring(L,"Wrong arguments for overloaded function 'new_DSF'\n"
+    "  Possible C/C++ prototypes are:\n"
+    "    gam::DSF< SampleType >::DSF(float,float,float,float)\n"
+    "    gam::DSF< SampleType >::DSF(float,float,float)\n"
+    "    gam::DSF< SampleType >::DSF(float,float)\n"
+    "    gam::DSF< SampleType >::DSF(float)\n"
+    "    gam::DSF< SampleType >::DSF()\n");
+  lua_error(L);return 0;
+}
+
+
+static int _wrap_DSF___call(lua_State* L) {
+  int SWIG_arg = 0;
+  gam::DSF< SampleType > *arg1 = (gam::DSF< SampleType > *) 0 ;
+  float result;
+  
+  SWIG_check_num_args("gam::DSF< SampleType >::operator ()",1,1)
+  if(!SWIG_isptrtype(L,1)) SWIG_fail_arg("gam::DSF< SampleType >::operator ()",1,"gam::DSF< SampleType > *");
+  
+  if (!SWIG_IsOK(SWIG_ConvertPtr(L,1,(void**)&arg1,SWIGTYPE_p_gam__DSFT_float_GAM_DEFAULT_DOMAIN_t,0))){
+    SWIG_fail_ptr("DSF___call",1,SWIGTYPE_p_gam__DSFT_float_GAM_DEFAULT_DOMAIN_t);
+  }
+  
+  result = (float)(arg1)->operator ()();
+  lua_pushnumber(L, (lua_Number) result); SWIG_arg++;
+  return SWIG_arg;
+  
+  if(0) SWIG_fail;
+  
+fail:
+  lua_error(L);
+  return SWIG_arg;
+}
+
+
+static int _wrap_DSF_Tick(lua_State* L) {
+  int SWIG_arg = 0;
+  gam::DSF< SampleType > *arg1 = (gam::DSF< SampleType > *) 0 ;
+  float result;
+  
+  SWIG_check_num_args("gam::DSF< SampleType >::Tick",1,1)
+  if(!SWIG_isptrtype(L,1)) SWIG_fail_arg("gam::DSF< SampleType >::Tick",1,"gam::DSF< SampleType > *");
+  
+  if (!SWIG_IsOK(SWIG_ConvertPtr(L,1,(void**)&arg1,SWIGTYPE_p_gam__DSFT_float_GAM_DEFAULT_DOMAIN_t,0))){
+    SWIG_fail_ptr("DSF_Tick",1,SWIGTYPE_p_gam__DSFT_float_GAM_DEFAULT_DOMAIN_t);
+  }
+  
+  result = (float)gam_DSF_Sl_SampleType_Sg__Tick__SWIG(arg1);
+  lua_pushnumber(L, (lua_Number) result); SWIG_arg++;
+  return SWIG_arg;
+  
+  if(0) SWIG_fail;
+  
+fail:
+  lua_error(L);
+  return SWIG_arg;
+}
+
+
+static int _wrap_DSF_ampRatio__SWIG_0(lua_State* L) {
+  int SWIG_arg = 0;
+  gam::DSF< SampleType > *arg1 = (gam::DSF< SampleType > *) 0 ;
+  float arg2 ;
+  
+  SWIG_check_num_args("gam::DSF< SampleType >::ampRatio",2,2)
+  if(!SWIG_isptrtype(L,1)) SWIG_fail_arg("gam::DSF< SampleType >::ampRatio",1,"gam::DSF< SampleType > *");
+  if(!lua_isnumber(L,2)) SWIG_fail_arg("gam::DSF< SampleType >::ampRatio",2,"float");
+  
+  if (!SWIG_IsOK(SWIG_ConvertPtr(L,1,(void**)&arg1,SWIGTYPE_p_gam__DSFT_float_GAM_DEFAULT_DOMAIN_t,0))){
+    SWIG_fail_ptr("DSF_ampRatio",1,SWIGTYPE_p_gam__DSFT_float_GAM_DEFAULT_DOMAIN_t);
+  }
+  
+  arg2 = (float)lua_tonumber(L, 2);
+  (arg1)->ampRatio(arg2);
+  
+  return SWIG_arg;
+  
+  if(0) SWIG_fail;
+  
+fail:
+  lua_error(L);
+  return SWIG_arg;
+}
+
+
+static int _wrap_DSF_antialias(lua_State* L) {
+  int SWIG_arg = 0;
+  gam::DSF< SampleType > *arg1 = (gam::DSF< SampleType > *) 0 ;
+  
+  SWIG_check_num_args("gam::DSF< SampleType >::antialias",1,1)
+  if(!SWIG_isptrtype(L,1)) SWIG_fail_arg("gam::DSF< SampleType >::antialias",1,"gam::DSF< SampleType > *");
+  
+  if (!SWIG_IsOK(SWIG_ConvertPtr(L,1,(void**)&arg1,SWIGTYPE_p_gam__DSFT_float_GAM_DEFAULT_DOMAIN_t,0))){
+    SWIG_fail_ptr("DSF_antialias",1,SWIGTYPE_p_gam__DSFT_float_GAM_DEFAULT_DOMAIN_t);
+  }
+  
+  (arg1)->antialias();
+  
+  return SWIG_arg;
+  
+  if(0) SWIG_fail;
+  
+fail:
+  lua_error(L);
+  return SWIG_arg;
+}
+
+
+static int _wrap_DSF_freq(lua_State* L) {
+  int SWIG_arg = 0;
+  gam::DSF< SampleType > *arg1 = (gam::DSF< SampleType > *) 0 ;
+  float arg2 ;
+  
+  SWIG_check_num_args("gam::DSF< SampleType >::freq",2,2)
+  if(!SWIG_isptrtype(L,1)) SWIG_fail_arg("gam::DSF< SampleType >::freq",1,"gam::DSF< SampleType > *");
+  if(!lua_isnumber(L,2)) SWIG_fail_arg("gam::DSF< SampleType >::freq",2,"float");
+  
+  if (!SWIG_IsOK(SWIG_ConvertPtr(L,1,(void**)&arg1,SWIGTYPE_p_gam__DSFT_float_GAM_DEFAULT_DOMAIN_t,0))){
+    SWIG_fail_ptr("DSF_freq",1,SWIGTYPE_p_gam__DSFT_float_GAM_DEFAULT_DOMAIN_t);
+  }
+  
+  arg2 = (float)lua_tonumber(L, 2);
+  (arg1)->freq(arg2);
+  
+  return SWIG_arg;
+  
+  if(0) SWIG_fail;
+  
+fail:
+  lua_error(L);
+  return SWIG_arg;
+}
+
+
+static int _wrap_DSF_freqRatio__SWIG_0(lua_State* L) {
+  int SWIG_arg = 0;
+  gam::DSF< SampleType > *arg1 = (gam::DSF< SampleType > *) 0 ;
+  float arg2 ;
+  
+  SWIG_check_num_args("gam::DSF< SampleType >::freqRatio",2,2)
+  if(!SWIG_isptrtype(L,1)) SWIG_fail_arg("gam::DSF< SampleType >::freqRatio",1,"gam::DSF< SampleType > *");
+  if(!lua_isnumber(L,2)) SWIG_fail_arg("gam::DSF< SampleType >::freqRatio",2,"float");
+  
+  if (!SWIG_IsOK(SWIG_ConvertPtr(L,1,(void**)&arg1,SWIGTYPE_p_gam__DSFT_float_GAM_DEFAULT_DOMAIN_t,0))){
+    SWIG_fail_ptr("DSF_freqRatio",1,SWIGTYPE_p_gam__DSFT_float_GAM_DEFAULT_DOMAIN_t);
+  }
+  
+  arg2 = (float)lua_tonumber(L, 2);
+  (arg1)->freqRatio(arg2);
+  
+  return SWIG_arg;
+  
+  if(0) SWIG_fail;
+  
+fail:
+  lua_error(L);
+  return SWIG_arg;
+}
+
+
+static int _wrap_DSF_harmonics__SWIG_0(lua_State* L) {
+  int SWIG_arg = 0;
+  gam::DSF< SampleType > *arg1 = (gam::DSF< SampleType > *) 0 ;
+  float arg2 ;
+  
+  SWIG_check_num_args("gam::DSF< SampleType >::harmonics",2,2)
+  if(!SWIG_isptrtype(L,1)) SWIG_fail_arg("gam::DSF< SampleType >::harmonics",1,"gam::DSF< SampleType > *");
+  if(!lua_isnumber(L,2)) SWIG_fail_arg("gam::DSF< SampleType >::harmonics",2,"float");
+  
+  if (!SWIG_IsOK(SWIG_ConvertPtr(L,1,(void**)&arg1,SWIGTYPE_p_gam__DSFT_float_GAM_DEFAULT_DOMAIN_t,0))){
+    SWIG_fail_ptr("DSF_harmonics",1,SWIGTYPE_p_gam__DSFT_float_GAM_DEFAULT_DOMAIN_t);
+  }
+  
+  arg2 = (float)lua_tonumber(L, 2);
+  (arg1)->harmonics(arg2);
+  
+  return SWIG_arg;
+  
+  if(0) SWIG_fail;
+  
+fail:
+  lua_error(L);
+  return SWIG_arg;
+}
+
+
+static int _wrap_DSF_harmonicsMax(lua_State* L) {
+  int SWIG_arg = 0;
+  gam::DSF< SampleType > *arg1 = (gam::DSF< SampleType > *) 0 ;
+  
+  SWIG_check_num_args("gam::DSF< SampleType >::harmonicsMax",1,1)
+  if(!SWIG_isptrtype(L,1)) SWIG_fail_arg("gam::DSF< SampleType >::harmonicsMax",1,"gam::DSF< SampleType > *");
+  
+  if (!SWIG_IsOK(SWIG_ConvertPtr(L,1,(void**)&arg1,SWIGTYPE_p_gam__DSFT_float_GAM_DEFAULT_DOMAIN_t,0))){
+    SWIG_fail_ptr("DSF_harmonicsMax",1,SWIGTYPE_p_gam__DSFT_float_GAM_DEFAULT_DOMAIN_t);
+  }
+  
+  (arg1)->harmonicsMax();
+  
+  return SWIG_arg;
+  
+  if(0) SWIG_fail;
+  
+fail:
+  lua_error(L);
+  return SWIG_arg;
+}
+
+
+static int _wrap_DSF_ampRatio__SWIG_1(lua_State* L) {
+  int SWIG_arg = 0;
+  gam::DSF< SampleType > *arg1 = (gam::DSF< SampleType > *) 0 ;
+  float result;
+  
+  SWIG_check_num_args("gam::DSF< SampleType >::ampRatio",1,1)
+  if(!SWIG_isptrtype(L,1)) SWIG_fail_arg("gam::DSF< SampleType >::ampRatio",1,"gam::DSF< SampleType > const *");
+  
+  if (!SWIG_IsOK(SWIG_ConvertPtr(L,1,(void**)&arg1,SWIGTYPE_p_gam__DSFT_float_GAM_DEFAULT_DOMAIN_t,0))){
+    SWIG_fail_ptr("DSF_ampRatio",1,SWIGTYPE_p_gam__DSFT_float_GAM_DEFAULT_DOMAIN_t);
+  }
+  
+  result = (float)((gam::DSF< SampleType > const *)arg1)->ampRatio();
+  lua_pushnumber(L, (lua_Number) result); SWIG_arg++;
+  return SWIG_arg;
+  
+  if(0) SWIG_fail;
+  
+fail:
+  lua_error(L);
+  return SWIG_arg;
+}
+
+
+static int _wrap_DSF_ampRatio(lua_State* L) {
+  int argc;
+  int argv[3]={
+    1,2,3
+  };
+  
+  argc = lua_gettop(L);
+  if (argc == 1) {
+    int _v = 0;
+    {
+      void *ptr;
+      if (SWIG_isptrtype(L,argv[0])==0 || SWIG_ConvertPtr(L,argv[0], (void **) &ptr, SWIGTYPE_p_gam__DSFT_float_GAM_DEFAULT_DOMAIN_t, 0)) {
+        _v = 0;
+      } else {
+        _v = 1;
+      }
+    }
+    if (_v) {
+      return _wrap_DSF_ampRatio__SWIG_1(L);
+    }
+  }
+  if (argc == 2) {
+    int _v = 0;
+    {
+      void *ptr;
+      if (SWIG_isptrtype(L,argv[0])==0 || SWIG_ConvertPtr(L,argv[0], (void **) &ptr, SWIGTYPE_p_gam__DSFT_float_GAM_DEFAULT_DOMAIN_t, 0)) {
+        _v = 0;
+      } else {
+        _v = 1;
+      }
+    }
+    if (_v) {
+      {
+        _v = lua_isnumber(L,argv[1]);
+      }
+      if (_v) {
+        return _wrap_DSF_ampRatio__SWIG_0(L);
+      }
+    }
+  }
+  
+  SWIG_Lua_pusherrstring(L,"Wrong arguments for overloaded function 'DSF_ampRatio'\n"
+    "  Possible C/C++ prototypes are:\n"
+    "    gam::DSF< SampleType >::ampRatio(float)\n"
+    "    gam::DSF< SampleType >::ampRatio() const\n");
+  lua_error(L);return 0;
+}
+
+
+static int _wrap_DSF_freqRatio__SWIG_1(lua_State* L) {
+  int SWIG_arg = 0;
+  gam::DSF< SampleType > *arg1 = (gam::DSF< SampleType > *) 0 ;
+  float result;
+  
+  SWIG_check_num_args("gam::DSF< SampleType >::freqRatio",1,1)
+  if(!SWIG_isptrtype(L,1)) SWIG_fail_arg("gam::DSF< SampleType >::freqRatio",1,"gam::DSF< SampleType > const *");
+  
+  if (!SWIG_IsOK(SWIG_ConvertPtr(L,1,(void**)&arg1,SWIGTYPE_p_gam__DSFT_float_GAM_DEFAULT_DOMAIN_t,0))){
+    SWIG_fail_ptr("DSF_freqRatio",1,SWIGTYPE_p_gam__DSFT_float_GAM_DEFAULT_DOMAIN_t);
+  }
+  
+  result = (float)((gam::DSF< SampleType > const *)arg1)->freqRatio();
+  lua_pushnumber(L, (lua_Number) result); SWIG_arg++;
+  return SWIG_arg;
+  
+  if(0) SWIG_fail;
+  
+fail:
+  lua_error(L);
+  return SWIG_arg;
+}
+
+
+static int _wrap_DSF_freqRatio(lua_State* L) {
+  int argc;
+  int argv[3]={
+    1,2,3
+  };
+  
+  argc = lua_gettop(L);
+  if (argc == 1) {
+    int _v = 0;
+    {
+      void *ptr;
+      if (SWIG_isptrtype(L,argv[0])==0 || SWIG_ConvertPtr(L,argv[0], (void **) &ptr, SWIGTYPE_p_gam__DSFT_float_GAM_DEFAULT_DOMAIN_t, 0)) {
+        _v = 0;
+      } else {
+        _v = 1;
+      }
+    }
+    if (_v) {
+      return _wrap_DSF_freqRatio__SWIG_1(L);
+    }
+  }
+  if (argc == 2) {
+    int _v = 0;
+    {
+      void *ptr;
+      if (SWIG_isptrtype(L,argv[0])==0 || SWIG_ConvertPtr(L,argv[0], (void **) &ptr, SWIGTYPE_p_gam__DSFT_float_GAM_DEFAULT_DOMAIN_t, 0)) {
+        _v = 0;
+      } else {
+        _v = 1;
+      }
+    }
+    if (_v) {
+      {
+        _v = lua_isnumber(L,argv[1]);
+      }
+      if (_v) {
+        return _wrap_DSF_freqRatio__SWIG_0(L);
+      }
+    }
+  }
+  
+  SWIG_Lua_pusherrstring(L,"Wrong arguments for overloaded function 'DSF_freqRatio'\n"
+    "  Possible C/C++ prototypes are:\n"
+    "    gam::DSF< SampleType >::freqRatio(float)\n"
+    "    gam::DSF< SampleType >::freqRatio() const\n");
+  lua_error(L);return 0;
+}
+
+
+static int _wrap_DSF_harmonics__SWIG_1(lua_State* L) {
+  int SWIG_arg = 0;
+  gam::DSF< SampleType > *arg1 = (gam::DSF< SampleType > *) 0 ;
+  float result;
+  
+  SWIG_check_num_args("gam::DSF< SampleType >::harmonics",1,1)
+  if(!SWIG_isptrtype(L,1)) SWIG_fail_arg("gam::DSF< SampleType >::harmonics",1,"gam::DSF< SampleType > const *");
+  
+  if (!SWIG_IsOK(SWIG_ConvertPtr(L,1,(void**)&arg1,SWIGTYPE_p_gam__DSFT_float_GAM_DEFAULT_DOMAIN_t,0))){
+    SWIG_fail_ptr("DSF_harmonics",1,SWIGTYPE_p_gam__DSFT_float_GAM_DEFAULT_DOMAIN_t);
+  }
+  
+  result = (float)((gam::DSF< SampleType > const *)arg1)->harmonics();
+  lua_pushnumber(L, (lua_Number) result); SWIG_arg++;
+  return SWIG_arg;
+  
+  if(0) SWIG_fail;
+  
+fail:
+  lua_error(L);
+  return SWIG_arg;
+}
+
+
+static int _wrap_DSF_harmonics(lua_State* L) {
+  int argc;
+  int argv[3]={
+    1,2,3
+  };
+  
+  argc = lua_gettop(L);
+  if (argc == 1) {
+    int _v = 0;
+    {
+      void *ptr;
+      if (SWIG_isptrtype(L,argv[0])==0 || SWIG_ConvertPtr(L,argv[0], (void **) &ptr, SWIGTYPE_p_gam__DSFT_float_GAM_DEFAULT_DOMAIN_t, 0)) {
+        _v = 0;
+      } else {
+        _v = 1;
+      }
+    }
+    if (_v) {
+      return _wrap_DSF_harmonics__SWIG_1(L);
+    }
+  }
+  if (argc == 2) {
+    int _v = 0;
+    {
+      void *ptr;
+      if (SWIG_isptrtype(L,argv[0])==0 || SWIG_ConvertPtr(L,argv[0], (void **) &ptr, SWIGTYPE_p_gam__DSFT_float_GAM_DEFAULT_DOMAIN_t, 0)) {
+        _v = 0;
+      } else {
+        _v = 1;
+      }
+    }
+    if (_v) {
+      {
+        _v = lua_isnumber(L,argv[1]);
+      }
+      if (_v) {
+        return _wrap_DSF_harmonics__SWIG_0(L);
+      }
+    }
+  }
+  
+  SWIG_Lua_pusherrstring(L,"Wrong arguments for overloaded function 'DSF_harmonics'\n"
+    "  Possible C/C++ prototypes are:\n"
+    "    gam::DSF< SampleType >::harmonics(float)\n"
+    "    gam::DSF< SampleType >::harmonics() const\n");
+  lua_error(L);return 0;
+}
+
+
+static int _wrap_DSF_maxHarmonics(lua_State* L) {
+  int SWIG_arg = 0;
+  gam::DSF< SampleType > *arg1 = (gam::DSF< SampleType > *) 0 ;
+  float result;
+  
+  SWIG_check_num_args("gam::DSF< SampleType >::maxHarmonics",1,1)
+  if(!SWIG_isptrtype(L,1)) SWIG_fail_arg("gam::DSF< SampleType >::maxHarmonics",1,"gam::DSF< SampleType > const *");
+  
+  if (!SWIG_IsOK(SWIG_ConvertPtr(L,1,(void**)&arg1,SWIGTYPE_p_gam__DSFT_float_GAM_DEFAULT_DOMAIN_t,0))){
+    SWIG_fail_ptr("DSF_maxHarmonics",1,SWIGTYPE_p_gam__DSFT_float_GAM_DEFAULT_DOMAIN_t);
+  }
+  
+  result = (float)((gam::DSF< SampleType > const *)arg1)->maxHarmonics();
+  lua_pushnumber(L, (lua_Number) result); SWIG_arg++;
+  return SWIG_arg;
+  
+  if(0) SWIG_fail;
+  
+fail:
+  lua_error(L);
+  return SWIG_arg;
+}
+
+
+static int _wrap_DSF_onDomainChange(lua_State* L) {
+  int SWIG_arg = 0;
+  gam::DSF< SampleType > *arg1 = (gam::DSF< SampleType > *) 0 ;
+  double arg2 ;
+  
+  SWIG_check_num_args("gam::DSF< SampleType >::onDomainChange",2,2)
+  if(!SWIG_isptrtype(L,1)) SWIG_fail_arg("gam::DSF< SampleType >::onDomainChange",1,"gam::DSF< SampleType > *");
+  if(!lua_isnumber(L,2)) SWIG_fail_arg("gam::DSF< SampleType >::onDomainChange",2,"double");
+  
+  if (!SWIG_IsOK(SWIG_ConvertPtr(L,1,(void**)&arg1,SWIGTYPE_p_gam__DSFT_float_GAM_DEFAULT_DOMAIN_t,0))){
+    SWIG_fail_ptr("DSF_onDomainChange",1,SWIGTYPE_p_gam__DSFT_float_GAM_DEFAULT_DOMAIN_t);
+  }
+  
+  arg2 = (double)lua_tonumber(L, 2);
+  (arg1)->onDomainChange(arg2);
+  
+  return SWIG_arg;
+  
+  if(0) SWIG_fail;
+  
+fail:
+  lua_error(L);
+  return SWIG_arg;
+}
+
+
+static void swig_delete_DSF(void *obj) {
+gam::DSF< SampleType > *arg1 = (gam::DSF< SampleType > *) obj;
+delete arg1;
+}
+static int _proxy__wrap_new_DSF(lua_State *L) {
+    assert(lua_istable(L,1));
+    lua_pushcfunction(L,_wrap_new_DSF);
+    assert(!lua_isnil(L,-1));
+    lua_replace(L,1); /* replace our table with real constructor */
+    lua_call(L,lua_gettop(L)-1,1);
+    return 1;
+}
+static swig_lua_attribute swig_DSF_attributes[] = {
+    {0,0,0}
+};
+static swig_lua_method swig_DSF_methods[]= {
+    { "__call", _wrap_DSF___call},
+    { "Tick", _wrap_DSF_Tick},
+    { "antialias", _wrap_DSF_antialias},
+    { "freq", _wrap_DSF_freq},
+    { "harmonicsMax", _wrap_DSF_harmonicsMax},
+    { "ampRatio", _wrap_DSF_ampRatio},
+    { "freqRatio", _wrap_DSF_freqRatio},
+    { "harmonics", _wrap_DSF_harmonics},
+    { "maxHarmonics", _wrap_DSF_maxHarmonics},
+    { "onDomainChange", _wrap_DSF_onDomainChange},
+    {0,0}
+};
+static swig_lua_method swig_DSF_meta[] = {
+    { "__call", _wrap_DSF___call},
+    {0,0}
+};
+
+static swig_lua_attribute swig_DSF_Sf_SwigStatic_attributes[] = {
+    {0,0,0}
+};
+static swig_lua_const_info swig_DSF_Sf_SwigStatic_constants[]= {
+    {0,0,0,0,0,0}
+};
+static swig_lua_method swig_DSF_Sf_SwigStatic_methods[]= {
+    {0,0}
+};
+static swig_lua_class* swig_DSF_Sf_SwigStatic_classes[]= {
+    0
+};
+
+static swig_lua_namespace swig_DSF_Sf_SwigStatic = {
+    "DSF",
+    swig_DSF_Sf_SwigStatic_methods,
+    swig_DSF_Sf_SwigStatic_attributes,
+    swig_DSF_Sf_SwigStatic_constants,
+    swig_DSF_Sf_SwigStatic_classes,
+    0
+};
+static swig_lua_class *swig_DSF_bases[] = {0,0};
+static const char *swig_DSF_base_names[] = {"gam::AccumPhase< SampleType > *",0};
+static swig_lua_class _wrap_class_DSF = { "DSF", "DSF", &SWIGTYPE_p_gam__DSFT_float_GAM_DEFAULT_DOMAIN_t,_proxy__wrap_new_DSF, swig_delete_DSF, swig_DSF_methods, swig_DSF_attributes, &swig_DSF_Sf_SwigStatic, swig_DSF_meta, swig_DSF_bases, swig_DSF_base_names };
+
+static int _wrap_new_Recorder__SWIG_0(lua_State* L) {
+  int SWIG_arg = 0;
+  gam::Recorder *result = 0 ;
+  
+  SWIG_check_num_args("gam::Recorder::Recorder",0,0)
+  result = (gam::Recorder *)new gam::Recorder();
+  SWIG_NewPointerObj(L,result,SWIGTYPE_p_gam__Recorder,1); SWIG_arg++; 
+  return SWIG_arg;
+  
+  if(0) SWIG_fail;
+  
+fail:
+  lua_error(L);
+  return SWIG_arg;
+}
+
+
+static int _wrap_new_Recorder__SWIG_1(lua_State* L) {
+  int SWIG_arg = 0;
+  int arg1 ;
+  int arg2 ;
+  gam::Recorder *result = 0 ;
+  
+  SWIG_check_num_args("gam::Recorder::Recorder",2,2)
+  if(!lua_isnumber(L,1)) SWIG_fail_arg("gam::Recorder::Recorder",1,"int");
+  if(!lua_isnumber(L,2)) SWIG_fail_arg("gam::Recorder::Recorder",2,"int");
+  arg1 = (int)lua_tonumber(L, 1);
+  arg2 = (int)lua_tonumber(L, 2);
+  result = (gam::Recorder *)new gam::Recorder(arg1,arg2);
+  SWIG_NewPointerObj(L,result,SWIGTYPE_p_gam__Recorder,1); SWIG_arg++; 
+  return SWIG_arg;
+  
+  if(0) SWIG_fail;
+  
+fail:
+  lua_error(L);
+  return SWIG_arg;
+}
+
+
+static int _wrap_new_Recorder__SWIG_2(lua_State* L) {
+  int SWIG_arg = 0;
+  int arg1 ;
+  gam::Recorder *result = 0 ;
+  
+  SWIG_check_num_args("gam::Recorder::Recorder",1,1)
+  if(!lua_isnumber(L,1)) SWIG_fail_arg("gam::Recorder::Recorder",1,"int");
+  arg1 = (int)lua_tonumber(L, 1);
+  result = (gam::Recorder *)new gam::Recorder(arg1);
+  SWIG_NewPointerObj(L,result,SWIGTYPE_p_gam__Recorder,1); SWIG_arg++; 
+  return SWIG_arg;
+  
+  if(0) SWIG_fail;
+  
+fail:
+  lua_error(L);
+  return SWIG_arg;
+}
+
+
+static int _wrap_new_Recorder(lua_State* L) {
+  int argc;
+  int argv[3]={
+    1,2,3
+  };
+  
+  argc = lua_gettop(L);
+  if (argc == 0) {
+    return _wrap_new_Recorder__SWIG_0(L);
+  }
+  if (argc == 1) {
+    int _v = 0;
+    {
+      _v = lua_isnumber(L,argv[0]);
+    }
+    if (_v) {
+      return _wrap_new_Recorder__SWIG_2(L);
+    }
+  }
+  if (argc == 2) {
+    int _v = 0;
+    {
+      _v = lua_isnumber(L,argv[0]);
+    }
+    if (_v) {
+      {
+        _v = lua_isnumber(L,argv[1]);
+      }
+      if (_v) {
+        return _wrap_new_Recorder__SWIG_1(L);
+      }
+    }
+  }
+  
+  SWIG_Lua_pusherrstring(L,"Wrong arguments for overloaded function 'new_Recorder'\n"
+    "  Possible C/C++ prototypes are:\n"
+    "    gam::Recorder::Recorder()\n"
+    "    gam::Recorder::Recorder(int,int)\n"
+    "    gam::Recorder::Recorder(int)\n");
+  lua_error(L);return 0;
+}
+
+
+static int _wrap_Recorder_channels(lua_State* L) {
+  int SWIG_arg = 0;
+  gam::Recorder *arg1 = (gam::Recorder *) 0 ;
+  int result;
+  
+  SWIG_check_num_args("gam::Recorder::channels",1,1)
+  if(!SWIG_isptrtype(L,1)) SWIG_fail_arg("gam::Recorder::channels",1,"gam::Recorder const *");
+  
+  if (!SWIG_IsOK(SWIG_ConvertPtr(L,1,(void**)&arg1,SWIGTYPE_p_gam__Recorder,0))){
+    SWIG_fail_ptr("Recorder_channels",1,SWIGTYPE_p_gam__Recorder);
+  }
+  
+  result = (int)((gam::Recorder const *)arg1)->channels();
+  lua_pushnumber(L, (lua_Number) result); SWIG_arg++;
+  return SWIG_arg;
+  
+  if(0) SWIG_fail;
+  
+fail:
+  lua_error(L);
+  return SWIG_arg;
+}
+
+
+static int _wrap_Recorder_frames(lua_State* L) {
+  int SWIG_arg = 0;
+  gam::Recorder *arg1 = (gam::Recorder *) 0 ;
+  int result;
+  
+  SWIG_check_num_args("gam::Recorder::frames",1,1)
+  if(!SWIG_isptrtype(L,1)) SWIG_fail_arg("gam::Recorder::frames",1,"gam::Recorder const *");
+  
+  if (!SWIG_IsOK(SWIG_ConvertPtr(L,1,(void**)&arg1,SWIGTYPE_p_gam__Recorder,0))){
+    SWIG_fail_ptr("Recorder_frames",1,SWIGTYPE_p_gam__Recorder);
+  }
+  
+  result = (int)((gam::Recorder const *)arg1)->frames();
+  lua_pushnumber(L, (lua_Number) result); SWIG_arg++;
+  return SWIG_arg;
+  
+  if(0) SWIG_fail;
+  
+fail:
+  lua_error(L);
+  return SWIG_arg;
+}
+
+
+static int _wrap_Recorder_size(lua_State* L) {
+  int SWIG_arg = 0;
+  gam::Recorder *arg1 = (gam::Recorder *) 0 ;
+  int result;
+  
+  SWIG_check_num_args("gam::Recorder::size",1,1)
+  if(!SWIG_isptrtype(L,1)) SWIG_fail_arg("gam::Recorder::size",1,"gam::Recorder const *");
+  
+  if (!SWIG_IsOK(SWIG_ConvertPtr(L,1,(void**)&arg1,SWIGTYPE_p_gam__Recorder,0))){
+    SWIG_fail_ptr("Recorder_size",1,SWIGTYPE_p_gam__Recorder);
+  }
+  
+  result = (int)((gam::Recorder const *)arg1)->size();
+  lua_pushnumber(L, (lua_Number) result); SWIG_arg++;
+  return SWIG_arg;
+  
+  if(0) SWIG_fail;
+  
+fail:
+  lua_error(L);
+  return SWIG_arg;
+}
+
+
+static int _wrap_Recorder_overwrite(lua_State* L) {
+  int SWIG_arg = 0;
+  gam::Recorder *arg1 = (gam::Recorder *) 0 ;
+  float arg2 ;
+  int arg3 ;
+  
+  SWIG_check_num_args("gam::Recorder::overwrite",3,3)
+  if(!SWIG_isptrtype(L,1)) SWIG_fail_arg("gam::Recorder::overwrite",1,"gam::Recorder *");
+  if(!lua_isnumber(L,2)) SWIG_fail_arg("gam::Recorder::overwrite",2,"float");
+  if(!lua_isnumber(L,3)) SWIG_fail_arg("gam::Recorder::overwrite",3,"int");
+  
+  if (!SWIG_IsOK(SWIG_ConvertPtr(L,1,(void**)&arg1,SWIGTYPE_p_gam__Recorder,0))){
+    SWIG_fail_ptr("Recorder_overwrite",1,SWIGTYPE_p_gam__Recorder);
+  }
+  
+  arg2 = (float)lua_tonumber(L, 2);
+  arg3 = (int)lua_tonumber(L, 3);
+  (arg1)->overwrite(arg2,arg3);
+  
+  return SWIG_arg;
+  
+  if(0) SWIG_fail;
+  
+fail:
+  lua_error(L);
+  return SWIG_arg;
+}
+
+
+static int _wrap_Recorder_advance(lua_State* L) {
+  int SWIG_arg = 0;
+  gam::Recorder *arg1 = (gam::Recorder *) 0 ;
+  
+  SWIG_check_num_args("gam::Recorder::advance",1,1)
+  if(!SWIG_isptrtype(L,1)) SWIG_fail_arg("gam::Recorder::advance",1,"gam::Recorder *");
+  
+  if (!SWIG_IsOK(SWIG_ConvertPtr(L,1,(void**)&arg1,SWIGTYPE_p_gam__Recorder,0))){
+    SWIG_fail_ptr("Recorder_advance",1,SWIGTYPE_p_gam__Recorder);
+  }
+  
+  (arg1)->advance();
+  
+  return SWIG_arg;
+  
+  if(0) SWIG_fail;
+  
+fail:
+  lua_error(L);
+  return SWIG_arg;
+}
+
+
+static int _wrap_Recorder_write__SWIG_0(lua_State* L) {
+  int SWIG_arg = 0;
+  gam::Recorder *arg1 = (gam::Recorder *) 0 ;
+  float arg2 ;
+  int arg3 ;
+  
+  SWIG_check_num_args("gam::Recorder::write",3,3)
+  if(!SWIG_isptrtype(L,1)) SWIG_fail_arg("gam::Recorder::write",1,"gam::Recorder *");
+  if(!lua_isnumber(L,2)) SWIG_fail_arg("gam::Recorder::write",2,"float");
+  if(!lua_isnumber(L,3)) SWIG_fail_arg("gam::Recorder::write",3,"int");
+  
+  if (!SWIG_IsOK(SWIG_ConvertPtr(L,1,(void**)&arg1,SWIGTYPE_p_gam__Recorder,0))){
+    SWIG_fail_ptr("Recorder_write",1,SWIGTYPE_p_gam__Recorder);
+  }
+  
+  arg2 = (float)lua_tonumber(L, 2);
+  arg3 = (int)lua_tonumber(L, 3);
+  (arg1)->write(arg2,arg3);
+  
+  return SWIG_arg;
+  
+  if(0) SWIG_fail;
+  
+fail:
+  lua_error(L);
+  return SWIG_arg;
+}
+
+
+static int _wrap_Recorder_write__SWIG_1(lua_State* L) {
+  int SWIG_arg = 0;
+  gam::Recorder *arg1 = (gam::Recorder *) 0 ;
+  float arg2 ;
+  
+  SWIG_check_num_args("gam::Recorder::write",2,2)
+  if(!SWIG_isptrtype(L,1)) SWIG_fail_arg("gam::Recorder::write",1,"gam::Recorder *");
+  if(!lua_isnumber(L,2)) SWIG_fail_arg("gam::Recorder::write",2,"float");
+  
+  if (!SWIG_IsOK(SWIG_ConvertPtr(L,1,(void**)&arg1,SWIGTYPE_p_gam__Recorder,0))){
+    SWIG_fail_ptr("Recorder_write",1,SWIGTYPE_p_gam__Recorder);
+  }
+  
+  arg2 = (float)lua_tonumber(L, 2);
+  (arg1)->write(arg2);
+  
+  return SWIG_arg;
+  
+  if(0) SWIG_fail;
+  
+fail:
+  lua_error(L);
+  return SWIG_arg;
+}
+
+
+static int _wrap_Recorder_write__SWIG_2(lua_State* L) {
+  int SWIG_arg = 0;
+  gam::Recorder *arg1 = (gam::Recorder *) 0 ;
+  float arg2 ;
+  float arg3 ;
+  int arg4 ;
+  
+  SWIG_check_num_args("gam::Recorder::write",4,4)
+  if(!SWIG_isptrtype(L,1)) SWIG_fail_arg("gam::Recorder::write",1,"gam::Recorder *");
+  if(!lua_isnumber(L,2)) SWIG_fail_arg("gam::Recorder::write",2,"float");
+  if(!lua_isnumber(L,3)) SWIG_fail_arg("gam::Recorder::write",3,"float");
+  if(!lua_isnumber(L,4)) SWIG_fail_arg("gam::Recorder::write",4,"int");
+  
+  if (!SWIG_IsOK(SWIG_ConvertPtr(L,1,(void**)&arg1,SWIGTYPE_p_gam__Recorder,0))){
+    SWIG_fail_ptr("Recorder_write",1,SWIGTYPE_p_gam__Recorder);
+  }
+  
+  arg2 = (float)lua_tonumber(L, 2);
+  arg3 = (float)lua_tonumber(L, 3);
+  arg4 = (int)lua_tonumber(L, 4);
+  (arg1)->write(arg2,arg3,arg4);
+  
+  return SWIG_arg;
+  
+  if(0) SWIG_fail;
+  
+fail:
+  lua_error(L);
+  return SWIG_arg;
+}
+
+
+static int _wrap_Recorder_write__SWIG_3(lua_State* L) {
+  int SWIG_arg = 0;
+  gam::Recorder *arg1 = (gam::Recorder *) 0 ;
+  float arg2 ;
+  float arg3 ;
+  
+  SWIG_check_num_args("gam::Recorder::write",3,3)
+  if(!SWIG_isptrtype(L,1)) SWIG_fail_arg("gam::Recorder::write",1,"gam::Recorder *");
+  if(!lua_isnumber(L,2)) SWIG_fail_arg("gam::Recorder::write",2,"float");
+  if(!lua_isnumber(L,3)) SWIG_fail_arg("gam::Recorder::write",3,"float");
+  
+  if (!SWIG_IsOK(SWIG_ConvertPtr(L,1,(void**)&arg1,SWIGTYPE_p_gam__Recorder,0))){
+    SWIG_fail_ptr("Recorder_write",1,SWIGTYPE_p_gam__Recorder);
+  }
+  
+  arg2 = (float)lua_tonumber(L, 2);
+  arg3 = (float)lua_tonumber(L, 3);
+  (arg1)->write(arg2,arg3);
+  
+  return SWIG_arg;
+  
+  if(0) SWIG_fail;
+  
+fail:
+  lua_error(L);
+  return SWIG_arg;
+}
+
+
+static int _wrap_Recorder_write__SWIG_4(lua_State* L) {
+  int SWIG_arg = 0;
+  gam::Recorder *arg1 = (gam::Recorder *) 0 ;
+  float *arg2 = (float *) 0 ;
+  int arg3 ;
+  int result;
+  
+  SWIG_check_num_args("gam::Recorder::write",3,3)
+  if(!SWIG_isptrtype(L,1)) SWIG_fail_arg("gam::Recorder::write",1,"gam::Recorder *");
+  if(!SWIG_isptrtype(L,2)) SWIG_fail_arg("gam::Recorder::write",2,"float const *");
+  if(!lua_isnumber(L,3)) SWIG_fail_arg("gam::Recorder::write",3,"int");
+  
+  if (!SWIG_IsOK(SWIG_ConvertPtr(L,1,(void**)&arg1,SWIGTYPE_p_gam__Recorder,0))){
+    SWIG_fail_ptr("Recorder_write",1,SWIGTYPE_p_gam__Recorder);
+  }
+  
+  
+  if (!SWIG_IsOK(SWIG_ConvertPtr(L,2,(void**)&arg2,SWIGTYPE_p_float,0))){
+    SWIG_fail_ptr("Recorder_write",2,SWIGTYPE_p_float);
+  }
+  
+  arg3 = (int)lua_tonumber(L, 3);
+  result = (int)(arg1)->write((float const *)arg2,arg3);
+  lua_pushnumber(L, (lua_Number) result); SWIG_arg++;
+  return SWIG_arg;
+  
+  if(0) SWIG_fail;
+  
+fail:
+  lua_error(L);
+  return SWIG_arg;
+}
+
+
+static int _wrap_Recorder_write(lua_State* L) {
+  int argc;
+  int argv[5]={
+    1,2,3,4,5
+  };
+  
+  argc = lua_gettop(L);
+  if (argc == 2) {
+    int _v = 0;
+    {
+      void *ptr;
+      if (SWIG_isptrtype(L,argv[0])==0 || SWIG_ConvertPtr(L,argv[0], (void **) &ptr, SWIGTYPE_p_gam__Recorder, 0)) {
+        _v = 0;
+      } else {
+        _v = 1;
+      }
+    }
+    if (_v) {
+      {
+        _v = lua_isnumber(L,argv[1]);
+      }
+      if (_v) {
+        return _wrap_Recorder_write__SWIG_1(L);
+      }
+    }
+  }
+  if (argc == 3) {
+    int _v = 0;
+    {
+      void *ptr;
+      if (SWIG_isptrtype(L,argv[0])==0 || SWIG_ConvertPtr(L,argv[0], (void **) &ptr, SWIGTYPE_p_gam__Recorder, 0)) {
+        _v = 0;
+      } else {
+        _v = 1;
+      }
+    }
+    if (_v) {
+      {
+        void *ptr;
+        if (SWIG_isptrtype(L,argv[1])==0 || SWIG_ConvertPtr(L,argv[1], (void **) &ptr, SWIGTYPE_p_float, 0)) {
+          _v = 0;
+        } else {
+          _v = 1;
+        }
+      }
+      if (_v) {
+        {
+          _v = lua_isnumber(L,argv[2]);
+        }
+        if (_v) {
+          return _wrap_Recorder_write__SWIG_4(L);
+        }
+      }
+    }
+  }
+  if (argc == 3) {
+    int _v = 0;
+    {
+      void *ptr;
+      if (SWIG_isptrtype(L,argv[0])==0 || SWIG_ConvertPtr(L,argv[0], (void **) &ptr, SWIGTYPE_p_gam__Recorder, 0)) {
+        _v = 0;
+      } else {
+        _v = 1;
+      }
+    }
+    if (_v) {
+      {
+        _v = lua_isnumber(L,argv[1]);
+      }
+      if (_v) {
+        {
+          _v = lua_isnumber(L,argv[2]);
+        }
+        if (_v) {
+          return _wrap_Recorder_write__SWIG_3(L);
+        }
+      }
+    }
+  }
+  if (argc == 3) {
+    int _v = 0;
+    {
+      void *ptr;
+      if (SWIG_isptrtype(L,argv[0])==0 || SWIG_ConvertPtr(L,argv[0], (void **) &ptr, SWIGTYPE_p_gam__Recorder, 0)) {
+        _v = 0;
+      } else {
+        _v = 1;
+      }
+    }
+    if (_v) {
+      {
+        _v = lua_isnumber(L,argv[1]);
+      }
+      if (_v) {
+        {
+          _v = lua_isnumber(L,argv[2]);
+        }
+        if (_v) {
+          return _wrap_Recorder_write__SWIG_0(L);
+        }
+      }
+    }
+  }
+  if (argc == 4) {
+    int _v = 0;
+    {
+      void *ptr;
+      if (SWIG_isptrtype(L,argv[0])==0 || SWIG_ConvertPtr(L,argv[0], (void **) &ptr, SWIGTYPE_p_gam__Recorder, 0)) {
+        _v = 0;
+      } else {
+        _v = 1;
+      }
+    }
+    if (_v) {
+      {
+        _v = lua_isnumber(L,argv[1]);
+      }
+      if (_v) {
+        {
+          _v = lua_isnumber(L,argv[2]);
+        }
+        if (_v) {
+          {
+            _v = lua_isnumber(L,argv[3]);
+          }
+          if (_v) {
+            return _wrap_Recorder_write__SWIG_2(L);
+          }
+        }
+      }
+    }
+  }
+  
+  SWIG_Lua_pusherrstring(L,"Wrong arguments for overloaded function 'Recorder_write'\n"
+    "  Possible C/C++ prototypes are:\n"
+    "    gam::Recorder::write(float,int)\n"
+    "    gam::Recorder::write(float)\n"
+    "    gam::Recorder::write(float,float,int)\n"
+    "    gam::Recorder::write(float,float)\n"
+    "    gam::Recorder::write(float const *,int)\n");
+  lua_error(L);return 0;
+}
+
+
+static int _wrap_Recorder_read(lua_State* L) {
+  int SWIG_arg = 0;
+  gam::Recorder *arg1 = (gam::Recorder *) 0 ;
+  float **arg2 = 0 ;
+  int result;
+  
+  SWIG_check_num_args("gam::Recorder::read",2,2)
+  if(!SWIG_isptrtype(L,1)) SWIG_fail_arg("gam::Recorder::read",1,"gam::Recorder *");
+  if(!lua_isuserdata(L,2)) SWIG_fail_arg("gam::Recorder::read",2,"float *&");
+  
+  if (!SWIG_IsOK(SWIG_ConvertPtr(L,1,(void**)&arg1,SWIGTYPE_p_gam__Recorder,0))){
+    SWIG_fail_ptr("Recorder_read",1,SWIGTYPE_p_gam__Recorder);
+  }
+  
+  
+  if (!SWIG_IsOK(SWIG_ConvertPtr(L,2,(void**)&arg2,SWIGTYPE_p_p_float,0))){
+    SWIG_fail_ptr("Recorder_read",2,SWIGTYPE_p_p_float);
+  }
+  
+  result = (int)(arg1)->read(*arg2);
+  lua_pushnumber(L, (lua_Number) result); SWIG_arg++;
+  return SWIG_arg;
+  
+  if(0) SWIG_fail;
+  
+fail:
+  lua_error(L);
+  return SWIG_arg;
+}
+
+
+static int _wrap_Recorder_resize(lua_State* L) {
+  int SWIG_arg = 0;
+  gam::Recorder *arg1 = (gam::Recorder *) 0 ;
+  int arg2 ;
+  int arg3 ;
+  
+  SWIG_check_num_args("gam::Recorder::resize",3,3)
+  if(!SWIG_isptrtype(L,1)) SWIG_fail_arg("gam::Recorder::resize",1,"gam::Recorder *");
+  if(!lua_isnumber(L,2)) SWIG_fail_arg("gam::Recorder::resize",2,"int");
+  if(!lua_isnumber(L,3)) SWIG_fail_arg("gam::Recorder::resize",3,"int");
+  
+  if (!SWIG_IsOK(SWIG_ConvertPtr(L,1,(void**)&arg1,SWIGTYPE_p_gam__Recorder,0))){
+    SWIG_fail_ptr("Recorder_resize",1,SWIGTYPE_p_gam__Recorder);
+  }
+  
+  arg2 = (int)lua_tonumber(L, 2);
+  arg3 = (int)lua_tonumber(L, 3);
+  (arg1)->resize(arg2,arg3);
+  
+  return SWIG_arg;
+  
+  if(0) SWIG_fail;
+  
+fail:
+  lua_error(L);
+  return SWIG_arg;
+}
+
+
+static void swig_delete_Recorder(void *obj) {
+gam::Recorder *arg1 = (gam::Recorder *) obj;
+delete arg1;
+}
+static int _proxy__wrap_new_Recorder(lua_State *L) {
+    assert(lua_istable(L,1));
+    lua_pushcfunction(L,_wrap_new_Recorder);
+    assert(!lua_isnil(L,-1));
+    lua_replace(L,1); /* replace our table with real constructor */
+    lua_call(L,lua_gettop(L)-1,1);
+    return 1;
+}
+static swig_lua_attribute swig_Recorder_attributes[] = {
+    {0,0,0}
+};
+static swig_lua_method swig_Recorder_methods[]= {
+    { "channels", _wrap_Recorder_channels},
+    { "frames", _wrap_Recorder_frames},
+    { "size", _wrap_Recorder_size},
+    { "overwrite", _wrap_Recorder_overwrite},
+    { "advance", _wrap_Recorder_advance},
+    { "write", _wrap_Recorder_write},
+    { "read", _wrap_Recorder_read},
+    { "resize", _wrap_Recorder_resize},
+    {0,0}
+};
+static swig_lua_method swig_Recorder_meta[] = {
+    {0,0}
+};
+
+static swig_lua_attribute swig_Recorder_Sf_SwigStatic_attributes[] = {
+    {0,0,0}
+};
+static swig_lua_const_info swig_Recorder_Sf_SwigStatic_constants[]= {
+    {0,0,0,0,0,0}
+};
+static swig_lua_method swig_Recorder_Sf_SwigStatic_methods[]= {
+    {0,0}
+};
+static swig_lua_class* swig_Recorder_Sf_SwigStatic_classes[]= {
+    0
+};
+
+static swig_lua_namespace swig_Recorder_Sf_SwigStatic = {
+    "Recorder",
+    swig_Recorder_Sf_SwigStatic_methods,
+    swig_Recorder_Sf_SwigStatic_attributes,
+    swig_Recorder_Sf_SwigStatic_constants,
+    swig_Recorder_Sf_SwigStatic_classes,
+    0
+};
+static swig_lua_class *swig_Recorder_bases[] = {0};
+static const char *swig_Recorder_base_names[] = {0};
+static swig_lua_class _wrap_class_Recorder = { "Recorder", "Recorder", &SWIGTYPE_p_gam__Recorder,_proxy__wrap_new_Recorder, swig_delete_Recorder, swig_Recorder_methods, swig_Recorder_attributes, &swig_Recorder_Sf_SwigStatic, swig_Recorder_meta, swig_Recorder_bases, swig_Recorder_base_names };
+
+static int _wrap_new_SamplePlayer__SWIG_0(lua_State* L) {
+  int SWIG_arg = 0;
+  gam::SamplePlayer< SampleType > *result = 0 ;
+  
+  SWIG_check_num_args("gam::SamplePlayer< SampleType >::SamplePlayer",0,0)
+  result = (gam::SamplePlayer< SampleType > *)new gam::SamplePlayer< SampleType >();
+  SWIG_NewPointerObj(L,result,SWIGTYPE_p_gam__SamplePlayerT_float_ipl__Trunc_phsInc__OneShot_GAM_DEFAULT_DOMAIN_t,1); SWIG_arg++; 
+  return SWIG_arg;
+  
+  if(0) SWIG_fail;
+  
+fail:
+  lua_error(L);
+  return SWIG_arg;
+}
+
+
+static int _wrap_new_SamplePlayer__SWIG_1(lua_State* L) {
+  int SWIG_arg = 0;
+  gam::SamplePlayer< float > *arg1 = 0 ;
+  double arg2 ;
+  gam::SamplePlayer< SampleType > *result = 0 ;
+  
+  SWIG_check_num_args("gam::SamplePlayer< SampleType >::SamplePlayer",2,2)
+  if(!lua_isuserdata(L,1)) SWIG_fail_arg("gam::SamplePlayer< SampleType >::SamplePlayer",1,"gam::SamplePlayer< float > &");
+  if(!lua_isnumber(L,2)) SWIG_fail_arg("gam::SamplePlayer< SampleType >::SamplePlayer",2,"double");
+  
+  if (!SWIG_IsOK(SWIG_ConvertPtr(L,1,(void**)&arg1,SWIGTYPE_p_gam__SamplePlayerT_float_ipl__Trunc_phsInc__OneShot_GAM_DEFAULT_DOMAIN_t,0))){
+    SWIG_fail_ptr("new_SamplePlayer",1,SWIGTYPE_p_gam__SamplePlayerT_float_ipl__Trunc_phsInc__OneShot_GAM_DEFAULT_DOMAIN_t);
+  }
+  
+  arg2 = (double)lua_tonumber(L, 2);
+  result = (gam::SamplePlayer< SampleType > *)new gam::SamplePlayer< SampleType >(*arg1,arg2);
+  SWIG_NewPointerObj(L,result,SWIGTYPE_p_gam__SamplePlayerT_float_ipl__Trunc_phsInc__OneShot_GAM_DEFAULT_DOMAIN_t,1); SWIG_arg++; 
+  return SWIG_arg;
+  
+  if(0) SWIG_fail;
+  
+fail:
+  lua_error(L);
+  return SWIG_arg;
+}
+
+
+static int _wrap_new_SamplePlayer__SWIG_2(lua_State* L) {
+  int SWIG_arg = 0;
+  gam::SamplePlayer< float > *arg1 = 0 ;
+  gam::SamplePlayer< SampleType > *result = 0 ;
+  
+  SWIG_check_num_args("gam::SamplePlayer< SampleType >::SamplePlayer",1,1)
+  if(!lua_isuserdata(L,1)) SWIG_fail_arg("gam::SamplePlayer< SampleType >::SamplePlayer",1,"gam::SamplePlayer< float > &");
+  
+  if (!SWIG_IsOK(SWIG_ConvertPtr(L,1,(void**)&arg1,SWIGTYPE_p_gam__SamplePlayerT_float_ipl__Trunc_phsInc__OneShot_GAM_DEFAULT_DOMAIN_t,0))){
+    SWIG_fail_ptr("new_SamplePlayer",1,SWIGTYPE_p_gam__SamplePlayerT_float_ipl__Trunc_phsInc__OneShot_GAM_DEFAULT_DOMAIN_t);
+  }
+  
+  result = (gam::SamplePlayer< SampleType > *)new gam::SamplePlayer< SampleType >(*arg1);
+  SWIG_NewPointerObj(L,result,SWIGTYPE_p_gam__SamplePlayerT_float_ipl__Trunc_phsInc__OneShot_GAM_DEFAULT_DOMAIN_t,1); SWIG_arg++; 
+  return SWIG_arg;
+  
+  if(0) SWIG_fail;
+  
+fail:
+  lua_error(L);
+  return SWIG_arg;
+}
+
+
+static int _wrap_new_SamplePlayer__SWIG_3(lua_State* L) {
+  int SWIG_arg = 0;
+  gam::Array< float > *arg1 = 0 ;
+  double arg2 ;
+  double arg3 ;
+  gam::SamplePlayer< SampleType > *result = 0 ;
+  
+  SWIG_check_num_args("gam::SamplePlayer< SampleType >::SamplePlayer",3,3)
+  if(!lua_isuserdata(L,1)) SWIG_fail_arg("gam::SamplePlayer< SampleType >::SamplePlayer",1,"gam::Array< float > &");
+  if(!lua_isnumber(L,2)) SWIG_fail_arg("gam::SamplePlayer< SampleType >::SamplePlayer",2,"double");
+  if(!lua_isnumber(L,3)) SWIG_fail_arg("gam::SamplePlayer< SampleType >::SamplePlayer",3,"double");
+  
+  if (!SWIG_IsOK(SWIG_ConvertPtr(L,1,(void**)&arg1,SWIGTYPE_p_gam__ArrayT_float_t,0))){
+    SWIG_fail_ptr("new_SamplePlayer",1,SWIGTYPE_p_gam__ArrayT_float_t);
+  }
+  
+  arg2 = (double)lua_tonumber(L, 2);
+  arg3 = (double)lua_tonumber(L, 3);
+  result = (gam::SamplePlayer< SampleType > *)new gam::SamplePlayer< SampleType >(*arg1,arg2,arg3);
+  SWIG_NewPointerObj(L,result,SWIGTYPE_p_gam__SamplePlayerT_float_ipl__Trunc_phsInc__OneShot_GAM_DEFAULT_DOMAIN_t,1); SWIG_arg++; 
+  return SWIG_arg;
+  
+  if(0) SWIG_fail;
+  
+fail:
+  lua_error(L);
+  return SWIG_arg;
+}
+
+
+static int _wrap_new_SamplePlayer__SWIG_4(lua_State* L) {
+  int SWIG_arg = 0;
+  gam::Array< float > *arg1 = 0 ;
+  double arg2 ;
+  gam::SamplePlayer< SampleType > *result = 0 ;
+  
+  SWIG_check_num_args("gam::SamplePlayer< SampleType >::SamplePlayer",2,2)
+  if(!lua_isuserdata(L,1)) SWIG_fail_arg("gam::SamplePlayer< SampleType >::SamplePlayer",1,"gam::Array< float > &");
+  if(!lua_isnumber(L,2)) SWIG_fail_arg("gam::SamplePlayer< SampleType >::SamplePlayer",2,"double");
+  
+  if (!SWIG_IsOK(SWIG_ConvertPtr(L,1,(void**)&arg1,SWIGTYPE_p_gam__ArrayT_float_t,0))){
+    SWIG_fail_ptr("new_SamplePlayer",1,SWIGTYPE_p_gam__ArrayT_float_t);
+  }
+  
+  arg2 = (double)lua_tonumber(L, 2);
+  result = (gam::SamplePlayer< SampleType > *)new gam::SamplePlayer< SampleType >(*arg1,arg2);
+  SWIG_NewPointerObj(L,result,SWIGTYPE_p_gam__SamplePlayerT_float_ipl__Trunc_phsInc__OneShot_GAM_DEFAULT_DOMAIN_t,1); SWIG_arg++; 
+  return SWIG_arg;
+  
+  if(0) SWIG_fail;
+  
+fail:
+  lua_error(L);
+  return SWIG_arg;
+}
+
+
+static int _wrap_new_SamplePlayer__SWIG_5(lua_State* L) {
+  int SWIG_arg = 0;
+  char *arg1 = (char *) 0 ;
+  double arg2 ;
+  gam::SamplePlayer< SampleType > *result = 0 ;
+  
+  SWIG_check_num_args("gam::SamplePlayer< SampleType >::SamplePlayer",2,2)
+  if(!SWIG_lua_isnilstring(L,1)) SWIG_fail_arg("gam::SamplePlayer< SampleType >::SamplePlayer",1,"char const *");
+  if(!lua_isnumber(L,2)) SWIG_fail_arg("gam::SamplePlayer< SampleType >::SamplePlayer",2,"double");
+  arg1 = (char *)lua_tostring(L, 1);
+  arg2 = (double)lua_tonumber(L, 2);
+  result = (gam::SamplePlayer< SampleType > *)new gam::SamplePlayer< SampleType >((char const *)arg1,arg2);
+  SWIG_NewPointerObj(L,result,SWIGTYPE_p_gam__SamplePlayerT_float_ipl__Trunc_phsInc__OneShot_GAM_DEFAULT_DOMAIN_t,1); SWIG_arg++; 
+  return SWIG_arg;
+  
+  if(0) SWIG_fail;
+  
+fail:
+  lua_error(L);
+  return SWIG_arg;
+}
+
+
+static int _wrap_new_SamplePlayer__SWIG_6(lua_State* L) {
+  int SWIG_arg = 0;
+  char *arg1 = (char *) 0 ;
+  gam::SamplePlayer< SampleType > *result = 0 ;
+  
+  SWIG_check_num_args("gam::SamplePlayer< SampleType >::SamplePlayer",1,1)
+  if(!SWIG_lua_isnilstring(L,1)) SWIG_fail_arg("gam::SamplePlayer< SampleType >::SamplePlayer",1,"char const *");
+  arg1 = (char *)lua_tostring(L, 1);
+  result = (gam::SamplePlayer< SampleType > *)new gam::SamplePlayer< SampleType >((char const *)arg1);
+  SWIG_NewPointerObj(L,result,SWIGTYPE_p_gam__SamplePlayerT_float_ipl__Trunc_phsInc__OneShot_GAM_DEFAULT_DOMAIN_t,1); SWIG_arg++; 
+  return SWIG_arg;
+  
+  if(0) SWIG_fail;
+  
+fail:
+  lua_error(L);
+  return SWIG_arg;
+}
+
+
+static int _wrap_new_SamplePlayer(lua_State* L) {
+  int argc;
+  int argv[4]={
+    1,2,3,4
+  };
+  
+  argc = lua_gettop(L);
+  if (argc == 0) {
+    return _wrap_new_SamplePlayer__SWIG_0(L);
+  }
+  if (argc == 1) {
+    int _v = 0;
+    {
+      void *ptr;
+      if (lua_isuserdata(L,argv[0])==0 || SWIG_ConvertPtr(L,argv[0], (void **) &ptr, SWIGTYPE_p_gam__SamplePlayerT_float_ipl__Trunc_phsInc__OneShot_GAM_DEFAULT_DOMAIN_t, SWIG_POINTER_NO_NULL)) {
+        _v = 0;
+      } else {
+        _v = 1;
+      }
+    }
+    if (_v) {
+      return _wrap_new_SamplePlayer__SWIG_2(L);
+    }
+  }
+  if (argc == 1) {
+    int _v = 0;
+    {
+      _v = SWIG_lua_isnilstring(L,argv[0]);
+    }
+    if (_v) {
+      return _wrap_new_SamplePlayer__SWIG_6(L);
+    }
+  }
+  if (argc == 2) {
+    int _v = 0;
+    {
+      void *ptr;
+      if (lua_isuserdata(L,argv[0])==0 || SWIG_ConvertPtr(L,argv[0], (void **) &ptr, SWIGTYPE_p_gam__ArrayT_float_t, SWIG_POINTER_NO_NULL)) {
+        _v = 0;
+      } else {
+        _v = 1;
+      }
+    }
+    if (_v) {
+      {
+        _v = lua_isnumber(L,argv[1]);
+      }
+      if (_v) {
+        return _wrap_new_SamplePlayer__SWIG_4(L);
+      }
+    }
+  }
+  if (argc == 2) {
+    int _v = 0;
+    {
+      void *ptr;
+      if (lua_isuserdata(L,argv[0])==0 || SWIG_ConvertPtr(L,argv[0], (void **) &ptr, SWIGTYPE_p_gam__SamplePlayerT_float_ipl__Trunc_phsInc__OneShot_GAM_DEFAULT_DOMAIN_t, SWIG_POINTER_NO_NULL)) {
+        _v = 0;
+      } else {
+        _v = 1;
+      }
+    }
+    if (_v) {
+      {
+        _v = lua_isnumber(L,argv[1]);
+      }
+      if (_v) {
+        return _wrap_new_SamplePlayer__SWIG_1(L);
+      }
+    }
+  }
+  if (argc == 2) {
+    int _v = 0;
+    {
+      _v = SWIG_lua_isnilstring(L,argv[0]);
+    }
+    if (_v) {
+      {
+        _v = lua_isnumber(L,argv[1]);
+      }
+      if (_v) {
+        return _wrap_new_SamplePlayer__SWIG_5(L);
+      }
+    }
+  }
+  if (argc == 3) {
+    int _v = 0;
+    {
+      void *ptr;
+      if (lua_isuserdata(L,argv[0])==0 || SWIG_ConvertPtr(L,argv[0], (void **) &ptr, SWIGTYPE_p_gam__ArrayT_float_t, SWIG_POINTER_NO_NULL)) {
+        _v = 0;
+      } else {
+        _v = 1;
+      }
+    }
+    if (_v) {
+      {
+        _v = lua_isnumber(L,argv[1]);
+      }
+      if (_v) {
+        {
+          _v = lua_isnumber(L,argv[2]);
+        }
+        if (_v) {
+          return _wrap_new_SamplePlayer__SWIG_3(L);
+        }
+      }
+    }
+  }
+  
+  SWIG_Lua_pusherrstring(L,"Wrong arguments for overloaded function 'new_SamplePlayer'\n"
+    "  Possible C/C++ prototypes are:\n"
+    "    gam::SamplePlayer< SampleType >::SamplePlayer()\n"
+    "    gam::SamplePlayer< SampleType >::SamplePlayer(gam::SamplePlayer< float > &,double)\n"
+    "    gam::SamplePlayer< SampleType >::SamplePlayer(gam::SamplePlayer< float > &)\n"
+    "    gam::SamplePlayer< SampleType >::SamplePlayer(gam::Array< float > &,double,double)\n"
+    "    gam::SamplePlayer< SampleType >::SamplePlayer(gam::Array< float > &,double)\n"
+    "    gam::SamplePlayer< SampleType >::SamplePlayer(char const *,double)\n"
+    "    gam::SamplePlayer< SampleType >::SamplePlayer(char const *)\n");
+  lua_error(L);return 0;
+}
+
+
+static int _wrap_SamplePlayer_load(lua_State* L) {
+  int SWIG_arg = 0;
+  gam::SamplePlayer< SampleType > *arg1 = (gam::SamplePlayer< SampleType > *) 0 ;
+  char *arg2 = (char *) 0 ;
+  bool result;
+  
+  SWIG_check_num_args("gam::SamplePlayer< SampleType >::load",2,2)
+  if(!SWIG_isptrtype(L,1)) SWIG_fail_arg("gam::SamplePlayer< SampleType >::load",1,"gam::SamplePlayer< SampleType > *");
+  if(!SWIG_lua_isnilstring(L,2)) SWIG_fail_arg("gam::SamplePlayer< SampleType >::load",2,"char const *");
+  
+  if (!SWIG_IsOK(SWIG_ConvertPtr(L,1,(void**)&arg1,SWIGTYPE_p_gam__SamplePlayerT_float_ipl__Trunc_phsInc__OneShot_GAM_DEFAULT_DOMAIN_t,0))){
+    SWIG_fail_ptr("SamplePlayer_load",1,SWIGTYPE_p_gam__SamplePlayerT_float_ipl__Trunc_phsInc__OneShot_GAM_DEFAULT_DOMAIN_t);
+  }
+  
+  arg2 = (char *)lua_tostring(L, 2);
+  result = (bool)(arg1)->load((char const *)arg2);
+  lua_pushboolean(L,(int)(result!=0)); SWIG_arg++;
+  return SWIG_arg;
+  
+  if(0) SWIG_fail;
+  
+fail:
+  lua_error(L);
+  return SWIG_arg;
+}
+
+
+static int _wrap_SamplePlayer___call__SWIG_0(lua_State* L) {
+  int SWIG_arg = 0;
+  gam::SamplePlayer< SampleType > *arg1 = (gam::SamplePlayer< SampleType > *) 0 ;
+  int arg2 ;
+  float result;
+  
+  SWIG_check_num_args("gam::SamplePlayer< SampleType >::operator ()",2,2)
+  if(!SWIG_isptrtype(L,1)) SWIG_fail_arg("gam::SamplePlayer< SampleType >::operator ()",1,"gam::SamplePlayer< SampleType > *");
+  if(!lua_isnumber(L,2)) SWIG_fail_arg("gam::SamplePlayer< SampleType >::operator ()",2,"int");
+  
+  if (!SWIG_IsOK(SWIG_ConvertPtr(L,1,(void**)&arg1,SWIGTYPE_p_gam__SamplePlayerT_float_ipl__Trunc_phsInc__OneShot_GAM_DEFAULT_DOMAIN_t,0))){
+    SWIG_fail_ptr("SamplePlayer___call",1,SWIGTYPE_p_gam__SamplePlayerT_float_ipl__Trunc_phsInc__OneShot_GAM_DEFAULT_DOMAIN_t);
+  }
+  
+  arg2 = (int)lua_tonumber(L, 2);
+  result = (float)(arg1)->operator ()(arg2);
+  lua_pushnumber(L, (lua_Number) result); SWIG_arg++;
+  return SWIG_arg;
+  
+  if(0) SWIG_fail;
+  
+fail:
+  lua_error(L);
+  return SWIG_arg;
+}
+
+
+static int _wrap_SamplePlayer___call__SWIG_1(lua_State* L) {
+  int SWIG_arg = 0;
+  gam::SamplePlayer< SampleType > *arg1 = (gam::SamplePlayer< SampleType > *) 0 ;
+  float result;
+  
+  SWIG_check_num_args("gam::SamplePlayer< SampleType >::operator ()",1,1)
+  if(!SWIG_isptrtype(L,1)) SWIG_fail_arg("gam::SamplePlayer< SampleType >::operator ()",1,"gam::SamplePlayer< SampleType > *");
+  
+  if (!SWIG_IsOK(SWIG_ConvertPtr(L,1,(void**)&arg1,SWIGTYPE_p_gam__SamplePlayerT_float_ipl__Trunc_phsInc__OneShot_GAM_DEFAULT_DOMAIN_t,0))){
+    SWIG_fail_ptr("SamplePlayer___call",1,SWIGTYPE_p_gam__SamplePlayerT_float_ipl__Trunc_phsInc__OneShot_GAM_DEFAULT_DOMAIN_t);
+  }
+  
+  result = (float)(arg1)->operator ()();
+  lua_pushnumber(L, (lua_Number) result); SWIG_arg++;
+  return SWIG_arg;
+  
+  if(0) SWIG_fail;
+  
+fail:
+  lua_error(L);
+  return SWIG_arg;
+}
+
+
+static int _wrap_SamplePlayer___call(lua_State* L) {
+  int argc;
+  int argv[3]={
+    1,2,3
+  };
+  
+  argc = lua_gettop(L);
+  if (argc == 1) {
+    int _v = 0;
+    {
+      void *ptr;
+      if (SWIG_isptrtype(L,argv[0])==0 || SWIG_ConvertPtr(L,argv[0], (void **) &ptr, SWIGTYPE_p_gam__SamplePlayerT_float_ipl__Trunc_phsInc__OneShot_GAM_DEFAULT_DOMAIN_t, 0)) {
+        _v = 0;
+      } else {
+        _v = 1;
+      }
+    }
+    if (_v) {
+      return _wrap_SamplePlayer___call__SWIG_1(L);
+    }
+  }
+  if (argc == 2) {
+    int _v = 0;
+    {
+      void *ptr;
+      if (SWIG_isptrtype(L,argv[0])==0 || SWIG_ConvertPtr(L,argv[0], (void **) &ptr, SWIGTYPE_p_gam__SamplePlayerT_float_ipl__Trunc_phsInc__OneShot_GAM_DEFAULT_DOMAIN_t, 0)) {
+        _v = 0;
+      } else {
+        _v = 1;
+      }
+    }
+    if (_v) {
+      {
+        _v = lua_isnumber(L,argv[1]);
+      }
+      if (_v) {
+        return _wrap_SamplePlayer___call__SWIG_0(L);
+      }
+    }
+  }
+  
+  SWIG_Lua_pusherrstring(L,"Wrong arguments for overloaded function 'SamplePlayer___call'\n"
+    "  Possible C/C++ prototypes are:\n"
+    "    gam::SamplePlayer< SampleType >::operator ()(int)\n"
+    "    gam::SamplePlayer< SampleType >::operator ()()\n");
+  lua_error(L);return 0;
+}
+
+
+static int _wrap_SamplePlayer_Tick__SWIG_0(lua_State* L) {
+  int SWIG_arg = 0;
+  gam::SamplePlayer< SampleType > *arg1 = (gam::SamplePlayer< SampleType > *) 0 ;
+  int arg2 ;
+  float result;
+  
+  SWIG_check_num_args("gam::SamplePlayer< SampleType >::Tick",2,2)
+  if(!SWIG_isptrtype(L,1)) SWIG_fail_arg("gam::SamplePlayer< SampleType >::Tick",1,"gam::SamplePlayer< SampleType > *");
+  if(!lua_isnumber(L,2)) SWIG_fail_arg("gam::SamplePlayer< SampleType >::Tick",2,"int");
+  
+  if (!SWIG_IsOK(SWIG_ConvertPtr(L,1,(void**)&arg1,SWIGTYPE_p_gam__SamplePlayerT_float_ipl__Trunc_phsInc__OneShot_GAM_DEFAULT_DOMAIN_t,0))){
+    SWIG_fail_ptr("SamplePlayer_Tick",1,SWIGTYPE_p_gam__SamplePlayerT_float_ipl__Trunc_phsInc__OneShot_GAM_DEFAULT_DOMAIN_t);
+  }
+  
+  arg2 = (int)lua_tonumber(L, 2);
+  result = (float)gam_SamplePlayer_Sl_SampleType_Sg__Tick__SWIG_0(arg1,arg2);
+  lua_pushnumber(L, (lua_Number) result); SWIG_arg++;
+  return SWIG_arg;
+  
+  if(0) SWIG_fail;
+  
+fail:
+  lua_error(L);
+  return SWIG_arg;
+}
+
+
+static int _wrap_SamplePlayer_Tick__SWIG_1(lua_State* L) {
+  int SWIG_arg = 0;
+  gam::SamplePlayer< SampleType > *arg1 = (gam::SamplePlayer< SampleType > *) 0 ;
+  float result;
+  
+  SWIG_check_num_args("gam::SamplePlayer< SampleType >::Tick",1,1)
+  if(!SWIG_isptrtype(L,1)) SWIG_fail_arg("gam::SamplePlayer< SampleType >::Tick",1,"gam::SamplePlayer< SampleType > *");
+  
+  if (!SWIG_IsOK(SWIG_ConvertPtr(L,1,(void**)&arg1,SWIGTYPE_p_gam__SamplePlayerT_float_ipl__Trunc_phsInc__OneShot_GAM_DEFAULT_DOMAIN_t,0))){
+    SWIG_fail_ptr("SamplePlayer_Tick",1,SWIGTYPE_p_gam__SamplePlayerT_float_ipl__Trunc_phsInc__OneShot_GAM_DEFAULT_DOMAIN_t);
+  }
+  
+  result = (float)gam_SamplePlayer_Sl_SampleType_Sg__Tick__SWIG_0(arg1);
+  lua_pushnumber(L, (lua_Number) result); SWIG_arg++;
+  return SWIG_arg;
+  
+  if(0) SWIG_fail;
+  
+fail:
+  lua_error(L);
+  return SWIG_arg;
+}
+
+
+static int _wrap_SamplePlayer_Tick(lua_State* L) {
+  int argc;
+  int argv[3]={
+    1,2,3
+  };
+  
+  argc = lua_gettop(L);
+  if (argc == 1) {
+    int _v = 0;
+    {
+      void *ptr;
+      if (SWIG_isptrtype(L,argv[0])==0 || SWIG_ConvertPtr(L,argv[0], (void **) &ptr, SWIGTYPE_p_gam__SamplePlayerT_float_ipl__Trunc_phsInc__OneShot_GAM_DEFAULT_DOMAIN_t, 0)) {
+        _v = 0;
+      } else {
+        _v = 1;
+      }
+    }
+    if (_v) {
+      return _wrap_SamplePlayer_Tick__SWIG_1(L);
+    }
+  }
+  if (argc == 2) {
+    int _v = 0;
+    {
+      void *ptr;
+      if (SWIG_isptrtype(L,argv[0])==0 || SWIG_ConvertPtr(L,argv[0], (void **) &ptr, SWIGTYPE_p_gam__SamplePlayerT_float_ipl__Trunc_phsInc__OneShot_GAM_DEFAULT_DOMAIN_t, 0)) {
+        _v = 0;
+      } else {
+        _v = 1;
+      }
+    }
+    if (_v) {
+      {
+        _v = lua_isnumber(L,argv[1]);
+      }
+      if (_v) {
+        return _wrap_SamplePlayer_Tick__SWIG_0(L);
+      }
+    }
+  }
+  
+  SWIG_Lua_pusherrstring(L,"Wrong arguments for overloaded function 'SamplePlayer_Tick'\n"
+    "  Possible C/C++ prototypes are:\n"
+    "    gam::SamplePlayer< SampleType >::Tick(int)\n"
+    "    gam::SamplePlayer< SampleType >::Tick()\n");
+  lua_error(L);return 0;
+}
+
+
+static int _wrap_SamplePlayer_read(lua_State* L) {
+  int SWIG_arg = 0;
+  gam::SamplePlayer< SampleType > *arg1 = (gam::SamplePlayer< SampleType > *) 0 ;
+  int arg2 ;
+  float result;
+  
+  SWIG_check_num_args("gam::SamplePlayer< SampleType >::read",2,2)
+  if(!SWIG_isptrtype(L,1)) SWIG_fail_arg("gam::SamplePlayer< SampleType >::read",1,"gam::SamplePlayer< SampleType > const *");
+  if(!lua_isnumber(L,2)) SWIG_fail_arg("gam::SamplePlayer< SampleType >::read",2,"int");
+  
+  if (!SWIG_IsOK(SWIG_ConvertPtr(L,1,(void**)&arg1,SWIGTYPE_p_gam__SamplePlayerT_float_ipl__Trunc_phsInc__OneShot_GAM_DEFAULT_DOMAIN_t,0))){
+    SWIG_fail_ptr("SamplePlayer_read",1,SWIGTYPE_p_gam__SamplePlayerT_float_ipl__Trunc_phsInc__OneShot_GAM_DEFAULT_DOMAIN_t);
+  }
+  
+  arg2 = (int)lua_tonumber(L, 2);
+  result = (float)((gam::SamplePlayer< SampleType > const *)arg1)->read(arg2);
+  lua_pushnumber(L, (lua_Number) result); SWIG_arg++;
+  return SWIG_arg;
+  
+  if(0) SWIG_fail;
+  
+fail:
+  lua_error(L);
+  return SWIG_arg;
+}
+
+
+static int _wrap_SamplePlayer_readFloat(lua_State* L) {
+  int SWIG_arg = 0;
+  gam::SamplePlayer< SampleType > *arg1 = (gam::SamplePlayer< SampleType > *) 0 ;
+  int arg2 ;
+  float result;
+  
+  SWIG_check_num_args("gam::SamplePlayer< SampleType >::readFloat",2,2)
+  if(!SWIG_isptrtype(L,1)) SWIG_fail_arg("gam::SamplePlayer< SampleType >::readFloat",1,"gam::SamplePlayer< SampleType > const *");
+  if(!lua_isnumber(L,2)) SWIG_fail_arg("gam::SamplePlayer< SampleType >::readFloat",2,"int");
+  
+  if (!SWIG_IsOK(SWIG_ConvertPtr(L,1,(void**)&arg1,SWIGTYPE_p_gam__SamplePlayerT_float_ipl__Trunc_phsInc__OneShot_GAM_DEFAULT_DOMAIN_t,0))){
+    SWIG_fail_ptr("SamplePlayer_readFloat",1,SWIGTYPE_p_gam__SamplePlayerT_float_ipl__Trunc_phsInc__OneShot_GAM_DEFAULT_DOMAIN_t);
+  }
+  
+  arg2 = (int)lua_tonumber(L, 2);
+  result = (float)((gam::SamplePlayer< SampleType > const *)arg1)->readFloat(arg2);
+  lua_pushnumber(L, (lua_Number) result); SWIG_arg++;
+  return SWIG_arg;
+  
+  if(0) SWIG_fail;
+  
+fail:
+  lua_error(L);
+  return SWIG_arg;
+}
+
+
+static int _wrap_SamplePlayer_advance__SWIG_0(lua_State* L) {
+  int SWIG_arg = 0;
+  gam::SamplePlayer< SampleType > *arg1 = (gam::SamplePlayer< SampleType > *) 0 ;
+  
+  SWIG_check_num_args("gam::SamplePlayer< SampleType >::advance",1,1)
+  if(!SWIG_isptrtype(L,1)) SWIG_fail_arg("gam::SamplePlayer< SampleType >::advance",1,"gam::SamplePlayer< SampleType > *");
+  
+  if (!SWIG_IsOK(SWIG_ConvertPtr(L,1,(void**)&arg1,SWIGTYPE_p_gam__SamplePlayerT_float_ipl__Trunc_phsInc__OneShot_GAM_DEFAULT_DOMAIN_t,0))){
+    SWIG_fail_ptr("SamplePlayer_advance",1,SWIGTYPE_p_gam__SamplePlayerT_float_ipl__Trunc_phsInc__OneShot_GAM_DEFAULT_DOMAIN_t);
+  }
+  
+  (arg1)->advance();
+  
+  return SWIG_arg;
+  
+  if(0) SWIG_fail;
+  
+fail:
+  lua_error(L);
+  return SWIG_arg;
+}
+
+
+static int _wrap_SamplePlayer_advance__SWIG_1(lua_State* L) {
+  int SWIG_arg = 0;
+  gam::SamplePlayer< SampleType > *arg1 = (gam::SamplePlayer< SampleType > *) 0 ;
+  double arg2 ;
+  
+  SWIG_check_num_args("gam::SamplePlayer< SampleType >::advance",2,2)
+  if(!SWIG_isptrtype(L,1)) SWIG_fail_arg("gam::SamplePlayer< SampleType >::advance",1,"gam::SamplePlayer< SampleType > *");
+  if(!lua_isnumber(L,2)) SWIG_fail_arg("gam::SamplePlayer< SampleType >::advance",2,"double");
+  
+  if (!SWIG_IsOK(SWIG_ConvertPtr(L,1,(void**)&arg1,SWIGTYPE_p_gam__SamplePlayerT_float_ipl__Trunc_phsInc__OneShot_GAM_DEFAULT_DOMAIN_t,0))){
+    SWIG_fail_ptr("SamplePlayer_advance",1,SWIGTYPE_p_gam__SamplePlayerT_float_ipl__Trunc_phsInc__OneShot_GAM_DEFAULT_DOMAIN_t);
+  }
+  
+  arg2 = (double)lua_tonumber(L, 2);
+  (arg1)->advance(arg2);
+  
+  return SWIG_arg;
+  
+  if(0) SWIG_fail;
+  
+fail:
+  lua_error(L);
+  return SWIG_arg;
+}
+
+
+static int _wrap_SamplePlayer_advance(lua_State* L) {
+  int argc;
+  int argv[3]={
+    1,2,3
+  };
+  
+  argc = lua_gettop(L);
+  if (argc == 1) {
+    int _v = 0;
+    {
+      void *ptr;
+      if (SWIG_isptrtype(L,argv[0])==0 || SWIG_ConvertPtr(L,argv[0], (void **) &ptr, SWIGTYPE_p_gam__SamplePlayerT_float_ipl__Trunc_phsInc__OneShot_GAM_DEFAULT_DOMAIN_t, 0)) {
+        _v = 0;
+      } else {
+        _v = 1;
+      }
+    }
+    if (_v) {
+      return _wrap_SamplePlayer_advance__SWIG_0(L);
+    }
+  }
+  if (argc == 2) {
+    int _v = 0;
+    {
+      void *ptr;
+      if (SWIG_isptrtype(L,argv[0])==0 || SWIG_ConvertPtr(L,argv[0], (void **) &ptr, SWIGTYPE_p_gam__SamplePlayerT_float_ipl__Trunc_phsInc__OneShot_GAM_DEFAULT_DOMAIN_t, 0)) {
+        _v = 0;
+      } else {
+        _v = 1;
+      }
+    }
+    if (_v) {
+      {
+        _v = lua_isnumber(L,argv[1]);
+      }
+      if (_v) {
+        return _wrap_SamplePlayer_advance__SWIG_1(L);
+      }
+    }
+  }
+  
+  SWIG_Lua_pusherrstring(L,"Wrong arguments for overloaded function 'SamplePlayer_advance'\n"
+    "  Possible C/C++ prototypes are:\n"
+    "    gam::SamplePlayer< SampleType >::advance()\n"
+    "    gam::SamplePlayer< SampleType >::advance(double)\n");
+  lua_error(L);return 0;
+}
+
+
+static int _wrap_SamplePlayer_buffer__SWIG_0(lua_State* L) {
+  int SWIG_arg = 0;
+  gam::SamplePlayer< SampleType > *arg1 = (gam::SamplePlayer< SampleType > *) 0 ;
+  gam::Array< float > *arg2 = 0 ;
+  double arg3 ;
+  int arg4 ;
+  bool arg5 ;
+  
+  SWIG_check_num_args("gam::SamplePlayer< SampleType >::buffer",5,5)
+  if(!SWIG_isptrtype(L,1)) SWIG_fail_arg("gam::SamplePlayer< SampleType >::buffer",1,"gam::SamplePlayer< SampleType > *");
+  if(!lua_isuserdata(L,2)) SWIG_fail_arg("gam::SamplePlayer< SampleType >::buffer",2,"gam::Array< float > &");
+  if(!lua_isnumber(L,3)) SWIG_fail_arg("gam::SamplePlayer< SampleType >::buffer",3,"double");
+  if(!lua_isnumber(L,4)) SWIG_fail_arg("gam::SamplePlayer< SampleType >::buffer",4,"int");
+  if(!lua_isboolean(L,5)) SWIG_fail_arg("gam::SamplePlayer< SampleType >::buffer",5,"bool");
+  
+  if (!SWIG_IsOK(SWIG_ConvertPtr(L,1,(void**)&arg1,SWIGTYPE_p_gam__SamplePlayerT_float_ipl__Trunc_phsInc__OneShot_GAM_DEFAULT_DOMAIN_t,0))){
+    SWIG_fail_ptr("SamplePlayer_buffer",1,SWIGTYPE_p_gam__SamplePlayerT_float_ipl__Trunc_phsInc__OneShot_GAM_DEFAULT_DOMAIN_t);
+  }
+  
+  
+  if (!SWIG_IsOK(SWIG_ConvertPtr(L,2,(void**)&arg2,SWIGTYPE_p_gam__ArrayT_float_t,0))){
+    SWIG_fail_ptr("SamplePlayer_buffer",2,SWIGTYPE_p_gam__ArrayT_float_t);
+  }
+  
+  arg3 = (double)lua_tonumber(L, 3);
+  arg4 = (int)lua_tonumber(L, 4);
+  arg5 = (lua_toboolean(L, 5)!=0);
+  (arg1)->buffer(*arg2,arg3,arg4,arg5);
+  
+  return SWIG_arg;
+  
+  if(0) SWIG_fail;
+  
+fail:
+  lua_error(L);
+  return SWIG_arg;
+}
+
+
+static int _wrap_SamplePlayer_buffer__SWIG_1(lua_State* L) {
+  int SWIG_arg = 0;
+  gam::SamplePlayer< SampleType > *arg1 = (gam::SamplePlayer< SampleType > *) 0 ;
+  gam::Array< float > *arg2 = 0 ;
+  double arg3 ;
+  int arg4 ;
+  
+  SWIG_check_num_args("gam::SamplePlayer< SampleType >::buffer",4,4)
+  if(!SWIG_isptrtype(L,1)) SWIG_fail_arg("gam::SamplePlayer< SampleType >::buffer",1,"gam::SamplePlayer< SampleType > *");
+  if(!lua_isuserdata(L,2)) SWIG_fail_arg("gam::SamplePlayer< SampleType >::buffer",2,"gam::Array< float > &");
+  if(!lua_isnumber(L,3)) SWIG_fail_arg("gam::SamplePlayer< SampleType >::buffer",3,"double");
+  if(!lua_isnumber(L,4)) SWIG_fail_arg("gam::SamplePlayer< SampleType >::buffer",4,"int");
+  
+  if (!SWIG_IsOK(SWIG_ConvertPtr(L,1,(void**)&arg1,SWIGTYPE_p_gam__SamplePlayerT_float_ipl__Trunc_phsInc__OneShot_GAM_DEFAULT_DOMAIN_t,0))){
+    SWIG_fail_ptr("SamplePlayer_buffer",1,SWIGTYPE_p_gam__SamplePlayerT_float_ipl__Trunc_phsInc__OneShot_GAM_DEFAULT_DOMAIN_t);
+  }
+  
+  
+  if (!SWIG_IsOK(SWIG_ConvertPtr(L,2,(void**)&arg2,SWIGTYPE_p_gam__ArrayT_float_t,0))){
+    SWIG_fail_ptr("SamplePlayer_buffer",2,SWIGTYPE_p_gam__ArrayT_float_t);
+  }
+  
+  arg3 = (double)lua_tonumber(L, 3);
+  arg4 = (int)lua_tonumber(L, 4);
+  (arg1)->buffer(*arg2,arg3,arg4);
+  
+  return SWIG_arg;
+  
+  if(0) SWIG_fail;
+  
+fail:
+  lua_error(L);
+  return SWIG_arg;
+}
+
+
+static int _wrap_SamplePlayer_buffer__SWIG_2(lua_State* L) {
+  int SWIG_arg = 0;
+  gam::SamplePlayer< SampleType > *arg1 = (gam::SamplePlayer< SampleType > *) 0 ;
+  float *arg2 = (float *) 0 ;
+  int arg3 ;
+  double arg4 ;
+  int arg5 ;
+  bool arg6 ;
+  
+  SWIG_check_num_args("gam::SamplePlayer< SampleType >::buffer",6,6)
+  if(!SWIG_isptrtype(L,1)) SWIG_fail_arg("gam::SamplePlayer< SampleType >::buffer",1,"gam::SamplePlayer< SampleType > *");
+  if(!SWIG_isptrtype(L,2)) SWIG_fail_arg("gam::SamplePlayer< SampleType >::buffer",2,"float *");
+  if(!lua_isnumber(L,3)) SWIG_fail_arg("gam::SamplePlayer< SampleType >::buffer",3,"int");
+  if(!lua_isnumber(L,4)) SWIG_fail_arg("gam::SamplePlayer< SampleType >::buffer",4,"double");
+  if(!lua_isnumber(L,5)) SWIG_fail_arg("gam::SamplePlayer< SampleType >::buffer",5,"int");
+  if(!lua_isboolean(L,6)) SWIG_fail_arg("gam::SamplePlayer< SampleType >::buffer",6,"bool");
+  
+  if (!SWIG_IsOK(SWIG_ConvertPtr(L,1,(void**)&arg1,SWIGTYPE_p_gam__SamplePlayerT_float_ipl__Trunc_phsInc__OneShot_GAM_DEFAULT_DOMAIN_t,0))){
+    SWIG_fail_ptr("SamplePlayer_buffer",1,SWIGTYPE_p_gam__SamplePlayerT_float_ipl__Trunc_phsInc__OneShot_GAM_DEFAULT_DOMAIN_t);
+  }
+  
+  
+  if (!SWIG_IsOK(SWIG_ConvertPtr(L,2,(void**)&arg2,SWIGTYPE_p_float,0))){
+    SWIG_fail_ptr("SamplePlayer_buffer",2,SWIGTYPE_p_float);
+  }
+  
+  arg3 = (int)lua_tonumber(L, 3);
+  arg4 = (double)lua_tonumber(L, 4);
+  arg5 = (int)lua_tonumber(L, 5);
+  arg6 = (lua_toboolean(L, 6)!=0);
+  (arg1)->buffer(arg2,arg3,arg4,arg5,arg6);
+  
+  return SWIG_arg;
+  
+  if(0) SWIG_fail;
+  
+fail:
+  lua_error(L);
+  return SWIG_arg;
+}
+
+
+static int _wrap_SamplePlayer_buffer__SWIG_3(lua_State* L) {
+  int SWIG_arg = 0;
+  gam::SamplePlayer< SampleType > *arg1 = (gam::SamplePlayer< SampleType > *) 0 ;
+  float *arg2 = (float *) 0 ;
+  int arg3 ;
+  double arg4 ;
+  int arg5 ;
+  
+  SWIG_check_num_args("gam::SamplePlayer< SampleType >::buffer",5,5)
+  if(!SWIG_isptrtype(L,1)) SWIG_fail_arg("gam::SamplePlayer< SampleType >::buffer",1,"gam::SamplePlayer< SampleType > *");
+  if(!SWIG_isptrtype(L,2)) SWIG_fail_arg("gam::SamplePlayer< SampleType >::buffer",2,"float *");
+  if(!lua_isnumber(L,3)) SWIG_fail_arg("gam::SamplePlayer< SampleType >::buffer",3,"int");
+  if(!lua_isnumber(L,4)) SWIG_fail_arg("gam::SamplePlayer< SampleType >::buffer",4,"double");
+  if(!lua_isnumber(L,5)) SWIG_fail_arg("gam::SamplePlayer< SampleType >::buffer",5,"int");
+  
+  if (!SWIG_IsOK(SWIG_ConvertPtr(L,1,(void**)&arg1,SWIGTYPE_p_gam__SamplePlayerT_float_ipl__Trunc_phsInc__OneShot_GAM_DEFAULT_DOMAIN_t,0))){
+    SWIG_fail_ptr("SamplePlayer_buffer",1,SWIGTYPE_p_gam__SamplePlayerT_float_ipl__Trunc_phsInc__OneShot_GAM_DEFAULT_DOMAIN_t);
+  }
+  
+  
+  if (!SWIG_IsOK(SWIG_ConvertPtr(L,2,(void**)&arg2,SWIGTYPE_p_float,0))){
+    SWIG_fail_ptr("SamplePlayer_buffer",2,SWIGTYPE_p_float);
+  }
+  
+  arg3 = (int)lua_tonumber(L, 3);
+  arg4 = (double)lua_tonumber(L, 4);
+  arg5 = (int)lua_tonumber(L, 5);
+  (arg1)->buffer(arg2,arg3,arg4,arg5);
+  
+  return SWIG_arg;
+  
+  if(0) SWIG_fail;
+  
+fail:
+  lua_error(L);
+  return SWIG_arg;
+}
+
+
+static int _wrap_SamplePlayer_buffer__SWIG_4(lua_State* L) {
+  int SWIG_arg = 0;
+  gam::SamplePlayer< SampleType > *arg1 = (gam::SamplePlayer< SampleType > *) 0 ;
+  gam::SamplePlayer< SampleType > *arg2 = 0 ;
+  
+  SWIG_check_num_args("gam::SamplePlayer< SampleType >::buffer",2,2)
+  if(!SWIG_isptrtype(L,1)) SWIG_fail_arg("gam::SamplePlayer< SampleType >::buffer",1,"gam::SamplePlayer< SampleType > *");
+  if(!lua_isuserdata(L,2)) SWIG_fail_arg("gam::SamplePlayer< SampleType >::buffer",2,"gam::SamplePlayer< SampleType > &");
+  
+  if (!SWIG_IsOK(SWIG_ConvertPtr(L,1,(void**)&arg1,SWIGTYPE_p_gam__SamplePlayerT_float_ipl__Trunc_phsInc__OneShot_GAM_DEFAULT_DOMAIN_t,0))){
+    SWIG_fail_ptr("SamplePlayer_buffer",1,SWIGTYPE_p_gam__SamplePlayerT_float_ipl__Trunc_phsInc__OneShot_GAM_DEFAULT_DOMAIN_t);
+  }
+  
+  
+  if (!SWIG_IsOK(SWIG_ConvertPtr(L,2,(void**)&arg2,SWIGTYPE_p_gam__SamplePlayerT_float_ipl__Trunc_phsInc__OneShot_GAM_DEFAULT_DOMAIN_t,0))){
+    SWIG_fail_ptr("SamplePlayer_buffer",2,SWIGTYPE_p_gam__SamplePlayerT_float_ipl__Trunc_phsInc__OneShot_GAM_DEFAULT_DOMAIN_t);
+  }
+  
+  (arg1)->buffer(*arg2);
+  
+  return SWIG_arg;
+  
+  if(0) SWIG_fail;
+  
+fail:
+  lua_error(L);
+  return SWIG_arg;
+}
+
+
+static int _wrap_SamplePlayer_buffer(lua_State* L) {
+  int argc;
+  int argv[7]={
+    1,2,3,4,5,6,7
+  };
+  
+  argc = lua_gettop(L);
+  if (argc == 2) {
+    int _v = 0;
+    {
+      void *ptr;
+      if (SWIG_isptrtype(L,argv[0])==0 || SWIG_ConvertPtr(L,argv[0], (void **) &ptr, SWIGTYPE_p_gam__SamplePlayerT_float_ipl__Trunc_phsInc__OneShot_GAM_DEFAULT_DOMAIN_t, 0)) {
+        _v = 0;
+      } else {
+        _v = 1;
+      }
+    }
+    if (_v) {
+      {
+        void *ptr;
+        if (lua_isuserdata(L,argv[1])==0 || SWIG_ConvertPtr(L,argv[1], (void **) &ptr, SWIGTYPE_p_gam__SamplePlayerT_float_ipl__Trunc_phsInc__OneShot_GAM_DEFAULT_DOMAIN_t, SWIG_POINTER_NO_NULL)) {
+          _v = 0;
+        } else {
+          _v = 1;
+        }
+      }
+      if (_v) {
+        return _wrap_SamplePlayer_buffer__SWIG_4(L);
+      }
+    }
+  }
+  if (argc == 4) {
+    int _v = 0;
+    {
+      void *ptr;
+      if (SWIG_isptrtype(L,argv[0])==0 || SWIG_ConvertPtr(L,argv[0], (void **) &ptr, SWIGTYPE_p_gam__SamplePlayerT_float_ipl__Trunc_phsInc__OneShot_GAM_DEFAULT_DOMAIN_t, 0)) {
+        _v = 0;
+      } else {
+        _v = 1;
+      }
+    }
+    if (_v) {
+      {
+        void *ptr;
+        if (lua_isuserdata(L,argv[1])==0 || SWIG_ConvertPtr(L,argv[1], (void **) &ptr, SWIGTYPE_p_gam__ArrayT_float_t, SWIG_POINTER_NO_NULL)) {
+          _v = 0;
+        } else {
+          _v = 1;
+        }
+      }
+      if (_v) {
+        {
+          _v = lua_isnumber(L,argv[2]);
+        }
+        if (_v) {
+          {
+            _v = lua_isnumber(L,argv[3]);
+          }
+          if (_v) {
+            return _wrap_SamplePlayer_buffer__SWIG_1(L);
+          }
+        }
+      }
+    }
+  }
+  if (argc == 5) {
+    int _v = 0;
+    {
+      void *ptr;
+      if (SWIG_isptrtype(L,argv[0])==0 || SWIG_ConvertPtr(L,argv[0], (void **) &ptr, SWIGTYPE_p_gam__SamplePlayerT_float_ipl__Trunc_phsInc__OneShot_GAM_DEFAULT_DOMAIN_t, 0)) {
+        _v = 0;
+      } else {
+        _v = 1;
+      }
+    }
+    if (_v) {
+      {
+        void *ptr;
+        if (SWIG_isptrtype(L,argv[1])==0 || SWIG_ConvertPtr(L,argv[1], (void **) &ptr, SWIGTYPE_p_float, 0)) {
+          _v = 0;
+        } else {
+          _v = 1;
+        }
+      }
+      if (_v) {
+        {
+          _v = lua_isnumber(L,argv[2]);
+        }
+        if (_v) {
+          {
+            _v = lua_isnumber(L,argv[3]);
+          }
+          if (_v) {
+            {
+              _v = lua_isnumber(L,argv[4]);
+            }
+            if (_v) {
+              return _wrap_SamplePlayer_buffer__SWIG_3(L);
+            }
+          }
+        }
+      }
+    }
+  }
+  if (argc == 5) {
+    int _v = 0;
+    {
+      void *ptr;
+      if (SWIG_isptrtype(L,argv[0])==0 || SWIG_ConvertPtr(L,argv[0], (void **) &ptr, SWIGTYPE_p_gam__SamplePlayerT_float_ipl__Trunc_phsInc__OneShot_GAM_DEFAULT_DOMAIN_t, 0)) {
+        _v = 0;
+      } else {
+        _v = 1;
+      }
+    }
+    if (_v) {
+      {
+        void *ptr;
+        if (lua_isuserdata(L,argv[1])==0 || SWIG_ConvertPtr(L,argv[1], (void **) &ptr, SWIGTYPE_p_gam__ArrayT_float_t, SWIG_POINTER_NO_NULL)) {
+          _v = 0;
+        } else {
+          _v = 1;
+        }
+      }
+      if (_v) {
+        {
+          _v = lua_isnumber(L,argv[2]);
+        }
+        if (_v) {
+          {
+            _v = lua_isnumber(L,argv[3]);
+          }
+          if (_v) {
+            {
+              _v = lua_isboolean(L,argv[4]);
+            }
+            if (_v) {
+              return _wrap_SamplePlayer_buffer__SWIG_0(L);
+            }
+          }
+        }
+      }
+    }
+  }
+  if (argc == 6) {
+    int _v = 0;
+    {
+      void *ptr;
+      if (SWIG_isptrtype(L,argv[0])==0 || SWIG_ConvertPtr(L,argv[0], (void **) &ptr, SWIGTYPE_p_gam__SamplePlayerT_float_ipl__Trunc_phsInc__OneShot_GAM_DEFAULT_DOMAIN_t, 0)) {
+        _v = 0;
+      } else {
+        _v = 1;
+      }
+    }
+    if (_v) {
+      {
+        void *ptr;
+        if (SWIG_isptrtype(L,argv[1])==0 || SWIG_ConvertPtr(L,argv[1], (void **) &ptr, SWIGTYPE_p_float, 0)) {
+          _v = 0;
+        } else {
+          _v = 1;
+        }
+      }
+      if (_v) {
+        {
+          _v = lua_isnumber(L,argv[2]);
+        }
+        if (_v) {
+          {
+            _v = lua_isnumber(L,argv[3]);
+          }
+          if (_v) {
+            {
+              _v = lua_isnumber(L,argv[4]);
+            }
+            if (_v) {
+              {
+                _v = lua_isboolean(L,argv[5]);
+              }
+              if (_v) {
+                return _wrap_SamplePlayer_buffer__SWIG_2(L);
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+  
+  SWIG_Lua_pusherrstring(L,"Wrong arguments for overloaded function 'SamplePlayer_buffer'\n"
+    "  Possible C/C++ prototypes are:\n"
+    "    gam::SamplePlayer< SampleType >::buffer(gam::Array< float > &,double,int,bool)\n"
+    "    gam::SamplePlayer< SampleType >::buffer(gam::Array< float > &,double,int)\n"
+    "    gam::SamplePlayer< SampleType >::buffer(float *,int,double,int,bool)\n"
+    "    gam::SamplePlayer< SampleType >::buffer(float *,int,double,int)\n"
+    "    gam::SamplePlayer< SampleType >::buffer(gam::SamplePlayer< SampleType > &)\n");
+  lua_error(L);return 0;
+}
+
+
+static int _wrap_SamplePlayer_free(lua_State* L) {
+  int SWIG_arg = 0;
+  gam::SamplePlayer< SampleType > *arg1 = (gam::SamplePlayer< SampleType > *) 0 ;
+  
+  SWIG_check_num_args("gam::SamplePlayer< SampleType >::free",1,1)
+  if(!SWIG_isptrtype(L,1)) SWIG_fail_arg("gam::SamplePlayer< SampleType >::free",1,"gam::SamplePlayer< SampleType > *");
+  
+  if (!SWIG_IsOK(SWIG_ConvertPtr(L,1,(void**)&arg1,SWIGTYPE_p_gam__SamplePlayerT_float_ipl__Trunc_phsInc__OneShot_GAM_DEFAULT_DOMAIN_t,0))){
+    SWIG_fail_ptr("SamplePlayer_free",1,SWIGTYPE_p_gam__SamplePlayerT_float_ipl__Trunc_phsInc__OneShot_GAM_DEFAULT_DOMAIN_t);
+  }
+  
+  (arg1)->free();
+  
+  return SWIG_arg;
+  
+  if(0) SWIG_fail;
+  
+fail:
+  lua_error(L);
+  return SWIG_arg;
+}
+
+
+static int _wrap_SamplePlayer_freq__SWIG_0(lua_State* L) {
+  int SWIG_arg = 0;
+  gam::SamplePlayer< SampleType > *arg1 = (gam::SamplePlayer< SampleType > *) 0 ;
+  double arg2 ;
+  
+  SWIG_check_num_args("gam::SamplePlayer< SampleType >::freq",2,2)
+  if(!SWIG_isptrtype(L,1)) SWIG_fail_arg("gam::SamplePlayer< SampleType >::freq",1,"gam::SamplePlayer< SampleType > *");
+  if(!lua_isnumber(L,2)) SWIG_fail_arg("gam::SamplePlayer< SampleType >::freq",2,"double");
+  
+  if (!SWIG_IsOK(SWIG_ConvertPtr(L,1,(void**)&arg1,SWIGTYPE_p_gam__SamplePlayerT_float_ipl__Trunc_phsInc__OneShot_GAM_DEFAULT_DOMAIN_t,0))){
+    SWIG_fail_ptr("SamplePlayer_freq",1,SWIGTYPE_p_gam__SamplePlayerT_float_ipl__Trunc_phsInc__OneShot_GAM_DEFAULT_DOMAIN_t);
+  }
+  
+  arg2 = (double)lua_tonumber(L, 2);
+  (arg1)->freq(arg2);
+  
+  return SWIG_arg;
+  
+  if(0) SWIG_fail;
+  
+fail:
+  lua_error(L);
+  return SWIG_arg;
+}
+
+
+static int _wrap_SamplePlayer_max__SWIG_0(lua_State* L) {
+  int SWIG_arg = 0;
+  gam::SamplePlayer< SampleType > *arg1 = (gam::SamplePlayer< SampleType > *) 0 ;
+  double arg2 ;
+  
+  SWIG_check_num_args("gam::SamplePlayer< SampleType >::max",2,2)
+  if(!SWIG_isptrtype(L,1)) SWIG_fail_arg("gam::SamplePlayer< SampleType >::max",1,"gam::SamplePlayer< SampleType > *");
+  if(!lua_isnumber(L,2)) SWIG_fail_arg("gam::SamplePlayer< SampleType >::max",2,"double");
+  
+  if (!SWIG_IsOK(SWIG_ConvertPtr(L,1,(void**)&arg1,SWIGTYPE_p_gam__SamplePlayerT_float_ipl__Trunc_phsInc__OneShot_GAM_DEFAULT_DOMAIN_t,0))){
+    SWIG_fail_ptr("SamplePlayer_max",1,SWIGTYPE_p_gam__SamplePlayerT_float_ipl__Trunc_phsInc__OneShot_GAM_DEFAULT_DOMAIN_t);
+  }
+  
+  arg2 = (double)lua_tonumber(L, 2);
+  (arg1)->max(arg2);
+  
+  return SWIG_arg;
+  
+  if(0) SWIG_fail;
+  
+fail:
+  lua_error(L);
+  return SWIG_arg;
+}
+
+
+static int _wrap_SamplePlayer_min__SWIG_0(lua_State* L) {
+  int SWIG_arg = 0;
+  gam::SamplePlayer< SampleType > *arg1 = (gam::SamplePlayer< SampleType > *) 0 ;
+  double arg2 ;
+  
+  SWIG_check_num_args("gam::SamplePlayer< SampleType >::min",2,2)
+  if(!SWIG_isptrtype(L,1)) SWIG_fail_arg("gam::SamplePlayer< SampleType >::min",1,"gam::SamplePlayer< SampleType > *");
+  if(!lua_isnumber(L,2)) SWIG_fail_arg("gam::SamplePlayer< SampleType >::min",2,"double");
+  
+  if (!SWIG_IsOK(SWIG_ConvertPtr(L,1,(void**)&arg1,SWIGTYPE_p_gam__SamplePlayerT_float_ipl__Trunc_phsInc__OneShot_GAM_DEFAULT_DOMAIN_t,0))){
+    SWIG_fail_ptr("SamplePlayer_min",1,SWIGTYPE_p_gam__SamplePlayerT_float_ipl__Trunc_phsInc__OneShot_GAM_DEFAULT_DOMAIN_t);
+  }
+  
+  arg2 = (double)lua_tonumber(L, 2);
+  (arg1)->min(arg2);
+  
+  return SWIG_arg;
+  
+  if(0) SWIG_fail;
+  
+fail:
+  lua_error(L);
+  return SWIG_arg;
+}
+
+
+static int _wrap_SamplePlayer_pos__SWIG_0(lua_State* L) {
+  int SWIG_arg = 0;
+  gam::SamplePlayer< SampleType > *arg1 = (gam::SamplePlayer< SampleType > *) 0 ;
+  double arg2 ;
+  
+  SWIG_check_num_args("gam::SamplePlayer< SampleType >::pos",2,2)
+  if(!SWIG_isptrtype(L,1)) SWIG_fail_arg("gam::SamplePlayer< SampleType >::pos",1,"gam::SamplePlayer< SampleType > *");
+  if(!lua_isnumber(L,2)) SWIG_fail_arg("gam::SamplePlayer< SampleType >::pos",2,"double");
+  
+  if (!SWIG_IsOK(SWIG_ConvertPtr(L,1,(void**)&arg1,SWIGTYPE_p_gam__SamplePlayerT_float_ipl__Trunc_phsInc__OneShot_GAM_DEFAULT_DOMAIN_t,0))){
+    SWIG_fail_ptr("SamplePlayer_pos",1,SWIGTYPE_p_gam__SamplePlayerT_float_ipl__Trunc_phsInc__OneShot_GAM_DEFAULT_DOMAIN_t);
+  }
+  
+  arg2 = (double)lua_tonumber(L, 2);
+  (arg1)->pos(arg2);
+  
+  return SWIG_arg;
+  
+  if(0) SWIG_fail;
+  
+fail:
+  lua_error(L);
+  return SWIG_arg;
+}
+
+
+static int _wrap_SamplePlayer_phase__SWIG_0(lua_State* L) {
+  int SWIG_arg = 0;
+  gam::SamplePlayer< SampleType > *arg1 = (gam::SamplePlayer< SampleType > *) 0 ;
+  double arg2 ;
+  
+  SWIG_check_num_args("gam::SamplePlayer< SampleType >::phase",2,2)
+  if(!SWIG_isptrtype(L,1)) SWIG_fail_arg("gam::SamplePlayer< SampleType >::phase",1,"gam::SamplePlayer< SampleType > *");
+  if(!lua_isnumber(L,2)) SWIG_fail_arg("gam::SamplePlayer< SampleType >::phase",2,"double");
+  
+  if (!SWIG_IsOK(SWIG_ConvertPtr(L,1,(void**)&arg1,SWIGTYPE_p_gam__SamplePlayerT_float_ipl__Trunc_phsInc__OneShot_GAM_DEFAULT_DOMAIN_t,0))){
+    SWIG_fail_ptr("SamplePlayer_phase",1,SWIGTYPE_p_gam__SamplePlayerT_float_ipl__Trunc_phsInc__OneShot_GAM_DEFAULT_DOMAIN_t);
+  }
+  
+  arg2 = (double)lua_tonumber(L, 2);
+  (arg1)->phase(arg2);
+  
+  return SWIG_arg;
+  
+  if(0) SWIG_fail;
+  
+fail:
+  lua_error(L);
+  return SWIG_arg;
+}
+
+
+static int _wrap_SamplePlayer_rate__SWIG_0(lua_State* L) {
+  int SWIG_arg = 0;
+  gam::SamplePlayer< SampleType > *arg1 = (gam::SamplePlayer< SampleType > *) 0 ;
+  double arg2 ;
+  
+  SWIG_check_num_args("gam::SamplePlayer< SampleType >::rate",2,2)
+  if(!SWIG_isptrtype(L,1)) SWIG_fail_arg("gam::SamplePlayer< SampleType >::rate",1,"gam::SamplePlayer< SampleType > *");
+  if(!lua_isnumber(L,2)) SWIG_fail_arg("gam::SamplePlayer< SampleType >::rate",2,"double");
+  
+  if (!SWIG_IsOK(SWIG_ConvertPtr(L,1,(void**)&arg1,SWIGTYPE_p_gam__SamplePlayerT_float_ipl__Trunc_phsInc__OneShot_GAM_DEFAULT_DOMAIN_t,0))){
+    SWIG_fail_ptr("SamplePlayer_rate",1,SWIGTYPE_p_gam__SamplePlayerT_float_ipl__Trunc_phsInc__OneShot_GAM_DEFAULT_DOMAIN_t);
+  }
+  
+  arg2 = (double)lua_tonumber(L, 2);
+  (arg1)->rate(arg2);
+  
+  return SWIG_arg;
+  
+  if(0) SWIG_fail;
+  
+fail:
+  lua_error(L);
+  return SWIG_arg;
+}
+
+
+static int _wrap_SamplePlayer_range(lua_State* L) {
+  int SWIG_arg = 0;
+  gam::SamplePlayer< SampleType > *arg1 = (gam::SamplePlayer< SampleType > *) 0 ;
+  double arg2 ;
+  double arg3 ;
+  
+  SWIG_check_num_args("gam::SamplePlayer< SampleType >::range",3,3)
+  if(!SWIG_isptrtype(L,1)) SWIG_fail_arg("gam::SamplePlayer< SampleType >::range",1,"gam::SamplePlayer< SampleType > *");
+  if(!lua_isnumber(L,2)) SWIG_fail_arg("gam::SamplePlayer< SampleType >::range",2,"double");
+  if(!lua_isnumber(L,3)) SWIG_fail_arg("gam::SamplePlayer< SampleType >::range",3,"double");
+  
+  if (!SWIG_IsOK(SWIG_ConvertPtr(L,1,(void**)&arg1,SWIGTYPE_p_gam__SamplePlayerT_float_ipl__Trunc_phsInc__OneShot_GAM_DEFAULT_DOMAIN_t,0))){
+    SWIG_fail_ptr("SamplePlayer_range",1,SWIGTYPE_p_gam__SamplePlayerT_float_ipl__Trunc_phsInc__OneShot_GAM_DEFAULT_DOMAIN_t);
+  }
+  
+  arg2 = (double)lua_tonumber(L, 2);
+  arg3 = (double)lua_tonumber(L, 3);
+  (arg1)->range(arg2,arg3);
+  
+  return SWIG_arg;
+  
+  if(0) SWIG_fail;
+  
+fail:
+  lua_error(L);
+  return SWIG_arg;
+}
+
+
+static int _wrap_SamplePlayer_reset(lua_State* L) {
+  int SWIG_arg = 0;
+  gam::SamplePlayer< SampleType > *arg1 = (gam::SamplePlayer< SampleType > *) 0 ;
+  
+  SWIG_check_num_args("gam::SamplePlayer< SampleType >::reset",1,1)
+  if(!SWIG_isptrtype(L,1)) SWIG_fail_arg("gam::SamplePlayer< SampleType >::reset",1,"gam::SamplePlayer< SampleType > *");
+  
+  if (!SWIG_IsOK(SWIG_ConvertPtr(L,1,(void**)&arg1,SWIGTYPE_p_gam__SamplePlayerT_float_ipl__Trunc_phsInc__OneShot_GAM_DEFAULT_DOMAIN_t,0))){
+    SWIG_fail_ptr("SamplePlayer_reset",1,SWIGTYPE_p_gam__SamplePlayerT_float_ipl__Trunc_phsInc__OneShot_GAM_DEFAULT_DOMAIN_t);
+  }
+  
+  (arg1)->reset();
+  
+  return SWIG_arg;
+  
+  if(0) SWIG_fail;
+  
+fail:
+  lua_error(L);
+  return SWIG_arg;
+}
+
+
+static int _wrap_SamplePlayer_finish(lua_State* L) {
+  int SWIG_arg = 0;
+  gam::SamplePlayer< SampleType > *arg1 = (gam::SamplePlayer< SampleType > *) 0 ;
+  
+  SWIG_check_num_args("gam::SamplePlayer< SampleType >::finish",1,1)
+  if(!SWIG_isptrtype(L,1)) SWIG_fail_arg("gam::SamplePlayer< SampleType >::finish",1,"gam::SamplePlayer< SampleType > *");
+  
+  if (!SWIG_IsOK(SWIG_ConvertPtr(L,1,(void**)&arg1,SWIGTYPE_p_gam__SamplePlayerT_float_ipl__Trunc_phsInc__OneShot_GAM_DEFAULT_DOMAIN_t,0))){
+    SWIG_fail_ptr("SamplePlayer_finish",1,SWIGTYPE_p_gam__SamplePlayerT_float_ipl__Trunc_phsInc__OneShot_GAM_DEFAULT_DOMAIN_t);
+  }
+  
+  (arg1)->finish();
+  
+  return SWIG_arg;
+  
+  if(0) SWIG_fail;
+  
+fail:
+  lua_error(L);
+  return SWIG_arg;
+}
+
+
+static int _wrap_SamplePlayer_loop(lua_State* L) {
+  int SWIG_arg = 0;
+  gam::SamplePlayer< SampleType > *arg1 = (gam::SamplePlayer< SampleType > *) 0 ;
+  bool result;
+  
+  SWIG_check_num_args("gam::SamplePlayer< SampleType >::loop",1,1)
+  if(!SWIG_isptrtype(L,1)) SWIG_fail_arg("gam::SamplePlayer< SampleType >::loop",1,"gam::SamplePlayer< SampleType > *");
+  
+  if (!SWIG_IsOK(SWIG_ConvertPtr(L,1,(void**)&arg1,SWIGTYPE_p_gam__SamplePlayerT_float_ipl__Trunc_phsInc__OneShot_GAM_DEFAULT_DOMAIN_t,0))){
+    SWIG_fail_ptr("SamplePlayer_loop",1,SWIGTYPE_p_gam__SamplePlayerT_float_ipl__Trunc_phsInc__OneShot_GAM_DEFAULT_DOMAIN_t);
+  }
+  
+  result = (bool)(arg1)->loop();
+  lua_pushboolean(L,(int)(result!=0)); SWIG_arg++;
+  return SWIG_arg;
+  
+  if(0) SWIG_fail;
+  
+fail:
+  lua_error(L);
+  return SWIG_arg;
+}
+
+
+static int _wrap_SamplePlayer_fade__SWIG_0(lua_State* L) {
+  int SWIG_arg = 0;
+  gam::SamplePlayer< SampleType > *arg1 = (gam::SamplePlayer< SampleType > *) 0 ;
+  int arg2 ;
+  int arg3 ;
+  
+  SWIG_check_num_args("gam::SamplePlayer< SampleType >::fade",3,3)
+  if(!SWIG_isptrtype(L,1)) SWIG_fail_arg("gam::SamplePlayer< SampleType >::fade",1,"gam::SamplePlayer< SampleType > *");
+  if(!lua_isnumber(L,2)) SWIG_fail_arg("gam::SamplePlayer< SampleType >::fade",2,"int");
+  if(!lua_isnumber(L,3)) SWIG_fail_arg("gam::SamplePlayer< SampleType >::fade",3,"int");
+  
+  if (!SWIG_IsOK(SWIG_ConvertPtr(L,1,(void**)&arg1,SWIGTYPE_p_gam__SamplePlayerT_float_ipl__Trunc_phsInc__OneShot_GAM_DEFAULT_DOMAIN_t,0))){
+    SWIG_fail_ptr("SamplePlayer_fade",1,SWIGTYPE_p_gam__SamplePlayerT_float_ipl__Trunc_phsInc__OneShot_GAM_DEFAULT_DOMAIN_t);
+  }
+  
+  arg2 = (int)lua_tonumber(L, 2);
+  arg3 = (int)lua_tonumber(L, 3);
+  (arg1)->fade(arg2,arg3);
+  
+  return SWIG_arg;
+  
+  if(0) SWIG_fail;
+  
+fail:
+  lua_error(L);
+  return SWIG_arg;
+}
+
+
+static int _wrap_SamplePlayer_fade__SWIG_1(lua_State* L) {
+  int SWIG_arg = 0;
+  gam::SamplePlayer< SampleType > *arg1 = (gam::SamplePlayer< SampleType > *) 0 ;
+  int arg2 ;
+  
+  SWIG_check_num_args("gam::SamplePlayer< SampleType >::fade",2,2)
+  if(!SWIG_isptrtype(L,1)) SWIG_fail_arg("gam::SamplePlayer< SampleType >::fade",1,"gam::SamplePlayer< SampleType > *");
+  if(!lua_isnumber(L,2)) SWIG_fail_arg("gam::SamplePlayer< SampleType >::fade",2,"int");
+  
+  if (!SWIG_IsOK(SWIG_ConvertPtr(L,1,(void**)&arg1,SWIGTYPE_p_gam__SamplePlayerT_float_ipl__Trunc_phsInc__OneShot_GAM_DEFAULT_DOMAIN_t,0))){
+    SWIG_fail_ptr("SamplePlayer_fade",1,SWIGTYPE_p_gam__SamplePlayerT_float_ipl__Trunc_phsInc__OneShot_GAM_DEFAULT_DOMAIN_t);
+  }
+  
+  arg2 = (int)lua_tonumber(L, 2);
+  (arg1)->fade(arg2);
+  
+  return SWIG_arg;
+  
+  if(0) SWIG_fail;
+  
+fail:
+  lua_error(L);
+  return SWIG_arg;
+}
+
+
+static int _wrap_SamplePlayer_fade__SWIG_2(lua_State* L) {
+  int SWIG_arg = 0;
+  gam::SamplePlayer< SampleType > *arg1 = (gam::SamplePlayer< SampleType > *) 0 ;
+  
+  SWIG_check_num_args("gam::SamplePlayer< SampleType >::fade",1,1)
+  if(!SWIG_isptrtype(L,1)) SWIG_fail_arg("gam::SamplePlayer< SampleType >::fade",1,"gam::SamplePlayer< SampleType > *");
+  
+  if (!SWIG_IsOK(SWIG_ConvertPtr(L,1,(void**)&arg1,SWIGTYPE_p_gam__SamplePlayerT_float_ipl__Trunc_phsInc__OneShot_GAM_DEFAULT_DOMAIN_t,0))){
+    SWIG_fail_ptr("SamplePlayer_fade",1,SWIGTYPE_p_gam__SamplePlayerT_float_ipl__Trunc_phsInc__OneShot_GAM_DEFAULT_DOMAIN_t);
+  }
+  
+  (arg1)->fade();
+  
+  return SWIG_arg;
+  
+  if(0) SWIG_fail;
+  
+fail:
+  lua_error(L);
+  return SWIG_arg;
+}
+
+
+static int _wrap_SamplePlayer_fade(lua_State* L) {
+  int argc;
+  int argv[4]={
+    1,2,3,4
+  };
+  
+  argc = lua_gettop(L);
+  if (argc == 1) {
+    int _v = 0;
+    {
+      void *ptr;
+      if (SWIG_isptrtype(L,argv[0])==0 || SWIG_ConvertPtr(L,argv[0], (void **) &ptr, SWIGTYPE_p_gam__SamplePlayerT_float_ipl__Trunc_phsInc__OneShot_GAM_DEFAULT_DOMAIN_t, 0)) {
+        _v = 0;
+      } else {
+        _v = 1;
+      }
+    }
+    if (_v) {
+      return _wrap_SamplePlayer_fade__SWIG_2(L);
+    }
+  }
+  if (argc == 2) {
+    int _v = 0;
+    {
+      void *ptr;
+      if (SWIG_isptrtype(L,argv[0])==0 || SWIG_ConvertPtr(L,argv[0], (void **) &ptr, SWIGTYPE_p_gam__SamplePlayerT_float_ipl__Trunc_phsInc__OneShot_GAM_DEFAULT_DOMAIN_t, 0)) {
+        _v = 0;
+      } else {
+        _v = 1;
+      }
+    }
+    if (_v) {
+      {
+        _v = lua_isnumber(L,argv[1]);
+      }
+      if (_v) {
+        return _wrap_SamplePlayer_fade__SWIG_1(L);
+      }
+    }
+  }
+  if (argc == 3) {
+    int _v = 0;
+    {
+      void *ptr;
+      if (SWIG_isptrtype(L,argv[0])==0 || SWIG_ConvertPtr(L,argv[0], (void **) &ptr, SWIGTYPE_p_gam__SamplePlayerT_float_ipl__Trunc_phsInc__OneShot_GAM_DEFAULT_DOMAIN_t, 0)) {
+        _v = 0;
+      } else {
+        _v = 1;
+      }
+    }
+    if (_v) {
+      {
+        _v = lua_isnumber(L,argv[1]);
+      }
+      if (_v) {
+        {
+          _v = lua_isnumber(L,argv[2]);
+        }
+        if (_v) {
+          return _wrap_SamplePlayer_fade__SWIG_0(L);
+        }
+      }
+    }
+  }
+  
+  SWIG_Lua_pusherrstring(L,"Wrong arguments for overloaded function 'SamplePlayer_fade'\n"
+    "  Possible C/C++ prototypes are:\n"
+    "    gam::SamplePlayer< SampleType >::fade(int,int)\n"
+    "    gam::SamplePlayer< SampleType >::fade(int)\n"
+    "    gam::SamplePlayer< SampleType >::fade()\n");
+  lua_error(L);return 0;
+}
+
+
+static int _wrap_SamplePlayer_done(lua_State* L) {
+  int SWIG_arg = 0;
+  gam::SamplePlayer< SampleType > *arg1 = (gam::SamplePlayer< SampleType > *) 0 ;
+  bool result;
+  
+  SWIG_check_num_args("gam::SamplePlayer< SampleType >::done",1,1)
+  if(!SWIG_isptrtype(L,1)) SWIG_fail_arg("gam::SamplePlayer< SampleType >::done",1,"gam::SamplePlayer< SampleType > const *");
+  
+  if (!SWIG_IsOK(SWIG_ConvertPtr(L,1,(void**)&arg1,SWIGTYPE_p_gam__SamplePlayerT_float_ipl__Trunc_phsInc__OneShot_GAM_DEFAULT_DOMAIN_t,0))){
+    SWIG_fail_ptr("SamplePlayer_done",1,SWIGTYPE_p_gam__SamplePlayerT_float_ipl__Trunc_phsInc__OneShot_GAM_DEFAULT_DOMAIN_t);
+  }
+  
+  result = (bool)((gam::SamplePlayer< SampleType > const *)arg1)->done();
+  lua_pushboolean(L,(int)(result!=0)); SWIG_arg++;
+  return SWIG_arg;
+  
+  if(0) SWIG_fail;
+  
+fail:
+  lua_error(L);
+  return SWIG_arg;
+}
+
+
+static int _wrap_SamplePlayer_channels(lua_State* L) {
+  int SWIG_arg = 0;
+  gam::SamplePlayer< SampleType > *arg1 = (gam::SamplePlayer< SampleType > *) 0 ;
+  int result;
+  
+  SWIG_check_num_args("gam::SamplePlayer< SampleType >::channels",1,1)
+  if(!SWIG_isptrtype(L,1)) SWIG_fail_arg("gam::SamplePlayer< SampleType >::channels",1,"gam::SamplePlayer< SampleType > const *");
+  
+  if (!SWIG_IsOK(SWIG_ConvertPtr(L,1,(void**)&arg1,SWIGTYPE_p_gam__SamplePlayerT_float_ipl__Trunc_phsInc__OneShot_GAM_DEFAULT_DOMAIN_t,0))){
+    SWIG_fail_ptr("SamplePlayer_channels",1,SWIGTYPE_p_gam__SamplePlayerT_float_ipl__Trunc_phsInc__OneShot_GAM_DEFAULT_DOMAIN_t);
+  }
+  
+  result = (int)((gam::SamplePlayer< SampleType > const *)arg1)->channels();
+  lua_pushnumber(L, (lua_Number) result); SWIG_arg++;
+  return SWIG_arg;
+  
+  if(0) SWIG_fail;
+  
+fail:
+  lua_error(L);
+  return SWIG_arg;
+}
+
+
+static int _wrap_SamplePlayer_frames(lua_State* L) {
+  int SWIG_arg = 0;
+  gam::SamplePlayer< SampleType > *arg1 = (gam::SamplePlayer< SampleType > *) 0 ;
+  int result;
+  
+  SWIG_check_num_args("gam::SamplePlayer< SampleType >::frames",1,1)
+  if(!SWIG_isptrtype(L,1)) SWIG_fail_arg("gam::SamplePlayer< SampleType >::frames",1,"gam::SamplePlayer< SampleType > const *");
+  
+  if (!SWIG_IsOK(SWIG_ConvertPtr(L,1,(void**)&arg1,SWIGTYPE_p_gam__SamplePlayerT_float_ipl__Trunc_phsInc__OneShot_GAM_DEFAULT_DOMAIN_t,0))){
+    SWIG_fail_ptr("SamplePlayer_frames",1,SWIGTYPE_p_gam__SamplePlayerT_float_ipl__Trunc_phsInc__OneShot_GAM_DEFAULT_DOMAIN_t);
+  }
+  
+  result = (int)((gam::SamplePlayer< SampleType > const *)arg1)->frames();
+  lua_pushnumber(L, (lua_Number) result); SWIG_arg++;
+  return SWIG_arg;
+  
+  if(0) SWIG_fail;
+  
+fail:
+  lua_error(L);
+  return SWIG_arg;
+}
+
+
+static int _wrap_SamplePlayer_frameRate(lua_State* L) {
+  int SWIG_arg = 0;
+  gam::SamplePlayer< SampleType > *arg1 = (gam::SamplePlayer< SampleType > *) 0 ;
+  double result;
+  
+  SWIG_check_num_args("gam::SamplePlayer< SampleType >::frameRate",1,1)
+  if(!SWIG_isptrtype(L,1)) SWIG_fail_arg("gam::SamplePlayer< SampleType >::frameRate",1,"gam::SamplePlayer< SampleType > const *");
+  
+  if (!SWIG_IsOK(SWIG_ConvertPtr(L,1,(void**)&arg1,SWIGTYPE_p_gam__SamplePlayerT_float_ipl__Trunc_phsInc__OneShot_GAM_DEFAULT_DOMAIN_t,0))){
+    SWIG_fail_ptr("SamplePlayer_frameRate",1,SWIGTYPE_p_gam__SamplePlayerT_float_ipl__Trunc_phsInc__OneShot_GAM_DEFAULT_DOMAIN_t);
+  }
+  
+  result = (double)((gam::SamplePlayer< SampleType > const *)arg1)->frameRate();
+  lua_pushnumber(L, (lua_Number) result); SWIG_arg++;
+  return SWIG_arg;
+  
+  if(0) SWIG_fail;
+  
+fail:
+  lua_error(L);
+  return SWIG_arg;
+}
+
+
+static int _wrap_SamplePlayer_freq__SWIG_1(lua_State* L) {
+  int SWIG_arg = 0;
+  gam::SamplePlayer< SampleType > *arg1 = (gam::SamplePlayer< SampleType > *) 0 ;
+  double result;
+  
+  SWIG_check_num_args("gam::SamplePlayer< SampleType >::freq",1,1)
+  if(!SWIG_isptrtype(L,1)) SWIG_fail_arg("gam::SamplePlayer< SampleType >::freq",1,"gam::SamplePlayer< SampleType > const *");
+  
+  if (!SWIG_IsOK(SWIG_ConvertPtr(L,1,(void**)&arg1,SWIGTYPE_p_gam__SamplePlayerT_float_ipl__Trunc_phsInc__OneShot_GAM_DEFAULT_DOMAIN_t,0))){
+    SWIG_fail_ptr("SamplePlayer_freq",1,SWIGTYPE_p_gam__SamplePlayerT_float_ipl__Trunc_phsInc__OneShot_GAM_DEFAULT_DOMAIN_t);
+  }
+  
+  result = (double)((gam::SamplePlayer< SampleType > const *)arg1)->freq();
+  lua_pushnumber(L, (lua_Number) result); SWIG_arg++;
+  return SWIG_arg;
+  
+  if(0) SWIG_fail;
+  
+fail:
+  lua_error(L);
+  return SWIG_arg;
+}
+
+
+static int _wrap_SamplePlayer_freq(lua_State* L) {
+  int argc;
+  int argv[3]={
+    1,2,3
+  };
+  
+  argc = lua_gettop(L);
+  if (argc == 1) {
+    int _v = 0;
+    {
+      void *ptr;
+      if (SWIG_isptrtype(L,argv[0])==0 || SWIG_ConvertPtr(L,argv[0], (void **) &ptr, SWIGTYPE_p_gam__SamplePlayerT_float_ipl__Trunc_phsInc__OneShot_GAM_DEFAULT_DOMAIN_t, 0)) {
+        _v = 0;
+      } else {
+        _v = 1;
+      }
+    }
+    if (_v) {
+      return _wrap_SamplePlayer_freq__SWIG_1(L);
+    }
+  }
+  if (argc == 2) {
+    int _v = 0;
+    {
+      void *ptr;
+      if (SWIG_isptrtype(L,argv[0])==0 || SWIG_ConvertPtr(L,argv[0], (void **) &ptr, SWIGTYPE_p_gam__SamplePlayerT_float_ipl__Trunc_phsInc__OneShot_GAM_DEFAULT_DOMAIN_t, 0)) {
+        _v = 0;
+      } else {
+        _v = 1;
+      }
+    }
+    if (_v) {
+      {
+        _v = lua_isnumber(L,argv[1]);
+      }
+      if (_v) {
+        return _wrap_SamplePlayer_freq__SWIG_0(L);
+      }
+    }
+  }
+  
+  SWIG_Lua_pusherrstring(L,"Wrong arguments for overloaded function 'SamplePlayer_freq'\n"
+    "  Possible C/C++ prototypes are:\n"
+    "    gam::SamplePlayer< SampleType >::freq(double)\n"
+    "    gam::SamplePlayer< SampleType >::freq() const\n");
+  lua_error(L);return 0;
+}
+
+
+static int _wrap_SamplePlayer_max__SWIG_1(lua_State* L) {
+  int SWIG_arg = 0;
+  gam::SamplePlayer< SampleType > *arg1 = (gam::SamplePlayer< SampleType > *) 0 ;
+  double result;
+  
+  SWIG_check_num_args("gam::SamplePlayer< SampleType >::max",1,1)
+  if(!SWIG_isptrtype(L,1)) SWIG_fail_arg("gam::SamplePlayer< SampleType >::max",1,"gam::SamplePlayer< SampleType > const *");
+  
+  if (!SWIG_IsOK(SWIG_ConvertPtr(L,1,(void**)&arg1,SWIGTYPE_p_gam__SamplePlayerT_float_ipl__Trunc_phsInc__OneShot_GAM_DEFAULT_DOMAIN_t,0))){
+    SWIG_fail_ptr("SamplePlayer_max",1,SWIGTYPE_p_gam__SamplePlayerT_float_ipl__Trunc_phsInc__OneShot_GAM_DEFAULT_DOMAIN_t);
+  }
+  
+  result = (double)((gam::SamplePlayer< SampleType > const *)arg1)->max();
+  lua_pushnumber(L, (lua_Number) result); SWIG_arg++;
+  return SWIG_arg;
+  
+  if(0) SWIG_fail;
+  
+fail:
+  lua_error(L);
+  return SWIG_arg;
+}
+
+
+static int _wrap_SamplePlayer_max(lua_State* L) {
+  int argc;
+  int argv[3]={
+    1,2,3
+  };
+  
+  argc = lua_gettop(L);
+  if (argc == 1) {
+    int _v = 0;
+    {
+      void *ptr;
+      if (SWIG_isptrtype(L,argv[0])==0 || SWIG_ConvertPtr(L,argv[0], (void **) &ptr, SWIGTYPE_p_gam__SamplePlayerT_float_ipl__Trunc_phsInc__OneShot_GAM_DEFAULT_DOMAIN_t, 0)) {
+        _v = 0;
+      } else {
+        _v = 1;
+      }
+    }
+    if (_v) {
+      return _wrap_SamplePlayer_max__SWIG_1(L);
+    }
+  }
+  if (argc == 2) {
+    int _v = 0;
+    {
+      void *ptr;
+      if (SWIG_isptrtype(L,argv[0])==0 || SWIG_ConvertPtr(L,argv[0], (void **) &ptr, SWIGTYPE_p_gam__SamplePlayerT_float_ipl__Trunc_phsInc__OneShot_GAM_DEFAULT_DOMAIN_t, 0)) {
+        _v = 0;
+      } else {
+        _v = 1;
+      }
+    }
+    if (_v) {
+      {
+        _v = lua_isnumber(L,argv[1]);
+      }
+      if (_v) {
+        return _wrap_SamplePlayer_max__SWIG_0(L);
+      }
+    }
+  }
+  
+  SWIG_Lua_pusherrstring(L,"Wrong arguments for overloaded function 'SamplePlayer_max'\n"
+    "  Possible C/C++ prototypes are:\n"
+    "    gam::SamplePlayer< SampleType >::max(double)\n"
+    "    gam::SamplePlayer< SampleType >::max() const\n");
+  lua_error(L);return 0;
+}
+
+
+static int _wrap_SamplePlayer_min__SWIG_1(lua_State* L) {
+  int SWIG_arg = 0;
+  gam::SamplePlayer< SampleType > *arg1 = (gam::SamplePlayer< SampleType > *) 0 ;
+  double result;
+  
+  SWIG_check_num_args("gam::SamplePlayer< SampleType >::min",1,1)
+  if(!SWIG_isptrtype(L,1)) SWIG_fail_arg("gam::SamplePlayer< SampleType >::min",1,"gam::SamplePlayer< SampleType > const *");
+  
+  if (!SWIG_IsOK(SWIG_ConvertPtr(L,1,(void**)&arg1,SWIGTYPE_p_gam__SamplePlayerT_float_ipl__Trunc_phsInc__OneShot_GAM_DEFAULT_DOMAIN_t,0))){
+    SWIG_fail_ptr("SamplePlayer_min",1,SWIGTYPE_p_gam__SamplePlayerT_float_ipl__Trunc_phsInc__OneShot_GAM_DEFAULT_DOMAIN_t);
+  }
+  
+  result = (double)((gam::SamplePlayer< SampleType > const *)arg1)->min();
+  lua_pushnumber(L, (lua_Number) result); SWIG_arg++;
+  return SWIG_arg;
+  
+  if(0) SWIG_fail;
+  
+fail:
+  lua_error(L);
+  return SWIG_arg;
+}
+
+
+static int _wrap_SamplePlayer_min(lua_State* L) {
+  int argc;
+  int argv[3]={
+    1,2,3
+  };
+  
+  argc = lua_gettop(L);
+  if (argc == 1) {
+    int _v = 0;
+    {
+      void *ptr;
+      if (SWIG_isptrtype(L,argv[0])==0 || SWIG_ConvertPtr(L,argv[0], (void **) &ptr, SWIGTYPE_p_gam__SamplePlayerT_float_ipl__Trunc_phsInc__OneShot_GAM_DEFAULT_DOMAIN_t, 0)) {
+        _v = 0;
+      } else {
+        _v = 1;
+      }
+    }
+    if (_v) {
+      return _wrap_SamplePlayer_min__SWIG_1(L);
+    }
+  }
+  if (argc == 2) {
+    int _v = 0;
+    {
+      void *ptr;
+      if (SWIG_isptrtype(L,argv[0])==0 || SWIG_ConvertPtr(L,argv[0], (void **) &ptr, SWIGTYPE_p_gam__SamplePlayerT_float_ipl__Trunc_phsInc__OneShot_GAM_DEFAULT_DOMAIN_t, 0)) {
+        _v = 0;
+      } else {
+        _v = 1;
+      }
+    }
+    if (_v) {
+      {
+        _v = lua_isnumber(L,argv[1]);
+      }
+      if (_v) {
+        return _wrap_SamplePlayer_min__SWIG_0(L);
+      }
+    }
+  }
+  
+  SWIG_Lua_pusherrstring(L,"Wrong arguments for overloaded function 'SamplePlayer_min'\n"
+    "  Possible C/C++ prototypes are:\n"
+    "    gam::SamplePlayer< SampleType >::min(double)\n"
+    "    gam::SamplePlayer< SampleType >::min() const\n");
+  lua_error(L);return 0;
+}
+
+
+static int _wrap_SamplePlayer_length(lua_State* L) {
+  int SWIG_arg = 0;
+  gam::SamplePlayer< SampleType > *arg1 = (gam::SamplePlayer< SampleType > *) 0 ;
+  double result;
+  
+  SWIG_check_num_args("gam::SamplePlayer< SampleType >::length",1,1)
+  if(!SWIG_isptrtype(L,1)) SWIG_fail_arg("gam::SamplePlayer< SampleType >::length",1,"gam::SamplePlayer< SampleType > const *");
+  
+  if (!SWIG_IsOK(SWIG_ConvertPtr(L,1,(void**)&arg1,SWIGTYPE_p_gam__SamplePlayerT_float_ipl__Trunc_phsInc__OneShot_GAM_DEFAULT_DOMAIN_t,0))){
+    SWIG_fail_ptr("SamplePlayer_length",1,SWIGTYPE_p_gam__SamplePlayerT_float_ipl__Trunc_phsInc__OneShot_GAM_DEFAULT_DOMAIN_t);
+  }
+  
+  result = (double)((gam::SamplePlayer< SampleType > const *)arg1)->length();
+  lua_pushnumber(L, (lua_Number) result); SWIG_arg++;
+  return SWIG_arg;
+  
+  if(0) SWIG_fail;
+  
+fail:
+  lua_error(L);
+  return SWIG_arg;
+}
+
+
+static int _wrap_SamplePlayer_pos__SWIG_1(lua_State* L) {
+  int SWIG_arg = 0;
+  gam::SamplePlayer< SampleType > *arg1 = (gam::SamplePlayer< SampleType > *) 0 ;
+  double result;
+  
+  SWIG_check_num_args("gam::SamplePlayer< SampleType >::pos",1,1)
+  if(!SWIG_isptrtype(L,1)) SWIG_fail_arg("gam::SamplePlayer< SampleType >::pos",1,"gam::SamplePlayer< SampleType > const *");
+  
+  if (!SWIG_IsOK(SWIG_ConvertPtr(L,1,(void**)&arg1,SWIGTYPE_p_gam__SamplePlayerT_float_ipl__Trunc_phsInc__OneShot_GAM_DEFAULT_DOMAIN_t,0))){
+    SWIG_fail_ptr("SamplePlayer_pos",1,SWIGTYPE_p_gam__SamplePlayerT_float_ipl__Trunc_phsInc__OneShot_GAM_DEFAULT_DOMAIN_t);
+  }
+  
+  result = (double)((gam::SamplePlayer< SampleType > const *)arg1)->pos();
+  lua_pushnumber(L, (lua_Number) result); SWIG_arg++;
+  return SWIG_arg;
+  
+  if(0) SWIG_fail;
+  
+fail:
+  lua_error(L);
+  return SWIG_arg;
+}
+
+
+static int _wrap_SamplePlayer_pos(lua_State* L) {
+  int argc;
+  int argv[3]={
+    1,2,3
+  };
+  
+  argc = lua_gettop(L);
+  if (argc == 1) {
+    int _v = 0;
+    {
+      void *ptr;
+      if (SWIG_isptrtype(L,argv[0])==0 || SWIG_ConvertPtr(L,argv[0], (void **) &ptr, SWIGTYPE_p_gam__SamplePlayerT_float_ipl__Trunc_phsInc__OneShot_GAM_DEFAULT_DOMAIN_t, 0)) {
+        _v = 0;
+      } else {
+        _v = 1;
+      }
+    }
+    if (_v) {
+      return _wrap_SamplePlayer_pos__SWIG_1(L);
+    }
+  }
+  if (argc == 2) {
+    int _v = 0;
+    {
+      void *ptr;
+      if (SWIG_isptrtype(L,argv[0])==0 || SWIG_ConvertPtr(L,argv[0], (void **) &ptr, SWIGTYPE_p_gam__SamplePlayerT_float_ipl__Trunc_phsInc__OneShot_GAM_DEFAULT_DOMAIN_t, 0)) {
+        _v = 0;
+      } else {
+        _v = 1;
+      }
+    }
+    if (_v) {
+      {
+        _v = lua_isnumber(L,argv[1]);
+      }
+      if (_v) {
+        return _wrap_SamplePlayer_pos__SWIG_0(L);
+      }
+    }
+  }
+  
+  SWIG_Lua_pusherrstring(L,"Wrong arguments for overloaded function 'SamplePlayer_pos'\n"
+    "  Possible C/C++ prototypes are:\n"
+    "    gam::SamplePlayer< SampleType >::pos(double)\n"
+    "    gam::SamplePlayer< SampleType >::pos() const\n");
+  lua_error(L);return 0;
+}
+
+
+static int _wrap_SamplePlayer_posInInterval(lua_State* L) {
+  int SWIG_arg = 0;
+  gam::SamplePlayer< SampleType > *arg1 = (gam::SamplePlayer< SampleType > *) 0 ;
+  double arg2 ;
+  double result;
+  
+  SWIG_check_num_args("gam::SamplePlayer< SampleType >::posInInterval",2,2)
+  if(!SWIG_isptrtype(L,1)) SWIG_fail_arg("gam::SamplePlayer< SampleType >::posInInterval",1,"gam::SamplePlayer< SampleType > const *");
+  if(!lua_isnumber(L,2)) SWIG_fail_arg("gam::SamplePlayer< SampleType >::posInInterval",2,"double");
+  
+  if (!SWIG_IsOK(SWIG_ConvertPtr(L,1,(void**)&arg1,SWIGTYPE_p_gam__SamplePlayerT_float_ipl__Trunc_phsInc__OneShot_GAM_DEFAULT_DOMAIN_t,0))){
+    SWIG_fail_ptr("SamplePlayer_posInInterval",1,SWIGTYPE_p_gam__SamplePlayerT_float_ipl__Trunc_phsInc__OneShot_GAM_DEFAULT_DOMAIN_t);
+  }
+  
+  arg2 = (double)lua_tonumber(L, 2);
+  result = (double)((gam::SamplePlayer< SampleType > const *)arg1)->posInInterval(arg2);
+  lua_pushnumber(L, (lua_Number) result); SWIG_arg++;
+  return SWIG_arg;
+  
+  if(0) SWIG_fail;
+  
+fail:
+  lua_error(L);
+  return SWIG_arg;
+}
+
+
+static int _wrap_SamplePlayer_phase__SWIG_1(lua_State* L) {
+  int SWIG_arg = 0;
+  gam::SamplePlayer< SampleType > *arg1 = (gam::SamplePlayer< SampleType > *) 0 ;
+  double result;
+  
+  SWIG_check_num_args("gam::SamplePlayer< SampleType >::phase",1,1)
+  if(!SWIG_isptrtype(L,1)) SWIG_fail_arg("gam::SamplePlayer< SampleType >::phase",1,"gam::SamplePlayer< SampleType > const *");
+  
+  if (!SWIG_IsOK(SWIG_ConvertPtr(L,1,(void**)&arg1,SWIGTYPE_p_gam__SamplePlayerT_float_ipl__Trunc_phsInc__OneShot_GAM_DEFAULT_DOMAIN_t,0))){
+    SWIG_fail_ptr("SamplePlayer_phase",1,SWIGTYPE_p_gam__SamplePlayerT_float_ipl__Trunc_phsInc__OneShot_GAM_DEFAULT_DOMAIN_t);
+  }
+  
+  result = (double)((gam::SamplePlayer< SampleType > const *)arg1)->phase();
+  lua_pushnumber(L, (lua_Number) result); SWIG_arg++;
+  return SWIG_arg;
+  
+  if(0) SWIG_fail;
+  
+fail:
+  lua_error(L);
+  return SWIG_arg;
+}
+
+
+static int _wrap_SamplePlayer_phase(lua_State* L) {
+  int argc;
+  int argv[3]={
+    1,2,3
+  };
+  
+  argc = lua_gettop(L);
+  if (argc == 1) {
+    int _v = 0;
+    {
+      void *ptr;
+      if (SWIG_isptrtype(L,argv[0])==0 || SWIG_ConvertPtr(L,argv[0], (void **) &ptr, SWIGTYPE_p_gam__SamplePlayerT_float_ipl__Trunc_phsInc__OneShot_GAM_DEFAULT_DOMAIN_t, 0)) {
+        _v = 0;
+      } else {
+        _v = 1;
+      }
+    }
+    if (_v) {
+      return _wrap_SamplePlayer_phase__SWIG_1(L);
+    }
+  }
+  if (argc == 2) {
+    int _v = 0;
+    {
+      void *ptr;
+      if (SWIG_isptrtype(L,argv[0])==0 || SWIG_ConvertPtr(L,argv[0], (void **) &ptr, SWIGTYPE_p_gam__SamplePlayerT_float_ipl__Trunc_phsInc__OneShot_GAM_DEFAULT_DOMAIN_t, 0)) {
+        _v = 0;
+      } else {
+        _v = 1;
+      }
+    }
+    if (_v) {
+      {
+        _v = lua_isnumber(L,argv[1]);
+      }
+      if (_v) {
+        return _wrap_SamplePlayer_phase__SWIG_0(L);
+      }
+    }
+  }
+  
+  SWIG_Lua_pusherrstring(L,"Wrong arguments for overloaded function 'SamplePlayer_phase'\n"
+    "  Possible C/C++ prototypes are:\n"
+    "    gam::SamplePlayer< SampleType >::phase(double)\n"
+    "    gam::SamplePlayer< SampleType >::phase() const\n");
+  lua_error(L);return 0;
+}
+
+
+static int _wrap_SamplePlayer_rate__SWIG_1(lua_State* L) {
+  int SWIG_arg = 0;
+  gam::SamplePlayer< SampleType > *arg1 = (gam::SamplePlayer< SampleType > *) 0 ;
+  double result;
+  
+  SWIG_check_num_args("gam::SamplePlayer< SampleType >::rate",1,1)
+  if(!SWIG_isptrtype(L,1)) SWIG_fail_arg("gam::SamplePlayer< SampleType >::rate",1,"gam::SamplePlayer< SampleType > const *");
+  
+  if (!SWIG_IsOK(SWIG_ConvertPtr(L,1,(void**)&arg1,SWIGTYPE_p_gam__SamplePlayerT_float_ipl__Trunc_phsInc__OneShot_GAM_DEFAULT_DOMAIN_t,0))){
+    SWIG_fail_ptr("SamplePlayer_rate",1,SWIGTYPE_p_gam__SamplePlayerT_float_ipl__Trunc_phsInc__OneShot_GAM_DEFAULT_DOMAIN_t);
+  }
+  
+  result = (double)((gam::SamplePlayer< SampleType > const *)arg1)->rate();
+  lua_pushnumber(L, (lua_Number) result); SWIG_arg++;
+  return SWIG_arg;
+  
+  if(0) SWIG_fail;
+  
+fail:
+  lua_error(L);
+  return SWIG_arg;
+}
+
+
+static int _wrap_SamplePlayer_rate(lua_State* L) {
+  int argc;
+  int argv[3]={
+    1,2,3
+  };
+  
+  argc = lua_gettop(L);
+  if (argc == 1) {
+    int _v = 0;
+    {
+      void *ptr;
+      if (SWIG_isptrtype(L,argv[0])==0 || SWIG_ConvertPtr(L,argv[0], (void **) &ptr, SWIGTYPE_p_gam__SamplePlayerT_float_ipl__Trunc_phsInc__OneShot_GAM_DEFAULT_DOMAIN_t, 0)) {
+        _v = 0;
+      } else {
+        _v = 1;
+      }
+    }
+    if (_v) {
+      return _wrap_SamplePlayer_rate__SWIG_1(L);
+    }
+  }
+  if (argc == 2) {
+    int _v = 0;
+    {
+      void *ptr;
+      if (SWIG_isptrtype(L,argv[0])==0 || SWIG_ConvertPtr(L,argv[0], (void **) &ptr, SWIGTYPE_p_gam__SamplePlayerT_float_ipl__Trunc_phsInc__OneShot_GAM_DEFAULT_DOMAIN_t, 0)) {
+        _v = 0;
+      } else {
+        _v = 1;
+      }
+    }
+    if (_v) {
+      {
+        _v = lua_isnumber(L,argv[1]);
+      }
+      if (_v) {
+        return _wrap_SamplePlayer_rate__SWIG_0(L);
+      }
+    }
+  }
+  
+  SWIG_Lua_pusherrstring(L,"Wrong arguments for overloaded function 'SamplePlayer_rate'\n"
+    "  Possible C/C++ prototypes are:\n"
+    "    gam::SamplePlayer< SampleType >::rate(double)\n"
+    "    gam::SamplePlayer< SampleType >::rate() const\n");
+  lua_error(L);return 0;
+}
+
+
+static int _wrap_SamplePlayer_onDomainChange(lua_State* L) {
+  int SWIG_arg = 0;
+  gam::SamplePlayer< SampleType > *arg1 = (gam::SamplePlayer< SampleType > *) 0 ;
+  double arg2 ;
+  
+  SWIG_check_num_args("gam::SamplePlayer< SampleType >::onDomainChange",2,2)
+  if(!SWIG_isptrtype(L,1)) SWIG_fail_arg("gam::SamplePlayer< SampleType >::onDomainChange",1,"gam::SamplePlayer< SampleType > *");
+  if(!lua_isnumber(L,2)) SWIG_fail_arg("gam::SamplePlayer< SampleType >::onDomainChange",2,"double");
+  
+  if (!SWIG_IsOK(SWIG_ConvertPtr(L,1,(void**)&arg1,SWIGTYPE_p_gam__SamplePlayerT_float_ipl__Trunc_phsInc__OneShot_GAM_DEFAULT_DOMAIN_t,0))){
+    SWIG_fail_ptr("SamplePlayer_onDomainChange",1,SWIGTYPE_p_gam__SamplePlayerT_float_ipl__Trunc_phsInc__OneShot_GAM_DEFAULT_DOMAIN_t);
+  }
+  
+  arg2 = (double)lua_tonumber(L, 2);
+  (arg1)->onDomainChange(arg2);
+  
+  return SWIG_arg;
+  
+  if(0) SWIG_fail;
+  
+fail:
+  lua_error(L);
+  return SWIG_arg;
+}
+
+
+static void swig_delete_SamplePlayer(void *obj) {
+gam::SamplePlayer< SampleType > *arg1 = (gam::SamplePlayer< SampleType > *) obj;
+delete arg1;
+}
+static int _proxy__wrap_new_SamplePlayer(lua_State *L) {
+    assert(lua_istable(L,1));
+    lua_pushcfunction(L,_wrap_new_SamplePlayer);
+    assert(!lua_isnil(L,-1));
+    lua_replace(L,1); /* replace our table with real constructor */
+    lua_call(L,lua_gettop(L)-1,1);
+    return 1;
+}
+static swig_lua_attribute swig_SamplePlayer_attributes[] = {
+    {0,0,0}
+};
+static swig_lua_method swig_SamplePlayer_methods[]= {
+    { "load", _wrap_SamplePlayer_load},
+    { "__call", _wrap_SamplePlayer___call},
+    { "Tick", _wrap_SamplePlayer_Tick},
+    { "read", _wrap_SamplePlayer_read},
+    { "readFloat", _wrap_SamplePlayer_readFloat},
+    { "advance", _wrap_SamplePlayer_advance},
+    { "buffer", _wrap_SamplePlayer_buffer},
+    { "free", _wrap_SamplePlayer_free},
+    { "range", _wrap_SamplePlayer_range},
+    { "reset", _wrap_SamplePlayer_reset},
+    { "finish", _wrap_SamplePlayer_finish},
+    { "loop", _wrap_SamplePlayer_loop},
+    { "fade", _wrap_SamplePlayer_fade},
+    { "done", _wrap_SamplePlayer_done},
+    { "channels", _wrap_SamplePlayer_channels},
+    { "frames", _wrap_SamplePlayer_frames},
+    { "frameRate", _wrap_SamplePlayer_frameRate},
+    { "freq", _wrap_SamplePlayer_freq},
+    { "max", _wrap_SamplePlayer_max},
+    { "min", _wrap_SamplePlayer_min},
+    { "length", _wrap_SamplePlayer_length},
+    { "pos", _wrap_SamplePlayer_pos},
+    { "posInInterval", _wrap_SamplePlayer_posInInterval},
+    { "phase", _wrap_SamplePlayer_phase},
+    { "rate", _wrap_SamplePlayer_rate},
+    { "onDomainChange", _wrap_SamplePlayer_onDomainChange},
+    {0,0}
+};
+static swig_lua_method swig_SamplePlayer_meta[] = {
+    { "__call", _wrap_SamplePlayer___call},
+    {0,0}
+};
+
+static swig_lua_attribute swig_SamplePlayer_Sf_SwigStatic_attributes[] = {
+    {0,0,0}
+};
+static swig_lua_const_info swig_SamplePlayer_Sf_SwigStatic_constants[]= {
+    {0,0,0,0,0,0}
+};
+static swig_lua_method swig_SamplePlayer_Sf_SwigStatic_methods[]= {
+    {0,0}
+};
+static swig_lua_class* swig_SamplePlayer_Sf_SwigStatic_classes[]= {
+    0
+};
+
+static swig_lua_namespace swig_SamplePlayer_Sf_SwigStatic = {
+    "SamplePlayer",
+    swig_SamplePlayer_Sf_SwigStatic_methods,
+    swig_SamplePlayer_Sf_SwigStatic_attributes,
+    swig_SamplePlayer_Sf_SwigStatic_constants,
+    swig_SamplePlayer_Sf_SwigStatic_classes,
+    0
+};
+static swig_lua_class *swig_SamplePlayer_bases[] = {0,0};
+static const char *swig_SamplePlayer_base_names[] = {"gam::Array< SampleType > *",0};
+static swig_lua_class _wrap_class_SamplePlayer = { "SamplePlayer", "SamplePlayer", &SWIGTYPE_p_gam__SamplePlayerT_float_ipl__Trunc_phsInc__OneShot_GAM_DEFAULT_DOMAIN_t,_proxy__wrap_new_SamplePlayer, swig_delete_SamplePlayer, swig_SamplePlayer_methods, swig_SamplePlayer_attributes, &swig_SamplePlayer_Sf_SwigStatic, swig_SamplePlayer_meta, swig_SamplePlayer_bases, swig_SamplePlayer_base_names };
+
+static int _wrap_SoundFile_toString__SWIG_0(lua_State* L) {
+  int SWIG_arg = 0;
+  gam::SoundFile::Format arg1 ;
+  char *result = 0 ;
+  
+  SWIG_check_num_args("gam::SoundFile::toString",1,1)
+  if(!lua_isnumber(L,1)) SWIG_fail_arg("gam::SoundFile::toString",1,"gam::SoundFile::Format");
+  arg1 = (gam::SoundFile::Format)(int)lua_tonumber(L, 1);
+  result = (char *)gam::SoundFile::toString(arg1);
+  lua_pushstring(L,(const char *)result); SWIG_arg++;
+  return SWIG_arg;
+  
+  if(0) SWIG_fail;
+  
+fail:
+  lua_error(L);
+  return SWIG_arg;
+}
+
+
+static int _wrap_SoundFile_toString__SWIG_1(lua_State* L) {
+  int SWIG_arg = 0;
+  gam::SoundFile::EncodingType arg1 ;
+  char *result = 0 ;
+  
+  SWIG_check_num_args("gam::SoundFile::toString",1,1)
+  if(!lua_isnumber(L,1)) SWIG_fail_arg("gam::SoundFile::toString",1,"gam::SoundFile::EncodingType");
+  arg1 = (gam::SoundFile::EncodingType)(int)lua_tonumber(L, 1);
+  result = (char *)gam::SoundFile::toString(arg1);
+  lua_pushstring(L,(const char *)result); SWIG_arg++;
+  return SWIG_arg;
+  
+  if(0) SWIG_fail;
+  
+fail:
+  lua_error(L);
+  return SWIG_arg;
+}
+
+
+static int _wrap_SoundFile_toString(lua_State* L) {
+  int argc;
+  int argv[2]={
+    1,2
+  };
+  
+  argc = lua_gettop(L);
+  if (argc == 1) {
+    int _v = 0;
+    {
+      _v = lua_isnumber(L,argv[0]);
+    }
+    if (_v) {
+      return _wrap_SoundFile_toString__SWIG_0(L);
+    }
+  }
+  if (argc == 1) {
+    int _v = 0;
+    {
+      _v = lua_isnumber(L,argv[0]);
+    }
+    if (_v) {
+      return _wrap_SoundFile_toString__SWIG_1(L);
+    }
+  }
+  
+  SWIG_Lua_pusherrstring(L,"Wrong arguments for overloaded function 'SoundFile_toString'\n"
+    "  Possible C/C++ prototypes are:\n"
+    "    gam::SoundFile::toString(gam::SoundFile::Format)\n"
+    "    gam::SoundFile::toString(gam::SoundFile::EncodingType)\n");
+  lua_error(L);return 0;
+}
+
+
+static int _wrap_new_SoundFile__SWIG_0(lua_State* L) {
+  int SWIG_arg = 0;
+  std::string *arg1 = 0 ;
+  gam::SoundFile *result = 0 ;
+  
+  SWIG_check_num_args("gam::SoundFile::SoundFile",1,1)
+  if(!lua_isuserdata(L,1)) SWIG_fail_arg("gam::SoundFile::SoundFile",1,"std::string const &");
+  
+  if (!SWIG_IsOK(SWIG_ConvertPtr(L,1,(void**)&arg1,SWIGTYPE_p_std__string,0))){
+    SWIG_fail_ptr("new_SoundFile",1,SWIGTYPE_p_std__string);
+  }
+  
+  result = (gam::SoundFile *)new gam::SoundFile((std::string const &)*arg1);
+  SWIG_NewPointerObj(L,result,SWIGTYPE_p_gam__SoundFile,1); SWIG_arg++; 
+  return SWIG_arg;
+  
+  if(0) SWIG_fail;
+  
+fail:
+  lua_error(L);
+  return SWIG_arg;
+}
+
+
+static int _wrap_new_SoundFile__SWIG_1(lua_State* L) {
+  int SWIG_arg = 0;
+  gam::SoundFile *result = 0 ;
+  
+  SWIG_check_num_args("gam::SoundFile::SoundFile",0,0)
+  result = (gam::SoundFile *)new gam::SoundFile();
+  SWIG_NewPointerObj(L,result,SWIGTYPE_p_gam__SoundFile,1); SWIG_arg++; 
+  return SWIG_arg;
+  
+  if(0) SWIG_fail;
+  
+fail:
+  lua_error(L);
+  return SWIG_arg;
+}
+
+
+static int _wrap_new_SoundFile__SWIG_2(lua_State* L) {
+  int SWIG_arg = 0;
+  std::string *arg1 = 0 ;
+  gam::SoundFile *arg2 = 0 ;
+  gam::SoundFile *result = 0 ;
+  
+  SWIG_check_num_args("gam::SoundFile::SoundFile",2,2)
+  if(!lua_isuserdata(L,1)) SWIG_fail_arg("gam::SoundFile::SoundFile",1,"std::string const &");
+  if(!lua_isuserdata(L,2)) SWIG_fail_arg("gam::SoundFile::SoundFile",2,"gam::SoundFile const &");
+  
+  if (!SWIG_IsOK(SWIG_ConvertPtr(L,1,(void**)&arg1,SWIGTYPE_p_std__string,0))){
+    SWIG_fail_ptr("new_SoundFile",1,SWIGTYPE_p_std__string);
+  }
+  
+  
+  if (!SWIG_IsOK(SWIG_ConvertPtr(L,2,(void**)&arg2,SWIGTYPE_p_gam__SoundFile,0))){
+    SWIG_fail_ptr("new_SoundFile",2,SWIGTYPE_p_gam__SoundFile);
+  }
+  
+  result = (gam::SoundFile *)new gam::SoundFile((std::string const &)*arg1,(gam::SoundFile const &)*arg2);
+  SWIG_NewPointerObj(L,result,SWIGTYPE_p_gam__SoundFile,1); SWIG_arg++; 
+  return SWIG_arg;
+  
+  if(0) SWIG_fail;
+  
+fail:
+  lua_error(L);
+  return SWIG_arg;
+}
+
+
+static int _wrap_new_SoundFile(lua_State* L) {
+  int argc;
+  int argv[3]={
+    1,2,3
+  };
+  
+  argc = lua_gettop(L);
+  if (argc == 0) {
+    return _wrap_new_SoundFile__SWIG_1(L);
+  }
+  if (argc == 1) {
+    int _v = 0;
+    {
+      void *ptr;
+      if (lua_isuserdata(L,argv[0])==0 || SWIG_ConvertPtr(L,argv[0], (void **) &ptr, SWIGTYPE_p_std__string, SWIG_POINTER_NO_NULL)) {
+        _v = 0;
+      } else {
+        _v = 1;
+      }
+    }
+    if (_v) {
+      return _wrap_new_SoundFile__SWIG_0(L);
+    }
+  }
+  if (argc == 2) {
+    int _v = 0;
+    {
+      void *ptr;
+      if (lua_isuserdata(L,argv[0])==0 || SWIG_ConvertPtr(L,argv[0], (void **) &ptr, SWIGTYPE_p_std__string, SWIG_POINTER_NO_NULL)) {
+        _v = 0;
+      } else {
+        _v = 1;
+      }
+    }
+    if (_v) {
+      {
+        void *ptr;
+        if (lua_isuserdata(L,argv[1])==0 || SWIG_ConvertPtr(L,argv[1], (void **) &ptr, SWIGTYPE_p_gam__SoundFile, SWIG_POINTER_NO_NULL)) {
+          _v = 0;
+        } else {
+          _v = 1;
+        }
+      }
+      if (_v) {
+        return _wrap_new_SoundFile__SWIG_2(L);
+      }
+    }
+  }
+  
+  SWIG_Lua_pusherrstring(L,"Wrong arguments for overloaded function 'new_SoundFile'\n"
+    "  Possible C/C++ prototypes are:\n"
+    "    gam::SoundFile::SoundFile(std::string const &)\n"
+    "    gam::SoundFile::SoundFile()\n"
+    "    gam::SoundFile::SoundFile(std::string const &,gam::SoundFile const &)\n");
+  lua_error(L);return 0;
+}
+
+
+static int _wrap_SoundFile_openRead__SWIG_0(lua_State* L) {
+  int SWIG_arg = 0;
+  gam::SoundFile *arg1 = (gam::SoundFile *) 0 ;
+  bool result;
+  
+  SWIG_check_num_args("gam::SoundFile::openRead",1,1)
+  if(!SWIG_isptrtype(L,1)) SWIG_fail_arg("gam::SoundFile::openRead",1,"gam::SoundFile *");
+  
+  if (!SWIG_IsOK(SWIG_ConvertPtr(L,1,(void**)&arg1,SWIGTYPE_p_gam__SoundFile,0))){
+    SWIG_fail_ptr("SoundFile_openRead",1,SWIGTYPE_p_gam__SoundFile);
+  }
+  
+  result = (bool)(arg1)->openRead();
+  lua_pushboolean(L,(int)(result!=0)); SWIG_arg++;
+  return SWIG_arg;
+  
+  if(0) SWIG_fail;
+  
+fail:
+  lua_error(L);
+  return SWIG_arg;
+}
+
+
+static int _wrap_SoundFile_openRead__SWIG_1(lua_State* L) {
+  int SWIG_arg = 0;
+  gam::SoundFile *arg1 = (gam::SoundFile *) 0 ;
+  std::string *arg2 = 0 ;
+  bool result;
+  
+  SWIG_check_num_args("gam::SoundFile::openRead",2,2)
+  if(!SWIG_isptrtype(L,1)) SWIG_fail_arg("gam::SoundFile::openRead",1,"gam::SoundFile *");
+  if(!lua_isuserdata(L,2)) SWIG_fail_arg("gam::SoundFile::openRead",2,"std::string const &");
+  
+  if (!SWIG_IsOK(SWIG_ConvertPtr(L,1,(void**)&arg1,SWIGTYPE_p_gam__SoundFile,0))){
+    SWIG_fail_ptr("SoundFile_openRead",1,SWIGTYPE_p_gam__SoundFile);
+  }
+  
+  
+  if (!SWIG_IsOK(SWIG_ConvertPtr(L,2,(void**)&arg2,SWIGTYPE_p_std__string,0))){
+    SWIG_fail_ptr("SoundFile_openRead",2,SWIGTYPE_p_std__string);
+  }
+  
+  result = (bool)(arg1)->openRead((std::string const &)*arg2);
+  lua_pushboolean(L,(int)(result!=0)); SWIG_arg++;
+  return SWIG_arg;
+  
+  if(0) SWIG_fail;
+  
+fail:
+  lua_error(L);
+  return SWIG_arg;
+}
+
+
+static int _wrap_SoundFile_openRead(lua_State* L) {
+  int argc;
+  int argv[3]={
+    1,2,3
+  };
+  
+  argc = lua_gettop(L);
+  if (argc == 1) {
+    int _v = 0;
+    {
+      void *ptr;
+      if (SWIG_isptrtype(L,argv[0])==0 || SWIG_ConvertPtr(L,argv[0], (void **) &ptr, SWIGTYPE_p_gam__SoundFile, 0)) {
+        _v = 0;
+      } else {
+        _v = 1;
+      }
+    }
+    if (_v) {
+      return _wrap_SoundFile_openRead__SWIG_0(L);
+    }
+  }
+  if (argc == 2) {
+    int _v = 0;
+    {
+      void *ptr;
+      if (SWIG_isptrtype(L,argv[0])==0 || SWIG_ConvertPtr(L,argv[0], (void **) &ptr, SWIGTYPE_p_gam__SoundFile, 0)) {
+        _v = 0;
+      } else {
+        _v = 1;
+      }
+    }
+    if (_v) {
+      {
+        void *ptr;
+        if (lua_isuserdata(L,argv[1])==0 || SWIG_ConvertPtr(L,argv[1], (void **) &ptr, SWIGTYPE_p_std__string, SWIG_POINTER_NO_NULL)) {
+          _v = 0;
+        } else {
+          _v = 1;
+        }
+      }
+      if (_v) {
+        return _wrap_SoundFile_openRead__SWIG_1(L);
+      }
+    }
+  }
+  
+  SWIG_Lua_pusherrstring(L,"Wrong arguments for overloaded function 'SoundFile_openRead'\n"
+    "  Possible C/C++ prototypes are:\n"
+    "    gam::SoundFile::openRead()\n"
+    "    gam::SoundFile::openRead(std::string const &)\n");
+  lua_error(L);return 0;
+}
+
+
+static int _wrap_SoundFile_openWrite__SWIG_0(lua_State* L) {
+  int SWIG_arg = 0;
+  gam::SoundFile *arg1 = (gam::SoundFile *) 0 ;
+  bool result;
+  
+  SWIG_check_num_args("gam::SoundFile::openWrite",1,1)
+  if(!SWIG_isptrtype(L,1)) SWIG_fail_arg("gam::SoundFile::openWrite",1,"gam::SoundFile *");
+  
+  if (!SWIG_IsOK(SWIG_ConvertPtr(L,1,(void**)&arg1,SWIGTYPE_p_gam__SoundFile,0))){
+    SWIG_fail_ptr("SoundFile_openWrite",1,SWIGTYPE_p_gam__SoundFile);
+  }
+  
+  result = (bool)(arg1)->openWrite();
+  lua_pushboolean(L,(int)(result!=0)); SWIG_arg++;
+  return SWIG_arg;
+  
+  if(0) SWIG_fail;
+  
+fail:
+  lua_error(L);
+  return SWIG_arg;
+}
+
+
+static int _wrap_SoundFile_openWrite__SWIG_1(lua_State* L) {
+  int SWIG_arg = 0;
+  gam::SoundFile *arg1 = (gam::SoundFile *) 0 ;
+  std::string *arg2 = 0 ;
+  bool result;
+  
+  SWIG_check_num_args("gam::SoundFile::openWrite",2,2)
+  if(!SWIG_isptrtype(L,1)) SWIG_fail_arg("gam::SoundFile::openWrite",1,"gam::SoundFile *");
+  if(!lua_isuserdata(L,2)) SWIG_fail_arg("gam::SoundFile::openWrite",2,"std::string const &");
+  
+  if (!SWIG_IsOK(SWIG_ConvertPtr(L,1,(void**)&arg1,SWIGTYPE_p_gam__SoundFile,0))){
+    SWIG_fail_ptr("SoundFile_openWrite",1,SWIGTYPE_p_gam__SoundFile);
+  }
+  
+  
+  if (!SWIG_IsOK(SWIG_ConvertPtr(L,2,(void**)&arg2,SWIGTYPE_p_std__string,0))){
+    SWIG_fail_ptr("SoundFile_openWrite",2,SWIGTYPE_p_std__string);
+  }
+  
+  result = (bool)(arg1)->openWrite((std::string const &)*arg2);
+  lua_pushboolean(L,(int)(result!=0)); SWIG_arg++;
+  return SWIG_arg;
+  
+  if(0) SWIG_fail;
+  
+fail:
+  lua_error(L);
+  return SWIG_arg;
+}
+
+
+static int _wrap_SoundFile_openWrite(lua_State* L) {
+  int argc;
+  int argv[3]={
+    1,2,3
+  };
+  
+  argc = lua_gettop(L);
+  if (argc == 1) {
+    int _v = 0;
+    {
+      void *ptr;
+      if (SWIG_isptrtype(L,argv[0])==0 || SWIG_ConvertPtr(L,argv[0], (void **) &ptr, SWIGTYPE_p_gam__SoundFile, 0)) {
+        _v = 0;
+      } else {
+        _v = 1;
+      }
+    }
+    if (_v) {
+      return _wrap_SoundFile_openWrite__SWIG_0(L);
+    }
+  }
+  if (argc == 2) {
+    int _v = 0;
+    {
+      void *ptr;
+      if (SWIG_isptrtype(L,argv[0])==0 || SWIG_ConvertPtr(L,argv[0], (void **) &ptr, SWIGTYPE_p_gam__SoundFile, 0)) {
+        _v = 0;
+      } else {
+        _v = 1;
+      }
+    }
+    if (_v) {
+      {
+        void *ptr;
+        if (lua_isuserdata(L,argv[1])==0 || SWIG_ConvertPtr(L,argv[1], (void **) &ptr, SWIGTYPE_p_std__string, SWIG_POINTER_NO_NULL)) {
+          _v = 0;
+        } else {
+          _v = 1;
+        }
+      }
+      if (_v) {
+        return _wrap_SoundFile_openWrite__SWIG_1(L);
+      }
+    }
+  }
+  
+  SWIG_Lua_pusherrstring(L,"Wrong arguments for overloaded function 'SoundFile_openWrite'\n"
+    "  Possible C/C++ prototypes are:\n"
+    "    gam::SoundFile::openWrite()\n"
+    "    gam::SoundFile::openWrite(std::string const &)\n");
+  lua_error(L);return 0;
+}
+
+
+static int _wrap_SoundFile_close(lua_State* L) {
+  int SWIG_arg = 0;
+  gam::SoundFile *arg1 = (gam::SoundFile *) 0 ;
+  bool result;
+  
+  SWIG_check_num_args("gam::SoundFile::close",1,1)
+  if(!SWIG_isptrtype(L,1)) SWIG_fail_arg("gam::SoundFile::close",1,"gam::SoundFile *");
+  
+  if (!SWIG_IsOK(SWIG_ConvertPtr(L,1,(void**)&arg1,SWIGTYPE_p_gam__SoundFile,0))){
+    SWIG_fail_ptr("SoundFile_close",1,SWIGTYPE_p_gam__SoundFile);
+  }
+  
+  result = (bool)(arg1)->close();
+  lua_pushboolean(L,(int)(result!=0)); SWIG_arg++;
+  return SWIG_arg;
+  
+  if(0) SWIG_fail;
+  
+fail:
+  lua_error(L);
+  return SWIG_arg;
+}
+
+
+static int _wrap_SoundFile_read(lua_State* L) {
+  int SWIG_arg = 0;
+  gam::SoundFile *arg1 = (gam::SoundFile *) 0 ;
+  SampleType *arg2 = (SampleType *) 0 ;
+  int arg3 ;
+  int result;
+  
+  SWIG_check_num_args("gam::SoundFile::read",3,3)
+  if(!SWIG_isptrtype(L,1)) SWIG_fail_arg("gam::SoundFile::read",1,"gam::SoundFile *");
+  if(!SWIG_isptrtype(L,2)) SWIG_fail_arg("gam::SoundFile::read",2,"SampleType *");
+  if(!lua_isnumber(L,3)) SWIG_fail_arg("gam::SoundFile::read",3,"int");
+  
+  if (!SWIG_IsOK(SWIG_ConvertPtr(L,1,(void**)&arg1,SWIGTYPE_p_gam__SoundFile,0))){
+    SWIG_fail_ptr("SoundFile_read",1,SWIGTYPE_p_gam__SoundFile);
+  }
+  
+  
+  if (!SWIG_IsOK(SWIG_ConvertPtr(L,2,(void**)&arg2,SWIGTYPE_p_float,0))){
+    SWIG_fail_ptr("SoundFile_read",2,SWIGTYPE_p_float);
+  }
+  
+  arg3 = (int)lua_tonumber(L, 3);
+  result = (int)(arg1)->read(arg2,arg3);
+  lua_pushnumber(L, (lua_Number) result); SWIG_arg++;
+  return SWIG_arg;
+  
+  if(0) SWIG_fail;
+  
+fail:
+  lua_error(L);
+  return SWIG_arg;
+}
+
+
+static int _wrap_SoundFile_readAll__SWIG_0(lua_State* L) {
+  int SWIG_arg = 0;
+  gam::SoundFile *arg1 = (gam::SoundFile *) 0 ;
+  SampleType *arg2 = (SampleType *) 0 ;
+  int result;
+  
+  SWIG_check_num_args("gam::SoundFile::readAll",2,2)
+  if(!SWIG_isptrtype(L,1)) SWIG_fail_arg("gam::SoundFile::readAll",1,"gam::SoundFile *");
+  if(!SWIG_isptrtype(L,2)) SWIG_fail_arg("gam::SoundFile::readAll",2,"SampleType *");
+  
+  if (!SWIG_IsOK(SWIG_ConvertPtr(L,1,(void**)&arg1,SWIGTYPE_p_gam__SoundFile,0))){
+    SWIG_fail_ptr("SoundFile_readAll",1,SWIGTYPE_p_gam__SoundFile);
+  }
+  
+  
+  if (!SWIG_IsOK(SWIG_ConvertPtr(L,2,(void**)&arg2,SWIGTYPE_p_float,0))){
+    SWIG_fail_ptr("SoundFile_readAll",2,SWIGTYPE_p_float);
+  }
+  
+  result = (int)(arg1)->readAll(arg2);
+  lua_pushnumber(L, (lua_Number) result); SWIG_arg++;
+  return SWIG_arg;
+  
+  if(0) SWIG_fail;
+  
+fail:
+  lua_error(L);
+  return SWIG_arg;
+}
+
+
+static int _wrap_SoundFile_readAll__SWIG_1(lua_State* L) {
+  int SWIG_arg = 0;
+  gam::SoundFile *arg1 = (gam::SoundFile *) 0 ;
+  std::vector< SampleType > *arg2 = 0 ;
+  int result;
+  
+  SWIG_check_num_args("gam::SoundFile::readAll",2,2)
+  if(!SWIG_isptrtype(L,1)) SWIG_fail_arg("gam::SoundFile::readAll",1,"gam::SoundFile *");
+  if(!lua_isuserdata(L,2)) SWIG_fail_arg("gam::SoundFile::readAll",2,"std::vector< SampleType > &");
+  
+  if (!SWIG_IsOK(SWIG_ConvertPtr(L,1,(void**)&arg1,SWIGTYPE_p_gam__SoundFile,0))){
+    SWIG_fail_ptr("SoundFile_readAll",1,SWIGTYPE_p_gam__SoundFile);
+  }
+  
+  
+  if (!SWIG_IsOK(SWIG_ConvertPtr(L,2,(void**)&arg2,SWIGTYPE_p_std__vectorT_float_t,0))){
+    SWIG_fail_ptr("SoundFile_readAll",2,SWIGTYPE_p_std__vectorT_float_t);
+  }
+  
+  result = (int)(arg1)->readAll(*arg2);
+  lua_pushnumber(L, (lua_Number) result); SWIG_arg++;
+  return SWIG_arg;
+  
+  if(0) SWIG_fail;
+  
+fail:
+  lua_error(L);
+  return SWIG_arg;
+}
+
+
+static int _wrap_SoundFile_readAll(lua_State* L) {
+  int argc;
+  int argv[3]={
+    1,2,3
+  };
+  
+  argc = lua_gettop(L);
+  if (argc == 2) {
+    int _v = 0;
+    {
+      void *ptr;
+      if (SWIG_isptrtype(L,argv[0])==0 || SWIG_ConvertPtr(L,argv[0], (void **) &ptr, SWIGTYPE_p_gam__SoundFile, 0)) {
+        _v = 0;
+      } else {
+        _v = 1;
+      }
+    }
+    if (_v) {
+      {
+        void *ptr;
+        if (SWIG_isptrtype(L,argv[1])==0 || SWIG_ConvertPtr(L,argv[1], (void **) &ptr, SWIGTYPE_p_float, 0)) {
+          _v = 0;
+        } else {
+          _v = 1;
+        }
+      }
+      if (_v) {
+        return _wrap_SoundFile_readAll__SWIG_0(L);
+      }
+    }
+  }
+  if (argc == 2) {
+    int _v = 0;
+    {
+      void *ptr;
+      if (SWIG_isptrtype(L,argv[0])==0 || SWIG_ConvertPtr(L,argv[0], (void **) &ptr, SWIGTYPE_p_gam__SoundFile, 0)) {
+        _v = 0;
+      } else {
+        _v = 1;
+      }
+    }
+    if (_v) {
+      {
+        void *ptr;
+        if (lua_isuserdata(L,argv[1])==0 || SWIG_ConvertPtr(L,argv[1], (void **) &ptr, SWIGTYPE_p_std__vectorT_float_t, SWIG_POINTER_NO_NULL)) {
+          _v = 0;
+        } else {
+          _v = 1;
+        }
+      }
+      if (_v) {
+        return _wrap_SoundFile_readAll__SWIG_1(L);
+      }
+    }
+  }
+  
+  SWIG_Lua_pusherrstring(L,"Wrong arguments for overloaded function 'SoundFile_readAll'\n"
+    "  Possible C/C++ prototypes are:\n"
+    "    gam::SoundFile::readAll(SampleType *)\n"
+    "    gam::SoundFile::readAll(std::vector< SampleType > &)\n");
+  lua_error(L);return 0;
+}
+
+
+static int _wrap_SoundFile_readAllD(lua_State* L) {
+  int SWIG_arg = 0;
+  gam::SoundFile *arg1 = (gam::SoundFile *) 0 ;
+  SampleType *arg2 = (SampleType *) 0 ;
+  int result;
+  
+  SWIG_check_num_args("gam::SoundFile::readAllD",2,2)
+  if(!SWIG_isptrtype(L,1)) SWIG_fail_arg("gam::SoundFile::readAllD",1,"gam::SoundFile *");
+  if(!SWIG_isptrtype(L,2)) SWIG_fail_arg("gam::SoundFile::readAllD",2,"SampleType *");
+  
+  if (!SWIG_IsOK(SWIG_ConvertPtr(L,1,(void**)&arg1,SWIGTYPE_p_gam__SoundFile,0))){
+    SWIG_fail_ptr("SoundFile_readAllD",1,SWIGTYPE_p_gam__SoundFile);
+  }
+  
+  
+  if (!SWIG_IsOK(SWIG_ConvertPtr(L,2,(void**)&arg2,SWIGTYPE_p_float,0))){
+    SWIG_fail_ptr("SoundFile_readAllD",2,SWIGTYPE_p_float);
+  }
+  
+  result = (int)(arg1)->readAllD(arg2);
+  lua_pushnumber(L, (lua_Number) result); SWIG_arg++;
+  return SWIG_arg;
+  
+  if(0) SWIG_fail;
+  
+fail:
+  lua_error(L);
+  return SWIG_arg;
+}
+
+
+static int _wrap_SoundFile_write__SWIG_0(lua_State* L) {
+  int SWIG_arg = 0;
+  gam::SoundFile *arg1 = (gam::SoundFile *) 0 ;
+  SampleType *arg2 = (SampleType *) 0 ;
+  int arg3 ;
+  int result;
+  
+  SWIG_check_num_args("gam::SoundFile::write",3,3)
+  if(!SWIG_isptrtype(L,1)) SWIG_fail_arg("gam::SoundFile::write",1,"gam::SoundFile *");
+  if(!SWIG_isptrtype(L,2)) SWIG_fail_arg("gam::SoundFile::write",2,"SampleType const *");
+  if(!lua_isnumber(L,3)) SWIG_fail_arg("gam::SoundFile::write",3,"int");
+  
+  if (!SWIG_IsOK(SWIG_ConvertPtr(L,1,(void**)&arg1,SWIGTYPE_p_gam__SoundFile,0))){
+    SWIG_fail_ptr("SoundFile_write",1,SWIGTYPE_p_gam__SoundFile);
+  }
+  
+  
+  if (!SWIG_IsOK(SWIG_ConvertPtr(L,2,(void**)&arg2,SWIGTYPE_p_float,0))){
+    SWIG_fail_ptr("SoundFile_write",2,SWIGTYPE_p_float);
+  }
+  
+  arg3 = (int)lua_tonumber(L, 3);
+  result = (int)(arg1)->write((SampleType const *)arg2,arg3);
+  lua_pushnumber(L, (lua_Number) result); SWIG_arg++;
+  return SWIG_arg;
+  
+  if(0) SWIG_fail;
+  
+fail:
+  lua_error(L);
+  return SWIG_arg;
+}
+
+
+static int _wrap_SoundFile_write__SWIG_1(lua_State* L) {
+  int SWIG_arg = 0;
+  gam::SoundFile *arg1 = (gam::SoundFile *) 0 ;
+  std::vector< SampleType > *arg2 = 0 ;
+  int result;
+  
+  SWIG_check_num_args("gam::SoundFile::write",2,2)
+  if(!SWIG_isptrtype(L,1)) SWIG_fail_arg("gam::SoundFile::write",1,"gam::SoundFile *");
+  if(!lua_isuserdata(L,2)) SWIG_fail_arg("gam::SoundFile::write",2,"std::vector< SampleType > const &");
+  
+  if (!SWIG_IsOK(SWIG_ConvertPtr(L,1,(void**)&arg1,SWIGTYPE_p_gam__SoundFile,0))){
+    SWIG_fail_ptr("SoundFile_write",1,SWIGTYPE_p_gam__SoundFile);
+  }
+  
+  
+  if (!SWIG_IsOK(SWIG_ConvertPtr(L,2,(void**)&arg2,SWIGTYPE_p_std__vectorT_float_t,0))){
+    SWIG_fail_ptr("SoundFile_write",2,SWIGTYPE_p_std__vectorT_float_t);
+  }
+  
+  result = (int)(arg1)->write((std::vector< SampleType > const &)*arg2);
+  lua_pushnumber(L, (lua_Number) result); SWIG_arg++;
+  return SWIG_arg;
+  
+  if(0) SWIG_fail;
+  
+fail:
+  lua_error(L);
+  return SWIG_arg;
+}
+
+
+static int _wrap_SoundFile_write(lua_State* L) {
+  int argc;
+  int argv[4]={
+    1,2,3,4
+  };
+  
+  argc = lua_gettop(L);
+  if (argc == 2) {
+    int _v = 0;
+    {
+      void *ptr;
+      if (SWIG_isptrtype(L,argv[0])==0 || SWIG_ConvertPtr(L,argv[0], (void **) &ptr, SWIGTYPE_p_gam__SoundFile, 0)) {
+        _v = 0;
+      } else {
+        _v = 1;
+      }
+    }
+    if (_v) {
+      {
+        void *ptr;
+        if (lua_isuserdata(L,argv[1])==0 || SWIG_ConvertPtr(L,argv[1], (void **) &ptr, SWIGTYPE_p_std__vectorT_float_t, SWIG_POINTER_NO_NULL)) {
+          _v = 0;
+        } else {
+          _v = 1;
+        }
+      }
+      if (_v) {
+        return _wrap_SoundFile_write__SWIG_1(L);
+      }
+    }
+  }
+  if (argc == 3) {
+    int _v = 0;
+    {
+      void *ptr;
+      if (SWIG_isptrtype(L,argv[0])==0 || SWIG_ConvertPtr(L,argv[0], (void **) &ptr, SWIGTYPE_p_gam__SoundFile, 0)) {
+        _v = 0;
+      } else {
+        _v = 1;
+      }
+    }
+    if (_v) {
+      {
+        void *ptr;
+        if (SWIG_isptrtype(L,argv[1])==0 || SWIG_ConvertPtr(L,argv[1], (void **) &ptr, SWIGTYPE_p_float, 0)) {
+          _v = 0;
+        } else {
+          _v = 1;
+        }
+      }
+      if (_v) {
+        {
+          _v = lua_isnumber(L,argv[2]);
+        }
+        if (_v) {
+          return _wrap_SoundFile_write__SWIG_0(L);
+        }
+      }
+    }
+  }
+  
+  SWIG_Lua_pusherrstring(L,"Wrong arguments for overloaded function 'SoundFile_write'\n"
+    "  Possible C/C++ prototypes are:\n"
+    "    gam::SoundFile::write(SampleType const *,int)\n"
+    "    gam::SoundFile::write(std::vector< SampleType > const &)\n");
+  lua_error(L);return 0;
+}
+
+
+static int _wrap_SoundFile_opened(lua_State* L) {
+  int SWIG_arg = 0;
+  gam::SoundFile *arg1 = (gam::SoundFile *) 0 ;
+  bool result;
+  
+  SWIG_check_num_args("gam::SoundFile::opened",1,1)
+  if(!SWIG_isptrtype(L,1)) SWIG_fail_arg("gam::SoundFile::opened",1,"gam::SoundFile const *");
+  
+  if (!SWIG_IsOK(SWIG_ConvertPtr(L,1,(void**)&arg1,SWIGTYPE_p_gam__SoundFile,0))){
+    SWIG_fail_ptr("SoundFile_opened",1,SWIGTYPE_p_gam__SoundFile);
+  }
+  
+  result = (bool)((gam::SoundFile const *)arg1)->opened();
+  lua_pushboolean(L,(int)(result!=0)); SWIG_arg++;
+  return SWIG_arg;
+  
+  if(0) SWIG_fail;
+  
+fail:
+  lua_error(L);
+  return SWIG_arg;
+}
+
+
+static int _wrap_SoundFile_encoding__SWIG_0(lua_State* L) {
+  int SWIG_arg = 0;
+  gam::SoundFile *arg1 = (gam::SoundFile *) 0 ;
+  gam::SoundFile::EncodingType result;
+  
+  SWIG_check_num_args("gam::SoundFile::encoding",1,1)
+  if(!SWIG_isptrtype(L,1)) SWIG_fail_arg("gam::SoundFile::encoding",1,"gam::SoundFile const *");
+  
+  if (!SWIG_IsOK(SWIG_ConvertPtr(L,1,(void**)&arg1,SWIGTYPE_p_gam__SoundFile,0))){
+    SWIG_fail_ptr("SoundFile_encoding",1,SWIGTYPE_p_gam__SoundFile);
+  }
+  
+  result = (gam::SoundFile::EncodingType)((gam::SoundFile const *)arg1)->encoding();
+  lua_pushnumber(L, (lua_Number)(int)(result)); SWIG_arg++;
+  return SWIG_arg;
+  
+  if(0) SWIG_fail;
+  
+fail:
+  lua_error(L);
+  return SWIG_arg;
+}
+
+
+static int _wrap_SoundFile_format__SWIG_0(lua_State* L) {
+  int SWIG_arg = 0;
+  gam::SoundFile *arg1 = (gam::SoundFile *) 0 ;
+  gam::SoundFile::Format result;
+  
+  SWIG_check_num_args("gam::SoundFile::format",1,1)
+  if(!SWIG_isptrtype(L,1)) SWIG_fail_arg("gam::SoundFile::format",1,"gam::SoundFile const *");
+  
+  if (!SWIG_IsOK(SWIG_ConvertPtr(L,1,(void**)&arg1,SWIGTYPE_p_gam__SoundFile,0))){
+    SWIG_fail_ptr("SoundFile_format",1,SWIGTYPE_p_gam__SoundFile);
+  }
+  
+  result = (gam::SoundFile::Format)((gam::SoundFile const *)arg1)->format();
+  lua_pushnumber(L, (lua_Number)(int)(result)); SWIG_arg++;
+  return SWIG_arg;
+  
+  if(0) SWIG_fail;
+  
+fail:
+  lua_error(L);
+  return SWIG_arg;
+}
+
+
+static int _wrap_SoundFile_frameRate__SWIG_0(lua_State* L) {
+  int SWIG_arg = 0;
+  gam::SoundFile *arg1 = (gam::SoundFile *) 0 ;
+  double result;
+  
+  SWIG_check_num_args("gam::SoundFile::frameRate",1,1)
+  if(!SWIG_isptrtype(L,1)) SWIG_fail_arg("gam::SoundFile::frameRate",1,"gam::SoundFile const *");
+  
+  if (!SWIG_IsOK(SWIG_ConvertPtr(L,1,(void**)&arg1,SWIGTYPE_p_gam__SoundFile,0))){
+    SWIG_fail_ptr("SoundFile_frameRate",1,SWIGTYPE_p_gam__SoundFile);
+  }
+  
+  result = (double)((gam::SoundFile const *)arg1)->frameRate();
+  lua_pushnumber(L, (lua_Number) result); SWIG_arg++;
+  return SWIG_arg;
+  
+  if(0) SWIG_fail;
+  
+fail:
+  lua_error(L);
+  return SWIG_arg;
+}
+
+
+static int _wrap_SoundFile_frames(lua_State* L) {
+  int SWIG_arg = 0;
+  gam::SoundFile *arg1 = (gam::SoundFile *) 0 ;
+  int result;
+  
+  SWIG_check_num_args("gam::SoundFile::frames",1,1)
+  if(!SWIG_isptrtype(L,1)) SWIG_fail_arg("gam::SoundFile::frames",1,"gam::SoundFile const *");
+  
+  if (!SWIG_IsOK(SWIG_ConvertPtr(L,1,(void**)&arg1,SWIGTYPE_p_gam__SoundFile,0))){
+    SWIG_fail_ptr("SoundFile_frames",1,SWIGTYPE_p_gam__SoundFile);
+  }
+  
+  result = (int)((gam::SoundFile const *)arg1)->frames();
+  lua_pushnumber(L, (lua_Number) result); SWIG_arg++;
+  return SWIG_arg;
+  
+  if(0) SWIG_fail;
+  
+fail:
+  lua_error(L);
+  return SWIG_arg;
+}
+
+
+static int _wrap_SoundFile_channels__SWIG_0(lua_State* L) {
+  int SWIG_arg = 0;
+  gam::SoundFile *arg1 = (gam::SoundFile *) 0 ;
+  int result;
+  
+  SWIG_check_num_args("gam::SoundFile::channels",1,1)
+  if(!SWIG_isptrtype(L,1)) SWIG_fail_arg("gam::SoundFile::channels",1,"gam::SoundFile const *");
+  
+  if (!SWIG_IsOK(SWIG_ConvertPtr(L,1,(void**)&arg1,SWIGTYPE_p_gam__SoundFile,0))){
+    SWIG_fail_ptr("SoundFile_channels",1,SWIGTYPE_p_gam__SoundFile);
+  }
+  
+  result = (int)((gam::SoundFile const *)arg1)->channels();
+  lua_pushnumber(L, (lua_Number) result); SWIG_arg++;
+  return SWIG_arg;
+  
+  if(0) SWIG_fail;
+  
+fail:
+  lua_error(L);
+  return SWIG_arg;
+}
+
+
+static int _wrap_SoundFile_samples(lua_State* L) {
+  int SWIG_arg = 0;
+  gam::SoundFile *arg1 = (gam::SoundFile *) 0 ;
+  int result;
+  
+  SWIG_check_num_args("gam::SoundFile::samples",1,1)
+  if(!SWIG_isptrtype(L,1)) SWIG_fail_arg("gam::SoundFile::samples",1,"gam::SoundFile const *");
+  
+  if (!SWIG_IsOK(SWIG_ConvertPtr(L,1,(void**)&arg1,SWIGTYPE_p_gam__SoundFile,0))){
+    SWIG_fail_ptr("SoundFile_samples",1,SWIGTYPE_p_gam__SoundFile);
+  }
+  
+  result = (int)((gam::SoundFile const *)arg1)->samples();
+  lua_pushnumber(L, (lua_Number) result); SWIG_arg++;
+  return SWIG_arg;
+  
+  if(0) SWIG_fail;
+  
+fail:
+  lua_error(L);
+  return SWIG_arg;
+}
+
+
+static int _wrap_SoundFile_extension(lua_State* L) {
+  int SWIG_arg = 0;
+  gam::SoundFile *arg1 = (gam::SoundFile *) 0 ;
+  char *result = 0 ;
+  
+  SWIG_check_num_args("gam::SoundFile::extension",1,1)
+  if(!SWIG_isptrtype(L,1)) SWIG_fail_arg("gam::SoundFile::extension",1,"gam::SoundFile *");
+  
+  if (!SWIG_IsOK(SWIG_ConvertPtr(L,1,(void**)&arg1,SWIGTYPE_p_gam__SoundFile,0))){
+    SWIG_fail_ptr("SoundFile_extension",1,SWIGTYPE_p_gam__SoundFile);
+  }
+  
+  result = (char *)(arg1)->extension();
+  lua_pushstring(L,(const char *)result); SWIG_arg++;
+  return SWIG_arg;
+  
+  if(0) SWIG_fail;
+  
+fail:
+  lua_error(L);
+  return SWIG_arg;
+}
+
+
+static int _wrap_SoundFile_path__SWIG_0(lua_State* L) {
+  int SWIG_arg = 0;
+  gam::SoundFile *arg1 = (gam::SoundFile *) 0 ;
+  std::string *result = 0 ;
+  
+  SWIG_check_num_args("gam::SoundFile::path",1,1)
+  if(!SWIG_isptrtype(L,1)) SWIG_fail_arg("gam::SoundFile::path",1,"gam::SoundFile const *");
+  
+  if (!SWIG_IsOK(SWIG_ConvertPtr(L,1,(void**)&arg1,SWIGTYPE_p_gam__SoundFile,0))){
+    SWIG_fail_ptr("SoundFile_path",1,SWIGTYPE_p_gam__SoundFile);
+  }
+  
+  result = (std::string *) &((gam::SoundFile const *)arg1)->path();
+  SWIG_NewPointerObj(L,result,SWIGTYPE_p_std__string,0); SWIG_arg++; 
+  return SWIG_arg;
+  
+  if(0) SWIG_fail;
+  
+fail:
+  lua_error(L);
+  return SWIG_arg;
+}
+
+
+static int _wrap_SoundFile_encoding__SWIG_1(lua_State* L) {
+  int SWIG_arg = 0;
+  gam::SoundFile *arg1 = (gam::SoundFile *) 0 ;
+  gam::SoundFile::EncodingType arg2 ;
+  gam::SoundFile *result = 0 ;
+  
+  SWIG_check_num_args("gam::SoundFile::encoding",2,2)
+  if(!SWIG_isptrtype(L,1)) SWIG_fail_arg("gam::SoundFile::encoding",1,"gam::SoundFile *");
+  if(!lua_isnumber(L,2)) SWIG_fail_arg("gam::SoundFile::encoding",2,"gam::SoundFile::EncodingType");
+  
+  if (!SWIG_IsOK(SWIG_ConvertPtr(L,1,(void**)&arg1,SWIGTYPE_p_gam__SoundFile,0))){
+    SWIG_fail_ptr("SoundFile_encoding",1,SWIGTYPE_p_gam__SoundFile);
+  }
+  
+  arg2 = (gam::SoundFile::EncodingType)(int)lua_tonumber(L, 2);
+  result = (gam::SoundFile *) &(arg1)->encoding(arg2);
+  SWIG_NewPointerObj(L,result,SWIGTYPE_p_gam__SoundFile,0); SWIG_arg++; 
+  return SWIG_arg;
+  
+  if(0) SWIG_fail;
+  
+fail:
+  lua_error(L);
+  return SWIG_arg;
+}
+
+
+static int _wrap_SoundFile_encoding(lua_State* L) {
+  int argc;
+  int argv[3]={
+    1,2,3
+  };
+  
+  argc = lua_gettop(L);
+  if (argc == 1) {
+    int _v = 0;
+    {
+      void *ptr;
+      if (SWIG_isptrtype(L,argv[0])==0 || SWIG_ConvertPtr(L,argv[0], (void **) &ptr, SWIGTYPE_p_gam__SoundFile, 0)) {
+        _v = 0;
+      } else {
+        _v = 1;
+      }
+    }
+    if (_v) {
+      return _wrap_SoundFile_encoding__SWIG_0(L);
+    }
+  }
+  if (argc == 2) {
+    int _v = 0;
+    {
+      void *ptr;
+      if (SWIG_isptrtype(L,argv[0])==0 || SWIG_ConvertPtr(L,argv[0], (void **) &ptr, SWIGTYPE_p_gam__SoundFile, 0)) {
+        _v = 0;
+      } else {
+        _v = 1;
+      }
+    }
+    if (_v) {
+      {
+        _v = lua_isnumber(L,argv[1]);
+      }
+      if (_v) {
+        return _wrap_SoundFile_encoding__SWIG_1(L);
+      }
+    }
+  }
+  
+  SWIG_Lua_pusherrstring(L,"Wrong arguments for overloaded function 'SoundFile_encoding'\n"
+    "  Possible C/C++ prototypes are:\n"
+    "    gam::SoundFile::encoding() const\n"
+    "    gam::SoundFile::encoding(gam::SoundFile::EncodingType)\n");
+  lua_error(L);return 0;
+}
+
+
+static int _wrap_SoundFile_format__SWIG_1(lua_State* L) {
+  int SWIG_arg = 0;
+  gam::SoundFile *arg1 = (gam::SoundFile *) 0 ;
+  gam::SoundFile::Format arg2 ;
+  gam::SoundFile *result = 0 ;
+  
+  SWIG_check_num_args("gam::SoundFile::format",2,2)
+  if(!SWIG_isptrtype(L,1)) SWIG_fail_arg("gam::SoundFile::format",1,"gam::SoundFile *");
+  if(!lua_isnumber(L,2)) SWIG_fail_arg("gam::SoundFile::format",2,"gam::SoundFile::Format");
+  
+  if (!SWIG_IsOK(SWIG_ConvertPtr(L,1,(void**)&arg1,SWIGTYPE_p_gam__SoundFile,0))){
+    SWIG_fail_ptr("SoundFile_format",1,SWIGTYPE_p_gam__SoundFile);
+  }
+  
+  arg2 = (gam::SoundFile::Format)(int)lua_tonumber(L, 2);
+  result = (gam::SoundFile *) &(arg1)->format(arg2);
+  SWIG_NewPointerObj(L,result,SWIGTYPE_p_gam__SoundFile,0); SWIG_arg++; 
+  return SWIG_arg;
+  
+  if(0) SWIG_fail;
+  
+fail:
+  lua_error(L);
+  return SWIG_arg;
+}
+
+
+static int _wrap_SoundFile_format(lua_State* L) {
+  int argc;
+  int argv[3]={
+    1,2,3
+  };
+  
+  argc = lua_gettop(L);
+  if (argc == 1) {
+    int _v = 0;
+    {
+      void *ptr;
+      if (SWIG_isptrtype(L,argv[0])==0 || SWIG_ConvertPtr(L,argv[0], (void **) &ptr, SWIGTYPE_p_gam__SoundFile, 0)) {
+        _v = 0;
+      } else {
+        _v = 1;
+      }
+    }
+    if (_v) {
+      return _wrap_SoundFile_format__SWIG_0(L);
+    }
+  }
+  if (argc == 2) {
+    int _v = 0;
+    {
+      void *ptr;
+      if (SWIG_isptrtype(L,argv[0])==0 || SWIG_ConvertPtr(L,argv[0], (void **) &ptr, SWIGTYPE_p_gam__SoundFile, 0)) {
+        _v = 0;
+      } else {
+        _v = 1;
+      }
+    }
+    if (_v) {
+      {
+        _v = lua_isnumber(L,argv[1]);
+      }
+      if (_v) {
+        return _wrap_SoundFile_format__SWIG_1(L);
+      }
+    }
+  }
+  
+  SWIG_Lua_pusherrstring(L,"Wrong arguments for overloaded function 'SoundFile_format'\n"
+    "  Possible C/C++ prototypes are:\n"
+    "    gam::SoundFile::format() const\n"
+    "    gam::SoundFile::format(gam::SoundFile::Format)\n");
+  lua_error(L);return 0;
+}
+
+
+static int _wrap_SoundFile_channels__SWIG_1(lua_State* L) {
+  int SWIG_arg = 0;
+  gam::SoundFile *arg1 = (gam::SoundFile *) 0 ;
+  int arg2 ;
+  gam::SoundFile *result = 0 ;
+  
+  SWIG_check_num_args("gam::SoundFile::channels",2,2)
+  if(!SWIG_isptrtype(L,1)) SWIG_fail_arg("gam::SoundFile::channels",1,"gam::SoundFile *");
+  if(!lua_isnumber(L,2)) SWIG_fail_arg("gam::SoundFile::channels",2,"int");
+  
+  if (!SWIG_IsOK(SWIG_ConvertPtr(L,1,(void**)&arg1,SWIGTYPE_p_gam__SoundFile,0))){
+    SWIG_fail_ptr("SoundFile_channels",1,SWIGTYPE_p_gam__SoundFile);
+  }
+  
+  arg2 = (int)lua_tonumber(L, 2);
+  result = (gam::SoundFile *) &(arg1)->channels(arg2);
+  SWIG_NewPointerObj(L,result,SWIGTYPE_p_gam__SoundFile,0); SWIG_arg++; 
+  return SWIG_arg;
+  
+  if(0) SWIG_fail;
+  
+fail:
+  lua_error(L);
+  return SWIG_arg;
+}
+
+
+static int _wrap_SoundFile_channels(lua_State* L) {
+  int argc;
+  int argv[3]={
+    1,2,3
+  };
+  
+  argc = lua_gettop(L);
+  if (argc == 1) {
+    int _v = 0;
+    {
+      void *ptr;
+      if (SWIG_isptrtype(L,argv[0])==0 || SWIG_ConvertPtr(L,argv[0], (void **) &ptr, SWIGTYPE_p_gam__SoundFile, 0)) {
+        _v = 0;
+      } else {
+        _v = 1;
+      }
+    }
+    if (_v) {
+      return _wrap_SoundFile_channels__SWIG_0(L);
+    }
+  }
+  if (argc == 2) {
+    int _v = 0;
+    {
+      void *ptr;
+      if (SWIG_isptrtype(L,argv[0])==0 || SWIG_ConvertPtr(L,argv[0], (void **) &ptr, SWIGTYPE_p_gam__SoundFile, 0)) {
+        _v = 0;
+      } else {
+        _v = 1;
+      }
+    }
+    if (_v) {
+      {
+        _v = lua_isnumber(L,argv[1]);
+      }
+      if (_v) {
+        return _wrap_SoundFile_channels__SWIG_1(L);
+      }
+    }
+  }
+  
+  SWIG_Lua_pusherrstring(L,"Wrong arguments for overloaded function 'SoundFile_channels'\n"
+    "  Possible C/C++ prototypes are:\n"
+    "    gam::SoundFile::channels() const\n"
+    "    gam::SoundFile::channels(int)\n");
+  lua_error(L);return 0;
+}
+
+
+static int _wrap_SoundFile_frameRate__SWIG_1(lua_State* L) {
+  int SWIG_arg = 0;
+  gam::SoundFile *arg1 = (gam::SoundFile *) 0 ;
+  double arg2 ;
+  gam::SoundFile *result = 0 ;
+  
+  SWIG_check_num_args("gam::SoundFile::frameRate",2,2)
+  if(!SWIG_isptrtype(L,1)) SWIG_fail_arg("gam::SoundFile::frameRate",1,"gam::SoundFile *");
+  if(!lua_isnumber(L,2)) SWIG_fail_arg("gam::SoundFile::frameRate",2,"double");
+  
+  if (!SWIG_IsOK(SWIG_ConvertPtr(L,1,(void**)&arg1,SWIGTYPE_p_gam__SoundFile,0))){
+    SWIG_fail_ptr("SoundFile_frameRate",1,SWIGTYPE_p_gam__SoundFile);
+  }
+  
+  arg2 = (double)lua_tonumber(L, 2);
+  result = (gam::SoundFile *) &(arg1)->frameRate(arg2);
+  SWIG_NewPointerObj(L,result,SWIGTYPE_p_gam__SoundFile,0); SWIG_arg++; 
+  return SWIG_arg;
+  
+  if(0) SWIG_fail;
+  
+fail:
+  lua_error(L);
+  return SWIG_arg;
+}
+
+
+static int _wrap_SoundFile_frameRate(lua_State* L) {
+  int argc;
+  int argv[3]={
+    1,2,3
+  };
+  
+  argc = lua_gettop(L);
+  if (argc == 1) {
+    int _v = 0;
+    {
+      void *ptr;
+      if (SWIG_isptrtype(L,argv[0])==0 || SWIG_ConvertPtr(L,argv[0], (void **) &ptr, SWIGTYPE_p_gam__SoundFile, 0)) {
+        _v = 0;
+      } else {
+        _v = 1;
+      }
+    }
+    if (_v) {
+      return _wrap_SoundFile_frameRate__SWIG_0(L);
+    }
+  }
+  if (argc == 2) {
+    int _v = 0;
+    {
+      void *ptr;
+      if (SWIG_isptrtype(L,argv[0])==0 || SWIG_ConvertPtr(L,argv[0], (void **) &ptr, SWIGTYPE_p_gam__SoundFile, 0)) {
+        _v = 0;
+      } else {
+        _v = 1;
+      }
+    }
+    if (_v) {
+      {
+        _v = lua_isnumber(L,argv[1]);
+      }
+      if (_v) {
+        return _wrap_SoundFile_frameRate__SWIG_1(L);
+      }
+    }
+  }
+  
+  SWIG_Lua_pusherrstring(L,"Wrong arguments for overloaded function 'SoundFile_frameRate'\n"
+    "  Possible C/C++ prototypes are:\n"
+    "    gam::SoundFile::frameRate() const\n"
+    "    gam::SoundFile::frameRate(double)\n");
+  lua_error(L);return 0;
+}
+
+
+static int _wrap_SoundFile_info(lua_State* L) {
+  int SWIG_arg = 0;
+  gam::SoundFile *arg1 = (gam::SoundFile *) 0 ;
+  gam::SoundFile *arg2 = 0 ;
+  gam::SoundFile *result = 0 ;
+  
+  SWIG_check_num_args("gam::SoundFile::info",2,2)
+  if(!SWIG_isptrtype(L,1)) SWIG_fail_arg("gam::SoundFile::info",1,"gam::SoundFile *");
+  if(!lua_isuserdata(L,2)) SWIG_fail_arg("gam::SoundFile::info",2,"gam::SoundFile const &");
+  
+  if (!SWIG_IsOK(SWIG_ConvertPtr(L,1,(void**)&arg1,SWIGTYPE_p_gam__SoundFile,0))){
+    SWIG_fail_ptr("SoundFile_info",1,SWIGTYPE_p_gam__SoundFile);
+  }
+  
+  
+  if (!SWIG_IsOK(SWIG_ConvertPtr(L,2,(void**)&arg2,SWIGTYPE_p_gam__SoundFile,0))){
+    SWIG_fail_ptr("SoundFile_info",2,SWIGTYPE_p_gam__SoundFile);
+  }
+  
+  result = (gam::SoundFile *) &(arg1)->info((gam::SoundFile const &)*arg2);
+  SWIG_NewPointerObj(L,result,SWIGTYPE_p_gam__SoundFile,0); SWIG_arg++; 
+  return SWIG_arg;
+  
+  if(0) SWIG_fail;
+  
+fail:
+  lua_error(L);
+  return SWIG_arg;
+}
+
+
+static int _wrap_SoundFile_path__SWIG_1(lua_State* L) {
+  int SWIG_arg = 0;
+  gam::SoundFile *arg1 = (gam::SoundFile *) 0 ;
+  std::string *arg2 = 0 ;
+  gam::SoundFile *result = 0 ;
+  
+  SWIG_check_num_args("gam::SoundFile::path",2,2)
+  if(!SWIG_isptrtype(L,1)) SWIG_fail_arg("gam::SoundFile::path",1,"gam::SoundFile *");
+  if(!lua_isuserdata(L,2)) SWIG_fail_arg("gam::SoundFile::path",2,"std::string const &");
+  
+  if (!SWIG_IsOK(SWIG_ConvertPtr(L,1,(void**)&arg1,SWIGTYPE_p_gam__SoundFile,0))){
+    SWIG_fail_ptr("SoundFile_path",1,SWIGTYPE_p_gam__SoundFile);
+  }
+  
+  
+  if (!SWIG_IsOK(SWIG_ConvertPtr(L,2,(void**)&arg2,SWIGTYPE_p_std__string,0))){
+    SWIG_fail_ptr("SoundFile_path",2,SWIGTYPE_p_std__string);
+  }
+  
+  result = (gam::SoundFile *) &(arg1)->path((std::string const &)*arg2);
+  SWIG_NewPointerObj(L,result,SWIGTYPE_p_gam__SoundFile,0); SWIG_arg++; 
+  return SWIG_arg;
+  
+  if(0) SWIG_fail;
+  
+fail:
+  lua_error(L);
+  return SWIG_arg;
+}
+
+
+static int _wrap_SoundFile_path(lua_State* L) {
+  int argc;
+  int argv[3]={
+    1,2,3
+  };
+  
+  argc = lua_gettop(L);
+  if (argc == 1) {
+    int _v = 0;
+    {
+      void *ptr;
+      if (SWIG_isptrtype(L,argv[0])==0 || SWIG_ConvertPtr(L,argv[0], (void **) &ptr, SWIGTYPE_p_gam__SoundFile, 0)) {
+        _v = 0;
+      } else {
+        _v = 1;
+      }
+    }
+    if (_v) {
+      return _wrap_SoundFile_path__SWIG_0(L);
+    }
+  }
+  if (argc == 2) {
+    int _v = 0;
+    {
+      void *ptr;
+      if (SWIG_isptrtype(L,argv[0])==0 || SWIG_ConvertPtr(L,argv[0], (void **) &ptr, SWIGTYPE_p_gam__SoundFile, 0)) {
+        _v = 0;
+      } else {
+        _v = 1;
+      }
+    }
+    if (_v) {
+      {
+        void *ptr;
+        if (lua_isuserdata(L,argv[1])==0 || SWIG_ConvertPtr(L,argv[1], (void **) &ptr, SWIGTYPE_p_std__string, SWIG_POINTER_NO_NULL)) {
+          _v = 0;
+        } else {
+          _v = 1;
+        }
+      }
+      if (_v) {
+        return _wrap_SoundFile_path__SWIG_1(L);
+      }
+    }
+  }
+  
+  SWIG_Lua_pusherrstring(L,"Wrong arguments for overloaded function 'SoundFile_path'\n"
+    "  Possible C/C++ prototypes are:\n"
+    "    gam::SoundFile::path() const\n"
+    "    gam::SoundFile::path(std::string const &)\n");
+  lua_error(L);return 0;
+}
+
+
+static int _wrap_SoundFile_seek(lua_State* L) {
+  int SWIG_arg = 0;
+  gam::SoundFile *arg1 = (gam::SoundFile *) 0 ;
+  int arg2 ;
+  int arg3 ;
+  
+  SWIG_check_num_args("gam::SoundFile::seek",3,3)
+  if(!SWIG_isptrtype(L,1)) SWIG_fail_arg("gam::SoundFile::seek",1,"gam::SoundFile *");
+  if(!lua_isnumber(L,2)) SWIG_fail_arg("gam::SoundFile::seek",2,"int");
+  if(!lua_isnumber(L,3)) SWIG_fail_arg("gam::SoundFile::seek",3,"int");
+  
+  if (!SWIG_IsOK(SWIG_ConvertPtr(L,1,(void**)&arg1,SWIGTYPE_p_gam__SoundFile,0))){
+    SWIG_fail_ptr("SoundFile_seek",1,SWIGTYPE_p_gam__SoundFile);
+  }
+  
+  arg2 = (int)lua_tonumber(L, 2);
+  arg3 = (int)lua_tonumber(L, 3);
+  (arg1)->seek(arg2,arg3);
+  
+  return SWIG_arg;
+  
+  if(0) SWIG_fail;
+  
+fail:
+  lua_error(L);
+  return SWIG_arg;
+}
+
+
+static int _wrap_SoundFile_print(lua_State* L) {
+  int SWIG_arg = 0;
+  gam::SoundFile *arg1 = (gam::SoundFile *) 0 ;
+  
+  SWIG_check_num_args("gam::SoundFile::print",1,1)
+  if(!SWIG_isptrtype(L,1)) SWIG_fail_arg("gam::SoundFile::print",1,"gam::SoundFile *");
+  
+  if (!SWIG_IsOK(SWIG_ConvertPtr(L,1,(void**)&arg1,SWIGTYPE_p_gam__SoundFile,0))){
+    SWIG_fail_ptr("SoundFile_print",1,SWIGTYPE_p_gam__SoundFile);
+  }
+  
+  (arg1)->print();
+  
+  return SWIG_arg;
+  
+  if(0) SWIG_fail;
+  
+fail:
+  lua_error(L);
+  return SWIG_arg;
+}
+
+
+static void swig_delete_SoundFile(void *obj) {
+gam::SoundFile *arg1 = (gam::SoundFile *) obj;
+delete arg1;
+}
+static int _proxy__wrap_new_SoundFile(lua_State *L) {
+    assert(lua_istable(L,1));
+    lua_pushcfunction(L,_wrap_new_SoundFile);
+    assert(!lua_isnil(L,-1));
+    lua_replace(L,1); /* replace our table with real constructor */
+    lua_call(L,lua_gettop(L)-1,1);
+    return 1;
+}
+static swig_lua_attribute swig_SoundFile_attributes[] = {
+    {0,0,0}
+};
+static swig_lua_method swig_SoundFile_methods[]= {
+    { "openRead", _wrap_SoundFile_openRead},
+    { "openWrite", _wrap_SoundFile_openWrite},
+    { "close", _wrap_SoundFile_close},
+    { "read", _wrap_SoundFile_read},
+    { "readAll", _wrap_SoundFile_readAll},
+    { "readAllD", _wrap_SoundFile_readAllD},
+    { "write", _wrap_SoundFile_write},
+    { "opened", _wrap_SoundFile_opened},
+    { "frames", _wrap_SoundFile_frames},
+    { "samples", _wrap_SoundFile_samples},
+    { "extension", _wrap_SoundFile_extension},
+    { "encoding", _wrap_SoundFile_encoding},
+    { "format", _wrap_SoundFile_format},
+    { "channels", _wrap_SoundFile_channels},
+    { "frameRate", _wrap_SoundFile_frameRate},
+    { "info", _wrap_SoundFile_info},
+    { "path", _wrap_SoundFile_path},
+    { "seek", _wrap_SoundFile_seek},
+    { "print", _wrap_SoundFile_print},
+    {0,0}
+};
+static swig_lua_method swig_SoundFile_meta[] = {
+    {0,0}
+};
+
+static swig_lua_attribute swig_SoundFile_Sf_SwigStatic_attributes[] = {
+    {0,0,0}
+};
+static swig_lua_const_info swig_SoundFile_Sf_SwigStatic_constants[]= {
+    {SWIG_LUA_CONSTTAB_INT("WAV", gam::SoundFile::WAV)},
+    {SWIG_LUA_CONSTTAB_INT("AIFF", gam::SoundFile::AIFF)},
+    {SWIG_LUA_CONSTTAB_INT("AU", gam::SoundFile::AU)},
+    {SWIG_LUA_CONSTTAB_INT("RAW", gam::SoundFile::RAW)},
+    {SWIG_LUA_CONSTTAB_INT("NO_FORMAT", gam::SoundFile::NO_FORMAT)},
+    {SWIG_LUA_CONSTTAB_INT("PCM_S8", gam::SoundFile::PCM_S8)},
+    {SWIG_LUA_CONSTTAB_INT("PCM_16", gam::SoundFile::PCM_16)},
+    {SWIG_LUA_CONSTTAB_INT("PCM_24", gam::SoundFile::PCM_24)},
+    {SWIG_LUA_CONSTTAB_INT("PCM_32", gam::SoundFile::PCM_32)},
+    {SWIG_LUA_CONSTTAB_INT("PCM_U8", gam::SoundFile::PCM_U8)},
+    {SWIG_LUA_CONSTTAB_INT("FLOAT", gam::SoundFile::FLOAT)},
+    {SWIG_LUA_CONSTTAB_INT("DOUBLE", gam::SoundFile::DOUBLE)},
+    {SWIG_LUA_CONSTTAB_INT("ULAW", gam::SoundFile::ULAW)},
+    {SWIG_LUA_CONSTTAB_INT("ALAW", gam::SoundFile::ALAW)},
+    {0,0,0,0,0,0}
+};
+static swig_lua_method swig_SoundFile_Sf_SwigStatic_methods[]= {
+    { "toString", _wrap_SoundFile_toString},
+    {0,0}
+};
+static swig_lua_class* swig_SoundFile_Sf_SwigStatic_classes[]= {
+    0
+};
+
+static swig_lua_namespace swig_SoundFile_Sf_SwigStatic = {
+    "SoundFile",
+    swig_SoundFile_Sf_SwigStatic_methods,
+    swig_SoundFile_Sf_SwigStatic_attributes,
+    swig_SoundFile_Sf_SwigStatic_constants,
+    swig_SoundFile_Sf_SwigStatic_classes,
+    0
+};
+static swig_lua_class *swig_SoundFile_bases[] = {0};
+static const char *swig_SoundFile_base_names[] = {0};
+static swig_lua_class _wrap_class_SoundFile = { "SoundFile", "SoundFile", &SWIGTYPE_p_gam__SoundFile,_proxy__wrap_new_SoundFile, swig_delete_SoundFile, swig_SoundFile_methods, swig_SoundFile_attributes, &swig_SoundFile_Sf_SwigStatic, swig_SoundFile_meta, swig_SoundFile_bases, swig_SoundFile_base_names };
+
+static int _wrap_LoopGain_gain__SWIG_0(lua_State* L) {
+  int SWIG_arg = 0;
+  gam::LoopGain< SampleType > *arg1 = (gam::LoopGain< SampleType > *) 0 ;
+  float arg2 ;
+  
+  SWIG_check_num_args("gam::LoopGain< SampleType >::gain",2,2)
+  if(!SWIG_isptrtype(L,1)) SWIG_fail_arg("gam::LoopGain< SampleType >::gain",1,"gam::LoopGain< SampleType > *");
+  if(!lua_isnumber(L,2)) SWIG_fail_arg("gam::LoopGain< SampleType >::gain",2,"float");
+  
+  if (!SWIG_IsOK(SWIG_ConvertPtr(L,1,(void**)&arg1,SWIGTYPE_p_gam__LoopGainT_float_t,0))){
+    SWIG_fail_ptr("LoopGain_gain",1,SWIGTYPE_p_gam__LoopGainT_float_t);
+  }
+  
+  arg2 = (float)lua_tonumber(L, 2);
+  (arg1)->gain(arg2);
+  
+  return SWIG_arg;
+  
+  if(0) SWIG_fail;
+  
+fail:
+  lua_error(L);
+  return SWIG_arg;
+}
+
+
+static int _wrap_LoopGain_damping(lua_State* L) {
+  int SWIG_arg = 0;
+  gam::LoopGain< SampleType > *arg1 = (gam::LoopGain< SampleType > *) 0 ;
+  float arg2 ;
+  
+  SWIG_check_num_args("gam::LoopGain< SampleType >::damping",2,2)
+  if(!SWIG_isptrtype(L,1)) SWIG_fail_arg("gam::LoopGain< SampleType >::damping",1,"gam::LoopGain< SampleType > *");
+  if(!lua_isnumber(L,2)) SWIG_fail_arg("gam::LoopGain< SampleType >::damping",2,"float");
+  
+  if (!SWIG_IsOK(SWIG_ConvertPtr(L,1,(void**)&arg1,SWIGTYPE_p_gam__LoopGainT_float_t,0))){
+    SWIG_fail_ptr("LoopGain_damping",1,SWIGTYPE_p_gam__LoopGainT_float_t);
+  }
+  
+  arg2 = (float)lua_tonumber(L, 2);
+  (arg1)->damping(arg2);
+  
+  return SWIG_arg;
+  
+  if(0) SWIG_fail;
+  
+fail:
+  lua_error(L);
+  return SWIG_arg;
+}
+
+
+static int _wrap_LoopGain_Tick(lua_State* L) {
+  int SWIG_arg = 0;
+  gam::LoopGain< SampleType > *arg1 = (gam::LoopGain< SampleType > *) 0 ;
+  float arg2 ;
+  float result;
+  
+  SWIG_check_num_args("gam::LoopGain< SampleType >::Tick",2,2)
+  if(!SWIG_isptrtype(L,1)) SWIG_fail_arg("gam::LoopGain< SampleType >::Tick",1,"gam::LoopGain< SampleType > *");
+  if(!lua_isnumber(L,2)) SWIG_fail_arg("gam::LoopGain< SampleType >::Tick",2,"float");
+  
+  if (!SWIG_IsOK(SWIG_ConvertPtr(L,1,(void**)&arg1,SWIGTYPE_p_gam__LoopGainT_float_t,0))){
+    SWIG_fail_ptr("LoopGain_Tick",1,SWIGTYPE_p_gam__LoopGainT_float_t);
+  }
+  
+  arg2 = (float)lua_tonumber(L, 2);
+  result = (float)gam_LoopGain_Sl_SampleType_Sg__Tick__SWIG(arg1,arg2);
+  lua_pushnumber(L, (lua_Number) result); SWIG_arg++;
+  return SWIG_arg;
+  
+  if(0) SWIG_fail;
+  
+fail:
+  lua_error(L);
+  return SWIG_arg;
+}
+
+
+static int _wrap_LoopGain_gain__SWIG_1(lua_State* L) {
+  int SWIG_arg = 0;
+  gam::LoopGain< SampleType > *arg1 = (gam::LoopGain< SampleType > *) 0 ;
+  float result;
+  
+  SWIG_check_num_args("gam::LoopGain< SampleType >::gain",1,1)
+  if(!SWIG_isptrtype(L,1)) SWIG_fail_arg("gam::LoopGain< SampleType >::gain",1,"gam::LoopGain< SampleType > const *");
+  
+  if (!SWIG_IsOK(SWIG_ConvertPtr(L,1,(void**)&arg1,SWIGTYPE_p_gam__LoopGainT_float_t,0))){
+    SWIG_fail_ptr("LoopGain_gain",1,SWIGTYPE_p_gam__LoopGainT_float_t);
+  }
+  
+  result = (float)((gam::LoopGain< SampleType > const *)arg1)->gain();
+  lua_pushnumber(L, (lua_Number) result); SWIG_arg++;
+  return SWIG_arg;
+  
+  if(0) SWIG_fail;
+  
+fail:
+  lua_error(L);
+  return SWIG_arg;
+}
+
+
+static int _wrap_LoopGain_gain(lua_State* L) {
+  int argc;
+  int argv[3]={
+    1,2,3
+  };
+  
+  argc = lua_gettop(L);
+  if (argc == 1) {
+    int _v = 0;
+    {
+      void *ptr;
+      if (SWIG_isptrtype(L,argv[0])==0 || SWIG_ConvertPtr(L,argv[0], (void **) &ptr, SWIGTYPE_p_gam__LoopGainT_float_t, 0)) {
+        _v = 0;
+      } else {
+        _v = 1;
+      }
+    }
+    if (_v) {
+      return _wrap_LoopGain_gain__SWIG_1(L);
+    }
+  }
+  if (argc == 2) {
+    int _v = 0;
+    {
+      void *ptr;
+      if (SWIG_isptrtype(L,argv[0])==0 || SWIG_ConvertPtr(L,argv[0], (void **) &ptr, SWIGTYPE_p_gam__LoopGainT_float_t, 0)) {
+        _v = 0;
+      } else {
+        _v = 1;
+      }
+    }
+    if (_v) {
+      {
+        _v = lua_isnumber(L,argv[1]);
+      }
+      if (_v) {
+        return _wrap_LoopGain_gain__SWIG_0(L);
+      }
+    }
+  }
+  
+  SWIG_Lua_pusherrstring(L,"Wrong arguments for overloaded function 'LoopGain_gain'\n"
+    "  Possible C/C++ prototypes are:\n"
+    "    gam::LoopGain< SampleType >::gain(float)\n"
+    "    gam::LoopGain< SampleType >::gain() const\n");
+  lua_error(L);return 0;
+}
+
+
+static int _wrap_new_LoopGain(lua_State* L) {
+  int SWIG_arg = 0;
+  gam::LoopGain< SampleType > *result = 0 ;
+  
+  SWIG_check_num_args("gam::LoopGain< SampleType >::LoopGain",0,0)
+  result = (gam::LoopGain< SampleType > *)new gam::LoopGain< SampleType >();
+  SWIG_NewPointerObj(L,result,SWIGTYPE_p_gam__LoopGainT_float_t,1); SWIG_arg++; 
+  return SWIG_arg;
+  
+  if(0) SWIG_fail;
+  
+fail:
+  lua_error(L);
+  return SWIG_arg;
+}
+
+
+static void swig_delete_LoopGain(void *obj) {
+gam::LoopGain< SampleType > *arg1 = (gam::LoopGain< SampleType > *) obj;
+delete arg1;
+}
+static int _proxy__wrap_new_LoopGain(lua_State *L) {
+    assert(lua_istable(L,1));
+    lua_pushcfunction(L,_wrap_new_LoopGain);
+    assert(!lua_isnil(L,-1));
+    lua_replace(L,1); /* replace our table with real constructor */
+    lua_call(L,lua_gettop(L)-1,1);
+    return 1;
+}
+static swig_lua_attribute swig_LoopGain_attributes[] = {
+    {0,0,0}
+};
+static swig_lua_method swig_LoopGain_methods[]= {
+    { "damping", _wrap_LoopGain_damping},
+    { "Tick", _wrap_LoopGain_Tick},
+    { "gain", _wrap_LoopGain_gain},
+    {0,0}
+};
+static swig_lua_method swig_LoopGain_meta[] = {
+    {0,0}
+};
+
+static swig_lua_attribute swig_LoopGain_Sf_SwigStatic_attributes[] = {
+    {0,0,0}
+};
+static swig_lua_const_info swig_LoopGain_Sf_SwigStatic_constants[]= {
+    {0,0,0,0,0,0}
+};
+static swig_lua_method swig_LoopGain_Sf_SwigStatic_methods[]= {
+    {0,0}
+};
+static swig_lua_class* swig_LoopGain_Sf_SwigStatic_classes[]= {
+    0
+};
+
+static swig_lua_namespace swig_LoopGain_Sf_SwigStatic = {
+    "LoopGain",
+    swig_LoopGain_Sf_SwigStatic_methods,
+    swig_LoopGain_Sf_SwigStatic_attributes,
+    swig_LoopGain_Sf_SwigStatic_constants,
+    swig_LoopGain_Sf_SwigStatic_classes,
+    0
+};
+static swig_lua_class *swig_LoopGain_bases[] = {0};
+static const char *swig_LoopGain_base_names[] = {0};
+static swig_lua_class _wrap_class_LoopGain = { "LoopGain", "LoopGain", &SWIGTYPE_p_gam__LoopGainT_float_t,_proxy__wrap_new_LoopGain, swig_delete_LoopGain, swig_LoopGain_methods, swig_LoopGain_attributes, &swig_LoopGain_Sf_SwigStatic, swig_LoopGain_meta, swig_LoopGain_bases, swig_LoopGain_base_names };
+
+static int _wrap_Loop1p_gain__SWIG_0(lua_State* L) {
+  int SWIG_arg = 0;
+  gam::Loop1P< SampleType > *arg1 = (gam::Loop1P< SampleType > *) 0 ;
+  float arg2 ;
+  
+  SWIG_check_num_args("gam::Loop1P< SampleType >::gain",2,2)
+  if(!SWIG_isptrtype(L,1)) SWIG_fail_arg("gam::Loop1P< SampleType >::gain",1,"gam::Loop1P< SampleType > *");
+  if(!lua_isnumber(L,2)) SWIG_fail_arg("gam::Loop1P< SampleType >::gain",2,"float");
+  
+  if (!SWIG_IsOK(SWIG_ConvertPtr(L,1,(void**)&arg1,SWIGTYPE_p_gam__Loop1PT_float_t,0))){
+    SWIG_fail_ptr("Loop1p_gain",1,SWIGTYPE_p_gam__Loop1PT_float_t);
+  }
+  
+  arg2 = (float)lua_tonumber(L, 2);
+  (arg1)->gain(arg2);
+  
+  return SWIG_arg;
+  
+  if(0) SWIG_fail;
+  
+fail:
+  lua_error(L);
+  return SWIG_arg;
+}
+
+
+static int _wrap_Loop1p_damping(lua_State* L) {
+  int SWIG_arg = 0;
+  gam::Loop1P< SampleType > *arg1 = (gam::Loop1P< SampleType > *) 0 ;
+  float arg2 ;
+  
+  SWIG_check_num_args("gam::Loop1P< SampleType >::damping",2,2)
+  if(!SWIG_isptrtype(L,1)) SWIG_fail_arg("gam::Loop1P< SampleType >::damping",1,"gam::Loop1P< SampleType > *");
+  if(!lua_isnumber(L,2)) SWIG_fail_arg("gam::Loop1P< SampleType >::damping",2,"float");
+  
+  if (!SWIG_IsOK(SWIG_ConvertPtr(L,1,(void**)&arg1,SWIGTYPE_p_gam__Loop1PT_float_t,0))){
+    SWIG_fail_ptr("Loop1p_damping",1,SWIGTYPE_p_gam__Loop1PT_float_t);
+  }
+  
+  arg2 = (float)lua_tonumber(L, 2);
+  (arg1)->damping(arg2);
+  
+  return SWIG_arg;
+  
+  if(0) SWIG_fail;
+  
+fail:
+  lua_error(L);
+  return SWIG_arg;
+}
+
+
+static int _wrap_Loop1p_Tick(lua_State* L) {
+  int SWIG_arg = 0;
+  gam::Loop1P< SampleType > *arg1 = (gam::Loop1P< SampleType > *) 0 ;
+  float arg2 ;
+  float result;
+  
+  SWIG_check_num_args("gam::Loop1P< SampleType >::Tick",2,2)
+  if(!SWIG_isptrtype(L,1)) SWIG_fail_arg("gam::Loop1P< SampleType >::Tick",1,"gam::Loop1P< SampleType > *");
+  if(!lua_isnumber(L,2)) SWIG_fail_arg("gam::Loop1P< SampleType >::Tick",2,"float");
+  
+  if (!SWIG_IsOK(SWIG_ConvertPtr(L,1,(void**)&arg1,SWIGTYPE_p_gam__Loop1PT_float_t,0))){
+    SWIG_fail_ptr("Loop1p_Tick",1,SWIGTYPE_p_gam__Loop1PT_float_t);
+  }
+  
+  arg2 = (float)lua_tonumber(L, 2);
+  result = (float)gam_Loop1P_Sl_SampleType_Sg__Tick__SWIG(arg1,arg2);
+  lua_pushnumber(L, (lua_Number) result); SWIG_arg++;
+  return SWIG_arg;
+  
+  if(0) SWIG_fail;
+  
+fail:
+  lua_error(L);
+  return SWIG_arg;
+}
+
+
+static int _wrap_Loop1p_gain__SWIG_1(lua_State* L) {
+  int SWIG_arg = 0;
+  gam::Loop1P< SampleType > *arg1 = (gam::Loop1P< SampleType > *) 0 ;
+  float result;
+  
+  SWIG_check_num_args("gam::Loop1P< SampleType >::gain",1,1)
+  if(!SWIG_isptrtype(L,1)) SWIG_fail_arg("gam::Loop1P< SampleType >::gain",1,"gam::Loop1P< SampleType > const *");
+  
+  if (!SWIG_IsOK(SWIG_ConvertPtr(L,1,(void**)&arg1,SWIGTYPE_p_gam__Loop1PT_float_t,0))){
+    SWIG_fail_ptr("Loop1p_gain",1,SWIGTYPE_p_gam__Loop1PT_float_t);
+  }
+  
+  result = (float)((gam::Loop1P< SampleType > const *)arg1)->gain();
+  lua_pushnumber(L, (lua_Number) result); SWIG_arg++;
+  return SWIG_arg;
+  
+  if(0) SWIG_fail;
+  
+fail:
+  lua_error(L);
+  return SWIG_arg;
+}
+
+
+static int _wrap_Loop1p_gain(lua_State* L) {
+  int argc;
+  int argv[3]={
+    1,2,3
+  };
+  
+  argc = lua_gettop(L);
+  if (argc == 1) {
+    int _v = 0;
+    {
+      void *ptr;
+      if (SWIG_isptrtype(L,argv[0])==0 || SWIG_ConvertPtr(L,argv[0], (void **) &ptr, SWIGTYPE_p_gam__Loop1PT_float_t, 0)) {
+        _v = 0;
+      } else {
+        _v = 1;
+      }
+    }
+    if (_v) {
+      return _wrap_Loop1p_gain__SWIG_1(L);
+    }
+  }
+  if (argc == 2) {
+    int _v = 0;
+    {
+      void *ptr;
+      if (SWIG_isptrtype(L,argv[0])==0 || SWIG_ConvertPtr(L,argv[0], (void **) &ptr, SWIGTYPE_p_gam__Loop1PT_float_t, 0)) {
+        _v = 0;
+      } else {
+        _v = 1;
+      }
+    }
+    if (_v) {
+      {
+        _v = lua_isnumber(L,argv[1]);
+      }
+      if (_v) {
+        return _wrap_Loop1p_gain__SWIG_0(L);
+      }
+    }
+  }
+  
+  SWIG_Lua_pusherrstring(L,"Wrong arguments for overloaded function 'Loop1p_gain'\n"
+    "  Possible C/C++ prototypes are:\n"
+    "    gam::Loop1P< SampleType >::gain(float)\n"
+    "    gam::Loop1P< SampleType >::gain() const\n");
+  lua_error(L);return 0;
+}
+
+
+static int _wrap_new_Loop1p(lua_State* L) {
+  int SWIG_arg = 0;
+  gam::Loop1P< SampleType > *result = 0 ;
+  
+  SWIG_check_num_args("gam::Loop1P< SampleType >::Loop1P",0,0)
+  result = (gam::Loop1P< SampleType > *)new gam::Loop1P< SampleType >();
+  SWIG_NewPointerObj(L,result,SWIGTYPE_p_gam__Loop1PT_float_t,1); SWIG_arg++; 
+  return SWIG_arg;
+  
+  if(0) SWIG_fail;
+  
+fail:
+  lua_error(L);
+  return SWIG_arg;
+}
+
+
+static void swig_delete_Loop1p(void *obj) {
+gam::Loop1P< SampleType > *arg1 = (gam::Loop1P< SampleType > *) obj;
+delete arg1;
+}
+static int _proxy__wrap_new_Loop1p(lua_State *L) {
+    assert(lua_istable(L,1));
+    lua_pushcfunction(L,_wrap_new_Loop1p);
+    assert(!lua_isnil(L,-1));
+    lua_replace(L,1); /* replace our table with real constructor */
+    lua_call(L,lua_gettop(L)-1,1);
+    return 1;
+}
+static swig_lua_attribute swig_Loop1p_attributes[] = {
+    {0,0,0}
+};
+static swig_lua_method swig_Loop1p_methods[]= {
+    { "damping", _wrap_Loop1p_damping},
+    { "Tick", _wrap_Loop1p_Tick},
+    { "gain", _wrap_Loop1p_gain},
+    {0,0}
+};
+static swig_lua_method swig_Loop1p_meta[] = {
+    {0,0}
+};
+
+static swig_lua_attribute swig_Loop1p_SwigStatic_attributes[] = {
+    {0,0,0}
+};
+static swig_lua_const_info swig_Loop1p_SwigStatic_constants[]= {
+    {0,0,0,0,0,0}
+};
+static swig_lua_method swig_Loop1p_SwigStatic_methods[]= {
+    {0,0}
+};
+static swig_lua_class* swig_Loop1p_SwigStatic_classes[]= {
+    0
+};
+
+static swig_lua_namespace swig_Loop1p_SwigStatic = {
+    "Loop1p",
+    swig_Loop1p_SwigStatic_methods,
+    swig_Loop1p_SwigStatic_attributes,
+    swig_Loop1p_SwigStatic_constants,
+    swig_Loop1p_SwigStatic_classes,
+    0
+};
+static swig_lua_class *swig_Loop1p_bases[] = {0};
+static const char *swig_Loop1p_base_names[] = {0};
+static swig_lua_class _wrap_class_Loop1p = { "Loop1p", "Loop1p", &SWIGTYPE_p_gam__Loop1PT_float_t,_proxy__wrap_new_Loop1p, swig_delete_Loop1p, swig_Loop1p_methods, swig_Loop1p_attributes, &swig_Loop1p_SwigStatic, swig_Loop1p_meta, swig_Loop1p_bases, swig_Loop1p_base_names };
+
+static int _wrap_Loop1p1z_gain__SWIG_0(lua_State* L) {
+  int SWIG_arg = 0;
+  gam::Loop1P1Z< SampleType > *arg1 = (gam::Loop1P1Z< SampleType > *) 0 ;
+  float arg2 ;
+  
+  SWIG_check_num_args("gam::Loop1P1Z< SampleType >::gain",2,2)
+  if(!SWIG_isptrtype(L,1)) SWIG_fail_arg("gam::Loop1P1Z< SampleType >::gain",1,"gam::Loop1P1Z< SampleType > *");
+  if(!lua_isnumber(L,2)) SWIG_fail_arg("gam::Loop1P1Z< SampleType >::gain",2,"float");
+  
+  if (!SWIG_IsOK(SWIG_ConvertPtr(L,1,(void**)&arg1,SWIGTYPE_p_gam__Loop1P1ZT_float_t,0))){
+    SWIG_fail_ptr("Loop1p1z_gain",1,SWIGTYPE_p_gam__Loop1P1ZT_float_t);
+  }
+  
+  arg2 = (float)lua_tonumber(L, 2);
+  (arg1)->gain(arg2);
+  
+  return SWIG_arg;
+  
+  if(0) SWIG_fail;
+  
+fail:
+  lua_error(L);
+  return SWIG_arg;
+}
+
+
+static int _wrap_Loop1p1z_damping(lua_State* L) {
+  int SWIG_arg = 0;
+  gam::Loop1P1Z< SampleType > *arg1 = (gam::Loop1P1Z< SampleType > *) 0 ;
+  float arg2 ;
+  
+  SWIG_check_num_args("gam::Loop1P1Z< SampleType >::damping",2,2)
+  if(!SWIG_isptrtype(L,1)) SWIG_fail_arg("gam::Loop1P1Z< SampleType >::damping",1,"gam::Loop1P1Z< SampleType > *");
+  if(!lua_isnumber(L,2)) SWIG_fail_arg("gam::Loop1P1Z< SampleType >::damping",2,"float");
+  
+  if (!SWIG_IsOK(SWIG_ConvertPtr(L,1,(void**)&arg1,SWIGTYPE_p_gam__Loop1P1ZT_float_t,0))){
+    SWIG_fail_ptr("Loop1p1z_damping",1,SWIGTYPE_p_gam__Loop1P1ZT_float_t);
+  }
+  
+  arg2 = (float)lua_tonumber(L, 2);
+  (arg1)->damping(arg2);
+  
+  return SWIG_arg;
+  
+  if(0) SWIG_fail;
+  
+fail:
+  lua_error(L);
+  return SWIG_arg;
+}
+
+
+static int _wrap_Loop1p1z_Tick(lua_State* L) {
+  int SWIG_arg = 0;
+  gam::Loop1P1Z< SampleType > *arg1 = (gam::Loop1P1Z< SampleType > *) 0 ;
+  float arg2 ;
+  float result;
+  
+  SWIG_check_num_args("gam::Loop1P1Z< SampleType >::Tick",2,2)
+  if(!SWIG_isptrtype(L,1)) SWIG_fail_arg("gam::Loop1P1Z< SampleType >::Tick",1,"gam::Loop1P1Z< SampleType > *");
+  if(!lua_isnumber(L,2)) SWIG_fail_arg("gam::Loop1P1Z< SampleType >::Tick",2,"float");
+  
+  if (!SWIG_IsOK(SWIG_ConvertPtr(L,1,(void**)&arg1,SWIGTYPE_p_gam__Loop1P1ZT_float_t,0))){
+    SWIG_fail_ptr("Loop1p1z_Tick",1,SWIGTYPE_p_gam__Loop1P1ZT_float_t);
+  }
+  
+  arg2 = (float)lua_tonumber(L, 2);
+  result = (float)gam_Loop1P1Z_Sl_SampleType_Sg__Tick__SWIG(arg1,arg2);
+  lua_pushnumber(L, (lua_Number) result); SWIG_arg++;
+  return SWIG_arg;
+  
+  if(0) SWIG_fail;
+  
+fail:
+  lua_error(L);
+  return SWIG_arg;
+}
+
+
+static int _wrap_Loop1p1z_gain__SWIG_1(lua_State* L) {
+  int SWIG_arg = 0;
+  gam::Loop1P1Z< SampleType > *arg1 = (gam::Loop1P1Z< SampleType > *) 0 ;
+  float result;
+  
+  SWIG_check_num_args("gam::Loop1P1Z< SampleType >::gain",1,1)
+  if(!SWIG_isptrtype(L,1)) SWIG_fail_arg("gam::Loop1P1Z< SampleType >::gain",1,"gam::Loop1P1Z< SampleType > const *");
+  
+  if (!SWIG_IsOK(SWIG_ConvertPtr(L,1,(void**)&arg1,SWIGTYPE_p_gam__Loop1P1ZT_float_t,0))){
+    SWIG_fail_ptr("Loop1p1z_gain",1,SWIGTYPE_p_gam__Loop1P1ZT_float_t);
+  }
+  
+  result = (float)((gam::Loop1P1Z< SampleType > const *)arg1)->gain();
+  lua_pushnumber(L, (lua_Number) result); SWIG_arg++;
+  return SWIG_arg;
+  
+  if(0) SWIG_fail;
+  
+fail:
+  lua_error(L);
+  return SWIG_arg;
+}
+
+
+static int _wrap_Loop1p1z_gain(lua_State* L) {
+  int argc;
+  int argv[3]={
+    1,2,3
+  };
+  
+  argc = lua_gettop(L);
+  if (argc == 1) {
+    int _v = 0;
+    {
+      void *ptr;
+      if (SWIG_isptrtype(L,argv[0])==0 || SWIG_ConvertPtr(L,argv[0], (void **) &ptr, SWIGTYPE_p_gam__Loop1P1ZT_float_t, 0)) {
+        _v = 0;
+      } else {
+        _v = 1;
+      }
+    }
+    if (_v) {
+      return _wrap_Loop1p1z_gain__SWIG_1(L);
+    }
+  }
+  if (argc == 2) {
+    int _v = 0;
+    {
+      void *ptr;
+      if (SWIG_isptrtype(L,argv[0])==0 || SWIG_ConvertPtr(L,argv[0], (void **) &ptr, SWIGTYPE_p_gam__Loop1P1ZT_float_t, 0)) {
+        _v = 0;
+      } else {
+        _v = 1;
+      }
+    }
+    if (_v) {
+      {
+        _v = lua_isnumber(L,argv[1]);
+      }
+      if (_v) {
+        return _wrap_Loop1p1z_gain__SWIG_0(L);
+      }
+    }
+  }
+  
+  SWIG_Lua_pusherrstring(L,"Wrong arguments for overloaded function 'Loop1p1z_gain'\n"
+    "  Possible C/C++ prototypes are:\n"
+    "    gam::Loop1P1Z< SampleType >::gain(float)\n"
+    "    gam::Loop1P1Z< SampleType >::gain() const\n");
+  lua_error(L);return 0;
+}
+
+
+static int _wrap_new_Loop1p1z(lua_State* L) {
+  int SWIG_arg = 0;
+  gam::Loop1P1Z< SampleType > *result = 0 ;
+  
+  SWIG_check_num_args("gam::Loop1P1Z< SampleType >::Loop1P1Z",0,0)
+  result = (gam::Loop1P1Z< SampleType > *)new gam::Loop1P1Z< SampleType >();
+  SWIG_NewPointerObj(L,result,SWIGTYPE_p_gam__Loop1P1ZT_float_t,1); SWIG_arg++; 
+  return SWIG_arg;
+  
+  if(0) SWIG_fail;
+  
+fail:
+  lua_error(L);
+  return SWIG_arg;
+}
+
+
+static void swig_delete_Loop1p1z(void *obj) {
+gam::Loop1P1Z< SampleType > *arg1 = (gam::Loop1P1Z< SampleType > *) obj;
+delete arg1;
+}
+static int _proxy__wrap_new_Loop1p1z(lua_State *L) {
+    assert(lua_istable(L,1));
+    lua_pushcfunction(L,_wrap_new_Loop1p1z);
+    assert(!lua_isnil(L,-1));
+    lua_replace(L,1); /* replace our table with real constructor */
+    lua_call(L,lua_gettop(L)-1,1);
+    return 1;
+}
+static swig_lua_attribute swig_Loop1p1z_attributes[] = {
+    {0,0,0}
+};
+static swig_lua_method swig_Loop1p1z_methods[]= {
+    { "damping", _wrap_Loop1p1z_damping},
+    { "Tick", _wrap_Loop1p1z_Tick},
+    { "gain", _wrap_Loop1p1z_gain},
+    {0,0}
+};
+static swig_lua_method swig_Loop1p1z_meta[] = {
+    {0,0}
+};
+
+static swig_lua_attribute swig_Loop1p1z_Sf_SwigStatic_attributes[] = {
+    {0,0,0}
+};
+static swig_lua_const_info swig_Loop1p1z_Sf_SwigStatic_constants[]= {
+    {0,0,0,0,0,0}
+};
+static swig_lua_method swig_Loop1p1z_Sf_SwigStatic_methods[]= {
+    {0,0}
+};
+static swig_lua_class* swig_Loop1p1z_Sf_SwigStatic_classes[]= {
+    0
+};
+
+static swig_lua_namespace swig_Loop1p1z_Sf_SwigStatic = {
+    "Loop1p1z",
+    swig_Loop1p1z_Sf_SwigStatic_methods,
+    swig_Loop1p1z_Sf_SwigStatic_attributes,
+    swig_Loop1p1z_Sf_SwigStatic_constants,
+    swig_Loop1p1z_Sf_SwigStatic_classes,
+    0
+};
+static swig_lua_class *swig_Loop1p1z_bases[] = {0};
+static const char *swig_Loop1p1z_base_names[] = {0};
+static swig_lua_class _wrap_class_Loop1p1z = { "Loop1p1z", "Loop1p1z", &SWIGTYPE_p_gam__Loop1P1ZT_float_t,_proxy__wrap_new_Loop1p1z, swig_delete_Loop1p1z, swig_Loop1p1z_methods, swig_Loop1p1z_attributes, &swig_Loop1p1z_Sf_SwigStatic, swig_Loop1p1z_meta, swig_Loop1p1z_bases, swig_Loop1p1z_base_names };
+
+static int _wrap_new_Echo__SWIG_0(lua_State* L) {
+  int SWIG_arg = 0;
+  gam::Echo< SampleType > *result = 0 ;
+  
+  SWIG_check_num_args("gam::Echo< SampleType >::Echo",0,0)
+  result = (gam::Echo< SampleType > *)new gam::Echo< SampleType >();
+  SWIG_NewPointerObj(L,result,SWIGTYPE_p_gam__EchoT_float_ipl__Linear_gam__LoopGain_GAM_DEFAULT_DOMAIN_t,1); SWIG_arg++; 
+  return SWIG_arg;
+  
+  if(0) SWIG_fail;
+  
+fail:
+  lua_error(L);
+  return SWIG_arg;
+}
+
+
+static int _wrap_new_Echo__SWIG_1(lua_State* L) {
+  int SWIG_arg = 0;
+  double arg1 ;
+  gam::Echo< SampleType > *result = 0 ;
+  
+  SWIG_check_num_args("gam::Echo< SampleType >::Echo",1,1)
+  if(!lua_isnumber(L,1)) SWIG_fail_arg("gam::Echo< SampleType >::Echo",1,"double");
+  arg1 = (double)lua_tonumber(L, 1);
+  result = (gam::Echo< SampleType > *)new gam::Echo< SampleType >(arg1);
+  SWIG_NewPointerObj(L,result,SWIGTYPE_p_gam__EchoT_float_ipl__Linear_gam__LoopGain_GAM_DEFAULT_DOMAIN_t,1); SWIG_arg++; 
+  return SWIG_arg;
+  
+  if(0) SWIG_fail;
+  
+fail:
+  lua_error(L);
+  return SWIG_arg;
+}
+
+
+static int _wrap_new_Echo(lua_State* L) {
+  int argc;
+  int argv[2]={
+    1,2
+  };
+  
+  argc = lua_gettop(L);
+  if (argc == 0) {
+    return _wrap_new_Echo__SWIG_0(L);
+  }
+  if (argc == 1) {
+    int _v = 0;
+    {
+      _v = lua_isnumber(L,argv[0]);
+    }
+    if (_v) {
+      return _wrap_new_Echo__SWIG_1(L);
+    }
+  }
+  
+  SWIG_Lua_pusherrstring(L,"Wrong arguments for overloaded function 'new_Echo'\n"
+    "  Possible C/C++ prototypes are:\n"
+    "    gam::Echo< SampleType >::Echo()\n"
+    "    gam::Echo< SampleType >::Echo(double)\n");
+  lua_error(L);return 0;
+}
+
+
+static int _wrap_Echo_decay__SWIG_0(lua_State* L) {
+  int SWIG_arg = 0;
+  gam::Echo< SampleType > *arg1 = (gam::Echo< SampleType > *) 0 ;
+  float arg2 ;
+  gam::Echo< SampleType > *result = 0 ;
+  
+  SWIG_check_num_args("gam::Echo< SampleType >::decay",2,2)
+  if(!SWIG_isptrtype(L,1)) SWIG_fail_arg("gam::Echo< SampleType >::decay",1,"gam::Echo< SampleType > *");
+  if(!lua_isnumber(L,2)) SWIG_fail_arg("gam::Echo< SampleType >::decay",2,"float");
+  
+  if (!SWIG_IsOK(SWIG_ConvertPtr(L,1,(void**)&arg1,SWIGTYPE_p_gam__EchoT_float_ipl__Linear_gam__LoopGain_GAM_DEFAULT_DOMAIN_t,0))){
+    SWIG_fail_ptr("Echo_decay",1,SWIGTYPE_p_gam__EchoT_float_ipl__Linear_gam__LoopGain_GAM_DEFAULT_DOMAIN_t);
+  }
+  
+  arg2 = (float)lua_tonumber(L, 2);
+  result = (gam::Echo< SampleType > *) &(arg1)->decay(arg2);
+  SWIG_NewPointerObj(L,result,SWIGTYPE_p_gam__EchoT_float_ipl__Linear_gam__LoopGain_GAM_DEFAULT_DOMAIN_t,0); SWIG_arg++; 
+  return SWIG_arg;
+  
+  if(0) SWIG_fail;
+  
+fail:
+  lua_error(L);
+  return SWIG_arg;
+}
+
+
+static int _wrap_Echo_fbk(lua_State* L) {
+  int SWIG_arg = 0;
+  gam::Echo< SampleType > *arg1 = (gam::Echo< SampleType > *) 0 ;
+  float arg2 ;
+  gam::Echo< SampleType > *result = 0 ;
+  
+  SWIG_check_num_args("gam::Echo< SampleType >::fbk",2,2)
+  if(!SWIG_isptrtype(L,1)) SWIG_fail_arg("gam::Echo< SampleType >::fbk",1,"gam::Echo< SampleType > *");
+  if(!lua_isnumber(L,2)) SWIG_fail_arg("gam::Echo< SampleType >::fbk",2,"float");
+  
+  if (!SWIG_IsOK(SWIG_ConvertPtr(L,1,(void**)&arg1,SWIGTYPE_p_gam__EchoT_float_ipl__Linear_gam__LoopGain_GAM_DEFAULT_DOMAIN_t,0))){
+    SWIG_fail_ptr("Echo_fbk",1,SWIGTYPE_p_gam__EchoT_float_ipl__Linear_gam__LoopGain_GAM_DEFAULT_DOMAIN_t);
+  }
+  
+  arg2 = (float)lua_tonumber(L, 2);
+  result = (gam::Echo< SampleType > *) &(arg1)->fbk(arg2);
+  SWIG_NewPointerObj(L,result,SWIGTYPE_p_gam__EchoT_float_ipl__Linear_gam__LoopGain_GAM_DEFAULT_DOMAIN_t,0); SWIG_arg++; 
+  return SWIG_arg;
+  
+  if(0) SWIG_fail;
+  
+fail:
+  lua_error(L);
+  return SWIG_arg;
+}
+
+
+static int _wrap_Echo_damping(lua_State* L) {
+  int SWIG_arg = 0;
+  gam::Echo< SampleType > *arg1 = (gam::Echo< SampleType > *) 0 ;
+  float arg2 ;
+  gam::Echo< SampleType > *result = 0 ;
+  
+  SWIG_check_num_args("gam::Echo< SampleType >::damping",2,2)
+  if(!SWIG_isptrtype(L,1)) SWIG_fail_arg("gam::Echo< SampleType >::damping",1,"gam::Echo< SampleType > *");
+  if(!lua_isnumber(L,2)) SWIG_fail_arg("gam::Echo< SampleType >::damping",2,"float");
+  
+  if (!SWIG_IsOK(SWIG_ConvertPtr(L,1,(void**)&arg1,SWIGTYPE_p_gam__EchoT_float_ipl__Linear_gam__LoopGain_GAM_DEFAULT_DOMAIN_t,0))){
+    SWIG_fail_ptr("Echo_damping",1,SWIGTYPE_p_gam__EchoT_float_ipl__Linear_gam__LoopGain_GAM_DEFAULT_DOMAIN_t);
+  }
+  
+  arg2 = (float)lua_tonumber(L, 2);
+  result = (gam::Echo< SampleType > *) &(arg1)->damping(arg2);
+  SWIG_NewPointerObj(L,result,SWIGTYPE_p_gam__EchoT_float_ipl__Linear_gam__LoopGain_GAM_DEFAULT_DOMAIN_t,0); SWIG_arg++; 
+  return SWIG_arg;
+  
+  if(0) SWIG_fail;
+  
+fail:
+  lua_error(L);
+  return SWIG_arg;
+}
+
+
+static int _wrap_Echo_Tick(lua_State* L) {
+  int SWIG_arg = 0;
+  gam::Echo< SampleType > *arg1 = (gam::Echo< SampleType > *) 0 ;
+  float arg2 ;
+  float result;
+  
+  SWIG_check_num_args("gam::Echo< SampleType >::Tick",2,2)
+  if(!SWIG_isptrtype(L,1)) SWIG_fail_arg("gam::Echo< SampleType >::Tick",1,"gam::Echo< SampleType > *");
+  if(!lua_isnumber(L,2)) SWIG_fail_arg("gam::Echo< SampleType >::Tick",2,"float");
+  
+  if (!SWIG_IsOK(SWIG_ConvertPtr(L,1,(void**)&arg1,SWIGTYPE_p_gam__EchoT_float_ipl__Linear_gam__LoopGain_GAM_DEFAULT_DOMAIN_t,0))){
+    SWIG_fail_ptr("Echo_Tick",1,SWIGTYPE_p_gam__EchoT_float_ipl__Linear_gam__LoopGain_GAM_DEFAULT_DOMAIN_t);
+  }
+  
+  arg2 = (float)lua_tonumber(L, 2);
+  result = (float)gam_Echo_Sl_SampleType_Sg__Tick__SWIG(arg1,arg2);
+  lua_pushnumber(L, (lua_Number) result); SWIG_arg++;
+  return SWIG_arg;
+  
+  if(0) SWIG_fail;
+  
+fail:
+  lua_error(L);
+  return SWIG_arg;
+}
+
+
+static int _wrap_Echo_decay__SWIG_1(lua_State* L) {
+  int SWIG_arg = 0;
+  gam::Echo< SampleType > *arg1 = (gam::Echo< SampleType > *) 0 ;
+  float result;
+  
+  SWIG_check_num_args("gam::Echo< SampleType >::decay",1,1)
+  if(!SWIG_isptrtype(L,1)) SWIG_fail_arg("gam::Echo< SampleType >::decay",1,"gam::Echo< SampleType > const *");
+  
+  if (!SWIG_IsOK(SWIG_ConvertPtr(L,1,(void**)&arg1,SWIGTYPE_p_gam__EchoT_float_ipl__Linear_gam__LoopGain_GAM_DEFAULT_DOMAIN_t,0))){
+    SWIG_fail_ptr("Echo_decay",1,SWIGTYPE_p_gam__EchoT_float_ipl__Linear_gam__LoopGain_GAM_DEFAULT_DOMAIN_t);
+  }
+  
+  result = (float)((gam::Echo< SampleType > const *)arg1)->decay();
+  lua_pushnumber(L, (lua_Number) result); SWIG_arg++;
+  return SWIG_arg;
+  
+  if(0) SWIG_fail;
+  
+fail:
+  lua_error(L);
+  return SWIG_arg;
+}
+
+
+static int _wrap_Echo_decay(lua_State* L) {
+  int argc;
+  int argv[3]={
+    1,2,3
+  };
+  
+  argc = lua_gettop(L);
+  if (argc == 1) {
+    int _v = 0;
+    {
+      void *ptr;
+      if (SWIG_isptrtype(L,argv[0])==0 || SWIG_ConvertPtr(L,argv[0], (void **) &ptr, SWIGTYPE_p_gam__EchoT_float_ipl__Linear_gam__LoopGain_GAM_DEFAULT_DOMAIN_t, 0)) {
+        _v = 0;
+      } else {
+        _v = 1;
+      }
+    }
+    if (_v) {
+      return _wrap_Echo_decay__SWIG_1(L);
+    }
+  }
+  if (argc == 2) {
+    int _v = 0;
+    {
+      void *ptr;
+      if (SWIG_isptrtype(L,argv[0])==0 || SWIG_ConvertPtr(L,argv[0], (void **) &ptr, SWIGTYPE_p_gam__EchoT_float_ipl__Linear_gam__LoopGain_GAM_DEFAULT_DOMAIN_t, 0)) {
+        _v = 0;
+      } else {
+        _v = 1;
+      }
+    }
+    if (_v) {
+      {
+        _v = lua_isnumber(L,argv[1]);
+      }
+      if (_v) {
+        return _wrap_Echo_decay__SWIG_0(L);
+      }
+    }
+  }
+  
+  SWIG_Lua_pusherrstring(L,"Wrong arguments for overloaded function 'Echo_decay'\n"
+    "  Possible C/C++ prototypes are:\n"
+    "    gam::Echo< SampleType >::decay(float)\n"
+    "    gam::Echo< SampleType >::decay() const\n");
+  lua_error(L);return 0;
+}
+
+
+static int _wrap_Echo_loopFilter(lua_State* L) {
+  int SWIG_arg = 0;
+  gam::Echo< SampleType > *arg1 = (gam::Echo< SampleType > *) 0 ;
+  gam::LoopGain< float > *result = 0 ;
+  
+  SWIG_check_num_args("gam::Echo< SampleType >::loopFilter",1,1)
+  if(!SWIG_isptrtype(L,1)) SWIG_fail_arg("gam::Echo< SampleType >::loopFilter",1,"gam::Echo< SampleType > *");
+  
+  if (!SWIG_IsOK(SWIG_ConvertPtr(L,1,(void**)&arg1,SWIGTYPE_p_gam__EchoT_float_ipl__Linear_gam__LoopGain_GAM_DEFAULT_DOMAIN_t,0))){
+    SWIG_fail_ptr("Echo_loopFilter",1,SWIGTYPE_p_gam__EchoT_float_ipl__Linear_gam__LoopGain_GAM_DEFAULT_DOMAIN_t);
+  }
+  
+  result = (gam::LoopGain< float > *) &(arg1)->loopFilter();
+  SWIG_NewPointerObj(L,result,SWIGTYPE_p_gam__LoopGainT_float_t,0); SWIG_arg++; 
+  return SWIG_arg;
+  
+  if(0) SWIG_fail;
+  
+fail:
+  lua_error(L);
+  return SWIG_arg;
+}
+
+
+static void swig_delete_Echo(void *obj) {
+gam::Echo< SampleType > *arg1 = (gam::Echo< SampleType > *) obj;
+delete arg1;
+}
+static int _proxy__wrap_new_Echo(lua_State *L) {
+    assert(lua_istable(L,1));
+    lua_pushcfunction(L,_wrap_new_Echo);
+    assert(!lua_isnil(L,-1));
+    lua_replace(L,1); /* replace our table with real constructor */
+    lua_call(L,lua_gettop(L)-1,1);
+    return 1;
+}
+static swig_lua_attribute swig_Echo_attributes[] = {
+    {0,0,0}
+};
+static swig_lua_method swig_Echo_methods[]= {
+    { "fbk", _wrap_Echo_fbk},
+    { "damping", _wrap_Echo_damping},
+    { "Tick", _wrap_Echo_Tick},
+    { "decay", _wrap_Echo_decay},
+    { "loopFilter", _wrap_Echo_loopFilter},
+    {0,0}
+};
+static swig_lua_method swig_Echo_meta[] = {
+    {0,0}
+};
+
+static swig_lua_attribute swig_Echo_Sf_SwigStatic_attributes[] = {
+    {0,0,0}
+};
+static swig_lua_const_info swig_Echo_Sf_SwigStatic_constants[]= {
+    {0,0,0,0,0,0}
+};
+static swig_lua_method swig_Echo_Sf_SwigStatic_methods[]= {
+    {0,0}
+};
+static swig_lua_class* swig_Echo_Sf_SwigStatic_classes[]= {
+    0
+};
+
+static swig_lua_namespace swig_Echo_Sf_SwigStatic = {
+    "Echo",
+    swig_Echo_Sf_SwigStatic_methods,
+    swig_Echo_Sf_SwigStatic_attributes,
+    swig_Echo_Sf_SwigStatic_constants,
+    swig_Echo_Sf_SwigStatic_classes,
+    0
+};
+static swig_lua_class *swig_Echo_bases[] = {0,0};
+static const char *swig_Echo_base_names[] = {"gam::Delay< SampleType > *",0};
+static swig_lua_class _wrap_class_Echo = { "Echo", "Echo", &SWIGTYPE_p_gam__EchoT_float_ipl__Linear_gam__LoopGain_GAM_DEFAULT_DOMAIN_t,_proxy__wrap_new_Echo, swig_delete_Echo, swig_Echo_methods, swig_Echo_attributes, &swig_Echo_Sf_SwigStatic, swig_Echo_meta, swig_Echo_bases, swig_Echo_base_names };
+
+static int _wrap_new_EchoCSine__SWIG_0(lua_State* L) {
+  int SWIG_arg = 0;
+  gam::EchoCSine< SampleType > *result = 0 ;
+  
+  SWIG_check_num_args("gam::EchoCSine< SampleType >::EchoCSine",0,0)
+  result = (gam::EchoCSine< SampleType > *)new gam::EchoCSine< SampleType >();
+  SWIG_NewPointerObj(L,result,SWIGTYPE_p_gam__EchoCSineT_float_ipl__Linear_gam__LoopGain_GAM_DEFAULT_DOMAIN_t,1); SWIG_arg++; 
+  return SWIG_arg;
+  
+  if(0) SWIG_fail;
+  
+fail:
+  lua_error(L);
+  return SWIG_arg;
+}
+
+
+static int _wrap_new_EchoCSine__SWIG_1(lua_State* L) {
+  int SWIG_arg = 0;
+  double arg1 ;
+  gam::EchoCSine< SampleType > *result = 0 ;
+  
+  SWIG_check_num_args("gam::EchoCSine< SampleType >::EchoCSine",1,1)
+  if(!lua_isnumber(L,1)) SWIG_fail_arg("gam::EchoCSine< SampleType >::EchoCSine",1,"double");
+  arg1 = (double)lua_tonumber(L, 1);
+  result = (gam::EchoCSine< SampleType > *)new gam::EchoCSine< SampleType >(arg1);
+  SWIG_NewPointerObj(L,result,SWIGTYPE_p_gam__EchoCSineT_float_ipl__Linear_gam__LoopGain_GAM_DEFAULT_DOMAIN_t,1); SWIG_arg++; 
+  return SWIG_arg;
+  
+  if(0) SWIG_fail;
+  
+fail:
+  lua_error(L);
+  return SWIG_arg;
+}
+
+
+static int _wrap_new_EchoCSine(lua_State* L) {
+  int argc;
+  int argv[2]={
+    1,2
+  };
+  
+  argc = lua_gettop(L);
+  if (argc == 0) {
+    return _wrap_new_EchoCSine__SWIG_0(L);
+  }
+  if (argc == 1) {
+    int _v = 0;
+    {
+      _v = lua_isnumber(L,argv[0]);
+    }
+    if (_v) {
+      return _wrap_new_EchoCSine__SWIG_1(L);
+    }
+  }
+  
+  SWIG_Lua_pusherrstring(L,"Wrong arguments for overloaded function 'new_EchoCSine'\n"
+    "  Possible C/C++ prototypes are:\n"
+    "    gam::EchoCSine< SampleType >::EchoCSine()\n"
+    "    gam::EchoCSine< SampleType >::EchoCSine(double)\n");
+  lua_error(L);return 0;
+}
+
+
+static int _wrap_EchoCSine_fbk__SWIG_0(lua_State* L) {
+  int SWIG_arg = 0;
+  gam::EchoCSine< SampleType > *arg1 = (gam::EchoCSine< SampleType > *) 0 ;
+  float arg2 ;
+  float arg3 ;
+  gam::EchoCSine< SampleType > *result = 0 ;
+  
+  SWIG_check_num_args("gam::EchoCSine< SampleType >::fbk",3,3)
+  if(!SWIG_isptrtype(L,1)) SWIG_fail_arg("gam::EchoCSine< SampleType >::fbk",1,"gam::EchoCSine< SampleType > *");
+  if(!lua_isnumber(L,2)) SWIG_fail_arg("gam::EchoCSine< SampleType >::fbk",2,"float");
+  if(!lua_isnumber(L,3)) SWIG_fail_arg("gam::EchoCSine< SampleType >::fbk",3,"float");
+  
+  if (!SWIG_IsOK(SWIG_ConvertPtr(L,1,(void**)&arg1,SWIGTYPE_p_gam__EchoCSineT_float_ipl__Linear_gam__LoopGain_GAM_DEFAULT_DOMAIN_t,0))){
+    SWIG_fail_ptr("EchoCSine_fbk",1,SWIGTYPE_p_gam__EchoCSineT_float_ipl__Linear_gam__LoopGain_GAM_DEFAULT_DOMAIN_t);
+  }
+  
+  arg2 = (float)lua_tonumber(L, 2);
+  arg3 = (float)lua_tonumber(L, 3);
+  result = (gam::EchoCSine< SampleType > *) &(arg1)->fbk(arg2,arg3);
+  SWIG_NewPointerObj(L,result,SWIGTYPE_p_gam__EchoCSineT_float_ipl__Linear_gam__LoopGain_GAM_DEFAULT_DOMAIN_t,0); SWIG_arg++; 
+  return SWIG_arg;
+  
+  if(0) SWIG_fail;
+  
+fail:
+  lua_error(L);
+  return SWIG_arg;
+}
+
+
+static int _wrap_EchoCSine_fbk__SWIG_1(lua_State* L) {
+  int SWIG_arg = 0;
+  gam::EchoCSine< SampleType > *arg1 = (gam::EchoCSine< SampleType > *) 0 ;
+  float arg2 ;
+  gam::EchoCSine< SampleType > *result = 0 ;
+  
+  SWIG_check_num_args("gam::EchoCSine< SampleType >::fbk",2,2)
+  if(!SWIG_isptrtype(L,1)) SWIG_fail_arg("gam::EchoCSine< SampleType >::fbk",1,"gam::EchoCSine< SampleType > *");
+  if(!lua_isnumber(L,2)) SWIG_fail_arg("gam::EchoCSine< SampleType >::fbk",2,"float");
+  
+  if (!SWIG_IsOK(SWIG_ConvertPtr(L,1,(void**)&arg1,SWIGTYPE_p_gam__EchoCSineT_float_ipl__Linear_gam__LoopGain_GAM_DEFAULT_DOMAIN_t,0))){
+    SWIG_fail_ptr("EchoCSine_fbk",1,SWIGTYPE_p_gam__EchoCSineT_float_ipl__Linear_gam__LoopGain_GAM_DEFAULT_DOMAIN_t);
+  }
+  
+  arg2 = (float)lua_tonumber(L, 2);
+  result = (gam::EchoCSine< SampleType > *) &(arg1)->fbk(arg2);
+  SWIG_NewPointerObj(L,result,SWIGTYPE_p_gam__EchoCSineT_float_ipl__Linear_gam__LoopGain_GAM_DEFAULT_DOMAIN_t,0); SWIG_arg++; 
+  return SWIG_arg;
+  
+  if(0) SWIG_fail;
+  
+fail:
+  lua_error(L);
+  return SWIG_arg;
+}
+
+
+static int _wrap_EchoCSine_gain__SWIG_0(lua_State* L) {
+  int SWIG_arg = 0;
+  gam::EchoCSine< SampleType > *arg1 = (gam::EchoCSine< SampleType > *) 0 ;
+  float arg2 ;
+  float arg3 ;
+  gam::EchoCSine< SampleType > *result = 0 ;
+  
+  SWIG_check_num_args("gam::EchoCSine< SampleType >::gain",3,3)
+  if(!SWIG_isptrtype(L,1)) SWIG_fail_arg("gam::EchoCSine< SampleType >::gain",1,"gam::EchoCSine< SampleType > *");
+  if(!lua_isnumber(L,2)) SWIG_fail_arg("gam::EchoCSine< SampleType >::gain",2,"float");
+  if(!lua_isnumber(L,3)) SWIG_fail_arg("gam::EchoCSine< SampleType >::gain",3,"float");
+  
+  if (!SWIG_IsOK(SWIG_ConvertPtr(L,1,(void**)&arg1,SWIGTYPE_p_gam__EchoCSineT_float_ipl__Linear_gam__LoopGain_GAM_DEFAULT_DOMAIN_t,0))){
+    SWIG_fail_ptr("EchoCSine_gain",1,SWIGTYPE_p_gam__EchoCSineT_float_ipl__Linear_gam__LoopGain_GAM_DEFAULT_DOMAIN_t);
+  }
+  
+  arg2 = (float)lua_tonumber(L, 2);
+  arg3 = (float)lua_tonumber(L, 3);
+  result = (gam::EchoCSine< SampleType > *) &(arg1)->gain(arg2,arg3);
+  SWIG_NewPointerObj(L,result,SWIGTYPE_p_gam__EchoCSineT_float_ipl__Linear_gam__LoopGain_GAM_DEFAULT_DOMAIN_t,0); SWIG_arg++; 
+  return SWIG_arg;
+  
+  if(0) SWIG_fail;
+  
+fail:
+  lua_error(L);
+  return SWIG_arg;
+}
+
+
+static int _wrap_EchoCSine_gain__SWIG_1(lua_State* L) {
+  int SWIG_arg = 0;
+  gam::EchoCSine< SampleType > *arg1 = (gam::EchoCSine< SampleType > *) 0 ;
+  float arg2 ;
+  gam::EchoCSine< SampleType > *result = 0 ;
+  
+  SWIG_check_num_args("gam::EchoCSine< SampleType >::gain",2,2)
+  if(!SWIG_isptrtype(L,1)) SWIG_fail_arg("gam::EchoCSine< SampleType >::gain",1,"gam::EchoCSine< SampleType > *");
+  if(!lua_isnumber(L,2)) SWIG_fail_arg("gam::EchoCSine< SampleType >::gain",2,"float");
+  
+  if (!SWIG_IsOK(SWIG_ConvertPtr(L,1,(void**)&arg1,SWIGTYPE_p_gam__EchoCSineT_float_ipl__Linear_gam__LoopGain_GAM_DEFAULT_DOMAIN_t,0))){
+    SWIG_fail_ptr("EchoCSine_gain",1,SWIGTYPE_p_gam__EchoCSineT_float_ipl__Linear_gam__LoopGain_GAM_DEFAULT_DOMAIN_t);
+  }
+  
+  arg2 = (float)lua_tonumber(L, 2);
+  result = (gam::EchoCSine< SampleType > *) &(arg1)->gain(arg2);
+  SWIG_NewPointerObj(L,result,SWIGTYPE_p_gam__EchoCSineT_float_ipl__Linear_gam__LoopGain_GAM_DEFAULT_DOMAIN_t,0); SWIG_arg++; 
+  return SWIG_arg;
+  
+  if(0) SWIG_fail;
+  
+fail:
+  lua_error(L);
+  return SWIG_arg;
+}
+
+
+static int _wrap_EchoCSine_decay(lua_State* L) {
+  int SWIG_arg = 0;
+  gam::EchoCSine< SampleType > *arg1 = (gam::EchoCSine< SampleType > *) 0 ;
+  float arg2 ;
+  gam::EchoCSine< SampleType > *result = 0 ;
+  
+  SWIG_check_num_args("gam::EchoCSine< SampleType >::decay",2,2)
+  if(!SWIG_isptrtype(L,1)) SWIG_fail_arg("gam::EchoCSine< SampleType >::decay",1,"gam::EchoCSine< SampleType > *");
+  if(!lua_isnumber(L,2)) SWIG_fail_arg("gam::EchoCSine< SampleType >::decay",2,"float");
+  
+  if (!SWIG_IsOK(SWIG_ConvertPtr(L,1,(void**)&arg1,SWIGTYPE_p_gam__EchoCSineT_float_ipl__Linear_gam__LoopGain_GAM_DEFAULT_DOMAIN_t,0))){
+    SWIG_fail_ptr("EchoCSine_decay",1,SWIGTYPE_p_gam__EchoCSineT_float_ipl__Linear_gam__LoopGain_GAM_DEFAULT_DOMAIN_t);
+  }
+  
+  arg2 = (float)lua_tonumber(L, 2);
+  result = (gam::EchoCSine< SampleType > *) &(arg1)->decay(arg2);
+  SWIG_NewPointerObj(L,result,SWIGTYPE_p_gam__EchoCSineT_float_ipl__Linear_gam__LoopGain_GAM_DEFAULT_DOMAIN_t,0); SWIG_arg++; 
+  return SWIG_arg;
+  
+  if(0) SWIG_fail;
+  
+fail:
+  lua_error(L);
+  return SWIG_arg;
+}
+
+
+static int _wrap_EchoCSine_fbkFreq__SWIG_0(lua_State* L) {
+  int SWIG_arg = 0;
+  gam::EchoCSine< SampleType > *arg1 = (gam::EchoCSine< SampleType > *) 0 ;
+  float arg2 ;
+  float arg3 ;
+  gam::EchoCSine< SampleType > *result = 0 ;
+  
+  SWIG_check_num_args("gam::EchoCSine< SampleType >::fbkFreq",3,3)
+  if(!SWIG_isptrtype(L,1)) SWIG_fail_arg("gam::EchoCSine< SampleType >::fbkFreq",1,"gam::EchoCSine< SampleType > *");
+  if(!lua_isnumber(L,2)) SWIG_fail_arg("gam::EchoCSine< SampleType >::fbkFreq",2,"float");
+  if(!lua_isnumber(L,3)) SWIG_fail_arg("gam::EchoCSine< SampleType >::fbkFreq",3,"float");
+  
+  if (!SWIG_IsOK(SWIG_ConvertPtr(L,1,(void**)&arg1,SWIGTYPE_p_gam__EchoCSineT_float_ipl__Linear_gam__LoopGain_GAM_DEFAULT_DOMAIN_t,0))){
+    SWIG_fail_ptr("EchoCSine_fbkFreq",1,SWIGTYPE_p_gam__EchoCSineT_float_ipl__Linear_gam__LoopGain_GAM_DEFAULT_DOMAIN_t);
+  }
+  
+  arg2 = (float)lua_tonumber(L, 2);
+  arg3 = (float)lua_tonumber(L, 3);
+  result = (gam::EchoCSine< SampleType > *) &(arg1)->fbkFreq(arg2,arg3);
+  SWIG_NewPointerObj(L,result,SWIGTYPE_p_gam__EchoCSineT_float_ipl__Linear_gam__LoopGain_GAM_DEFAULT_DOMAIN_t,0); SWIG_arg++; 
+  return SWIG_arg;
+  
+  if(0) SWIG_fail;
+  
+fail:
+  lua_error(L);
+  return SWIG_arg;
+}
+
+
+static int _wrap_EchoCSine_fbkFreq__SWIG_1(lua_State* L) {
+  int SWIG_arg = 0;
+  gam::EchoCSine< SampleType > *arg1 = (gam::EchoCSine< SampleType > *) 0 ;
+  float arg2 ;
+  gam::EchoCSine< SampleType > *result = 0 ;
+  
+  SWIG_check_num_args("gam::EchoCSine< SampleType >::fbkFreq",2,2)
+  if(!SWIG_isptrtype(L,1)) SWIG_fail_arg("gam::EchoCSine< SampleType >::fbkFreq",1,"gam::EchoCSine< SampleType > *");
+  if(!lua_isnumber(L,2)) SWIG_fail_arg("gam::EchoCSine< SampleType >::fbkFreq",2,"float");
+  
+  if (!SWIG_IsOK(SWIG_ConvertPtr(L,1,(void**)&arg1,SWIGTYPE_p_gam__EchoCSineT_float_ipl__Linear_gam__LoopGain_GAM_DEFAULT_DOMAIN_t,0))){
+    SWIG_fail_ptr("EchoCSine_fbkFreq",1,SWIGTYPE_p_gam__EchoCSineT_float_ipl__Linear_gam__LoopGain_GAM_DEFAULT_DOMAIN_t);
+  }
+  
+  arg2 = (float)lua_tonumber(L, 2);
+  result = (gam::EchoCSine< SampleType > *) &(arg1)->fbkFreq(arg2);
+  SWIG_NewPointerObj(L,result,SWIGTYPE_p_gam__EchoCSineT_float_ipl__Linear_gam__LoopGain_GAM_DEFAULT_DOMAIN_t,0); SWIG_arg++; 
+  return SWIG_arg;
+  
+  if(0) SWIG_fail;
+  
+fail:
+  lua_error(L);
+  return SWIG_arg;
+}
+
+
+static int _wrap_EchoCSine_fbkFreq(lua_State* L) {
+  int argc;
+  int argv[4]={
+    1,2,3,4
+  };
+  
+  argc = lua_gettop(L);
+  if (argc == 2) {
+    int _v = 0;
+    {
+      void *ptr;
+      if (SWIG_isptrtype(L,argv[0])==0 || SWIG_ConvertPtr(L,argv[0], (void **) &ptr, SWIGTYPE_p_gam__EchoCSineT_float_ipl__Linear_gam__LoopGain_GAM_DEFAULT_DOMAIN_t, 0)) {
+        _v = 0;
+      } else {
+        _v = 1;
+      }
+    }
+    if (_v) {
+      {
+        _v = lua_isnumber(L,argv[1]);
+      }
+      if (_v) {
+        return _wrap_EchoCSine_fbkFreq__SWIG_1(L);
+      }
+    }
+  }
+  if (argc == 3) {
+    int _v = 0;
+    {
+      void *ptr;
+      if (SWIG_isptrtype(L,argv[0])==0 || SWIG_ConvertPtr(L,argv[0], (void **) &ptr, SWIGTYPE_p_gam__EchoCSineT_float_ipl__Linear_gam__LoopGain_GAM_DEFAULT_DOMAIN_t, 0)) {
+        _v = 0;
+      } else {
+        _v = 1;
+      }
+    }
+    if (_v) {
+      {
+        _v = lua_isnumber(L,argv[1]);
+      }
+      if (_v) {
+        {
+          _v = lua_isnumber(L,argv[2]);
+        }
+        if (_v) {
+          return _wrap_EchoCSine_fbkFreq__SWIG_0(L);
+        }
+      }
+    }
+  }
+  
+  SWIG_Lua_pusherrstring(L,"Wrong arguments for overloaded function 'EchoCSine_fbkFreq'\n"
+    "  Possible C/C++ prototypes are:\n"
+    "    gam::EchoCSine< SampleType >::fbkFreq(float,float)\n"
+    "    gam::EchoCSine< SampleType >::fbkFreq(float)\n");
+  lua_error(L);return 0;
+}
+
+
+static int _wrap_EchoCSine_Process(lua_State* L) {
+  int SWIG_arg = 0;
+  gam::EchoCSine< SampleType > *arg1 = (gam::EchoCSine< SampleType > *) 0 ;
+  float arg2 ;
+  float arg3 ;
+  Complex< float > result;
+  
+  SWIG_check_num_args("gam::EchoCSine< SampleType >::Process",3,3)
+  if(!SWIG_isptrtype(L,1)) SWIG_fail_arg("gam::EchoCSine< SampleType >::Process",1,"gam::EchoCSine< SampleType > *");
+  if(!lua_isnumber(L,2)) SWIG_fail_arg("gam::EchoCSine< SampleType >::Process",2,"float");
+  if(!lua_isnumber(L,3)) SWIG_fail_arg("gam::EchoCSine< SampleType >::Process",3,"float");
+  
+  if (!SWIG_IsOK(SWIG_ConvertPtr(L,1,(void**)&arg1,SWIGTYPE_p_gam__EchoCSineT_float_ipl__Linear_gam__LoopGain_GAM_DEFAULT_DOMAIN_t,0))){
+    SWIG_fail_ptr("EchoCSine_Process",1,SWIGTYPE_p_gam__EchoCSineT_float_ipl__Linear_gam__LoopGain_GAM_DEFAULT_DOMAIN_t);
+  }
+  
+  arg2 = (float)lua_tonumber(L, 2);
+  arg3 = (float)lua_tonumber(L, 3);
+  result = gam_EchoCSine_Sl_SampleType_Sg__Process__SWIG(arg1,arg2,arg3);
+  {
+    Complex< float > * resultptr = new Complex< float >((const Complex< float > &) result);
+    SWIG_NewPointerObj(L,(void *) resultptr,SWIGTYPE_p_ComplexT_float_t,1); SWIG_arg++;
+  }
+  return SWIG_arg;
+  
+  if(0) SWIG_fail;
+  
+fail:
+  lua_error(L);
+  return SWIG_arg;
+}
+
+
+static int _wrap_EchoCSine_Tick(lua_State* L) {
+  int SWIG_arg = 0;
+  gam::EchoCSine< SampleType > *arg1 = (gam::EchoCSine< SampleType > *) 0 ;
+  float arg2 ;
+  Complex< float > result;
+  
+  SWIG_check_num_args("gam::EchoCSine< SampleType >::Tick",2,2)
+  if(!SWIG_isptrtype(L,1)) SWIG_fail_arg("gam::EchoCSine< SampleType >::Tick",1,"gam::EchoCSine< SampleType > *");
+  if(!lua_isnumber(L,2)) SWIG_fail_arg("gam::EchoCSine< SampleType >::Tick",2,"float");
+  
+  if (!SWIG_IsOK(SWIG_ConvertPtr(L,1,(void**)&arg1,SWIGTYPE_p_gam__EchoCSineT_float_ipl__Linear_gam__LoopGain_GAM_DEFAULT_DOMAIN_t,0))){
+    SWIG_fail_ptr("EchoCSine_Tick",1,SWIGTYPE_p_gam__EchoCSineT_float_ipl__Linear_gam__LoopGain_GAM_DEFAULT_DOMAIN_t);
+  }
+  
+  arg2 = (float)lua_tonumber(L, 2);
+  result = gam_EchoCSine_Sl_SampleType_Sg__Tick__SWIG(arg1,arg2);
+  {
+    Complex< float > * resultptr = new Complex< float >((const Complex< float > &) result);
+    SWIG_NewPointerObj(L,(void *) resultptr,SWIGTYPE_p_ComplexT_float_t,1); SWIG_arg++;
+  }
+  return SWIG_arg;
+  
+  if(0) SWIG_fail;
+  
+fail:
+  lua_error(L);
+  return SWIG_arg;
+}
+
+
+static int _wrap_EchoCSine_fbk__SWIG_2(lua_State* L) {
+  int SWIG_arg = 0;
+  gam::EchoCSine< SampleType > *arg1 = (gam::EchoCSine< SampleType > *) 0 ;
+  Complex< float > result;
+  
+  SWIG_check_num_args("gam::EchoCSine< SampleType >::fbk",1,1)
+  if(!SWIG_isptrtype(L,1)) SWIG_fail_arg("gam::EchoCSine< SampleType >::fbk",1,"gam::EchoCSine< SampleType > const *");
+  
+  if (!SWIG_IsOK(SWIG_ConvertPtr(L,1,(void**)&arg1,SWIGTYPE_p_gam__EchoCSineT_float_ipl__Linear_gam__LoopGain_GAM_DEFAULT_DOMAIN_t,0))){
+    SWIG_fail_ptr("EchoCSine_fbk",1,SWIGTYPE_p_gam__EchoCSineT_float_ipl__Linear_gam__LoopGain_GAM_DEFAULT_DOMAIN_t);
+  }
+  
+  result = ((gam::EchoCSine< SampleType > const *)arg1)->fbk();
+  {
+    Complex< float > * resultptr = new Complex< float >((const Complex< float > &) result);
+    SWIG_NewPointerObj(L,(void *) resultptr,SWIGTYPE_p_ComplexT_float_t,1); SWIG_arg++;
+  }
+  return SWIG_arg;
+  
+  if(0) SWIG_fail;
+  
+fail:
+  lua_error(L);
+  return SWIG_arg;
+}
+
+
+static int _wrap_EchoCSine_fbk(lua_State* L) {
+  int argc;
+  int argv[4]={
+    1,2,3,4
+  };
+  
+  argc = lua_gettop(L);
+  if (argc == 1) {
+    int _v = 0;
+    {
+      void *ptr;
+      if (SWIG_isptrtype(L,argv[0])==0 || SWIG_ConvertPtr(L,argv[0], (void **) &ptr, SWIGTYPE_p_gam__EchoCSineT_float_ipl__Linear_gam__LoopGain_GAM_DEFAULT_DOMAIN_t, 0)) {
+        _v = 0;
+      } else {
+        _v = 1;
+      }
+    }
+    if (_v) {
+      return _wrap_EchoCSine_fbk__SWIG_2(L);
+    }
+  }
+  if (argc == 2) {
+    int _v = 0;
+    {
+      void *ptr;
+      if (SWIG_isptrtype(L,argv[0])==0 || SWIG_ConvertPtr(L,argv[0], (void **) &ptr, SWIGTYPE_p_gam__EchoCSineT_float_ipl__Linear_gam__LoopGain_GAM_DEFAULT_DOMAIN_t, 0)) {
+        _v = 0;
+      } else {
+        _v = 1;
+      }
+    }
+    if (_v) {
+      {
+        _v = lua_isnumber(L,argv[1]);
+      }
+      if (_v) {
+        return _wrap_EchoCSine_fbk__SWIG_1(L);
+      }
+    }
+  }
+  if (argc == 3) {
+    int _v = 0;
+    {
+      void *ptr;
+      if (SWIG_isptrtype(L,argv[0])==0 || SWIG_ConvertPtr(L,argv[0], (void **) &ptr, SWIGTYPE_p_gam__EchoCSineT_float_ipl__Linear_gam__LoopGain_GAM_DEFAULT_DOMAIN_t, 0)) {
+        _v = 0;
+      } else {
+        _v = 1;
+      }
+    }
+    if (_v) {
+      {
+        _v = lua_isnumber(L,argv[1]);
+      }
+      if (_v) {
+        {
+          _v = lua_isnumber(L,argv[2]);
+        }
+        if (_v) {
+          return _wrap_EchoCSine_fbk__SWIG_0(L);
+        }
+      }
+    }
+  }
+  
+  SWIG_Lua_pusherrstring(L,"Wrong arguments for overloaded function 'EchoCSine_fbk'\n"
+    "  Possible C/C++ prototypes are:\n"
+    "    gam::EchoCSine< SampleType >::fbk(float,float)\n"
+    "    gam::EchoCSine< SampleType >::fbk(float)\n"
+    "    gam::EchoCSine< SampleType >::fbk() const\n");
+  lua_error(L);return 0;
+}
+
+
+static int _wrap_EchoCSine_gain__SWIG_2(lua_State* L) {
+  int SWIG_arg = 0;
+  gam::EchoCSine< SampleType > *arg1 = (gam::EchoCSine< SampleType > *) 0 ;
+  Complex< float > result;
+  
+  SWIG_check_num_args("gam::EchoCSine< SampleType >::gain",1,1)
+  if(!SWIG_isptrtype(L,1)) SWIG_fail_arg("gam::EchoCSine< SampleType >::gain",1,"gam::EchoCSine< SampleType > const *");
+  
+  if (!SWIG_IsOK(SWIG_ConvertPtr(L,1,(void**)&arg1,SWIGTYPE_p_gam__EchoCSineT_float_ipl__Linear_gam__LoopGain_GAM_DEFAULT_DOMAIN_t,0))){
+    SWIG_fail_ptr("EchoCSine_gain",1,SWIGTYPE_p_gam__EchoCSineT_float_ipl__Linear_gam__LoopGain_GAM_DEFAULT_DOMAIN_t);
+  }
+  
+  result = ((gam::EchoCSine< SampleType > const *)arg1)->gain();
+  {
+    Complex< float > * resultptr = new Complex< float >((const Complex< float > &) result);
+    SWIG_NewPointerObj(L,(void *) resultptr,SWIGTYPE_p_ComplexT_float_t,1); SWIG_arg++;
+  }
+  return SWIG_arg;
+  
+  if(0) SWIG_fail;
+  
+fail:
+  lua_error(L);
+  return SWIG_arg;
+}
+
+
+static int _wrap_EchoCSine_gain(lua_State* L) {
+  int argc;
+  int argv[4]={
+    1,2,3,4
+  };
+  
+  argc = lua_gettop(L);
+  if (argc == 1) {
+    int _v = 0;
+    {
+      void *ptr;
+      if (SWIG_isptrtype(L,argv[0])==0 || SWIG_ConvertPtr(L,argv[0], (void **) &ptr, SWIGTYPE_p_gam__EchoCSineT_float_ipl__Linear_gam__LoopGain_GAM_DEFAULT_DOMAIN_t, 0)) {
+        _v = 0;
+      } else {
+        _v = 1;
+      }
+    }
+    if (_v) {
+      return _wrap_EchoCSine_gain__SWIG_2(L);
+    }
+  }
+  if (argc == 2) {
+    int _v = 0;
+    {
+      void *ptr;
+      if (SWIG_isptrtype(L,argv[0])==0 || SWIG_ConvertPtr(L,argv[0], (void **) &ptr, SWIGTYPE_p_gam__EchoCSineT_float_ipl__Linear_gam__LoopGain_GAM_DEFAULT_DOMAIN_t, 0)) {
+        _v = 0;
+      } else {
+        _v = 1;
+      }
+    }
+    if (_v) {
+      {
+        _v = lua_isnumber(L,argv[1]);
+      }
+      if (_v) {
+        return _wrap_EchoCSine_gain__SWIG_1(L);
+      }
+    }
+  }
+  if (argc == 3) {
+    int _v = 0;
+    {
+      void *ptr;
+      if (SWIG_isptrtype(L,argv[0])==0 || SWIG_ConvertPtr(L,argv[0], (void **) &ptr, SWIGTYPE_p_gam__EchoCSineT_float_ipl__Linear_gam__LoopGain_GAM_DEFAULT_DOMAIN_t, 0)) {
+        _v = 0;
+      } else {
+        _v = 1;
+      }
+    }
+    if (_v) {
+      {
+        _v = lua_isnumber(L,argv[1]);
+      }
+      if (_v) {
+        {
+          _v = lua_isnumber(L,argv[2]);
+        }
+        if (_v) {
+          return _wrap_EchoCSine_gain__SWIG_0(L);
+        }
+      }
+    }
+  }
+  
+  SWIG_Lua_pusherrstring(L,"Wrong arguments for overloaded function 'EchoCSine_gain'\n"
+    "  Possible C/C++ prototypes are:\n"
+    "    gam::EchoCSine< SampleType >::gain(float,float)\n"
+    "    gam::EchoCSine< SampleType >::gain(float)\n"
+    "    gam::EchoCSine< SampleType >::gain() const\n");
+  lua_error(L);return 0;
+}
+
+
+static void swig_delete_EchoCSine(void *obj) {
+gam::EchoCSine< SampleType > *arg1 = (gam::EchoCSine< SampleType > *) obj;
+delete arg1;
+}
+static int _proxy__wrap_new_EchoCSine(lua_State *L) {
+    assert(lua_istable(L,1));
+    lua_pushcfunction(L,_wrap_new_EchoCSine);
+    assert(!lua_isnil(L,-1));
+    lua_replace(L,1); /* replace our table with real constructor */
+    lua_call(L,lua_gettop(L)-1,1);
+    return 1;
+}
+static swig_lua_attribute swig_EchoCSine_attributes[] = {
+    {0,0,0}
+};
+static swig_lua_method swig_EchoCSine_methods[]= {
+    { "decay", _wrap_EchoCSine_decay},
+    { "fbkFreq", _wrap_EchoCSine_fbkFreq},
+    { "Process", _wrap_EchoCSine_Process},
+    { "Tick", _wrap_EchoCSine_Tick},
+    { "fbk", _wrap_EchoCSine_fbk},
+    { "gain", _wrap_EchoCSine_gain},
+    {0,0}
+};
+static swig_lua_method swig_EchoCSine_meta[] = {
+    {0,0}
+};
+
+static swig_lua_attribute swig_EchoCSine_Sf_SwigStatic_attributes[] = {
+    {0,0,0}
+};
+static swig_lua_const_info swig_EchoCSine_Sf_SwigStatic_constants[]= {
+    {0,0,0,0,0,0}
+};
+static swig_lua_method swig_EchoCSine_Sf_SwigStatic_methods[]= {
+    {0,0}
+};
+static swig_lua_class* swig_EchoCSine_Sf_SwigStatic_classes[]= {
+    0
+};
+
+static swig_lua_namespace swig_EchoCSine_Sf_SwigStatic = {
+    "EchoCSine",
+    swig_EchoCSine_Sf_SwigStatic_methods,
+    swig_EchoCSine_Sf_SwigStatic_attributes,
+    swig_EchoCSine_Sf_SwigStatic_constants,
+    swig_EchoCSine_Sf_SwigStatic_classes,
+    0
+};
+static swig_lua_class *swig_EchoCSine_bases[] = {0};
+static const char *swig_EchoCSine_base_names[] = {0};
+static swig_lua_class _wrap_class_EchoCSine = { "EchoCSine", "EchoCSine", &SWIGTYPE_p_gam__EchoCSineT_float_ipl__Linear_gam__LoopGain_GAM_DEFAULT_DOMAIN_t,_proxy__wrap_new_EchoCSine, swig_delete_EchoCSine, swig_EchoCSine_methods, swig_EchoCSine_attributes, &swig_EchoCSine_Sf_SwigStatic, swig_EchoCSine_meta, swig_EchoCSine_bases, swig_EchoCSine_base_names };
+
+static int _wrap_new_ReverbMS__SWIG_0(lua_State* L) {
+  int SWIG_arg = 0;
+  gam::ReverbMS< SampleType > *result = 0 ;
+  
+  SWIG_check_num_args("gam::ReverbMS< SampleType >::ReverbMS",0,0)
+  result = (gam::ReverbMS< SampleType > *)new gam::ReverbMS< SampleType >();
+  SWIG_NewPointerObj(L,result,SWIGTYPE_p_gam__ReverbMST_float_gam__Loop1P_ipl__Trunc_GAM_DEFAULT_DOMAIN_t,1); SWIG_arg++; 
+  return SWIG_arg;
+  
+  if(0) SWIG_fail;
+  
+fail:
+  lua_error(L);
+  return SWIG_arg;
+}
+
+
+static int _wrap_new_ReverbMS__SWIG_1(lua_State* L) {
+  int SWIG_arg = 0;
+  gam::ReverbFlavor arg1 ;
+  unsigned int arg2 ;
+  gam::ReverbMS< SampleType > *result = 0 ;
+  
+  SWIG_check_num_args("gam::ReverbMS< SampleType >::ReverbMS",2,2)
+  if(!lua_isnumber(L,1)) SWIG_fail_arg("gam::ReverbMS< SampleType >::ReverbMS",1,"gam::ReverbFlavor");
+  if(!lua_isnumber(L,2)) SWIG_fail_arg("gam::ReverbMS< SampleType >::ReverbMS",2,"unsigned int");
+  arg1 = (gam::ReverbFlavor)(int)lua_tonumber(L, 1);
+  SWIG_contract_assert((lua_tonumber(L,2)>=0),"number must not be negative");
+  arg2 = (unsigned int)lua_tonumber(L, 2);
+  result = (gam::ReverbMS< SampleType > *)new gam::ReverbMS< SampleType >(arg1,arg2);
+  SWIG_NewPointerObj(L,result,SWIGTYPE_p_gam__ReverbMST_float_gam__Loop1P_ipl__Trunc_GAM_DEFAULT_DOMAIN_t,1); SWIG_arg++; 
+  return SWIG_arg;
+  
+  if(0) SWIG_fail;
+  
+fail:
+  lua_error(L);
+  return SWIG_arg;
+}
+
+
+static int _wrap_new_ReverbMS__SWIG_2(lua_State* L) {
+  int SWIG_arg = 0;
+  gam::ReverbFlavor arg1 ;
+  gam::ReverbMS< SampleType > *result = 0 ;
+  
+  SWIG_check_num_args("gam::ReverbMS< SampleType >::ReverbMS",1,1)
+  if(!lua_isnumber(L,1)) SWIG_fail_arg("gam::ReverbMS< SampleType >::ReverbMS",1,"gam::ReverbFlavor");
+  arg1 = (gam::ReverbFlavor)(int)lua_tonumber(L, 1);
+  result = (gam::ReverbMS< SampleType > *)new gam::ReverbMS< SampleType >(arg1);
+  SWIG_NewPointerObj(L,result,SWIGTYPE_p_gam__ReverbMST_float_gam__Loop1P_ipl__Trunc_GAM_DEFAULT_DOMAIN_t,1); SWIG_arg++; 
+  return SWIG_arg;
+  
+  if(0) SWIG_fail;
+  
+fail:
+  lua_error(L);
+  return SWIG_arg;
+}
+
+
+static int _wrap_new_ReverbMS(lua_State* L) {
+  int argc;
+  int argv[3]={
+    1,2,3
+  };
+  
+  argc = lua_gettop(L);
+  if (argc == 0) {
+    return _wrap_new_ReverbMS__SWIG_0(L);
+  }
+  if (argc == 1) {
+    int _v = 0;
+    {
+      _v = lua_isnumber(L,argv[0]);
+    }
+    if (_v) {
+      return _wrap_new_ReverbMS__SWIG_2(L);
+    }
+  }
+  if (argc == 2) {
+    int _v = 0;
+    {
+      _v = lua_isnumber(L,argv[0]);
+    }
+    if (_v) {
+      {
+        _v = lua_isnumber(L,argv[1]);
+      }
+      if (_v) {
+        return _wrap_new_ReverbMS__SWIG_1(L);
+      }
+    }
+  }
+  
+  SWIG_Lua_pusherrstring(L,"Wrong arguments for overloaded function 'new_ReverbMS'\n"
+    "  Possible C/C++ prototypes are:\n"
+    "    gam::ReverbMS< SampleType >::ReverbMS()\n"
+    "    gam::ReverbMS< SampleType >::ReverbMS(gam::ReverbFlavor,unsigned int)\n"
+    "    gam::ReverbMS< SampleType >::ReverbMS(gam::ReverbFlavor)\n");
+  lua_error(L);return 0;
+}
+
+
+static int _wrap_ReverbMS_resize__SWIG_0(lua_State* L) {
+  int SWIG_arg = 0;
+  gam::ReverbMS< SampleType > *arg1 = (gam::ReverbMS< SampleType > *) 0 ;
+  gam::ReverbFlavor arg2 ;
+  unsigned int arg3 ;
+  gam::ReverbMS< SampleType > *result = 0 ;
+  
+  SWIG_check_num_args("gam::ReverbMS< SampleType >::resize",3,3)
+  if(!SWIG_isptrtype(L,1)) SWIG_fail_arg("gam::ReverbMS< SampleType >::resize",1,"gam::ReverbMS< SampleType > *");
+  if(!lua_isnumber(L,2)) SWIG_fail_arg("gam::ReverbMS< SampleType >::resize",2,"gam::ReverbFlavor");
+  if(!lua_isnumber(L,3)) SWIG_fail_arg("gam::ReverbMS< SampleType >::resize",3,"unsigned int");
+  
+  if (!SWIG_IsOK(SWIG_ConvertPtr(L,1,(void**)&arg1,SWIGTYPE_p_gam__ReverbMST_float_gam__Loop1P_ipl__Trunc_GAM_DEFAULT_DOMAIN_t,0))){
+    SWIG_fail_ptr("ReverbMS_resize",1,SWIGTYPE_p_gam__ReverbMST_float_gam__Loop1P_ipl__Trunc_GAM_DEFAULT_DOMAIN_t);
+  }
+  
+  arg2 = (gam::ReverbFlavor)(int)lua_tonumber(L, 2);
+  SWIG_contract_assert((lua_tonumber(L,3)>=0),"number must not be negative");
+  arg3 = (unsigned int)lua_tonumber(L, 3);
+  result = (gam::ReverbMS< SampleType > *) &(arg1)->resize(arg2,arg3);
+  SWIG_NewPointerObj(L,result,SWIGTYPE_p_gam__ReverbMST_float_gam__Loop1P_ipl__Trunc_GAM_DEFAULT_DOMAIN_t,0); SWIG_arg++; 
+  return SWIG_arg;
+  
+  if(0) SWIG_fail;
+  
+fail:
+  lua_error(L);
+  return SWIG_arg;
+}
+
+
+static int _wrap_ReverbMS_resize__SWIG_1(lua_State* L) {
+  int SWIG_arg = 0;
+  gam::ReverbMS< SampleType > *arg1 = (gam::ReverbMS< SampleType > *) 0 ;
+  gam::ReverbFlavor arg2 ;
+  gam::ReverbMS< SampleType > *result = 0 ;
+  
+  SWIG_check_num_args("gam::ReverbMS< SampleType >::resize",2,2)
+  if(!SWIG_isptrtype(L,1)) SWIG_fail_arg("gam::ReverbMS< SampleType >::resize",1,"gam::ReverbMS< SampleType > *");
+  if(!lua_isnumber(L,2)) SWIG_fail_arg("gam::ReverbMS< SampleType >::resize",2,"gam::ReverbFlavor");
+  
+  if (!SWIG_IsOK(SWIG_ConvertPtr(L,1,(void**)&arg1,SWIGTYPE_p_gam__ReverbMST_float_gam__Loop1P_ipl__Trunc_GAM_DEFAULT_DOMAIN_t,0))){
+    SWIG_fail_ptr("ReverbMS_resize",1,SWIGTYPE_p_gam__ReverbMST_float_gam__Loop1P_ipl__Trunc_GAM_DEFAULT_DOMAIN_t);
+  }
+  
+  arg2 = (gam::ReverbFlavor)(int)lua_tonumber(L, 2);
+  result = (gam::ReverbMS< SampleType > *) &(arg1)->resize(arg2);
+  SWIG_NewPointerObj(L,result,SWIGTYPE_p_gam__ReverbMST_float_gam__Loop1P_ipl__Trunc_GAM_DEFAULT_DOMAIN_t,0); SWIG_arg++; 
+  return SWIG_arg;
+  
+  if(0) SWIG_fail;
+  
+fail:
+  lua_error(L);
+  return SWIG_arg;
+}
+
+
+static int _wrap_ReverbMS_resize(lua_State* L) {
+  int argc;
+  int argv[4]={
+    1,2,3,4
+  };
+  
+  argc = lua_gettop(L);
+  if (argc == 2) {
+    int _v = 0;
+    {
+      void *ptr;
+      if (SWIG_isptrtype(L,argv[0])==0 || SWIG_ConvertPtr(L,argv[0], (void **) &ptr, SWIGTYPE_p_gam__ReverbMST_float_gam__Loop1P_ipl__Trunc_GAM_DEFAULT_DOMAIN_t, 0)) {
+        _v = 0;
+      } else {
+        _v = 1;
+      }
+    }
+    if (_v) {
+      {
+        _v = lua_isnumber(L,argv[1]);
+      }
+      if (_v) {
+        return _wrap_ReverbMS_resize__SWIG_1(L);
+      }
+    }
+  }
+  if (argc == 3) {
+    int _v = 0;
+    {
+      void *ptr;
+      if (SWIG_isptrtype(L,argv[0])==0 || SWIG_ConvertPtr(L,argv[0], (void **) &ptr, SWIGTYPE_p_gam__ReverbMST_float_gam__Loop1P_ipl__Trunc_GAM_DEFAULT_DOMAIN_t, 0)) {
+        _v = 0;
+      } else {
+        _v = 1;
+      }
+    }
+    if (_v) {
+      {
+        _v = lua_isnumber(L,argv[1]);
+      }
+      if (_v) {
+        {
+          _v = lua_isnumber(L,argv[2]);
+        }
+        if (_v) {
+          return _wrap_ReverbMS_resize__SWIG_0(L);
+        }
+      }
+    }
+  }
+  
+  SWIG_Lua_pusherrstring(L,"Wrong arguments for overloaded function 'ReverbMS_resize'\n"
+    "  Possible C/C++ prototypes are:\n"
+    "    gam::ReverbMS< SampleType >::resize(gam::ReverbFlavor,unsigned int)\n"
+    "    gam::ReverbMS< SampleType >::resize(gam::ReverbFlavor)\n");
+  lua_error(L);return 0;
+}
+
+
+static int _wrap_ReverbMS_decay__SWIG_0(lua_State* L) {
+  int SWIG_arg = 0;
+  gam::ReverbMS< SampleType > *arg1 = (gam::ReverbMS< SampleType > *) 0 ;
+  float arg2 ;
+  gam::ReverbMS< SampleType > *result = 0 ;
+  
+  SWIG_check_num_args("gam::ReverbMS< SampleType >::decay",2,2)
+  if(!SWIG_isptrtype(L,1)) SWIG_fail_arg("gam::ReverbMS< SampleType >::decay",1,"gam::ReverbMS< SampleType > *");
+  if(!lua_isnumber(L,2)) SWIG_fail_arg("gam::ReverbMS< SampleType >::decay",2,"float");
+  
+  if (!SWIG_IsOK(SWIG_ConvertPtr(L,1,(void**)&arg1,SWIGTYPE_p_gam__ReverbMST_float_gam__Loop1P_ipl__Trunc_GAM_DEFAULT_DOMAIN_t,0))){
+    SWIG_fail_ptr("ReverbMS_decay",1,SWIGTYPE_p_gam__ReverbMST_float_gam__Loop1P_ipl__Trunc_GAM_DEFAULT_DOMAIN_t);
+  }
+  
+  arg2 = (float)lua_tonumber(L, 2);
+  result = (gam::ReverbMS< SampleType > *) &(arg1)->decay(arg2);
+  SWIG_NewPointerObj(L,result,SWIGTYPE_p_gam__ReverbMST_float_gam__Loop1P_ipl__Trunc_GAM_DEFAULT_DOMAIN_t,0); SWIG_arg++; 
+  return SWIG_arg;
+  
+  if(0) SWIG_fail;
+  
+fail:
+  lua_error(L);
+  return SWIG_arg;
+}
+
+
+static int _wrap_ReverbMS_damping(lua_State* L) {
+  int SWIG_arg = 0;
+  gam::ReverbMS< SampleType > *arg1 = (gam::ReverbMS< SampleType > *) 0 ;
+  float arg2 ;
+  gam::ReverbMS< SampleType > *result = 0 ;
+  
+  SWIG_check_num_args("gam::ReverbMS< SampleType >::damping",2,2)
+  if(!SWIG_isptrtype(L,1)) SWIG_fail_arg("gam::ReverbMS< SampleType >::damping",1,"gam::ReverbMS< SampleType > *");
+  if(!lua_isnumber(L,2)) SWIG_fail_arg("gam::ReverbMS< SampleType >::damping",2,"float");
+  
+  if (!SWIG_IsOK(SWIG_ConvertPtr(L,1,(void**)&arg1,SWIGTYPE_p_gam__ReverbMST_float_gam__Loop1P_ipl__Trunc_GAM_DEFAULT_DOMAIN_t,0))){
+    SWIG_fail_ptr("ReverbMS_damping",1,SWIGTYPE_p_gam__ReverbMST_float_gam__Loop1P_ipl__Trunc_GAM_DEFAULT_DOMAIN_t);
+  }
+  
+  arg2 = (float)lua_tonumber(L, 2);
+  result = (gam::ReverbMS< SampleType > *) &(arg1)->damping(arg2);
+  SWIG_NewPointerObj(L,result,SWIGTYPE_p_gam__ReverbMST_float_gam__Loop1P_ipl__Trunc_GAM_DEFAULT_DOMAIN_t,0); SWIG_arg++; 
+  return SWIG_arg;
+  
+  if(0) SWIG_fail;
+  
+fail:
+  lua_error(L);
+  return SWIG_arg;
+}
+
+
+static int _wrap_ReverbMS_Tick(lua_State* L) {
+  int SWIG_arg = 0;
+  gam::ReverbMS< SampleType > *arg1 = (gam::ReverbMS< SampleType > *) 0 ;
+  float arg2 ;
+  float result;
+  
+  SWIG_check_num_args("gam::ReverbMS< SampleType >::Tick",2,2)
+  if(!SWIG_isptrtype(L,1)) SWIG_fail_arg("gam::ReverbMS< SampleType >::Tick",1,"gam::ReverbMS< SampleType > *");
+  if(!lua_isnumber(L,2)) SWIG_fail_arg("gam::ReverbMS< SampleType >::Tick",2,"float");
+  
+  if (!SWIG_IsOK(SWIG_ConvertPtr(L,1,(void**)&arg1,SWIGTYPE_p_gam__ReverbMST_float_gam__Loop1P_ipl__Trunc_GAM_DEFAULT_DOMAIN_t,0))){
+    SWIG_fail_ptr("ReverbMS_Tick",1,SWIGTYPE_p_gam__ReverbMST_float_gam__Loop1P_ipl__Trunc_GAM_DEFAULT_DOMAIN_t);
+  }
+  
+  arg2 = (float)lua_tonumber(L, 2);
+  result = (float)gam_ReverbMS_Sl_SampleType_Sg__Tick__SWIG(arg1,arg2);
+  lua_pushnumber(L, (lua_Number) result); SWIG_arg++;
+  return SWIG_arg;
+  
+  if(0) SWIG_fail;
+  
+fail:
+  lua_error(L);
+  return SWIG_arg;
+}
+
+
+static int _wrap_ReverbMS_decay__SWIG_1(lua_State* L) {
+  int SWIG_arg = 0;
+  gam::ReverbMS< SampleType > *arg1 = (gam::ReverbMS< SampleType > *) 0 ;
+  float result;
+  
+  SWIG_check_num_args("gam::ReverbMS< SampleType >::decay",1,1)
+  if(!SWIG_isptrtype(L,1)) SWIG_fail_arg("gam::ReverbMS< SampleType >::decay",1,"gam::ReverbMS< SampleType > const *");
+  
+  if (!SWIG_IsOK(SWIG_ConvertPtr(L,1,(void**)&arg1,SWIGTYPE_p_gam__ReverbMST_float_gam__Loop1P_ipl__Trunc_GAM_DEFAULT_DOMAIN_t,0))){
+    SWIG_fail_ptr("ReverbMS_decay",1,SWIGTYPE_p_gam__ReverbMST_float_gam__Loop1P_ipl__Trunc_GAM_DEFAULT_DOMAIN_t);
+  }
+  
+  result = (float)((gam::ReverbMS< SampleType > const *)arg1)->decay();
+  lua_pushnumber(L, (lua_Number) result); SWIG_arg++;
+  return SWIG_arg;
+  
+  if(0) SWIG_fail;
+  
+fail:
+  lua_error(L);
+  return SWIG_arg;
+}
+
+
+static int _wrap_ReverbMS_decay(lua_State* L) {
+  int argc;
+  int argv[3]={
+    1,2,3
+  };
+  
+  argc = lua_gettop(L);
+  if (argc == 1) {
+    int _v = 0;
+    {
+      void *ptr;
+      if (SWIG_isptrtype(L,argv[0])==0 || SWIG_ConvertPtr(L,argv[0], (void **) &ptr, SWIGTYPE_p_gam__ReverbMST_float_gam__Loop1P_ipl__Trunc_GAM_DEFAULT_DOMAIN_t, 0)) {
+        _v = 0;
+      } else {
+        _v = 1;
+      }
+    }
+    if (_v) {
+      return _wrap_ReverbMS_decay__SWIG_1(L);
+    }
+  }
+  if (argc == 2) {
+    int _v = 0;
+    {
+      void *ptr;
+      if (SWIG_isptrtype(L,argv[0])==0 || SWIG_ConvertPtr(L,argv[0], (void **) &ptr, SWIGTYPE_p_gam__ReverbMST_float_gam__Loop1P_ipl__Trunc_GAM_DEFAULT_DOMAIN_t, 0)) {
+        _v = 0;
+      } else {
+        _v = 1;
+      }
+    }
+    if (_v) {
+      {
+        _v = lua_isnumber(L,argv[1]);
+      }
+      if (_v) {
+        return _wrap_ReverbMS_decay__SWIG_0(L);
+      }
+    }
+  }
+  
+  SWIG_Lua_pusherrstring(L,"Wrong arguments for overloaded function 'ReverbMS_decay'\n"
+    "  Possible C/C++ prototypes are:\n"
+    "    gam::ReverbMS< SampleType >::decay(float)\n"
+    "    gam::ReverbMS< SampleType >::decay() const\n");
+  lua_error(L);return 0;
+}
+
+
+static int _wrap_ReverbMS_combs(lua_State* L) {
+  int SWIG_arg = 0;
+  gam::ReverbMS< SampleType > *arg1 = (gam::ReverbMS< SampleType > *) 0 ;
+  gam::ReverbMS< float >::Combs *result = 0 ;
+  
+  SWIG_check_num_args("gam::ReverbMS< SampleType >::combs",1,1)
+  if(!SWIG_isptrtype(L,1)) SWIG_fail_arg("gam::ReverbMS< SampleType >::combs",1,"gam::ReverbMS< SampleType > *");
+  
+  if (!SWIG_IsOK(SWIG_ConvertPtr(L,1,(void**)&arg1,SWIGTYPE_p_gam__ReverbMST_float_gam__Loop1P_ipl__Trunc_GAM_DEFAULT_DOMAIN_t,0))){
+    SWIG_fail_ptr("ReverbMS_combs",1,SWIGTYPE_p_gam__ReverbMST_float_gam__Loop1P_ipl__Trunc_GAM_DEFAULT_DOMAIN_t);
+  }
+  
+  result = (gam::ReverbMS< float >::Combs *) &(arg1)->combs();
+  SWIG_NewPointerObj(L,result,SWIGTYPE_p_std__vectorT_gam__EchoT_float_ipl__Trunc_gam__Loop1P_gam__Domain1_t_t,0); SWIG_arg++; 
+  return SWIG_arg;
+  
+  if(0) SWIG_fail;
+  
+fail:
+  lua_error(L);
+  return SWIG_arg;
+}
+
+
+static int _wrap_ReverbMS_allpasses(lua_State* L) {
+  int SWIG_arg = 0;
+  gam::ReverbMS< SampleType > *arg1 = (gam::ReverbMS< SampleType > *) 0 ;
+  gam::ReverbMS< float >::Allpasses *result = 0 ;
+  
+  SWIG_check_num_args("gam::ReverbMS< SampleType >::allpasses",1,1)
+  if(!SWIG_isptrtype(L,1)) SWIG_fail_arg("gam::ReverbMS< SampleType >::allpasses",1,"gam::ReverbMS< SampleType > *");
+  
+  if (!SWIG_IsOK(SWIG_ConvertPtr(L,1,(void**)&arg1,SWIGTYPE_p_gam__ReverbMST_float_gam__Loop1P_ipl__Trunc_GAM_DEFAULT_DOMAIN_t,0))){
+    SWIG_fail_ptr("ReverbMS_allpasses",1,SWIGTYPE_p_gam__ReverbMST_float_gam__Loop1P_ipl__Trunc_GAM_DEFAULT_DOMAIN_t);
+  }
+  
+  result = (gam::ReverbMS< float >::Allpasses *) &(arg1)->allpasses();
+  SWIG_NewPointerObj(L,result,SWIGTYPE_p_std__vectorT_gam__CombT_float_ipl__Trunc_float_gam__Domain1_t_t,0); SWIG_arg++; 
+  return SWIG_arg;
+  
+  if(0) SWIG_fail;
+  
+fail:
+  lua_error(L);
+  return SWIG_arg;
+}
+
+
+static int _wrap_ReverbMS_print(lua_State* L) {
+  int SWIG_arg = 0;
+  gam::ReverbMS< SampleType > *arg1 = (gam::ReverbMS< SampleType > *) 0 ;
+  
+  SWIG_check_num_args("gam::ReverbMS< SampleType >::print",1,1)
+  if(!SWIG_isptrtype(L,1)) SWIG_fail_arg("gam::ReverbMS< SampleType >::print",1,"gam::ReverbMS< SampleType > const *");
+  
+  if (!SWIG_IsOK(SWIG_ConvertPtr(L,1,(void**)&arg1,SWIGTYPE_p_gam__ReverbMST_float_gam__Loop1P_ipl__Trunc_GAM_DEFAULT_DOMAIN_t,0))){
+    SWIG_fail_ptr("ReverbMS_print",1,SWIGTYPE_p_gam__ReverbMST_float_gam__Loop1P_ipl__Trunc_GAM_DEFAULT_DOMAIN_t);
+  }
+  
+  ((gam::ReverbMS< SampleType > const *)arg1)->print();
+  
+  return SWIG_arg;
+  
+  if(0) SWIG_fail;
+  
+fail:
+  lua_error(L);
+  return SWIG_arg;
+}
+
+
+static void swig_delete_ReverbMS(void *obj) {
+gam::ReverbMS< SampleType > *arg1 = (gam::ReverbMS< SampleType > *) obj;
+delete arg1;
+}
+static int _proxy__wrap_new_ReverbMS(lua_State *L) {
+    assert(lua_istable(L,1));
+    lua_pushcfunction(L,_wrap_new_ReverbMS);
+    assert(!lua_isnil(L,-1));
+    lua_replace(L,1); /* replace our table with real constructor */
+    lua_call(L,lua_gettop(L)-1,1);
+    return 1;
+}
+static swig_lua_attribute swig_ReverbMS_attributes[] = {
+    {0,0,0}
+};
+static swig_lua_method swig_ReverbMS_methods[]= {
+    { "resize", _wrap_ReverbMS_resize},
+    { "damping", _wrap_ReverbMS_damping},
+    { "Tick", _wrap_ReverbMS_Tick},
+    { "decay", _wrap_ReverbMS_decay},
+    { "combs", _wrap_ReverbMS_combs},
+    { "allpasses", _wrap_ReverbMS_allpasses},
+    { "print", _wrap_ReverbMS_print},
+    {0,0}
+};
+static swig_lua_method swig_ReverbMS_meta[] = {
+    {0,0}
+};
+
+static swig_lua_attribute swig_ReverbMS_Sf_SwigStatic_attributes[] = {
+    {0,0,0}
+};
+static swig_lua_const_info swig_ReverbMS_Sf_SwigStatic_constants[]= {
+    {0,0,0,0,0,0}
+};
+static swig_lua_method swig_ReverbMS_Sf_SwigStatic_methods[]= {
+    {0,0}
+};
+static swig_lua_class* swig_ReverbMS_Sf_SwigStatic_classes[]= {
+    0
+};
+
+static swig_lua_namespace swig_ReverbMS_Sf_SwigStatic = {
+    "ReverbMS",
+    swig_ReverbMS_Sf_SwigStatic_methods,
+    swig_ReverbMS_Sf_SwigStatic_attributes,
+    swig_ReverbMS_Sf_SwigStatic_constants,
+    swig_ReverbMS_Sf_SwigStatic_classes,
+    0
+};
+static swig_lua_class *swig_ReverbMS_bases[] = {0};
+static const char *swig_ReverbMS_base_names[] = {0};
+static swig_lua_class _wrap_class_ReverbMS = { "ReverbMS", "ReverbMS", &SWIGTYPE_p_gam__ReverbMST_float_gam__Loop1P_ipl__Trunc_GAM_DEFAULT_DOMAIN_t,_proxy__wrap_new_ReverbMS, swig_delete_ReverbMS, swig_ReverbMS_methods, swig_ReverbMS_attributes, &swig_ReverbMS_Sf_SwigStatic, swig_ReverbMS_meta, swig_ReverbMS_bases, swig_ReverbMS_base_names };
+
+static int _wrap_new_Dist__SWIG_0(lua_State* L) {
+  int SWIG_arg = 0;
+  float arg1 ;
+  float arg2 ;
+  float arg3 ;
+  gam::Dist< 2,SampleType > *result = 0 ;
+  
+  SWIG_check_num_args("gam::Dist< 2,SampleType >::Dist",3,3)
+  if(!lua_isnumber(L,1)) SWIG_fail_arg("gam::Dist< 2,SampleType >::Dist",1,"float");
+  if(!lua_isnumber(L,2)) SWIG_fail_arg("gam::Dist< 2,SampleType >::Dist",2,"float");
+  if(!lua_isnumber(L,3)) SWIG_fail_arg("gam::Dist< 2,SampleType >::Dist",3,"float");
+  arg1 = (float)lua_tonumber(L, 1);
+  arg2 = (float)lua_tonumber(L, 2);
+  arg3 = (float)lua_tonumber(L, 3);
+  result = (gam::Dist< 2,SampleType > *)new gam::Dist< 2,SampleType >(arg1,arg2,arg3);
+  SWIG_NewPointerObj(L,result,SWIGTYPE_p_gam__DistT_2_float_t,1); SWIG_arg++; 
+  return SWIG_arg;
+  
+  if(0) SWIG_fail;
+  
+fail:
+  lua_error(L);
+  return SWIG_arg;
+}
+
+
+static int _wrap_new_Dist__SWIG_1(lua_State* L) {
+  int SWIG_arg = 0;
+  float arg1 ;
+  float arg2 ;
+  gam::Dist< 2,SampleType > *result = 0 ;
+  
+  SWIG_check_num_args("gam::Dist< 2,SampleType >::Dist",2,2)
+  if(!lua_isnumber(L,1)) SWIG_fail_arg("gam::Dist< 2,SampleType >::Dist",1,"float");
+  if(!lua_isnumber(L,2)) SWIG_fail_arg("gam::Dist< 2,SampleType >::Dist",2,"float");
+  arg1 = (float)lua_tonumber(L, 1);
+  arg2 = (float)lua_tonumber(L, 2);
+  result = (gam::Dist< 2,SampleType > *)new gam::Dist< 2,SampleType >(arg1,arg2);
+  SWIG_NewPointerObj(L,result,SWIGTYPE_p_gam__DistT_2_float_t,1); SWIG_arg++; 
+  return SWIG_arg;
+  
+  if(0) SWIG_fail;
+  
+fail:
+  lua_error(L);
+  return SWIG_arg;
+}
+
+
+static int _wrap_new_Dist__SWIG_2(lua_State* L) {
+  int SWIG_arg = 0;
+  float arg1 ;
+  gam::Dist< 2,SampleType > *result = 0 ;
+  
+  SWIG_check_num_args("gam::Dist< 2,SampleType >::Dist",1,1)
+  if(!lua_isnumber(L,1)) SWIG_fail_arg("gam::Dist< 2,SampleType >::Dist",1,"float");
+  arg1 = (float)lua_tonumber(L, 1);
+  result = (gam::Dist< 2,SampleType > *)new gam::Dist< 2,SampleType >(arg1);
+  SWIG_NewPointerObj(L,result,SWIGTYPE_p_gam__DistT_2_float_t,1); SWIG_arg++; 
+  return SWIG_arg;
+  
+  if(0) SWIG_fail;
+  
+fail:
+  lua_error(L);
+  return SWIG_arg;
+}
+
+
+static int _wrap_new_Dist__SWIG_3(lua_State* L) {
+  int SWIG_arg = 0;
+  gam::Dist< 2,SampleType > *result = 0 ;
+  
+  SWIG_check_num_args("gam::Dist< 2,SampleType >::Dist",0,0)
+  result = (gam::Dist< 2,SampleType > *)new gam::Dist< 2,SampleType >();
+  SWIG_NewPointerObj(L,result,SWIGTYPE_p_gam__DistT_2_float_t,1); SWIG_arg++; 
+  return SWIG_arg;
+  
+  if(0) SWIG_fail;
+  
+fail:
+  lua_error(L);
+  return SWIG_arg;
+}
+
+
+static int _wrap_new_Dist(lua_State* L) {
+  int argc;
+  int argv[4]={
+    1,2,3,4
+  };
+  
+  argc = lua_gettop(L);
+  if (argc == 0) {
+    return _wrap_new_Dist__SWIG_3(L);
+  }
+  if (argc == 1) {
+    int _v = 0;
+    {
+      _v = lua_isnumber(L,argv[0]);
+    }
+    if (_v) {
+      return _wrap_new_Dist__SWIG_2(L);
+    }
+  }
+  if (argc == 2) {
+    int _v = 0;
+    {
+      _v = lua_isnumber(L,argv[0]);
+    }
+    if (_v) {
+      {
+        _v = lua_isnumber(L,argv[1]);
+      }
+      if (_v) {
+        return _wrap_new_Dist__SWIG_1(L);
+      }
+    }
+  }
+  if (argc == 3) {
+    int _v = 0;
+    {
+      _v = lua_isnumber(L,argv[0]);
+    }
+    if (_v) {
+      {
+        _v = lua_isnumber(L,argv[1]);
+      }
+      if (_v) {
+        {
+          _v = lua_isnumber(L,argv[2]);
+        }
+        if (_v) {
+          return _wrap_new_Dist__SWIG_0(L);
+        }
+      }
+    }
+  }
+  
+  SWIG_Lua_pusherrstring(L,"Wrong arguments for overloaded function 'new_Dist'\n"
+    "  Possible C/C++ prototypes are:\n"
+    "    gam::Dist< 2,SampleType >::Dist(float,float,float)\n"
+    "    gam::Dist< 2,SampleType >::Dist(float,float)\n"
+    "    gam::Dist< 2,SampleType >::Dist(float)\n"
+    "    gam::Dist< 2,SampleType >::Dist()\n");
+  lua_error(L);return 0;
+}
+
+
+static int _wrap_Dist_near__SWIG_0(lua_State* L) {
+  int SWIG_arg = 0;
+  gam::Dist< 2,SampleType > *arg1 = (gam::Dist< 2,SampleType > *) 0 ;
+  float arg2 ;
+  gam::Dist< 2,SampleType > *result = 0 ;
+  
+  SWIG_check_num_args("gam::Dist< 2,SampleType >::near",2,2)
+  if(!SWIG_isptrtype(L,1)) SWIG_fail_arg("gam::Dist< 2,SampleType >::near",1,"gam::Dist< 2,SampleType > *");
+  if(!lua_isnumber(L,2)) SWIG_fail_arg("gam::Dist< 2,SampleType >::near",2,"float");
+  
+  if (!SWIG_IsOK(SWIG_ConvertPtr(L,1,(void**)&arg1,SWIGTYPE_p_gam__DistT_2_float_t,0))){
+    SWIG_fail_ptr("Dist_near",1,SWIGTYPE_p_gam__DistT_2_float_t);
+  }
+  
+  arg2 = (float)lua_tonumber(L, 2);
+  result = (gam::Dist< 2,SampleType > *) &(arg1)->near(arg2);
+  SWIG_NewPointerObj(L,result,SWIGTYPE_p_gam__DistT_2_float_t,0); SWIG_arg++; 
+  return SWIG_arg;
+  
+  if(0) SWIG_fail;
+  
+fail:
+  lua_error(L);
+  return SWIG_arg;
+}
+
+
+static int _wrap_Dist_near__SWIG_1(lua_State* L) {
+  int SWIG_arg = 0;
+  gam::Dist< 2,SampleType > *arg1 = (gam::Dist< 2,SampleType > *) 0 ;
+  float result;
+  
+  SWIG_check_num_args("gam::Dist< 2,SampleType >::near",1,1)
+  if(!SWIG_isptrtype(L,1)) SWIG_fail_arg("gam::Dist< 2,SampleType >::near",1,"gam::Dist< 2,SampleType > const *");
+  
+  if (!SWIG_IsOK(SWIG_ConvertPtr(L,1,(void**)&arg1,SWIGTYPE_p_gam__DistT_2_float_t,0))){
+    SWIG_fail_ptr("Dist_near",1,SWIGTYPE_p_gam__DistT_2_float_t);
+  }
+  
+  result = (float)((gam::Dist< 2,SampleType > const *)arg1)->near();
+  lua_pushnumber(L, (lua_Number) result); SWIG_arg++;
+  return SWIG_arg;
+  
+  if(0) SWIG_fail;
+  
+fail:
+  lua_error(L);
+  return SWIG_arg;
+}
+
+
+static int _wrap_Dist_near(lua_State* L) {
+  int argc;
+  int argv[3]={
+    1,2,3
+  };
+  
+  argc = lua_gettop(L);
+  if (argc == 1) {
+    int _v = 0;
+    {
+      void *ptr;
+      if (SWIG_isptrtype(L,argv[0])==0 || SWIG_ConvertPtr(L,argv[0], (void **) &ptr, SWIGTYPE_p_gam__DistT_2_float_t, 0)) {
+        _v = 0;
+      } else {
+        _v = 1;
+      }
+    }
+    if (_v) {
+      return _wrap_Dist_near__SWIG_1(L);
+    }
+  }
+  if (argc == 2) {
+    int _v = 0;
+    {
+      void *ptr;
+      if (SWIG_isptrtype(L,argv[0])==0 || SWIG_ConvertPtr(L,argv[0], (void **) &ptr, SWIGTYPE_p_gam__DistT_2_float_t, 0)) {
+        _v = 0;
+      } else {
+        _v = 1;
+      }
+    }
+    if (_v) {
+      {
+        _v = lua_isnumber(L,argv[1]);
+      }
+      if (_v) {
+        return _wrap_Dist_near__SWIG_0(L);
+      }
+    }
+  }
+  
+  SWIG_Lua_pusherrstring(L,"Wrong arguments for overloaded function 'Dist_near'\n"
+    "  Possible C/C++ prototypes are:\n"
+    "    gam::Dist< 2,SampleType >::near(float)\n"
+    "    gam::Dist< 2,SampleType >::near() const\n");
+  lua_error(L);return 0;
+}
+
+
+static int _wrap_Dist_far__SWIG_0(lua_State* L) {
+  int SWIG_arg = 0;
+  gam::Dist< 2,SampleType > *arg1 = (gam::Dist< 2,SampleType > *) 0 ;
+  float arg2 ;
+  gam::Dist< 2,SampleType > *result = 0 ;
+  
+  SWIG_check_num_args("gam::Dist< 2,SampleType >::far",2,2)
+  if(!SWIG_isptrtype(L,1)) SWIG_fail_arg("gam::Dist< 2,SampleType >::far",1,"gam::Dist< 2,SampleType > *");
+  if(!lua_isnumber(L,2)) SWIG_fail_arg("gam::Dist< 2,SampleType >::far",2,"float");
+  
+  if (!SWIG_IsOK(SWIG_ConvertPtr(L,1,(void**)&arg1,SWIGTYPE_p_gam__DistT_2_float_t,0))){
+    SWIG_fail_ptr("Dist_far",1,SWIGTYPE_p_gam__DistT_2_float_t);
+  }
+  
+  arg2 = (float)lua_tonumber(L, 2);
+  result = (gam::Dist< 2,SampleType > *) &(arg1)->far(arg2);
+  SWIG_NewPointerObj(L,result,SWIGTYPE_p_gam__DistT_2_float_t,0); SWIG_arg++; 
+  return SWIG_arg;
+  
+  if(0) SWIG_fail;
+  
+fail:
+  lua_error(L);
+  return SWIG_arg;
+}
+
+
+static int _wrap_Dist_far__SWIG_1(lua_State* L) {
+  int SWIG_arg = 0;
+  gam::Dist< 2,SampleType > *arg1 = (gam::Dist< 2,SampleType > *) 0 ;
+  float result;
+  
+  SWIG_check_num_args("gam::Dist< 2,SampleType >::far",1,1)
+  if(!SWIG_isptrtype(L,1)) SWIG_fail_arg("gam::Dist< 2,SampleType >::far",1,"gam::Dist< 2,SampleType > const *");
+  
+  if (!SWIG_IsOK(SWIG_ConvertPtr(L,1,(void**)&arg1,SWIGTYPE_p_gam__DistT_2_float_t,0))){
+    SWIG_fail_ptr("Dist_far",1,SWIGTYPE_p_gam__DistT_2_float_t);
+  }
+  
+  result = (float)((gam::Dist< 2,SampleType > const *)arg1)->far();
+  lua_pushnumber(L, (lua_Number) result); SWIG_arg++;
+  return SWIG_arg;
+  
+  if(0) SWIG_fail;
+  
+fail:
+  lua_error(L);
+  return SWIG_arg;
+}
+
+
+static int _wrap_Dist_far(lua_State* L) {
+  int argc;
+  int argv[3]={
+    1,2,3
+  };
+  
+  argc = lua_gettop(L);
+  if (argc == 1) {
+    int _v = 0;
+    {
+      void *ptr;
+      if (SWIG_isptrtype(L,argv[0])==0 || SWIG_ConvertPtr(L,argv[0], (void **) &ptr, SWIGTYPE_p_gam__DistT_2_float_t, 0)) {
+        _v = 0;
+      } else {
+        _v = 1;
+      }
+    }
+    if (_v) {
+      return _wrap_Dist_far__SWIG_1(L);
+    }
+  }
+  if (argc == 2) {
+    int _v = 0;
+    {
+      void *ptr;
+      if (SWIG_isptrtype(L,argv[0])==0 || SWIG_ConvertPtr(L,argv[0], (void **) &ptr, SWIGTYPE_p_gam__DistT_2_float_t, 0)) {
+        _v = 0;
+      } else {
+        _v = 1;
+      }
+    }
+    if (_v) {
+      {
+        _v = lua_isnumber(L,argv[1]);
+      }
+      if (_v) {
+        return _wrap_Dist_far__SWIG_0(L);
+      }
+    }
+  }
+  
+  SWIG_Lua_pusherrstring(L,"Wrong arguments for overloaded function 'Dist_far'\n"
+    "  Possible C/C++ prototypes are:\n"
+    "    gam::Dist< 2,SampleType >::far(float)\n"
+    "    gam::Dist< 2,SampleType >::far() const\n");
+  lua_error(L);return 0;
+}
+
+
+static int _wrap_Dist_speedOfSound__SWIG_0(lua_State* L) {
+  int SWIG_arg = 0;
+  gam::Dist< 2,SampleType > *arg1 = (gam::Dist< 2,SampleType > *) 0 ;
+  float arg2 ;
+  gam::Dist< 2,SampleType > *result = 0 ;
+  
+  SWIG_check_num_args("gam::Dist< 2,SampleType >::speedOfSound",2,2)
+  if(!SWIG_isptrtype(L,1)) SWIG_fail_arg("gam::Dist< 2,SampleType >::speedOfSound",1,"gam::Dist< 2,SampleType > *");
+  if(!lua_isnumber(L,2)) SWIG_fail_arg("gam::Dist< 2,SampleType >::speedOfSound",2,"float");
+  
+  if (!SWIG_IsOK(SWIG_ConvertPtr(L,1,(void**)&arg1,SWIGTYPE_p_gam__DistT_2_float_t,0))){
+    SWIG_fail_ptr("Dist_speedOfSound",1,SWIGTYPE_p_gam__DistT_2_float_t);
+  }
+  
+  arg2 = (float)lua_tonumber(L, 2);
+  result = (gam::Dist< 2,SampleType > *) &(arg1)->speedOfSound(arg2);
+  SWIG_NewPointerObj(L,result,SWIGTYPE_p_gam__DistT_2_float_t,0); SWIG_arg++; 
+  return SWIG_arg;
+  
+  if(0) SWIG_fail;
+  
+fail:
+  lua_error(L);
+  return SWIG_arg;
+}
+
+
+static int _wrap_Dist_speedOfSound__SWIG_1(lua_State* L) {
+  int SWIG_arg = 0;
+  gam::Dist< 2,SampleType > *arg1 = (gam::Dist< 2,SampleType > *) 0 ;
+  float result;
+  
+  SWIG_check_num_args("gam::Dist< 2,SampleType >::speedOfSound",1,1)
+  if(!SWIG_isptrtype(L,1)) SWIG_fail_arg("gam::Dist< 2,SampleType >::speedOfSound",1,"gam::Dist< 2,SampleType > const *");
+  
+  if (!SWIG_IsOK(SWIG_ConvertPtr(L,1,(void**)&arg1,SWIGTYPE_p_gam__DistT_2_float_t,0))){
+    SWIG_fail_ptr("Dist_speedOfSound",1,SWIGTYPE_p_gam__DistT_2_float_t);
+  }
+  
+  result = (float)((gam::Dist< 2,SampleType > const *)arg1)->speedOfSound();
+  lua_pushnumber(L, (lua_Number) result); SWIG_arg++;
+  return SWIG_arg;
+  
+  if(0) SWIG_fail;
+  
+fail:
+  lua_error(L);
+  return SWIG_arg;
+}
+
+
+static int _wrap_Dist_speedOfSound(lua_State* L) {
+  int argc;
+  int argv[3]={
+    1,2,3
+  };
+  
+  argc = lua_gettop(L);
+  if (argc == 1) {
+    int _v = 0;
+    {
+      void *ptr;
+      if (SWIG_isptrtype(L,argv[0])==0 || SWIG_ConvertPtr(L,argv[0], (void **) &ptr, SWIGTYPE_p_gam__DistT_2_float_t, 0)) {
+        _v = 0;
+      } else {
+        _v = 1;
+      }
+    }
+    if (_v) {
+      return _wrap_Dist_speedOfSound__SWIG_1(L);
+    }
+  }
+  if (argc == 2) {
+    int _v = 0;
+    {
+      void *ptr;
+      if (SWIG_isptrtype(L,argv[0])==0 || SWIG_ConvertPtr(L,argv[0], (void **) &ptr, SWIGTYPE_p_gam__DistT_2_float_t, 0)) {
+        _v = 0;
+      } else {
+        _v = 1;
+      }
+    }
+    if (_v) {
+      {
+        _v = lua_isnumber(L,argv[1]);
+      }
+      if (_v) {
+        return _wrap_Dist_speedOfSound__SWIG_0(L);
+      }
+    }
+  }
+  
+  SWIG_Lua_pusherrstring(L,"Wrong arguments for overloaded function 'Dist_speedOfSound'\n"
+    "  Possible C/C++ prototypes are:\n"
+    "    gam::Dist< 2,SampleType >::speedOfSound(float)\n"
+    "    gam::Dist< 2,SampleType >::speedOfSound() const\n");
+  lua_error(L);return 0;
+}
+
+
+static int _wrap_Dist_dist__SWIG_0(lua_State* L) {
+  int SWIG_arg = 0;
+  gam::Dist< 2,SampleType > *arg1 = (gam::Dist< 2,SampleType > *) 0 ;
+  int arg2 ;
+  float arg3 ;
+  gam::Dist< 2,SampleType > *result = 0 ;
+  
+  SWIG_check_num_args("gam::Dist< 2,SampleType >::dist",3,3)
+  if(!SWIG_isptrtype(L,1)) SWIG_fail_arg("gam::Dist< 2,SampleType >::dist",1,"gam::Dist< 2,SampleType > *");
+  if(!lua_isnumber(L,2)) SWIG_fail_arg("gam::Dist< 2,SampleType >::dist",2,"int");
+  if(!lua_isnumber(L,3)) SWIG_fail_arg("gam::Dist< 2,SampleType >::dist",3,"float");
+  
+  if (!SWIG_IsOK(SWIG_ConvertPtr(L,1,(void**)&arg1,SWIGTYPE_p_gam__DistT_2_float_t,0))){
+    SWIG_fail_ptr("Dist_dist",1,SWIGTYPE_p_gam__DistT_2_float_t);
+  }
+  
+  arg2 = (int)lua_tonumber(L, 2);
+  arg3 = (float)lua_tonumber(L, 3);
+  result = (gam::Dist< 2,SampleType > *) &(arg1)->dist(arg2,arg3);
+  SWIG_NewPointerObj(L,result,SWIGTYPE_p_gam__DistT_2_float_t,0); SWIG_arg++; 
+  return SWIG_arg;
+  
+  if(0) SWIG_fail;
+  
+fail:
+  lua_error(L);
+  return SWIG_arg;
+}
+
+
+static int _wrap_Dist_dist__SWIG_1(lua_State* L) {
+  int SWIG_arg = 0;
+  gam::Dist< 2,SampleType > *arg1 = (gam::Dist< 2,SampleType > *) 0 ;
+  int arg2 ;
+  float arg3 ;
+  float arg4 ;
+  float arg5 ;
+  gam::Dist< 2,SampleType > *result = 0 ;
+  
+  SWIG_check_num_args("gam::Dist< 2,SampleType >::dist",5,5)
+  if(!SWIG_isptrtype(L,1)) SWIG_fail_arg("gam::Dist< 2,SampleType >::dist",1,"gam::Dist< 2,SampleType > *");
+  if(!lua_isnumber(L,2)) SWIG_fail_arg("gam::Dist< 2,SampleType >::dist",2,"int");
+  if(!lua_isnumber(L,3)) SWIG_fail_arg("gam::Dist< 2,SampleType >::dist",3,"float");
+  if(!lua_isnumber(L,4)) SWIG_fail_arg("gam::Dist< 2,SampleType >::dist",4,"float");
+  if(!lua_isnumber(L,5)) SWIG_fail_arg("gam::Dist< 2,SampleType >::dist",5,"float");
+  
+  if (!SWIG_IsOK(SWIG_ConvertPtr(L,1,(void**)&arg1,SWIGTYPE_p_gam__DistT_2_float_t,0))){
+    SWIG_fail_ptr("Dist_dist",1,SWIGTYPE_p_gam__DistT_2_float_t);
+  }
+  
+  arg2 = (int)lua_tonumber(L, 2);
+  arg3 = (float)lua_tonumber(L, 3);
+  arg4 = (float)lua_tonumber(L, 4);
+  arg5 = (float)lua_tonumber(L, 5);
+  result = (gam::Dist< 2,SampleType > *) &(arg1)->dist(arg2,arg3,arg4,arg5);
+  SWIG_NewPointerObj(L,result,SWIGTYPE_p_gam__DistT_2_float_t,0); SWIG_arg++; 
+  return SWIG_arg;
+  
+  if(0) SWIG_fail;
+  
+fail:
+  lua_error(L);
+  return SWIG_arg;
+}
+
+
+static int _wrap_Dist_dist__SWIG_2(lua_State* L) {
+  int SWIG_arg = 0;
+  gam::Dist< 2,SampleType > *arg1 = (gam::Dist< 2,SampleType > *) 0 ;
+  int arg2 ;
+  float arg3 ;
+  float arg4 ;
+  gam::Dist< 2,SampleType > *result = 0 ;
+  
+  SWIG_check_num_args("gam::Dist< 2,SampleType >::dist",4,4)
+  if(!SWIG_isptrtype(L,1)) SWIG_fail_arg("gam::Dist< 2,SampleType >::dist",1,"gam::Dist< 2,SampleType > *");
+  if(!lua_isnumber(L,2)) SWIG_fail_arg("gam::Dist< 2,SampleType >::dist",2,"int");
+  if(!lua_isnumber(L,3)) SWIG_fail_arg("gam::Dist< 2,SampleType >::dist",3,"float");
+  if(!lua_isnumber(L,4)) SWIG_fail_arg("gam::Dist< 2,SampleType >::dist",4,"float");
+  
+  if (!SWIG_IsOK(SWIG_ConvertPtr(L,1,(void**)&arg1,SWIGTYPE_p_gam__DistT_2_float_t,0))){
+    SWIG_fail_ptr("Dist_dist",1,SWIGTYPE_p_gam__DistT_2_float_t);
+  }
+  
+  arg2 = (int)lua_tonumber(L, 2);
+  arg3 = (float)lua_tonumber(L, 3);
+  arg4 = (float)lua_tonumber(L, 4);
+  result = (gam::Dist< 2,SampleType > *) &(arg1)->dist(arg2,arg3,arg4);
+  SWIG_NewPointerObj(L,result,SWIGTYPE_p_gam__DistT_2_float_t,0); SWIG_arg++; 
+  return SWIG_arg;
+  
+  if(0) SWIG_fail;
+  
+fail:
+  lua_error(L);
+  return SWIG_arg;
+}
+
+
+static int _wrap_Dist_dist__SWIG_3(lua_State* L) {
+  int SWIG_arg = 0;
+  gam::Dist< 2,SampleType > *arg1 = (gam::Dist< 2,SampleType > *) 0 ;
+  Vec< 2,float > *arg2 = 0 ;
+  gam::Dist< 2,SampleType > *result = 0 ;
+  
+  SWIG_check_num_args("gam::Dist< 2,SampleType >::dist",2,2)
+  if(!SWIG_isptrtype(L,1)) SWIG_fail_arg("gam::Dist< 2,SampleType >::dist",1,"gam::Dist< 2,SampleType > *");
+  if(!lua_isuserdata(L,2)) SWIG_fail_arg("gam::Dist< 2,SampleType >::dist",2,"Vec< 2,float > const &");
+  
+  if (!SWIG_IsOK(SWIG_ConvertPtr(L,1,(void**)&arg1,SWIGTYPE_p_gam__DistT_2_float_t,0))){
+    SWIG_fail_ptr("Dist_dist",1,SWIGTYPE_p_gam__DistT_2_float_t);
+  }
+  
+  
+  if (!SWIG_IsOK(SWIG_ConvertPtr(L,2,(void**)&arg2,SWIGTYPE_p_VecT_2_float_t,0))){
+    SWIG_fail_ptr("Dist_dist",2,SWIGTYPE_p_VecT_2_float_t);
+  }
+  
+  result = (gam::Dist< 2,SampleType > *) &(arg1)->dist((Vec< 2,float > const &)*arg2);
+  SWIG_NewPointerObj(L,result,SWIGTYPE_p_gam__DistT_2_float_t,0); SWIG_arg++; 
+  return SWIG_arg;
+  
+  if(0) SWIG_fail;
+  
+fail:
+  lua_error(L);
+  return SWIG_arg;
+}
+
+
+static int _wrap_Dist_dist__SWIG_4(lua_State* L) {
+  int SWIG_arg = 0;
+  gam::Dist< 2,SampleType > *arg1 = (gam::Dist< 2,SampleType > *) 0 ;
+  Vec< 2,float > *result = 0 ;
+  
+  SWIG_check_num_args("gam::Dist< 2,SampleType >::dist",1,1)
+  if(!SWIG_isptrtype(L,1)) SWIG_fail_arg("gam::Dist< 2,SampleType >::dist",1,"gam::Dist< 2,SampleType > const *");
+  
+  if (!SWIG_IsOK(SWIG_ConvertPtr(L,1,(void**)&arg1,SWIGTYPE_p_gam__DistT_2_float_t,0))){
+    SWIG_fail_ptr("Dist_dist",1,SWIGTYPE_p_gam__DistT_2_float_t);
+  }
+  
+  result = (Vec< 2,float > *) &((gam::Dist< 2,SampleType > const *)arg1)->dist();
+  SWIG_NewPointerObj(L,result,SWIGTYPE_p_VecT_2_float_t,0); SWIG_arg++; 
+  return SWIG_arg;
+  
+  if(0) SWIG_fail;
+  
+fail:
+  lua_error(L);
+  return SWIG_arg;
+}
+
+
+static int _wrap_Dist_dist(lua_State* L) {
+  int argc;
+  int argv[6]={
+    1,2,3,4,5,6
+  };
+  
+  argc = lua_gettop(L);
+  if (argc == 1) {
+    int _v = 0;
+    {
+      void *ptr;
+      if (SWIG_isptrtype(L,argv[0])==0 || SWIG_ConvertPtr(L,argv[0], (void **) &ptr, SWIGTYPE_p_gam__DistT_2_float_t, 0)) {
+        _v = 0;
+      } else {
+        _v = 1;
+      }
+    }
+    if (_v) {
+      return _wrap_Dist_dist__SWIG_4(L);
+    }
+  }
+  if (argc == 2) {
+    int _v = 0;
+    {
+      void *ptr;
+      if (SWIG_isptrtype(L,argv[0])==0 || SWIG_ConvertPtr(L,argv[0], (void **) &ptr, SWIGTYPE_p_gam__DistT_2_float_t, 0)) {
+        _v = 0;
+      } else {
+        _v = 1;
+      }
+    }
+    if (_v) {
+      {
+        void *ptr;
+        if (lua_isuserdata(L,argv[1])==0 || SWIG_ConvertPtr(L,argv[1], (void **) &ptr, SWIGTYPE_p_VecT_2_float_t, SWIG_POINTER_NO_NULL)) {
+          _v = 0;
+        } else {
+          _v = 1;
+        }
+      }
+      if (_v) {
+        return _wrap_Dist_dist__SWIG_3(L);
+      }
+    }
+  }
+  if (argc == 3) {
+    int _v = 0;
+    {
+      void *ptr;
+      if (SWIG_isptrtype(L,argv[0])==0 || SWIG_ConvertPtr(L,argv[0], (void **) &ptr, SWIGTYPE_p_gam__DistT_2_float_t, 0)) {
+        _v = 0;
+      } else {
+        _v = 1;
+      }
+    }
+    if (_v) {
+      {
+        _v = lua_isnumber(L,argv[1]);
+      }
+      if (_v) {
+        {
+          _v = lua_isnumber(L,argv[2]);
+        }
+        if (_v) {
+          return _wrap_Dist_dist__SWIG_0(L);
+        }
+      }
+    }
+  }
+  if (argc == 4) {
+    int _v = 0;
+    {
+      void *ptr;
+      if (SWIG_isptrtype(L,argv[0])==0 || SWIG_ConvertPtr(L,argv[0], (void **) &ptr, SWIGTYPE_p_gam__DistT_2_float_t, 0)) {
+        _v = 0;
+      } else {
+        _v = 1;
+      }
+    }
+    if (_v) {
+      {
+        _v = lua_isnumber(L,argv[1]);
+      }
+      if (_v) {
+        {
+          _v = lua_isnumber(L,argv[2]);
+        }
+        if (_v) {
+          {
+            _v = lua_isnumber(L,argv[3]);
+          }
+          if (_v) {
+            return _wrap_Dist_dist__SWIG_2(L);
+          }
+        }
+      }
+    }
+  }
+  if (argc == 5) {
+    int _v = 0;
+    {
+      void *ptr;
+      if (SWIG_isptrtype(L,argv[0])==0 || SWIG_ConvertPtr(L,argv[0], (void **) &ptr, SWIGTYPE_p_gam__DistT_2_float_t, 0)) {
+        _v = 0;
+      } else {
+        _v = 1;
+      }
+    }
+    if (_v) {
+      {
+        _v = lua_isnumber(L,argv[1]);
+      }
+      if (_v) {
+        {
+          _v = lua_isnumber(L,argv[2]);
+        }
+        if (_v) {
+          {
+            _v = lua_isnumber(L,argv[3]);
+          }
+          if (_v) {
+            {
+              _v = lua_isnumber(L,argv[4]);
+            }
+            if (_v) {
+              return _wrap_Dist_dist__SWIG_1(L);
+            }
+          }
+        }
+      }
+    }
+  }
+  
+  SWIG_Lua_pusherrstring(L,"Wrong arguments for overloaded function 'Dist_dist'\n"
+    "  Possible C/C++ prototypes are:\n"
+    "    gam::Dist< 2,SampleType >::dist(int,float)\n"
+    "    gam::Dist< 2,SampleType >::dist(int,float,float,float)\n"
+    "    gam::Dist< 2,SampleType >::dist(int,float,float)\n"
+    "    gam::Dist< 2,SampleType >::dist(Vec< 2,float > const &)\n"
+    "    gam::Dist< 2,SampleType >::dist() const\n");
+  lua_error(L);return 0;
+}
+
+
+static int _wrap_Dist___call(lua_State* L) {
+  int SWIG_arg = 0;
+  gam::Dist< 2,SampleType > *arg1 = (gam::Dist< 2,SampleType > *) 0 ;
+  float arg2 ;
+  Vec< 2,float > result;
+  
+  SWIG_check_num_args("gam::Dist< 2,SampleType >::operator ()",2,2)
+  if(!SWIG_isptrtype(L,1)) SWIG_fail_arg("gam::Dist< 2,SampleType >::operator ()",1,"gam::Dist< 2,SampleType > *");
+  if(!lua_isnumber(L,2)) SWIG_fail_arg("gam::Dist< 2,SampleType >::operator ()",2,"float");
+  
+  if (!SWIG_IsOK(SWIG_ConvertPtr(L,1,(void**)&arg1,SWIGTYPE_p_gam__DistT_2_float_t,0))){
+    SWIG_fail_ptr("Dist___call",1,SWIGTYPE_p_gam__DistT_2_float_t);
+  }
+  
+  arg2 = (float)lua_tonumber(L, 2);
+  result = (arg1)->operator ()(arg2);
+  {
+    Vec< 2,float > * resultptr = new Vec< 2,float >((const Vec< 2,float > &) result);
+    SWIG_NewPointerObj(L,(void *) resultptr,SWIGTYPE_p_VecT_2_float_t,1); SWIG_arg++;
+  }
+  return SWIG_arg;
+  
+  if(0) SWIG_fail;
+  
+fail:
+  lua_error(L);
+  return SWIG_arg;
+}
+
+
+static int _wrap_Dist_Tick(lua_State* L) {
+  int SWIG_arg = 0;
+  gam::Dist< 2,SampleType > *arg1 = (gam::Dist< 2,SampleType > *) 0 ;
+  float arg2 ;
+  Vec< 2,float > result;
+  
+  SWIG_check_num_args("gam::Dist< 2,SampleType >::Tick",2,2)
+  if(!SWIG_isptrtype(L,1)) SWIG_fail_arg("gam::Dist< 2,SampleType >::Tick",1,"gam::Dist< 2,SampleType > *");
+  if(!lua_isnumber(L,2)) SWIG_fail_arg("gam::Dist< 2,SampleType >::Tick",2,"float");
+  
+  if (!SWIG_IsOK(SWIG_ConvertPtr(L,1,(void**)&arg1,SWIGTYPE_p_gam__DistT_2_float_t,0))){
+    SWIG_fail_ptr("Dist_Tick",1,SWIGTYPE_p_gam__DistT_2_float_t);
+  }
+  
+  arg2 = (float)lua_tonumber(L, 2);
+  result = gam_Dist_Sl_2_Sc_SampleType_Sg__Tick__SWIG(arg1,arg2);
+  {
+    Vec< 2,float > * resultptr = new Vec< 2,float >((const Vec< 2,float > &) result);
+    SWIG_NewPointerObj(L,(void *) resultptr,SWIGTYPE_p_VecT_2_float_t,1); SWIG_arg++;
+  }
+  return SWIG_arg;
+  
+  if(0) SWIG_fail;
+  
+fail:
+  lua_error(L);
+  return SWIG_arg;
+}
+
+
+static int _wrap_Dist_delayLine(lua_State* L) {
+  int SWIG_arg = 0;
+  gam::Dist< 2,SampleType > *arg1 = (gam::Dist< 2,SampleType > *) 0 ;
+  gam::Delay< float > *result = 0 ;
+  
+  SWIG_check_num_args("gam::Dist< 2,SampleType >::delayLine",1,1)
+  if(!SWIG_isptrtype(L,1)) SWIG_fail_arg("gam::Dist< 2,SampleType >::delayLine",1,"gam::Dist< 2,SampleType > const *");
+  
+  if (!SWIG_IsOK(SWIG_ConvertPtr(L,1,(void**)&arg1,SWIGTYPE_p_gam__DistT_2_float_t,0))){
+    SWIG_fail_ptr("Dist_delayLine",1,SWIGTYPE_p_gam__DistT_2_float_t);
+  }
+  
+  result = (gam::Delay< float > *) &((gam::Dist< 2,SampleType > const *)arg1)->delayLine();
+  SWIG_NewPointerObj(L,result,SWIGTYPE_p_gam__DelayT_float_ipl__Linear_GAM_DEFAULT_DOMAIN_t,0); SWIG_arg++; 
+  return SWIG_arg;
+  
+  if(0) SWIG_fail;
+  
+fail:
+  lua_error(L);
+  return SWIG_arg;
+}
+
+
+static void swig_delete_Dist(void *obj) {
+gam::Dist< 2,SampleType > *arg1 = (gam::Dist< 2,SampleType > *) obj;
+delete arg1;
+}
+static int _proxy__wrap_new_Dist(lua_State *L) {
+    assert(lua_istable(L,1));
+    lua_pushcfunction(L,_wrap_new_Dist);
+    assert(!lua_isnil(L,-1));
+    lua_replace(L,1); /* replace our table with real constructor */
+    lua_call(L,lua_gettop(L)-1,1);
+    return 1;
+}
+static swig_lua_attribute swig_Dist_attributes[] = {
+    {0,0,0}
+};
+static swig_lua_method swig_Dist_methods[]= {
+    { "near", _wrap_Dist_near},
+    { "far", _wrap_Dist_far},
+    { "speedOfSound", _wrap_Dist_speedOfSound},
+    { "dist", _wrap_Dist_dist},
+    { "__call", _wrap_Dist___call},
+    { "Tick", _wrap_Dist_Tick},
+    { "delayLine", _wrap_Dist_delayLine},
+    {0,0}
+};
+static swig_lua_method swig_Dist_meta[] = {
+    { "__call", _wrap_Dist___call},
+    {0,0}
+};
+
+static swig_lua_attribute swig_Dist_Sf_SwigStatic_attributes[] = {
+    {0,0,0}
+};
+static swig_lua_const_info swig_Dist_Sf_SwigStatic_constants[]= {
+    {0,0,0,0,0,0}
+};
+static swig_lua_method swig_Dist_Sf_SwigStatic_methods[]= {
+    {0,0}
+};
+static swig_lua_class* swig_Dist_Sf_SwigStatic_classes[]= {
+    0
+};
+
+static swig_lua_namespace swig_Dist_Sf_SwigStatic = {
+    "Dist",
+    swig_Dist_Sf_SwigStatic_methods,
+    swig_Dist_Sf_SwigStatic_attributes,
+    swig_Dist_Sf_SwigStatic_constants,
+    swig_Dist_Sf_SwigStatic_classes,
+    0
+};
+static swig_lua_class *swig_Dist_bases[] = {0};
+static const char *swig_Dist_base_names[] = {0};
+static swig_lua_class _wrap_class_Dist = { "Dist", "Dist", &SWIGTYPE_p_gam__DistT_2_float_t,_proxy__wrap_new_Dist, swig_delete_Dist, swig_Dist_methods, swig_Dist_attributes, &swig_Dist_Sf_SwigStatic, swig_Dist_meta, swig_Dist_bases, swig_Dist_base_names };
+
 static swig_lua_attribute swig_SwigModule_attributes[] = {
     {0,0,0}
 };
@@ -29451,6 +52971,48 @@ static swig_lua_const_info swig_SwigModule_constants[]= {
     {SWIG_LUA_CONSTTAB_INT("COMPLEX", gam::COMPLEX)},
     {SWIG_LUA_CONSTTAB_INT("MAG_PHASE", gam::MAG_PHASE)},
     {SWIG_LUA_CONSTTAB_INT("MAG_FREQ", gam::MAG_FREQ)},
+    {SWIG_LUA_CONSTTAB_INT("LOW_PASS", gam::LOW_PASS)},
+    {SWIG_LUA_CONSTTAB_INT("HIGH_PASS", gam::HIGH_PASS)},
+    {SWIG_LUA_CONSTTAB_INT("BAND_PASS", gam::BAND_PASS)},
+    {SWIG_LUA_CONSTTAB_INT("RESONANT", gam::RESONANT)},
+    {SWIG_LUA_CONSTTAB_INT("BAND_REJECT", gam::BAND_REJECT)},
+    {SWIG_LUA_CONSTTAB_INT("ALL_PASS", gam::ALL_PASS)},
+    {SWIG_LUA_CONSTTAB_INT("PEAKING", gam::PEAKING)},
+    {SWIG_LUA_CONSTTAB_INT("LOW_SHELF", gam::LOW_SHELF)},
+    {SWIG_LUA_CONSTTAB_INT("HIGH_SHELF", gam::HIGH_SHELF)},
+    {SWIG_LUA_CONSTTAB_INT("SMOOTHING", gam::SMOOTHING)},
+    {SWIG_LUA_CONSTTAB_INT("THRU_PASS", gam::THRU_PASS)},
+    {SWIG_LUA_CONSTTAB_INT("Vowel_MAN", gam::Vowel::MAN)},
+    {SWIG_LUA_CONSTTAB_INT("Vowel_WOMAN", gam::Vowel::WOMAN)},
+    {SWIG_LUA_CONSTTAB_INT("Vowel_CHILD", gam::Vowel::CHILD)},
+    {SWIG_LUA_CONSTTAB_INT("Vowel_NUM_VOICES", gam::Vowel::NUM_VOICES)},
+    {SWIG_LUA_CONSTTAB_INT("Vowel_HEED", gam::Vowel::HEED)},
+    {SWIG_LUA_CONSTTAB_INT("Vowel_HID", gam::Vowel::HID)},
+    {SWIG_LUA_CONSTTAB_INT("Vowel_HEAD", gam::Vowel::HEAD)},
+    {SWIG_LUA_CONSTTAB_INT("Vowel_HAD", gam::Vowel::HAD)},
+    {SWIG_LUA_CONSTTAB_INT("Vowel_HOD", gam::Vowel::HOD)},
+    {SWIG_LUA_CONSTTAB_INT("Vowel_HAWED", gam::Vowel::HAWED)},
+    {SWIG_LUA_CONSTTAB_INT("Vowel_HOOD", gam::Vowel::HOOD)},
+    {SWIG_LUA_CONSTTAB_INT("Vowel_WHOD", gam::Vowel::WHOD)},
+    {SWIG_LUA_CONSTTAB_INT("Vowel_HUD", gam::Vowel::HUD)},
+    {SWIG_LUA_CONSTTAB_INT("Vowel_HEARD", gam::Vowel::HEARD)},
+    {SWIG_LUA_CONSTTAB_INT("Vowel_NUM_PHONEMES", gam::Vowel::NUM_PHONEMES)},
+    {SWIG_LUA_CONSTTAB_INT("SoundFile_WAV", gam::SoundFile::WAV)},
+    {SWIG_LUA_CONSTTAB_INT("SoundFile_AIFF", gam::SoundFile::AIFF)},
+    {SWIG_LUA_CONSTTAB_INT("SoundFile_AU", gam::SoundFile::AU)},
+    {SWIG_LUA_CONSTTAB_INT("SoundFile_RAW", gam::SoundFile::RAW)},
+    {SWIG_LUA_CONSTTAB_INT("SoundFile_NO_FORMAT", gam::SoundFile::NO_FORMAT)},
+    {SWIG_LUA_CONSTTAB_INT("SoundFile_PCM_S8", gam::SoundFile::PCM_S8)},
+    {SWIG_LUA_CONSTTAB_INT("SoundFile_PCM_16", gam::SoundFile::PCM_16)},
+    {SWIG_LUA_CONSTTAB_INT("SoundFile_PCM_24", gam::SoundFile::PCM_24)},
+    {SWIG_LUA_CONSTTAB_INT("SoundFile_PCM_32", gam::SoundFile::PCM_32)},
+    {SWIG_LUA_CONSTTAB_INT("SoundFile_PCM_U8", gam::SoundFile::PCM_U8)},
+    {SWIG_LUA_CONSTTAB_INT("SoundFile_FLOAT", gam::SoundFile::FLOAT)},
+    {SWIG_LUA_CONSTTAB_INT("SoundFile_DOUBLE", gam::SoundFile::DOUBLE)},
+    {SWIG_LUA_CONSTTAB_INT("SoundFile_ULAW", gam::SoundFile::ULAW)},
+    {SWIG_LUA_CONSTTAB_INT("SoundFile_ALAW", gam::SoundFile::ALAW)},
+    {SWIG_LUA_CONSTTAB_INT("JCREVERB", gam::JCREVERB)},
+    {SWIG_LUA_CONSTTAB_INT("FREEVERB", gam::FREEVERB)},
     {0,0,0,0,0,0}
 };
 static swig_lua_method swig_SwigModule_methods[]= {
@@ -29485,6 +53047,11 @@ static swig_lua_method swig_SwigModule_methods[]= {
     { "uintToUnitS", _wrap_uintToUnitS},
     { "Domain_master", _wrap_Domain_master},
     { "sampleRate", _wrap_sampleRate},
+    { "Vowel_amp", _wrap_Vowel_amp},
+    { "Vowel_dB", _wrap_Vowel_dB},
+    { "Vowel_freq", _wrap_Vowel_freq},
+    { "Vowel_pitch", _wrap_Vowel_pitch},
+    { "SoundFile_toString", _wrap_SoundFile_toString},
     {0,0}
 };
 static swig_lua_class* swig_SwigModule_classes[]= {
@@ -29539,6 +53106,51 @@ static swig_lua_class* swig_SwigModule_classes[]= {
 &_wrap_class_FreqShift,
 &_wrap_class_Pan,
 &_wrap_class_Quantizer,
+&_wrap_class_AllPass1,
+&_wrap_class_Biquad,
+&_wrap_class_BlockDC,
+&_wrap_class_BlockNyq,
+&_wrap_class_AllPass2,
+&_wrap_class_Notch,
+&_wrap_class_Reson,
+&_wrap_class_Hilbert,
+&_wrap_class_Integrator,
+&_wrap_class_Differencer,
+&_wrap_class_MovingAvg,
+&_wrap_class_OnePole,
+&_wrap_class_Vowel,
+&_wrap_class_NoiseBrown,
+&_wrap_class_NoisePink,
+&_wrap_class_NoiseWhite,
+&_wrap_class_NoiseBinary,
+&_wrap_class_NoiseViolet,
+&_wrap_class_Accum,
+&_wrap_class_Sweep,
+&_wrap_class_AccumPhase,
+&_wrap_class_Osc,
+&_wrap_class_CSine,
+&_wrap_class_Sine,
+&_wrap_class_SineR,
+&_wrap_class_SineRs,
+&_wrap_class_SineD,
+&_wrap_class_SineDs,
+&_wrap_class_Chirplet,
+&_wrap_class_LFO,
+&_wrap_class_DWO,
+&_wrap_class_Buzz,
+&_wrap_class_Saw,
+&_wrap_class_Square,
+&_wrap_class_DSF,
+&_wrap_class_Recorder,
+&_wrap_class_SamplePlayer,
+&_wrap_class_SoundFile,
+&_wrap_class_LoopGain,
+&_wrap_class_Loop1p,
+&_wrap_class_Loop1p1z,
+&_wrap_class_Echo,
+&_wrap_class_EchoCSine,
+&_wrap_class_ReverbMS,
+&_wrap_class_Dist,
     0
 };
 static swig_lua_namespace* swig_SwigModule_namespaces[] = {
@@ -29568,20 +53180,26 @@ static void *_p_gam__DoubleRingT_float_tTo_p_gam__ArrayT_float_t(void *x, int *S
 static void *_p_gam__DelayNT_float_tTo_p_gam__ArrayT_float_t(void *x, int *SWIGUNUSEDPARM(newmemory)) {
     return (void *)((gam::Array< float > *) (gam::Ring< SampleType > *) ((gam::DelayN< float > *) x));
 }
+static void *_p_gam__MovingAvgT_float_tTo_p_gam__ArrayT_float_t(void *x, int *SWIGUNUSEDPARM(newmemory)) {
+    return (void *)((gam::Array< float > *) (gam::Ring< SampleType > *)(gam::DelayN< SampleType > *) ((gam::MovingAvg< float > *) x));
+}
+static void *_p_gam__SamplePlayerT_float_ipl__Trunc_phsInc__OneShot_GAM_DEFAULT_DOMAIN_tTo_p_gam__ArrayT_float_t(void *x, int *SWIGUNUSEDPARM(newmemory)) {
+    return (void *)((gam::Array< float > *)  ((gam::SamplePlayer< float,ipl::Trunc,phsInc::OneShot,GAM_DEFAULT_DOMAIN > *) x));
+}
 static void *_p_gam__DoubleRingT_float_tTo_p_gam__RingT_float_t(void *x, int *SWIGUNUSEDPARM(newmemory)) {
     return (void *)((gam::Ring< float > *)  ((gam::DoubleRing< float > *) x));
 }
 static void *_p_gam__DelayNT_float_tTo_p_gam__RingT_float_t(void *x, int *SWIGUNUSEDPARM(newmemory)) {
     return (void *)((gam::Ring< float > *)  ((gam::DelayN< float > *) x));
 }
-static void *_p_gam__MaxAbsT_float_tTo_p_gam__PCounter(void *x, int *SWIGUNUSEDPARM(newmemory)) {
-    return (void *)((gam::PCounter *)  ((gam::MaxAbs< float > *) x));
+static void *_p_gam__MovingAvgT_float_tTo_p_gam__RingT_float_t(void *x, int *SWIGUNUSEDPARM(newmemory)) {
+    return (void *)((gam::Ring< float > *) (gam::DelayN< SampleType > *) ((gam::MovingAvg< float > *) x));
 }
-static void *_p_gam__ZeroCrossRateT_float_tTo_p_gam__PCounter(void *x, int *SWIGUNUSEDPARM(newmemory)) {
-    return (void *)((gam::PCounter *)  ((gam::ZeroCrossRate< float > *) x));
+static void *_p_gam__MovingAvgT_float_tTo_p_gam__DelayNT_float_t(void *x, int *SWIGUNUSEDPARM(newmemory)) {
+    return (void *)((gam::DelayN< float > *)  ((gam::MovingAvg< float > *) x));
 }
-static void *_p_gam__STFTTo_p_gam__DFT(void *x, int *SWIGUNUSEDPARM(newmemory)) {
-    return (void *)((gam::DFT *)  ((gam::STFT *) x));
+static void *_p_gam__OscT_float_ipl__Linear_phsInc__Loop_GAM_DEFAULT_DOMAIN_tTo_p_gam__ArrayPow2T_float_t(void *x, int *SWIGUNUSEDPARM(newmemory)) {
+    return (void *)((gam::ArrayPow2< float > *)  ((gam::Osc< float,ipl::Linear,phsInc::Loop,GAM_DEFAULT_DOMAIN > *) x));
 }
 static void *_p_gam__AudioIOTo_p_gam__AudioIOData(void *x, int *SWIGUNUSEDPARM(newmemory)) {
     return (void *)((gam::AudioIOData *)  ((gam::AudioIO *) x));
@@ -29589,17 +53207,57 @@ static void *_p_gam__AudioIOTo_p_gam__AudioIOData(void *x, int *SWIGUNUSEDPARM(n
 static void *_p_LuaCallbackTo_p_gam__AudioCallback(void *x, int *SWIGUNUSEDPARM(newmemory)) {
     return (void *)((gam::AudioCallback *)  ((LuaCallback *) x));
 }
+static void *_p_gam__STFTTo_p_gam__DFT(void *x, int *SWIGUNUSEDPARM(newmemory)) {
+    return (void *)((gam::DFT *)  ((gam::STFT *) x));
+}
+static void *_p_gam__MaxAbsT_float_tTo_p_gam__PCounter(void *x, int *SWIGUNUSEDPARM(newmemory)) {
+    return (void *)((gam::PCounter *)  ((gam::MaxAbs< float > *) x));
+}
+static void *_p_gam__ZeroCrossRateT_float_tTo_p_gam__PCounter(void *x, int *SWIGUNUSEDPARM(newmemory)) {
+    return (void *)((gam::PCounter *)  ((gam::ZeroCrossRate< float > *) x));
+}
 static void *_p_gam__CombT_float_ipl__Linear_gam__real_GAM_DEFAULT_DOMAIN_tTo_p_gam__DelayT_float_ipl__Linear_GAM_DEFAULT_DOMAIN_t(void *x, int *SWIGUNUSEDPARM(newmemory)) {
     return (void *)((gam::Delay< float,ipl::Linear,GAM_DEFAULT_DOMAIN > *)  ((gam::Comb< float,ipl::Linear,gam::real,GAM_DEFAULT_DOMAIN > *) x));
 }
 static void *_p_gam__MultitapT_float_ipl__Linear_GAM_DEFAULT_DOMAIN_tTo_p_gam__DelayT_float_ipl__Linear_GAM_DEFAULT_DOMAIN_t(void *x, int *SWIGUNUSEDPARM(newmemory)) {
     return (void *)((gam::Delay< float,ipl::Linear,GAM_DEFAULT_DOMAIN > *)  ((gam::Multitap< float,ipl::Linear,GAM_DEFAULT_DOMAIN > *) x));
 }
+static void *_p_gam__EchoT_float_ipl__Linear_gam__LoopGain_GAM_DEFAULT_DOMAIN_tTo_p_gam__DelayT_float_ipl__Linear_GAM_DEFAULT_DOMAIN_t(void *x, int *SWIGUNUSEDPARM(newmemory)) {
+    return (void *)((gam::Delay< float,ipl::Linear,GAM_DEFAULT_DOMAIN > *)  ((gam::Echo< float,ipl::Linear,gam::LoopGain,GAM_DEFAULT_DOMAIN > *) x));
+}
+static void *_p_gam__BlockNyqT_float_float_GAM_DEFAULT_DOMAIN_tTo_p_gam__BlockDCT_float_float_GAM_DEFAULT_DOMAIN_t(void *x, int *SWIGUNUSEDPARM(newmemory)) {
+    return (void *)((gam::BlockDC< float,float,GAM_DEFAULT_DOMAIN > *)  ((gam::BlockNyq< float,float,GAM_DEFAULT_DOMAIN > *) x));
+}
+static void *_p_gam__SweepT_phsInc__Loop_GAM_DEFAULT_DOMAIN_tTo_p_gam__AccumT_phsInc__Loop_GAM_DEFAULT_DOMAIN_t(void *x, int *SWIGUNUSEDPARM(newmemory)) {
+    return (void *)((gam::Accum< phsInc::Loop,GAM_DEFAULT_DOMAIN > *)  ((gam::Sweep< phsInc::Loop,GAM_DEFAULT_DOMAIN > *) x));
+}
+static void *_p_gam__LFOT_phsInc__Loop_GAM_DEFAULT_DOMAIN_tTo_p_gam__AccumT_phsInc__Loop_GAM_DEFAULT_DOMAIN_t(void *x, int *SWIGUNUSEDPARM(newmemory)) {
+    return (void *)((gam::Accum< phsInc::Loop,GAM_DEFAULT_DOMAIN > *)  ((gam::LFO< phsInc::Loop,GAM_DEFAULT_DOMAIN > *) x));
+}
+static void *_p_gam__DWOT_phsInc__Loop_GAM_DEFAULT_DOMAIN_tTo_p_gam__AccumT_phsInc__Loop_GAM_DEFAULT_DOMAIN_t(void *x, int *SWIGUNUSEDPARM(newmemory)) {
+    return (void *)((gam::Accum< phsInc::Loop,GAM_DEFAULT_DOMAIN > *)  ((gam::DWO< phsInc::Loop,GAM_DEFAULT_DOMAIN > *) x));
+}
+static void *_p_gam__OscT_float_ipl__Linear_phsInc__Loop_GAM_DEFAULT_DOMAIN_tTo_p_gam__AccumT_phsInc__Loop_GAM_DEFAULT_DOMAIN_t(void *x, int *SWIGUNUSEDPARM(newmemory)) {
+    return (void *)((gam::Accum< phsInc::Loop,GAM_DEFAULT_DOMAIN > *)  ((gam::Osc< float,ipl::Linear,phsInc::Loop,GAM_DEFAULT_DOMAIN > *) x));
+}
+static void *_p_gam__SineT_float_GAM_DEFAULT_DOMAIN_tTo_p_gam__AccumPhaseT_float_GAM_DEFAULT_DOMAIN_t(void *x, int *SWIGUNUSEDPARM(newmemory)) {
+    return (void *)((gam::AccumPhase< float,GAM_DEFAULT_DOMAIN > *)  ((gam::Sine< float,GAM_DEFAULT_DOMAIN > *) x));
+}
+static void *_p_gam__BuzzT_float_GAM_DEFAULT_DOMAIN_tTo_p_gam__AccumPhaseT_float_GAM_DEFAULT_DOMAIN_t(void *x, int *SWIGUNUSEDPARM(newmemory)) {
+    return (void *)((gam::AccumPhase< float,GAM_DEFAULT_DOMAIN > *)  ((gam::Buzz< float,GAM_DEFAULT_DOMAIN > *) x));
+}
+static void *_p_gam__DSFT_float_GAM_DEFAULT_DOMAIN_tTo_p_gam__AccumPhaseT_float_GAM_DEFAULT_DOMAIN_t(void *x, int *SWIGUNUSEDPARM(newmemory)) {
+    return (void *)((gam::AccumPhase< float,GAM_DEFAULT_DOMAIN > *)  ((gam::DSF< float,GAM_DEFAULT_DOMAIN > *) x));
+}
+static swig_type_info _swigt__p_Allpasses = {"_p_Allpasses", "Allpasses *", 0, 0, (void*)0, 0};
 static swig_type_info _swigt__p_AudioCallback = {"_p_AudioCallback", "AudioCallback *", 0, 0, (void*)0, 0};
 static swig_type_info _swigt__p_AudioIOData = {"_p_AudioIOData", "AudioIOData *", 0, 0, (void*)0, 0};
+static swig_type_info _swigt__p_Base = {"_p_Base", "Base *", 0, 0, (void*)0, 0};
 static swig_type_info _swigt__p_BiquadT_t = {"_p_BiquadT_t", "Biquad< > *", 0, 0, (void*)0, 0};
 static swig_type_info _swigt__p_CSineT_double_t = {"_p_CSineT_double_t", "CSine< double > *", 0, 0, (void*)0, 0};
 static swig_type_info _swigt__p_CSineT_float_t = {"_p_CSineT_float_t", "CSine< float > *", 0, 0, (void*)0, 0};
+static swig_type_info _swigt__p_Combs = {"_p_Combs", "Combs *", 0, 0, (void*)0, 0};
+static swig_type_info _swigt__p_ComplexT_float_t = {"_p_ComplexT_float_t", "Complex< float > *|gam::CSine< float >::complex *|gam::Chirplet< float >::complex *", 0, 0, (void*)0, 0};
 static swig_type_info _swigt__p_DecayT_float_t = {"_p_DecayT_float_t", "Decay< float > *", 0, 0, (void*)0, 0};
 static swig_type_info _swigt__p_DecayT_t = {"_p_DecayT_t", "Decay< > *", 0, 0, (void*)0, 0};
 static swig_type_info _swigt__p_Domain = {"_p_Domain", "Domain *", 0, 0, (void*)0, 0};
@@ -29613,12 +53271,18 @@ static swig_type_info _swigt__p_OnePoleT_float_t = {"_p_OnePoleT_float_t", "OneP
 static swig_type_info _swigt__p_SWIGLUA_REF = {"_p_SWIGLUA_REF", "SWIGLUA_REF *", 0, 0, (void*)0, 0};
 static swig_type_info _swigt__p_SawT_float_t = {"_p_SawT_float_t", "Saw< float > *", 0, 0, (void*)0, 0};
 static swig_type_info _swigt__p_SineT_float_t = {"_p_SineT_float_t", "Sine< float > *", 0, 0, (void*)0, 0};
+static swig_type_info _swigt__p_VecT_2_float_t = {"_p_VecT_2_float_t", "Vec< 2,float > *", 0, 0, (void*)0, 0};
 static swig_type_info _swigt__p_WindowType = {"_p_WindowType", "WindowType *", 0, 0, (void*)0, 0};
+static swig_type_info _swigt__p_complex = {"_p_complex", "complex *", 0, 0, (void*)0, 0};
 static swig_type_info _swigt__p_difference_type = {"_p_difference_type", "difference_type *", 0, 0, (void*)0, 0};
 static swig_type_info _swigt__p_double = {"_p_double", "double *", 0, 0, (void*)0, 0};
 static swig_type_info _swigt__p_f_r_gam__AudioIOData__void = {"_p_f_r_gam__AudioIOData__void", "void (*)(gam::AudioIOData &)", 0, 0, (void*)0, 0};
 static swig_type_info _swigt__p_float = {"_p_float", "SampleType *|float *", 0, 0, (void*)0, 0};
 static swig_type_info _swigt__p_gam__AMT_float_t = {"_p_gam__AMT_float_t", "gam::AM< float > *|gam::AM< SampleType > *", 0, 0, (void*)&_wrap_class_AM, 0};
+static swig_type_info _swigt__p_gam__AccumPhaseT_float_GAM_DEFAULT_DOMAIN_t = {"_p_gam__AccumPhaseT_float_GAM_DEFAULT_DOMAIN_t", "gam::AccumPhase< float > *|gam::AccumPhase< SampleType > *|gam::AccumPhase< float,GAM_DEFAULT_DOMAIN > *", 0, 0, (void*)&_wrap_class_AccumPhase, 0};
+static swig_type_info _swigt__p_gam__AccumT_phsInc__Loop_GAM_DEFAULT_DOMAIN_t = {"_p_gam__AccumT_phsInc__Loop_GAM_DEFAULT_DOMAIN_t", "gam::Accum< > *|gam::Accum< phsInc::Loop,GAM_DEFAULT_DOMAIN > *", 0, 0, (void*)&_wrap_class_Accum, 0};
+static swig_type_info _swigt__p_gam__AllPass1T_float_float_GAM_DEFAULT_DOMAIN_t = {"_p_gam__AllPass1T_float_float_GAM_DEFAULT_DOMAIN_t", "gam::AllPass1< float,float > *|gam::AllPass1< SampleType,SampleType > *|gam::AllPass1< float,float,GAM_DEFAULT_DOMAIN > *", 0, 0, (void*)&_wrap_class_AllPass1, 0};
+static swig_type_info _swigt__p_gam__AllPass2T_float_float_GAM_DEFAULT_DOMAIN_t = {"_p_gam__AllPass2T_float_float_GAM_DEFAULT_DOMAIN_t", "gam::AllPass2< float,float > *|gam::AllPass2< SampleType,SampleType > *|gam::AllPass2< float,float,GAM_DEFAULT_DOMAIN > *", 0, 0, (void*)&_wrap_class_AllPass2, 0};
 static swig_type_info _swigt__p_gam__ArrayPow2T_float_t = {"_p_gam__ArrayPow2T_float_t", "gam::ArrayPow2< float > *|gam::ArrayPow2< SampleType > *", 0, 0, (void*)&_wrap_class_ArrayPow2, 0};
 static swig_type_info _swigt__p_gam__ArrayT_float_t = {"_p_gam__ArrayT_float_t", "gam::Array< float > *|gam::Array< SampleType > *", 0, 0, (void*)&_wrap_class_Array, 0};
 static swig_type_info _swigt__p_gam__AudioCallback = {"_p_gam__AudioCallback", "gam::AudioCallback *", 0, 0, (void*)&_wrap_class_AudioCallback, 0};
@@ -29626,10 +53290,14 @@ static swig_type_info _swigt__p_gam__AudioDevice = {"_p_gam__AudioDevice", "gam:
 static swig_type_info _swigt__p_gam__AudioIO = {"_p_gam__AudioIO", "gam::AudioIO *", 0, 0, (void*)&_wrap_class_AudioIO, 0};
 static swig_type_info _swigt__p_gam__AudioIOData = {"_p_gam__AudioIOData", "gam::AudioIOData *", 0, 0, (void*)&_wrap_class_AudioIOData, 0};
 static swig_type_info _swigt__p_gam__Biquad3 = {"_p_gam__Biquad3", "gam::Biquad3 *", 0, 0, (void*)&_wrap_class_Biquad3, 0};
-static swig_type_info _swigt__p_gam__BiquadT_t = {"_p_gam__BiquadT_t", "gam::Biquad< > *", 0, 0, (void*)0, 0};
+static swig_type_info _swigt__p_gam__BiquadT_float_float_GAM_DEFAULT_DOMAIN_t = {"_p_gam__BiquadT_float_float_GAM_DEFAULT_DOMAIN_t", "gam::Biquad< float,float > *|gam::Biquad< SampleType,SampleType > *|gam::Biquad< float,float,GAM_DEFAULT_DOMAIN > *", 0, 0, (void*)&_wrap_class_Biquad, 0};
+static swig_type_info _swigt__p_gam__BiquadT_gam__real_gam__real_GAM_DEFAULT_DOMAIN_t = {"_p_gam__BiquadT_gam__real_gam__real_GAM_DEFAULT_DOMAIN_t", "gam::Biquad< gam::real,gam::real,GAM_DEFAULT_DOMAIN > *", 0, 0, (void*)0, 0};
+static swig_type_info _swigt__p_gam__BlockDCT_float_float_GAM_DEFAULT_DOMAIN_t = {"_p_gam__BlockDCT_float_float_GAM_DEFAULT_DOMAIN_t", "gam::BlockDC< float,float > *|gam::BlockDC< SampleType,SampleType > *|gam::BlockDC< float,float,GAM_DEFAULT_DOMAIN > *", 0, 0, (void*)&_wrap_class_BlockDC, 0};
+static swig_type_info _swigt__p_gam__BlockNyqT_float_float_GAM_DEFAULT_DOMAIN_t = {"_p_gam__BlockNyqT_float_float_GAM_DEFAULT_DOMAIN_t", "gam::BlockNyq< float,float > *|gam::BlockNyq< SampleType,SampleType > *|gam::BlockNyq< float,float,GAM_DEFAULT_DOMAIN > *", 0, 0, (void*)&_wrap_class_BlockNyq, 0};
 static swig_type_info _swigt__p_gam__Burst = {"_p_gam__Burst", "gam::Burst *", 0, 0, (void*)&_wrap_class_Burst, 0};
-static swig_type_info _swigt__p_gam__CSineT_double_t = {"_p_gam__CSineT_double_t", "gam::CSine< double > *", 0, 0, (void*)0, 0};
-static swig_type_info _swigt__p_gam__CSineT_float_t = {"_p_gam__CSineT_float_t", "gam::CSine< float > *", 0, 0, (void*)0, 0};
+static swig_type_info _swigt__p_gam__BuzzT_float_GAM_DEFAULT_DOMAIN_t = {"_p_gam__BuzzT_float_GAM_DEFAULT_DOMAIN_t", "gam::Buzz< float > *|gam::Buzz< SampleType > *|gam::Buzz< float,GAM_DEFAULT_DOMAIN > *", 0, 0, (void*)&_wrap_class_Buzz, 0};
+static swig_type_info _swigt__p_gam__CSineT_double_GAM_DEFAULT_DOMAIN_t = {"_p_gam__CSineT_double_GAM_DEFAULT_DOMAIN_t", "gam::CSine< double,GAM_DEFAULT_DOMAIN > *", 0, 0, (void*)0, 0};
+static swig_type_info _swigt__p_gam__CSineT_float_GAM_DEFAULT_DOMAIN_t = {"_p_gam__CSineT_float_GAM_DEFAULT_DOMAIN_t", "gam::CSine< float > *|gam::CSine< float,GAM_DEFAULT_DOMAIN > *|gam::CSine< SampleType > *", 0, 0, (void*)&_wrap_class_CSine, 0};
 static swig_type_info _swigt__p_gam__ChebyNT_1_float_t = {"_p_gam__ChebyNT_1_float_t", "gam::ChebyN< 1,float > *|gam::ChebyN< 1,SampleType > *", 0, 0, (void*)&_wrap_class_Cheby1, 0};
 static swig_type_info _swigt__p_gam__ChebyNT_2_float_t = {"_p_gam__ChebyNT_2_float_t", "gam::ChebyN< 2,float > *|gam::ChebyN< 2,SampleType > *", 0, 0, (void*)&_wrap_class_Cheby2, 0};
 static swig_type_info _swigt__p_gam__ChebyNT_3_float_t = {"_p_gam__ChebyNT_3_float_t", "gam::ChebyN< 3,float > *|gam::ChebyN< 3,SampleType > *", 0, 0, (void*)&_wrap_class_Cheby3, 0};
@@ -29640,53 +53308,92 @@ static swig_type_info _swigt__p_gam__ChebyNT_7_float_t = {"_p_gam__ChebyNT_7_flo
 static swig_type_info _swigt__p_gam__ChebyNT_8_float_t = {"_p_gam__ChebyNT_8_float_t", "gam::ChebyN< 8,float > *|gam::ChebyN< 8,SampleType > *", 0, 0, (void*)&_wrap_class_Cheby8, 0};
 static swig_type_info _swigt__p_gam__ChebyNT_9_float_t = {"_p_gam__ChebyNT_9_float_t", "gam::ChebyN< 9,float > *|gam::ChebyN< 9,SampleType > *", 0, 0, (void*)&_wrap_class_Cheby9, 0};
 static swig_type_info _swigt__p_gam__ChirpT_float_t = {"_p_gam__ChirpT_float_t", "gam::Chirp< float > *|gam::Chirp< SampleType > *", 0, 0, (void*)&_wrap_class_Chirp, 0};
+static swig_type_info _swigt__p_gam__ChirpletT_float_GAM_DEFAULT_DOMAIN_t = {"_p_gam__ChirpletT_float_GAM_DEFAULT_DOMAIN_t", "gam::Chirplet< float > *|gam::Chirplet< SampleType > *|gam::Chirplet< float,GAM_DEFAULT_DOMAIN > *", 0, 0, (void*)&_wrap_class_Chirplet, 0};
 static swig_type_info _swigt__p_gam__ChorusT_float_t = {"_p_gam__ChorusT_float_t", "gam::Chorus< float > *|gam::Chorus< SampleType > *", 0, 0, (void*)&_wrap_class_Chorus, 0};
 static swig_type_info _swigt__p_gam__CombT_float_ipl__Cubic_gam__real_GAM_DEFAULT_DOMAIN_t = {"_p_gam__CombT_float_ipl__Cubic_gam__real_GAM_DEFAULT_DOMAIN_t", "gam::Comb< float,ipl::Cubic,gam::real,GAM_DEFAULT_DOMAIN > *", 0, 0, (void*)0, 0};
 static swig_type_info _swigt__p_gam__CombT_float_ipl__Linear_gam__real_GAM_DEFAULT_DOMAIN_t = {"_p_gam__CombT_float_ipl__Linear_gam__real_GAM_DEFAULT_DOMAIN_t", "gam::Comb< float > *|gam::Comb< float,ipl::Linear,gam::real,GAM_DEFAULT_DOMAIN > *|gam::Comb< SampleType > *", 0, 0, (void*)&_wrap_class_Comb, 0};
+static swig_type_info _swigt__p_gam__ComplexT_float_t = {"_p_gam__ComplexT_float_t", "gam::Complex< float > *", 0, 0, (void*)0, 0};
 static swig_type_info _swigt__p_gam__DFT = {"_p_gam__DFT", "gam::DFT *", 0, 0, (void*)&_wrap_class_DFT, 0};
+static swig_type_info _swigt__p_gam__DSFT_float_GAM_DEFAULT_DOMAIN_t = {"_p_gam__DSFT_float_GAM_DEFAULT_DOMAIN_t", "gam::DSF< float > *|gam::DSF< SampleType > *|gam::DSF< float,GAM_DEFAULT_DOMAIN > *", 0, 0, (void*)&_wrap_class_DSF, 0};
+static swig_type_info _swigt__p_gam__DWOT_phsInc__Loop_GAM_DEFAULT_DOMAIN_t = {"_p_gam__DWOT_phsInc__Loop_GAM_DEFAULT_DOMAIN_t", "gam::DWO< > *|gam::DWO< phsInc::Loop,GAM_DEFAULT_DOMAIN > *", 0, 0, (void*)&_wrap_class_DWO, 0};
 static swig_type_info _swigt__p_gam__DecayT_float_t = {"_p_gam__DecayT_float_t", "gam::Decay< float > *", 0, 0, (void*)0, 0};
 static swig_type_info _swigt__p_gam__Delay1T_float_t = {"_p_gam__Delay1T_float_t", "gam::Delay1< float > *|gam::Delay1< SampleType > *", 0, 0, (void*)&_wrap_class_Delay1, 0};
 static swig_type_info _swigt__p_gam__Delay2T_float_t = {"_p_gam__Delay2T_float_t", "gam::Delay2< float > *|gam::Delay2< SampleType > *", 0, 0, (void*)&_wrap_class_Delay2, 0};
 static swig_type_info _swigt__p_gam__DelayNT_float_t = {"_p_gam__DelayNT_float_t", "gam::DelayN< float > *|gam::DelayN< SampleType > *", 0, 0, (void*)&_wrap_class_DelayN, 0};
 static swig_type_info _swigt__p_gam__DelayT_float_ipl__Linear_GAM_DEFAULT_DOMAIN_t = {"_p_gam__DelayT_float_ipl__Linear_GAM_DEFAULT_DOMAIN_t", "gam::Delay< float > *|gam::Delay< SampleType > *|gam::Delay< float,ipl::Linear,GAM_DEFAULT_DOMAIN > *", 0, 0, (void*)&_wrap_class_Delay, 0};
+static swig_type_info _swigt__p_gam__DifferencerT_float_t = {"_p_gam__DifferencerT_float_t", "gam::Differencer< float > *|gam::Differencer< SampleType > *", 0, 0, (void*)&_wrap_class_Differencer, 0};
+static swig_type_info _swigt__p_gam__DistT_2_float_t = {"_p_gam__DistT_2_float_t", "gam::Dist< 2,float > *|gam::Dist< 2,SampleType > *", 0, 0, (void*)&_wrap_class_Dist, 0};
 static swig_type_info _swigt__p_gam__Domain = {"_p_gam__Domain", "gam::Domain *", 0, 0, (void*)&_wrap_class_Domain, 0};
 static swig_type_info _swigt__p_gam__Domain1 = {"_p_gam__Domain1", "gam::Domain1 *", 0, 0, (void*)&_wrap_class_Domain1, 0};
 static swig_type_info _swigt__p_gam__DomainObserver = {"_p_gam__DomainObserver", "gam::DomainObserver *", 0, 0, (void*)&_wrap_class_DomainObserver, 0};
 static swig_type_info _swigt__p_gam__DoubleRingT_float_t = {"_p_gam__DoubleRingT_float_t", "gam::DoubleRing< float > *|gam::DoubleRing< SampleType > *", 0, 0, (void*)&_wrap_class_DoubleRing, 0};
+static swig_type_info _swigt__p_gam__EchoCSineT_float_ipl__Linear_gam__LoopGain_GAM_DEFAULT_DOMAIN_t = {"_p_gam__EchoCSineT_float_ipl__Linear_gam__LoopGain_GAM_DEFAULT_DOMAIN_t", "gam::EchoCSine< float > *|gam::EchoCSine< float,ipl::Linear,gam::LoopGain,GAM_DEFAULT_DOMAIN > *|gam::EchoCSine< SampleType > *", 0, 0, (void*)&_wrap_class_EchoCSine, 0};
+static swig_type_info _swigt__p_gam__EchoT_float_ipl__Linear_gam__LoopGain_GAM_DEFAULT_DOMAIN_t = {"_p_gam__EchoT_float_ipl__Linear_gam__LoopGain_GAM_DEFAULT_DOMAIN_t", "gam::Echo< float > *|gam::Echo< SampleType > *|gam::Echo< float,ipl::Linear,gam::LoopGain,GAM_DEFAULT_DOMAIN > *", 0, 0, (void*)&_wrap_class_Echo, 0};
 static swig_type_info _swigt__p_gam__EnvFollowT_float_gam__real_gam__GAM_DEFAULT_DOMAIN_t = {"_p_gam__EnvFollowT_float_gam__real_gam__GAM_DEFAULT_DOMAIN_t", "gam::EnvFollow< float > *|gam::EnvFollow< float,gam::real,gam::GAM_DEFAULT_DOMAIN > *|gam::EnvFollow< SampleType > *", 0, 0, (void*)&_wrap_class_EnvFollow, 0};
 static swig_type_info _swigt__p_gam__FreqShiftT_float_t = {"_p_gam__FreqShiftT_float_t", "gam::FreqShift< float > *|gam::FreqShift< SampleType > *", 0, 0, (void*)&_wrap_class_FreqShift, 0};
-static swig_type_info _swigt__p_gam__HilbertT_float_t = {"_p_gam__HilbertT_float_t", "gam::Hilbert< float > *", 0, 0, (void*)0, 0};
+static swig_type_info _swigt__p_gam__HilbertT_float_float_t = {"_p_gam__HilbertT_float_float_t", "gam::Hilbert< float,float > *|gam::Hilbert< SampleType,SampleType > *", 0, 0, (void*)&_wrap_class_Hilbert, 0};
+static swig_type_info _swigt__p_gam__HilbertT_float_gam__real_t = {"_p_gam__HilbertT_float_gam__real_t", "gam::Hilbert< float,gam::real > *", 0, 0, (void*)0, 0};
 static swig_type_info _swigt__p_gam__IndexMapT_float_t = {"_p_gam__IndexMapT_float_t", "gam::IndexMap< float > *|gam::IndexMap< SampleType > *", 0, 0, (void*)&_wrap_class_IndexMap, 0};
+static swig_type_info _swigt__p_gam__IntegratorT_float_float_t = {"_p_gam__IntegratorT_float_float_t", "gam::Integrator< float,float > *|gam::Integrator< SampleType,SampleType > *", 0, 0, (void*)&_wrap_class_Integrator, 0};
+static swig_type_info _swigt__p_gam__LFOT_phsInc__Loop_GAM_DEFAULT_DOMAIN_t = {"_p_gam__LFOT_phsInc__Loop_GAM_DEFAULT_DOMAIN_t", "gam::LFO< > *|gam::LFO< phsInc::Loop,GAM_DEFAULT_DOMAIN > *", 0, 0, (void*)&_wrap_class_LFO, 0};
+static swig_type_info _swigt__p_gam__Loop1P1ZT_float_t = {"_p_gam__Loop1P1ZT_float_t", "gam::Loop1P1Z< float > *|gam::Loop1P1Z< SampleType > *", 0, 0, (void*)&_wrap_class_Loop1p1z, 0};
+static swig_type_info _swigt__p_gam__Loop1PT_float_t = {"_p_gam__Loop1PT_float_t", "gam::Loop1P< float > *|gam::Loop1P< SampleType > *", 0, 0, (void*)&_wrap_class_Loop1p, 0};
+static swig_type_info _swigt__p_gam__LoopGainT_float_t = {"_p_gam__LoopGainT_float_t", "gam::LoopGain< float > *|gam::LoopGain< SampleType > *", 0, 0, (void*)&_wrap_class_LoopGain, 0};
 static swig_type_info _swigt__p_gam__MaxAbsT_float_t = {"_p_gam__MaxAbsT_float_t", "gam::MaxAbs< float > *|gam::MaxAbs< SampleType > *", 0, 0, (void*)&_wrap_class_MaxAbs, 0};
 static swig_type_info _swigt__p_gam__MonoSynth = {"_p_gam__MonoSynth", "gam::MonoSynth *", 0, 0, (void*)&_wrap_class_MonoSynth, 0};
+static swig_type_info _swigt__p_gam__MovingAvgT_float_t = {"_p_gam__MovingAvgT_float_t", "gam::MovingAvg< float > *|gam::MovingAvg< SampleType > *", 0, 0, (void*)&_wrap_class_MovingAvg, 0};
 static swig_type_info _swigt__p_gam__MultitapT_float_ipl__Linear_GAM_DEFAULT_DOMAIN_t = {"_p_gam__MultitapT_float_ipl__Linear_GAM_DEFAULT_DOMAIN_t", "gam::Multitap< float > *|gam::Multitap< float,ipl::Linear,GAM_DEFAULT_DOMAIN > *|gam::Multitap< SampleType > *", 0, 0, (void*)&_wrap_class_Multitap, 0};
+static swig_type_info _swigt__p_gam__NoiseBinaryT_RNGLinCon_t = {"_p_gam__NoiseBinaryT_RNGLinCon_t", "gam::NoiseBinary< > *|gam::NoiseBinary< RNGLinCon > *", 0, 0, (void*)&_wrap_class_NoiseBinary, 0};
+static swig_type_info _swigt__p_gam__NoiseBrownT_RNGLinCon_t = {"_p_gam__NoiseBrownT_RNGLinCon_t", "gam::NoiseBrown< RNGLinCon > *|gam::NoiseBrown< > *", 0, 0, (void*)&_wrap_class_NoiseBrown, 0};
+static swig_type_info _swigt__p_gam__NoisePinkT_RNGLinCon_t = {"_p_gam__NoisePinkT_RNGLinCon_t", "gam::NoisePink< > *|gam::NoisePink< RNGLinCon > *", 0, 0, (void*)&_wrap_class_NoisePink, 0};
+static swig_type_info _swigt__p_gam__NoiseVioletT_RNGLinCon_t = {"_p_gam__NoiseVioletT_RNGLinCon_t", "gam::NoiseViolet< > *|gam::NoiseViolet< RNGLinCon > *", 0, 0, (void*)&_wrap_class_NoiseViolet, 0};
+static swig_type_info _swigt__p_gam__NoiseWhiteT_RNGLinCon_t = {"_p_gam__NoiseWhiteT_RNGLinCon_t", "gam::NoiseWhite< > *|gam::NoiseWhite< RNGLinCon > *", 0, 0, (void*)&_wrap_class_NoiseWhite, 0};
 static swig_type_info _swigt__p_gam__NoiseWhiteT_gam__RNGMulCon_t = {"_p_gam__NoiseWhiteT_gam__RNGMulCon_t", "gam::NoiseWhite< gam::RNGMulCon > *", 0, 0, (void*)0, 0};
+static swig_type_info _swigt__p_gam__NotchT_float_float_GAM_DEFAULT_DOMAIN_t = {"_p_gam__NotchT_float_float_GAM_DEFAULT_DOMAIN_t", "gam::Notch< float,float > *|gam::Notch< SampleType,SampleType > *|gam::Notch< float,float,GAM_DEFAULT_DOMAIN > *", 0, 0, (void*)&_wrap_class_Notch, 0};
+static swig_type_info _swigt__p_gam__OnePoleT_float_float_GAM_DEFAULT_DOMAIN_t = {"_p_gam__OnePoleT_float_float_GAM_DEFAULT_DOMAIN_t", "gam::OnePole< float,float > *|gam::OnePole< SampleType,SampleType > *|gam::OnePole< float,float,GAM_DEFAULT_DOMAIN > *", 0, 0, (void*)&_wrap_class_OnePole, 0};
+static swig_type_info _swigt__p_gam__OnePoleT_float_gam__real_GAM_DEFAULT_DOMAIN_t = {"_p_gam__OnePoleT_float_gam__real_GAM_DEFAULT_DOMAIN_t", "gam::OnePole< float,gam::real,GAM_DEFAULT_DOMAIN > *", 0, 0, (void*)0, 0};
 static swig_type_info _swigt__p_gam__OnePoleT_float_gam__real_gam__GAM_DEFAULT_DOMAIN_t = {"_p_gam__OnePoleT_float_gam__real_gam__GAM_DEFAULT_DOMAIN_t", "gam::OnePole< float,gam::real,gam::GAM_DEFAULT_DOMAIN > *", 0, 0, (void*)0, 0};
-static swig_type_info _swigt__p_gam__OnePoleT_float_t = {"_p_gam__OnePoleT_float_t", "gam::OnePole< float > *", 0, 0, (void*)0, 0};
+static swig_type_info _swigt__p_gam__OscT_float_ipl__Linear_phsInc__Loop_GAM_DEFAULT_DOMAIN_t = {"_p_gam__OscT_float_ipl__Linear_phsInc__Loop_GAM_DEFAULT_DOMAIN_t", "gam::Osc< float > *|gam::Osc< float,ipl::Linear,phsInc::Loop,GAM_DEFAULT_DOMAIN > *|gam::Osc< SampleType > *", 0, 0, (void*)&_wrap_class_Osc, 0};
 static swig_type_info _swigt__p_gam__PCounter = {"_p_gam__PCounter", "gam::PCounter *", 0, 0, (void*)&_wrap_class_PCounter, 0};
 static swig_type_info _swigt__p_gam__PanT_float_t = {"_p_gam__PanT_float_t", "gam::Pan< float > *|gam::Pan< SampleType > *", 0, 0, (void*)&_wrap_class_Pan, 0};
 static swig_type_info _swigt__p_gam__Pluck = {"_p_gam__Pluck", "gam::Pluck *", 0, 0, (void*)&_wrap_class_Pluck, 0};
 static swig_type_info _swigt__p_gam__QuantizerT_float_GAM_DEFAULT_DOMAIN_t = {"_p_gam__QuantizerT_float_GAM_DEFAULT_DOMAIN_t", "gam::Quantizer< float > *|gam::Quantizer< SampleType > *|gam::Quantizer< float,GAM_DEFAULT_DOMAIN > *", 0, 0, (void*)&_wrap_class_Quantizer, 0};
+static swig_type_info _swigt__p_gam__Recorder = {"_p_gam__Recorder", "gam::Recorder *", 0, 0, (void*)&_wrap_class_Recorder, 0};
+static swig_type_info _swigt__p_gam__ResonT_float_float_GAM_DEFAULT_DOMAIN_t = {"_p_gam__ResonT_float_float_GAM_DEFAULT_DOMAIN_t", "gam::Reson< float,float > *|gam::Reson< SampleType,SampleType > *|gam::Reson< float,float,GAM_DEFAULT_DOMAIN > *", 0, 0, (void*)&_wrap_class_Reson, 0};
+static swig_type_info _swigt__p_gam__ReverbMST_float_gam__Loop1P_ipl__Trunc_GAM_DEFAULT_DOMAIN_t = {"_p_gam__ReverbMST_float_gam__Loop1P_ipl__Trunc_GAM_DEFAULT_DOMAIN_t", "gam::ReverbMS< float,gam::Loop1P,ipl::Trunc,GAM_DEFAULT_DOMAIN > *|gam::ReverbMS< float > *|gam::ReverbMS< SampleType > *", 0, 0, (void*)&_wrap_class_ReverbMS, 0};
 static swig_type_info _swigt__p_gam__RingT_float_t = {"_p_gam__RingT_float_t", "gam::Ring< float > *|gam::Ring< SampleType > *", 0, 0, (void*)&_wrap_class_Ring, 0};
 static swig_type_info _swigt__p_gam__STFT = {"_p_gam__STFT", "gam::STFT *", 0, 0, (void*)&_wrap_class_STFT, 0};
-static swig_type_info _swigt__p_gam__SawT_float_t = {"_p_gam__SawT_float_t", "gam::Saw< float > *", 0, 0, (void*)0, 0};
+static swig_type_info _swigt__p_gam__SamplePlayerT_float_ipl__Trunc_phsInc__OneShot_GAM_DEFAULT_DOMAIN_t = {"_p_gam__SamplePlayerT_float_ipl__Trunc_phsInc__OneShot_GAM_DEFAULT_DOMAIN_t", "gam::SamplePlayer< float > *|gam::SamplePlayer< float,ipl::Trunc,phsInc::OneShot,GAM_DEFAULT_DOMAIN > *|gam::SamplePlayer< SampleType > *", 0, 0, (void*)&_wrap_class_SamplePlayer, 0};
+static swig_type_info _swigt__p_gam__SawT_float_GAM_DEFAULT_DOMAIN_t = {"_p_gam__SawT_float_GAM_DEFAULT_DOMAIN_t", "gam::Saw< float > *|gam::Saw< float,GAM_DEFAULT_DOMAIN > *|gam::Saw< SampleType > *", 0, 0, (void*)&_wrap_class_Saw, 0};
 static swig_type_info _swigt__p_gam__SilenceDetect = {"_p_gam__SilenceDetect", "gam::SilenceDetect *", 0, 0, (void*)&_wrap_class_SilenceDetect, 0};
-static swig_type_info _swigt__p_gam__SineT_float_t = {"_p_gam__SineT_float_t", "gam::Sine< float > *", 0, 0, (void*)0, 0};
+static swig_type_info _swigt__p_gam__SineDT_float_GAM_DEFAULT_DOMAIN_t = {"_p_gam__SineDT_float_GAM_DEFAULT_DOMAIN_t", "gam::SineD< float > *|gam::SineD< SampleType > *|gam::SineD< float,GAM_DEFAULT_DOMAIN > *", 0, 0, (void*)&_wrap_class_SineD, 0};
+static swig_type_info _swigt__p_gam__SineDsT_float_GAM_DEFAULT_DOMAIN_t = {"_p_gam__SineDsT_float_GAM_DEFAULT_DOMAIN_t", "gam::SineDs< float > *|gam::SineDs< SampleType > *|gam::SineDs< float,GAM_DEFAULT_DOMAIN > *", 0, 0, (void*)&_wrap_class_SineDs, 0};
+static swig_type_info _swigt__p_gam__SineRT_float_GAM_DEFAULT_DOMAIN_t = {"_p_gam__SineRT_float_GAM_DEFAULT_DOMAIN_t", "gam::SineR< float > *|gam::SineR< SampleType > *|gam::SineR< float,GAM_DEFAULT_DOMAIN > *", 0, 0, (void*)&_wrap_class_SineR, 0};
+static swig_type_info _swigt__p_gam__SineRsT_float_GAM_DEFAULT_DOMAIN_t = {"_p_gam__SineRsT_float_GAM_DEFAULT_DOMAIN_t", "gam::SineRs< float > *|gam::SineRs< SampleType > *|gam::SineRs< float,GAM_DEFAULT_DOMAIN > *", 0, 0, (void*)&_wrap_class_SineRs, 0};
+static swig_type_info _swigt__p_gam__SineT_float_GAM_DEFAULT_DOMAIN_t = {"_p_gam__SineT_float_GAM_DEFAULT_DOMAIN_t", "gam::Sine< float > *|gam::Sine< float,GAM_DEFAULT_DOMAIN > *|gam::Sine< SampleType > *", 0, 0, (void*)&_wrap_class_Sine, 0};
 static swig_type_info _swigt__p_gam__SliceT_float_t = {"_p_gam__SliceT_float_t", "gam::Slice< float > *|gam::Slice< SampleType > *", 0, 0, (void*)&_wrap_class_Slice, 0};
 static swig_type_info _swigt__p_gam__SlidingDFTT_float_t = {"_p_gam__SlidingDFTT_float_t", "gam::SlidingDFT< float > *|gam::SlidingDFT< SampleType > *", 0, 0, (void*)&_wrap_class_SlidingDFT, 0};
 static swig_type_info _swigt__p_gam__SlidingWindowT_float_t = {"_p_gam__SlidingWindowT_float_t", "gam::SlidingWindow< float > *|gam::SlidingWindow< SampleType > *", 0, 0, (void*)&_wrap_class_SlidingWindow, 0};
+static swig_type_info _swigt__p_gam__SoundFile = {"_p_gam__SoundFile", "gam::SoundFile *", 0, 0, (void*)&_wrap_class_SoundFile, 0};
+static swig_type_info _swigt__p_gam__SquareT_float_GAM_DEFAULT_DOMAIN_t = {"_p_gam__SquareT_float_GAM_DEFAULT_DOMAIN_t", "gam::Square< float > *|gam::Square< SampleType > *|gam::Square< float,GAM_DEFAULT_DOMAIN > *", 0, 0, (void*)&_wrap_class_Square, 0};
+static swig_type_info _swigt__p_gam__SweepT_phsInc__Loop_GAM_DEFAULT_DOMAIN_t = {"_p_gam__SweepT_phsInc__Loop_GAM_DEFAULT_DOMAIN_t", "gam::Sweep< > *|gam::Sweep< phsInc::Loop,GAM_DEFAULT_DOMAIN > *", 0, 0, (void*)&_wrap_class_Sweep, 0};
 static swig_type_info _swigt__p_gam__ThresholdT_float_t = {"_p_gam__ThresholdT_float_t", "gam::Threshold< float > *|gam::Threshold< SampleType > *", 0, 0, (void*)&_wrap_class_Threshold, 0};
 static swig_type_info _swigt__p_gam__VecT_2_float_t = {"_p_gam__VecT_2_float_t", "gam::Vec< 2,float > *|gam::Vec< 2,SampleType > *", 0, 0, (void*)0, 0};
+static swig_type_info _swigt__p_gam__Vowel = {"_p_gam__Vowel", "gam::Vowel *", 0, 0, (void*)&_wrap_class_Vowel, 0};
 static swig_type_info _swigt__p_gam__ZeroCrossRateT_float_t = {"_p_gam__ZeroCrossRateT_float_t", "gam::ZeroCrossRate< float > *|gam::ZeroCrossRate< SampleType > *", 0, 0, (void*)&_wrap_class_ZeroCrossRate, 0};
 static swig_type_info _swigt__p_gam__real = {"_p_gam__real", "gam::real *", 0, 0, (void*)0, 0};
 static swig_type_info _swigt__p_int = {"_p_int", "intptr_t *|int *|int_least32_t *|int_fast32_t *|int32_t *|gam::index_t *|int_fast16_t *", 0, 0, (void*)0, 0};
 static swig_type_info _swigt__p_ipl__Type = {"_p_ipl__Type", "ipl::Type *", 0, 0, (void*)0, 0};
 static swig_type_info _swigt__p_long_long = {"_p_long_long", "int_least64_t *|int_fast64_t *|int64_t *|long long *|intmax_t *", 0, 0, (void*)0, 0};
+static swig_type_info _swigt__p_p_float = {"_p_p_float", "float **", 0, 0, (void*)0, 0};
+static swig_type_info _swigt__p_phsInc__Loop = {"_p_phsInc__Loop", "phsInc::Loop *", 0, 0, (void*)0, 0};
 static swig_type_info _swigt__p_short = {"_p_short", "short *|int_least16_t *|int16_t *", 0, 0, (void*)0, 0};
 static swig_type_info _swigt__p_signed_char = {"_p_signed_char", "signed char *|int_least8_t *|int_fast8_t *|int8_t *", 0, 0, (void*)0, 0};
 static swig_type_info _swigt__p_size_type = {"_p_size_type", "size_type *", 0, 0, (void*)0, 0};
 static swig_type_info _swigt__p_std__string = {"_p_std__string", "std::string *", 0, 0, (void*)0, 0};
 static swig_type_info _swigt__p_std__vectorT_float_t = {"_p_std__vectorT_float_t", "std::vector< float > *|std::vector< SampleType > *", 0, 0, (void*)&_wrap_class_stdvector, 0};
+static swig_type_info _swigt__p_std__vectorT_gam__CombT_float_ipl__Trunc_float_gam__Domain1_t_t = {"_p_std__vectorT_gam__CombT_float_ipl__Trunc_float_gam__Domain1_t_t", "std::vector< gam::Comb< float,ipl::Trunc,float,gam::Domain1 > > *|gam::ReverbMS< float >::Allpasses *", 0, 0, (void*)0, 0};
+static swig_type_info _swigt__p_std__vectorT_gam__EchoT_float_ipl__Trunc_gam__Loop1P_gam__Domain1_t_t = {"_p_std__vectorT_gam__EchoT_float_ipl__Trunc_gam__Loop1P_gam__Domain1_t_t", "std::vector< gam::Echo< float,ipl::Trunc,gam::Loop1P,gam::Domain1 > > *|gam::ReverbMS< float >::Combs *", 0, 0, (void*)0, 0};
 static swig_type_info _swigt__p_std__vectorT_gam__real_t = {"_p_std__vectorT_gam__real_t", "std::vector< gam::real > *", 0, 0, (void*)&_wrap_class_realvector, 0};
 static swig_type_info _swigt__p_unsigned_char = {"_p_unsigned_char", "unsigned char *|uint_least8_t *|uint_fast8_t *|uint8_t *", 0, 0, (void*)0, 0};
 static swig_type_info _swigt__p_unsigned_int = {"_p_unsigned_int", "uintptr_t *|uint_least32_t *|uint_fast32_t *|uint32_t *|unsigned int *|uint_fast16_t *", 0, 0, (void*)0, 0};
@@ -29696,11 +53403,15 @@ static swig_type_info _swigt__p_value_type = {"_p_value_type", "value_type *", 0
 static swig_type_info _swigt__p_void = {"_p_void", "void *", 0, 0, (void*)0, 0};
 
 static swig_type_info *swig_type_initial[] = {
+  &_swigt__p_Allpasses,
   &_swigt__p_AudioCallback,
   &_swigt__p_AudioIOData,
+  &_swigt__p_Base,
   &_swigt__p_BiquadT_t,
   &_swigt__p_CSineT_double_t,
   &_swigt__p_CSineT_float_t,
+  &_swigt__p_Combs,
+  &_swigt__p_ComplexT_float_t,
   &_swigt__p_DecayT_float_t,
   &_swigt__p_DecayT_t,
   &_swigt__p_Domain,
@@ -29714,12 +53425,18 @@ static swig_type_info *swig_type_initial[] = {
   &_swigt__p_SWIGLUA_REF,
   &_swigt__p_SawT_float_t,
   &_swigt__p_SineT_float_t,
+  &_swigt__p_VecT_2_float_t,
   &_swigt__p_WindowType,
+  &_swigt__p_complex,
   &_swigt__p_difference_type,
   &_swigt__p_double,
   &_swigt__p_f_r_gam__AudioIOData__void,
   &_swigt__p_float,
   &_swigt__p_gam__AMT_float_t,
+  &_swigt__p_gam__AccumPhaseT_float_GAM_DEFAULT_DOMAIN_t,
+  &_swigt__p_gam__AccumT_phsInc__Loop_GAM_DEFAULT_DOMAIN_t,
+  &_swigt__p_gam__AllPass1T_float_float_GAM_DEFAULT_DOMAIN_t,
+  &_swigt__p_gam__AllPass2T_float_float_GAM_DEFAULT_DOMAIN_t,
   &_swigt__p_gam__ArrayPow2T_float_t,
   &_swigt__p_gam__ArrayT_float_t,
   &_swigt__p_gam__AudioCallback,
@@ -29727,10 +53444,14 @@ static swig_type_info *swig_type_initial[] = {
   &_swigt__p_gam__AudioIO,
   &_swigt__p_gam__AudioIOData,
   &_swigt__p_gam__Biquad3,
-  &_swigt__p_gam__BiquadT_t,
+  &_swigt__p_gam__BiquadT_float_float_GAM_DEFAULT_DOMAIN_t,
+  &_swigt__p_gam__BiquadT_gam__real_gam__real_GAM_DEFAULT_DOMAIN_t,
+  &_swigt__p_gam__BlockDCT_float_float_GAM_DEFAULT_DOMAIN_t,
+  &_swigt__p_gam__BlockNyqT_float_float_GAM_DEFAULT_DOMAIN_t,
   &_swigt__p_gam__Burst,
-  &_swigt__p_gam__CSineT_double_t,
-  &_swigt__p_gam__CSineT_float_t,
+  &_swigt__p_gam__BuzzT_float_GAM_DEFAULT_DOMAIN_t,
+  &_swigt__p_gam__CSineT_double_GAM_DEFAULT_DOMAIN_t,
+  &_swigt__p_gam__CSineT_float_GAM_DEFAULT_DOMAIN_t,
   &_swigt__p_gam__ChebyNT_1_float_t,
   &_swigt__p_gam__ChebyNT_2_float_t,
   &_swigt__p_gam__ChebyNT_3_float_t,
@@ -29741,53 +53462,92 @@ static swig_type_info *swig_type_initial[] = {
   &_swigt__p_gam__ChebyNT_8_float_t,
   &_swigt__p_gam__ChebyNT_9_float_t,
   &_swigt__p_gam__ChirpT_float_t,
+  &_swigt__p_gam__ChirpletT_float_GAM_DEFAULT_DOMAIN_t,
   &_swigt__p_gam__ChorusT_float_t,
   &_swigt__p_gam__CombT_float_ipl__Cubic_gam__real_GAM_DEFAULT_DOMAIN_t,
   &_swigt__p_gam__CombT_float_ipl__Linear_gam__real_GAM_DEFAULT_DOMAIN_t,
+  &_swigt__p_gam__ComplexT_float_t,
   &_swigt__p_gam__DFT,
+  &_swigt__p_gam__DSFT_float_GAM_DEFAULT_DOMAIN_t,
+  &_swigt__p_gam__DWOT_phsInc__Loop_GAM_DEFAULT_DOMAIN_t,
   &_swigt__p_gam__DecayT_float_t,
   &_swigt__p_gam__Delay1T_float_t,
   &_swigt__p_gam__Delay2T_float_t,
   &_swigt__p_gam__DelayNT_float_t,
   &_swigt__p_gam__DelayT_float_ipl__Linear_GAM_DEFAULT_DOMAIN_t,
+  &_swigt__p_gam__DifferencerT_float_t,
+  &_swigt__p_gam__DistT_2_float_t,
   &_swigt__p_gam__Domain,
   &_swigt__p_gam__Domain1,
   &_swigt__p_gam__DomainObserver,
   &_swigt__p_gam__DoubleRingT_float_t,
+  &_swigt__p_gam__EchoCSineT_float_ipl__Linear_gam__LoopGain_GAM_DEFAULT_DOMAIN_t,
+  &_swigt__p_gam__EchoT_float_ipl__Linear_gam__LoopGain_GAM_DEFAULT_DOMAIN_t,
   &_swigt__p_gam__EnvFollowT_float_gam__real_gam__GAM_DEFAULT_DOMAIN_t,
   &_swigt__p_gam__FreqShiftT_float_t,
-  &_swigt__p_gam__HilbertT_float_t,
+  &_swigt__p_gam__HilbertT_float_float_t,
+  &_swigt__p_gam__HilbertT_float_gam__real_t,
   &_swigt__p_gam__IndexMapT_float_t,
+  &_swigt__p_gam__IntegratorT_float_float_t,
+  &_swigt__p_gam__LFOT_phsInc__Loop_GAM_DEFAULT_DOMAIN_t,
+  &_swigt__p_gam__Loop1P1ZT_float_t,
+  &_swigt__p_gam__Loop1PT_float_t,
+  &_swigt__p_gam__LoopGainT_float_t,
   &_swigt__p_gam__MaxAbsT_float_t,
   &_swigt__p_gam__MonoSynth,
+  &_swigt__p_gam__MovingAvgT_float_t,
   &_swigt__p_gam__MultitapT_float_ipl__Linear_GAM_DEFAULT_DOMAIN_t,
+  &_swigt__p_gam__NoiseBinaryT_RNGLinCon_t,
+  &_swigt__p_gam__NoiseBrownT_RNGLinCon_t,
+  &_swigt__p_gam__NoisePinkT_RNGLinCon_t,
+  &_swigt__p_gam__NoiseVioletT_RNGLinCon_t,
+  &_swigt__p_gam__NoiseWhiteT_RNGLinCon_t,
   &_swigt__p_gam__NoiseWhiteT_gam__RNGMulCon_t,
+  &_swigt__p_gam__NotchT_float_float_GAM_DEFAULT_DOMAIN_t,
+  &_swigt__p_gam__OnePoleT_float_float_GAM_DEFAULT_DOMAIN_t,
+  &_swigt__p_gam__OnePoleT_float_gam__real_GAM_DEFAULT_DOMAIN_t,
   &_swigt__p_gam__OnePoleT_float_gam__real_gam__GAM_DEFAULT_DOMAIN_t,
-  &_swigt__p_gam__OnePoleT_float_t,
+  &_swigt__p_gam__OscT_float_ipl__Linear_phsInc__Loop_GAM_DEFAULT_DOMAIN_t,
   &_swigt__p_gam__PCounter,
   &_swigt__p_gam__PanT_float_t,
   &_swigt__p_gam__Pluck,
   &_swigt__p_gam__QuantizerT_float_GAM_DEFAULT_DOMAIN_t,
+  &_swigt__p_gam__Recorder,
+  &_swigt__p_gam__ResonT_float_float_GAM_DEFAULT_DOMAIN_t,
+  &_swigt__p_gam__ReverbMST_float_gam__Loop1P_ipl__Trunc_GAM_DEFAULT_DOMAIN_t,
   &_swigt__p_gam__RingT_float_t,
   &_swigt__p_gam__STFT,
-  &_swigt__p_gam__SawT_float_t,
+  &_swigt__p_gam__SamplePlayerT_float_ipl__Trunc_phsInc__OneShot_GAM_DEFAULT_DOMAIN_t,
+  &_swigt__p_gam__SawT_float_GAM_DEFAULT_DOMAIN_t,
   &_swigt__p_gam__SilenceDetect,
-  &_swigt__p_gam__SineT_float_t,
+  &_swigt__p_gam__SineDT_float_GAM_DEFAULT_DOMAIN_t,
+  &_swigt__p_gam__SineDsT_float_GAM_DEFAULT_DOMAIN_t,
+  &_swigt__p_gam__SineRT_float_GAM_DEFAULT_DOMAIN_t,
+  &_swigt__p_gam__SineRsT_float_GAM_DEFAULT_DOMAIN_t,
+  &_swigt__p_gam__SineT_float_GAM_DEFAULT_DOMAIN_t,
   &_swigt__p_gam__SliceT_float_t,
   &_swigt__p_gam__SlidingDFTT_float_t,
   &_swigt__p_gam__SlidingWindowT_float_t,
+  &_swigt__p_gam__SoundFile,
+  &_swigt__p_gam__SquareT_float_GAM_DEFAULT_DOMAIN_t,
+  &_swigt__p_gam__SweepT_phsInc__Loop_GAM_DEFAULT_DOMAIN_t,
   &_swigt__p_gam__ThresholdT_float_t,
   &_swigt__p_gam__VecT_2_float_t,
+  &_swigt__p_gam__Vowel,
   &_swigt__p_gam__ZeroCrossRateT_float_t,
   &_swigt__p_gam__real,
   &_swigt__p_int,
   &_swigt__p_ipl__Type,
   &_swigt__p_long_long,
+  &_swigt__p_p_float,
+  &_swigt__p_phsInc__Loop,
   &_swigt__p_short,
   &_swigt__p_signed_char,
   &_swigt__p_size_type,
   &_swigt__p_std__string,
   &_swigt__p_std__vectorT_float_t,
+  &_swigt__p_std__vectorT_gam__CombT_float_ipl__Trunc_float_gam__Domain1_t_t,
+  &_swigt__p_std__vectorT_gam__EchoT_float_ipl__Trunc_gam__Loop1P_gam__Domain1_t_t,
   &_swigt__p_std__vectorT_gam__real_t,
   &_swigt__p_unsigned_char,
   &_swigt__p_unsigned_int,
@@ -29797,11 +53557,15 @@ static swig_type_info *swig_type_initial[] = {
   &_swigt__p_void,
 };
 
+static swig_cast_info _swigc__p_Allpasses[] = {  {&_swigt__p_Allpasses, 0, 0, 0},{0, 0, 0, 0}};
 static swig_cast_info _swigc__p_AudioCallback[] = {  {&_swigt__p_AudioCallback, 0, 0, 0},{0, 0, 0, 0}};
 static swig_cast_info _swigc__p_AudioIOData[] = {  {&_swigt__p_AudioIOData, 0, 0, 0},{0, 0, 0, 0}};
+static swig_cast_info _swigc__p_Base[] = {  {&_swigt__p_Base, 0, 0, 0},{0, 0, 0, 0}};
 static swig_cast_info _swigc__p_BiquadT_t[] = {  {&_swigt__p_BiquadT_t, 0, 0, 0},{0, 0, 0, 0}};
 static swig_cast_info _swigc__p_CSineT_double_t[] = {  {&_swigt__p_CSineT_double_t, 0, 0, 0},{0, 0, 0, 0}};
 static swig_cast_info _swigc__p_CSineT_float_t[] = {  {&_swigt__p_CSineT_float_t, 0, 0, 0},{0, 0, 0, 0}};
+static swig_cast_info _swigc__p_Combs[] = {  {&_swigt__p_Combs, 0, 0, 0},{0, 0, 0, 0}};
+static swig_cast_info _swigc__p_ComplexT_float_t[] = {  {&_swigt__p_ComplexT_float_t, 0, 0, 0},{0, 0, 0, 0}};
 static swig_cast_info _swigc__p_DecayT_float_t[] = {  {&_swigt__p_DecayT_float_t, 0, 0, 0},{0, 0, 0, 0}};
 static swig_cast_info _swigc__p_DecayT_t[] = {  {&_swigt__p_DecayT_t, 0, 0, 0},{0, 0, 0, 0}};
 static swig_cast_info _swigc__p_Domain[] = {  {&_swigt__p_Domain, 0, 0, 0},{0, 0, 0, 0}};
@@ -29815,23 +53579,33 @@ static swig_cast_info _swigc__p_OnePoleT_float_t[] = {  {&_swigt__p_OnePoleT_flo
 static swig_cast_info _swigc__p_SWIGLUA_REF[] = {  {&_swigt__p_SWIGLUA_REF, 0, 0, 0},{0, 0, 0, 0}};
 static swig_cast_info _swigc__p_SawT_float_t[] = {  {&_swigt__p_SawT_float_t, 0, 0, 0},{0, 0, 0, 0}};
 static swig_cast_info _swigc__p_SineT_float_t[] = {  {&_swigt__p_SineT_float_t, 0, 0, 0},{0, 0, 0, 0}};
+static swig_cast_info _swigc__p_VecT_2_float_t[] = {  {&_swigt__p_VecT_2_float_t, 0, 0, 0},{0, 0, 0, 0}};
 static swig_cast_info _swigc__p_WindowType[] = {  {&_swigt__p_WindowType, 0, 0, 0},{0, 0, 0, 0}};
+static swig_cast_info _swigc__p_complex[] = {  {&_swigt__p_complex, 0, 0, 0},{0, 0, 0, 0}};
 static swig_cast_info _swigc__p_difference_type[] = {  {&_swigt__p_difference_type, 0, 0, 0},{0, 0, 0, 0}};
 static swig_cast_info _swigc__p_double[] = {  {&_swigt__p_double, 0, 0, 0},{0, 0, 0, 0}};
 static swig_cast_info _swigc__p_f_r_gam__AudioIOData__void[] = {  {&_swigt__p_f_r_gam__AudioIOData__void, 0, 0, 0},{0, 0, 0, 0}};
 static swig_cast_info _swigc__p_float[] = {  {&_swigt__p_float, 0, 0, 0},{0, 0, 0, 0}};
 static swig_cast_info _swigc__p_gam__AMT_float_t[] = {  {&_swigt__p_gam__AMT_float_t, 0, 0, 0},{0, 0, 0, 0}};
-static swig_cast_info _swigc__p_gam__ArrayPow2T_float_t[] = {  {&_swigt__p_gam__ArrayPow2T_float_t, 0, 0, 0},{0, 0, 0, 0}};
-static swig_cast_info _swigc__p_gam__ArrayT_float_t[] = {  {&_swigt__p_gam__ArrayT_float_t, 0, 0, 0},  {&_swigt__p_gam__RingT_float_t, _p_gam__RingT_float_tTo_p_gam__ArrayT_float_t, 0, 0},  {&_swigt__p_gam__DoubleRingT_float_t, _p_gam__DoubleRingT_float_tTo_p_gam__ArrayT_float_t, 0, 0},  {&_swigt__p_gam__DelayNT_float_t, _p_gam__DelayNT_float_tTo_p_gam__ArrayT_float_t, 0, 0},{0, 0, 0, 0}};
+static swig_cast_info _swigc__p_gam__AccumPhaseT_float_GAM_DEFAULT_DOMAIN_t[] = {  {&_swigt__p_gam__AccumPhaseT_float_GAM_DEFAULT_DOMAIN_t, 0, 0, 0},  {&_swigt__p_gam__SineT_float_GAM_DEFAULT_DOMAIN_t, _p_gam__SineT_float_GAM_DEFAULT_DOMAIN_tTo_p_gam__AccumPhaseT_float_GAM_DEFAULT_DOMAIN_t, 0, 0},  {&_swigt__p_gam__BuzzT_float_GAM_DEFAULT_DOMAIN_t, _p_gam__BuzzT_float_GAM_DEFAULT_DOMAIN_tTo_p_gam__AccumPhaseT_float_GAM_DEFAULT_DOMAIN_t, 0, 0},  {&_swigt__p_gam__DSFT_float_GAM_DEFAULT_DOMAIN_t, _p_gam__DSFT_float_GAM_DEFAULT_DOMAIN_tTo_p_gam__AccumPhaseT_float_GAM_DEFAULT_DOMAIN_t, 0, 0},{0, 0, 0, 0}};
+static swig_cast_info _swigc__p_gam__AccumT_phsInc__Loop_GAM_DEFAULT_DOMAIN_t[] = {  {&_swigt__p_gam__OscT_float_ipl__Linear_phsInc__Loop_GAM_DEFAULT_DOMAIN_t, _p_gam__OscT_float_ipl__Linear_phsInc__Loop_GAM_DEFAULT_DOMAIN_tTo_p_gam__AccumT_phsInc__Loop_GAM_DEFAULT_DOMAIN_t, 0, 0},  {&_swigt__p_gam__AccumT_phsInc__Loop_GAM_DEFAULT_DOMAIN_t, 0, 0, 0},  {&_swigt__p_gam__SweepT_phsInc__Loop_GAM_DEFAULT_DOMAIN_t, _p_gam__SweepT_phsInc__Loop_GAM_DEFAULT_DOMAIN_tTo_p_gam__AccumT_phsInc__Loop_GAM_DEFAULT_DOMAIN_t, 0, 0},  {&_swigt__p_gam__LFOT_phsInc__Loop_GAM_DEFAULT_DOMAIN_t, _p_gam__LFOT_phsInc__Loop_GAM_DEFAULT_DOMAIN_tTo_p_gam__AccumT_phsInc__Loop_GAM_DEFAULT_DOMAIN_t, 0, 0},  {&_swigt__p_gam__DWOT_phsInc__Loop_GAM_DEFAULT_DOMAIN_t, _p_gam__DWOT_phsInc__Loop_GAM_DEFAULT_DOMAIN_tTo_p_gam__AccumT_phsInc__Loop_GAM_DEFAULT_DOMAIN_t, 0, 0},{0, 0, 0, 0}};
+static swig_cast_info _swigc__p_gam__AllPass1T_float_float_GAM_DEFAULT_DOMAIN_t[] = {  {&_swigt__p_gam__AllPass1T_float_float_GAM_DEFAULT_DOMAIN_t, 0, 0, 0},{0, 0, 0, 0}};
+static swig_cast_info _swigc__p_gam__AllPass2T_float_float_GAM_DEFAULT_DOMAIN_t[] = {  {&_swigt__p_gam__AllPass2T_float_float_GAM_DEFAULT_DOMAIN_t, 0, 0, 0},{0, 0, 0, 0}};
+static swig_cast_info _swigc__p_gam__ArrayPow2T_float_t[] = {  {&_swigt__p_gam__OscT_float_ipl__Linear_phsInc__Loop_GAM_DEFAULT_DOMAIN_t, _p_gam__OscT_float_ipl__Linear_phsInc__Loop_GAM_DEFAULT_DOMAIN_tTo_p_gam__ArrayPow2T_float_t, 0, 0},  {&_swigt__p_gam__ArrayPow2T_float_t, 0, 0, 0},{0, 0, 0, 0}};
+static swig_cast_info _swigc__p_gam__ArrayT_float_t[] = {  {&_swigt__p_gam__SamplePlayerT_float_ipl__Trunc_phsInc__OneShot_GAM_DEFAULT_DOMAIN_t, _p_gam__SamplePlayerT_float_ipl__Trunc_phsInc__OneShot_GAM_DEFAULT_DOMAIN_tTo_p_gam__ArrayT_float_t, 0, 0},  {&_swigt__p_gam__ArrayT_float_t, 0, 0, 0},  {&_swigt__p_gam__RingT_float_t, _p_gam__RingT_float_tTo_p_gam__ArrayT_float_t, 0, 0},  {&_swigt__p_gam__DoubleRingT_float_t, _p_gam__DoubleRingT_float_tTo_p_gam__ArrayT_float_t, 0, 0},  {&_swigt__p_gam__DelayNT_float_t, _p_gam__DelayNT_float_tTo_p_gam__ArrayT_float_t, 0, 0},  {&_swigt__p_gam__MovingAvgT_float_t, _p_gam__MovingAvgT_float_tTo_p_gam__ArrayT_float_t, 0, 0},{0, 0, 0, 0}};
 static swig_cast_info _swigc__p_gam__AudioCallback[] = {  {&_swigt__p_gam__AudioCallback, 0, 0, 0},  {&_swigt__p_LuaCallback, _p_LuaCallbackTo_p_gam__AudioCallback, 0, 0},{0, 0, 0, 0}};
 static swig_cast_info _swigc__p_gam__AudioDevice[] = {  {&_swigt__p_gam__AudioDevice, 0, 0, 0},{0, 0, 0, 0}};
 static swig_cast_info _swigc__p_gam__AudioIO[] = {  {&_swigt__p_gam__AudioIO, 0, 0, 0},{0, 0, 0, 0}};
 static swig_cast_info _swigc__p_gam__AudioIOData[] = {  {&_swigt__p_gam__AudioIOData, 0, 0, 0},  {&_swigt__p_gam__AudioIO, _p_gam__AudioIOTo_p_gam__AudioIOData, 0, 0},{0, 0, 0, 0}};
 static swig_cast_info _swigc__p_gam__Biquad3[] = {  {&_swigt__p_gam__Biquad3, 0, 0, 0},{0, 0, 0, 0}};
-static swig_cast_info _swigc__p_gam__BiquadT_t[] = {  {&_swigt__p_gam__BiquadT_t, 0, 0, 0},{0, 0, 0, 0}};
+static swig_cast_info _swigc__p_gam__BiquadT_float_float_GAM_DEFAULT_DOMAIN_t[] = {  {&_swigt__p_gam__BiquadT_float_float_GAM_DEFAULT_DOMAIN_t, 0, 0, 0},{0, 0, 0, 0}};
+static swig_cast_info _swigc__p_gam__BiquadT_gam__real_gam__real_GAM_DEFAULT_DOMAIN_t[] = {  {&_swigt__p_gam__BiquadT_gam__real_gam__real_GAM_DEFAULT_DOMAIN_t, 0, 0, 0},{0, 0, 0, 0}};
+static swig_cast_info _swigc__p_gam__BlockDCT_float_float_GAM_DEFAULT_DOMAIN_t[] = {  {&_swigt__p_gam__BlockDCT_float_float_GAM_DEFAULT_DOMAIN_t, 0, 0, 0},  {&_swigt__p_gam__BlockNyqT_float_float_GAM_DEFAULT_DOMAIN_t, _p_gam__BlockNyqT_float_float_GAM_DEFAULT_DOMAIN_tTo_p_gam__BlockDCT_float_float_GAM_DEFAULT_DOMAIN_t, 0, 0},{0, 0, 0, 0}};
+static swig_cast_info _swigc__p_gam__BlockNyqT_float_float_GAM_DEFAULT_DOMAIN_t[] = {  {&_swigt__p_gam__BlockNyqT_float_float_GAM_DEFAULT_DOMAIN_t, 0, 0, 0},{0, 0, 0, 0}};
 static swig_cast_info _swigc__p_gam__Burst[] = {  {&_swigt__p_gam__Burst, 0, 0, 0},{0, 0, 0, 0}};
-static swig_cast_info _swigc__p_gam__CSineT_double_t[] = {  {&_swigt__p_gam__CSineT_double_t, 0, 0, 0},{0, 0, 0, 0}};
-static swig_cast_info _swigc__p_gam__CSineT_float_t[] = {  {&_swigt__p_gam__CSineT_float_t, 0, 0, 0},{0, 0, 0, 0}};
+static swig_cast_info _swigc__p_gam__BuzzT_float_GAM_DEFAULT_DOMAIN_t[] = {  {&_swigt__p_gam__BuzzT_float_GAM_DEFAULT_DOMAIN_t, 0, 0, 0},{0, 0, 0, 0}};
+static swig_cast_info _swigc__p_gam__CSineT_double_GAM_DEFAULT_DOMAIN_t[] = {  {&_swigt__p_gam__CSineT_double_GAM_DEFAULT_DOMAIN_t, 0, 0, 0},{0, 0, 0, 0}};
+static swig_cast_info _swigc__p_gam__CSineT_float_GAM_DEFAULT_DOMAIN_t[] = {  {&_swigt__p_gam__CSineT_float_GAM_DEFAULT_DOMAIN_t, 0, 0, 0},{0, 0, 0, 0}};
 static swig_cast_info _swigc__p_gam__ChebyNT_1_float_t[] = {  {&_swigt__p_gam__ChebyNT_1_float_t, 0, 0, 0},{0, 0, 0, 0}};
 static swig_cast_info _swigc__p_gam__ChebyNT_2_float_t[] = {  {&_swigt__p_gam__ChebyNT_2_float_t, 0, 0, 0},{0, 0, 0, 0}};
 static swig_cast_info _swigc__p_gam__ChebyNT_3_float_t[] = {  {&_swigt__p_gam__ChebyNT_3_float_t, 0, 0, 0},{0, 0, 0, 0}};
@@ -29842,53 +53616,92 @@ static swig_cast_info _swigc__p_gam__ChebyNT_7_float_t[] = {  {&_swigt__p_gam__C
 static swig_cast_info _swigc__p_gam__ChebyNT_8_float_t[] = {  {&_swigt__p_gam__ChebyNT_8_float_t, 0, 0, 0},{0, 0, 0, 0}};
 static swig_cast_info _swigc__p_gam__ChebyNT_9_float_t[] = {  {&_swigt__p_gam__ChebyNT_9_float_t, 0, 0, 0},{0, 0, 0, 0}};
 static swig_cast_info _swigc__p_gam__ChirpT_float_t[] = {  {&_swigt__p_gam__ChirpT_float_t, 0, 0, 0},{0, 0, 0, 0}};
+static swig_cast_info _swigc__p_gam__ChirpletT_float_GAM_DEFAULT_DOMAIN_t[] = {  {&_swigt__p_gam__ChirpletT_float_GAM_DEFAULT_DOMAIN_t, 0, 0, 0},{0, 0, 0, 0}};
 static swig_cast_info _swigc__p_gam__ChorusT_float_t[] = {  {&_swigt__p_gam__ChorusT_float_t, 0, 0, 0},{0, 0, 0, 0}};
 static swig_cast_info _swigc__p_gam__CombT_float_ipl__Cubic_gam__real_GAM_DEFAULT_DOMAIN_t[] = {  {&_swigt__p_gam__CombT_float_ipl__Cubic_gam__real_GAM_DEFAULT_DOMAIN_t, 0, 0, 0},{0, 0, 0, 0}};
 static swig_cast_info _swigc__p_gam__CombT_float_ipl__Linear_gam__real_GAM_DEFAULT_DOMAIN_t[] = {  {&_swigt__p_gam__CombT_float_ipl__Linear_gam__real_GAM_DEFAULT_DOMAIN_t, 0, 0, 0},{0, 0, 0, 0}};
+static swig_cast_info _swigc__p_gam__ComplexT_float_t[] = {  {&_swigt__p_gam__ComplexT_float_t, 0, 0, 0},{0, 0, 0, 0}};
 static swig_cast_info _swigc__p_gam__DFT[] = {  {&_swigt__p_gam__DFT, 0, 0, 0},  {&_swigt__p_gam__STFT, _p_gam__STFTTo_p_gam__DFT, 0, 0},{0, 0, 0, 0}};
+static swig_cast_info _swigc__p_gam__DSFT_float_GAM_DEFAULT_DOMAIN_t[] = {  {&_swigt__p_gam__DSFT_float_GAM_DEFAULT_DOMAIN_t, 0, 0, 0},{0, 0, 0, 0}};
+static swig_cast_info _swigc__p_gam__DWOT_phsInc__Loop_GAM_DEFAULT_DOMAIN_t[] = {  {&_swigt__p_gam__DWOT_phsInc__Loop_GAM_DEFAULT_DOMAIN_t, 0, 0, 0},{0, 0, 0, 0}};
 static swig_cast_info _swigc__p_gam__DecayT_float_t[] = {  {&_swigt__p_gam__DecayT_float_t, 0, 0, 0},{0, 0, 0, 0}};
 static swig_cast_info _swigc__p_gam__Delay1T_float_t[] = {  {&_swigt__p_gam__Delay1T_float_t, 0, 0, 0},{0, 0, 0, 0}};
 static swig_cast_info _swigc__p_gam__Delay2T_float_t[] = {  {&_swigt__p_gam__Delay2T_float_t, 0, 0, 0},{0, 0, 0, 0}};
-static swig_cast_info _swigc__p_gam__DelayNT_float_t[] = {  {&_swigt__p_gam__DelayNT_float_t, 0, 0, 0},{0, 0, 0, 0}};
-static swig_cast_info _swigc__p_gam__DelayT_float_ipl__Linear_GAM_DEFAULT_DOMAIN_t[] = {  {&_swigt__p_gam__DelayT_float_ipl__Linear_GAM_DEFAULT_DOMAIN_t, 0, 0, 0},  {&_swigt__p_gam__CombT_float_ipl__Linear_gam__real_GAM_DEFAULT_DOMAIN_t, _p_gam__CombT_float_ipl__Linear_gam__real_GAM_DEFAULT_DOMAIN_tTo_p_gam__DelayT_float_ipl__Linear_GAM_DEFAULT_DOMAIN_t, 0, 0},  {&_swigt__p_gam__MultitapT_float_ipl__Linear_GAM_DEFAULT_DOMAIN_t, _p_gam__MultitapT_float_ipl__Linear_GAM_DEFAULT_DOMAIN_tTo_p_gam__DelayT_float_ipl__Linear_GAM_DEFAULT_DOMAIN_t, 0, 0},{0, 0, 0, 0}};
+static swig_cast_info _swigc__p_gam__DelayNT_float_t[] = {  {&_swigt__p_gam__DelayNT_float_t, 0, 0, 0},  {&_swigt__p_gam__MovingAvgT_float_t, _p_gam__MovingAvgT_float_tTo_p_gam__DelayNT_float_t, 0, 0},{0, 0, 0, 0}};
+static swig_cast_info _swigc__p_gam__DelayT_float_ipl__Linear_GAM_DEFAULT_DOMAIN_t[] = {  {&_swigt__p_gam__DelayT_float_ipl__Linear_GAM_DEFAULT_DOMAIN_t, 0, 0, 0},  {&_swigt__p_gam__EchoT_float_ipl__Linear_gam__LoopGain_GAM_DEFAULT_DOMAIN_t, _p_gam__EchoT_float_ipl__Linear_gam__LoopGain_GAM_DEFAULT_DOMAIN_tTo_p_gam__DelayT_float_ipl__Linear_GAM_DEFAULT_DOMAIN_t, 0, 0},  {&_swigt__p_gam__CombT_float_ipl__Linear_gam__real_GAM_DEFAULT_DOMAIN_t, _p_gam__CombT_float_ipl__Linear_gam__real_GAM_DEFAULT_DOMAIN_tTo_p_gam__DelayT_float_ipl__Linear_GAM_DEFAULT_DOMAIN_t, 0, 0},  {&_swigt__p_gam__MultitapT_float_ipl__Linear_GAM_DEFAULT_DOMAIN_t, _p_gam__MultitapT_float_ipl__Linear_GAM_DEFAULT_DOMAIN_tTo_p_gam__DelayT_float_ipl__Linear_GAM_DEFAULT_DOMAIN_t, 0, 0},{0, 0, 0, 0}};
+static swig_cast_info _swigc__p_gam__DifferencerT_float_t[] = {  {&_swigt__p_gam__DifferencerT_float_t, 0, 0, 0},{0, 0, 0, 0}};
+static swig_cast_info _swigc__p_gam__DistT_2_float_t[] = {  {&_swigt__p_gam__DistT_2_float_t, 0, 0, 0},{0, 0, 0, 0}};
 static swig_cast_info _swigc__p_gam__Domain[] = {  {&_swigt__p_gam__Domain, 0, 0, 0},{0, 0, 0, 0}};
 static swig_cast_info _swigc__p_gam__Domain1[] = {  {&_swigt__p_gam__Domain1, 0, 0, 0},{0, 0, 0, 0}};
 static swig_cast_info _swigc__p_gam__DomainObserver[] = {  {&_swigt__p_gam__DomainObserver, 0, 0, 0},{0, 0, 0, 0}};
 static swig_cast_info _swigc__p_gam__DoubleRingT_float_t[] = {  {&_swigt__p_gam__DoubleRingT_float_t, 0, 0, 0},{0, 0, 0, 0}};
+static swig_cast_info _swigc__p_gam__EchoCSineT_float_ipl__Linear_gam__LoopGain_GAM_DEFAULT_DOMAIN_t[] = {  {&_swigt__p_gam__EchoCSineT_float_ipl__Linear_gam__LoopGain_GAM_DEFAULT_DOMAIN_t, 0, 0, 0},{0, 0, 0, 0}};
+static swig_cast_info _swigc__p_gam__EchoT_float_ipl__Linear_gam__LoopGain_GAM_DEFAULT_DOMAIN_t[] = {  {&_swigt__p_gam__EchoT_float_ipl__Linear_gam__LoopGain_GAM_DEFAULT_DOMAIN_t, 0, 0, 0},{0, 0, 0, 0}};
 static swig_cast_info _swigc__p_gam__EnvFollowT_float_gam__real_gam__GAM_DEFAULT_DOMAIN_t[] = {  {&_swigt__p_gam__EnvFollowT_float_gam__real_gam__GAM_DEFAULT_DOMAIN_t, 0, 0, 0},{0, 0, 0, 0}};
 static swig_cast_info _swigc__p_gam__FreqShiftT_float_t[] = {  {&_swigt__p_gam__FreqShiftT_float_t, 0, 0, 0},{0, 0, 0, 0}};
-static swig_cast_info _swigc__p_gam__HilbertT_float_t[] = {  {&_swigt__p_gam__HilbertT_float_t, 0, 0, 0},{0, 0, 0, 0}};
+static swig_cast_info _swigc__p_gam__HilbertT_float_float_t[] = {  {&_swigt__p_gam__HilbertT_float_float_t, 0, 0, 0},{0, 0, 0, 0}};
+static swig_cast_info _swigc__p_gam__HilbertT_float_gam__real_t[] = {  {&_swigt__p_gam__HilbertT_float_gam__real_t, 0, 0, 0},{0, 0, 0, 0}};
 static swig_cast_info _swigc__p_gam__IndexMapT_float_t[] = {  {&_swigt__p_gam__IndexMapT_float_t, 0, 0, 0},{0, 0, 0, 0}};
+static swig_cast_info _swigc__p_gam__IntegratorT_float_float_t[] = {  {&_swigt__p_gam__IntegratorT_float_float_t, 0, 0, 0},{0, 0, 0, 0}};
+static swig_cast_info _swigc__p_gam__LFOT_phsInc__Loop_GAM_DEFAULT_DOMAIN_t[] = {  {&_swigt__p_gam__LFOT_phsInc__Loop_GAM_DEFAULT_DOMAIN_t, 0, 0, 0},{0, 0, 0, 0}};
+static swig_cast_info _swigc__p_gam__Loop1P1ZT_float_t[] = {  {&_swigt__p_gam__Loop1P1ZT_float_t, 0, 0, 0},{0, 0, 0, 0}};
+static swig_cast_info _swigc__p_gam__Loop1PT_float_t[] = {  {&_swigt__p_gam__Loop1PT_float_t, 0, 0, 0},{0, 0, 0, 0}};
+static swig_cast_info _swigc__p_gam__LoopGainT_float_t[] = {  {&_swigt__p_gam__LoopGainT_float_t, 0, 0, 0},{0, 0, 0, 0}};
 static swig_cast_info _swigc__p_gam__MaxAbsT_float_t[] = {  {&_swigt__p_gam__MaxAbsT_float_t, 0, 0, 0},{0, 0, 0, 0}};
 static swig_cast_info _swigc__p_gam__MonoSynth[] = {  {&_swigt__p_gam__MonoSynth, 0, 0, 0},{0, 0, 0, 0}};
+static swig_cast_info _swigc__p_gam__MovingAvgT_float_t[] = {  {&_swigt__p_gam__MovingAvgT_float_t, 0, 0, 0},{0, 0, 0, 0}};
 static swig_cast_info _swigc__p_gam__MultitapT_float_ipl__Linear_GAM_DEFAULT_DOMAIN_t[] = {  {&_swigt__p_gam__MultitapT_float_ipl__Linear_GAM_DEFAULT_DOMAIN_t, 0, 0, 0},{0, 0, 0, 0}};
+static swig_cast_info _swigc__p_gam__NoiseBinaryT_RNGLinCon_t[] = {  {&_swigt__p_gam__NoiseBinaryT_RNGLinCon_t, 0, 0, 0},{0, 0, 0, 0}};
+static swig_cast_info _swigc__p_gam__NoiseBrownT_RNGLinCon_t[] = {  {&_swigt__p_gam__NoiseBrownT_RNGLinCon_t, 0, 0, 0},{0, 0, 0, 0}};
+static swig_cast_info _swigc__p_gam__NoisePinkT_RNGLinCon_t[] = {  {&_swigt__p_gam__NoisePinkT_RNGLinCon_t, 0, 0, 0},{0, 0, 0, 0}};
+static swig_cast_info _swigc__p_gam__NoiseVioletT_RNGLinCon_t[] = {  {&_swigt__p_gam__NoiseVioletT_RNGLinCon_t, 0, 0, 0},{0, 0, 0, 0}};
+static swig_cast_info _swigc__p_gam__NoiseWhiteT_RNGLinCon_t[] = {  {&_swigt__p_gam__NoiseWhiteT_RNGLinCon_t, 0, 0, 0},{0, 0, 0, 0}};
 static swig_cast_info _swigc__p_gam__NoiseWhiteT_gam__RNGMulCon_t[] = {  {&_swigt__p_gam__NoiseWhiteT_gam__RNGMulCon_t, 0, 0, 0},{0, 0, 0, 0}};
+static swig_cast_info _swigc__p_gam__NotchT_float_float_GAM_DEFAULT_DOMAIN_t[] = {  {&_swigt__p_gam__NotchT_float_float_GAM_DEFAULT_DOMAIN_t, 0, 0, 0},{0, 0, 0, 0}};
+static swig_cast_info _swigc__p_gam__OnePoleT_float_float_GAM_DEFAULT_DOMAIN_t[] = {  {&_swigt__p_gam__OnePoleT_float_float_GAM_DEFAULT_DOMAIN_t, 0, 0, 0},{0, 0, 0, 0}};
+static swig_cast_info _swigc__p_gam__OnePoleT_float_gam__real_GAM_DEFAULT_DOMAIN_t[] = {  {&_swigt__p_gam__OnePoleT_float_gam__real_GAM_DEFAULT_DOMAIN_t, 0, 0, 0},{0, 0, 0, 0}};
 static swig_cast_info _swigc__p_gam__OnePoleT_float_gam__real_gam__GAM_DEFAULT_DOMAIN_t[] = {  {&_swigt__p_gam__OnePoleT_float_gam__real_gam__GAM_DEFAULT_DOMAIN_t, 0, 0, 0},{0, 0, 0, 0}};
-static swig_cast_info _swigc__p_gam__OnePoleT_float_t[] = {  {&_swigt__p_gam__OnePoleT_float_t, 0, 0, 0},{0, 0, 0, 0}};
+static swig_cast_info _swigc__p_gam__OscT_float_ipl__Linear_phsInc__Loop_GAM_DEFAULT_DOMAIN_t[] = {  {&_swigt__p_gam__OscT_float_ipl__Linear_phsInc__Loop_GAM_DEFAULT_DOMAIN_t, 0, 0, 0},{0, 0, 0, 0}};
 static swig_cast_info _swigc__p_gam__PCounter[] = {  {&_swigt__p_gam__PCounter, 0, 0, 0},  {&_swigt__p_gam__MaxAbsT_float_t, _p_gam__MaxAbsT_float_tTo_p_gam__PCounter, 0, 0},  {&_swigt__p_gam__ZeroCrossRateT_float_t, _p_gam__ZeroCrossRateT_float_tTo_p_gam__PCounter, 0, 0},{0, 0, 0, 0}};
 static swig_cast_info _swigc__p_gam__PanT_float_t[] = {  {&_swigt__p_gam__PanT_float_t, 0, 0, 0},{0, 0, 0, 0}};
 static swig_cast_info _swigc__p_gam__Pluck[] = {  {&_swigt__p_gam__Pluck, 0, 0, 0},{0, 0, 0, 0}};
 static swig_cast_info _swigc__p_gam__QuantizerT_float_GAM_DEFAULT_DOMAIN_t[] = {  {&_swigt__p_gam__QuantizerT_float_GAM_DEFAULT_DOMAIN_t, 0, 0, 0},{0, 0, 0, 0}};
-static swig_cast_info _swigc__p_gam__RingT_float_t[] = {  {&_swigt__p_gam__RingT_float_t, 0, 0, 0},  {&_swigt__p_gam__DoubleRingT_float_t, _p_gam__DoubleRingT_float_tTo_p_gam__RingT_float_t, 0, 0},  {&_swigt__p_gam__DelayNT_float_t, _p_gam__DelayNT_float_tTo_p_gam__RingT_float_t, 0, 0},{0, 0, 0, 0}};
+static swig_cast_info _swigc__p_gam__Recorder[] = {  {&_swigt__p_gam__Recorder, 0, 0, 0},{0, 0, 0, 0}};
+static swig_cast_info _swigc__p_gam__ResonT_float_float_GAM_DEFAULT_DOMAIN_t[] = {  {&_swigt__p_gam__ResonT_float_float_GAM_DEFAULT_DOMAIN_t, 0, 0, 0},{0, 0, 0, 0}};
+static swig_cast_info _swigc__p_gam__ReverbMST_float_gam__Loop1P_ipl__Trunc_GAM_DEFAULT_DOMAIN_t[] = {  {&_swigt__p_gam__ReverbMST_float_gam__Loop1P_ipl__Trunc_GAM_DEFAULT_DOMAIN_t, 0, 0, 0},{0, 0, 0, 0}};
+static swig_cast_info _swigc__p_gam__RingT_float_t[] = {  {&_swigt__p_gam__RingT_float_t, 0, 0, 0},  {&_swigt__p_gam__DoubleRingT_float_t, _p_gam__DoubleRingT_float_tTo_p_gam__RingT_float_t, 0, 0},  {&_swigt__p_gam__DelayNT_float_t, _p_gam__DelayNT_float_tTo_p_gam__RingT_float_t, 0, 0},  {&_swigt__p_gam__MovingAvgT_float_t, _p_gam__MovingAvgT_float_tTo_p_gam__RingT_float_t, 0, 0},{0, 0, 0, 0}};
 static swig_cast_info _swigc__p_gam__STFT[] = {  {&_swigt__p_gam__STFT, 0, 0, 0},{0, 0, 0, 0}};
-static swig_cast_info _swigc__p_gam__SawT_float_t[] = {  {&_swigt__p_gam__SawT_float_t, 0, 0, 0},{0, 0, 0, 0}};
+static swig_cast_info _swigc__p_gam__SamplePlayerT_float_ipl__Trunc_phsInc__OneShot_GAM_DEFAULT_DOMAIN_t[] = {  {&_swigt__p_gam__SamplePlayerT_float_ipl__Trunc_phsInc__OneShot_GAM_DEFAULT_DOMAIN_t, 0, 0, 0},{0, 0, 0, 0}};
+static swig_cast_info _swigc__p_gam__SawT_float_GAM_DEFAULT_DOMAIN_t[] = {  {&_swigt__p_gam__SawT_float_GAM_DEFAULT_DOMAIN_t, 0, 0, 0},{0, 0, 0, 0}};
 static swig_cast_info _swigc__p_gam__SilenceDetect[] = {  {&_swigt__p_gam__SilenceDetect, 0, 0, 0},{0, 0, 0, 0}};
-static swig_cast_info _swigc__p_gam__SineT_float_t[] = {  {&_swigt__p_gam__SineT_float_t, 0, 0, 0},{0, 0, 0, 0}};
+static swig_cast_info _swigc__p_gam__SineDT_float_GAM_DEFAULT_DOMAIN_t[] = {  {&_swigt__p_gam__SineDT_float_GAM_DEFAULT_DOMAIN_t, 0, 0, 0},{0, 0, 0, 0}};
+static swig_cast_info _swigc__p_gam__SineDsT_float_GAM_DEFAULT_DOMAIN_t[] = {  {&_swigt__p_gam__SineDsT_float_GAM_DEFAULT_DOMAIN_t, 0, 0, 0},{0, 0, 0, 0}};
+static swig_cast_info _swigc__p_gam__SineRT_float_GAM_DEFAULT_DOMAIN_t[] = {  {&_swigt__p_gam__SineRT_float_GAM_DEFAULT_DOMAIN_t, 0, 0, 0},{0, 0, 0, 0}};
+static swig_cast_info _swigc__p_gam__SineRsT_float_GAM_DEFAULT_DOMAIN_t[] = {  {&_swigt__p_gam__SineRsT_float_GAM_DEFAULT_DOMAIN_t, 0, 0, 0},{0, 0, 0, 0}};
+static swig_cast_info _swigc__p_gam__SineT_float_GAM_DEFAULT_DOMAIN_t[] = {  {&_swigt__p_gam__SineT_float_GAM_DEFAULT_DOMAIN_t, 0, 0, 0},{0, 0, 0, 0}};
 static swig_cast_info _swigc__p_gam__SliceT_float_t[] = {  {&_swigt__p_gam__SliceT_float_t, 0, 0, 0},{0, 0, 0, 0}};
 static swig_cast_info _swigc__p_gam__SlidingDFTT_float_t[] = {  {&_swigt__p_gam__SlidingDFTT_float_t, 0, 0, 0},{0, 0, 0, 0}};
 static swig_cast_info _swigc__p_gam__SlidingWindowT_float_t[] = {  {&_swigt__p_gam__SlidingWindowT_float_t, 0, 0, 0},{0, 0, 0, 0}};
+static swig_cast_info _swigc__p_gam__SoundFile[] = {  {&_swigt__p_gam__SoundFile, 0, 0, 0},{0, 0, 0, 0}};
+static swig_cast_info _swigc__p_gam__SquareT_float_GAM_DEFAULT_DOMAIN_t[] = {  {&_swigt__p_gam__SquareT_float_GAM_DEFAULT_DOMAIN_t, 0, 0, 0},{0, 0, 0, 0}};
+static swig_cast_info _swigc__p_gam__SweepT_phsInc__Loop_GAM_DEFAULT_DOMAIN_t[] = {  {&_swigt__p_gam__SweepT_phsInc__Loop_GAM_DEFAULT_DOMAIN_t, 0, 0, 0},{0, 0, 0, 0}};
 static swig_cast_info _swigc__p_gam__ThresholdT_float_t[] = {  {&_swigt__p_gam__ThresholdT_float_t, 0, 0, 0},{0, 0, 0, 0}};
 static swig_cast_info _swigc__p_gam__VecT_2_float_t[] = {  {&_swigt__p_gam__VecT_2_float_t, 0, 0, 0},{0, 0, 0, 0}};
+static swig_cast_info _swigc__p_gam__Vowel[] = {  {&_swigt__p_gam__Vowel, 0, 0, 0},{0, 0, 0, 0}};
 static swig_cast_info _swigc__p_gam__ZeroCrossRateT_float_t[] = {  {&_swigt__p_gam__ZeroCrossRateT_float_t, 0, 0, 0},{0, 0, 0, 0}};
 static swig_cast_info _swigc__p_gam__real[] = {  {&_swigt__p_gam__real, 0, 0, 0},{0, 0, 0, 0}};
 static swig_cast_info _swigc__p_int[] = {  {&_swigt__p_int, 0, 0, 0},{0, 0, 0, 0}};
 static swig_cast_info _swigc__p_ipl__Type[] = {  {&_swigt__p_ipl__Type, 0, 0, 0},{0, 0, 0, 0}};
 static swig_cast_info _swigc__p_long_long[] = {  {&_swigt__p_long_long, 0, 0, 0},{0, 0, 0, 0}};
+static swig_cast_info _swigc__p_p_float[] = {  {&_swigt__p_p_float, 0, 0, 0},{0, 0, 0, 0}};
+static swig_cast_info _swigc__p_phsInc__Loop[] = {  {&_swigt__p_phsInc__Loop, 0, 0, 0},{0, 0, 0, 0}};
 static swig_cast_info _swigc__p_short[] = {  {&_swigt__p_short, 0, 0, 0},{0, 0, 0, 0}};
 static swig_cast_info _swigc__p_signed_char[] = {  {&_swigt__p_signed_char, 0, 0, 0},{0, 0, 0, 0}};
 static swig_cast_info _swigc__p_size_type[] = {  {&_swigt__p_size_type, 0, 0, 0},{0, 0, 0, 0}};
 static swig_cast_info _swigc__p_std__string[] = {  {&_swigt__p_std__string, 0, 0, 0},{0, 0, 0, 0}};
 static swig_cast_info _swigc__p_std__vectorT_float_t[] = {  {&_swigt__p_std__vectorT_float_t, 0, 0, 0},{0, 0, 0, 0}};
+static swig_cast_info _swigc__p_std__vectorT_gam__CombT_float_ipl__Trunc_float_gam__Domain1_t_t[] = {  {&_swigt__p_std__vectorT_gam__CombT_float_ipl__Trunc_float_gam__Domain1_t_t, 0, 0, 0},{0, 0, 0, 0}};
+static swig_cast_info _swigc__p_std__vectorT_gam__EchoT_float_ipl__Trunc_gam__Loop1P_gam__Domain1_t_t[] = {  {&_swigt__p_std__vectorT_gam__EchoT_float_ipl__Trunc_gam__Loop1P_gam__Domain1_t_t, 0, 0, 0},{0, 0, 0, 0}};
 static swig_cast_info _swigc__p_std__vectorT_gam__real_t[] = {  {&_swigt__p_std__vectorT_gam__real_t, 0, 0, 0},{0, 0, 0, 0}};
 static swig_cast_info _swigc__p_unsigned_char[] = {  {&_swigt__p_unsigned_char, 0, 0, 0},{0, 0, 0, 0}};
 static swig_cast_info _swigc__p_unsigned_int[] = {  {&_swigt__p_unsigned_int, 0, 0, 0},{0, 0, 0, 0}};
@@ -29898,11 +53711,15 @@ static swig_cast_info _swigc__p_value_type[] = {  {&_swigt__p_value_type, 0, 0, 
 static swig_cast_info _swigc__p_void[] = {  {&_swigt__p_void, 0, 0, 0},{0, 0, 0, 0}};
 
 static swig_cast_info *swig_cast_initial[] = {
+  _swigc__p_Allpasses,
   _swigc__p_AudioCallback,
   _swigc__p_AudioIOData,
+  _swigc__p_Base,
   _swigc__p_BiquadT_t,
   _swigc__p_CSineT_double_t,
   _swigc__p_CSineT_float_t,
+  _swigc__p_Combs,
+  _swigc__p_ComplexT_float_t,
   _swigc__p_DecayT_float_t,
   _swigc__p_DecayT_t,
   _swigc__p_Domain,
@@ -29916,12 +53733,18 @@ static swig_cast_info *swig_cast_initial[] = {
   _swigc__p_SWIGLUA_REF,
   _swigc__p_SawT_float_t,
   _swigc__p_SineT_float_t,
+  _swigc__p_VecT_2_float_t,
   _swigc__p_WindowType,
+  _swigc__p_complex,
   _swigc__p_difference_type,
   _swigc__p_double,
   _swigc__p_f_r_gam__AudioIOData__void,
   _swigc__p_float,
   _swigc__p_gam__AMT_float_t,
+  _swigc__p_gam__AccumPhaseT_float_GAM_DEFAULT_DOMAIN_t,
+  _swigc__p_gam__AccumT_phsInc__Loop_GAM_DEFAULT_DOMAIN_t,
+  _swigc__p_gam__AllPass1T_float_float_GAM_DEFAULT_DOMAIN_t,
+  _swigc__p_gam__AllPass2T_float_float_GAM_DEFAULT_DOMAIN_t,
   _swigc__p_gam__ArrayPow2T_float_t,
   _swigc__p_gam__ArrayT_float_t,
   _swigc__p_gam__AudioCallback,
@@ -29929,10 +53752,14 @@ static swig_cast_info *swig_cast_initial[] = {
   _swigc__p_gam__AudioIO,
   _swigc__p_gam__AudioIOData,
   _swigc__p_gam__Biquad3,
-  _swigc__p_gam__BiquadT_t,
+  _swigc__p_gam__BiquadT_float_float_GAM_DEFAULT_DOMAIN_t,
+  _swigc__p_gam__BiquadT_gam__real_gam__real_GAM_DEFAULT_DOMAIN_t,
+  _swigc__p_gam__BlockDCT_float_float_GAM_DEFAULT_DOMAIN_t,
+  _swigc__p_gam__BlockNyqT_float_float_GAM_DEFAULT_DOMAIN_t,
   _swigc__p_gam__Burst,
-  _swigc__p_gam__CSineT_double_t,
-  _swigc__p_gam__CSineT_float_t,
+  _swigc__p_gam__BuzzT_float_GAM_DEFAULT_DOMAIN_t,
+  _swigc__p_gam__CSineT_double_GAM_DEFAULT_DOMAIN_t,
+  _swigc__p_gam__CSineT_float_GAM_DEFAULT_DOMAIN_t,
   _swigc__p_gam__ChebyNT_1_float_t,
   _swigc__p_gam__ChebyNT_2_float_t,
   _swigc__p_gam__ChebyNT_3_float_t,
@@ -29943,53 +53770,92 @@ static swig_cast_info *swig_cast_initial[] = {
   _swigc__p_gam__ChebyNT_8_float_t,
   _swigc__p_gam__ChebyNT_9_float_t,
   _swigc__p_gam__ChirpT_float_t,
+  _swigc__p_gam__ChirpletT_float_GAM_DEFAULT_DOMAIN_t,
   _swigc__p_gam__ChorusT_float_t,
   _swigc__p_gam__CombT_float_ipl__Cubic_gam__real_GAM_DEFAULT_DOMAIN_t,
   _swigc__p_gam__CombT_float_ipl__Linear_gam__real_GAM_DEFAULT_DOMAIN_t,
+  _swigc__p_gam__ComplexT_float_t,
   _swigc__p_gam__DFT,
+  _swigc__p_gam__DSFT_float_GAM_DEFAULT_DOMAIN_t,
+  _swigc__p_gam__DWOT_phsInc__Loop_GAM_DEFAULT_DOMAIN_t,
   _swigc__p_gam__DecayT_float_t,
   _swigc__p_gam__Delay1T_float_t,
   _swigc__p_gam__Delay2T_float_t,
   _swigc__p_gam__DelayNT_float_t,
   _swigc__p_gam__DelayT_float_ipl__Linear_GAM_DEFAULT_DOMAIN_t,
+  _swigc__p_gam__DifferencerT_float_t,
+  _swigc__p_gam__DistT_2_float_t,
   _swigc__p_gam__Domain,
   _swigc__p_gam__Domain1,
   _swigc__p_gam__DomainObserver,
   _swigc__p_gam__DoubleRingT_float_t,
+  _swigc__p_gam__EchoCSineT_float_ipl__Linear_gam__LoopGain_GAM_DEFAULT_DOMAIN_t,
+  _swigc__p_gam__EchoT_float_ipl__Linear_gam__LoopGain_GAM_DEFAULT_DOMAIN_t,
   _swigc__p_gam__EnvFollowT_float_gam__real_gam__GAM_DEFAULT_DOMAIN_t,
   _swigc__p_gam__FreqShiftT_float_t,
-  _swigc__p_gam__HilbertT_float_t,
+  _swigc__p_gam__HilbertT_float_float_t,
+  _swigc__p_gam__HilbertT_float_gam__real_t,
   _swigc__p_gam__IndexMapT_float_t,
+  _swigc__p_gam__IntegratorT_float_float_t,
+  _swigc__p_gam__LFOT_phsInc__Loop_GAM_DEFAULT_DOMAIN_t,
+  _swigc__p_gam__Loop1P1ZT_float_t,
+  _swigc__p_gam__Loop1PT_float_t,
+  _swigc__p_gam__LoopGainT_float_t,
   _swigc__p_gam__MaxAbsT_float_t,
   _swigc__p_gam__MonoSynth,
+  _swigc__p_gam__MovingAvgT_float_t,
   _swigc__p_gam__MultitapT_float_ipl__Linear_GAM_DEFAULT_DOMAIN_t,
+  _swigc__p_gam__NoiseBinaryT_RNGLinCon_t,
+  _swigc__p_gam__NoiseBrownT_RNGLinCon_t,
+  _swigc__p_gam__NoisePinkT_RNGLinCon_t,
+  _swigc__p_gam__NoiseVioletT_RNGLinCon_t,
+  _swigc__p_gam__NoiseWhiteT_RNGLinCon_t,
   _swigc__p_gam__NoiseWhiteT_gam__RNGMulCon_t,
+  _swigc__p_gam__NotchT_float_float_GAM_DEFAULT_DOMAIN_t,
+  _swigc__p_gam__OnePoleT_float_float_GAM_DEFAULT_DOMAIN_t,
+  _swigc__p_gam__OnePoleT_float_gam__real_GAM_DEFAULT_DOMAIN_t,
   _swigc__p_gam__OnePoleT_float_gam__real_gam__GAM_DEFAULT_DOMAIN_t,
-  _swigc__p_gam__OnePoleT_float_t,
+  _swigc__p_gam__OscT_float_ipl__Linear_phsInc__Loop_GAM_DEFAULT_DOMAIN_t,
   _swigc__p_gam__PCounter,
   _swigc__p_gam__PanT_float_t,
   _swigc__p_gam__Pluck,
   _swigc__p_gam__QuantizerT_float_GAM_DEFAULT_DOMAIN_t,
+  _swigc__p_gam__Recorder,
+  _swigc__p_gam__ResonT_float_float_GAM_DEFAULT_DOMAIN_t,
+  _swigc__p_gam__ReverbMST_float_gam__Loop1P_ipl__Trunc_GAM_DEFAULT_DOMAIN_t,
   _swigc__p_gam__RingT_float_t,
   _swigc__p_gam__STFT,
-  _swigc__p_gam__SawT_float_t,
+  _swigc__p_gam__SamplePlayerT_float_ipl__Trunc_phsInc__OneShot_GAM_DEFAULT_DOMAIN_t,
+  _swigc__p_gam__SawT_float_GAM_DEFAULT_DOMAIN_t,
   _swigc__p_gam__SilenceDetect,
-  _swigc__p_gam__SineT_float_t,
+  _swigc__p_gam__SineDT_float_GAM_DEFAULT_DOMAIN_t,
+  _swigc__p_gam__SineDsT_float_GAM_DEFAULT_DOMAIN_t,
+  _swigc__p_gam__SineRT_float_GAM_DEFAULT_DOMAIN_t,
+  _swigc__p_gam__SineRsT_float_GAM_DEFAULT_DOMAIN_t,
+  _swigc__p_gam__SineT_float_GAM_DEFAULT_DOMAIN_t,
   _swigc__p_gam__SliceT_float_t,
   _swigc__p_gam__SlidingDFTT_float_t,
   _swigc__p_gam__SlidingWindowT_float_t,
+  _swigc__p_gam__SoundFile,
+  _swigc__p_gam__SquareT_float_GAM_DEFAULT_DOMAIN_t,
+  _swigc__p_gam__SweepT_phsInc__Loop_GAM_DEFAULT_DOMAIN_t,
   _swigc__p_gam__ThresholdT_float_t,
   _swigc__p_gam__VecT_2_float_t,
+  _swigc__p_gam__Vowel,
   _swigc__p_gam__ZeroCrossRateT_float_t,
   _swigc__p_gam__real,
   _swigc__p_int,
   _swigc__p_ipl__Type,
   _swigc__p_long_long,
+  _swigc__p_p_float,
+  _swigc__p_phsInc__Loop,
   _swigc__p_short,
   _swigc__p_signed_char,
   _swigc__p_size_type,
   _swigc__p_std__string,
   _swigc__p_std__vectorT_float_t,
+  _swigc__p_std__vectorT_gam__CombT_float_ipl__Trunc_float_gam__Domain1_t_t,
+  _swigc__p_std__vectorT_gam__EchoT_float_ipl__Trunc_gam__Loop1P_gam__Domain1_t_t,
   _swigc__p_std__vectorT_gam__real_t,
   _swigc__p_unsigned_char,
   _swigc__p_unsigned_int,

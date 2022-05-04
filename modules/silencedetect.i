@@ -16,7 +16,7 @@ namespace gam
         void reset();
 
         %extend {
-            bool get(const SampleType& input, const SampleType& threshold = SampleType(0.001)) { return (*$self)(input,threshold); }
+            bool Tick(const SampleType& input, const SampleType& threshold = SampleType(0.001)) { return (*$self)(input,threshold); }
         }
 
 

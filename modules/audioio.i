@@ -47,7 +47,7 @@ namespace gam
         
         
         %extend {
-            bool get() const { return (*$self)(); }
+            bool Tick() const { return (*$self)(); }
         }    
         
         

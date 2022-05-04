@@ -19,7 +19,7 @@ namespace gam
         Tv operator()(Tv i0);
 
         %extend {
-            Tv __getitem__(Tv i0) { return (*$self)(i0); }
+            Tv Tick(Tv i0) { return (*$self)(i0); }
 
             gam::OnePole<Tv,Tp,Td>& get_filter() { return $self->lpf; }
         }

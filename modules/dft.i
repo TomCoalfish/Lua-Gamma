@@ -25,9 +25,9 @@ namespace gam {
         const T * window();
         
         %extend {
-            const T* foo() { return (*$self)(); }
-            bool  get(T input) { return (*$self)(input); }
-            bool  get(T * dst, T input) { return (*$self)(dst,input); }
+            const T* Get() { return (*$self)(); }
+            bool  Tick(T input) { return (*$self)(input); }
+            bool  Process(T * dst, T input) { return (*$self)(dst,input); }
         }            
     };
 
@@ -86,8 +86,8 @@ namespace gam {
         Domain& domainHop();				///< Hop domain
 
         %extend {
-            bool get(float input) { return (*$self)(input); }
-            float bang() { return (*$self)(); }
+            bool  Process(float input) { return (*$self)(input); }
+            float Tick() { return (*$self)(); }
         }
         void forward(const float * src=0);	
         virtual void inverse(float * dst=0);
@@ -112,7 +112,7 @@ namespace gam {
         bool operator()(float input);
 
         %extend {
-            bool get(float input) { return (*$self)(input); }
+            bool Tick(float input) { return (*$self)(input); }
         }
 
         void forward(const float * src=0);

@@ -21,7 +21,7 @@ namespace gam
         Curve& set(Tp length, Tp curve, Tv start=Tv(0), Tv end=Tv(1));
 
         %extend {
-            Tv next() { return (*$self)(); }
+            Tv Tick() { return (*$self)(); }
         }
     };
 
@@ -139,7 +139,7 @@ namespace gam
         T value() const;		///< Returns current value
 
         %extend {
-            T next() { return (*$self)(); }
+            T Tick() { return (*$self)(); }
         }
         void decay(T v);		///< Set number of units for curve to decay -60 dB
 
@@ -159,7 +159,7 @@ namespace gam
         bool done() const;
 
         %extend {
-            T filter(const T& v) { return (*$self)(v); }
+            T Tick(const T& v) { return (*$self)(v); }
         }
 
         Gate& delay(double v);
@@ -183,7 +183,7 @@ namespace gam
         void operator= (Tv v);
 
         %extend {
-            Tv next() { return (*$self)(); }
+            Tv Tick() { return (*$self)(); }
         }
 
         /*
@@ -219,7 +219,7 @@ namespace gam
         bool done() const;
 
         %extend {
-            T next() { return (*$self)(); }
+            T Tick() { return (*$self)(); }
         }
 
         void operator= (T v);

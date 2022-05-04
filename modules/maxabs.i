@@ -19,7 +19,7 @@ namespace gam {
         
 		%extend
 		{
-            Tv __getitem__(const Tv& in) { return (*$self)(in); }        			
+            Tv Tick(const Tv& in) { return (*$self)(in); }        			
 		}
 
     };

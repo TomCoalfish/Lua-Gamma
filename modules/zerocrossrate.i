@@ -10,7 +10,7 @@ namespace gam {
         ZeroCrossRate(int winSize=256);
         float value() const;
         %extend {
-            Tv __getitem__(Tv input) { return (*$self)(input); }
+            Tv Tick(Tv input) { return (*$self)(input); }
         }
    };
 }

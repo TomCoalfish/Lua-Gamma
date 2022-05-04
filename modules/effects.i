@@ -12,7 +12,7 @@ namespace gam
         void depth(Tp v);
 
         %extend {
-            Tp get(Tp car, Tp mod) { return (*$self)(car,mod); }
+            Tp Tick(Tp car, Tp mod) { return (*$self)(car,mod); }
         }
     };
 
@@ -24,7 +24,7 @@ namespace gam
         void freq(float f0, float f1, float f2);
             
         %extend {
-            float __getitem__(float i0) { return (*$self)(i0); }
+            float Tick(float i0) { return (*$self)(i0); }
             gam::Biquad<>& get_bq0() { return $self->bq0; }
             gam::Biquad<>& get_bq1() { return $self->bq1; }
             gam::Biquad<>& get_bq2() { return $self->bq2; }
@@ -69,8 +69,8 @@ namespace gam
         }
         
         %extend {
-            T bang() { return (*$self)(); }
-            void exec(T f1, T f2, T d, bool doReset=false) { return (*$self)(f1,f2,d,doReset); }
+            T Tick() { return (*$self)(); }
+            void Process(T f1, T f2, T d, bool doReset=false) { return (*$self)(f1,f2,d,doReset); }
 
             gam::Sine<T>& get_osc() { return $self->osc; }
             gam::Decay<T>& get_env() { return $self->env;}
@@ -114,14 +114,9 @@ namespace gam
         Chorus& freq(float v);
         Chorus& depth(float v);
 
-        T operator()(const T& v){
-            modulate();
-            return (comb1(v) + comb2(v)) * 0.5f;
-        }
-
         %extend {
-            T exec_sample(const T &v) { return (*$self)(v); }
-            void exec_on(const T & in, T& o1, T& o2) { return (*$self)(in,o1,o2); }
+            T    Tick(const T &v) { return (*$self)(v); }
+            void Process(const T & in, T& o1, T& o2) { return (*$self)(in,o1,o2); }
             void filter_stereo(const gam::Vec<2,SampleType> & v) { (*$self)(v); }
             void filter_samples(const T& i1, const T& i2, T & o1, T& o2) { (*$self)(i1,i2,o1,o2); }
             gam::Comb<T, ipl::Cubic>& get_comb1() { return $self->comb1; }
@@ -141,7 +136,7 @@ namespace gam
         FreqShift(float shift=1);
 
         %extend {
-            T exec(T in) { return (*$self)(in); }
+            T Tick(T in) { return (*$self)(in); }
             gam::CSine<T> get_mod() { return $self->mod; }
             gam::Hilbert<T> get_hil() { return $self->hil; }
         }        
@@ -157,7 +152,7 @@ namespace gam
         MonoSynth(float freq=440, float dur=0.8, float ctf1=1000, float ctf2=100, float res=3);
         
         %extend {
-            float bang() { return (*$self)(); }
+            float Tick() { return (*$self)(); }
             gam::Saw<float>& get_osc() { return $self->osc; }
             gam::Decay<float>& get_env() { return $self->env; }
             gam::OnePole<float>& get_opEnv() { return $self->opEnv; }
@@ -180,7 +175,7 @@ namespace gam
         Pan(T pos=0);
 
         %extend {
-            gam::Vec<2,T> exec(T in) { return (*$self)(in); }
+            gam::Vec<2,T> Tick(T in) { return (*$self)(in); }
             void filter(T in, SampleType & out1, SampleType & out2) { (*$self)(in,out1,out2); }
             void filter_sample(T in1, T in2, SampleType &out1, SampleType &out2) { (*$self)(in1,in2,out1,out2); }
         }
@@ -195,7 +190,7 @@ namespace gam
         Pluck(double freq=440, double decay=0.99);
         
         %extend {
-            float bang() { return (*$self)(); }
+            float Tick() { return (*$self)(); }
             float filter(float in) { return (*$self)(in); }
         }
         void reset(){ env.reset(); }
@@ -217,16 +212,9 @@ namespace gam
         void freq(double v);        
         void period(double v);
         void step(float v);
-        T operator()(T in){
-            if(++mCount >= mSamples){
-                mCount -= mSamples;
-                mHeld = mDoStep ? scl::roundN(in, mStep, mStepRec) : in;
-            }
-            return mHeld;
-        }
         
         %extend {
-            T step(T in) { return (*$self)(in); }
+            T Tick(T in) { return (*$self)(in); }
         }
         virtual void onDomainChange(double r);
     };

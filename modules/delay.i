@@ -82,7 +82,7 @@ namespace gam {
         void write(const T& v);
 
         %extend {
-            T __getitem__(const T& v ) { return (*$self)(v); }
+            T Tick(const T& v ) { return (*$self)(v); }
         }
         /// Get size of delay
         static unsigned size();
@@ -127,7 +127,7 @@ namespace gam {
         Tv operator()(const Tv& i0, const Tv& oN);	///< Circulate filter with ffd & fbk
 
         %extend {
-            Tv bang() { return (*$self)(); }
+            Tv Tick() { return (*$self)(); }
             Tv flter(const Tv &i0, const Tv &oN) { return (*$self)(i0,oN); }
             Tv filter(const Tv& i0) { return (*$self)(i0); }
         }

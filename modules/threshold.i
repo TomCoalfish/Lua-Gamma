@@ -13,8 +13,8 @@ namespace gam
         Threshold(T thresh, T freq=10);
         
         %extend {
-            T __getitem__(T in) { return (*$self)(in); }
-            T get(T in, T hi, T lo) { return (*$self)(in,hi,lo); }
+            T Tick(T in) { return (*$self)(in); }
+            T Process(T in, T hi, T lo) { return (*$self)(in,hi,lo); }
 
             gam::OnePole<T> get_lpf() { return $self->lpf; }
             T get_thresh() { return $self->thresh; }

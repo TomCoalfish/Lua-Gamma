@@ -13,7 +13,7 @@ namespace gam
 
 		%extend
 		{
-			bool get() { return (*$self)(); }
+			bool Tick() { return (*$self)(); }
 		}
 	};
 }
