@@ -2722,7 +2722,7 @@ SWIG_Lua_dostring(lua_State *L, const char *str) {
 #define SWIGTYPE_p_CSineT_double_t swig_types[5]
 #define SWIGTYPE_p_CSineT_float_t swig_types[6]
 #define SWIGTYPE_p_Combs swig_types[7]
-#define SWIGTYPE_p_ComplexT_float_t swig_types[8]
+#define SWIGTYPE_p_Complex swig_types[8]
 #define SWIGTYPE_p_DecayT_float_t swig_types[9]
 #define SWIGTYPE_p_DecayT_t swig_types[10]
 #define SWIGTYPE_p_Domain swig_types[11]
@@ -2736,138 +2736,142 @@ SWIG_Lua_dostring(lua_State *L, const char *str) {
 #define SWIGTYPE_p_SWIGLUA_REF swig_types[19]
 #define SWIGTYPE_p_SawT_float_t swig_types[20]
 #define SWIGTYPE_p_SineT_float_t swig_types[21]
-#define SWIGTYPE_p_VecT_2_float_t swig_types[22]
-#define SWIGTYPE_p_WindowType swig_types[23]
-#define SWIGTYPE_p_complex swig_types[24]
-#define SWIGTYPE_p_difference_type swig_types[25]
-#define SWIGTYPE_p_double swig_types[26]
-#define SWIGTYPE_p_f_r_gam__AudioIOData__void swig_types[27]
-#define SWIGTYPE_p_float swig_types[28]
-#define SWIGTYPE_p_gam__AMT_float_t swig_types[29]
-#define SWIGTYPE_p_gam__AccumPhaseT_float_GAM_DEFAULT_DOMAIN_t swig_types[30]
-#define SWIGTYPE_p_gam__AccumT_phsInc__Loop_GAM_DEFAULT_DOMAIN_t swig_types[31]
-#define SWIGTYPE_p_gam__AllPass1T_float_float_GAM_DEFAULT_DOMAIN_t swig_types[32]
-#define SWIGTYPE_p_gam__AllPass2T_float_float_GAM_DEFAULT_DOMAIN_t swig_types[33]
-#define SWIGTYPE_p_gam__ArrayPow2T_float_t swig_types[34]
-#define SWIGTYPE_p_gam__ArrayT_float_t swig_types[35]
-#define SWIGTYPE_p_gam__AudioCallback swig_types[36]
-#define SWIGTYPE_p_gam__AudioDevice swig_types[37]
-#define SWIGTYPE_p_gam__AudioIO swig_types[38]
-#define SWIGTYPE_p_gam__AudioIOData swig_types[39]
-#define SWIGTYPE_p_gam__Biquad3 swig_types[40]
-#define SWIGTYPE_p_gam__BiquadT_float_float_GAM_DEFAULT_DOMAIN_t swig_types[41]
-#define SWIGTYPE_p_gam__BiquadT_gam__real_gam__real_GAM_DEFAULT_DOMAIN_t swig_types[42]
-#define SWIGTYPE_p_gam__BlockDCT_float_float_GAM_DEFAULT_DOMAIN_t swig_types[43]
-#define SWIGTYPE_p_gam__BlockNyqT_float_float_GAM_DEFAULT_DOMAIN_t swig_types[44]
-#define SWIGTYPE_p_gam__Burst swig_types[45]
-#define SWIGTYPE_p_gam__BuzzT_float_GAM_DEFAULT_DOMAIN_t swig_types[46]
-#define SWIGTYPE_p_gam__CSineT_double_GAM_DEFAULT_DOMAIN_t swig_types[47]
-#define SWIGTYPE_p_gam__CSineT_float_GAM_DEFAULT_DOMAIN_t swig_types[48]
-#define SWIGTYPE_p_gam__ChebyNT_1_float_t swig_types[49]
-#define SWIGTYPE_p_gam__ChebyNT_2_float_t swig_types[50]
-#define SWIGTYPE_p_gam__ChebyNT_3_float_t swig_types[51]
-#define SWIGTYPE_p_gam__ChebyNT_4_float_t swig_types[52]
-#define SWIGTYPE_p_gam__ChebyNT_5_float_t swig_types[53]
-#define SWIGTYPE_p_gam__ChebyNT_6_float_t swig_types[54]
-#define SWIGTYPE_p_gam__ChebyNT_7_float_t swig_types[55]
-#define SWIGTYPE_p_gam__ChebyNT_8_float_t swig_types[56]
-#define SWIGTYPE_p_gam__ChebyNT_9_float_t swig_types[57]
-#define SWIGTYPE_p_gam__ChirpT_float_t swig_types[58]
-#define SWIGTYPE_p_gam__ChirpletT_float_GAM_DEFAULT_DOMAIN_t swig_types[59]
-#define SWIGTYPE_p_gam__ChorusT_float_t swig_types[60]
-#define SWIGTYPE_p_gam__CombT_float_ipl__Cubic_gam__real_GAM_DEFAULT_DOMAIN_t swig_types[61]
-#define SWIGTYPE_p_gam__CombT_float_ipl__Linear_gam__real_GAM_DEFAULT_DOMAIN_t swig_types[62]
-#define SWIGTYPE_p_gam__ComplexT_float_t swig_types[63]
-#define SWIGTYPE_p_gam__DFT swig_types[64]
-#define SWIGTYPE_p_gam__DSFT_float_GAM_DEFAULT_DOMAIN_t swig_types[65]
-#define SWIGTYPE_p_gam__DWOT_phsInc__Loop_GAM_DEFAULT_DOMAIN_t swig_types[66]
-#define SWIGTYPE_p_gam__DecayT_float_t swig_types[67]
-#define SWIGTYPE_p_gam__Delay1T_float_t swig_types[68]
-#define SWIGTYPE_p_gam__Delay2T_float_t swig_types[69]
-#define SWIGTYPE_p_gam__DelayNT_float_t swig_types[70]
-#define SWIGTYPE_p_gam__DelayT_float_ipl__Linear_GAM_DEFAULT_DOMAIN_t swig_types[71]
-#define SWIGTYPE_p_gam__DifferencerT_float_t swig_types[72]
-#define SWIGTYPE_p_gam__DistT_2_float_t swig_types[73]
-#define SWIGTYPE_p_gam__Domain swig_types[74]
-#define SWIGTYPE_p_gam__Domain1 swig_types[75]
-#define SWIGTYPE_p_gam__DomainObserver swig_types[76]
-#define SWIGTYPE_p_gam__DoubleRingT_float_t swig_types[77]
-#define SWIGTYPE_p_gam__EchoCSineT_float_ipl__Linear_gam__LoopGain_GAM_DEFAULT_DOMAIN_t swig_types[78]
-#define SWIGTYPE_p_gam__EchoT_float_ipl__Linear_gam__LoopGain_GAM_DEFAULT_DOMAIN_t swig_types[79]
-#define SWIGTYPE_p_gam__EnvFollowT_float_gam__real_gam__GAM_DEFAULT_DOMAIN_t swig_types[80]
-#define SWIGTYPE_p_gam__FreqShiftT_float_t swig_types[81]
-#define SWIGTYPE_p_gam__HilbertT_float_float_t swig_types[82]
-#define SWIGTYPE_p_gam__HilbertT_float_gam__real_t swig_types[83]
-#define SWIGTYPE_p_gam__IndexMapT_float_t swig_types[84]
-#define SWIGTYPE_p_gam__IntegratorT_float_float_t swig_types[85]
-#define SWIGTYPE_p_gam__LFOT_phsInc__Loop_GAM_DEFAULT_DOMAIN_t swig_types[86]
-#define SWIGTYPE_p_gam__Loop1P1ZT_float_t swig_types[87]
-#define SWIGTYPE_p_gam__Loop1PT_float_t swig_types[88]
-#define SWIGTYPE_p_gam__LoopGainT_float_t swig_types[89]
-#define SWIGTYPE_p_gam__MaxAbsT_float_t swig_types[90]
-#define SWIGTYPE_p_gam__MonoSynth swig_types[91]
-#define SWIGTYPE_p_gam__MovingAvgT_float_t swig_types[92]
-#define SWIGTYPE_p_gam__MultitapT_float_ipl__Linear_GAM_DEFAULT_DOMAIN_t swig_types[93]
-#define SWIGTYPE_p_gam__NoiseBinaryT_RNGLinCon_t swig_types[94]
-#define SWIGTYPE_p_gam__NoiseBrownT_RNGLinCon_t swig_types[95]
-#define SWIGTYPE_p_gam__NoisePinkT_RNGLinCon_t swig_types[96]
-#define SWIGTYPE_p_gam__NoiseVioletT_RNGLinCon_t swig_types[97]
-#define SWIGTYPE_p_gam__NoiseWhiteT_RNGLinCon_t swig_types[98]
-#define SWIGTYPE_p_gam__NoiseWhiteT_gam__RNGMulCon_t swig_types[99]
-#define SWIGTYPE_p_gam__NotchT_float_float_GAM_DEFAULT_DOMAIN_t swig_types[100]
-#define SWIGTYPE_p_gam__OnePoleT_float_float_GAM_DEFAULT_DOMAIN_t swig_types[101]
-#define SWIGTYPE_p_gam__OnePoleT_float_gam__real_GAM_DEFAULT_DOMAIN_t swig_types[102]
-#define SWIGTYPE_p_gam__OnePoleT_float_gam__real_gam__GAM_DEFAULT_DOMAIN_t swig_types[103]
-#define SWIGTYPE_p_gam__OscT_float_ipl__Linear_phsInc__Loop_GAM_DEFAULT_DOMAIN_t swig_types[104]
-#define SWIGTYPE_p_gam__PCounter swig_types[105]
-#define SWIGTYPE_p_gam__PanT_float_t swig_types[106]
-#define SWIGTYPE_p_gam__Pluck swig_types[107]
-#define SWIGTYPE_p_gam__QuantizerT_float_GAM_DEFAULT_DOMAIN_t swig_types[108]
-#define SWIGTYPE_p_gam__Recorder swig_types[109]
-#define SWIGTYPE_p_gam__ResonT_float_float_GAM_DEFAULT_DOMAIN_t swig_types[110]
-#define SWIGTYPE_p_gam__ReverbMST_float_gam__Loop1P_ipl__Trunc_GAM_DEFAULT_DOMAIN_t swig_types[111]
-#define SWIGTYPE_p_gam__RingT_float_t swig_types[112]
-#define SWIGTYPE_p_gam__STFT swig_types[113]
-#define SWIGTYPE_p_gam__SamplePlayerT_float_ipl__Trunc_phsInc__OneShot_GAM_DEFAULT_DOMAIN_t swig_types[114]
-#define SWIGTYPE_p_gam__SawT_float_GAM_DEFAULT_DOMAIN_t swig_types[115]
-#define SWIGTYPE_p_gam__SilenceDetect swig_types[116]
-#define SWIGTYPE_p_gam__SineDT_float_GAM_DEFAULT_DOMAIN_t swig_types[117]
-#define SWIGTYPE_p_gam__SineDsT_float_GAM_DEFAULT_DOMAIN_t swig_types[118]
-#define SWIGTYPE_p_gam__SineRT_float_GAM_DEFAULT_DOMAIN_t swig_types[119]
-#define SWIGTYPE_p_gam__SineRsT_float_GAM_DEFAULT_DOMAIN_t swig_types[120]
-#define SWIGTYPE_p_gam__SineT_float_GAM_DEFAULT_DOMAIN_t swig_types[121]
-#define SWIGTYPE_p_gam__SliceT_float_t swig_types[122]
-#define SWIGTYPE_p_gam__SlidingDFTT_float_t swig_types[123]
-#define SWIGTYPE_p_gam__SlidingWindowT_float_t swig_types[124]
-#define SWIGTYPE_p_gam__SoundFile swig_types[125]
-#define SWIGTYPE_p_gam__SquareT_float_GAM_DEFAULT_DOMAIN_t swig_types[126]
-#define SWIGTYPE_p_gam__SweepT_phsInc__Loop_GAM_DEFAULT_DOMAIN_t swig_types[127]
-#define SWIGTYPE_p_gam__ThresholdT_float_t swig_types[128]
-#define SWIGTYPE_p_gam__VecT_2_float_t swig_types[129]
-#define SWIGTYPE_p_gam__Vowel swig_types[130]
-#define SWIGTYPE_p_gam__ZeroCrossRateT_float_t swig_types[131]
-#define SWIGTYPE_p_gam__real swig_types[132]
-#define SWIGTYPE_p_int swig_types[133]
-#define SWIGTYPE_p_ipl__Type swig_types[134]
-#define SWIGTYPE_p_long_long swig_types[135]
-#define SWIGTYPE_p_p_float swig_types[136]
-#define SWIGTYPE_p_phsInc__Loop swig_types[137]
-#define SWIGTYPE_p_short swig_types[138]
-#define SWIGTYPE_p_signed_char swig_types[139]
-#define SWIGTYPE_p_size_type swig_types[140]
-#define SWIGTYPE_p_std__string swig_types[141]
-#define SWIGTYPE_p_std__vectorT_float_t swig_types[142]
-#define SWIGTYPE_p_std__vectorT_gam__CombT_float_ipl__Trunc_float_gam__Domain1_t_t swig_types[143]
-#define SWIGTYPE_p_std__vectorT_gam__EchoT_float_ipl__Trunc_gam__Loop1P_gam__Domain1_t_t swig_types[144]
-#define SWIGTYPE_p_std__vectorT_gam__real_t swig_types[145]
-#define SWIGTYPE_p_unsigned_char swig_types[146]
-#define SWIGTYPE_p_unsigned_int swig_types[147]
-#define SWIGTYPE_p_unsigned_long_long swig_types[148]
-#define SWIGTYPE_p_unsigned_short swig_types[149]
-#define SWIGTYPE_p_value_type swig_types[150]
-#define SWIGTYPE_p_void swig_types[151]
-static swig_type_info *swig_types[153];
-static swig_module_info swig_module = {swig_types, 152, 0, 0, 0, 0};
+#define SWIGTYPE_p_WindowType swig_types[22]
+#define SWIGTYPE_p_complex swig_types[23]
+#define SWIGTYPE_p_difference_type swig_types[24]
+#define SWIGTYPE_p_double swig_types[25]
+#define SWIGTYPE_p_f_r_gam__AudioIOData__void swig_types[26]
+#define SWIGTYPE_p_float swig_types[27]
+#define SWIGTYPE_p_gam__AMT_float_t swig_types[28]
+#define SWIGTYPE_p_gam__AccumPhaseT_float_GAM_DEFAULT_DOMAIN_t swig_types[29]
+#define SWIGTYPE_p_gam__AccumT_phsInc__Loop_GAM_DEFAULT_DOMAIN_t swig_types[30]
+#define SWIGTYPE_p_gam__AllPass1T_float_float_GAM_DEFAULT_DOMAIN_t swig_types[31]
+#define SWIGTYPE_p_gam__AllPass2T_float_float_GAM_DEFAULT_DOMAIN_t swig_types[32]
+#define SWIGTYPE_p_gam__ArrayPow2T_float_t swig_types[33]
+#define SWIGTYPE_p_gam__ArrayT_float_t swig_types[34]
+#define SWIGTYPE_p_gam__AudioCallback swig_types[35]
+#define SWIGTYPE_p_gam__AudioDevice swig_types[36]
+#define SWIGTYPE_p_gam__AudioIO swig_types[37]
+#define SWIGTYPE_p_gam__AudioIOData swig_types[38]
+#define SWIGTYPE_p_gam__Biquad3 swig_types[39]
+#define SWIGTYPE_p_gam__BiquadT_float_float_GAM_DEFAULT_DOMAIN_t swig_types[40]
+#define SWIGTYPE_p_gam__BlockDCT_float_float_GAM_DEFAULT_DOMAIN_t swig_types[41]
+#define SWIGTYPE_p_gam__BlockNyqT_float_float_GAM_DEFAULT_DOMAIN_t swig_types[42]
+#define SWIGTYPE_p_gam__Burst swig_types[43]
+#define SWIGTYPE_p_gam__BuzzT_float_GAM_DEFAULT_DOMAIN_t swig_types[44]
+#define SWIGTYPE_p_gam__CSineT_double_GAM_DEFAULT_DOMAIN_t swig_types[45]
+#define SWIGTYPE_p_gam__CSineT_float_GAM_DEFAULT_DOMAIN_t swig_types[46]
+#define SWIGTYPE_p_gam__ChebyNT_1_float_t swig_types[47]
+#define SWIGTYPE_p_gam__ChebyNT_2_float_t swig_types[48]
+#define SWIGTYPE_p_gam__ChebyNT_3_float_t swig_types[49]
+#define SWIGTYPE_p_gam__ChebyNT_4_float_t swig_types[50]
+#define SWIGTYPE_p_gam__ChebyNT_5_float_t swig_types[51]
+#define SWIGTYPE_p_gam__ChebyNT_6_float_t swig_types[52]
+#define SWIGTYPE_p_gam__ChebyNT_7_float_t swig_types[53]
+#define SWIGTYPE_p_gam__ChebyNT_8_float_t swig_types[54]
+#define SWIGTYPE_p_gam__ChebyNT_9_float_t swig_types[55]
+#define SWIGTYPE_p_gam__ChirpT_float_t swig_types[56]
+#define SWIGTYPE_p_gam__ChirpletT_float_GAM_DEFAULT_DOMAIN_t swig_types[57]
+#define SWIGTYPE_p_gam__ChorusT_float_t swig_types[58]
+#define SWIGTYPE_p_gam__CombT_float_ipl__Cubic_float_GAM_DEFAULT_DOMAIN_t swig_types[59]
+#define SWIGTYPE_p_gam__CombT_float_ipl__Linear_float_GAM_DEFAULT_DOMAIN_t swig_types[60]
+#define SWIGTYPE_p_gam__CombT_float_ipl__Linear_gam__real_GAM_DEFAULT_DOMAIN_t swig_types[61]
+#define SWIGTYPE_p_gam__ComplexT_float_t swig_types[62]
+#define SWIGTYPE_p_gam__DFT swig_types[63]
+#define SWIGTYPE_p_gam__DSFT_float_GAM_DEFAULT_DOMAIN_t swig_types[64]
+#define SWIGTYPE_p_gam__DWOT_phsInc__Loop_GAM_DEFAULT_DOMAIN_t swig_types[65]
+#define SWIGTYPE_p_gam__DecayT_float_t swig_types[66]
+#define SWIGTYPE_p_gam__Delay1T_float_t swig_types[67]
+#define SWIGTYPE_p_gam__Delay2T_float_t swig_types[68]
+#define SWIGTYPE_p_gam__DelayNT_float_t swig_types[69]
+#define SWIGTYPE_p_gam__DelayT_float_ipl__Linear_GAM_DEFAULT_DOMAIN_t swig_types[70]
+#define SWIGTYPE_p_gam__DifferencerT_float_t swig_types[71]
+#define SWIGTYPE_p_gam__DistT_2_float_t swig_types[72]
+#define SWIGTYPE_p_gam__Domain swig_types[73]
+#define SWIGTYPE_p_gam__Domain1 swig_types[74]
+#define SWIGTYPE_p_gam__DomainObserver swig_types[75]
+#define SWIGTYPE_p_gam__DoubleRingT_float_t swig_types[76]
+#define SWIGTYPE_p_gam__EchoCSineT_float_ipl__Linear_gam__LoopGain_GAM_DEFAULT_DOMAIN_t swig_types[77]
+#define SWIGTYPE_p_gam__EchoT_float_ipl__Linear_gam__LoopGain_GAM_DEFAULT_DOMAIN_t swig_types[78]
+#define SWIGTYPE_p_gam__EnvFollowT_float_gam__real_gam__GAM_DEFAULT_DOMAIN_t swig_types[79]
+#define SWIGTYPE_p_gam__FreqShiftT_float_t swig_types[80]
+#define SWIGTYPE_p_gam__HilbertT_float_float_t swig_types[81]
+#define SWIGTYPE_p_gam__IndexMapT_float_t swig_types[82]
+#define SWIGTYPE_p_gam__IntegratorT_float_float_t swig_types[83]
+#define SWIGTYPE_p_gam__LFOT_phsInc__Loop_GAM_DEFAULT_DOMAIN_t swig_types[84]
+#define SWIGTYPE_p_gam__Loop1P1ZT_float_t swig_types[85]
+#define SWIGTYPE_p_gam__Loop1PT_float_t swig_types[86]
+#define SWIGTYPE_p_gam__LoopGainT_float_t swig_types[87]
+#define SWIGTYPE_p_gam__MaxAbsT_float_t swig_types[88]
+#define SWIGTYPE_p_gam__MonoSynth swig_types[89]
+#define SWIGTYPE_p_gam__MovingAvgT_float_t swig_types[90]
+#define SWIGTYPE_p_gam__MultitapT_float_ipl__Linear_GAM_DEFAULT_DOMAIN_t swig_types[91]
+#define SWIGTYPE_p_gam__NoiseBinaryT_RNGLinCon_t swig_types[92]
+#define SWIGTYPE_p_gam__NoiseBrownT_RNGLinCon_t swig_types[93]
+#define SWIGTYPE_p_gam__NoisePinkT_RNGLinCon_t swig_types[94]
+#define SWIGTYPE_p_gam__NoiseVioletT_RNGLinCon_t swig_types[95]
+#define SWIGTYPE_p_gam__NoiseWhiteT_RNGLinCon_t swig_types[96]
+#define SWIGTYPE_p_gam__NoiseWhiteT_gam__RNGMulCon_t swig_types[97]
+#define SWIGTYPE_p_gam__NotchT_float_float_GAM_DEFAULT_DOMAIN_t swig_types[98]
+#define SWIGTYPE_p_gam__OnePoleT_float_float_GAM_DEFAULT_DOMAIN_t swig_types[99]
+#define SWIGTYPE_p_gam__OnePoleT_float_float_gam__GAM_DEFAULT_DOMAIN_t swig_types[100]
+#define SWIGTYPE_p_gam__OscT_float_ipl__Linear_phsInc__Loop_GAM_DEFAULT_DOMAIN_t swig_types[101]
+#define SWIGTYPE_p_gam__PCounter swig_types[102]
+#define SWIGTYPE_p_gam__PanT_float_t swig_types[103]
+#define SWIGTYPE_p_gam__Pluck swig_types[104]
+#define SWIGTYPE_p_gam__QuantizerT_float_GAM_DEFAULT_DOMAIN_t swig_types[105]
+#define SWIGTYPE_p_gam__Recorder swig_types[106]
+#define SWIGTYPE_p_gam__ResonT_float_float_GAM_DEFAULT_DOMAIN_t swig_types[107]
+#define SWIGTYPE_p_gam__ReverbMST_float_gam__Loop1P_ipl__Trunc_GAM_DEFAULT_DOMAIN_t swig_types[108]
+#define SWIGTYPE_p_gam__RingT_float_t swig_types[109]
+#define SWIGTYPE_p_gam__STFT swig_types[110]
+#define SWIGTYPE_p_gam__SamplePlayerT_float_ipl__Trunc_phsInc__OneShot_GAM_DEFAULT_DOMAIN_t swig_types[111]
+#define SWIGTYPE_p_gam__SawT_float_GAM_DEFAULT_DOMAIN_t swig_types[112]
+#define SWIGTYPE_p_gam__SilenceDetect swig_types[113]
+#define SWIGTYPE_p_gam__SineDT_float_GAM_DEFAULT_DOMAIN_t swig_types[114]
+#define SWIGTYPE_p_gam__SineDsT_float_GAM_DEFAULT_DOMAIN_t swig_types[115]
+#define SWIGTYPE_p_gam__SineRT_float_GAM_DEFAULT_DOMAIN_t swig_types[116]
+#define SWIGTYPE_p_gam__SineRsT_float_GAM_DEFAULT_DOMAIN_t swig_types[117]
+#define SWIGTYPE_p_gam__SineT_float_GAM_DEFAULT_DOMAIN_t swig_types[118]
+#define SWIGTYPE_p_gam__SliceT_float_t swig_types[119]
+#define SWIGTYPE_p_gam__SlidingDFTT_float_t swig_types[120]
+#define SWIGTYPE_p_gam__SlidingWindowT_float_t swig_types[121]
+#define SWIGTYPE_p_gam__SoundFile swig_types[122]
+#define SWIGTYPE_p_gam__SquareT_float_GAM_DEFAULT_DOMAIN_t swig_types[123]
+#define SWIGTYPE_p_gam__SweepT_phsInc__Loop_GAM_DEFAULT_DOMAIN_t swig_types[124]
+#define SWIGTYPE_p_gam__ThresholdT_float_t swig_types[125]
+#define SWIGTYPE_p_gam__Timer swig_types[126]
+#define SWIGTYPE_p_gam__TransferFunc swig_types[127]
+#define SWIGTYPE_p_gam__TransferFunc__DelayUnit swig_types[128]
+#define SWIGTYPE_p_gam__VecT_2_double_t swig_types[129]
+#define SWIGTYPE_p_gam__VecT_2_float_t swig_types[130]
+#define SWIGTYPE_p_gam__VecT_3_double_t swig_types[131]
+#define SWIGTYPE_p_gam__VecT_3_float_t swig_types[132]
+#define SWIGTYPE_p_gam__VecT_4_double_t swig_types[133]
+#define SWIGTYPE_p_gam__VecT_4_float_t swig_types[134]
+#define SWIGTYPE_p_gam__Vowel swig_types[135]
+#define SWIGTYPE_p_gam__ZeroCrossRateT_float_t swig_types[136]
+#define SWIGTYPE_p_int swig_types[137]
+#define SWIGTYPE_p_ipl__Type swig_types[138]
+#define SWIGTYPE_p_long_long swig_types[139]
+#define SWIGTYPE_p_p_float swig_types[140]
+#define SWIGTYPE_p_phsInc__Loop swig_types[141]
+#define SWIGTYPE_p_short swig_types[142]
+#define SWIGTYPE_p_signed_char swig_types[143]
+#define SWIGTYPE_p_size_type swig_types[144]
+#define SWIGTYPE_p_std__complexT_double_t swig_types[145]
+#define SWIGTYPE_p_std__string swig_types[146]
+#define SWIGTYPE_p_std__vectorT_float_t swig_types[147]
+#define SWIGTYPE_p_std__vectorT_gam__CombT_float_ipl__Trunc_float_gam__Domain1_t_t swig_types[148]
+#define SWIGTYPE_p_std__vectorT_gam__EchoT_float_ipl__Trunc_gam__Loop1P_gam__Domain1_t_t swig_types[149]
+#define SWIGTYPE_p_unsigned_char swig_types[150]
+#define SWIGTYPE_p_unsigned_int swig_types[151]
+#define SWIGTYPE_p_unsigned_long_long swig_types[152]
+#define SWIGTYPE_p_unsigned_short swig_types[153]
+#define SWIGTYPE_p_value_type swig_types[154]
+#define SWIGTYPE_p_void swig_types[155]
+static swig_type_info *swig_types[157];
+static swig_module_info swig_module = {swig_types, 156, 0, 0, 0, 0};
 #define SWIG_TypeQuery(name) SWIG_TypeQueryModule(&swig_module, &swig_module, name)
 #define SWIG_MangledTypeQuery(name) SWIG_MangledTypeQueryModule(&swig_module, &swig_module, name)
 
@@ -2928,16 +2932,6 @@ SWIGINTERN void std_vector_Sl_SampleType_Sg____setitem____SWIG(std::vector< Samp
 					throw std::out_of_range("in vector::__setitem__()");
 				(*self)[idx]=val;
 			}
-SWIGINTERN gam::real std_vector_Sl_gam_real_Sg____getitem____SWIG(std::vector< gam::real > *self,unsigned int idx){
-				if (idx>=self->size())
-					throw std::out_of_range("in vector::__getitem__()");
-				return (*self)[idx];
-			}
-SWIGINTERN void std_vector_Sl_gam_real_Sg____setitem____SWIG(std::vector< gam::real > *self,unsigned int idx,gam::real val){
-				if (idx>=self->size())
-					throw std::out_of_range("in vector::__setitem__()");
-				(*self)[idx]=val;
-			}
 
 #include "Gamma/Access.h"
 
@@ -2952,7 +2946,7 @@ SWIGINTERN void gam_Slice_Sl_SampleType_Sg____setitem____SWIG(gam::Slice< Sample
 #include <cassert>
 
 SWIGINTERN float gam_EnvFollow_Sl_SampleType_Sg__Tick__SWIG(gam::EnvFollow< SampleType > *self,float i0){ return (*self)(i0); }
-SWIGINTERN gam::OnePole< float,gam::real,gam::GAM_DEFAULT_DOMAIN > &gam_EnvFollow_Sl_SampleType_Sg__get_filter__SWIG(gam::EnvFollow< SampleType > *self){ return self->lpf; }
+SWIGINTERN gam::OnePole< float,float,gam::GAM_DEFAULT_DOMAIN > &gam_EnvFollow_Sl_SampleType_Sg__get_filter__SWIG(gam::EnvFollow< SampleType > *self){ return self->lpf; }
 
 #include "Gamma/Analysis.h"
 #include <cassert>
@@ -3176,13 +3170,320 @@ SWIGINTERN float gam_LoopGain_Sl_SampleType_Sg__Tick__SWIG(gam::LoopGain< Sample
 SWIGINTERN float gam_Loop1P_Sl_SampleType_Sg__Tick__SWIG(gam::Loop1P< SampleType > *self,float in){ return (*self)(in); }
 SWIGINTERN float gam_Loop1P1Z_Sl_SampleType_Sg__Tick__SWIG(gam::Loop1P1Z< SampleType > *self,float in){ return (*self)(in); }
 SWIGINTERN float gam_Echo_Sl_SampleType_Sg__Tick__SWIG(gam::Echo< SampleType > *self,float in){ return (*self)(in); }
-SWIGINTERN Complex< float > gam_EchoCSine_Sl_SampleType_Sg__Process__SWIG(gam::EchoCSine< SampleType > *self,float real,float imag){ return (*self)(real,imag); }
-SWIGINTERN Complex< float > gam_EchoCSine_Sl_SampleType_Sg__Tick__SWIG(gam::EchoCSine< SampleType > *self,float in){ return (*self)(in); }
+SWIGINTERN gam::Complex< float > gam_EchoCSine_Sl_SampleType_Sg__Process__SWIG(gam::EchoCSine< SampleType > *self,float real,float imag){ return (*self)(real,imag); }
+SWIGINTERN gam::Complex< float > gam_EchoCSine_Sl_SampleType_Sg__Tick__SWIG(gam::EchoCSine< SampleType > *self,float in){ return (*self)(in); }
 SWIGINTERN float gam_ReverbMS_Sl_SampleType_Sg__Tick__SWIG(gam::ReverbMS< SampleType > *self,float in){ return (*self)(in); }
-SWIGINTERN Vec< 2,float > gam_Dist_Sl_2_Sc_SampleType_Sg__Tick__SWIG(gam::Dist< 2,SampleType > *self,float in){ return (*self)(in); }
+SWIGINTERN gam::Vec< 2,float > gam_Dist_Sl_2_Sc_SampleType_Sg__Tick__SWIG(gam::Dist< 2,SampleType > *self,float in){ return (*self)(in); }
+
+#include "Gamma/TransferFunc.h"
+
+SWIGINTERN gam::TransferFunc::Complex gam_TransferFunc_Tick__SWIG(gam::TransferFunc *self,double f){ return (*self)(f); }
+SWIGINTERN gam::TransferFunc::Complex gam_TransferFunc_TickZ__SWIG(gam::TransferFunc *self,gam::TransferFunc::Complex z){ return (*self)(z); }
 #ifdef __cplusplus
 extern "C" {
 #endif
+static int _wrap_sleep(lua_State* L) {
+  int SWIG_arg = 0;
+  gam::nsec_t arg1 ;
+  
+  SWIG_check_num_args("gam::sleep",1,1)
+  if(!lua_isnumber(L,1)) SWIG_fail_arg("gam::sleep",1,"gam::nsec_t");
+  arg1 = (gam::nsec_t)lua_tonumber(L, 1);
+  gam::sleep(arg1);
+  
+  return SWIG_arg;
+  
+  if(0) SWIG_fail;
+  
+fail:
+  lua_error(L);
+  return SWIG_arg;
+}
+
+
+static int _wrap_sleepSec(lua_State* L) {
+  int SWIG_arg = 0;
+  double arg1 ;
+  
+  SWIG_check_num_args("gam::sleepSec",1,1)
+  if(!lua_isnumber(L,1)) SWIG_fail_arg("gam::sleepSec",1,"double");
+  arg1 = (double)lua_tonumber(L, 1);
+  gam::sleepSec(arg1);
+  
+  return SWIG_arg;
+  
+  if(0) SWIG_fail;
+  
+fail:
+  lua_error(L);
+  return SWIG_arg;
+}
+
+
+static int _wrap_sleepUntil(lua_State* L) {
+  int SWIG_arg = 0;
+  gam::nsec_t arg1 ;
+  gam::nsec_t result;
+  
+  SWIG_check_num_args("gam::sleepUntil",1,1)
+  if(!lua_isnumber(L,1)) SWIG_fail_arg("gam::sleepUntil",1,"gam::nsec_t");
+  arg1 = (gam::nsec_t)lua_tonumber(L, 1);
+  result = (gam::nsec_t)gam::sleepUntil(arg1);
+  lua_pushnumber(L, (lua_Number) result); SWIG_arg++;
+  return SWIG_arg;
+  
+  if(0) SWIG_fail;
+  
+fail:
+  lua_error(L);
+  return SWIG_arg;
+}
+
+
+static int _wrap_timeNow(lua_State* L) {
+  int SWIG_arg = 0;
+  gam::nsec_t result;
+  
+  SWIG_check_num_args("gam::timeNow",0,0)
+  result = (gam::nsec_t)gam::timeNow();
+  lua_pushnumber(L, (lua_Number) result); SWIG_arg++;
+  return SWIG_arg;
+  
+  if(0) SWIG_fail;
+  
+fail:
+  lua_error(L);
+  return SWIG_arg;
+}
+
+
+static int _wrap_toSec(lua_State* L) {
+  int SWIG_arg = 0;
+  gam::nsec_t arg1 ;
+  double result;
+  
+  SWIG_check_num_args("gam::toSec",1,1)
+  if(!lua_isnumber(L,1)) SWIG_fail_arg("gam::toSec",1,"gam::nsec_t");
+  arg1 = (gam::nsec_t)lua_tonumber(L, 1);
+  result = (double)gam::toSec(arg1);
+  lua_pushnumber(L, (lua_Number) result); SWIG_arg++;
+  return SWIG_arg;
+  
+  if(0) SWIG_fail;
+  
+fail:
+  lua_error(L);
+  return SWIG_arg;
+}
+
+
+static int _wrap_toNSec(lua_State* L) {
+  int SWIG_arg = 0;
+  double arg1 ;
+  gam::nsec_t result;
+  
+  SWIG_check_num_args("gam::toNSec",1,1)
+  if(!lua_isnumber(L,1)) SWIG_fail_arg("gam::toNSec",1,"double");
+  arg1 = (double)lua_tonumber(L, 1);
+  result = (gam::nsec_t)gam::toNSec(arg1);
+  lua_pushnumber(L, (lua_Number) result); SWIG_arg++;
+  return SWIG_arg;
+  
+  if(0) SWIG_fail;
+  
+fail:
+  lua_error(L);
+  return SWIG_arg;
+}
+
+
+static int _wrap_Timer_elapsed(lua_State* L) {
+  int SWIG_arg = 0;
+  gam::Timer *arg1 = (gam::Timer *) 0 ;
+  gam::nsec_t result;
+  
+  SWIG_check_num_args("gam::Timer::elapsed",1,1)
+  if(!SWIG_isptrtype(L,1)) SWIG_fail_arg("gam::Timer::elapsed",1,"gam::Timer *");
+  
+  if (!SWIG_IsOK(SWIG_ConvertPtr(L,1,(void**)&arg1,SWIGTYPE_p_gam__Timer,0))){
+    SWIG_fail_ptr("Timer_elapsed",1,SWIGTYPE_p_gam__Timer);
+  }
+  
+  result = (gam::nsec_t)(arg1)->elapsed();
+  lua_pushnumber(L, (lua_Number) result); SWIG_arg++;
+  return SWIG_arg;
+  
+  if(0) SWIG_fail;
+  
+fail:
+  lua_error(L);
+  return SWIG_arg;
+}
+
+
+static int _wrap_Timer_elapsedSec(lua_State* L) {
+  int SWIG_arg = 0;
+  gam::Timer *arg1 = (gam::Timer *) 0 ;
+  double result;
+  
+  SWIG_check_num_args("gam::Timer::elapsedSec",1,1)
+  if(!SWIG_isptrtype(L,1)) SWIG_fail_arg("gam::Timer::elapsedSec",1,"gam::Timer *");
+  
+  if (!SWIG_IsOK(SWIG_ConvertPtr(L,1,(void**)&arg1,SWIGTYPE_p_gam__Timer,0))){
+    SWIG_fail_ptr("Timer_elapsedSec",1,SWIGTYPE_p_gam__Timer);
+  }
+  
+  result = (double)(arg1)->elapsedSec();
+  lua_pushnumber(L, (lua_Number) result); SWIG_arg++;
+  return SWIG_arg;
+  
+  if(0) SWIG_fail;
+  
+fail:
+  lua_error(L);
+  return SWIG_arg;
+}
+
+
+static int _wrap_Timer_elapsedMSec(lua_State* L) {
+  int SWIG_arg = 0;
+  gam::Timer *arg1 = (gam::Timer *) 0 ;
+  double result;
+  
+  SWIG_check_num_args("gam::Timer::elapsedMSec",1,1)
+  if(!SWIG_isptrtype(L,1)) SWIG_fail_arg("gam::Timer::elapsedMSec",1,"gam::Timer *");
+  
+  if (!SWIG_IsOK(SWIG_ConvertPtr(L,1,(void**)&arg1,SWIGTYPE_p_gam__Timer,0))){
+    SWIG_fail_ptr("Timer_elapsedMSec",1,SWIGTYPE_p_gam__Timer);
+  }
+  
+  result = (double)(arg1)->elapsedMSec();
+  lua_pushnumber(L, (lua_Number) result); SWIG_arg++;
+  return SWIG_arg;
+  
+  if(0) SWIG_fail;
+  
+fail:
+  lua_error(L);
+  return SWIG_arg;
+}
+
+
+static int _wrap_Timer_start(lua_State* L) {
+  int SWIG_arg = 0;
+  gam::Timer *arg1 = (gam::Timer *) 0 ;
+  
+  SWIG_check_num_args("gam::Timer::start",1,1)
+  if(!SWIG_isptrtype(L,1)) SWIG_fail_arg("gam::Timer::start",1,"gam::Timer *");
+  
+  if (!SWIG_IsOK(SWIG_ConvertPtr(L,1,(void**)&arg1,SWIGTYPE_p_gam__Timer,0))){
+    SWIG_fail_ptr("Timer_start",1,SWIGTYPE_p_gam__Timer);
+  }
+  
+  (arg1)->start();
+  
+  return SWIG_arg;
+  
+  if(0) SWIG_fail;
+  
+fail:
+  lua_error(L);
+  return SWIG_arg;
+}
+
+
+static int _wrap_Timer_stop(lua_State* L) {
+  int SWIG_arg = 0;
+  gam::Timer *arg1 = (gam::Timer *) 0 ;
+  
+  SWIG_check_num_args("gam::Timer::stop",1,1)
+  if(!SWIG_isptrtype(L,1)) SWIG_fail_arg("gam::Timer::stop",1,"gam::Timer *");
+  
+  if (!SWIG_IsOK(SWIG_ConvertPtr(L,1,(void**)&arg1,SWIGTYPE_p_gam__Timer,0))){
+    SWIG_fail_ptr("Timer_stop",1,SWIGTYPE_p_gam__Timer);
+  }
+  
+  (arg1)->stop();
+  
+  return SWIG_arg;
+  
+  if(0) SWIG_fail;
+  
+fail:
+  lua_error(L);
+  return SWIG_arg;
+}
+
+
+static int _wrap_new_Timer(lua_State* L) {
+  int SWIG_arg = 0;
+  gam::Timer *result = 0 ;
+  
+  SWIG_check_num_args("gam::Timer::Timer",0,0)
+  result = (gam::Timer *)new gam::Timer();
+  SWIG_NewPointerObj(L,result,SWIGTYPE_p_gam__Timer,1); SWIG_arg++; 
+  return SWIG_arg;
+  
+  if(0) SWIG_fail;
+  
+fail:
+  lua_error(L);
+  return SWIG_arg;
+}
+
+
+static void swig_delete_Timer(void *obj) {
+gam::Timer *arg1 = (gam::Timer *) obj;
+delete arg1;
+}
+static int _proxy__wrap_new_Timer(lua_State *L) {
+    assert(lua_istable(L,1));
+    lua_pushcfunction(L,_wrap_new_Timer);
+    assert(!lua_isnil(L,-1));
+    lua_replace(L,1); /* replace our table with real constructor */
+    lua_call(L,lua_gettop(L)-1,1);
+    return 1;
+}
+static swig_lua_attribute swig_Timer_attributes[] = {
+    {0,0,0}
+};
+static swig_lua_method swig_Timer_methods[]= {
+    { "elapsed", _wrap_Timer_elapsed},
+    { "elapsedSec", _wrap_Timer_elapsedSec},
+    { "elapsedMSec", _wrap_Timer_elapsedMSec},
+    { "start", _wrap_Timer_start},
+    { "stop", _wrap_Timer_stop},
+    {0,0}
+};
+static swig_lua_method swig_Timer_meta[] = {
+    {0,0}
+};
+
+static swig_lua_attribute swig_Timer_Sf_SwigStatic_attributes[] = {
+    {0,0,0}
+};
+static swig_lua_const_info swig_Timer_Sf_SwigStatic_constants[]= {
+    {0,0,0,0,0,0}
+};
+static swig_lua_method swig_Timer_Sf_SwigStatic_methods[]= {
+    {0,0}
+};
+static swig_lua_class* swig_Timer_Sf_SwigStatic_classes[]= {
+    0
+};
+
+static swig_lua_namespace swig_Timer_Sf_SwigStatic = {
+    "Timer",
+    swig_Timer_Sf_SwigStatic_methods,
+    swig_Timer_Sf_SwigStatic_attributes,
+    swig_Timer_Sf_SwigStatic_constants,
+    swig_Timer_Sf_SwigStatic_classes,
+    0
+};
+static swig_lua_class *swig_Timer_bases[] = {0};
+static const char *swig_Timer_base_names[] = {0};
+static swig_lua_class _wrap_class_Timer = { "Timer", "Timer", &SWIGTYPE_p_gam__Timer,_proxy__wrap_new_Timer, swig_delete_Timer, swig_Timer_methods, swig_Timer_attributes, &swig_Timer_Sf_SwigStatic, swig_Timer_meta, swig_Timer_bases, swig_Timer_base_names };
+
 static int _wrap_new_stdvector__SWIG_0(lua_State* L) {
   int SWIG_arg = 0;
   std::vector< SampleType > *result = 0 ;
@@ -3643,499 +3944,6 @@ static swig_lua_namespace swig_stdvector_Sf_SwigStatic = {
 static swig_lua_class *swig_stdvector_bases[] = {0};
 static const char *swig_stdvector_base_names[] = {0};
 static swig_lua_class _wrap_class_stdvector = { "stdvector", "stdvector", &SWIGTYPE_p_std__vectorT_float_t,_proxy__wrap_new_stdvector, swig_delete_stdvector, swig_stdvector_methods, swig_stdvector_attributes, &swig_stdvector_Sf_SwigStatic, swig_stdvector_meta, swig_stdvector_bases, swig_stdvector_base_names };
-
-static int _wrap_new_realvector__SWIG_0(lua_State* L) {
-  int SWIG_arg = 0;
-  std::vector< gam::real > *result = 0 ;
-  
-  SWIG_check_num_args("std::vector< gam::real >::vector",0,0)
-  result = (std::vector< gam::real > *)new std::vector< gam::real >();
-  SWIG_NewPointerObj(L,result,SWIGTYPE_p_std__vectorT_gam__real_t,1); SWIG_arg++; 
-  return SWIG_arg;
-  
-  if(0) SWIG_fail;
-  
-fail:
-  lua_error(L);
-  return SWIG_arg;
-}
-
-
-static int _wrap_new_realvector__SWIG_1(lua_State* L) {
-  int SWIG_arg = 0;
-  unsigned int arg1 ;
-  std::vector< gam::real > *result = 0 ;
-  
-  SWIG_check_num_args("std::vector< gam::real >::vector",1,1)
-  if(!lua_isnumber(L,1)) SWIG_fail_arg("std::vector< gam::real >::vector",1,"unsigned int");
-  SWIG_contract_assert((lua_tonumber(L,1)>=0),"number must not be negative");
-  arg1 = (unsigned int)lua_tonumber(L, 1);
-  result = (std::vector< gam::real > *)new std::vector< gam::real >(arg1);
-  SWIG_NewPointerObj(L,result,SWIGTYPE_p_std__vectorT_gam__real_t,1); SWIG_arg++; 
-  return SWIG_arg;
-  
-  if(0) SWIG_fail;
-  
-fail:
-  lua_error(L);
-  return SWIG_arg;
-}
-
-
-static int _wrap_new_realvector__SWIG_2(lua_State* L) {
-  int SWIG_arg = 0;
-  std::vector< gam::real > *arg1 = 0 ;
-  std::vector< gam::real > *result = 0 ;
-  
-  SWIG_check_num_args("std::vector< gam::real >::vector",1,1)
-  if(!lua_isuserdata(L,1)) SWIG_fail_arg("std::vector< gam::real >::vector",1,"std::vector< gam::real > const &");
-  
-  if (!SWIG_IsOK(SWIG_ConvertPtr(L,1,(void**)&arg1,SWIGTYPE_p_std__vectorT_gam__real_t,0))){
-    SWIG_fail_ptr("new_realvector",1,SWIGTYPE_p_std__vectorT_gam__real_t);
-  }
-  
-  result = (std::vector< gam::real > *)new std::vector< gam::real >((std::vector< gam::real > const &)*arg1);
-  SWIG_NewPointerObj(L,result,SWIGTYPE_p_std__vectorT_gam__real_t,1); SWIG_arg++; 
-  return SWIG_arg;
-  
-  if(0) SWIG_fail;
-  
-fail:
-  lua_error(L);
-  return SWIG_arg;
-}
-
-
-static int _wrap_new_realvector__SWIG_3(lua_State* L) {
-  int SWIG_arg = 0;
-  unsigned int arg1 ;
-  gam::real arg2 ;
-  gam::real *argp2 ;
-  std::vector< gam::real > *result = 0 ;
-  
-  SWIG_check_num_args("std::vector< gam::real >::vector",2,2)
-  if(!lua_isnumber(L,1)) SWIG_fail_arg("std::vector< gam::real >::vector",1,"unsigned int");
-  if(!lua_isuserdata(L,2)) SWIG_fail_arg("std::vector< gam::real >::vector",2,"gam::real");
-  SWIG_contract_assert((lua_tonumber(L,1)>=0),"number must not be negative");
-  arg1 = (unsigned int)lua_tonumber(L, 1);
-  
-  if (!SWIG_IsOK(SWIG_ConvertPtr(L,2,(void**)&argp2,SWIGTYPE_p_gam__real,0))){
-    SWIG_fail_ptr("new_realvector",2,SWIGTYPE_p_gam__real);
-  }
-  arg2 = *argp2;
-  
-  result = (std::vector< gam::real > *)new std::vector< gam::real >(arg1,arg2);
-  SWIG_NewPointerObj(L,result,SWIGTYPE_p_std__vectorT_gam__real_t,1); SWIG_arg++; 
-  return SWIG_arg;
-  
-  if(0) SWIG_fail;
-  
-fail:
-  lua_error(L);
-  return SWIG_arg;
-}
-
-
-static int _wrap_new_realvector(lua_State* L) {
-  int argc;
-  int argv[3]={
-    1,2,3
-  };
-  
-  argc = lua_gettop(L);
-  if (argc == 0) {
-    return _wrap_new_realvector__SWIG_0(L);
-  }
-  if (argc == 1) {
-    int _v = 0;
-    {
-      void *ptr;
-      if (lua_isuserdata(L,argv[0])==0 || SWIG_ConvertPtr(L,argv[0], (void **) &ptr, SWIGTYPE_p_std__vectorT_gam__real_t, SWIG_POINTER_NO_NULL)) {
-        _v = 0;
-      } else {
-        _v = 1;
-      }
-    }
-    if (_v) {
-      return _wrap_new_realvector__SWIG_2(L);
-    }
-  }
-  if (argc == 1) {
-    int _v = 0;
-    {
-      _v = lua_isnumber(L,argv[0]);
-    }
-    if (_v) {
-      return _wrap_new_realvector__SWIG_1(L);
-    }
-  }
-  if (argc == 2) {
-    int _v = 0;
-    {
-      _v = lua_isnumber(L,argv[0]);
-    }
-    if (_v) {
-      {
-        void *ptr;
-        if (lua_isuserdata(L,argv[1])==0 || SWIG_ConvertPtr(L,argv[1], (void **) &ptr, SWIGTYPE_p_gam__real, SWIG_POINTER_NO_NULL)) {
-          _v = 0;
-        } else {
-          _v = 1;
-        }
-      }
-      if (_v) {
-        return _wrap_new_realvector__SWIG_3(L);
-      }
-    }
-  }
-  
-  SWIG_Lua_pusherrstring(L,"Wrong arguments for overloaded function 'new_realvector'\n"
-    "  Possible C/C++ prototypes are:\n"
-    "    std::vector< gam::real >::vector()\n"
-    "    std::vector< gam::real >::vector(unsigned int)\n"
-    "    std::vector< gam::real >::vector(std::vector< gam::real > const &)\n"
-    "    std::vector< gam::real >::vector(unsigned int,gam::real)\n");
-  lua_error(L);return 0;
-}
-
-
-static int _wrap_realvector_size(lua_State* L) {
-  int SWIG_arg = 0;
-  std::vector< gam::real > *arg1 = (std::vector< gam::real > *) 0 ;
-  unsigned int result;
-  
-  SWIG_check_num_args("std::vector< gam::real >::size",1,1)
-  if(!SWIG_isptrtype(L,1)) SWIG_fail_arg("std::vector< gam::real >::size",1,"std::vector< gam::real > const *");
-  
-  if (!SWIG_IsOK(SWIG_ConvertPtr(L,1,(void**)&arg1,SWIGTYPE_p_std__vectorT_gam__real_t,0))){
-    SWIG_fail_ptr("realvector_size",1,SWIGTYPE_p_std__vectorT_gam__real_t);
-  }
-  
-  result = (unsigned int)((std::vector< gam::real > const *)arg1)->size();
-  lua_pushnumber(L, (lua_Number) result); SWIG_arg++;
-  return SWIG_arg;
-  
-  if(0) SWIG_fail;
-  
-fail:
-  lua_error(L);
-  return SWIG_arg;
-}
-
-
-static int _wrap_realvector_max_size(lua_State* L) {
-  int SWIG_arg = 0;
-  std::vector< gam::real > *arg1 = (std::vector< gam::real > *) 0 ;
-  unsigned int result;
-  
-  SWIG_check_num_args("std::vector< gam::real >::max_size",1,1)
-  if(!SWIG_isptrtype(L,1)) SWIG_fail_arg("std::vector< gam::real >::max_size",1,"std::vector< gam::real > const *");
-  
-  if (!SWIG_IsOK(SWIG_ConvertPtr(L,1,(void**)&arg1,SWIGTYPE_p_std__vectorT_gam__real_t,0))){
-    SWIG_fail_ptr("realvector_max_size",1,SWIGTYPE_p_std__vectorT_gam__real_t);
-  }
-  
-  result = (unsigned int)((std::vector< gam::real > const *)arg1)->max_size();
-  lua_pushnumber(L, (lua_Number) result); SWIG_arg++;
-  return SWIG_arg;
-  
-  if(0) SWIG_fail;
-  
-fail:
-  lua_error(L);
-  return SWIG_arg;
-}
-
-
-static int _wrap_realvector_empty(lua_State* L) {
-  int SWIG_arg = 0;
-  std::vector< gam::real > *arg1 = (std::vector< gam::real > *) 0 ;
-  bool result;
-  
-  SWIG_check_num_args("std::vector< gam::real >::empty",1,1)
-  if(!SWIG_isptrtype(L,1)) SWIG_fail_arg("std::vector< gam::real >::empty",1,"std::vector< gam::real > const *");
-  
-  if (!SWIG_IsOK(SWIG_ConvertPtr(L,1,(void**)&arg1,SWIGTYPE_p_std__vectorT_gam__real_t,0))){
-    SWIG_fail_ptr("realvector_empty",1,SWIGTYPE_p_std__vectorT_gam__real_t);
-  }
-  
-  result = (bool)((std::vector< gam::real > const *)arg1)->empty();
-  lua_pushboolean(L,(int)(result!=0)); SWIG_arg++;
-  return SWIG_arg;
-  
-  if(0) SWIG_fail;
-  
-fail:
-  lua_error(L);
-  return SWIG_arg;
-}
-
-
-static int _wrap_realvector_clear(lua_State* L) {
-  int SWIG_arg = 0;
-  std::vector< gam::real > *arg1 = (std::vector< gam::real > *) 0 ;
-  
-  SWIG_check_num_args("std::vector< gam::real >::clear",1,1)
-  if(!SWIG_isptrtype(L,1)) SWIG_fail_arg("std::vector< gam::real >::clear",1,"std::vector< gam::real > *");
-  
-  if (!SWIG_IsOK(SWIG_ConvertPtr(L,1,(void**)&arg1,SWIGTYPE_p_std__vectorT_gam__real_t,0))){
-    SWIG_fail_ptr("realvector_clear",1,SWIGTYPE_p_std__vectorT_gam__real_t);
-  }
-  
-  (arg1)->clear();
-  
-  return SWIG_arg;
-  
-  if(0) SWIG_fail;
-  
-fail:
-  lua_error(L);
-  return SWIG_arg;
-}
-
-
-static int _wrap_realvector_push_back(lua_State* L) {
-  int SWIG_arg = 0;
-  std::vector< gam::real > *arg1 = (std::vector< gam::real > *) 0 ;
-  gam::real arg2 ;
-  gam::real *argp2 ;
-  
-  SWIG_check_num_args("std::vector< gam::real >::push_back",2,2)
-  if(!SWIG_isptrtype(L,1)) SWIG_fail_arg("std::vector< gam::real >::push_back",1,"std::vector< gam::real > *");
-  if(!lua_isuserdata(L,2)) SWIG_fail_arg("std::vector< gam::real >::push_back",2,"gam::real");
-  
-  if (!SWIG_IsOK(SWIG_ConvertPtr(L,1,(void**)&arg1,SWIGTYPE_p_std__vectorT_gam__real_t,0))){
-    SWIG_fail_ptr("realvector_push_back",1,SWIGTYPE_p_std__vectorT_gam__real_t);
-  }
-  
-  
-  if (!SWIG_IsOK(SWIG_ConvertPtr(L,2,(void**)&argp2,SWIGTYPE_p_gam__real,0))){
-    SWIG_fail_ptr("realvector_push_back",2,SWIGTYPE_p_gam__real);
-  }
-  arg2 = *argp2;
-  
-  (arg1)->push_back(arg2);
-  
-  return SWIG_arg;
-  
-  if(0) SWIG_fail;
-  
-fail:
-  lua_error(L);
-  return SWIG_arg;
-}
-
-
-static int _wrap_realvector_pop_back(lua_State* L) {
-  int SWIG_arg = 0;
-  std::vector< gam::real > *arg1 = (std::vector< gam::real > *) 0 ;
-  
-  SWIG_check_num_args("std::vector< gam::real >::pop_back",1,1)
-  if(!SWIG_isptrtype(L,1)) SWIG_fail_arg("std::vector< gam::real >::pop_back",1,"std::vector< gam::real > *");
-  
-  if (!SWIG_IsOK(SWIG_ConvertPtr(L,1,(void**)&arg1,SWIGTYPE_p_std__vectorT_gam__real_t,0))){
-    SWIG_fail_ptr("realvector_pop_back",1,SWIGTYPE_p_std__vectorT_gam__real_t);
-  }
-  
-  (arg1)->pop_back();
-  
-  return SWIG_arg;
-  
-  if(0) SWIG_fail;
-  
-fail:
-  lua_error(L);
-  return SWIG_arg;
-}
-
-
-static int _wrap_realvector_front(lua_State* L) {
-  int SWIG_arg = 0;
-  std::vector< gam::real > *arg1 = (std::vector< gam::real > *) 0 ;
-  gam::real result;
-  
-  SWIG_check_num_args("std::vector< gam::real >::front",1,1)
-  if(!SWIG_isptrtype(L,1)) SWIG_fail_arg("std::vector< gam::real >::front",1,"std::vector< gam::real > const *");
-  
-  if (!SWIG_IsOK(SWIG_ConvertPtr(L,1,(void**)&arg1,SWIGTYPE_p_std__vectorT_gam__real_t,0))){
-    SWIG_fail_ptr("realvector_front",1,SWIGTYPE_p_std__vectorT_gam__real_t);
-  }
-  
-  result = ((std::vector< gam::real > const *)arg1)->front();
-  {
-    gam::real * resultptr = new gam::real((const gam::real &) result);
-    SWIG_NewPointerObj(L,(void *) resultptr,SWIGTYPE_p_gam__real,1); SWIG_arg++;
-  }
-  return SWIG_arg;
-  
-  if(0) SWIG_fail;
-  
-fail:
-  lua_error(L);
-  return SWIG_arg;
-}
-
-
-static int _wrap_realvector_back(lua_State* L) {
-  int SWIG_arg = 0;
-  std::vector< gam::real > *arg1 = (std::vector< gam::real > *) 0 ;
-  gam::real result;
-  
-  SWIG_check_num_args("std::vector< gam::real >::back",1,1)
-  if(!SWIG_isptrtype(L,1)) SWIG_fail_arg("std::vector< gam::real >::back",1,"std::vector< gam::real > const *");
-  
-  if (!SWIG_IsOK(SWIG_ConvertPtr(L,1,(void**)&arg1,SWIGTYPE_p_std__vectorT_gam__real_t,0))){
-    SWIG_fail_ptr("realvector_back",1,SWIGTYPE_p_std__vectorT_gam__real_t);
-  }
-  
-  result = ((std::vector< gam::real > const *)arg1)->back();
-  {
-    gam::real * resultptr = new gam::real((const gam::real &) result);
-    SWIG_NewPointerObj(L,(void *) resultptr,SWIGTYPE_p_gam__real,1); SWIG_arg++;
-  }
-  return SWIG_arg;
-  
-  if(0) SWIG_fail;
-  
-fail:
-  lua_error(L);
-  return SWIG_arg;
-}
-
-
-static int _wrap_realvector___getitem(lua_State* L) {
-  int SWIG_arg = 0;
-  std::vector< gam::real > *arg1 = (std::vector< gam::real > *) 0 ;
-  unsigned int arg2 ;
-  gam::real result;
-  
-  SWIG_check_num_args("std::vector< gam::real >::__getitem__",2,2)
-  if(!SWIG_isptrtype(L,1)) SWIG_fail_arg("std::vector< gam::real >::__getitem__",1,"std::vector< gam::real > *");
-  if(!lua_isnumber(L,2)) SWIG_fail_arg("std::vector< gam::real >::__getitem__",2,"unsigned int");
-  
-  if (!SWIG_IsOK(SWIG_ConvertPtr(L,1,(void**)&arg1,SWIGTYPE_p_std__vectorT_gam__real_t,0))){
-    SWIG_fail_ptr("realvector___getitem",1,SWIGTYPE_p_std__vectorT_gam__real_t);
-  }
-  
-  SWIG_contract_assert((lua_tonumber(L,2)>=0),"number must not be negative");
-  arg2 = (unsigned int)lua_tonumber(L, 2);
-  try {
-    result = std_vector_Sl_gam_real_Sg____getitem____SWIG(arg1,arg2);
-  } catch(std::out_of_range &_e) {
-    SWIG_exception(SWIG_IndexError, (&_e)->what());
-  }
-  {
-    gam::real * resultptr = new gam::real((const gam::real &) result);
-    SWIG_NewPointerObj(L,(void *) resultptr,SWIGTYPE_p_gam__real,1); SWIG_arg++;
-  }
-  return SWIG_arg;
-  
-  if(0) SWIG_fail;
-  
-fail:
-  lua_error(L);
-  return SWIG_arg;
-}
-
-
-static int _wrap_realvector___setitem(lua_State* L) {
-  int SWIG_arg = 0;
-  std::vector< gam::real > *arg1 = (std::vector< gam::real > *) 0 ;
-  unsigned int arg2 ;
-  gam::real arg3 ;
-  gam::real *argp3 ;
-  
-  SWIG_check_num_args("std::vector< gam::real >::__setitem__",3,3)
-  if(!SWIG_isptrtype(L,1)) SWIG_fail_arg("std::vector< gam::real >::__setitem__",1,"std::vector< gam::real > *");
-  if(!lua_isnumber(L,2)) SWIG_fail_arg("std::vector< gam::real >::__setitem__",2,"unsigned int");
-  if(!lua_isuserdata(L,3)) SWIG_fail_arg("std::vector< gam::real >::__setitem__",3,"gam::real");
-  
-  if (!SWIG_IsOK(SWIG_ConvertPtr(L,1,(void**)&arg1,SWIGTYPE_p_std__vectorT_gam__real_t,0))){
-    SWIG_fail_ptr("realvector___setitem",1,SWIGTYPE_p_std__vectorT_gam__real_t);
-  }
-  
-  SWIG_contract_assert((lua_tonumber(L,2)>=0),"number must not be negative");
-  arg2 = (unsigned int)lua_tonumber(L, 2);
-  
-  if (!SWIG_IsOK(SWIG_ConvertPtr(L,3,(void**)&argp3,SWIGTYPE_p_gam__real,0))){
-    SWIG_fail_ptr("realvector___setitem",3,SWIGTYPE_p_gam__real);
-  }
-  arg3 = *argp3;
-  
-  try {
-    std_vector_Sl_gam_real_Sg____setitem____SWIG(arg1,arg2,arg3);
-  } catch(std::out_of_range &_e) {
-    SWIG_exception(SWIG_IndexError, (&_e)->what());
-  }
-  
-  return SWIG_arg;
-  
-  if(0) SWIG_fail;
-  
-fail:
-  lua_error(L);
-  return SWIG_arg;
-}
-
-
-static void swig_delete_realvector(void *obj) {
-std::vector< gam::real > *arg1 = (std::vector< gam::real > *) obj;
-delete arg1;
-}
-static int _proxy__wrap_new_realvector(lua_State *L) {
-    assert(lua_istable(L,1));
-    lua_pushcfunction(L,_wrap_new_realvector);
-    assert(!lua_isnil(L,-1));
-    lua_replace(L,1); /* replace our table with real constructor */
-    lua_call(L,lua_gettop(L)-1,1);
-    return 1;
-}
-static swig_lua_attribute swig_realvector_attributes[] = {
-    {0,0,0}
-};
-static swig_lua_method swig_realvector_methods[]= {
-    { "size", _wrap_realvector_size},
-    { "max_size", _wrap_realvector_max_size},
-    { "empty", _wrap_realvector_empty},
-    { "clear", _wrap_realvector_clear},
-    { "push_back", _wrap_realvector_push_back},
-    { "pop_back", _wrap_realvector_pop_back},
-    { "front", _wrap_realvector_front},
-    { "back", _wrap_realvector_back},
-    { "__getitem", _wrap_realvector___getitem},
-    { "__setitem", _wrap_realvector___setitem},
-    {0,0}
-};
-static swig_lua_method swig_realvector_meta[] = {
-    { "__getitem", _wrap_realvector___getitem},
-    { "__setitem", _wrap_realvector___setitem},
-    {0,0}
-};
-
-static swig_lua_attribute swig_realvector_Sf_SwigStatic_attributes[] = {
-    {0,0,0}
-};
-static swig_lua_const_info swig_realvector_Sf_SwigStatic_constants[]= {
-    {0,0,0,0,0,0}
-};
-static swig_lua_method swig_realvector_Sf_SwigStatic_methods[]= {
-    {0,0}
-};
-static swig_lua_class* swig_realvector_Sf_SwigStatic_classes[]= {
-    0
-};
-
-static swig_lua_namespace swig_realvector_Sf_SwigStatic = {
-    "realvector",
-    swig_realvector_Sf_SwigStatic_methods,
-    swig_realvector_Sf_SwigStatic_attributes,
-    swig_realvector_Sf_SwigStatic_constants,
-    swig_realvector_Sf_SwigStatic_classes,
-    0
-};
-static swig_lua_class *swig_realvector_bases[] = {0};
-static const char *swig_realvector_base_names[] = {0};
-static swig_lua_class _wrap_class_realvector = { "realvector", "realvector", &SWIGTYPE_p_std__vectorT_gam__real_t,_proxy__wrap_new_realvector, swig_delete_realvector, swig_realvector_methods, swig_realvector_attributes, &swig_realvector_Sf_SwigStatic, swig_realvector_meta, swig_realvector_bases, swig_realvector_base_names };
 
 static int _wrap_indexLast(lua_State* L) {
   int SWIG_arg = 0;
@@ -5881,18 +5689,12 @@ static int _wrap_slice(lua_State* L) {
 
 static int _wrap_new_EnvFollow__SWIG_0(lua_State* L) {
   int SWIG_arg = 0;
-  gam::real arg1 ;
-  gam::real *argp1 ;
+  float arg1 ;
   gam::EnvFollow< SampleType > *result = 0 ;
   
   SWIG_check_num_args("gam::EnvFollow< SampleType >::EnvFollow",1,1)
-  if(!lua_isuserdata(L,1)) SWIG_fail_arg("gam::EnvFollow< SampleType >::EnvFollow",1,"gam::real");
-  
-  if (!SWIG_IsOK(SWIG_ConvertPtr(L,1,(void**)&argp1,SWIGTYPE_p_gam__real,0))){
-    SWIG_fail_ptr("new_EnvFollow",1,SWIGTYPE_p_gam__real);
-  }
-  arg1 = *argp1;
-  
+  if(!lua_isnumber(L,1)) SWIG_fail_arg("gam::EnvFollow< SampleType >::EnvFollow",1,"float");
+  arg1 = (float)lua_tonumber(L, 1);
   result = (gam::EnvFollow< SampleType > *)new gam::EnvFollow< SampleType >(arg1);
   SWIG_NewPointerObj(L,result,SWIGTYPE_p_gam__EnvFollowT_float_gam__real_gam__GAM_DEFAULT_DOMAIN_t,1); SWIG_arg++; 
   return SWIG_arg;
@@ -5935,12 +5737,7 @@ static int _wrap_new_EnvFollow(lua_State* L) {
   if (argc == 1) {
     int _v = 0;
     {
-      void *ptr;
-      if (lua_isuserdata(L,argv[0])==0 || SWIG_ConvertPtr(L,argv[0], (void **) &ptr, SWIGTYPE_p_gam__real, SWIG_POINTER_NO_NULL)) {
-        _v = 0;
-      } else {
-        _v = 1;
-      }
+      _v = lua_isnumber(L,argv[0]);
     }
     if (_v) {
       return _wrap_new_EnvFollow__SWIG_0(L);
@@ -5949,7 +5746,7 @@ static int _wrap_new_EnvFollow(lua_State* L) {
   
   SWIG_Lua_pusherrstring(L,"Wrong arguments for overloaded function 'new_EnvFollow'\n"
     "  Possible C/C++ prototypes are:\n"
-    "    gam::EnvFollow< SampleType >::EnvFollow(gam::real)\n"
+    "    gam::EnvFollow< SampleType >::EnvFollow(float)\n"
     "    gam::EnvFollow< SampleType >::EnvFollow()\n");
   lua_error(L);return 0;
 }
@@ -6012,7 +5809,7 @@ fail:
 static int _wrap_EnvFollow_get_filter(lua_State* L) {
   int SWIG_arg = 0;
   gam::EnvFollow< SampleType > *arg1 = (gam::EnvFollow< SampleType > *) 0 ;
-  gam::OnePole< float,gam::real,gam::GAM_DEFAULT_DOMAIN > *result = 0 ;
+  gam::OnePole< float,float,gam::GAM_DEFAULT_DOMAIN > *result = 0 ;
   
   SWIG_check_num_args("gam::EnvFollow< SampleType >::get_filter",1,1)
   if(!SWIG_isptrtype(L,1)) SWIG_fail_arg("gam::EnvFollow< SampleType >::get_filter",1,"gam::EnvFollow< SampleType > *");
@@ -6021,8 +5818,8 @@ static int _wrap_EnvFollow_get_filter(lua_State* L) {
     SWIG_fail_ptr("EnvFollow_get_filter",1,SWIGTYPE_p_gam__EnvFollowT_float_gam__real_gam__GAM_DEFAULT_DOMAIN_t);
   }
   
-  result = (gam::OnePole< float,gam::real,gam::GAM_DEFAULT_DOMAIN > *) &gam_EnvFollow_Sl_SampleType_Sg__get_filter__SWIG(arg1);
-  SWIG_NewPointerObj(L,result,SWIGTYPE_p_gam__OnePoleT_float_gam__real_gam__GAM_DEFAULT_DOMAIN_t,0); SWIG_arg++; 
+  result = (gam::OnePole< float,float,gam::GAM_DEFAULT_DOMAIN > *) &gam_EnvFollow_Sl_SampleType_Sg__get_filter__SWIG(arg1);
+  SWIG_NewPointerObj(L,result,SWIGTYPE_p_gam__OnePoleT_float_float_gam__GAM_DEFAULT_DOMAIN_t,0); SWIG_arg++; 
   return SWIG_arg;
   
   if(0) SWIG_fail;
@@ -6060,24 +5857,18 @@ fail:
 static int _wrap_EnvFollow_lag(lua_State* L) {
   int SWIG_arg = 0;
   gam::EnvFollow< SampleType > *arg1 = (gam::EnvFollow< SampleType > *) 0 ;
-  gam::real arg2 ;
-  gam::real *argp2 ;
+  float arg2 ;
   gam::EnvFollow< SampleType > *result = 0 ;
   
   SWIG_check_num_args("gam::EnvFollow< SampleType >::lag",2,2)
   if(!SWIG_isptrtype(L,1)) SWIG_fail_arg("gam::EnvFollow< SampleType >::lag",1,"gam::EnvFollow< SampleType > *");
-  if(!lua_isuserdata(L,2)) SWIG_fail_arg("gam::EnvFollow< SampleType >::lag",2,"gam::real");
+  if(!lua_isnumber(L,2)) SWIG_fail_arg("gam::EnvFollow< SampleType >::lag",2,"float");
   
   if (!SWIG_IsOK(SWIG_ConvertPtr(L,1,(void**)&arg1,SWIGTYPE_p_gam__EnvFollowT_float_gam__real_gam__GAM_DEFAULT_DOMAIN_t,0))){
     SWIG_fail_ptr("EnvFollow_lag",1,SWIGTYPE_p_gam__EnvFollowT_float_gam__real_gam__GAM_DEFAULT_DOMAIN_t);
   }
   
-  
-  if (!SWIG_IsOK(SWIG_ConvertPtr(L,2,(void**)&argp2,SWIGTYPE_p_gam__real,0))){
-    SWIG_fail_ptr("EnvFollow_lag",2,SWIGTYPE_p_gam__real);
-  }
-  arg2 = *argp2;
-  
+  arg2 = (float)lua_tonumber(L, 2);
   result = (gam::EnvFollow< SampleType > *) &(arg1)->lag(arg2);
   SWIG_NewPointerObj(L,result,SWIGTYPE_p_gam__EnvFollowT_float_gam__real_gam__GAM_DEFAULT_DOMAIN_t,0); SWIG_arg++; 
   return SWIG_arg;
@@ -7206,7 +6997,7 @@ fail:
 static int _wrap_Threshold_get_lpf(lua_State* L) {
   int SWIG_arg = 0;
   gam::Threshold< SampleType > *arg1 = (gam::Threshold< SampleType > *) 0 ;
-  SwigValueWrapper< gam::OnePole< float,gam::real,GAM_DEFAULT_DOMAIN > > result;
+  gam::OnePole< float,gam::real,GAM_DEFAULT_DOMAIN > result;
   
   SWIG_check_num_args("gam::Threshold< SampleType >::get_lpf",1,1)
   if(!SWIG_isptrtype(L,1)) SWIG_fail_arg("gam::Threshold< SampleType >::get_lpf",1,"gam::Threshold< SampleType > *");
@@ -7218,7 +7009,7 @@ static int _wrap_Threshold_get_lpf(lua_State* L) {
   result = gam_Threshold_Sl_SampleType_Sg__get_lpf__SWIG(arg1);
   {
     gam::OnePole< float,gam::real,GAM_DEFAULT_DOMAIN > * resultptr = new gam::OnePole< float,gam::real,GAM_DEFAULT_DOMAIN >((const gam::OnePole< float,gam::real,GAM_DEFAULT_DOMAIN > &) result);
-    SWIG_NewPointerObj(L,(void *) resultptr,SWIGTYPE_p_gam__OnePoleT_float_gam__real_GAM_DEFAULT_DOMAIN_t,1); SWIG_arg++;
+    SWIG_NewPointerObj(L,(void *) resultptr,SWIGTYPE_p_gam__OnePoleT_float_float_GAM_DEFAULT_DOMAIN_t,1); SWIG_arg++;
   }
   return SWIG_arg;
   
@@ -18669,26 +18460,20 @@ fail:
 static int _wrap_new_Comb__SWIG_1(lua_State* L) {
   int SWIG_arg = 0;
   float arg1 ;
-  gam::real *arg2 = 0 ;
-  gam::real *arg3 = 0 ;
+  float *arg2 = 0 ;
+  float *arg3 = 0 ;
+  float temp2 ;
+  float temp3 ;
   gam::Comb< SampleType > *result = 0 ;
   
   SWIG_check_num_args("gam::Comb< SampleType >::Comb",3,3)
   if(!lua_isnumber(L,1)) SWIG_fail_arg("gam::Comb< SampleType >::Comb",1,"float");
-  if(!lua_isuserdata(L,2)) SWIG_fail_arg("gam::Comb< SampleType >::Comb",2,"gam::real const &");
-  if(!lua_isuserdata(L,3)) SWIG_fail_arg("gam::Comb< SampleType >::Comb",3,"gam::real const &");
+  if(!lua_isnumber(L,2)) SWIG_fail_arg("gam::Comb< SampleType >::Comb",2,"float const &");
+  if(!lua_isnumber(L,3)) SWIG_fail_arg("gam::Comb< SampleType >::Comb",3,"float const &");
   arg1 = (float)lua_tonumber(L, 1);
-  
-  if (!SWIG_IsOK(SWIG_ConvertPtr(L,2,(void**)&arg2,SWIGTYPE_p_gam__real,0))){
-    SWIG_fail_ptr("new_Comb",2,SWIGTYPE_p_gam__real);
-  }
-  
-  
-  if (!SWIG_IsOK(SWIG_ConvertPtr(L,3,(void**)&arg3,SWIGTYPE_p_gam__real,0))){
-    SWIG_fail_ptr("new_Comb",3,SWIGTYPE_p_gam__real);
-  }
-  
-  result = (gam::Comb< SampleType > *)new gam::Comb< SampleType >(arg1,(gam::real const &)*arg2,(gam::real const &)*arg3);
+  temp2=(float)lua_tonumber(L,2); arg2=&temp2;
+  temp3=(float)lua_tonumber(L,3); arg3=&temp3;
+  result = (gam::Comb< SampleType > *)new gam::Comb< SampleType >(arg1,(float const &)*arg2,(float const &)*arg3);
   SWIG_NewPointerObj(L,result,SWIGTYPE_p_gam__CombT_float_ipl__Linear_gam__real_GAM_DEFAULT_DOMAIN_t,1); SWIG_arg++; 
   return SWIG_arg;
   
@@ -18703,19 +18488,16 @@ fail:
 static int _wrap_new_Comb__SWIG_2(lua_State* L) {
   int SWIG_arg = 0;
   float arg1 ;
-  gam::real *arg2 = 0 ;
+  float *arg2 = 0 ;
+  float temp2 ;
   gam::Comb< SampleType > *result = 0 ;
   
   SWIG_check_num_args("gam::Comb< SampleType >::Comb",2,2)
   if(!lua_isnumber(L,1)) SWIG_fail_arg("gam::Comb< SampleType >::Comb",1,"float");
-  if(!lua_isuserdata(L,2)) SWIG_fail_arg("gam::Comb< SampleType >::Comb",2,"gam::real const &");
+  if(!lua_isnumber(L,2)) SWIG_fail_arg("gam::Comb< SampleType >::Comb",2,"float const &");
   arg1 = (float)lua_tonumber(L, 1);
-  
-  if (!SWIG_IsOK(SWIG_ConvertPtr(L,2,(void**)&arg2,SWIGTYPE_p_gam__real,0))){
-    SWIG_fail_ptr("new_Comb",2,SWIGTYPE_p_gam__real);
-  }
-  
-  result = (gam::Comb< SampleType > *)new gam::Comb< SampleType >(arg1,(gam::real const &)*arg2);
+  temp2=(float)lua_tonumber(L,2); arg2=&temp2;
+  result = (gam::Comb< SampleType > *)new gam::Comb< SampleType >(arg1,(float const &)*arg2);
   SWIG_NewPointerObj(L,result,SWIGTYPE_p_gam__CombT_float_ipl__Linear_gam__real_GAM_DEFAULT_DOMAIN_t,1); SWIG_arg++; 
   return SWIG_arg;
   
@@ -18751,28 +18533,22 @@ static int _wrap_new_Comb__SWIG_4(lua_State* L) {
   int SWIG_arg = 0;
   float arg1 ;
   float arg2 ;
-  gam::real *arg3 = 0 ;
-  gam::real *arg4 = 0 ;
+  float *arg3 = 0 ;
+  float *arg4 = 0 ;
+  float temp3 ;
+  float temp4 ;
   gam::Comb< SampleType > *result = 0 ;
   
   SWIG_check_num_args("gam::Comb< SampleType >::Comb",4,4)
   if(!lua_isnumber(L,1)) SWIG_fail_arg("gam::Comb< SampleType >::Comb",1,"float");
   if(!lua_isnumber(L,2)) SWIG_fail_arg("gam::Comb< SampleType >::Comb",2,"float");
-  if(!lua_isuserdata(L,3)) SWIG_fail_arg("gam::Comb< SampleType >::Comb",3,"gam::real const &");
-  if(!lua_isuserdata(L,4)) SWIG_fail_arg("gam::Comb< SampleType >::Comb",4,"gam::real const &");
+  if(!lua_isnumber(L,3)) SWIG_fail_arg("gam::Comb< SampleType >::Comb",3,"float const &");
+  if(!lua_isnumber(L,4)) SWIG_fail_arg("gam::Comb< SampleType >::Comb",4,"float const &");
   arg1 = (float)lua_tonumber(L, 1);
   arg2 = (float)lua_tonumber(L, 2);
-  
-  if (!SWIG_IsOK(SWIG_ConvertPtr(L,3,(void**)&arg3,SWIGTYPE_p_gam__real,0))){
-    SWIG_fail_ptr("new_Comb",3,SWIGTYPE_p_gam__real);
-  }
-  
-  
-  if (!SWIG_IsOK(SWIG_ConvertPtr(L,4,(void**)&arg4,SWIGTYPE_p_gam__real,0))){
-    SWIG_fail_ptr("new_Comb",4,SWIGTYPE_p_gam__real);
-  }
-  
-  result = (gam::Comb< SampleType > *)new gam::Comb< SampleType >(arg1,arg2,(gam::real const &)*arg3,(gam::real const &)*arg4);
+  temp3=(float)lua_tonumber(L,3); arg3=&temp3;
+  temp4=(float)lua_tonumber(L,4); arg4=&temp4;
+  result = (gam::Comb< SampleType > *)new gam::Comb< SampleType >(arg1,arg2,(float const &)*arg3,(float const &)*arg4);
   SWIG_NewPointerObj(L,result,SWIGTYPE_p_gam__CombT_float_ipl__Linear_gam__real_GAM_DEFAULT_DOMAIN_t,1); SWIG_arg++; 
   return SWIG_arg;
   
@@ -18810,12 +18586,7 @@ static int _wrap_new_Comb(lua_State* L) {
     }
     if (_v) {
       {
-        void *ptr;
-        if (lua_isuserdata(L,argv[1])==0 || SWIG_ConvertPtr(L,argv[1], (void **) &ptr, SWIGTYPE_p_gam__real, SWIG_POINTER_NO_NULL)) {
-          _v = 0;
-        } else {
-          _v = 1;
-        }
+        _v = lua_isnumber(L,argv[1]);
       }
       if (_v) {
         return _wrap_new_Comb__SWIG_2(L);
@@ -18829,21 +18600,11 @@ static int _wrap_new_Comb(lua_State* L) {
     }
     if (_v) {
       {
-        void *ptr;
-        if (lua_isuserdata(L,argv[1])==0 || SWIG_ConvertPtr(L,argv[1], (void **) &ptr, SWIGTYPE_p_gam__real, SWIG_POINTER_NO_NULL)) {
-          _v = 0;
-        } else {
-          _v = 1;
-        }
+        _v = lua_isnumber(L,argv[1]);
       }
       if (_v) {
         {
-          void *ptr;
-          if (lua_isuserdata(L,argv[2])==0 || SWIG_ConvertPtr(L,argv[2], (void **) &ptr, SWIGTYPE_p_gam__real, SWIG_POINTER_NO_NULL)) {
-            _v = 0;
-          } else {
-            _v = 1;
-          }
+          _v = lua_isnumber(L,argv[2]);
         }
         if (_v) {
           return _wrap_new_Comb__SWIG_1(L);
@@ -18862,21 +18623,11 @@ static int _wrap_new_Comb(lua_State* L) {
       }
       if (_v) {
         {
-          void *ptr;
-          if (lua_isuserdata(L,argv[2])==0 || SWIG_ConvertPtr(L,argv[2], (void **) &ptr, SWIGTYPE_p_gam__real, SWIG_POINTER_NO_NULL)) {
-            _v = 0;
-          } else {
-            _v = 1;
-          }
+          _v = lua_isnumber(L,argv[2]);
         }
         if (_v) {
           {
-            void *ptr;
-            if (lua_isuserdata(L,argv[3])==0 || SWIG_ConvertPtr(L,argv[3], (void **) &ptr, SWIGTYPE_p_gam__real, SWIG_POINTER_NO_NULL)) {
-              _v = 0;
-            } else {
-              _v = 1;
-            }
+            _v = lua_isnumber(L,argv[3]);
           }
           if (_v) {
             return _wrap_new_Comb__SWIG_4(L);
@@ -18889,10 +18640,10 @@ static int _wrap_new_Comb(lua_State* L) {
   SWIG_Lua_pusherrstring(L,"Wrong arguments for overloaded function 'new_Comb'\n"
     "  Possible C/C++ prototypes are:\n"
     "    gam::Comb< SampleType >::Comb()\n"
-    "    gam::Comb< SampleType >::Comb(float,gam::real const &,gam::real const &)\n"
-    "    gam::Comb< SampleType >::Comb(float,gam::real const &)\n"
+    "    gam::Comb< SampleType >::Comb(float,float const &,float const &)\n"
+    "    gam::Comb< SampleType >::Comb(float,float const &)\n"
     "    gam::Comb< SampleType >::Comb(float)\n"
-    "    gam::Comb< SampleType >::Comb(float,float,gam::real const &,gam::real const &)\n");
+    "    gam::Comb< SampleType >::Comb(float,float,float const &,float const &)\n");
   lua_error(L);return 0;
 }
 
@@ -19014,22 +18765,19 @@ static int _wrap_Comb_decay(lua_State* L) {
 static int _wrap_Comb_allPass(lua_State* L) {
   int SWIG_arg = 0;
   gam::Comb< SampleType > *arg1 = (gam::Comb< SampleType > *) 0 ;
-  gam::real *arg2 = 0 ;
+  float *arg2 = 0 ;
+  float temp2 ;
   
   SWIG_check_num_args("gam::Comb< SampleType >::allPass",2,2)
   if(!SWIG_isptrtype(L,1)) SWIG_fail_arg("gam::Comb< SampleType >::allPass",1,"gam::Comb< SampleType > *");
-  if(!lua_isuserdata(L,2)) SWIG_fail_arg("gam::Comb< SampleType >::allPass",2,"gam::real const &");
+  if(!lua_isnumber(L,2)) SWIG_fail_arg("gam::Comb< SampleType >::allPass",2,"float const &");
   
   if (!SWIG_IsOK(SWIG_ConvertPtr(L,1,(void**)&arg1,SWIGTYPE_p_gam__CombT_float_ipl__Linear_gam__real_GAM_DEFAULT_DOMAIN_t,0))){
     SWIG_fail_ptr("Comb_allPass",1,SWIGTYPE_p_gam__CombT_float_ipl__Linear_gam__real_GAM_DEFAULT_DOMAIN_t);
   }
   
-  
-  if (!SWIG_IsOK(SWIG_ConvertPtr(L,2,(void**)&arg2,SWIGTYPE_p_gam__real,0))){
-    SWIG_fail_ptr("Comb_allPass",2,SWIGTYPE_p_gam__real);
-  }
-  
-  (arg1)->allPass((gam::real const &)*arg2);
+  temp2=(float)lua_tonumber(L,2); arg2=&temp2;
+  (arg1)->allPass((float const &)*arg2);
   
   return SWIG_arg;
   
@@ -19044,22 +18792,19 @@ fail:
 static int _wrap_Comb_fbk__SWIG_0(lua_State* L) {
   int SWIG_arg = 0;
   gam::Comb< SampleType > *arg1 = (gam::Comb< SampleType > *) 0 ;
-  gam::real *arg2 = 0 ;
+  float *arg2 = 0 ;
+  float temp2 ;
   
   SWIG_check_num_args("gam::Comb< SampleType >::fbk",2,2)
   if(!SWIG_isptrtype(L,1)) SWIG_fail_arg("gam::Comb< SampleType >::fbk",1,"gam::Comb< SampleType > *");
-  if(!lua_isuserdata(L,2)) SWIG_fail_arg("gam::Comb< SampleType >::fbk",2,"gam::real const &");
+  if(!lua_isnumber(L,2)) SWIG_fail_arg("gam::Comb< SampleType >::fbk",2,"float const &");
   
   if (!SWIG_IsOK(SWIG_ConvertPtr(L,1,(void**)&arg1,SWIGTYPE_p_gam__CombT_float_ipl__Linear_gam__real_GAM_DEFAULT_DOMAIN_t,0))){
     SWIG_fail_ptr("Comb_fbk",1,SWIGTYPE_p_gam__CombT_float_ipl__Linear_gam__real_GAM_DEFAULT_DOMAIN_t);
   }
   
-  
-  if (!SWIG_IsOK(SWIG_ConvertPtr(L,2,(void**)&arg2,SWIGTYPE_p_gam__real,0))){
-    SWIG_fail_ptr("Comb_fbk",2,SWIGTYPE_p_gam__real);
-  }
-  
-  (arg1)->fbk((gam::real const &)*arg2);
+  temp2=(float)lua_tonumber(L,2); arg2=&temp2;
+  (arg1)->fbk((float const &)*arg2);
   
   return SWIG_arg;
   
@@ -19074,22 +18819,19 @@ fail:
 static int _wrap_Comb_ffd__SWIG_0(lua_State* L) {
   int SWIG_arg = 0;
   gam::Comb< SampleType > *arg1 = (gam::Comb< SampleType > *) 0 ;
-  gam::real *arg2 = 0 ;
+  float *arg2 = 0 ;
+  float temp2 ;
   
   SWIG_check_num_args("gam::Comb< SampleType >::ffd",2,2)
   if(!SWIG_isptrtype(L,1)) SWIG_fail_arg("gam::Comb< SampleType >::ffd",1,"gam::Comb< SampleType > *");
-  if(!lua_isuserdata(L,2)) SWIG_fail_arg("gam::Comb< SampleType >::ffd",2,"gam::real const &");
+  if(!lua_isnumber(L,2)) SWIG_fail_arg("gam::Comb< SampleType >::ffd",2,"float const &");
   
   if (!SWIG_IsOK(SWIG_ConvertPtr(L,1,(void**)&arg1,SWIGTYPE_p_gam__CombT_float_ipl__Linear_gam__real_GAM_DEFAULT_DOMAIN_t,0))){
     SWIG_fail_ptr("Comb_ffd",1,SWIGTYPE_p_gam__CombT_float_ipl__Linear_gam__real_GAM_DEFAULT_DOMAIN_t);
   }
   
-  
-  if (!SWIG_IsOK(SWIG_ConvertPtr(L,2,(void**)&arg2,SWIGTYPE_p_gam__real,0))){
-    SWIG_fail_ptr("Comb_ffd",2,SWIGTYPE_p_gam__real);
-  }
-  
-  (arg1)->ffd((gam::real const &)*arg2);
+  temp2=(float)lua_tonumber(L,2); arg2=&temp2;
+  (arg1)->ffd((float const &)*arg2);
   
   return SWIG_arg;
   
@@ -19104,29 +18846,23 @@ fail:
 static int _wrap_Comb_feeds(lua_State* L) {
   int SWIG_arg = 0;
   gam::Comb< SampleType > *arg1 = (gam::Comb< SampleType > *) 0 ;
-  gam::real *arg2 = 0 ;
-  gam::real *arg3 = 0 ;
+  float *arg2 = 0 ;
+  float *arg3 = 0 ;
+  float temp2 ;
+  float temp3 ;
   
   SWIG_check_num_args("gam::Comb< SampleType >::feeds",3,3)
   if(!SWIG_isptrtype(L,1)) SWIG_fail_arg("gam::Comb< SampleType >::feeds",1,"gam::Comb< SampleType > *");
-  if(!lua_isuserdata(L,2)) SWIG_fail_arg("gam::Comb< SampleType >::feeds",2,"gam::real const &");
-  if(!lua_isuserdata(L,3)) SWIG_fail_arg("gam::Comb< SampleType >::feeds",3,"gam::real const &");
+  if(!lua_isnumber(L,2)) SWIG_fail_arg("gam::Comb< SampleType >::feeds",2,"float const &");
+  if(!lua_isnumber(L,3)) SWIG_fail_arg("gam::Comb< SampleType >::feeds",3,"float const &");
   
   if (!SWIG_IsOK(SWIG_ConvertPtr(L,1,(void**)&arg1,SWIGTYPE_p_gam__CombT_float_ipl__Linear_gam__real_GAM_DEFAULT_DOMAIN_t,0))){
     SWIG_fail_ptr("Comb_feeds",1,SWIGTYPE_p_gam__CombT_float_ipl__Linear_gam__real_GAM_DEFAULT_DOMAIN_t);
   }
   
-  
-  if (!SWIG_IsOK(SWIG_ConvertPtr(L,2,(void**)&arg2,SWIGTYPE_p_gam__real,0))){
-    SWIG_fail_ptr("Comb_feeds",2,SWIGTYPE_p_gam__real);
-  }
-  
-  
-  if (!SWIG_IsOK(SWIG_ConvertPtr(L,3,(void**)&arg3,SWIGTYPE_p_gam__real,0))){
-    SWIG_fail_ptr("Comb_feeds",3,SWIGTYPE_p_gam__real);
-  }
-  
-  (arg1)->feeds((gam::real const &)*arg2,(gam::real const &)*arg3);
+  temp2=(float)lua_tonumber(L,2); arg2=&temp2;
+  temp3=(float)lua_tonumber(L,3); arg3=&temp3;
+  (arg1)->feeds((float const &)*arg2,(float const &)*arg3);
   
   return SWIG_arg;
   
@@ -19142,31 +18878,25 @@ static int _wrap_Comb_set(lua_State* L) {
   int SWIG_arg = 0;
   gam::Comb< SampleType > *arg1 = (gam::Comb< SampleType > *) 0 ;
   float arg2 ;
-  gam::real *arg3 = 0 ;
-  gam::real *arg4 = 0 ;
+  float *arg3 = 0 ;
+  float *arg4 = 0 ;
+  float temp3 ;
+  float temp4 ;
   
   SWIG_check_num_args("gam::Comb< SampleType >::set",4,4)
   if(!SWIG_isptrtype(L,1)) SWIG_fail_arg("gam::Comb< SampleType >::set",1,"gam::Comb< SampleType > *");
   if(!lua_isnumber(L,2)) SWIG_fail_arg("gam::Comb< SampleType >::set",2,"float");
-  if(!lua_isuserdata(L,3)) SWIG_fail_arg("gam::Comb< SampleType >::set",3,"gam::real const &");
-  if(!lua_isuserdata(L,4)) SWIG_fail_arg("gam::Comb< SampleType >::set",4,"gam::real const &");
+  if(!lua_isnumber(L,3)) SWIG_fail_arg("gam::Comb< SampleType >::set",3,"float const &");
+  if(!lua_isnumber(L,4)) SWIG_fail_arg("gam::Comb< SampleType >::set",4,"float const &");
   
   if (!SWIG_IsOK(SWIG_ConvertPtr(L,1,(void**)&arg1,SWIGTYPE_p_gam__CombT_float_ipl__Linear_gam__real_GAM_DEFAULT_DOMAIN_t,0))){
     SWIG_fail_ptr("Comb_set",1,SWIGTYPE_p_gam__CombT_float_ipl__Linear_gam__real_GAM_DEFAULT_DOMAIN_t);
   }
   
   arg2 = (float)lua_tonumber(L, 2);
-  
-  if (!SWIG_IsOK(SWIG_ConvertPtr(L,3,(void**)&arg3,SWIGTYPE_p_gam__real,0))){
-    SWIG_fail_ptr("Comb_set",3,SWIGTYPE_p_gam__real);
-  }
-  
-  
-  if (!SWIG_IsOK(SWIG_ConvertPtr(L,4,(void**)&arg4,SWIGTYPE_p_gam__real,0))){
-    SWIG_fail_ptr("Comb_set",4,SWIGTYPE_p_gam__real);
-  }
-  
-  (arg1)->set(arg2,(gam::real const &)*arg3,(gam::real const &)*arg4);
+  temp3=(float)lua_tonumber(L,3); arg3=&temp3;
+  temp4=(float)lua_tonumber(L,4); arg4=&temp4;
+  (arg1)->set(arg2,(float const &)*arg3,(float const &)*arg4);
   
   return SWIG_arg;
   
@@ -19555,7 +19285,7 @@ fail:
 static int _wrap_Comb_ffd__SWIG_1(lua_State* L) {
   int SWIG_arg = 0;
   gam::Comb< SampleType > *arg1 = (gam::Comb< SampleType > *) 0 ;
-  gam::real result;
+  float result;
   
   SWIG_check_num_args("gam::Comb< SampleType >::ffd",1,1)
   if(!SWIG_isptrtype(L,1)) SWIG_fail_arg("gam::Comb< SampleType >::ffd",1,"gam::Comb< SampleType > const *");
@@ -19564,11 +19294,8 @@ static int _wrap_Comb_ffd__SWIG_1(lua_State* L) {
     SWIG_fail_ptr("Comb_ffd",1,SWIGTYPE_p_gam__CombT_float_ipl__Linear_gam__real_GAM_DEFAULT_DOMAIN_t);
   }
   
-  result = ((gam::Comb< SampleType > const *)arg1)->ffd();
-  {
-    gam::real * resultptr = new gam::real((const gam::real &) result);
-    SWIG_NewPointerObj(L,(void *) resultptr,SWIGTYPE_p_gam__real,1); SWIG_arg++;
-  }
+  result = (float)((gam::Comb< SampleType > const *)arg1)->ffd();
+  lua_pushnumber(L, (lua_Number) result); SWIG_arg++;
   return SWIG_arg;
   
   if(0) SWIG_fail;
@@ -19612,12 +19339,7 @@ static int _wrap_Comb_ffd(lua_State* L) {
     }
     if (_v) {
       {
-        void *ptr;
-        if (lua_isuserdata(L,argv[1])==0 || SWIG_ConvertPtr(L,argv[1], (void **) &ptr, SWIGTYPE_p_gam__real, SWIG_POINTER_NO_NULL)) {
-          _v = 0;
-        } else {
-          _v = 1;
-        }
+        _v = lua_isnumber(L,argv[1]);
       }
       if (_v) {
         return _wrap_Comb_ffd__SWIG_0(L);
@@ -19627,7 +19349,7 @@ static int _wrap_Comb_ffd(lua_State* L) {
   
   SWIG_Lua_pusherrstring(L,"Wrong arguments for overloaded function 'Comb_ffd'\n"
     "  Possible C/C++ prototypes are:\n"
-    "    gam::Comb< SampleType >::ffd(gam::real const &)\n"
+    "    gam::Comb< SampleType >::ffd(float const &)\n"
     "    gam::Comb< SampleType >::ffd() const\n");
   lua_error(L);return 0;
 }
@@ -19636,7 +19358,7 @@ static int _wrap_Comb_ffd(lua_State* L) {
 static int _wrap_Comb_fbk__SWIG_1(lua_State* L) {
   int SWIG_arg = 0;
   gam::Comb< SampleType > *arg1 = (gam::Comb< SampleType > *) 0 ;
-  gam::real result;
+  float result;
   
   SWIG_check_num_args("gam::Comb< SampleType >::fbk",1,1)
   if(!SWIG_isptrtype(L,1)) SWIG_fail_arg("gam::Comb< SampleType >::fbk",1,"gam::Comb< SampleType > const *");
@@ -19645,11 +19367,8 @@ static int _wrap_Comb_fbk__SWIG_1(lua_State* L) {
     SWIG_fail_ptr("Comb_fbk",1,SWIGTYPE_p_gam__CombT_float_ipl__Linear_gam__real_GAM_DEFAULT_DOMAIN_t);
   }
   
-  result = ((gam::Comb< SampleType > const *)arg1)->fbk();
-  {
-    gam::real * resultptr = new gam::real((const gam::real &) result);
-    SWIG_NewPointerObj(L,(void *) resultptr,SWIGTYPE_p_gam__real,1); SWIG_arg++;
-  }
+  result = (float)((gam::Comb< SampleType > const *)arg1)->fbk();
+  lua_pushnumber(L, (lua_Number) result); SWIG_arg++;
   return SWIG_arg;
   
   if(0) SWIG_fail;
@@ -19693,12 +19412,7 @@ static int _wrap_Comb_fbk(lua_State* L) {
     }
     if (_v) {
       {
-        void *ptr;
-        if (lua_isuserdata(L,argv[1])==0 || SWIG_ConvertPtr(L,argv[1], (void **) &ptr, SWIGTYPE_p_gam__real, SWIG_POINTER_NO_NULL)) {
-          _v = 0;
-        } else {
-          _v = 1;
-        }
+        _v = lua_isnumber(L,argv[1]);
       }
       if (_v) {
         return _wrap_Comb_fbk__SWIG_0(L);
@@ -19708,7 +19422,7 @@ static int _wrap_Comb_fbk(lua_State* L) {
   
   SWIG_Lua_pusherrstring(L,"Wrong arguments for overloaded function 'Comb_fbk'\n"
     "  Possible C/C++ prototypes are:\n"
-    "    gam::Comb< SampleType >::fbk(gam::real const &)\n"
+    "    gam::Comb< SampleType >::fbk(float const &)\n"
     "    gam::Comb< SampleType >::fbk() const\n");
   lua_error(L);return 0;
 }
@@ -21154,7 +20868,7 @@ static int _wrap_Biquad3_get_bq0(lua_State* L) {
   }
   
   result = (gam::Biquad< gam::real,gam::real,GAM_DEFAULT_DOMAIN > *) &gam_Biquad3_get_bq0__SWIG(arg1);
-  SWIG_NewPointerObj(L,result,SWIGTYPE_p_gam__BiquadT_gam__real_gam__real_GAM_DEFAULT_DOMAIN_t,0); SWIG_arg++; 
+  SWIG_NewPointerObj(L,result,SWIGTYPE_p_gam__BiquadT_float_float_GAM_DEFAULT_DOMAIN_t,0); SWIG_arg++; 
   return SWIG_arg;
   
   if(0) SWIG_fail;
@@ -21178,7 +20892,7 @@ static int _wrap_Biquad3_get_bq1(lua_State* L) {
   }
   
   result = (gam::Biquad< gam::real,gam::real,GAM_DEFAULT_DOMAIN > *) &gam_Biquad3_get_bq1__SWIG(arg1);
-  SWIG_NewPointerObj(L,result,SWIGTYPE_p_gam__BiquadT_gam__real_gam__real_GAM_DEFAULT_DOMAIN_t,0); SWIG_arg++; 
+  SWIG_NewPointerObj(L,result,SWIGTYPE_p_gam__BiquadT_float_float_GAM_DEFAULT_DOMAIN_t,0); SWIG_arg++; 
   return SWIG_arg;
   
   if(0) SWIG_fail;
@@ -21202,7 +20916,7 @@ static int _wrap_Biquad3_get_bq2(lua_State* L) {
   }
   
   result = (gam::Biquad< gam::real,gam::real,GAM_DEFAULT_DOMAIN > *) &gam_Biquad3_get_bq2__SWIG(arg1);
-  SWIG_NewPointerObj(L,result,SWIGTYPE_p_gam__BiquadT_gam__real_gam__real_GAM_DEFAULT_DOMAIN_t,0); SWIG_arg++; 
+  SWIG_NewPointerObj(L,result,SWIGTYPE_p_gam__BiquadT_float_float_GAM_DEFAULT_DOMAIN_t,0); SWIG_arg++; 
   return SWIG_arg;
   
   if(0) SWIG_fail;
@@ -21744,7 +21458,7 @@ static int _wrap_Burst_get_fil(lua_State* L) {
   }
   
   result = (gam::Biquad< gam::real,gam::real,GAM_DEFAULT_DOMAIN > *) &gam_Burst_get_fil__SWIG(arg1);
-  SWIG_NewPointerObj(L,result,SWIGTYPE_p_gam__BiquadT_gam__real_gam__real_GAM_DEFAULT_DOMAIN_t,0); SWIG_arg++; 
+  SWIG_NewPointerObj(L,result,SWIGTYPE_p_gam__BiquadT_float_float_GAM_DEFAULT_DOMAIN_t,0); SWIG_arg++; 
   return SWIG_arg;
   
   if(0) SWIG_fail;
@@ -22538,7 +22252,7 @@ static int _wrap_MonoSynth_get_opEnv(lua_State* L) {
   }
   
   result = (gam::OnePole< float,gam::real,GAM_DEFAULT_DOMAIN > *) &gam_MonoSynth_get_opEnv__SWIG(arg1);
-  SWIG_NewPointerObj(L,result,SWIGTYPE_p_gam__OnePoleT_float_gam__real_GAM_DEFAULT_DOMAIN_t,0); SWIG_arg++; 
+  SWIG_NewPointerObj(L,result,SWIGTYPE_p_gam__OnePoleT_float_float_GAM_DEFAULT_DOMAIN_t,0); SWIG_arg++; 
   return SWIG_arg;
   
   if(0) SWIG_fail;
@@ -22562,7 +22276,7 @@ static int _wrap_MonoSynth_get_filter(lua_State* L) {
   }
   
   result = (gam::Biquad< gam::real,gam::real,GAM_DEFAULT_DOMAIN > *) &gam_MonoSynth_get_filter__SWIG(arg1);
-  SWIG_NewPointerObj(L,result,SWIGTYPE_p_gam__BiquadT_gam__real_gam__real_GAM_DEFAULT_DOMAIN_t,0); SWIG_arg++; 
+  SWIG_NewPointerObj(L,result,SWIGTYPE_p_gam__BiquadT_float_float_GAM_DEFAULT_DOMAIN_t,0); SWIG_arg++; 
   return SWIG_arg;
   
   if(0) SWIG_fail;
@@ -28265,7 +27979,7 @@ static int _wrap_Chorus_get_comb1(lua_State* L) {
   }
   
   result = (gam::Comb< float,ipl::Cubic,gam::real,GAM_DEFAULT_DOMAIN > *) &gam_Chorus_Sl_SampleType_Sg__get_comb1__SWIG(arg1);
-  SWIG_NewPointerObj(L,result,SWIGTYPE_p_gam__CombT_float_ipl__Cubic_gam__real_GAM_DEFAULT_DOMAIN_t,0); SWIG_arg++; 
+  SWIG_NewPointerObj(L,result,SWIGTYPE_p_gam__CombT_float_ipl__Cubic_float_GAM_DEFAULT_DOMAIN_t,0); SWIG_arg++; 
   return SWIG_arg;
   
   if(0) SWIG_fail;
@@ -28289,7 +28003,7 @@ static int _wrap_Chorus_get_comb2(lua_State* L) {
   }
   
   result = (gam::Comb< float,ipl::Cubic,gam::real,GAM_DEFAULT_DOMAIN > *) &gam_Chorus_Sl_SampleType_Sg__get_comb2__SWIG(arg1);
-  SWIG_NewPointerObj(L,result,SWIGTYPE_p_gam__CombT_float_ipl__Cubic_gam__real_GAM_DEFAULT_DOMAIN_t,0); SWIG_arg++; 
+  SWIG_NewPointerObj(L,result,SWIGTYPE_p_gam__CombT_float_ipl__Cubic_float_GAM_DEFAULT_DOMAIN_t,0); SWIG_arg++; 
   return SWIG_arg;
   
   if(0) SWIG_fail;
@@ -28590,7 +28304,7 @@ fail:
 static int _wrap_FreqShift_get_hil(lua_State* L) {
   int SWIG_arg = 0;
   gam::FreqShift< SampleType > *arg1 = (gam::FreqShift< SampleType > *) 0 ;
-  SwigValueWrapper< gam::Hilbert< float,gam::real > > result;
+  gam::Hilbert< float,gam::real > result;
   
   SWIG_check_num_args("gam::FreqShift< SampleType >::get_hil",1,1)
   if(!SWIG_isptrtype(L,1)) SWIG_fail_arg("gam::FreqShift< SampleType >::get_hil",1,"gam::FreqShift< SampleType > *");
@@ -28602,7 +28316,7 @@ static int _wrap_FreqShift_get_hil(lua_State* L) {
   result = gam_FreqShift_Sl_SampleType_Sg__get_hil__SWIG(arg1);
   {
     gam::Hilbert< float,gam::real > * resultptr = new gam::Hilbert< float,gam::real >((const gam::Hilbert< float,gam::real > &) result);
-    SWIG_NewPointerObj(L,(void *) resultptr,SWIGTYPE_p_gam__HilbertT_float_gam__real_t,1); SWIG_arg++;
+    SWIG_NewPointerObj(L,(void *) resultptr,SWIGTYPE_p_gam__HilbertT_float_float_t,1); SWIG_arg++;
   }
   return SWIG_arg;
   
@@ -28881,7 +28595,7 @@ static int _wrap_Pan_Tick(lua_State* L) {
   int SWIG_arg = 0;
   gam::Pan< SampleType > *arg1 = (gam::Pan< SampleType > *) 0 ;
   float arg2 ;
-  gam::Vec< 2,float > result;
+  SwigValueWrapper< gam::Vec< 2,float > > result;
   
   SWIG_check_num_args("gam::Pan< SampleType >::Tick",2,2)
   if(!SWIG_isptrtype(L,1)) SWIG_fail_arg("gam::Pan< SampleType >::Tick",1,"gam::Pan< SampleType > *");
@@ -32092,7 +31806,7 @@ static int _wrap_Hilbert_Tick(lua_State* L) {
   int SWIG_arg = 0;
   gam::Hilbert< SampleType,SampleType > *arg1 = (gam::Hilbert< SampleType,SampleType > *) 0 ;
   float arg2 ;
-  gam::Complex< float > result;
+  SwigValueWrapper< gam::Complex< float > > result;
   
   SWIG_check_num_args("gam::Hilbert< SampleType,SampleType >::Tick",2,2)
   if(!SWIG_isptrtype(L,1)) SWIG_fail_arg("gam::Hilbert< SampleType,SampleType >::Tick",1,"gam::Hilbert< SampleType,SampleType > *");
@@ -37910,24 +37624,22 @@ static int _wrap_new_CSine(lua_State* L) {
 static int _wrap_CSine_val_set(lua_State* L) {
   int SWIG_arg = 0;
   gam::CSine< SampleType > *arg1 = (gam::CSine< SampleType > *) 0 ;
-  gam::CSine< float >::complex arg2 ;
-  gam::CSine< float >::complex *argp2 ;
+  gam::CSine< float >::complex *arg2 = (gam::CSine< float >::complex *) 0 ;
   
   SWIG_check_num_args("gam::CSine< SampleType >::val",2,2)
   if(!SWIG_isptrtype(L,1)) SWIG_fail_arg("gam::CSine< SampleType >::val",1,"gam::CSine< SampleType > *");
-  if(!lua_isuserdata(L,2)) SWIG_fail_arg("gam::CSine< SampleType >::val",2,"gam::CSine< float >::complex");
+  if(!SWIG_isptrtype(L,2)) SWIG_fail_arg("gam::CSine< SampleType >::val",2,"gam::CSine< float >::complex *");
   
   if (!SWIG_IsOK(SWIG_ConvertPtr(L,1,(void**)&arg1,SWIGTYPE_p_gam__CSineT_float_GAM_DEFAULT_DOMAIN_t,0))){
     SWIG_fail_ptr("CSine_val_set",1,SWIGTYPE_p_gam__CSineT_float_GAM_DEFAULT_DOMAIN_t);
   }
   
   
-  if (!SWIG_IsOK(SWIG_ConvertPtr(L,2,(void**)&argp2,SWIGTYPE_p_ComplexT_float_t,0))){
-    SWIG_fail_ptr("CSine_val_set",2,SWIGTYPE_p_ComplexT_float_t);
+  if (!SWIG_IsOK(SWIG_ConvertPtr(L,2,(void**)&arg2,SWIGTYPE_p_gam__ComplexT_float_t,0))){
+    SWIG_fail_ptr("CSine_val_set",2,SWIGTYPE_p_gam__ComplexT_float_t);
   }
-  arg2 = *argp2;
   
-  if (arg1) (arg1)->val = arg2;
+  if (arg1) (arg1)->val = *arg2;
   
   return SWIG_arg;
   
@@ -37942,7 +37654,7 @@ fail:
 static int _wrap_CSine_val_get(lua_State* L) {
   int SWIG_arg = 0;
   gam::CSine< SampleType > *arg1 = (gam::CSine< SampleType > *) 0 ;
-  gam::CSine< float >::complex result;
+  gam::CSine< float >::complex *result = 0 ;
   
   SWIG_check_num_args("gam::CSine< SampleType >::val",1,1)
   if(!SWIG_isptrtype(L,1)) SWIG_fail_arg("gam::CSine< SampleType >::val",1,"gam::CSine< SampleType > *");
@@ -37951,11 +37663,8 @@ static int _wrap_CSine_val_get(lua_State* L) {
     SWIG_fail_ptr("CSine_val_get",1,SWIGTYPE_p_gam__CSineT_float_GAM_DEFAULT_DOMAIN_t);
   }
   
-  result =  ((arg1)->val);
-  {
-    gam::CSine< float >::complex * resultptr = new gam::CSine< float >::complex((const gam::CSine< float >::complex &) result);
-    SWIG_NewPointerObj(L,(void *) resultptr,SWIGTYPE_p_ComplexT_float_t,1); SWIG_arg++;
-  }
+  result = (gam::CSine< float >::complex *)& ((arg1)->val);
+  SWIG_NewPointerObj(L,result,SWIGTYPE_p_gam__ComplexT_float_t,0); SWIG_arg++; 
   return SWIG_arg;
   
   if(0) SWIG_fail;
@@ -37969,7 +37678,7 @@ fail:
 static int _wrap_CSine_Tick(lua_State* L) {
   int SWIG_arg = 0;
   gam::CSine< SampleType > *arg1 = (gam::CSine< SampleType > *) 0 ;
-  gam::CSine< float >::complex result;
+  SwigValueWrapper< gam::Complex< float > > result;
   
   SWIG_check_num_args("gam::CSine< SampleType >::Tick",1,1)
   if(!SWIG_isptrtype(L,1)) SWIG_fail_arg("gam::CSine< SampleType >::Tick",1,"gam::CSine< SampleType > *");
@@ -37981,7 +37690,7 @@ static int _wrap_CSine_Tick(lua_State* L) {
   result = gam_CSine_Sl_SampleType_Sg__Tick__SWIG(arg1);
   {
     gam::CSine< float >::complex * resultptr = new gam::CSine< float >::complex((const gam::CSine< float >::complex &) result);
-    SWIG_NewPointerObj(L,(void *) resultptr,SWIGTYPE_p_ComplexT_float_t,1); SWIG_arg++;
+    SWIG_NewPointerObj(L,(void *) resultptr,SWIGTYPE_p_gam__ComplexT_float_t,1); SWIG_arg++;
   }
   return SWIG_arg;
   
@@ -38074,7 +37783,7 @@ fail:
 static int _wrap_CSine_freq__SWIG_1(lua_State* L) {
   int SWIG_arg = 0;
   gam::CSine< SampleType > *arg1 = (gam::CSine< SampleType > *) 0 ;
-  gam::CSine< float >::complex arg2 ;
+  SwigValueWrapper< gam::Complex< float > > arg2 ;
   gam::CSine< float >::complex *argp2 ;
   
   SWIG_check_num_args("gam::CSine< SampleType >::freq",2,2)
@@ -38086,8 +37795,8 @@ static int _wrap_CSine_freq__SWIG_1(lua_State* L) {
   }
   
   
-  if (!SWIG_IsOK(SWIG_ConvertPtr(L,2,(void**)&argp2,SWIGTYPE_p_ComplexT_float_t,0))){
-    SWIG_fail_ptr("CSine_freq",2,SWIGTYPE_p_ComplexT_float_t);
+  if (!SWIG_IsOK(SWIG_ConvertPtr(L,2,(void**)&argp2,SWIGTYPE_p_gam__ComplexT_float_t,0))){
+    SWIG_fail_ptr("CSine_freq",2,SWIGTYPE_p_gam__ComplexT_float_t);
   }
   arg2 = *argp2;
   
@@ -38391,7 +38100,7 @@ static int _wrap_CSine_freq(lua_State* L) {
     if (_v) {
       {
         void *ptr;
-        if (lua_isuserdata(L,argv[1])==0 || SWIG_ConvertPtr(L,argv[1], (void **) &ptr, SWIGTYPE_p_ComplexT_float_t, SWIG_POINTER_NO_NULL)) {
+        if (lua_isuserdata(L,argv[1])==0 || SWIG_ConvertPtr(L,argv[1], (void **) &ptr, SWIGTYPE_p_gam__ComplexT_float_t, SWIG_POINTER_NO_NULL)) {
           _v = 0;
         } else {
           _v = 1;
@@ -41311,8 +41020,8 @@ static int _wrap_Chirplet_length__SWIG_0(lua_State* L) {
   
   arg2 = (double)lua_tonumber(L, 2);
   
-  if (!SWIG_IsOK(SWIG_ConvertPtr(L,3,(void**)&arg3,SWIGTYPE_p_ComplexT_float_t,0))){
-    SWIG_fail_ptr("Chirplet_length",3,SWIGTYPE_p_ComplexT_float_t);
+  if (!SWIG_IsOK(SWIG_ConvertPtr(L,3,(void**)&arg3,SWIGTYPE_p_gam__ComplexT_float_t,0))){
+    SWIG_fail_ptr("Chirplet_length",3,SWIGTYPE_p_gam__ComplexT_float_t);
   }
   
   result = (gam::Chirplet< SampleType > *) &(arg1)->length(arg2,(gam::Chirplet< float >::complex const &)*arg3);
@@ -41384,7 +41093,7 @@ fail:
 static int _wrap_Chirplet_Tick(lua_State* L) {
   int SWIG_arg = 0;
   gam::Chirplet< SampleType > *arg1 = (gam::Chirplet< SampleType > *) 0 ;
-  gam::Chirplet< float >::complex result;
+  SwigValueWrapper< gam::Complex< float > > result;
   
   SWIG_check_num_args("gam::Chirplet< SampleType >::Tick",1,1)
   if(!SWIG_isptrtype(L,1)) SWIG_fail_arg("gam::Chirplet< SampleType >::Tick",1,"gam::Chirplet< SampleType > *");
@@ -41396,7 +41105,7 @@ static int _wrap_Chirplet_Tick(lua_State* L) {
   result = gam_Chirplet_Sl_SampleType_Sg__Tick__SWIG(arg1);
   {
     gam::Chirplet< float >::complex * resultptr = new gam::Chirplet< float >::complex((const gam::Chirplet< float >::complex &) result);
-    SWIG_NewPointerObj(L,(void *) resultptr,SWIGTYPE_p_ComplexT_float_t,1); SWIG_arg++;
+    SWIG_NewPointerObj(L,(void *) resultptr,SWIGTYPE_p_gam__ComplexT_float_t,1); SWIG_arg++;
   }
   return SWIG_arg;
   
@@ -41613,7 +41322,7 @@ static int _wrap_Chirplet_length(lua_State* L) {
       if (_v) {
         {
           void *ptr;
-          if (lua_isuserdata(L,argv[2])==0 || SWIG_ConvertPtr(L,argv[2], (void **) &ptr, SWIGTYPE_p_ComplexT_float_t, SWIG_POINTER_NO_NULL)) {
+          if (lua_isuserdata(L,argv[2])==0 || SWIG_ConvertPtr(L,argv[2], (void **) &ptr, SWIGTYPE_p_gam__ComplexT_float_t, SWIG_POINTER_NO_NULL)) {
             _v = 0;
           } else {
             _v = 1;
@@ -51263,7 +50972,7 @@ static int _wrap_EchoCSine_Process(lua_State* L) {
   gam::EchoCSine< SampleType > *arg1 = (gam::EchoCSine< SampleType > *) 0 ;
   float arg2 ;
   float arg3 ;
-  Complex< float > result;
+  SwigValueWrapper< gam::Complex< float > > result;
   
   SWIG_check_num_args("gam::EchoCSine< SampleType >::Process",3,3)
   if(!SWIG_isptrtype(L,1)) SWIG_fail_arg("gam::EchoCSine< SampleType >::Process",1,"gam::EchoCSine< SampleType > *");
@@ -51278,8 +50987,8 @@ static int _wrap_EchoCSine_Process(lua_State* L) {
   arg3 = (float)lua_tonumber(L, 3);
   result = gam_EchoCSine_Sl_SampleType_Sg__Process__SWIG(arg1,arg2,arg3);
   {
-    Complex< float > * resultptr = new Complex< float >((const Complex< float > &) result);
-    SWIG_NewPointerObj(L,(void *) resultptr,SWIGTYPE_p_ComplexT_float_t,1); SWIG_arg++;
+    gam::Complex< float > * resultptr = new gam::Complex< float >((const gam::Complex< float > &) result);
+    SWIG_NewPointerObj(L,(void *) resultptr,SWIGTYPE_p_gam__ComplexT_float_t,1); SWIG_arg++;
   }
   return SWIG_arg;
   
@@ -51295,7 +51004,7 @@ static int _wrap_EchoCSine_Tick(lua_State* L) {
   int SWIG_arg = 0;
   gam::EchoCSine< SampleType > *arg1 = (gam::EchoCSine< SampleType > *) 0 ;
   float arg2 ;
-  Complex< float > result;
+  SwigValueWrapper< gam::Complex< float > > result;
   
   SWIG_check_num_args("gam::EchoCSine< SampleType >::Tick",2,2)
   if(!SWIG_isptrtype(L,1)) SWIG_fail_arg("gam::EchoCSine< SampleType >::Tick",1,"gam::EchoCSine< SampleType > *");
@@ -51308,8 +51017,8 @@ static int _wrap_EchoCSine_Tick(lua_State* L) {
   arg2 = (float)lua_tonumber(L, 2);
   result = gam_EchoCSine_Sl_SampleType_Sg__Tick__SWIG(arg1,arg2);
   {
-    Complex< float > * resultptr = new Complex< float >((const Complex< float > &) result);
-    SWIG_NewPointerObj(L,(void *) resultptr,SWIGTYPE_p_ComplexT_float_t,1); SWIG_arg++;
+    gam::Complex< float > * resultptr = new gam::Complex< float >((const gam::Complex< float > &) result);
+    SWIG_NewPointerObj(L,(void *) resultptr,SWIGTYPE_p_gam__ComplexT_float_t,1); SWIG_arg++;
   }
   return SWIG_arg;
   
@@ -51324,7 +51033,7 @@ fail:
 static int _wrap_EchoCSine_fbk__SWIG_2(lua_State* L) {
   int SWIG_arg = 0;
   gam::EchoCSine< SampleType > *arg1 = (gam::EchoCSine< SampleType > *) 0 ;
-  Complex< float > result;
+  SwigValueWrapper< gam::Complex< float > > result;
   
   SWIG_check_num_args("gam::EchoCSine< SampleType >::fbk",1,1)
   if(!SWIG_isptrtype(L,1)) SWIG_fail_arg("gam::EchoCSine< SampleType >::fbk",1,"gam::EchoCSine< SampleType > const *");
@@ -51335,8 +51044,8 @@ static int _wrap_EchoCSine_fbk__SWIG_2(lua_State* L) {
   
   result = ((gam::EchoCSine< SampleType > const *)arg1)->fbk();
   {
-    Complex< float > * resultptr = new Complex< float >((const Complex< float > &) result);
-    SWIG_NewPointerObj(L,(void *) resultptr,SWIGTYPE_p_ComplexT_float_t,1); SWIG_arg++;
+    gam::Complex< float > * resultptr = new gam::Complex< float >((const gam::Complex< float > &) result);
+    SWIG_NewPointerObj(L,(void *) resultptr,SWIGTYPE_p_gam__ComplexT_float_t,1); SWIG_arg++;
   }
   return SWIG_arg;
   
@@ -51425,7 +51134,7 @@ static int _wrap_EchoCSine_fbk(lua_State* L) {
 static int _wrap_EchoCSine_gain__SWIG_2(lua_State* L) {
   int SWIG_arg = 0;
   gam::EchoCSine< SampleType > *arg1 = (gam::EchoCSine< SampleType > *) 0 ;
-  Complex< float > result;
+  SwigValueWrapper< gam::Complex< float > > result;
   
   SWIG_check_num_args("gam::EchoCSine< SampleType >::gain",1,1)
   if(!SWIG_isptrtype(L,1)) SWIG_fail_arg("gam::EchoCSine< SampleType >::gain",1,"gam::EchoCSine< SampleType > const *");
@@ -51436,8 +51145,8 @@ static int _wrap_EchoCSine_gain__SWIG_2(lua_State* L) {
   
   result = ((gam::EchoCSine< SampleType > const *)arg1)->gain();
   {
-    Complex< float > * resultptr = new Complex< float >((const Complex< float > &) result);
-    SWIG_NewPointerObj(L,(void *) resultptr,SWIGTYPE_p_ComplexT_float_t,1); SWIG_arg++;
+    gam::Complex< float > * resultptr = new gam::Complex< float >((const gam::Complex< float > &) result);
+    SWIG_NewPointerObj(L,(void *) resultptr,SWIGTYPE_p_gam__ComplexT_float_t,1); SWIG_arg++;
   }
   return SWIG_arg;
   
@@ -52627,23 +52336,23 @@ fail:
 static int _wrap_Dist_dist__SWIG_3(lua_State* L) {
   int SWIG_arg = 0;
   gam::Dist< 2,SampleType > *arg1 = (gam::Dist< 2,SampleType > *) 0 ;
-  Vec< 2,float > *arg2 = 0 ;
+  gam::Vec< 2,float > *arg2 = 0 ;
   gam::Dist< 2,SampleType > *result = 0 ;
   
   SWIG_check_num_args("gam::Dist< 2,SampleType >::dist",2,2)
   if(!SWIG_isptrtype(L,1)) SWIG_fail_arg("gam::Dist< 2,SampleType >::dist",1,"gam::Dist< 2,SampleType > *");
-  if(!lua_isuserdata(L,2)) SWIG_fail_arg("gam::Dist< 2,SampleType >::dist",2,"Vec< 2,float > const &");
+  if(!lua_isuserdata(L,2)) SWIG_fail_arg("gam::Dist< 2,SampleType >::dist",2,"gam::Vec< 2,float > const &");
   
   if (!SWIG_IsOK(SWIG_ConvertPtr(L,1,(void**)&arg1,SWIGTYPE_p_gam__DistT_2_float_t,0))){
     SWIG_fail_ptr("Dist_dist",1,SWIGTYPE_p_gam__DistT_2_float_t);
   }
   
   
-  if (!SWIG_IsOK(SWIG_ConvertPtr(L,2,(void**)&arg2,SWIGTYPE_p_VecT_2_float_t,0))){
-    SWIG_fail_ptr("Dist_dist",2,SWIGTYPE_p_VecT_2_float_t);
+  if (!SWIG_IsOK(SWIG_ConvertPtr(L,2,(void**)&arg2,SWIGTYPE_p_gam__VecT_2_float_t,0))){
+    SWIG_fail_ptr("Dist_dist",2,SWIGTYPE_p_gam__VecT_2_float_t);
   }
   
-  result = (gam::Dist< 2,SampleType > *) &(arg1)->dist((Vec< 2,float > const &)*arg2);
+  result = (gam::Dist< 2,SampleType > *) &(arg1)->dist((gam::Vec< 2,float > const &)*arg2);
   SWIG_NewPointerObj(L,result,SWIGTYPE_p_gam__DistT_2_float_t,0); SWIG_arg++; 
   return SWIG_arg;
   
@@ -52658,7 +52367,7 @@ fail:
 static int _wrap_Dist_dist__SWIG_4(lua_State* L) {
   int SWIG_arg = 0;
   gam::Dist< 2,SampleType > *arg1 = (gam::Dist< 2,SampleType > *) 0 ;
-  Vec< 2,float > *result = 0 ;
+  gam::Vec< 2,float > *result = 0 ;
   
   SWIG_check_num_args("gam::Dist< 2,SampleType >::dist",1,1)
   if(!SWIG_isptrtype(L,1)) SWIG_fail_arg("gam::Dist< 2,SampleType >::dist",1,"gam::Dist< 2,SampleType > const *");
@@ -52667,8 +52376,8 @@ static int _wrap_Dist_dist__SWIG_4(lua_State* L) {
     SWIG_fail_ptr("Dist_dist",1,SWIGTYPE_p_gam__DistT_2_float_t);
   }
   
-  result = (Vec< 2,float > *) &((gam::Dist< 2,SampleType > const *)arg1)->dist();
-  SWIG_NewPointerObj(L,result,SWIGTYPE_p_VecT_2_float_t,0); SWIG_arg++; 
+  result = (gam::Vec< 2,float > *) &((gam::Dist< 2,SampleType > const *)arg1)->dist();
+  SWIG_NewPointerObj(L,result,SWIGTYPE_p_gam__VecT_2_float_t,0); SWIG_arg++; 
   return SWIG_arg;
   
   if(0) SWIG_fail;
@@ -52713,7 +52422,7 @@ static int _wrap_Dist_dist(lua_State* L) {
     if (_v) {
       {
         void *ptr;
-        if (lua_isuserdata(L,argv[1])==0 || SWIG_ConvertPtr(L,argv[1], (void **) &ptr, SWIGTYPE_p_VecT_2_float_t, SWIG_POINTER_NO_NULL)) {
+        if (lua_isuserdata(L,argv[1])==0 || SWIG_ConvertPtr(L,argv[1], (void **) &ptr, SWIGTYPE_p_gam__VecT_2_float_t, SWIG_POINTER_NO_NULL)) {
           _v = 0;
         } else {
           _v = 1;
@@ -52817,7 +52526,7 @@ static int _wrap_Dist_dist(lua_State* L) {
     "    gam::Dist< 2,SampleType >::dist(int,float)\n"
     "    gam::Dist< 2,SampleType >::dist(int,float,float,float)\n"
     "    gam::Dist< 2,SampleType >::dist(int,float,float)\n"
-    "    gam::Dist< 2,SampleType >::dist(Vec< 2,float > const &)\n"
+    "    gam::Dist< 2,SampleType >::dist(gam::Vec< 2,float > const &)\n"
     "    gam::Dist< 2,SampleType >::dist() const\n");
   lua_error(L);return 0;
 }
@@ -52827,7 +52536,7 @@ static int _wrap_Dist___call(lua_State* L) {
   int SWIG_arg = 0;
   gam::Dist< 2,SampleType > *arg1 = (gam::Dist< 2,SampleType > *) 0 ;
   float arg2 ;
-  Vec< 2,float > result;
+  SwigValueWrapper< gam::Vec< 2,float > > result;
   
   SWIG_check_num_args("gam::Dist< 2,SampleType >::operator ()",2,2)
   if(!SWIG_isptrtype(L,1)) SWIG_fail_arg("gam::Dist< 2,SampleType >::operator ()",1,"gam::Dist< 2,SampleType > *");
@@ -52840,8 +52549,8 @@ static int _wrap_Dist___call(lua_State* L) {
   arg2 = (float)lua_tonumber(L, 2);
   result = (arg1)->operator ()(arg2);
   {
-    Vec< 2,float > * resultptr = new Vec< 2,float >((const Vec< 2,float > &) result);
-    SWIG_NewPointerObj(L,(void *) resultptr,SWIGTYPE_p_VecT_2_float_t,1); SWIG_arg++;
+    gam::Vec< 2,float > * resultptr = new gam::Vec< 2,float >((const gam::Vec< 2,float > &) result);
+    SWIG_NewPointerObj(L,(void *) resultptr,SWIGTYPE_p_gam__VecT_2_float_t,1); SWIG_arg++;
   }
   return SWIG_arg;
   
@@ -52857,7 +52566,7 @@ static int _wrap_Dist_Tick(lua_State* L) {
   int SWIG_arg = 0;
   gam::Dist< 2,SampleType > *arg1 = (gam::Dist< 2,SampleType > *) 0 ;
   float arg2 ;
-  Vec< 2,float > result;
+  SwigValueWrapper< gam::Vec< 2,float > > result;
   
   SWIG_check_num_args("gam::Dist< 2,SampleType >::Tick",2,2)
   if(!SWIG_isptrtype(L,1)) SWIG_fail_arg("gam::Dist< 2,SampleType >::Tick",1,"gam::Dist< 2,SampleType > *");
@@ -52870,8 +52579,8 @@ static int _wrap_Dist_Tick(lua_State* L) {
   arg2 = (float)lua_tonumber(L, 2);
   result = gam_Dist_Sl_2_Sc_SampleType_Sg__Tick__SWIG(arg1,arg2);
   {
-    Vec< 2,float > * resultptr = new Vec< 2,float >((const Vec< 2,float > &) result);
-    SWIG_NewPointerObj(L,(void *) resultptr,SWIGTYPE_p_VecT_2_float_t,1); SWIG_arg++;
+    gam::Vec< 2,float > * resultptr = new gam::Vec< 2,float >((const gam::Vec< 2,float > &) result);
+    SWIG_NewPointerObj(L,(void *) resultptr,SWIGTYPE_p_gam__VecT_2_float_t,1); SWIG_arg++;
   }
   return SWIG_arg;
   
@@ -52962,6 +52671,388 @@ static swig_lua_class *swig_Dist_bases[] = {0};
 static const char *swig_Dist_base_names[] = {0};
 static swig_lua_class _wrap_class_Dist = { "Dist", "Dist", &SWIGTYPE_p_gam__DistT_2_float_t,_proxy__wrap_new_Dist, swig_delete_Dist, swig_Dist_methods, swig_Dist_attributes, &swig_Dist_Sf_SwigStatic, swig_Dist_meta, swig_Dist_bases, swig_Dist_base_names };
 
+static int _wrap_new_TransferFunc__SWIG_0(lua_State* L) {
+  int SWIG_arg = 0;
+  double arg1 ;
+  gam::TransferFunc *result = 0 ;
+  
+  SWIG_check_num_args("gam::TransferFunc::TransferFunc",1,1)
+  if(!lua_isnumber(L,1)) SWIG_fail_arg("gam::TransferFunc::TransferFunc",1,"double");
+  arg1 = (double)lua_tonumber(L, 1);
+  result = (gam::TransferFunc *)new gam::TransferFunc(arg1);
+  SWIG_NewPointerObj(L,result,SWIGTYPE_p_gam__TransferFunc,1); SWIG_arg++; 
+  return SWIG_arg;
+  
+  if(0) SWIG_fail;
+  
+fail:
+  lua_error(L);
+  return SWIG_arg;
+}
+
+
+static int _wrap_new_TransferFunc__SWIG_1(lua_State* L) {
+  int SWIG_arg = 0;
+  gam::TransferFunc *result = 0 ;
+  
+  SWIG_check_num_args("gam::TransferFunc::TransferFunc",0,0)
+  result = (gam::TransferFunc *)new gam::TransferFunc();
+  SWIG_NewPointerObj(L,result,SWIGTYPE_p_gam__TransferFunc,1); SWIG_arg++; 
+  return SWIG_arg;
+  
+  if(0) SWIG_fail;
+  
+fail:
+  lua_error(L);
+  return SWIG_arg;
+}
+
+
+static int _wrap_new_TransferFunc(lua_State* L) {
+  int argc;
+  int argv[2]={
+    1,2
+  };
+  
+  argc = lua_gettop(L);
+  if (argc == 0) {
+    return _wrap_new_TransferFunc__SWIG_1(L);
+  }
+  if (argc == 1) {
+    int _v = 0;
+    {
+      _v = lua_isnumber(L,argv[0]);
+    }
+    if (_v) {
+      return _wrap_new_TransferFunc__SWIG_0(L);
+    }
+  }
+  
+  SWIG_Lua_pusherrstring(L,"Wrong arguments for overloaded function 'new_TransferFunc'\n"
+    "  Possible C/C++ prototypes are:\n"
+    "    gam::TransferFunc::TransferFunc(double)\n"
+    "    gam::TransferFunc::TransferFunc()\n");
+  lua_error(L);return 0;
+}
+
+
+static int _wrap_TransferFunc_resize(lua_State* L) {
+  int SWIG_arg = 0;
+  gam::TransferFunc *arg1 = (gam::TransferFunc *) 0 ;
+  int arg2 ;
+  int arg3 ;
+  gam::TransferFunc *result = 0 ;
+  
+  SWIG_check_num_args("gam::TransferFunc::resize",3,3)
+  if(!SWIG_isptrtype(L,1)) SWIG_fail_arg("gam::TransferFunc::resize",1,"gam::TransferFunc *");
+  if(!lua_isnumber(L,2)) SWIG_fail_arg("gam::TransferFunc::resize",2,"int");
+  if(!lua_isnumber(L,3)) SWIG_fail_arg("gam::TransferFunc::resize",3,"int");
+  
+  if (!SWIG_IsOK(SWIG_ConvertPtr(L,1,(void**)&arg1,SWIGTYPE_p_gam__TransferFunc,0))){
+    SWIG_fail_ptr("TransferFunc_resize",1,SWIGTYPE_p_gam__TransferFunc);
+  }
+  
+  arg2 = (int)lua_tonumber(L, 2);
+  arg3 = (int)lua_tonumber(L, 3);
+  result = (gam::TransferFunc *) &(arg1)->resize(arg2,arg3);
+  SWIG_NewPointerObj(L,result,SWIGTYPE_p_gam__TransferFunc,0); SWIG_arg++; 
+  return SWIG_arg;
+  
+  if(0) SWIG_fail;
+  
+fail:
+  lua_error(L);
+  return SWIG_arg;
+}
+
+
+static int _wrap_TransferFunc_x(lua_State* L) {
+  int SWIG_arg = 0;
+  gam::TransferFunc *arg1 = (gam::TransferFunc *) 0 ;
+  int arg2 ;
+  gam::TransferFunc::DelayUnit *result = 0 ;
+  
+  SWIG_check_num_args("gam::TransferFunc::x",2,2)
+  if(!SWIG_isptrtype(L,1)) SWIG_fail_arg("gam::TransferFunc::x",1,"gam::TransferFunc *");
+  if(!lua_isnumber(L,2)) SWIG_fail_arg("gam::TransferFunc::x",2,"int");
+  
+  if (!SWIG_IsOK(SWIG_ConvertPtr(L,1,(void**)&arg1,SWIGTYPE_p_gam__TransferFunc,0))){
+    SWIG_fail_ptr("TransferFunc_x",1,SWIGTYPE_p_gam__TransferFunc);
+  }
+  
+  arg2 = (int)lua_tonumber(L, 2);
+  result = (gam::TransferFunc::DelayUnit *) &(arg1)->x(arg2);
+  SWIG_NewPointerObj(L,result,SWIGTYPE_p_gam__TransferFunc__DelayUnit,0); SWIG_arg++; 
+  return SWIG_arg;
+  
+  if(0) SWIG_fail;
+  
+fail:
+  lua_error(L);
+  return SWIG_arg;
+}
+
+
+static int _wrap_TransferFunc_y(lua_State* L) {
+  int SWIG_arg = 0;
+  gam::TransferFunc *arg1 = (gam::TransferFunc *) 0 ;
+  int arg2 ;
+  gam::TransferFunc::DelayUnit *result = 0 ;
+  
+  SWIG_check_num_args("gam::TransferFunc::y",2,2)
+  if(!SWIG_isptrtype(L,1)) SWIG_fail_arg("gam::TransferFunc::y",1,"gam::TransferFunc *");
+  if(!lua_isnumber(L,2)) SWIG_fail_arg("gam::TransferFunc::y",2,"int");
+  
+  if (!SWIG_IsOK(SWIG_ConvertPtr(L,1,(void**)&arg1,SWIGTYPE_p_gam__TransferFunc,0))){
+    SWIG_fail_ptr("TransferFunc_y",1,SWIGTYPE_p_gam__TransferFunc);
+  }
+  
+  arg2 = (int)lua_tonumber(L, 2);
+  result = (gam::TransferFunc::DelayUnit *) &(arg1)->y(arg2);
+  SWIG_NewPointerObj(L,result,SWIGTYPE_p_gam__TransferFunc__DelayUnit,0); SWIG_arg++; 
+  return SWIG_arg;
+  
+  if(0) SWIG_fail;
+  
+fail:
+  lua_error(L);
+  return SWIG_arg;
+}
+
+
+static int _wrap_TransferFunc_addX(lua_State* L) {
+  int SWIG_arg = 0;
+  gam::TransferFunc *arg1 = (gam::TransferFunc *) 0 ;
+  double arg2 ;
+  double arg3 ;
+  gam::TransferFunc *result = 0 ;
+  
+  SWIG_check_num_args("gam::TransferFunc::addX",3,3)
+  if(!SWIG_isptrtype(L,1)) SWIG_fail_arg("gam::TransferFunc::addX",1,"gam::TransferFunc *");
+  if(!lua_isnumber(L,2)) SWIG_fail_arg("gam::TransferFunc::addX",2,"double");
+  if(!lua_isnumber(L,3)) SWIG_fail_arg("gam::TransferFunc::addX",3,"double");
+  
+  if (!SWIG_IsOK(SWIG_ConvertPtr(L,1,(void**)&arg1,SWIGTYPE_p_gam__TransferFunc,0))){
+    SWIG_fail_ptr("TransferFunc_addX",1,SWIGTYPE_p_gam__TransferFunc);
+  }
+  
+  arg2 = (double)lua_tonumber(L, 2);
+  arg3 = (double)lua_tonumber(L, 3);
+  result = (gam::TransferFunc *) &(arg1)->addX(arg2,arg3);
+  SWIG_NewPointerObj(L,result,SWIGTYPE_p_gam__TransferFunc,0); SWIG_arg++; 
+  return SWIG_arg;
+  
+  if(0) SWIG_fail;
+  
+fail:
+  lua_error(L);
+  return SWIG_arg;
+}
+
+
+static int _wrap_TransferFunc_addY(lua_State* L) {
+  int SWIG_arg = 0;
+  gam::TransferFunc *arg1 = (gam::TransferFunc *) 0 ;
+  double arg2 ;
+  double arg3 ;
+  gam::TransferFunc *result = 0 ;
+  
+  SWIG_check_num_args("gam::TransferFunc::addY",3,3)
+  if(!SWIG_isptrtype(L,1)) SWIG_fail_arg("gam::TransferFunc::addY",1,"gam::TransferFunc *");
+  if(!lua_isnumber(L,2)) SWIG_fail_arg("gam::TransferFunc::addY",2,"double");
+  if(!lua_isnumber(L,3)) SWIG_fail_arg("gam::TransferFunc::addY",3,"double");
+  
+  if (!SWIG_IsOK(SWIG_ConvertPtr(L,1,(void**)&arg1,SWIGTYPE_p_gam__TransferFunc,0))){
+    SWIG_fail_ptr("TransferFunc_addY",1,SWIGTYPE_p_gam__TransferFunc);
+  }
+  
+  arg2 = (double)lua_tonumber(L, 2);
+  arg3 = (double)lua_tonumber(L, 3);
+  result = (gam::TransferFunc *) &(arg1)->addY(arg2,arg3);
+  SWIG_NewPointerObj(L,result,SWIGTYPE_p_gam__TransferFunc,0); SWIG_arg++; 
+  return SWIG_arg;
+  
+  if(0) SWIG_fail;
+  
+fail:
+  lua_error(L);
+  return SWIG_arg;
+}
+
+
+static int _wrap_TransferFunc_clear(lua_State* L) {
+  int SWIG_arg = 0;
+  gam::TransferFunc *arg1 = (gam::TransferFunc *) 0 ;
+  gam::TransferFunc *result = 0 ;
+  
+  SWIG_check_num_args("gam::TransferFunc::clear",1,1)
+  if(!SWIG_isptrtype(L,1)) SWIG_fail_arg("gam::TransferFunc::clear",1,"gam::TransferFunc *");
+  
+  if (!SWIG_IsOK(SWIG_ConvertPtr(L,1,(void**)&arg1,SWIGTYPE_p_gam__TransferFunc,0))){
+    SWIG_fail_ptr("TransferFunc_clear",1,SWIGTYPE_p_gam__TransferFunc);
+  }
+  
+  result = (gam::TransferFunc *) &(arg1)->clear();
+  SWIG_NewPointerObj(L,result,SWIGTYPE_p_gam__TransferFunc,0); SWIG_arg++; 
+  return SWIG_arg;
+  
+  if(0) SWIG_fail;
+  
+fail:
+  lua_error(L);
+  return SWIG_arg;
+}
+
+
+static int _wrap_TransferFunc_gain(lua_State* L) {
+  int SWIG_arg = 0;
+  gam::TransferFunc *arg1 = (gam::TransferFunc *) 0 ;
+  double arg2 ;
+  gam::TransferFunc *result = 0 ;
+  
+  SWIG_check_num_args("gam::TransferFunc::gain",2,2)
+  if(!SWIG_isptrtype(L,1)) SWIG_fail_arg("gam::TransferFunc::gain",1,"gam::TransferFunc *");
+  if(!lua_isnumber(L,2)) SWIG_fail_arg("gam::TransferFunc::gain",2,"double");
+  
+  if (!SWIG_IsOK(SWIG_ConvertPtr(L,1,(void**)&arg1,SWIGTYPE_p_gam__TransferFunc,0))){
+    SWIG_fail_ptr("TransferFunc_gain",1,SWIGTYPE_p_gam__TransferFunc);
+  }
+  
+  arg2 = (double)lua_tonumber(L, 2);
+  result = (gam::TransferFunc *) &(arg1)->gain(arg2);
+  SWIG_NewPointerObj(L,result,SWIGTYPE_p_gam__TransferFunc,0); SWIG_arg++; 
+  return SWIG_arg;
+  
+  if(0) SWIG_fail;
+  
+fail:
+  lua_error(L);
+  return SWIG_arg;
+}
+
+
+static int _wrap_TransferFunc_Tick(lua_State* L) {
+  int SWIG_arg = 0;
+  gam::TransferFunc *arg1 = (gam::TransferFunc *) 0 ;
+  double arg2 ;
+  gam::TransferFunc::Complex result;
+  
+  SWIG_check_num_args("gam::TransferFunc::Tick",2,2)
+  if(!SWIG_isptrtype(L,1)) SWIG_fail_arg("gam::TransferFunc::Tick",1,"gam::TransferFunc *");
+  if(!lua_isnumber(L,2)) SWIG_fail_arg("gam::TransferFunc::Tick",2,"double");
+  
+  if (!SWIG_IsOK(SWIG_ConvertPtr(L,1,(void**)&arg1,SWIGTYPE_p_gam__TransferFunc,0))){
+    SWIG_fail_ptr("TransferFunc_Tick",1,SWIGTYPE_p_gam__TransferFunc);
+  }
+  
+  arg2 = (double)lua_tonumber(L, 2);
+  result = gam_TransferFunc_Tick__SWIG(arg1,arg2);
+  {
+    gam::TransferFunc::Complex * resultptr = new gam::TransferFunc::Complex((const gam::TransferFunc::Complex &) result);
+    SWIG_NewPointerObj(L,(void *) resultptr,SWIGTYPE_p_std__complexT_double_t,1); SWIG_arg++;
+  }
+  return SWIG_arg;
+  
+  if(0) SWIG_fail;
+  
+fail:
+  lua_error(L);
+  return SWIG_arg;
+}
+
+
+static int _wrap_TransferFunc_TickZ(lua_State* L) {
+  int SWIG_arg = 0;
+  gam::TransferFunc *arg1 = (gam::TransferFunc *) 0 ;
+  gam::TransferFunc::Complex arg2 ;
+  gam::TransferFunc::Complex *argp2 ;
+  gam::TransferFunc::Complex result;
+  
+  SWIG_check_num_args("gam::TransferFunc::TickZ",2,2)
+  if(!SWIG_isptrtype(L,1)) SWIG_fail_arg("gam::TransferFunc::TickZ",1,"gam::TransferFunc *");
+  if(!lua_isuserdata(L,2)) SWIG_fail_arg("gam::TransferFunc::TickZ",2,"gam::TransferFunc::Complex");
+  
+  if (!SWIG_IsOK(SWIG_ConvertPtr(L,1,(void**)&arg1,SWIGTYPE_p_gam__TransferFunc,0))){
+    SWIG_fail_ptr("TransferFunc_TickZ",1,SWIGTYPE_p_gam__TransferFunc);
+  }
+  
+  
+  if (!SWIG_IsOK(SWIG_ConvertPtr(L,2,(void**)&argp2,SWIGTYPE_p_std__complexT_double_t,0))){
+    SWIG_fail_ptr("TransferFunc_TickZ",2,SWIGTYPE_p_std__complexT_double_t);
+  }
+  arg2 = *argp2;
+  
+  result = gam_TransferFunc_TickZ__SWIG(arg1,arg2);
+  {
+    gam::TransferFunc::Complex * resultptr = new gam::TransferFunc::Complex((const gam::TransferFunc::Complex &) result);
+    SWIG_NewPointerObj(L,(void *) resultptr,SWIGTYPE_p_std__complexT_double_t,1); SWIG_arg++;
+  }
+  return SWIG_arg;
+  
+  if(0) SWIG_fail;
+  
+fail:
+  lua_error(L);
+  return SWIG_arg;
+}
+
+
+static void swig_delete_TransferFunc(void *obj) {
+gam::TransferFunc *arg1 = (gam::TransferFunc *) obj;
+delete arg1;
+}
+static int _proxy__wrap_new_TransferFunc(lua_State *L) {
+    assert(lua_istable(L,1));
+    lua_pushcfunction(L,_wrap_new_TransferFunc);
+    assert(!lua_isnil(L,-1));
+    lua_replace(L,1); /* replace our table with real constructor */
+    lua_call(L,lua_gettop(L)-1,1);
+    return 1;
+}
+static swig_lua_attribute swig_TransferFunc_attributes[] = {
+    {0,0,0}
+};
+static swig_lua_method swig_TransferFunc_methods[]= {
+    { "resize", _wrap_TransferFunc_resize},
+    { "x", _wrap_TransferFunc_x},
+    { "y", _wrap_TransferFunc_y},
+    { "addX", _wrap_TransferFunc_addX},
+    { "addY", _wrap_TransferFunc_addY},
+    { "clear", _wrap_TransferFunc_clear},
+    { "gain", _wrap_TransferFunc_gain},
+    { "Tick", _wrap_TransferFunc_Tick},
+    { "TickZ", _wrap_TransferFunc_TickZ},
+    {0,0}
+};
+static swig_lua_method swig_TransferFunc_meta[] = {
+    {0,0}
+};
+
+static swig_lua_attribute swig_TransferFunc_Sf_SwigStatic_attributes[] = {
+    {0,0,0}
+};
+static swig_lua_const_info swig_TransferFunc_Sf_SwigStatic_constants[]= {
+    {0,0,0,0,0,0}
+};
+static swig_lua_method swig_TransferFunc_Sf_SwigStatic_methods[]= {
+    {0,0}
+};
+static swig_lua_class* swig_TransferFunc_Sf_SwigStatic_classes[]= {
+    0
+};
+
+static swig_lua_namespace swig_TransferFunc_Sf_SwigStatic = {
+    "TransferFunc",
+    swig_TransferFunc_Sf_SwigStatic_methods,
+    swig_TransferFunc_Sf_SwigStatic_attributes,
+    swig_TransferFunc_Sf_SwigStatic_constants,
+    swig_TransferFunc_Sf_SwigStatic_classes,
+    0
+};
+static swig_lua_class *swig_TransferFunc_bases[] = {0};
+static const char *swig_TransferFunc_base_names[] = {0};
+static swig_lua_class _wrap_class_TransferFunc = { "TransferFunc", "TransferFunc", &SWIGTYPE_p_gam__TransferFunc,_proxy__wrap_new_TransferFunc, swig_delete_TransferFunc, swig_TransferFunc_methods, swig_TransferFunc_attributes, &swig_TransferFunc_Sf_SwigStatic, swig_TransferFunc_meta, swig_TransferFunc_bases, swig_TransferFunc_base_names };
+
 static swig_lua_attribute swig_SwigModule_attributes[] = {
     {0,0,0}
 };
@@ -53016,6 +53107,12 @@ static swig_lua_const_info swig_SwigModule_constants[]= {
     {0,0,0,0,0,0}
 };
 static swig_lua_method swig_SwigModule_methods[]= {
+    { "sleep", _wrap_sleep},
+    { "sleepSec", _wrap_sleepSec},
+    { "sleepUntil", _wrap_sleepUntil},
+    { "timeNow", _wrap_timeNow},
+    { "toSec", _wrap_toSec},
+    { "toNSec", _wrap_toNSec},
     { "indexLast", _wrap_indexLast},
     { "posToInd", _wrap_posToInd},
     { "slice", _wrap_slice},
@@ -53055,8 +53152,8 @@ static swig_lua_method swig_SwigModule_methods[]= {
     {0,0}
 };
 static swig_lua_class* swig_SwigModule_classes[]= {
+&_wrap_class_Timer,
 &_wrap_class_stdvector,
-&_wrap_class_realvector,
 &_wrap_class_IndexMap,
 &_wrap_class_Slice,
 &_wrap_class_EnvFollow,
@@ -53151,6 +53248,7 @@ static swig_lua_class* swig_SwigModule_classes[]= {
 &_wrap_class_EchoCSine,
 &_wrap_class_ReverbMS,
 &_wrap_class_Dist,
+&_wrap_class_TransferFunc,
     0
 };
 static swig_lua_namespace* swig_SwigModule_namespaces[] = {
@@ -53216,7 +53314,7 @@ static void *_p_gam__MaxAbsT_float_tTo_p_gam__PCounter(void *x, int *SWIGUNUSEDP
 static void *_p_gam__ZeroCrossRateT_float_tTo_p_gam__PCounter(void *x, int *SWIGUNUSEDPARM(newmemory)) {
     return (void *)((gam::PCounter *)  ((gam::ZeroCrossRate< float > *) x));
 }
-static void *_p_gam__CombT_float_ipl__Linear_gam__real_GAM_DEFAULT_DOMAIN_tTo_p_gam__DelayT_float_ipl__Linear_GAM_DEFAULT_DOMAIN_t(void *x, int *SWIGUNUSEDPARM(newmemory)) {
+static void *_p_gam__CombT_float_ipl__Linear_float_GAM_DEFAULT_DOMAIN_tTo_p_gam__DelayT_float_ipl__Linear_GAM_DEFAULT_DOMAIN_t(void *x, int *SWIGUNUSEDPARM(newmemory)) {
     return (void *)((gam::Delay< float,ipl::Linear,GAM_DEFAULT_DOMAIN > *)  ((gam::Comb< float,ipl::Linear,gam::real,GAM_DEFAULT_DOMAIN > *) x));
 }
 static void *_p_gam__MultitapT_float_ipl__Linear_GAM_DEFAULT_DOMAIN_tTo_p_gam__DelayT_float_ipl__Linear_GAM_DEFAULT_DOMAIN_t(void *x, int *SWIGUNUSEDPARM(newmemory)) {
@@ -53257,7 +53355,7 @@ static swig_type_info _swigt__p_BiquadT_t = {"_p_BiquadT_t", "Biquad< > *", 0, 0
 static swig_type_info _swigt__p_CSineT_double_t = {"_p_CSineT_double_t", "CSine< double > *", 0, 0, (void*)0, 0};
 static swig_type_info _swigt__p_CSineT_float_t = {"_p_CSineT_float_t", "CSine< float > *", 0, 0, (void*)0, 0};
 static swig_type_info _swigt__p_Combs = {"_p_Combs", "Combs *", 0, 0, (void*)0, 0};
-static swig_type_info _swigt__p_ComplexT_float_t = {"_p_ComplexT_float_t", "Complex< float > *|gam::CSine< float >::complex *|gam::Chirplet< float >::complex *", 0, 0, (void*)0, 0};
+static swig_type_info _swigt__p_Complex = {"_p_Complex", "Complex *", 0, 0, (void*)0, 0};
 static swig_type_info _swigt__p_DecayT_float_t = {"_p_DecayT_float_t", "Decay< float > *", 0, 0, (void*)0, 0};
 static swig_type_info _swigt__p_DecayT_t = {"_p_DecayT_t", "Decay< > *", 0, 0, (void*)0, 0};
 static swig_type_info _swigt__p_Domain = {"_p_Domain", "Domain *", 0, 0, (void*)0, 0};
@@ -53271,13 +53369,12 @@ static swig_type_info _swigt__p_OnePoleT_float_t = {"_p_OnePoleT_float_t", "OneP
 static swig_type_info _swigt__p_SWIGLUA_REF = {"_p_SWIGLUA_REF", "SWIGLUA_REF *", 0, 0, (void*)0, 0};
 static swig_type_info _swigt__p_SawT_float_t = {"_p_SawT_float_t", "Saw< float > *", 0, 0, (void*)0, 0};
 static swig_type_info _swigt__p_SineT_float_t = {"_p_SineT_float_t", "Sine< float > *", 0, 0, (void*)0, 0};
-static swig_type_info _swigt__p_VecT_2_float_t = {"_p_VecT_2_float_t", "Vec< 2,float > *", 0, 0, (void*)0, 0};
 static swig_type_info _swigt__p_WindowType = {"_p_WindowType", "WindowType *", 0, 0, (void*)0, 0};
 static swig_type_info _swigt__p_complex = {"_p_complex", "complex *", 0, 0, (void*)0, 0};
 static swig_type_info _swigt__p_difference_type = {"_p_difference_type", "difference_type *", 0, 0, (void*)0, 0};
 static swig_type_info _swigt__p_double = {"_p_double", "double *", 0, 0, (void*)0, 0};
 static swig_type_info _swigt__p_f_r_gam__AudioIOData__void = {"_p_f_r_gam__AudioIOData__void", "void (*)(gam::AudioIOData &)", 0, 0, (void*)0, 0};
-static swig_type_info _swigt__p_float = {"_p_float", "SampleType *|float *", 0, 0, (void*)0, 0};
+static swig_type_info _swigt__p_float = {"_p_float", "gam::real *|SampleType *|float *", 0, 0, (void*)0, 0};
 static swig_type_info _swigt__p_gam__AMT_float_t = {"_p_gam__AMT_float_t", "gam::AM< float > *|gam::AM< SampleType > *", 0, 0, (void*)&_wrap_class_AM, 0};
 static swig_type_info _swigt__p_gam__AccumPhaseT_float_GAM_DEFAULT_DOMAIN_t = {"_p_gam__AccumPhaseT_float_GAM_DEFAULT_DOMAIN_t", "gam::AccumPhase< float > *|gam::AccumPhase< SampleType > *|gam::AccumPhase< float,GAM_DEFAULT_DOMAIN > *", 0, 0, (void*)&_wrap_class_AccumPhase, 0};
 static swig_type_info _swigt__p_gam__AccumT_phsInc__Loop_GAM_DEFAULT_DOMAIN_t = {"_p_gam__AccumT_phsInc__Loop_GAM_DEFAULT_DOMAIN_t", "gam::Accum< > *|gam::Accum< phsInc::Loop,GAM_DEFAULT_DOMAIN > *", 0, 0, (void*)&_wrap_class_Accum, 0};
@@ -53290,8 +53387,7 @@ static swig_type_info _swigt__p_gam__AudioDevice = {"_p_gam__AudioDevice", "gam:
 static swig_type_info _swigt__p_gam__AudioIO = {"_p_gam__AudioIO", "gam::AudioIO *", 0, 0, (void*)&_wrap_class_AudioIO, 0};
 static swig_type_info _swigt__p_gam__AudioIOData = {"_p_gam__AudioIOData", "gam::AudioIOData *", 0, 0, (void*)&_wrap_class_AudioIOData, 0};
 static swig_type_info _swigt__p_gam__Biquad3 = {"_p_gam__Biquad3", "gam::Biquad3 *", 0, 0, (void*)&_wrap_class_Biquad3, 0};
-static swig_type_info _swigt__p_gam__BiquadT_float_float_GAM_DEFAULT_DOMAIN_t = {"_p_gam__BiquadT_float_float_GAM_DEFAULT_DOMAIN_t", "gam::Biquad< float,float > *|gam::Biquad< SampleType,SampleType > *|gam::Biquad< float,float,GAM_DEFAULT_DOMAIN > *", 0, 0, (void*)&_wrap_class_Biquad, 0};
-static swig_type_info _swigt__p_gam__BiquadT_gam__real_gam__real_GAM_DEFAULT_DOMAIN_t = {"_p_gam__BiquadT_gam__real_gam__real_GAM_DEFAULT_DOMAIN_t", "gam::Biquad< gam::real,gam::real,GAM_DEFAULT_DOMAIN > *", 0, 0, (void*)0, 0};
+static swig_type_info _swigt__p_gam__BiquadT_float_float_GAM_DEFAULT_DOMAIN_t = {"_p_gam__BiquadT_float_float_GAM_DEFAULT_DOMAIN_t", "gam::Biquad< float,float > *|gam::Biquad< gam::real,gam::real,GAM_DEFAULT_DOMAIN > *|gam::Biquad< SampleType,SampleType > *|gam::Biquad< float,float,GAM_DEFAULT_DOMAIN > *", 0, 0, (void*)&_wrap_class_Biquad, 0};
 static swig_type_info _swigt__p_gam__BlockDCT_float_float_GAM_DEFAULT_DOMAIN_t = {"_p_gam__BlockDCT_float_float_GAM_DEFAULT_DOMAIN_t", "gam::BlockDC< float,float > *|gam::BlockDC< SampleType,SampleType > *|gam::BlockDC< float,float,GAM_DEFAULT_DOMAIN > *", 0, 0, (void*)&_wrap_class_BlockDC, 0};
 static swig_type_info _swigt__p_gam__BlockNyqT_float_float_GAM_DEFAULT_DOMAIN_t = {"_p_gam__BlockNyqT_float_float_GAM_DEFAULT_DOMAIN_t", "gam::BlockNyq< float,float > *|gam::BlockNyq< SampleType,SampleType > *|gam::BlockNyq< float,float,GAM_DEFAULT_DOMAIN > *", 0, 0, (void*)&_wrap_class_BlockNyq, 0};
 static swig_type_info _swigt__p_gam__Burst = {"_p_gam__Burst", "gam::Burst *", 0, 0, (void*)&_wrap_class_Burst, 0};
@@ -53310,9 +53406,9 @@ static swig_type_info _swigt__p_gam__ChebyNT_9_float_t = {"_p_gam__ChebyNT_9_flo
 static swig_type_info _swigt__p_gam__ChirpT_float_t = {"_p_gam__ChirpT_float_t", "gam::Chirp< float > *|gam::Chirp< SampleType > *", 0, 0, (void*)&_wrap_class_Chirp, 0};
 static swig_type_info _swigt__p_gam__ChirpletT_float_GAM_DEFAULT_DOMAIN_t = {"_p_gam__ChirpletT_float_GAM_DEFAULT_DOMAIN_t", "gam::Chirplet< float > *|gam::Chirplet< SampleType > *|gam::Chirplet< float,GAM_DEFAULT_DOMAIN > *", 0, 0, (void*)&_wrap_class_Chirplet, 0};
 static swig_type_info _swigt__p_gam__ChorusT_float_t = {"_p_gam__ChorusT_float_t", "gam::Chorus< float > *|gam::Chorus< SampleType > *", 0, 0, (void*)&_wrap_class_Chorus, 0};
-static swig_type_info _swigt__p_gam__CombT_float_ipl__Cubic_gam__real_GAM_DEFAULT_DOMAIN_t = {"_p_gam__CombT_float_ipl__Cubic_gam__real_GAM_DEFAULT_DOMAIN_t", "gam::Comb< float,ipl::Cubic,gam::real,GAM_DEFAULT_DOMAIN > *", 0, 0, (void*)0, 0};
+static swig_type_info _swigt__p_gam__CombT_float_ipl__Cubic_float_GAM_DEFAULT_DOMAIN_t = {"_p_gam__CombT_float_ipl__Cubic_float_GAM_DEFAULT_DOMAIN_t", "gam::Comb< float,ipl::Cubic,gam::real,GAM_DEFAULT_DOMAIN > *|gam::Comb< float,ipl::Cubic,float,GAM_DEFAULT_DOMAIN > *", 0, 0, (void*)0, 0};
 static swig_type_info _swigt__p_gam__CombT_float_ipl__Linear_gam__real_GAM_DEFAULT_DOMAIN_t = {"_p_gam__CombT_float_ipl__Linear_gam__real_GAM_DEFAULT_DOMAIN_t", "gam::Comb< float > *|gam::Comb< float,ipl::Linear,gam::real,GAM_DEFAULT_DOMAIN > *|gam::Comb< SampleType > *", 0, 0, (void*)&_wrap_class_Comb, 0};
-static swig_type_info _swigt__p_gam__ComplexT_float_t = {"_p_gam__ComplexT_float_t", "gam::Complex< float > *", 0, 0, (void*)0, 0};
+static swig_type_info _swigt__p_gam__ComplexT_float_t = {"_p_gam__ComplexT_float_t", "gam::Complex< float > *|gam::CSine< float >::complex *|gam::Chirplet< float >::complex *", 0, 0, (void*)0, 0};
 static swig_type_info _swigt__p_gam__DFT = {"_p_gam__DFT", "gam::DFT *", 0, 0, (void*)&_wrap_class_DFT, 0};
 static swig_type_info _swigt__p_gam__DSFT_float_GAM_DEFAULT_DOMAIN_t = {"_p_gam__DSFT_float_GAM_DEFAULT_DOMAIN_t", "gam::DSF< float > *|gam::DSF< SampleType > *|gam::DSF< float,GAM_DEFAULT_DOMAIN > *", 0, 0, (void*)&_wrap_class_DSF, 0};
 static swig_type_info _swigt__p_gam__DWOT_phsInc__Loop_GAM_DEFAULT_DOMAIN_t = {"_p_gam__DWOT_phsInc__Loop_GAM_DEFAULT_DOMAIN_t", "gam::DWO< > *|gam::DWO< phsInc::Loop,GAM_DEFAULT_DOMAIN > *", 0, 0, (void*)&_wrap_class_DWO, 0};
@@ -53321,6 +53417,7 @@ static swig_type_info _swigt__p_gam__Delay1T_float_t = {"_p_gam__Delay1T_float_t
 static swig_type_info _swigt__p_gam__Delay2T_float_t = {"_p_gam__Delay2T_float_t", "gam::Delay2< float > *|gam::Delay2< SampleType > *", 0, 0, (void*)&_wrap_class_Delay2, 0};
 static swig_type_info _swigt__p_gam__DelayNT_float_t = {"_p_gam__DelayNT_float_t", "gam::DelayN< float > *|gam::DelayN< SampleType > *", 0, 0, (void*)&_wrap_class_DelayN, 0};
 static swig_type_info _swigt__p_gam__DelayT_float_ipl__Linear_GAM_DEFAULT_DOMAIN_t = {"_p_gam__DelayT_float_ipl__Linear_GAM_DEFAULT_DOMAIN_t", "gam::Delay< float > *|gam::Delay< SampleType > *|gam::Delay< float,ipl::Linear,GAM_DEFAULT_DOMAIN > *", 0, 0, (void*)&_wrap_class_Delay, 0};
+static swig_type_info _swigt__p_gam__CombT_float_ipl__Linear_float_GAM_DEFAULT_DOMAIN_t = {"_p_gam__CombT_float_ipl__Linear_float_GAM_DEFAULT_DOMAIN_t", 0, 0, 0, 0, 0};
 static swig_type_info _swigt__p_gam__DifferencerT_float_t = {"_p_gam__DifferencerT_float_t", "gam::Differencer< float > *|gam::Differencer< SampleType > *", 0, 0, (void*)&_wrap_class_Differencer, 0};
 static swig_type_info _swigt__p_gam__DistT_2_float_t = {"_p_gam__DistT_2_float_t", "gam::Dist< 2,float > *|gam::Dist< 2,SampleType > *", 0, 0, (void*)&_wrap_class_Dist, 0};
 static swig_type_info _swigt__p_gam__Domain = {"_p_gam__Domain", "gam::Domain *", 0, 0, (void*)&_wrap_class_Domain, 0};
@@ -53331,8 +53428,7 @@ static swig_type_info _swigt__p_gam__EchoCSineT_float_ipl__Linear_gam__LoopGain_
 static swig_type_info _swigt__p_gam__EchoT_float_ipl__Linear_gam__LoopGain_GAM_DEFAULT_DOMAIN_t = {"_p_gam__EchoT_float_ipl__Linear_gam__LoopGain_GAM_DEFAULT_DOMAIN_t", "gam::Echo< float > *|gam::Echo< SampleType > *|gam::Echo< float,ipl::Linear,gam::LoopGain,GAM_DEFAULT_DOMAIN > *", 0, 0, (void*)&_wrap_class_Echo, 0};
 static swig_type_info _swigt__p_gam__EnvFollowT_float_gam__real_gam__GAM_DEFAULT_DOMAIN_t = {"_p_gam__EnvFollowT_float_gam__real_gam__GAM_DEFAULT_DOMAIN_t", "gam::EnvFollow< float > *|gam::EnvFollow< float,gam::real,gam::GAM_DEFAULT_DOMAIN > *|gam::EnvFollow< SampleType > *", 0, 0, (void*)&_wrap_class_EnvFollow, 0};
 static swig_type_info _swigt__p_gam__FreqShiftT_float_t = {"_p_gam__FreqShiftT_float_t", "gam::FreqShift< float > *|gam::FreqShift< SampleType > *", 0, 0, (void*)&_wrap_class_FreqShift, 0};
-static swig_type_info _swigt__p_gam__HilbertT_float_float_t = {"_p_gam__HilbertT_float_float_t", "gam::Hilbert< float,float > *|gam::Hilbert< SampleType,SampleType > *", 0, 0, (void*)&_wrap_class_Hilbert, 0};
-static swig_type_info _swigt__p_gam__HilbertT_float_gam__real_t = {"_p_gam__HilbertT_float_gam__real_t", "gam::Hilbert< float,gam::real > *", 0, 0, (void*)0, 0};
+static swig_type_info _swigt__p_gam__HilbertT_float_float_t = {"_p_gam__HilbertT_float_float_t", "gam::Hilbert< float,float > *|gam::Hilbert< float,gam::real > *|gam::Hilbert< SampleType,SampleType > *", 0, 0, (void*)&_wrap_class_Hilbert, 0};
 static swig_type_info _swigt__p_gam__IndexMapT_float_t = {"_p_gam__IndexMapT_float_t", "gam::IndexMap< float > *|gam::IndexMap< SampleType > *", 0, 0, (void*)&_wrap_class_IndexMap, 0};
 static swig_type_info _swigt__p_gam__IntegratorT_float_float_t = {"_p_gam__IntegratorT_float_float_t", "gam::Integrator< float,float > *|gam::Integrator< SampleType,SampleType > *", 0, 0, (void*)&_wrap_class_Integrator, 0};
 static swig_type_info _swigt__p_gam__LFOT_phsInc__Loop_GAM_DEFAULT_DOMAIN_t = {"_p_gam__LFOT_phsInc__Loop_GAM_DEFAULT_DOMAIN_t", "gam::LFO< > *|gam::LFO< phsInc::Loop,GAM_DEFAULT_DOMAIN > *", 0, 0, (void*)&_wrap_class_LFO, 0};
@@ -53350,9 +53446,8 @@ static swig_type_info _swigt__p_gam__NoiseVioletT_RNGLinCon_t = {"_p_gam__NoiseV
 static swig_type_info _swigt__p_gam__NoiseWhiteT_RNGLinCon_t = {"_p_gam__NoiseWhiteT_RNGLinCon_t", "gam::NoiseWhite< > *|gam::NoiseWhite< RNGLinCon > *", 0, 0, (void*)&_wrap_class_NoiseWhite, 0};
 static swig_type_info _swigt__p_gam__NoiseWhiteT_gam__RNGMulCon_t = {"_p_gam__NoiseWhiteT_gam__RNGMulCon_t", "gam::NoiseWhite< gam::RNGMulCon > *", 0, 0, (void*)0, 0};
 static swig_type_info _swigt__p_gam__NotchT_float_float_GAM_DEFAULT_DOMAIN_t = {"_p_gam__NotchT_float_float_GAM_DEFAULT_DOMAIN_t", "gam::Notch< float,float > *|gam::Notch< SampleType,SampleType > *|gam::Notch< float,float,GAM_DEFAULT_DOMAIN > *", 0, 0, (void*)&_wrap_class_Notch, 0};
-static swig_type_info _swigt__p_gam__OnePoleT_float_float_GAM_DEFAULT_DOMAIN_t = {"_p_gam__OnePoleT_float_float_GAM_DEFAULT_DOMAIN_t", "gam::OnePole< float,float > *|gam::OnePole< SampleType,SampleType > *|gam::OnePole< float,float,GAM_DEFAULT_DOMAIN > *", 0, 0, (void*)&_wrap_class_OnePole, 0};
-static swig_type_info _swigt__p_gam__OnePoleT_float_gam__real_GAM_DEFAULT_DOMAIN_t = {"_p_gam__OnePoleT_float_gam__real_GAM_DEFAULT_DOMAIN_t", "gam::OnePole< float,gam::real,GAM_DEFAULT_DOMAIN > *", 0, 0, (void*)0, 0};
-static swig_type_info _swigt__p_gam__OnePoleT_float_gam__real_gam__GAM_DEFAULT_DOMAIN_t = {"_p_gam__OnePoleT_float_gam__real_gam__GAM_DEFAULT_DOMAIN_t", "gam::OnePole< float,gam::real,gam::GAM_DEFAULT_DOMAIN > *", 0, 0, (void*)0, 0};
+static swig_type_info _swigt__p_gam__OnePoleT_float_float_GAM_DEFAULT_DOMAIN_t = {"_p_gam__OnePoleT_float_float_GAM_DEFAULT_DOMAIN_t", "gam::OnePole< float,float > *|gam::OnePole< SampleType,SampleType > *|gam::OnePole< float,float,GAM_DEFAULT_DOMAIN > *|gam::OnePole< float,gam::real,GAM_DEFAULT_DOMAIN > *", 0, 0, (void*)&_wrap_class_OnePole, 0};
+static swig_type_info _swigt__p_gam__OnePoleT_float_float_gam__GAM_DEFAULT_DOMAIN_t = {"_p_gam__OnePoleT_float_float_gam__GAM_DEFAULT_DOMAIN_t", "gam::OnePole< float,float,gam::GAM_DEFAULT_DOMAIN > *", 0, 0, (void*)0, 0};
 static swig_type_info _swigt__p_gam__OscT_float_ipl__Linear_phsInc__Loop_GAM_DEFAULT_DOMAIN_t = {"_p_gam__OscT_float_ipl__Linear_phsInc__Loop_GAM_DEFAULT_DOMAIN_t", "gam::Osc< float > *|gam::Osc< float,ipl::Linear,phsInc::Loop,GAM_DEFAULT_DOMAIN > *|gam::Osc< SampleType > *", 0, 0, (void*)&_wrap_class_Osc, 0};
 static swig_type_info _swigt__p_gam__PCounter = {"_p_gam__PCounter", "gam::PCounter *", 0, 0, (void*)&_wrap_class_PCounter, 0};
 static swig_type_info _swigt__p_gam__PanT_float_t = {"_p_gam__PanT_float_t", "gam::Pan< float > *|gam::Pan< SampleType > *", 0, 0, (void*)&_wrap_class_Pan, 0};
@@ -53378,23 +53473,30 @@ static swig_type_info _swigt__p_gam__SoundFile = {"_p_gam__SoundFile", "gam::Sou
 static swig_type_info _swigt__p_gam__SquareT_float_GAM_DEFAULT_DOMAIN_t = {"_p_gam__SquareT_float_GAM_DEFAULT_DOMAIN_t", "gam::Square< float > *|gam::Square< SampleType > *|gam::Square< float,GAM_DEFAULT_DOMAIN > *", 0, 0, (void*)&_wrap_class_Square, 0};
 static swig_type_info _swigt__p_gam__SweepT_phsInc__Loop_GAM_DEFAULT_DOMAIN_t = {"_p_gam__SweepT_phsInc__Loop_GAM_DEFAULT_DOMAIN_t", "gam::Sweep< > *|gam::Sweep< phsInc::Loop,GAM_DEFAULT_DOMAIN > *", 0, 0, (void*)&_wrap_class_Sweep, 0};
 static swig_type_info _swigt__p_gam__ThresholdT_float_t = {"_p_gam__ThresholdT_float_t", "gam::Threshold< float > *|gam::Threshold< SampleType > *", 0, 0, (void*)&_wrap_class_Threshold, 0};
-static swig_type_info _swigt__p_gam__VecT_2_float_t = {"_p_gam__VecT_2_float_t", "gam::Vec< 2,float > *|gam::Vec< 2,SampleType > *", 0, 0, (void*)0, 0};
+static swig_type_info _swigt__p_gam__Timer = {"_p_gam__Timer", "gam::Timer *", 0, 0, (void*)&_wrap_class_Timer, 0};
+static swig_type_info _swigt__p_gam__TransferFunc = {"_p_gam__TransferFunc", "gam::TransferFunc *", 0, 0, (void*)&_wrap_class_TransferFunc, 0};
+static swig_type_info _swigt__p_gam__TransferFunc__DelayUnit = {"_p_gam__TransferFunc__DelayUnit", "gam::TransferFunc::DelayUnit *", 0, 0, (void*)0, 0};
+static swig_type_info _swigt__p_gam__VecT_2_double_t = {"_p_gam__VecT_2_double_t", "gam::double2 *|gam::Vec< 2,double > *", 0, 0, (void*)0, 0};
+static swig_type_info _swigt__p_gam__VecT_2_float_t = {"_p_gam__VecT_2_float_t", "gam::float2 *|gam::Vec< 2,float > *|gam::Vec< 2,SampleType > *", 0, 0, (void*)0, 0};
+static swig_type_info _swigt__p_gam__VecT_3_double_t = {"_p_gam__VecT_3_double_t", "gam::double3 *|gam::Vec< 3,double > *", 0, 0, (void*)0, 0};
+static swig_type_info _swigt__p_gam__VecT_3_float_t = {"_p_gam__VecT_3_float_t", "gam::Vec< 3,float > *|gam::float3 *", 0, 0, (void*)0, 0};
+static swig_type_info _swigt__p_gam__VecT_4_double_t = {"_p_gam__VecT_4_double_t", "gam::Vec< 4,double > *|gam::double4 *", 0, 0, (void*)0, 0};
+static swig_type_info _swigt__p_gam__VecT_4_float_t = {"_p_gam__VecT_4_float_t", "gam::Vec< 4,float > *|gam::float4 *", 0, 0, (void*)0, 0};
 static swig_type_info _swigt__p_gam__Vowel = {"_p_gam__Vowel", "gam::Vowel *", 0, 0, (void*)&_wrap_class_Vowel, 0};
 static swig_type_info _swigt__p_gam__ZeroCrossRateT_float_t = {"_p_gam__ZeroCrossRateT_float_t", "gam::ZeroCrossRate< float > *|gam::ZeroCrossRate< SampleType > *", 0, 0, (void*)&_wrap_class_ZeroCrossRate, 0};
-static swig_type_info _swigt__p_gam__real = {"_p_gam__real", "gam::real *", 0, 0, (void*)0, 0};
 static swig_type_info _swigt__p_int = {"_p_int", "intptr_t *|int *|int_least32_t *|int_fast32_t *|int32_t *|gam::index_t *|int_fast16_t *", 0, 0, (void*)0, 0};
 static swig_type_info _swigt__p_ipl__Type = {"_p_ipl__Type", "ipl::Type *", 0, 0, (void*)0, 0};
-static swig_type_info _swigt__p_long_long = {"_p_long_long", "int_least64_t *|int_fast64_t *|int64_t *|long long *|intmax_t *", 0, 0, (void*)0, 0};
+static swig_type_info _swigt__p_long_long = {"_p_long_long", "gam::nsec_t *|int_least64_t *|int_fast64_t *|int64_t *|long long *|intmax_t *", 0, 0, (void*)0, 0};
 static swig_type_info _swigt__p_p_float = {"_p_p_float", "float **", 0, 0, (void*)0, 0};
 static swig_type_info _swigt__p_phsInc__Loop = {"_p_phsInc__Loop", "phsInc::Loop *", 0, 0, (void*)0, 0};
 static swig_type_info _swigt__p_short = {"_p_short", "short *|int_least16_t *|int16_t *", 0, 0, (void*)0, 0};
 static swig_type_info _swigt__p_signed_char = {"_p_signed_char", "signed char *|int_least8_t *|int_fast8_t *|int8_t *", 0, 0, (void*)0, 0};
 static swig_type_info _swigt__p_size_type = {"_p_size_type", "size_type *", 0, 0, (void*)0, 0};
+static swig_type_info _swigt__p_std__complexT_double_t = {"_p_std__complexT_double_t", "gam::TransferFunc::Complex *|std::complex< double > *", 0, 0, (void*)0, 0};
 static swig_type_info _swigt__p_std__string = {"_p_std__string", "std::string *", 0, 0, (void*)0, 0};
 static swig_type_info _swigt__p_std__vectorT_float_t = {"_p_std__vectorT_float_t", "std::vector< float > *|std::vector< SampleType > *", 0, 0, (void*)&_wrap_class_stdvector, 0};
 static swig_type_info _swigt__p_std__vectorT_gam__CombT_float_ipl__Trunc_float_gam__Domain1_t_t = {"_p_std__vectorT_gam__CombT_float_ipl__Trunc_float_gam__Domain1_t_t", "std::vector< gam::Comb< float,ipl::Trunc,float,gam::Domain1 > > *|gam::ReverbMS< float >::Allpasses *", 0, 0, (void*)0, 0};
 static swig_type_info _swigt__p_std__vectorT_gam__EchoT_float_ipl__Trunc_gam__Loop1P_gam__Domain1_t_t = {"_p_std__vectorT_gam__EchoT_float_ipl__Trunc_gam__Loop1P_gam__Domain1_t_t", "std::vector< gam::Echo< float,ipl::Trunc,gam::Loop1P,gam::Domain1 > > *|gam::ReverbMS< float >::Combs *", 0, 0, (void*)0, 0};
-static swig_type_info _swigt__p_std__vectorT_gam__real_t = {"_p_std__vectorT_gam__real_t", "std::vector< gam::real > *", 0, 0, (void*)&_wrap_class_realvector, 0};
 static swig_type_info _swigt__p_unsigned_char = {"_p_unsigned_char", "unsigned char *|uint_least8_t *|uint_fast8_t *|uint8_t *", 0, 0, (void*)0, 0};
 static swig_type_info _swigt__p_unsigned_int = {"_p_unsigned_int", "uintptr_t *|uint_least32_t *|uint_fast32_t *|uint32_t *|unsigned int *|uint_fast16_t *", 0, 0, (void*)0, 0};
 static swig_type_info _swigt__p_unsigned_long_long = {"_p_unsigned_long_long", "uint_least64_t *|uint_fast64_t *|uint64_t *|unsigned long long *|uintmax_t *", 0, 0, (void*)0, 0};
@@ -53411,7 +53513,7 @@ static swig_type_info *swig_type_initial[] = {
   &_swigt__p_CSineT_double_t,
   &_swigt__p_CSineT_float_t,
   &_swigt__p_Combs,
-  &_swigt__p_ComplexT_float_t,
+  &_swigt__p_Complex,
   &_swigt__p_DecayT_float_t,
   &_swigt__p_DecayT_t,
   &_swigt__p_Domain,
@@ -53425,7 +53527,6 @@ static swig_type_info *swig_type_initial[] = {
   &_swigt__p_SWIGLUA_REF,
   &_swigt__p_SawT_float_t,
   &_swigt__p_SineT_float_t,
-  &_swigt__p_VecT_2_float_t,
   &_swigt__p_WindowType,
   &_swigt__p_complex,
   &_swigt__p_difference_type,
@@ -53445,7 +53546,6 @@ static swig_type_info *swig_type_initial[] = {
   &_swigt__p_gam__AudioIOData,
   &_swigt__p_gam__Biquad3,
   &_swigt__p_gam__BiquadT_float_float_GAM_DEFAULT_DOMAIN_t,
-  &_swigt__p_gam__BiquadT_gam__real_gam__real_GAM_DEFAULT_DOMAIN_t,
   &_swigt__p_gam__BlockDCT_float_float_GAM_DEFAULT_DOMAIN_t,
   &_swigt__p_gam__BlockNyqT_float_float_GAM_DEFAULT_DOMAIN_t,
   &_swigt__p_gam__Burst,
@@ -53464,7 +53564,8 @@ static swig_type_info *swig_type_initial[] = {
   &_swigt__p_gam__ChirpT_float_t,
   &_swigt__p_gam__ChirpletT_float_GAM_DEFAULT_DOMAIN_t,
   &_swigt__p_gam__ChorusT_float_t,
-  &_swigt__p_gam__CombT_float_ipl__Cubic_gam__real_GAM_DEFAULT_DOMAIN_t,
+  &_swigt__p_gam__CombT_float_ipl__Cubic_float_GAM_DEFAULT_DOMAIN_t,
+  &_swigt__p_gam__CombT_float_ipl__Linear_float_GAM_DEFAULT_DOMAIN_t,
   &_swigt__p_gam__CombT_float_ipl__Linear_gam__real_GAM_DEFAULT_DOMAIN_t,
   &_swigt__p_gam__ComplexT_float_t,
   &_swigt__p_gam__DFT,
@@ -53486,7 +53587,6 @@ static swig_type_info *swig_type_initial[] = {
   &_swigt__p_gam__EnvFollowT_float_gam__real_gam__GAM_DEFAULT_DOMAIN_t,
   &_swigt__p_gam__FreqShiftT_float_t,
   &_swigt__p_gam__HilbertT_float_float_t,
-  &_swigt__p_gam__HilbertT_float_gam__real_t,
   &_swigt__p_gam__IndexMapT_float_t,
   &_swigt__p_gam__IntegratorT_float_float_t,
   &_swigt__p_gam__LFOT_phsInc__Loop_GAM_DEFAULT_DOMAIN_t,
@@ -53505,8 +53605,7 @@ static swig_type_info *swig_type_initial[] = {
   &_swigt__p_gam__NoiseWhiteT_gam__RNGMulCon_t,
   &_swigt__p_gam__NotchT_float_float_GAM_DEFAULT_DOMAIN_t,
   &_swigt__p_gam__OnePoleT_float_float_GAM_DEFAULT_DOMAIN_t,
-  &_swigt__p_gam__OnePoleT_float_gam__real_GAM_DEFAULT_DOMAIN_t,
-  &_swigt__p_gam__OnePoleT_float_gam__real_gam__GAM_DEFAULT_DOMAIN_t,
+  &_swigt__p_gam__OnePoleT_float_float_gam__GAM_DEFAULT_DOMAIN_t,
   &_swigt__p_gam__OscT_float_ipl__Linear_phsInc__Loop_GAM_DEFAULT_DOMAIN_t,
   &_swigt__p_gam__PCounter,
   &_swigt__p_gam__PanT_float_t,
@@ -53532,10 +53631,17 @@ static swig_type_info *swig_type_initial[] = {
   &_swigt__p_gam__SquareT_float_GAM_DEFAULT_DOMAIN_t,
   &_swigt__p_gam__SweepT_phsInc__Loop_GAM_DEFAULT_DOMAIN_t,
   &_swigt__p_gam__ThresholdT_float_t,
+  &_swigt__p_gam__Timer,
+  &_swigt__p_gam__TransferFunc,
+  &_swigt__p_gam__TransferFunc__DelayUnit,
+  &_swigt__p_gam__VecT_2_double_t,
   &_swigt__p_gam__VecT_2_float_t,
+  &_swigt__p_gam__VecT_3_double_t,
+  &_swigt__p_gam__VecT_3_float_t,
+  &_swigt__p_gam__VecT_4_double_t,
+  &_swigt__p_gam__VecT_4_float_t,
   &_swigt__p_gam__Vowel,
   &_swigt__p_gam__ZeroCrossRateT_float_t,
-  &_swigt__p_gam__real,
   &_swigt__p_int,
   &_swigt__p_ipl__Type,
   &_swigt__p_long_long,
@@ -53544,11 +53650,11 @@ static swig_type_info *swig_type_initial[] = {
   &_swigt__p_short,
   &_swigt__p_signed_char,
   &_swigt__p_size_type,
+  &_swigt__p_std__complexT_double_t,
   &_swigt__p_std__string,
   &_swigt__p_std__vectorT_float_t,
   &_swigt__p_std__vectorT_gam__CombT_float_ipl__Trunc_float_gam__Domain1_t_t,
   &_swigt__p_std__vectorT_gam__EchoT_float_ipl__Trunc_gam__Loop1P_gam__Domain1_t_t,
-  &_swigt__p_std__vectorT_gam__real_t,
   &_swigt__p_unsigned_char,
   &_swigt__p_unsigned_int,
   &_swigt__p_unsigned_long_long,
@@ -53565,7 +53671,7 @@ static swig_cast_info _swigc__p_BiquadT_t[] = {  {&_swigt__p_BiquadT_t, 0, 0, 0}
 static swig_cast_info _swigc__p_CSineT_double_t[] = {  {&_swigt__p_CSineT_double_t, 0, 0, 0},{0, 0, 0, 0}};
 static swig_cast_info _swigc__p_CSineT_float_t[] = {  {&_swigt__p_CSineT_float_t, 0, 0, 0},{0, 0, 0, 0}};
 static swig_cast_info _swigc__p_Combs[] = {  {&_swigt__p_Combs, 0, 0, 0},{0, 0, 0, 0}};
-static swig_cast_info _swigc__p_ComplexT_float_t[] = {  {&_swigt__p_ComplexT_float_t, 0, 0, 0},{0, 0, 0, 0}};
+static swig_cast_info _swigc__p_Complex[] = {  {&_swigt__p_Complex, 0, 0, 0},{0, 0, 0, 0}};
 static swig_cast_info _swigc__p_DecayT_float_t[] = {  {&_swigt__p_DecayT_float_t, 0, 0, 0},{0, 0, 0, 0}};
 static swig_cast_info _swigc__p_DecayT_t[] = {  {&_swigt__p_DecayT_t, 0, 0, 0},{0, 0, 0, 0}};
 static swig_cast_info _swigc__p_Domain[] = {  {&_swigt__p_Domain, 0, 0, 0},{0, 0, 0, 0}};
@@ -53579,7 +53685,6 @@ static swig_cast_info _swigc__p_OnePoleT_float_t[] = {  {&_swigt__p_OnePoleT_flo
 static swig_cast_info _swigc__p_SWIGLUA_REF[] = {  {&_swigt__p_SWIGLUA_REF, 0, 0, 0},{0, 0, 0, 0}};
 static swig_cast_info _swigc__p_SawT_float_t[] = {  {&_swigt__p_SawT_float_t, 0, 0, 0},{0, 0, 0, 0}};
 static swig_cast_info _swigc__p_SineT_float_t[] = {  {&_swigt__p_SineT_float_t, 0, 0, 0},{0, 0, 0, 0}};
-static swig_cast_info _swigc__p_VecT_2_float_t[] = {  {&_swigt__p_VecT_2_float_t, 0, 0, 0},{0, 0, 0, 0}};
 static swig_cast_info _swigc__p_WindowType[] = {  {&_swigt__p_WindowType, 0, 0, 0},{0, 0, 0, 0}};
 static swig_cast_info _swigc__p_complex[] = {  {&_swigt__p_complex, 0, 0, 0},{0, 0, 0, 0}};
 static swig_cast_info _swigc__p_difference_type[] = {  {&_swigt__p_difference_type, 0, 0, 0},{0, 0, 0, 0}};
@@ -53599,7 +53704,6 @@ static swig_cast_info _swigc__p_gam__AudioIO[] = {  {&_swigt__p_gam__AudioIO, 0,
 static swig_cast_info _swigc__p_gam__AudioIOData[] = {  {&_swigt__p_gam__AudioIOData, 0, 0, 0},  {&_swigt__p_gam__AudioIO, _p_gam__AudioIOTo_p_gam__AudioIOData, 0, 0},{0, 0, 0, 0}};
 static swig_cast_info _swigc__p_gam__Biquad3[] = {  {&_swigt__p_gam__Biquad3, 0, 0, 0},{0, 0, 0, 0}};
 static swig_cast_info _swigc__p_gam__BiquadT_float_float_GAM_DEFAULT_DOMAIN_t[] = {  {&_swigt__p_gam__BiquadT_float_float_GAM_DEFAULT_DOMAIN_t, 0, 0, 0},{0, 0, 0, 0}};
-static swig_cast_info _swigc__p_gam__BiquadT_gam__real_gam__real_GAM_DEFAULT_DOMAIN_t[] = {  {&_swigt__p_gam__BiquadT_gam__real_gam__real_GAM_DEFAULT_DOMAIN_t, 0, 0, 0},{0, 0, 0, 0}};
 static swig_cast_info _swigc__p_gam__BlockDCT_float_float_GAM_DEFAULT_DOMAIN_t[] = {  {&_swigt__p_gam__BlockDCT_float_float_GAM_DEFAULT_DOMAIN_t, 0, 0, 0},  {&_swigt__p_gam__BlockNyqT_float_float_GAM_DEFAULT_DOMAIN_t, _p_gam__BlockNyqT_float_float_GAM_DEFAULT_DOMAIN_tTo_p_gam__BlockDCT_float_float_GAM_DEFAULT_DOMAIN_t, 0, 0},{0, 0, 0, 0}};
 static swig_cast_info _swigc__p_gam__BlockNyqT_float_float_GAM_DEFAULT_DOMAIN_t[] = {  {&_swigt__p_gam__BlockNyqT_float_float_GAM_DEFAULT_DOMAIN_t, 0, 0, 0},{0, 0, 0, 0}};
 static swig_cast_info _swigc__p_gam__Burst[] = {  {&_swigt__p_gam__Burst, 0, 0, 0},{0, 0, 0, 0}};
@@ -53618,7 +53722,7 @@ static swig_cast_info _swigc__p_gam__ChebyNT_9_float_t[] = {  {&_swigt__p_gam__C
 static swig_cast_info _swigc__p_gam__ChirpT_float_t[] = {  {&_swigt__p_gam__ChirpT_float_t, 0, 0, 0},{0, 0, 0, 0}};
 static swig_cast_info _swigc__p_gam__ChirpletT_float_GAM_DEFAULT_DOMAIN_t[] = {  {&_swigt__p_gam__ChirpletT_float_GAM_DEFAULT_DOMAIN_t, 0, 0, 0},{0, 0, 0, 0}};
 static swig_cast_info _swigc__p_gam__ChorusT_float_t[] = {  {&_swigt__p_gam__ChorusT_float_t, 0, 0, 0},{0, 0, 0, 0}};
-static swig_cast_info _swigc__p_gam__CombT_float_ipl__Cubic_gam__real_GAM_DEFAULT_DOMAIN_t[] = {  {&_swigt__p_gam__CombT_float_ipl__Cubic_gam__real_GAM_DEFAULT_DOMAIN_t, 0, 0, 0},{0, 0, 0, 0}};
+static swig_cast_info _swigc__p_gam__CombT_float_ipl__Cubic_float_GAM_DEFAULT_DOMAIN_t[] = {  {&_swigt__p_gam__CombT_float_ipl__Cubic_float_GAM_DEFAULT_DOMAIN_t, 0, 0, 0},{0, 0, 0, 0}};
 static swig_cast_info _swigc__p_gam__CombT_float_ipl__Linear_gam__real_GAM_DEFAULT_DOMAIN_t[] = {  {&_swigt__p_gam__CombT_float_ipl__Linear_gam__real_GAM_DEFAULT_DOMAIN_t, 0, 0, 0},{0, 0, 0, 0}};
 static swig_cast_info _swigc__p_gam__ComplexT_float_t[] = {  {&_swigt__p_gam__ComplexT_float_t, 0, 0, 0},{0, 0, 0, 0}};
 static swig_cast_info _swigc__p_gam__DFT[] = {  {&_swigt__p_gam__DFT, 0, 0, 0},  {&_swigt__p_gam__STFT, _p_gam__STFTTo_p_gam__DFT, 0, 0},{0, 0, 0, 0}};
@@ -53628,7 +53732,8 @@ static swig_cast_info _swigc__p_gam__DecayT_float_t[] = {  {&_swigt__p_gam__Deca
 static swig_cast_info _swigc__p_gam__Delay1T_float_t[] = {  {&_swigt__p_gam__Delay1T_float_t, 0, 0, 0},{0, 0, 0, 0}};
 static swig_cast_info _swigc__p_gam__Delay2T_float_t[] = {  {&_swigt__p_gam__Delay2T_float_t, 0, 0, 0},{0, 0, 0, 0}};
 static swig_cast_info _swigc__p_gam__DelayNT_float_t[] = {  {&_swigt__p_gam__DelayNT_float_t, 0, 0, 0},  {&_swigt__p_gam__MovingAvgT_float_t, _p_gam__MovingAvgT_float_tTo_p_gam__DelayNT_float_t, 0, 0},{0, 0, 0, 0}};
-static swig_cast_info _swigc__p_gam__DelayT_float_ipl__Linear_GAM_DEFAULT_DOMAIN_t[] = {  {&_swigt__p_gam__DelayT_float_ipl__Linear_GAM_DEFAULT_DOMAIN_t, 0, 0, 0},  {&_swigt__p_gam__EchoT_float_ipl__Linear_gam__LoopGain_GAM_DEFAULT_DOMAIN_t, _p_gam__EchoT_float_ipl__Linear_gam__LoopGain_GAM_DEFAULT_DOMAIN_tTo_p_gam__DelayT_float_ipl__Linear_GAM_DEFAULT_DOMAIN_t, 0, 0},  {&_swigt__p_gam__CombT_float_ipl__Linear_gam__real_GAM_DEFAULT_DOMAIN_t, _p_gam__CombT_float_ipl__Linear_gam__real_GAM_DEFAULT_DOMAIN_tTo_p_gam__DelayT_float_ipl__Linear_GAM_DEFAULT_DOMAIN_t, 0, 0},  {&_swigt__p_gam__MultitapT_float_ipl__Linear_GAM_DEFAULT_DOMAIN_t, _p_gam__MultitapT_float_ipl__Linear_GAM_DEFAULT_DOMAIN_tTo_p_gam__DelayT_float_ipl__Linear_GAM_DEFAULT_DOMAIN_t, 0, 0},{0, 0, 0, 0}};
+static swig_cast_info _swigc__p_gam__CombT_float_ipl__Linear_float_GAM_DEFAULT_DOMAIN_t[] = {{&_swigt__p_gam__CombT_float_ipl__Linear_float_GAM_DEFAULT_DOMAIN_t, 0, 0, 0},{0, 0, 0, 0}};
+static swig_cast_info _swigc__p_gam__DelayT_float_ipl__Linear_GAM_DEFAULT_DOMAIN_t[] = {  {&_swigt__p_gam__CombT_float_ipl__Linear_float_GAM_DEFAULT_DOMAIN_t, _p_gam__CombT_float_ipl__Linear_float_GAM_DEFAULT_DOMAIN_tTo_p_gam__DelayT_float_ipl__Linear_GAM_DEFAULT_DOMAIN_t, 0, 0},  {&_swigt__p_gam__DelayT_float_ipl__Linear_GAM_DEFAULT_DOMAIN_t, 0, 0, 0},  {&_swigt__p_gam__EchoT_float_ipl__Linear_gam__LoopGain_GAM_DEFAULT_DOMAIN_t, _p_gam__EchoT_float_ipl__Linear_gam__LoopGain_GAM_DEFAULT_DOMAIN_tTo_p_gam__DelayT_float_ipl__Linear_GAM_DEFAULT_DOMAIN_t, 0, 0},  {&_swigt__p_gam__CombT_float_ipl__Linear_gam__real_GAM_DEFAULT_DOMAIN_t, _p_gam__CombT_float_ipl__Linear_float_GAM_DEFAULT_DOMAIN_tTo_p_gam__DelayT_float_ipl__Linear_GAM_DEFAULT_DOMAIN_t, 0, 0},  {&_swigt__p_gam__MultitapT_float_ipl__Linear_GAM_DEFAULT_DOMAIN_t, _p_gam__MultitapT_float_ipl__Linear_GAM_DEFAULT_DOMAIN_tTo_p_gam__DelayT_float_ipl__Linear_GAM_DEFAULT_DOMAIN_t, 0, 0},{0, 0, 0, 0}};
 static swig_cast_info _swigc__p_gam__DifferencerT_float_t[] = {  {&_swigt__p_gam__DifferencerT_float_t, 0, 0, 0},{0, 0, 0, 0}};
 static swig_cast_info _swigc__p_gam__DistT_2_float_t[] = {  {&_swigt__p_gam__DistT_2_float_t, 0, 0, 0},{0, 0, 0, 0}};
 static swig_cast_info _swigc__p_gam__Domain[] = {  {&_swigt__p_gam__Domain, 0, 0, 0},{0, 0, 0, 0}};
@@ -53640,7 +53745,6 @@ static swig_cast_info _swigc__p_gam__EchoT_float_ipl__Linear_gam__LoopGain_GAM_D
 static swig_cast_info _swigc__p_gam__EnvFollowT_float_gam__real_gam__GAM_DEFAULT_DOMAIN_t[] = {  {&_swigt__p_gam__EnvFollowT_float_gam__real_gam__GAM_DEFAULT_DOMAIN_t, 0, 0, 0},{0, 0, 0, 0}};
 static swig_cast_info _swigc__p_gam__FreqShiftT_float_t[] = {  {&_swigt__p_gam__FreqShiftT_float_t, 0, 0, 0},{0, 0, 0, 0}};
 static swig_cast_info _swigc__p_gam__HilbertT_float_float_t[] = {  {&_swigt__p_gam__HilbertT_float_float_t, 0, 0, 0},{0, 0, 0, 0}};
-static swig_cast_info _swigc__p_gam__HilbertT_float_gam__real_t[] = {  {&_swigt__p_gam__HilbertT_float_gam__real_t, 0, 0, 0},{0, 0, 0, 0}};
 static swig_cast_info _swigc__p_gam__IndexMapT_float_t[] = {  {&_swigt__p_gam__IndexMapT_float_t, 0, 0, 0},{0, 0, 0, 0}};
 static swig_cast_info _swigc__p_gam__IntegratorT_float_float_t[] = {  {&_swigt__p_gam__IntegratorT_float_float_t, 0, 0, 0},{0, 0, 0, 0}};
 static swig_cast_info _swigc__p_gam__LFOT_phsInc__Loop_GAM_DEFAULT_DOMAIN_t[] = {  {&_swigt__p_gam__LFOT_phsInc__Loop_GAM_DEFAULT_DOMAIN_t, 0, 0, 0},{0, 0, 0, 0}};
@@ -53659,8 +53763,7 @@ static swig_cast_info _swigc__p_gam__NoiseWhiteT_RNGLinCon_t[] = {  {&_swigt__p_
 static swig_cast_info _swigc__p_gam__NoiseWhiteT_gam__RNGMulCon_t[] = {  {&_swigt__p_gam__NoiseWhiteT_gam__RNGMulCon_t, 0, 0, 0},{0, 0, 0, 0}};
 static swig_cast_info _swigc__p_gam__NotchT_float_float_GAM_DEFAULT_DOMAIN_t[] = {  {&_swigt__p_gam__NotchT_float_float_GAM_DEFAULT_DOMAIN_t, 0, 0, 0},{0, 0, 0, 0}};
 static swig_cast_info _swigc__p_gam__OnePoleT_float_float_GAM_DEFAULT_DOMAIN_t[] = {  {&_swigt__p_gam__OnePoleT_float_float_GAM_DEFAULT_DOMAIN_t, 0, 0, 0},{0, 0, 0, 0}};
-static swig_cast_info _swigc__p_gam__OnePoleT_float_gam__real_GAM_DEFAULT_DOMAIN_t[] = {  {&_swigt__p_gam__OnePoleT_float_gam__real_GAM_DEFAULT_DOMAIN_t, 0, 0, 0},{0, 0, 0, 0}};
-static swig_cast_info _swigc__p_gam__OnePoleT_float_gam__real_gam__GAM_DEFAULT_DOMAIN_t[] = {  {&_swigt__p_gam__OnePoleT_float_gam__real_gam__GAM_DEFAULT_DOMAIN_t, 0, 0, 0},{0, 0, 0, 0}};
+static swig_cast_info _swigc__p_gam__OnePoleT_float_float_gam__GAM_DEFAULT_DOMAIN_t[] = {  {&_swigt__p_gam__OnePoleT_float_float_gam__GAM_DEFAULT_DOMAIN_t, 0, 0, 0},{0, 0, 0, 0}};
 static swig_cast_info _swigc__p_gam__OscT_float_ipl__Linear_phsInc__Loop_GAM_DEFAULT_DOMAIN_t[] = {  {&_swigt__p_gam__OscT_float_ipl__Linear_phsInc__Loop_GAM_DEFAULT_DOMAIN_t, 0, 0, 0},{0, 0, 0, 0}};
 static swig_cast_info _swigc__p_gam__PCounter[] = {  {&_swigt__p_gam__PCounter, 0, 0, 0},  {&_swigt__p_gam__MaxAbsT_float_t, _p_gam__MaxAbsT_float_tTo_p_gam__PCounter, 0, 0},  {&_swigt__p_gam__ZeroCrossRateT_float_t, _p_gam__ZeroCrossRateT_float_tTo_p_gam__PCounter, 0, 0},{0, 0, 0, 0}};
 static swig_cast_info _swigc__p_gam__PanT_float_t[] = {  {&_swigt__p_gam__PanT_float_t, 0, 0, 0},{0, 0, 0, 0}};
@@ -53686,10 +53789,17 @@ static swig_cast_info _swigc__p_gam__SoundFile[] = {  {&_swigt__p_gam__SoundFile
 static swig_cast_info _swigc__p_gam__SquareT_float_GAM_DEFAULT_DOMAIN_t[] = {  {&_swigt__p_gam__SquareT_float_GAM_DEFAULT_DOMAIN_t, 0, 0, 0},{0, 0, 0, 0}};
 static swig_cast_info _swigc__p_gam__SweepT_phsInc__Loop_GAM_DEFAULT_DOMAIN_t[] = {  {&_swigt__p_gam__SweepT_phsInc__Loop_GAM_DEFAULT_DOMAIN_t, 0, 0, 0},{0, 0, 0, 0}};
 static swig_cast_info _swigc__p_gam__ThresholdT_float_t[] = {  {&_swigt__p_gam__ThresholdT_float_t, 0, 0, 0},{0, 0, 0, 0}};
+static swig_cast_info _swigc__p_gam__Timer[] = {  {&_swigt__p_gam__Timer, 0, 0, 0},{0, 0, 0, 0}};
+static swig_cast_info _swigc__p_gam__TransferFunc[] = {  {&_swigt__p_gam__TransferFunc, 0, 0, 0},{0, 0, 0, 0}};
+static swig_cast_info _swigc__p_gam__TransferFunc__DelayUnit[] = {  {&_swigt__p_gam__TransferFunc__DelayUnit, 0, 0, 0},{0, 0, 0, 0}};
+static swig_cast_info _swigc__p_gam__VecT_2_double_t[] = {  {&_swigt__p_gam__VecT_2_double_t, 0, 0, 0},{0, 0, 0, 0}};
 static swig_cast_info _swigc__p_gam__VecT_2_float_t[] = {  {&_swigt__p_gam__VecT_2_float_t, 0, 0, 0},{0, 0, 0, 0}};
+static swig_cast_info _swigc__p_gam__VecT_3_double_t[] = {  {&_swigt__p_gam__VecT_3_double_t, 0, 0, 0},{0, 0, 0, 0}};
+static swig_cast_info _swigc__p_gam__VecT_3_float_t[] = {  {&_swigt__p_gam__VecT_3_float_t, 0, 0, 0},{0, 0, 0, 0}};
+static swig_cast_info _swigc__p_gam__VecT_4_double_t[] = {  {&_swigt__p_gam__VecT_4_double_t, 0, 0, 0},{0, 0, 0, 0}};
+static swig_cast_info _swigc__p_gam__VecT_4_float_t[] = {  {&_swigt__p_gam__VecT_4_float_t, 0, 0, 0},{0, 0, 0, 0}};
 static swig_cast_info _swigc__p_gam__Vowel[] = {  {&_swigt__p_gam__Vowel, 0, 0, 0},{0, 0, 0, 0}};
 static swig_cast_info _swigc__p_gam__ZeroCrossRateT_float_t[] = {  {&_swigt__p_gam__ZeroCrossRateT_float_t, 0, 0, 0},{0, 0, 0, 0}};
-static swig_cast_info _swigc__p_gam__real[] = {  {&_swigt__p_gam__real, 0, 0, 0},{0, 0, 0, 0}};
 static swig_cast_info _swigc__p_int[] = {  {&_swigt__p_int, 0, 0, 0},{0, 0, 0, 0}};
 static swig_cast_info _swigc__p_ipl__Type[] = {  {&_swigt__p_ipl__Type, 0, 0, 0},{0, 0, 0, 0}};
 static swig_cast_info _swigc__p_long_long[] = {  {&_swigt__p_long_long, 0, 0, 0},{0, 0, 0, 0}};
@@ -53698,11 +53808,11 @@ static swig_cast_info _swigc__p_phsInc__Loop[] = {  {&_swigt__p_phsInc__Loop, 0,
 static swig_cast_info _swigc__p_short[] = {  {&_swigt__p_short, 0, 0, 0},{0, 0, 0, 0}};
 static swig_cast_info _swigc__p_signed_char[] = {  {&_swigt__p_signed_char, 0, 0, 0},{0, 0, 0, 0}};
 static swig_cast_info _swigc__p_size_type[] = {  {&_swigt__p_size_type, 0, 0, 0},{0, 0, 0, 0}};
+static swig_cast_info _swigc__p_std__complexT_double_t[] = {  {&_swigt__p_std__complexT_double_t, 0, 0, 0},{0, 0, 0, 0}};
 static swig_cast_info _swigc__p_std__string[] = {  {&_swigt__p_std__string, 0, 0, 0},{0, 0, 0, 0}};
 static swig_cast_info _swigc__p_std__vectorT_float_t[] = {  {&_swigt__p_std__vectorT_float_t, 0, 0, 0},{0, 0, 0, 0}};
 static swig_cast_info _swigc__p_std__vectorT_gam__CombT_float_ipl__Trunc_float_gam__Domain1_t_t[] = {  {&_swigt__p_std__vectorT_gam__CombT_float_ipl__Trunc_float_gam__Domain1_t_t, 0, 0, 0},{0, 0, 0, 0}};
 static swig_cast_info _swigc__p_std__vectorT_gam__EchoT_float_ipl__Trunc_gam__Loop1P_gam__Domain1_t_t[] = {  {&_swigt__p_std__vectorT_gam__EchoT_float_ipl__Trunc_gam__Loop1P_gam__Domain1_t_t, 0, 0, 0},{0, 0, 0, 0}};
-static swig_cast_info _swigc__p_std__vectorT_gam__real_t[] = {  {&_swigt__p_std__vectorT_gam__real_t, 0, 0, 0},{0, 0, 0, 0}};
 static swig_cast_info _swigc__p_unsigned_char[] = {  {&_swigt__p_unsigned_char, 0, 0, 0},{0, 0, 0, 0}};
 static swig_cast_info _swigc__p_unsigned_int[] = {  {&_swigt__p_unsigned_int, 0, 0, 0},{0, 0, 0, 0}};
 static swig_cast_info _swigc__p_unsigned_long_long[] = {  {&_swigt__p_unsigned_long_long, 0, 0, 0},{0, 0, 0, 0}};
@@ -53719,7 +53829,7 @@ static swig_cast_info *swig_cast_initial[] = {
   _swigc__p_CSineT_double_t,
   _swigc__p_CSineT_float_t,
   _swigc__p_Combs,
-  _swigc__p_ComplexT_float_t,
+  _swigc__p_Complex,
   _swigc__p_DecayT_float_t,
   _swigc__p_DecayT_t,
   _swigc__p_Domain,
@@ -53733,7 +53843,6 @@ static swig_cast_info *swig_cast_initial[] = {
   _swigc__p_SWIGLUA_REF,
   _swigc__p_SawT_float_t,
   _swigc__p_SineT_float_t,
-  _swigc__p_VecT_2_float_t,
   _swigc__p_WindowType,
   _swigc__p_complex,
   _swigc__p_difference_type,
@@ -53753,7 +53862,6 @@ static swig_cast_info *swig_cast_initial[] = {
   _swigc__p_gam__AudioIOData,
   _swigc__p_gam__Biquad3,
   _swigc__p_gam__BiquadT_float_float_GAM_DEFAULT_DOMAIN_t,
-  _swigc__p_gam__BiquadT_gam__real_gam__real_GAM_DEFAULT_DOMAIN_t,
   _swigc__p_gam__BlockDCT_float_float_GAM_DEFAULT_DOMAIN_t,
   _swigc__p_gam__BlockNyqT_float_float_GAM_DEFAULT_DOMAIN_t,
   _swigc__p_gam__Burst,
@@ -53772,7 +53880,8 @@ static swig_cast_info *swig_cast_initial[] = {
   _swigc__p_gam__ChirpT_float_t,
   _swigc__p_gam__ChirpletT_float_GAM_DEFAULT_DOMAIN_t,
   _swigc__p_gam__ChorusT_float_t,
-  _swigc__p_gam__CombT_float_ipl__Cubic_gam__real_GAM_DEFAULT_DOMAIN_t,
+  _swigc__p_gam__CombT_float_ipl__Cubic_float_GAM_DEFAULT_DOMAIN_t,
+  _swigc__p_gam__CombT_float_ipl__Linear_float_GAM_DEFAULT_DOMAIN_t,
   _swigc__p_gam__CombT_float_ipl__Linear_gam__real_GAM_DEFAULT_DOMAIN_t,
   _swigc__p_gam__ComplexT_float_t,
   _swigc__p_gam__DFT,
@@ -53794,7 +53903,6 @@ static swig_cast_info *swig_cast_initial[] = {
   _swigc__p_gam__EnvFollowT_float_gam__real_gam__GAM_DEFAULT_DOMAIN_t,
   _swigc__p_gam__FreqShiftT_float_t,
   _swigc__p_gam__HilbertT_float_float_t,
-  _swigc__p_gam__HilbertT_float_gam__real_t,
   _swigc__p_gam__IndexMapT_float_t,
   _swigc__p_gam__IntegratorT_float_float_t,
   _swigc__p_gam__LFOT_phsInc__Loop_GAM_DEFAULT_DOMAIN_t,
@@ -53813,8 +53921,7 @@ static swig_cast_info *swig_cast_initial[] = {
   _swigc__p_gam__NoiseWhiteT_gam__RNGMulCon_t,
   _swigc__p_gam__NotchT_float_float_GAM_DEFAULT_DOMAIN_t,
   _swigc__p_gam__OnePoleT_float_float_GAM_DEFAULT_DOMAIN_t,
-  _swigc__p_gam__OnePoleT_float_gam__real_GAM_DEFAULT_DOMAIN_t,
-  _swigc__p_gam__OnePoleT_float_gam__real_gam__GAM_DEFAULT_DOMAIN_t,
+  _swigc__p_gam__OnePoleT_float_float_gam__GAM_DEFAULT_DOMAIN_t,
   _swigc__p_gam__OscT_float_ipl__Linear_phsInc__Loop_GAM_DEFAULT_DOMAIN_t,
   _swigc__p_gam__PCounter,
   _swigc__p_gam__PanT_float_t,
@@ -53840,10 +53947,17 @@ static swig_cast_info *swig_cast_initial[] = {
   _swigc__p_gam__SquareT_float_GAM_DEFAULT_DOMAIN_t,
   _swigc__p_gam__SweepT_phsInc__Loop_GAM_DEFAULT_DOMAIN_t,
   _swigc__p_gam__ThresholdT_float_t,
+  _swigc__p_gam__Timer,
+  _swigc__p_gam__TransferFunc,
+  _swigc__p_gam__TransferFunc__DelayUnit,
+  _swigc__p_gam__VecT_2_double_t,
   _swigc__p_gam__VecT_2_float_t,
+  _swigc__p_gam__VecT_3_double_t,
+  _swigc__p_gam__VecT_3_float_t,
+  _swigc__p_gam__VecT_4_double_t,
+  _swigc__p_gam__VecT_4_float_t,
   _swigc__p_gam__Vowel,
   _swigc__p_gam__ZeroCrossRateT_float_t,
-  _swigc__p_gam__real,
   _swigc__p_int,
   _swigc__p_ipl__Type,
   _swigc__p_long_long,
@@ -53852,11 +53966,11 @@ static swig_cast_info *swig_cast_initial[] = {
   _swigc__p_short,
   _swigc__p_signed_char,
   _swigc__p_size_type,
+  _swigc__p_std__complexT_double_t,
   _swigc__p_std__string,
   _swigc__p_std__vectorT_float_t,
   _swigc__p_std__vectorT_gam__CombT_float_ipl__Trunc_float_gam__Domain1_t_t,
   _swigc__p_std__vectorT_gam__EchoT_float_ipl__Trunc_gam__Loop1P_gam__Domain1_t_t,
-  _swigc__p_std__vectorT_gam__real_t,
   _swigc__p_unsigned_char,
   _swigc__p_unsigned_int,
   _swigc__p_unsigned_long_long,

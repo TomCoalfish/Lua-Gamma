@@ -7,6 +7,18 @@ using namespace gam;
 using namespace gam::phsInc;
 %}
 
+/*
+%include "Gamma/arr.h"
+%include "Gamma/gen.h"
+%include "Gamma/ipl.h"
+%include "Gamma/mem.h"
+%include "Gamma/rnd.h"
+%include "Gamma/scl.h"
+%include "Gamma/tbl.h"
+*/
+%include "Gamma/Timer.h"
+%include "Gamma/Types.h"
+
 %include "modules/std_gamma.i"
 %include "modules/access.i"
 %include "modules/envfollow.i"
@@ -32,12 +44,5 @@ using namespace gam::phsInc;
 %include "modules/sampleplayer.i"
 %include "modules/soundfile.i"
 %include "modules/spatial.i"
-/* needs renaming
-%include "Gamma/arr.h"
-%include "Gamma/gen.h"
-%include "Gamma/ipl.h"
-%include "Gamma/mem.h"
-%include "Gamma/rnd.h"
-%include "Gamma/scl.h"
-%include "Gamma/tbl.h"
-*/
+%include "modules/transferfunc.i"
+
