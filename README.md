@@ -1,10 +1,21 @@
 # LuaJIT-Gamma
-Gamma wrapper
+Gamma swig wrapper
 
-# Gcc is kind of retarded
-* It requires this-> to access some things in classes inherited from
-* It isn't supposed to it should understand that if you inherit a class you should have all the members in it
-* But it doesn't because it is retarded
-* So nothing really works the way it ought to
-* it also can't find a class that inherited from directly above it
-* gcc is retarded about it and you have to deal with it
+#          DO WHAT THE FUCK YOU WANT TO PUBLIC LICENSE
+
+<pre>           
+                   Version 2, December 2004
+ 
+Copyright (C) 2004 Sam Hocevar <sam@hocevar.net>
+
+Everyone is permitted to copy and distribute verbatim or modified
+copies of this license document, and changing it is allowed as long
+as the name is changed.
+ 
+           DO WHAT THE FUCK YOU WANT TO PUBLIC LICENSE
+  TERMS AND CONDITIONS FOR COPYING, DISTRIBUTION AND MODIFICATION
+
+ 0. You just DO WHAT THE FUCK YOU WANT TO.
+
+</pre>
+
