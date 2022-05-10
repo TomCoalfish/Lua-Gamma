@@ -6,16 +6,16 @@
 namespace gam 
 {
 
-    template <class T, class S, class A=gam::Allocator<T> >
+    template <class T>
     class ArrayBase {
     public:
         typedef T value_type;
         
         ArrayBase();
-        explicit ArrayBase(uint32_t size);
+        ArrayBase(uint32_t size);
         ArrayBase(uint32_t size, const T& init);
         ArrayBase(T * src, uint32_t size);
-        explicit ArrayBase(const ArrayBase<T,S,A>& src);
+        ArrayBase(const ArrayBase<T>& src);
         virtual ~ArrayBase();
 
         
@@ -49,15 +49,16 @@ namespace gam
         bool usingExternalSource() const;
         bool valid() const;
         void resize(uint32_t newSize, const T& c=T());
-        bool source(ArrayBase<T,S,A>& src);
+        bool source(ArrayBase<T>& src);
         bool source(T * src, uint32_t size);
         virtual void onResize();
         static int references(T* m);
     };
 
-    // not sure if arraybase will be in the interface it does not recognize it
+    
     template <class T >
-    class Array : public ArrayBase<T> {
+    class Array 
+    {
     public:
         explicit Array(uint32_t size);
         Array(uint32_t size, const T& init);
@@ -65,10 +66,44 @@ namespace gam
         Array();
         explicit Array(const Array& src);
         virtual ~Array();    
+
+        /// arraybase
+        %extend {
+            T __getitem__(uint32_t i) { return (*$self)[i]; }
+            void __setitem__(uint32_t i, T val) { (*$self)[i] = val; }
+        }
+
+        /// Sets all elements to value
+        Array& assign(const T& v);
+        
+        //template <class Arr>
+        //ArrayBase& assign(const Arr& src);        
+        Array& assign(const T& v, uint32_t end, uint32_t stride=1, uint32_t start=0);
+        
+        Array& zero();
+        T * elems();					///< Get writable pointer to elements	
+        const T * elems() const;		///< Get read-only pointer to elements
+        uint32_t size() const;			///< Returns number of elements in array
+
+        T * begin();
+        const T * begin() const;
+        T * end();
+        const T * end() const;
+        
+        void clear();
+        void own();
+        bool isSoleOwner() const;
+        bool usingExternalSource() const;
+        bool valid() const;
+        void resize(uint32_t newSize, const T& c=T());
+        bool source(Array<T>& src);
+        bool source(T * src, uint32_t size);
+        virtual void onResize();
+        static int references(T* m);
     };
     
     template <class T>
-    class ArrayPow2 : public ArrayBase<T>  {
+    class ArrayPow2  {
     public:
         explicit ArrayPow2(uint32_t size);
         ArrayPow2(uint32_t size, const T& initial);
@@ -86,6 +121,44 @@ namespace gam
 
         const T& atPhase(uint32_t phase) const;	///< Get element at truncated fixed-point phase
         void putPhase(uint32_t phase, T v);		///< Set element at truncated fixed point phase
+
+
+        /// arraybase
+        %extend {
+            T __getitem__(uint32_t i) { return (*$self)[i]; }
+            void __setitem__(uint32_t i, T val) { (*$self)[i] = val; }
+        }
+
+        /// Sets all elements to value
+        ArrayPow2& assign(const T& v);
+
+        
+        //template <class Arr>
+        //ArrayBase& assign(const Arr& src);        
+        ArrayPow2& assign(const T& v, uint32_t end, uint32_t stride=1, uint32_t start=0);
+
+        
+        ArrayPow2& zero();
+        T * elems();					///< Get writable pointer to elements	
+        const T * elems() const;		///< Get read-only pointer to elements
+        uint32_t size() const;			///< Returns number of elements in array
+
+        T * begin();
+        const T * begin() const;
+        T * end();
+        const T * end() const;
+        
+        void clear();
+        void own();
+        bool isSoleOwner() const;
+        bool usingExternalSource() const;
+        bool valid() const;
+        void resize(uint32_t newSize, const T& c=T());
+        bool source(ArrayPow2<T>& src);
+        bool source(T * src, uint32_t size);
+        virtual void onResize();
+        static int references(T* m);
+
     };
 
     template <class T>

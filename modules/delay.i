@@ -27,8 +27,12 @@ namespace gam {
         void ipolType(ipl::Type v);
         void maxDelay(float v, bool setDelay=true);	///< Set maximum delay length
 
-        Tv operator()(const Tv& v);					///< Returns next filtered value
-        Tv operator()() const;						///< Reads delayed element from buffer
+        //Tv operator()(const Tv& v);					///< Returns next filtered value
+        //Tv operator()() const;						///< Reads delayed element from buffer
+        %extern {
+            Tv Process(const Tv & v) { return (*$self)(v); }
+            Tv Tick() { return (*$self)(v); }
+        }
         Tv read(float ago) const;					///< Returns element 'ago' units ago        
         void write(const Tv& v);					///< Writes new element into buffer
 
@@ -64,6 +68,7 @@ namespace gam {
         unsigned taps() const;
         
         Tv read(unsigned tap) const;
+        
         void delay(float length, unsigned tap);
         void freq(float v, unsigned tap);
         void taps(unsigned numTaps);
@@ -116,16 +121,15 @@ namespace gam {
         Comb();
         Comb(float delay, const Tp& ffd = Tp(0), const Tp& fbk = Tp(0));
         Comb(float maxDelay, float delay, const Tp& ffd, const Tp& fbk);
+
         void decay(float units, float end = 0.001f);
         void allPass(const Tp& v);
         void fbk(const Tp& v);					///< Set feedback amount, in (-1, 1)
         void ffd(const Tp& v);					///< Set feedforward amount [-1, 1]
         void feeds(const Tp& fwd, const Tp& bwd);
         void set(float delay, const Tp& ffd, const Tp& fbk); ///< Set several parameters
-        Tv operator()();
-        Tv operator()(const Tv& i0);				///< Returns next filtered value
-        Tv operator()(const Tv& i0, const Tv& oN);	///< Circulate filter with ffd & fbk
 
+        
         %extend {
             Tv Tick() { return (*$self)(); }
             Tv flter(const Tv &i0, const Tv &oN) { return (*$self)(i0,oN); }
