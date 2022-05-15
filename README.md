@@ -1,6 +1,6 @@
 # LuaJIT-Gamma
 Gamma swig wrapper 
 
-# Todo
-* Lua callbacks 
-* Examples to Lua
+# It's a really good kit
+* It has all the algorithms 
+* So I continue to work with it
