@@ -14,8 +14,6 @@ Gamma swig wrapper
 * Mortals perish in the storm
 * Even heroes are slain by the beast
 
-
-
 # You need really strong filters
 * I was adapted in the internet experiment
 * I am not normal like you
