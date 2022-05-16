@@ -10,5 +10,11 @@ Gamma swig wrapper
 # I wrestle with it anyways
 * The Hydra Headed Beast
 
+# It's all this chaos
+* Mortals perish in the storm
+* Even heroes are slain by the beast
+
+
+
 
 
