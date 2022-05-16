@@ -1,21 +1,13 @@
 # LuaJIT-Gamma
 Gamma swig wrapper 
 
-# It's all I really need for my experiments
-* It's get all complicated by vectorizers and gpus and stuff
-* You know, I don't really need that at all
-* So it has everything and it is simple
-* Why overcomplicate it when it doesn't have to be so
+# I take it apart more
+* until everything is in a distinct module
 
-# I wrestle with it anyways
-* The Hydra Headed Beast
+# Then I will try it
+* See how it works 
 
-# It's all this chaos
-* Mortals perish in the storm
-* Even heroes are slain by the beast
+# It needs documents
+* So I am learning how to build a document system
 
-# You need really strong filters
-* I was adapted in the internet experiment
-* I am not normal like you
-* Why I can handle it without a bother
 
