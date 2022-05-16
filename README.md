@@ -16,5 +16,8 @@ Gamma swig wrapper
 
 
 
-
+# You need really strong filters
+* I was adapted in the internet experiment
+* I am not normal like you
+* Why I can handle it without a bother
 
