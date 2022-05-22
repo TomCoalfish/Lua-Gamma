@@ -1,4 +1,4 @@
 # LuaJIT-Gamma
-Gamma swig wrapper  
+Gamma swig wrapper   
 
  
