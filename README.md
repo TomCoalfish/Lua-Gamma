@@ -1,5 +1,5 @@
 # LuaJIT-Gamma
-Gamma swig wrapper   
+Gamma Synthesis Algorithms in C++
 
 # Analysis
 * Envelope Follower
